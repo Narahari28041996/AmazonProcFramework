@@ -1,0 +1,25 @@
+[{
+    "usn":"student110",
+    "pwd":"password123",
+    "url":"https://practicetestautomation.com/practice-test-login/"
+},
+{
+    "usn":"student111",
+    "pwd":"password123",
+    "url":"https://practicetestautomation.com/practice-test-login/"
+},
+{
+    "usn":"student112",
+    "pwd":"password123",
+    "url":"https://practicetestautomation.com/practice-test-login/"
+},
+{
+    "usn":"student113",
+    "pwd":"password135",
+    "url":"https://practicetestautomation.com/practice-test-login/"
+},
+{
+    "usn":"student114",
+    "pwd":"passw123",
+    "url":"https://practicetestautomation.com/practice-test-login/"
+}]

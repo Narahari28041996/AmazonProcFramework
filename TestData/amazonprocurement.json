@@ -1,0 +1,14 @@
+{
+    "url":"http://49.249.28.218:8081/AppServer/Supply_Chain_Management/",
+    "username":"admin",
+    "password":"admin123",
+    "login_type":"Admin",
+    "area_name":"Banaswadi",
+    "area_code":"560043",
+    "retailer_usn":"BenzMotors",
+    "retailer_pwd":"OKbenz1195260",
+    "select_area_code":"SRKJ (Davangerebasavanagudi)",
+    "retail_phone":"8026968715",
+    "retail_email":"info@benzmotors.com",
+    "retail_address":"No 12, DVG Road, Bengaluru"
+}
