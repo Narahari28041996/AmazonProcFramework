@@ -1,0 +1,38 @@
+# Test info
+
+- Name: Test Spicejet conditions
+- Location: C:\Users\DELL\Desktop\Project One\tests\testspicejet.spec.js:2:5
+
+# Error details
+
+```
+Error: locator.click: Target page, context or browser has been closed
+Call log:
+  - waiting for locator('//div[@class=\'css-1dbjc4n r-b5h31w r-95jzfe\']/descendant::div[@class=\'css-76zvg2 r-cqee49 r-ubezar r-1kfrs79\']').filter({ hasText: 'Bengaluru' })
+
+    at C:\Users\DELL\Desktop\Project One\tests\testspicejet.spec.js:17:22
+```
+
+# Test source
+
+```ts
+   1 | import { test,expect,chromium } from "@playwright/test";
+   2 | test("Test Spicejet conditions",async () => {
+   3 |     const browser=await chromium.launch({headless:false});
+   4 |     const context=await browser.newContext({
+   5 |         permissions:[]
+   6 |     });
+   7 |     const page=await context.newPage();
+   8 |     await page.goto("https://www.spicejet.com/");
+   9 |     await expect(page).toHaveTitle("SpiceJet - Flight Booking for Domestic and International, Cheap Air Tickets");
+  10 |     await page.locator("//div[text()='From']/../..").click();
+  11 |     await expect(page.locator("//div[text()='From']/../..")).toBeEnabled();
+  12 |     await page.locator("//div[text()='From']/..").click();
+  13 |     await expect(page.locator("//div[text()='From']/..")).toHaveText('From');
+  14 |     await page.locator("//input[@type='text']").first().fill("Bengaluru");
+  15 |     let fromOption=await page.locator("//div[@class='css-1dbjc4n r-b5h31w r-95jzfe']/descendant::div[@class='css-76zvg2 r-cqee49 r-ubezar r-1kfrs79']",{hasText:"Bengaluru"});
+  16 |     await expect(page.locator("//input[@value='Bengaluru (BLR)']")).toBeVisible();
+> 17 |     await fromOption.click();
+     |                      ^ Error: locator.click: Target page, context or browser has been closed
+  18 | })
+```

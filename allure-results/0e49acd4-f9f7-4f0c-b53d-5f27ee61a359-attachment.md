@@ -1,0 +1,1879 @@
+# Test info
+
+- Name: Select cheap ticket flight
+- Location: C:\Users\DELL\Desktop\Project One\tests\cheapflightpricetest.spec.js:2:5
+
+# Error details
+
+```
+Error: locator.click: Error: strict mode violation: locator('//span[text()=\'To\']/..') resolved to 2 elements:
+    1) <div class="sc-12foipm-2 eTBlJr fswFld ">…</div> aka getByText('ToEnter city or airport')
+    2) <div class="sc-12foipm-25 fbAAhv">…</div> aka locator('div').filter({ hasText: /^To$/ }).nth(1)
+
+Call log:
+  - waiting for locator('//span[text()=\'To\']/..')
+
+    at C:\Users\DELL\Desktop\Project One\tests\cheapflightpricetest.spec.js:12:50
+```
+
+# Page snapshot
+
+```yaml
+- banner:
+  - link:
+    - /url: /
+  - list:
+    - listitem:
+      - link "Flights":
+        - /url: /flights/
+    - listitem:
+      - link "Hotels":
+        - /url: /hotels/
+    - listitem:
+      - link "Trains":
+        - /url: /trains/
+    - listitem:
+      - link "Cabs":
+        - /url: /cars/
+    - listitem:
+      - link "Bus":
+        - /url: /bus/
+    - listitem:
+      - link "Holidays":
+        - /url: /giholidays/
+    - listitem:
+      - link "Forex":
+        - /url: https://tripmoney.goibibo.com/partners/gi/forex/listing?utm_source=header_goibibo&utm_medium=desktop
+  - link "My Trips Manage Booking":
+    - /url: /travelhistory
+    - paragraph: My Trips
+    - paragraph: Manage Booking
+  - list:
+    - listitem: Manage Your Trips
+    - listitem: LOGIN / SIGNUP
+    - listitem: Exclusive Offers
+    - listitem: Earn goCash
+    - listitem: Manage Your Trips
+    - listitem: LOGIN / SIGNUP
+- paragraph
+- heading "Domestic and International Flights" [level=2]
+- list:
+  - listitem:
+    - paragraph: One-way
+  - listitem:
+    - paragraph: Round-trip
+  - listitem:
+    - paragraph: Multi-city
+- text: From
+- paragraph: Bengaluru
+- paragraph: BLR, Bengaluru International Airpor...
+- img
+- text: To
+- paragraph: Enter city or airport
+- text: To
+- textbox
+- list
+- text: Departure
+- paragraph: 8 May'25
+- paragraph: Thursday
+- text: Return
+- paragraph: Click to add a return flight for better discounts
+- text: Travellers & Class
+- paragraph: 1 Adult
+- paragraph: economy
+- text: More Benefits Special Fares
+- img "ST"
+- text: Student Extra Baggage
+- img "SC"
+- text: Senior Citizen Exclusive Discounts
+- img "AF"
+- text: Armed Forces Exclusive Discounts
+- img "D"
+- text: Doctors & Nurses Exclusive Discounts SEARCH FLIGHTS Offers For You
+- list:
+  - listitem: All
+  - listitem: Bank Offers
+  - listitem: Flights
+  - listitem: Hotels
+  - listitem: Cabs
+  - listitem: Bus
+  - listitem: Trains
+  - text: View All
+- list:
+  - listitem:
+    - img "offer img"
+    - paragraph: Hotels
+    - paragraph: FLAT 15% SAVINGS* at Taj!
+    - img "timer icon"
+    - text: Valid till 16th May'25
+- list:
+  - listitem:
+    - img "offer img"
+    - paragraph: Hotels
+    - paragraph: Up to 45% OFF* on stays!
+    - img "timer icon"
+    - text: Valid till 11th May'25
+- list:
+  - listitem:
+    - paragraph: Explore Offers
+    - text: View all
+- list:
+  - listitem:
+    - img "offer img"
+    - paragraph: Domestic Hotels
+    - paragraph: FLAT 10% SAVINGS* on Stays at Ginger!
+    - img "timer icon"
+    - text: Valid till 16th May'25
+- list:
+  - listitem:
+    - img "offer img"
+    - paragraph: Bus, Hotels, Cabs, Flights, Trains
+    - paragraph: Ready for some DealPanti?
+    - img "timer icon"
+    - text: Limited period offer
+- list:
+  - listitem:
+    - img "offer img"
+    - paragraph: Bus, Domestic Flights, Hotels, Cabs, Cabs
+    - paragraph: Get up to 50% OFF* on travel bookings!
+    - img "timer icon"
+    - text: Limited period offer
+- list:
+  - listitem:
+    - img "offer img"
+    - paragraph: Flights
+    - paragraph: Book Direct Flights by Akasa Airline
+    - img "timer icon"
+    - text: Limited period offer
+- list:
+  - listitem:
+    - img "offer img"
+    - paragraph: Others
+    - paragraph: Plan a pilgrimage with up to 50% OFF*
+    - img "timer icon"
+    - text: "*Limited Period Offers"
+- list:
+  - listitem:
+    - img "offer img"
+    - paragraph: Flights
+    - paragraph: New Routes by Virgin Atlantic!
+    - img "timer icon"
+    - text: Limited period offer
+- list:
+  - listitem:
+    - img "offer img"
+    - paragraph: Cabs
+    - paragraph: Explore this NEW feature now!
+    - img "timer icon"
+    - text: Limited period offer
+- list:
+  - listitem:
+    - img "offer img"
+    - paragraph: Flights
+    - paragraph: "LIVE NOW: Special Offer by Virgin Atlantic!"
+    - img "timer icon"
+    - text: Valid till 31st Dec'25
+- button "next scroll"
+- text: Introducing Hotel Stores on Goibibo Your one-stop destination to choose hotels, filtered by brands
+- list:
+  - text: Le Roi
+  - img "img-placeholder"
+- img "Ads by GI"
+- img
+- img "gosafe"
+- text: Read the latest domestic & international travel guidelines here before you travel. Stay safe, travel safe.Read more Student goPass
+- contentinfo:
+  - list:
+    - listitem:
+      - paragraph: our products
+    - listitem:
+      - link "Domestic Hotels":
+        - /url: /hotels/
+        - paragraph: Domestic Hotels
+    - listitem:
+      - link "International Hotels":
+        - /url: /hotels-international/
+        - paragraph: International Hotels
+    - listitem:
+      - link "Domestic Flights":
+        - /url: /flights/
+        - paragraph: Domestic Flights
+    - listitem:
+      - link "International Flights":
+        - /url: /international-flights/
+        - paragraph: International Flights
+    - listitem:
+      - link "Multi-City Flights":
+        - /url: /multicity-flights/
+        - paragraph: Multi-City Flights
+    - listitem:
+      - link "Couple Friendly Hotels":
+        - /url: /cfhotels/
+        - paragraph: Couple Friendly Hotels
+    - listitem:
+      - link "Nearby Getaways":
+        - /url: /hotels/
+        - paragraph: Nearby Getaways
+    - listitem:
+      - link "Bus Booking":
+        - /url: /bus/
+        - paragraph: Bus Booking
+    - listitem:
+      - link "Cab Booking":
+        - /url: /cars/
+        - paragraph: Cab Booking
+    - listitem:
+      - link "Airport Cabs Booking":
+        - /url: /cars/airport-cabs/
+        - paragraph: Airport Cabs Booking
+    - listitem:
+      - link "Outstation Cabs Booking":
+        - /url: /cars/
+        - paragraph: Outstation Cabs Booking
+    - listitem:
+      - link "Train Booking":
+        - /url: /trains/
+        - paragraph: Train Booking
+    - listitem:
+      - link "Go Stay":
+        - /url: /gostays/
+        - paragraph: Go Stay
+    - listitem:
+      - link "Gift Cards":
+        - /url: /user/gift-cards/
+        - paragraph: Gift Cards
+    - listitem:
+      - link "Trip Money":
+        - /url: https://www.tripmoney.com/
+        - paragraph: Trip Money
+    - listitem:
+      - link "Goibibo Advertising Solutions":
+        - /url: https://advertising.goibibo.com/ad/solutions/
+        - paragraph: Goibibo Advertising Solutions
+    - listitem:
+      - link "Travel Insurance":
+        - /url: https://www.goibibo.com/travel-insurance/
+        - paragraph: Travel Insurance
+  - list:
+    - listitem:
+      - paragraph: about us
+    - listitem:
+      - link "About Us":
+        - /url: /aboutus/
+        - paragraph: About Us
+    - listitem:
+      - link "Investor Relations":
+        - /url: /info/investors-overview/
+        - paragraph: Investor Relations
+    - listitem:
+      - link "Management":
+        - /url: /management/
+        - paragraph: Management
+    - listitem:
+      - link "Contact Us":
+        - /url: /info/contactus/
+        - paragraph: Contact Us
+    - listitem:
+      - link "Terms of Services":
+        - /url: /info/terms-of-services/
+        - paragraph: Terms of Services
+    - listitem:
+      - link "User Agreement":
+        - /url: /info/user-agreement/
+        - paragraph: User Agreement
+    - listitem:
+      - link "Privacy":
+        - /url: /info/privacy/
+        - paragraph: Privacy
+    - listitem:
+      - link "Careers":
+        - /url: /careers/
+        - paragraph: Careers
+    - listitem:
+      - link "YouTube Channel":
+        - /url: https://www.youtube.com/user/goibibo
+        - paragraph: YouTube Channel
+    - listitem:
+      - link "Technology@Goibibo F":
+        - /url: https://tech.goibibo.com/
+        - paragraph: Technology@Goibibo
+        - text: F
+    - listitem:
+      - link "Customer Support":
+        - /url: /mysupport/customerHelp/
+        - paragraph: Customer Support
+    - listitem:
+      - link "Facebook Page":
+        - /url: https://www.facebook.com/Goibibo/
+        - paragraph: Facebook Page
+    - listitem:
+      - link "Twitter Handle":
+        - /url: https://twitter.com/goibibo
+        - paragraph: Twitter Handle
+  - list:
+    - listitem:
+      - paragraph: travel essentials
+    - listitem:
+      - link "PNR Status":
+        - /url: /trains/check-pnr-status/
+        - paragraph: PNR Status
+    - listitem:
+      - link "Offers":
+        - /url: /offers/
+        - paragraph: Offers
+    - listitem:
+      - link "Airline Routes":
+        - /url: /flights/city-to-city-airlines/
+        - paragraph: Airline Routes
+    - listitem:
+      - link "Train Running Status":
+        - /url: /trains/check-train-running-status/
+        - paragraph: Train Running Status
+  - list:
+    - listitem:
+      - paragraph: more links
+    - listitem:
+      - link "Cheap Flights":
+        - /url: /flights/cheap-flights/
+        - paragraph: Cheap Flights
+    - listitem:
+      - link "Hotels Near Me":
+        - /url: /hotels/hotels-near-me/
+        - paragraph: Hotels Near Me
+    - listitem:
+      - link "My Bookings":
+        - /url: /mysupport/trips/
+        - paragraph: My Bookings
+    - listitem:
+      - link "Cancellation":
+        - /url: /mysupport/trips/
+        - paragraph: Cancellation
+    - listitem:
+      - link "My Account":
+        - /url: /myaccount/settings/
+        - paragraph: My Account
+    - listitem:
+      - link "Wallet":
+        - /url: /myaccount/gocash/
+        - paragraph: Wallet
+    - listitem:
+      - link "Advertise with Us":
+        - /url: https://advertising.goibibo.com/ad/solutions/
+        - paragraph: Advertise with Us
+  - list:
+    - listitem: Top Cities in India
+    - listitem:
+      - link "Hotels In Goa |":
+        - /url: /hotels/hotels-in-goa-ct/
+    - listitem:
+      - link "Hotels In Jaipur |":
+        - /url: /hotels/hotels-in-jaipur-ct/
+    - listitem:
+      - link "Hotels In Delhi |":
+        - /url: /hotels/hotels-in-delhi-ct/
+    - listitem:
+      - link "Hotels In Mumbai |":
+        - /url: /hotels/hotels-in-mumbai-ct/
+    - listitem:
+      - link "Hotels In Puri |":
+        - /url: /hotels/hotels-in-puri-ct/
+    - listitem:
+      - link "Hotels In Udaipur |":
+        - /url: /hotels/hotels-in-udaipur-ct/
+    - listitem:
+      - link "Hotels In Shimla |":
+        - /url: /hotels/hotels-in-shimla-ct/
+    - listitem:
+      - link "Hotels In Mahabaleshwar |":
+        - /url: /hotels/hotels-in-mahabaleshwar-ct/
+    - listitem:
+      - link "Hotels In Mussoorie |":
+        - /url: /hotels/hotels-in-mussoorie-ct/
+    - listitem:
+      - link "Hotels In Rishikesh |":
+        - /url: /hotels/hotels-in-rishikesh-ct/
+    - listitem:
+      - link "Hotels In Bangalore |":
+        - /url: /hotels/hotels-in-bangalore-ct/
+    - listitem:
+      - link "Hotels In Pondicherry |":
+        - /url: /hotels/hotels-in-pondicherry-ct/
+    - listitem:
+      - link "Hotels In Ooty |":
+        - /url: /hotels/hotels-in-ooty-ct/
+    - listitem:
+      - link "Hotels In Mysore |":
+        - /url: /hotels/hotels-in-mysore-ct/
+    - listitem:
+      - link "Hotels In Manali |":
+        - /url: /hotels/hotels-in-manali-ct/
+    - listitem:
+      - link "Hotels In Nainital |":
+        - /url: /hotels/hotels-in-nainital-ct/
+    - listitem:
+      - link "Hotels In Lonavala |":
+        - /url: /hotels/hotels-in-lonavala-ct/
+    - listitem:
+      - link "Hotels In Hyderabad |":
+        - /url: /hotels/hotels-in-hyderabad-ct/
+    - listitem:
+      - link "Hotels In Varanasi |":
+        - /url: /hotels/hotels-in-varanasi-ct/
+    - listitem:
+      - link "Hotels In Digha |":
+        - /url: /hotels/hotels-in-digha-ct/
+    - listitem:
+      - link "Hotels In Chandigarh |":
+        - /url: /hotels/hotels-in-chandigarh-ct/
+    - listitem:
+      - link "Hotels In Mount Abu |":
+        - /url: /hotels/hotels-in-mount-abu-ct/
+    - listitem:
+      - link "Hotels In Darjeeling |":
+        - /url: /hotels/hotels-in-darjeeling-ct/
+    - listitem:
+      - link "Hotels In Ahmedabad |":
+        - /url: /hotels/hotels-in-ahmedabad-ct/
+    - listitem:
+      - link "Hotels In Pune |":
+        - /url: /hotels/hotels-in-pune-ct/
+    - listitem:
+      - link "Hotels In Vrindavan |":
+        - /url: /hotels/hotels-in-vrindavan-ct/
+    - listitem:
+      - link "Hotels In Agra |":
+        - /url: /hotels/hotels-in-agra-ct/
+    - listitem:
+      - link "Hotels In Amritsar |":
+        - /url: /hotels/hotels-in-amritsar-ct/
+    - listitem:
+      - link "Hotels In Matheran |":
+        - /url: /hotels/hotels-in-matheran-ct/
+    - listitem:
+      - link "Hotels In Haridwar |":
+        - /url: /hotels/hotels-in-haridwar-ct/
+    - listitem:
+      - link "Hotels In Chennai |":
+        - /url: /hotels/hotels-in-chennai-ct/
+    - listitem:
+      - link "Hotels In Tirupati |":
+        - /url: /hotels/hotels-in-tirupati-ct/
+    - listitem:
+      - link "Hotels In Kolkata |":
+        - /url: /hotels/hotels-in-kolkata-ct/
+    - listitem:
+      - link "Hotels In Munnar |":
+        - /url: /hotels/hotels-in-munnar-ct/
+    - listitem:
+      - link "Hotels In Indore |":
+        - /url: /hotels/hotels-in-indore-ct/
+    - listitem:
+      - link "Hotels In Gurgaon |":
+        - /url: /hotels/hotels-in-gurgaon-ct/
+    - listitem:
+      - link "Hotels In Jodhpur |":
+        - /url: /hotels/hotels-in-jodhpur-ct/
+    - listitem:
+      - link "Hotels In Gulmarg |":
+        - /url: /hotels/hotels-in-gulmarg-ct/
+    - listitem:
+      - link "Hotels In Srinagar |":
+        - /url: /hotels/hotels-in-srinagar-ct/
+    - listitem:
+      - link "Hotels In Dehradun |":
+        - /url: /hotels/hotels-in-dehradun-ct/
+    - listitem:
+      - link "Hotels In Shirdi |":
+        - /url: /hotels/hotels-in-shirdi-ct/
+    - listitem:
+      - link "Hotels In Ujjain |":
+        - /url: /hotels/hotels-in-ujjain-ct/
+    - listitem:
+      - link "Hotels In Alibag |":
+        - /url: /hotels/hotels-in-alibag-ct/
+    - listitem:
+      - link "Hotels In Lucknow |":
+        - /url: /hotels/hotels-in-lucknow-ct/
+    - listitem:
+      - link "Hotels In Madurai |":
+        - /url: /hotels/hotels-in-madurai-ct/
+    - listitem:
+      - link "Hotels In Dwarka":
+        - /url: /hotels/hotels-in-dwarka-ct/
+  - list:
+    - listitem: Popular International Destinations
+    - listitem:
+      - link "Hotels in Abu Dhabi |":
+        - /url: /hotels-international/hotels-in-abu-dhabi-ct/
+    - listitem:
+      - link "Hotels in Amsterdam |":
+        - /url: /hotels-international/hotels-in-amsterdam-ct/
+    - listitem:
+      - link "Hotels in Bali |":
+        - /url: /hotels-international/hotels-in-bali-ct/
+    - listitem:
+      - link "Hotels in Bangkok |":
+        - /url: /hotels-international/hotels-in-bangkok-ct/
+    - listitem:
+      - link "Hotels in Barcelona |":
+        - /url: /hotels-international/hotels-in-barcelona-ct/
+    - listitem:
+      - link "Hotels in Budapest |":
+        - /url: /hotels-international/hotels-in-budapest-ct/
+    - listitem:
+      - link "Hotels in Colombo |":
+        - /url: /hotels-international/hotels-in-colombo-ct/
+    - listitem:
+      - link "Hotels in Dhaka |":
+        - /url: /hotels-international/hotels-in-dhaka-ct/
+    - listitem:
+      - link "Hotels in Dubai |":
+        - /url: /hotels-international/hotels-in-dubai-ct/
+    - listitem:
+      - link "Hotels in Hanoi |":
+        - /url: /hotels-international/hotels-in-hanoi-ct/
+    - listitem:
+      - link "Hotels in Ho Chi Minh City |":
+        - /url: /hotels-international/hotels-in-ho-chi-minh-ct/
+    - listitem:
+      - link "Hotels in Istanbul |":
+        - /url: /hotels-international/hotels-in-istanbul-ct/
+    - listitem:
+      - link "Hotels in Jakarta |":
+        - /url: /hotels-international/hotels-in-jakarta-ct/
+    - listitem:
+      - link "Hotels in Kathmandu |":
+        - /url: /hotels-international/hotels-in-kathmandu-ct/
+    - listitem:
+      - link "Hotels in Koh Samui |":
+        - /url: /hotels-international/hotels-in-ko-samui-ct/
+    - listitem:
+      - link "Hotels in Krabi |":
+        - /url: /hotels-international/hotels-in-krabi-ct/
+    - listitem:
+      - link "Hotels in KualaLumpur |":
+        - /url: /hotels-international/hotels-in-kuala-lumpur-ct/
+    - listitem:
+      - link "Hotels in Langkawi |":
+        - /url: /hotels-international/hotels-in-langkawi-ct/
+    - listitem:
+      - link "Hotels in Las Vegas |":
+        - /url: /hotels-international/hotels-in-las-vegas-ct/
+    - listitem:
+      - link "Hotels in London |":
+        - /url: /hotels-international/hotels-in-london-ct/
+    - listitem:
+      - link "Hotels in Los Angeles |":
+        - /url: /hotels-international/hotels-in-los-angeles-ct/
+    - listitem:
+      - link "Hotels in Madrid |":
+        - /url: /hotels-international/hotels-in-madrid-ct/
+    - listitem:
+      - link "Hotels in Maldives |":
+        - /url: /hotels-international/hotels-in-maldives-ct/
+    - listitem:
+      - link "Hotels in Melbourne |":
+        - /url: /hotels-international/hotels-in-melbourne-ct/
+    - listitem:
+      - link "Hotels in Milan |":
+        - /url: /hotels-international/hotels-in-milan-ct/
+    - listitem:
+      - link "Hotels in New York |":
+        - /url: /hotels-international/hotels-in-new-york-ct/
+    - listitem:
+      - link "Hotels in Paris |":
+        - /url: /hotels-international/hotels-in-paris-ct/
+    - listitem:
+      - link "Hotels in Pattaya |":
+        - /url: /hotels-international/hotels-in-pattaya-ct/
+    - listitem:
+      - link "Hotels in Phi Phi |":
+        - /url: /hotels-international/hotels-in-phi-phi-ct/
+    - listitem:
+      - link "Hotels in Phuket |":
+        - /url: /hotels-international/hotels-in-phuket-ct/
+    - listitem:
+      - link "Hotels in Pokhara |":
+        - /url: /hotels-international/hotels-in-pokhara-ct/
+    - listitem:
+      - link "Hotels in Prague |":
+        - /url: /hotels-international/hotels-in-prague-ct/
+    - listitem:
+      - link "Hotels in Rome |":
+        - /url: /hotels-international/hotels-in-rome-ct/
+    - listitem:
+      - link "Hotels in Seoul |":
+        - /url: /hotels-international/hotels-in-seoul-ct/
+    - listitem:
+      - link "Hotels in Singapore |":
+        - /url: /hotels-international/hotels-in-singapore-ct/
+    - listitem:
+      - link "Hotels in Sydney |":
+        - /url: /hotels-international/hotels-in-sydney-ct/
+    - listitem:
+      - link "Hotels in Toronto |":
+        - /url: /hotels-international/hotels-in-toronto-ct/
+    - listitem:
+      - link "Hotels in Vienna |":
+        - /url: /hotels-international/hotels-in-vienna-ct/
+    - listitem:
+      - link "Hotels in Zurich":
+        - /url: /hotels-international/hotels-in-zurich-ct/
+  - list:
+    - listitem: Best Hotels in India
+    - listitem:
+      - link "Fairmont Jaipur |":
+        - /url: /hotels/fairmont-jaipur-hotel-in-jaipur-3705436691483966038/
+    - listitem:
+      - link "Poovar Island Resort |":
+        - /url: /hotels/poovar-island-resort-hotel-in-kovalam-and-poovar-256697835220164657/
+    - listitem:
+      - link "Grand Hyatt Goa |":
+        - /url: /hotels/grand-hyatt-goa-hotel-in-goa-7052346760803278547/
+    - listitem:
+      - link "Hyatt Regency Delhi |":
+        - /url: /hotels/hyatt-regency-new-delhi-hotel-in-delhi-9142420642332856632/
+    - listitem:
+      - link "Shangri La Bangalore |":
+        - /url: /hotels/shangri-la-bengaluru-hotel-in-bangalore-2134243290328173619/
+    - listitem:
+      - link "W Goa |":
+        - /url: /hotels/w-goa-hotel-in-goa-1785326946148514167/
+    - listitem:
+      - link "St Regis Goa |":
+        - /url: /hotels/the-st-regis-goa-resort-hotel-in-goa-4288728801928140430/
+    - listitem:
+      - link "Neemrana Fort Palace |":
+        - /url: /hotels/neemrana-fort-palace-hotel-in-neemrana-3495841201653599678/
+    - listitem:
+      - link "Pune Jw Marriot |":
+        - /url: /hotels/jw-marriott-pune-hotel-in-pune-6878642549522917758/
+    - listitem:
+      - link "St Regis Mumbai |":
+        - /url: /hotels/the-st-regis-mumbai-hotel-in-mumbai-2259185842543986780/
+    - listitem:
+      - link "Oberoi Udaivilas |":
+        - /url: /hotels/the-oberoi-udaivilas-hotel-in-udaipur-549769109205954305/
+    - listitem:
+      - link "The Oberoi New Delhi |":
+        - /url: /hotels/the-oberoi-new-delhi-hotel-in-delhi-613301088464001415/
+    - listitem:
+      - link "The Oberoi Gurgaon |":
+        - /url: /hotels/the-oberoi-gurgaon-hotel-in-gurgaon-2827609215083581987/
+    - listitem:
+      - link "Pragati Resort |":
+        - /url: /hotels/pragati-resorts-hotel-in-chevella-1091215929770476625/
+    - listitem:
+      - link "Anantya Resorts |":
+        - /url: /hotels/anantya-resorts-90-minutes-from-kanyakumari-hotel-in-kuzhittura-1813165773764248779/
+    - listitem:
+      - link "Caravela Beach Resort |":
+        - /url: /hotels/caravela-beach-resort-hotel-in-goa-2562673241805735043/
+    - listitem:
+      - link "Hard Rock Hotel Goa |":
+        - /url: /hotels/hard-rock-goa-hotel-in-goa-6204281054243107966/
+    - listitem:
+      - link "Jw Marriot Juhu |":
+        - /url: /hotels/jw-marriott-mumbai-juhu-hotel-in-mumbai-621435388237994578/
+    - listitem:
+      - link "Rambagh Palace Jaipur |":
+        - /url: /hotels/rambagh-palace-jaipur-hotel-in-jaipur-8067249421476584243/
+    - listitem:
+      - link "Taj Lands End Mumbai |":
+        - /url: /hotels/taj-lands-end-mumbai-hotel-in-mumbai-4199641237453041402/
+    - listitem:
+      - link "The Lalit New Delhi |":
+        - /url: /hotels/the-lalit-new-delhi-hotel-in-delhi-8101075883614534610/
+    - listitem:
+      - link "The Tamara Coorg |":
+        - /url: /hotels/the-tamara-coorg-hotel-in-coorg-5305692073064587454/
+    - listitem:
+      - link "The Lalit Mumbai |":
+        - /url: /hotels/the-lalit-mumbai-hotel-in-mumbai-2669368190285485327/
+    - listitem:
+      - link "The Westin Gurgaon |":
+        - /url: /hotels/the-westin-gurgaon-hotel-in-gurgaon-5777885094270189134/
+    - listitem:
+      - link "Radisson Blu Jaipur |":
+        - /url: /hotels/radisson-blu-jaipur-hotel-in-jaipur-4220755785812276556/
+    - listitem:
+      - link "Le Meridien Delhi |":
+        - /url: /hotels/le-meridien-delhi-hotel-in-delhi-3482138910888528142/
+    - listitem:
+      - link "Noor Mahal Karnal |":
+        - /url: /hotels/noormahal-palace-hotel-in-karnal-5413360982268514379/
+    - listitem:
+      - link "Riva Beach Resort |":
+        - /url: /hotels/riva-beach-resort-hotel-in-goa-3556755249973580132/
+    - listitem:
+      - link "Kolkata Novotel |":
+        - /url: /hotels/novotel-kolkata-and-residences-hotel-in-kolkata-8743167771483396988/
+    - listitem:
+      - link "Le Meridian Kochi |":
+        - /url: /hotels/le-meridien-kochi-hotel-in-cochin-220676248752825245/
+    - listitem:
+      - link "Novotel Hyderabad |":
+        - /url: /hotels/novotel-hyderabad-convention-centre-hotel-in-hyderabad-9162707033293667659/
+    - listitem:
+      - link "The Park Hyderabad |":
+        - /url: /hotels/the-park-hyderabad-hotel-in-hyderabad-5488961804095902520/
+    - listitem:
+      - link "Grand Hyatt Mumbai |":
+        - /url: /hotels/grand-hyatt-mumbai-hotel-in-mumbai-7675928449188062253/
+    - listitem:
+      - link "Jw Marriott Chandigarh |":
+        - /url: /hotels/jw-marriott-chandigarh-hotel-in-chandigarh-3404891203534122632/
+    - listitem:
+      - link "Jaipur Marriott |":
+        - /url: /hotels/jaipur-marriott-hotel-in-jaipur-4469461092451461967/
+    - listitem:
+      - link "Suryagarh Jaisalmer |":
+        - /url: /hotels/suryagarh-hotel-in-jaisalmer-4291819611266729617/
+    - listitem:
+      - link "Hilton Jaipur |":
+        - /url: /hotels/hilton-jaipur-hotel-in-jaipur-2840109404644229079/
+    - listitem:
+      - link "Taj Lake Palace Udaipur |":
+        - /url: /hotels/taj-lake-palace-udaipur-hotel-in-udaipur-6241234671535862047/
+    - listitem:
+      - link "The Leela Palace Udaipur |":
+        - /url: /hotels/the-leela-palace-udaipur-hotel-in-udaipur-177845278041106850/
+    - listitem:
+      - link "Alila Diwa Goa |":
+        - /url: /hotels/alila-diwa-goa-a-hyatt-brand-hotel-in-goa-4969285575410761484/
+    - listitem:
+      - link "Evolve Back Coorg |":
+        - /url: /hotels/evolve-back-coorg-hotel-in-coorg-5366469491386115/
+    - listitem:
+      - link "Hyatt Regency Chennai |":
+        - /url: /hotels/hyatt-regency-chennai-hotel-in-chennai-7268754283796166998/
+    - listitem:
+      - link "Le Meridian Goa |":
+        - /url: /hotels/le-meridien-goa-calangute-hotel-in-goa-6002617006388420777/
+    - listitem:
+      - link "Trident Udaipur |":
+        - /url: /hotels/trident-udaipur-hotel-in-udaipur-2803594150600742947/
+    - listitem:
+      - link "Hyatt Ahmedabad |":
+        - /url: /hotels/hyatt-ahmedabad-hotel-in-ahmedabad-6743528188714075892/
+    - listitem:
+      - link "Jai Mahal Palace Jaipur |":
+        - /url: /hotels/jai-mahal-palace-hotel-in-jaipur-3627964818237877602/
+    - listitem:
+      - link "Le Meridien Jaipur |":
+        - /url: /hotels/le-meridien-jaipur-resort-and-spa-hotel-in-jaipur-6409003448762447220/
+    - listitem:
+      - link "Evolve Back Hampi |":
+        - /url: /hotels/evolve-back-hampi-hotel-in-hampi-8062709488922704819/
+    - listitem:
+      - link "Four Seasons Hotel Mumbai |":
+        - /url: /hotels/four-seasons-mumbai-hotel-in-mumbai-2771357978394319845/
+    - listitem:
+      - link "Park Regis Goa":
+        - /url: /hotels/park-regis-hotel-in-goa-3432772422578352041/
+  - list:
+    - listitem: Book Best International Hotels
+    - listitem:
+      - link "Adaaran Club Rannalhi Maldives |":
+        - /url: /hotels-international/adaaran-club-rannalhi-hotel-in-maldives-5704156680580014325/
+    - listitem:
+      - link "Marina Bay Sands Singapore |":
+        - /url: /hotels-international/marina-bay-sands-hotel-in-singapore-1728322552750651111/
+    - listitem:
+      - link "City Max Hotel Dubai |":
+        - /url: /hotels-international/citymax-bur-dubai-hotel-in-dubai-4414785326951068945/
+    - listitem:
+      - link "Coco Bodu Hithi Maldives |":
+        - /url: /hotels-international/coco-bodu-hithi-hotel-in-maldives-46110670424411460/
+    - listitem:
+      - link "Mandarin Oriental New York |":
+        - /url: /hotels-international/mandarin-oriental-new-york-hotel-in-new-york-4415771087459863880/
+    - listitem:
+      - link "Omega Hotel Dubai |":
+        - /url: /hotels-international/omega-bur-dubai-hotel-in-dubai-8717013880260958680/
+    - listitem:
+      - link "Taj Dubai |":
+        - /url: /hotels-international/taj-dubai-hotel-in-dubai-8633274685082923520/
+    - listitem:
+      - link "Atlantis Dubai |":
+        - /url: /hotels-international/atlantis-the-palm-hotel-in-dubai-4330651393194178212/
+    - listitem:
+      - link "Adaaran Select Hudhuranfushi Maldives |":
+        - /url: /hotels-international/adaaran-select-hudhuran-fushi-premium-all-inclusive-hotel-in-maldives-3807613474965949223/
+    - listitem:
+      - link "Amari Phuket |":
+        - /url: /hotels-international/amari-phuket-hotel-in-phuket-8558485795000173379/
+    - listitem:
+      - link "Jw Marriott Dubai |":
+        - /url: /hotels-international/jw-marriott-marquis-dubai-hotel-in-dubai-4177709086249759875/
+    - listitem:
+      - link "Armani Hotel Dubai |":
+        - /url: /hotels-international/armani-dubai-in-burj-khalifa-hotel-in-dubai-3730054372038384336/
+    - listitem:
+      - link "Crowne Plaza Dubai |":
+        - /url: /hotels-international/crowne-plaza-dubai-deira-hotel-in-dubai-5656167485973531140/
+    - listitem:
+      - link "Grand Hyatt Dubai |":
+        - /url: /hotels-international/grand-hyatt-dubai-hotel-in-dubai-215429699156131369/
+    - listitem:
+      - link "Saii Lagoon Maldives |":
+        - /url: /hotels-international/saii-lagoon-maldives-curio-collection-by-hilton-hotel-in-maldives-1523216627908204744/
+    - listitem:
+      - link "Gevora Hotel Dubai |":
+        - /url: /hotels-international/gevora-hotel-in-dubai-2030024675550538532/
+    - listitem:
+      - link "Hotel Boss Singapore |":
+        - /url: /hotels-international/boss-singapore-hotel-in-singapore-5986716687642700398/
+    - listitem:
+      - link "Pan Pacific Singapore |":
+        - /url: /hotels-international/pan-pacific-singapore-hotel-in-singapore-7324303155455176059/
+    - listitem:
+      - link "Baiyoke Sky Hotel Bangkok |":
+        - /url: /hotels-international/baiyoke-sky-hotel-in-bangkok-6490235079223993231/
+    - listitem:
+      - link "Centara Pattaya Hotel |":
+        - /url: /hotels-international/centara-pattaya-hotel-in-pattaya-7594517178972733960/
+    - listitem:
+      - link "Orchard Hotel Singapore |":
+        - /url: /hotels-international/orchard-singapore-hotel-in-singapore-5363234563577314635/
+    - listitem:
+      - link "Park Regis Kris Kin Hotel Dubai |":
+        - /url: /hotels-international/park-regis-kris-kin-hotel-in-dubai-6351932847712374723/
+    - listitem:
+      - link "V Hotel Lavender Singapore |":
+        - /url: /hotels-international/v-lavender-singapore-hotel-in-singapore-1803572204298535505/
+    - listitem:
+      - link "Admiral Plaza Hotel Dubai |":
+        - /url: /hotels-international/admiral-plaza-hotel-in-dubai-6731100585351166158/
+    - listitem:
+      - link "Ambassador Hotel Bangkok |":
+        - /url: /hotels-international/ambassador-bangkok-hotel-in-bangkok-6318839311023327909/
+    - listitem:
+      - link "Dusit Thani Pattaya |":
+        - /url: /hotels-international/dusit-thani-pattaya-hotel-in-pattaya-7827663905760280948/
+    - listitem:
+      - link "Fairmont Dubai |":
+        - /url: /hotels-international/fairmont-dubai-hotel-in-dubai-540912642310425010/
+    - listitem:
+      - link "Grand Copthorne Waterfront Singapore |":
+        - /url: /hotels-international/grand-copthorne-waterfront-singapore-hotel-in-singapore-1849575190457027828/
+    - listitem:
+      - link "Jacob Garden Hotel Dubai |":
+        - /url: /hotels-international/jacobs-garden-hotel-in-dubai-8037161553449082695/
+    - listitem:
+      - link "Orchid Vue Hotel Dubai |":
+        - /url: /hotels-international/orchid-vue-hotel-in-dubai-4746969721484538844/
+    - listitem:
+      - link "Park Royal Singapore |":
+        - /url: /hotels-international/parkroyal-on-kitchener-road-hotel-in-singapore-5382092471514054162/
+    - listitem:
+      - link "Shangri La Dubai |":
+        - /url: /hotels-international/shangri-la-dubai-hotel-in-dubai-1693207602442768300/
+    - listitem:
+      - link "Shangri La Singapore |":
+        - /url: /hotels-international/shangri-la-singapore-hotel-in-singapore-6733759803455204370/
+    - listitem:
+      - link "Sunbeam Hotel Pattaya |":
+        - /url: /hotels-international/sunbeam-pattaya-hotel-in-pattaya-7147858237112878409/
+    - listitem:
+      - link "Taj Samudra Colombo |":
+        - /url: /hotels-international/taj-samudra-colombo-hotel-in-colombo-3694672976375182827/
+    - listitem:
+      - link "V Hotel Lavender Singapore |":
+        - /url: /hotels-international/v-lavender-singapore-hotel-in-singapore-1803572204298535505/
+    - listitem:
+      - link "Bangkok Palace Hotel |":
+        - /url: /hotels-international/bangkok-palace-hotel-in-bangkok-3910073458924902102/
+    - listitem:
+      - link "Krabi Resort Krabi |":
+        - /url: /hotels-international/krabi-resort-hotel-in-krabi-2992462296214885413/
+    - listitem:
+      - link "Hilton Pattaya |":
+        - /url: /hotels-international/hilton-pattaya-hotel-in-pattaya-175598987631917081/
+    - listitem:
+      - link "Hyatt Regency Kathmandu":
+        - /url: /hotels-international/hyatt-regency-kathmandu-hotel-in-kathmandu-8162479829890752487/
+  - list:
+    - listitem: Book Best Resorts in India
+    - listitem:
+      - link "Resorts In Wayanad |":
+        - /url: /hotels/resorts-in-wayanad-pt/
+    - listitem:
+      - link "Resorts In Bangalore |":
+        - /url: /hotels/resorts-in-bangalore-pt/
+    - listitem:
+      - link "Resorts In Lonavala |":
+        - /url: /hotels/resorts-in-lonavala-pt/
+    - listitem:
+      - link "Resorts In Munnar |":
+        - /url: /hotels/resorts-in-munnar-pt/
+    - listitem:
+      - link "Resorts In Hyderabad |":
+        - /url: /hotels/resorts-in-hyderabad-pt/
+    - listitem:
+      - link "Resorts In Coorg |":
+        - /url: /hotels/resorts-in-coorg-pt/
+    - listitem:
+      - link "Resorts In Chikmagalur |":
+        - /url: /hotels/resorts-in-chikmagalur-pt/
+    - listitem:
+      - link "Resorts In Ooty |":
+        - /url: /hotels/resorts-in-ooty-pt/
+    - listitem:
+      - link "Resorts In Dandeli |":
+        - /url: /hotels/resorts-in-dandeli-pt/
+    - listitem:
+      - link "Resorts In Pune |":
+        - /url: /hotels/resorts-in-pune-pt/
+    - listitem:
+      - link "Resorts In Goa |":
+        - /url: /hotels/resorts-in-goa-pt/
+    - listitem:
+      - link "Resorts In Pondicherry |":
+        - /url: /hotels/resorts-in-pondicherry-pt/
+    - listitem:
+      - link "Resorts In Alibag |":
+        - /url: /hotels/resorts-in-alibag-pt/
+    - listitem:
+      - link "Resorts In Sakleshpur |":
+        - /url: /hotels/resorts-in-sakleshpur-pt/
+    - listitem:
+      - link "Resorts In Yercaud |":
+        - /url: /hotels/resorts-in-yercaud-pt/
+    - listitem:
+      - link "Resorts In Kodaikanal |":
+        - /url: /hotels/resorts-in-kodaikanal-pt/
+    - listitem:
+      - link "Resorts In Udaipur |":
+        - /url: /hotels/resorts-in-udaipur-pt/
+    - listitem:
+      - link "Resorts In Mahabaleshwar |":
+        - /url: /hotels/resorts-in-mahabaleshwar-pt/
+    - listitem:
+      - link "Resorts In Kabini |":
+        - /url: /hotels/resorts-in-kabini-pt/
+    - listitem:
+      - link "Resorts In Igatpuri |":
+        - /url: /hotels/resorts-in-igatpuri-pt/
+    - listitem:
+      - link "Resorts In Vagamon |":
+        - /url: /hotels/resorts-in-vagamon-pt/
+    - listitem:
+      - link "Resorts In Mysore |":
+        - /url: /hotels/resorts-in-mysore-pt/
+    - listitem:
+      - link "Resorts In Rishikesh |":
+        - /url: /hotels/resorts-in-rishikesh-pt/
+    - listitem:
+      - link "Resorts In Varkala |":
+        - /url: /hotels/resorts-in-varkala-pt/
+    - listitem:
+      - link "Resorts In Jaipur |":
+        - /url: /hotels/resorts-in-jaipur-pt/
+    - listitem:
+      - link "Resorts In Mahabalipuram |":
+        - /url: /hotels/resorts-in-mahabalipuram-pt/
+    - listitem:
+      - link "Resorts In Yelagiri |":
+        - /url: /hotels/resorts-in-yelagiri-pt/
+    - listitem:
+      - link "Resorts In Valparai |":
+        - /url: /hotels/resorts-in-valparai-pt/
+    - listitem:
+      - link "Resorts In Daman |":
+        - /url: /hotels/resorts-in-daman-pt/
+    - listitem:
+      - link "Resorts In Mandarmani |":
+        - /url: /hotels/resorts-in-mandarmani-pt/
+    - listitem:
+      - link "Resorts In Kumbhalgarh |":
+        - /url: /hotels/resorts-in-kumbhalgarh-pt/
+    - listitem:
+      - link "Resorts In Gokarn |":
+        - /url: /hotels/resorts-in-gokarn-pt/
+    - listitem:
+      - link "Resorts In Kanakapura |":
+        - /url: /hotels/resorts-in-kanakapura-pt/
+    - listitem:
+      - link "Resorts In Thekkady |":
+        - /url: /hotels/resorts-in-thekkady-pt/
+    - listitem:
+      - link "Resorts In Matheran |":
+        - /url: /hotels/resorts-in-matheran-pt/
+    - listitem:
+      - link "Resorts In Manesar |":
+        - /url: /hotels/resorts-in-manesar-pt/
+    - listitem:
+      - link "Resorts In Kumarakom |":
+        - /url: /hotels/resorts-in-kumarakom-pt/
+    - listitem:
+      - link "Resorts In Mumbai |":
+        - /url: /hotels/resorts-in-mumbai-pt/
+    - listitem:
+      - link "Resorts In Pushkar |":
+        - /url: /hotels/resorts-in-pushkar-pt/
+    - listitem:
+      - link "Resorts In Bandipur":
+        - /url: /hotels/resorts-in-bandipur-pt/
+  - list:
+    - listitem: Best Hotels in Europe
+    - listitem:
+      - link "Garth Hotel London |":
+        - /url: /hotels-international/the-garth-hotel-in-london-241667383797144123/
+    - listitem:
+      - link "The May Fair London |":
+        - /url: /hotels-international/the-may-fair-a-radisson-collection-mayfair-london-hotel-in-london-9111436646572336706/
+    - listitem:
+      - link "The Connaught Hotel London |":
+        - /url: /hotels-international/the-connaught-hotel-in-london-6615776948781657888/
+    - listitem:
+      - link "The Ritz London |":
+        - /url: /hotels-international/the-ritz-carlton-hotel-in-dubai-9111816721945060334/
+    - listitem:
+      - link "The Tower Hotel London |":
+        - /url: /hotels-international/the-tower-hotel-in-london-3558115326925951457/
+    - listitem:
+      - link "Hotel Piemonte Rome |":
+        - /url: /hotels-international/piemonte-hotel-in-rome-1095879246209965887/
+    - listitem:
+      - link "Gezi Hotel Bosphorus Istanbul |":
+        - /url: /hotels-international/gezi-bosphorus-a-member-of-design-hotels-by-marriott-hotel-in-istanbul-1643781461346297511/
+    - listitem:
+      - link "Chouchou Hotel Paris |":
+        - /url: /hotels-international/chouchou-hotel-in-paris-6824856517620046809/
+    - listitem:
+      - link "CVK Park Bosphorus Istanbul |":
+        - /url: /hotels-international/cvk-park-bosphorus-istanbul-hotel-in-istanbul-3205507975861756321/
+    - listitem:
+      - link "black elephant Phunphin |":
+        - /url: /hotels-international/black-elephant-boutique-hotel-in-phunphin-1929823714250737072/
+    - listitem:
+      - link "Fer Hotel Istanbul |":
+        - /url: /hotels-international/fer-hotel-in-istanbul-7845502803371886391/
+    - listitem:
+      - link "Hotel Regente Madrid |":
+        - /url: /hotels-international/regente-hotel-in-madrid-8915026307092047227/
+    - listitem:
+      - link "Hotel Camelia Rome |":
+        - /url: /hotels-international/camelia-hotel-in-rome-8790198536694693504/
+    - listitem:
+      - link "Drawing Hotel Paris |":
+        - /url: /hotels-international/drawing-hotel-in-paris-496357847160189677/
+    - listitem:
+      - link "Opera Inn Suites Rome |":
+        - /url: /hotels-international/opera-private-suites-hotel-in-rome-2986906126919461061/
+    - listitem:
+      - link "Nova Hotel & Apartments |":
+        - /url: /hotels-international/nova-apartments-hotel-in-amsterdam-489361076886384973/
+    - listitem:
+      - link "Rome Cavalieri Rome |":
+        - /url: /hotels-international/rome-cavalieri-a-waldorf-astoria-hotel-in-rome-1102209542268719294/
+    - listitem:
+      - link "Four Elements Hotel Amsterdam |":
+        - /url: /hotels-international/four-elements-amsterdam-hotel-in-amsterdam-3190875280419375250/
+    - listitem:
+      - link "Hotel Krone Unterstrass Zurich |":
+        - /url: /hotels-international/krone-unterstrass-hotel-in-zurich-and-greater-zurich-area-2510892166130966827/
+    - listitem:
+      - link "Hotel Arts Barcelona |":
+        - /url: /hotels-international/arts-barcelona-hotel-in-barcelona-4118289302974577600/
+    - listitem:
+      - link "Hotel XX Settembre Rome |":
+        - /url: /hotels-international/in-xx-settembre-rome-hotel-in-rome-1884666384820181056/
+    - listitem:
+      - link "Garni Hotel Bristol Zurich |":
+        - /url: /hotels-international/bristol-hotel-in-zurich-and-greater-zurich-area-3318431553674074865/
+    - listitem:
+      - link "Hotel Tamara Amsterdam |":
+        - /url: /hotels-international/tamara-hotel-in-amsterdam-1128913241090515399/
+    - listitem:
+      - link "Bulgari Hotel Milan |":
+        - /url: /hotels-international/bulgari-milan-hotel-in-milan-6277673155106512447/
+    - listitem:
+      - link "Grand Peninsula Hotel Istanbul |":
+        - /url: /hotels-international/grand-peninsula-hotel-in-istanbul-1681463789112761208/
+    - listitem:
+      - link "Royal Hotel Zurich |":
+        - /url: /hotels-international/royal-zurich-hotel-in-zurich-and-greater-zurich-area-2834568793714662724/
+    - listitem:
+      - link "Central Plaza Zurich |":
+        - /url: /hotels-international/central-plaza-hotel-in-zurich-and-greater-zurich-area-7010527748806008846/
+    - listitem:
+      - link "Gallery Hotel Barcelona |":
+        - /url: /hotels-international/gallery-hotel-in-barcelona-4825827545734044706/
+    - listitem:
+      - link "Pullman Paris Tour Eiffel |":
+        - /url: /hotels-international/pullman-paris-tour-eiffel-hotel-in-paris-674548007023812106/
+    - listitem:
+      - link "Pera Palace Hotel Istanbul |":
+        - /url: /hotels-international/pera-palace-hotel-in-istanbul-2405600008130285594/
+    - listitem:
+      - link "Hotel Roma Tor Vergata |":
+        - /url: /hotels-international/roma-tor-vergata-hotel-in-rome-5652357518386788601/
+    - listitem:
+      - link "Placid Hotel Zurich |":
+        - /url: /hotels-international/placid-design-lifestyle-zurich-hotel-in-zurich-and-greater-zurich-area-5628878138795224313/
+    - listitem:
+      - link "Four Seasons Hotel Paris |":
+        - /url: /hotels-international/four-seasons-george-v-hotel-in-paris-2138033960208705754/
+    - listitem:
+      - link "Bricks Hotel Istanbul |":
+        - /url: /hotels-international/bricks-istanbul-hotel-in-istanbul-8019112434732119912/
+    - listitem:
+      - link "Hotel Saba Sultan Istanbul |":
+        - /url: /hotels-international/saba-sultan-hotel-in-istanbul-811942107524978329/
+    - listitem:
+      - link "Apple Inn Hotel Amsterdam |":
+        - /url: /hotels-international/apple-inn-hotel-in-amsterdam-7692480425176675444/
+    - listitem:
+      - link "Ajwa Hotel Sultanahmet Istanbul |":
+        - /url: /hotels-international/ajwa-sultanahmet-hotel-in-istanbul-468667270864237257/
+    - listitem:
+      - link "Hotel De La Paix Paris |":
+        - /url: /hotels-international/de-la-paix-tour-eiffel-hotel-in-paris-6030693285218357857/
+    - listitem:
+      - link "Hotel Romance Rome |":
+        - /url: /hotels-international/romance-al-colosseo-hotel-in-rome-264431297658521343/
+    - listitem:
+      - link "Holiday Inn Paris |":
+        - /url: /hotels-international/holiday-inn-paris-notre-dame-hotel-in-paris-177044736601324891/
+    - listitem:
+      - link "Hotel City Garden Amsterdam":
+        - /url: /hotels-international/city-garden-amsterdam-hotel-in-amsterdam-2778409190837227289/
+  - list:
+    - listitem: Popular Bus Routes
+    - listitem:
+      - link "delhi to manali bus |":
+        - /url: /bus/delhi-to-manali-bus-tickets/
+    - listitem:
+      - link "jaipur to delhi bus |":
+        - /url: /bus/jaipur-to-delhi-bus-tickets/
+    - listitem:
+      - link "chandigarh to delhi bus |":
+        - /url: /bus/chandigarh-to-delhi-bus-tickets/
+    - listitem:
+      - link "bangalore to goa bus |":
+        - /url: /bus/bengaluru-to-goa-bus-tickets/
+    - listitem:
+      - link "mumbai to goa bus |":
+        - /url: /bus/mumbai-to-goa-bus-tickets//
+    - listitem:
+      - link "delhi to dehradun bus |":
+        - /url: /bus/delhi-to-dehradun-bus-tickets/
+    - listitem:
+      - link "delhi to chandigarh bus |":
+        - /url: /bus/delhi-to-chandigarh-bus-tickets/
+    - listitem:
+      - link "bangalore to chennai bus |":
+        - /url: /bus/bengaluru-to-chennai-bus-tickets/
+    - listitem:
+      - link "hyderabad to bangalore bus |":
+        - /url: /bus/hyderabad-to-bengaluru-bus-tickets/
+    - listitem:
+      - link "bangalore to hyderabad bus |":
+        - /url: /bus/bengaluru-to-hyderabad-bus-tickets/
+    - listitem:
+      - link "delhi to jaipur bus |":
+        - /url: /bus/delhi-to-jaipur-bus-tickets/
+    - listitem:
+      - link "chennai to bangalore bus |":
+        - /url: /bus/chennai-to-bengaluru-bus-tickets/
+    - listitem:
+      - link "indore to bhopal bus |":
+        - /url: /bus/indore-to-bhopal-bus-tickets/
+    - listitem:
+      - link "delhi to shimla bus |":
+        - /url: /bus/delhi-to-shimla-bus-tickets/
+    - listitem:
+      - link "kolkata to siliguri bus":
+        - /url: /bus/kolkata-to-siliguri-bus-tickets/
+  - list:
+    - listitem: Popular Cab Routes
+    - listitem:
+      - link "mumbai to vadodara cab |":
+        - /url: /cars/mumbai-to-vadodara-cabs/
+    - listitem:
+      - link "mumbai to pune cab |":
+        - /url: /cars/mumbai-to-pune-cabs/
+    - listitem:
+      - link "mumbai to nashik cab |":
+        - /url: /cars/mumbai-to-nasik-cabs/
+    - listitem:
+      - link "nashik to mumbai cab |":
+        - /url: /cars/nasik-to-mumbai-cabs/
+    - listitem:
+      - link "pune to mumbai cab |":
+        - /url: /cars/pune-to-mumbai-cabs/
+    - listitem:
+      - link "delhi to manali cab |":
+        - /url: /cars/delhi-to-manali-cabs/
+    - listitem:
+      - link "delhi to chandigarh cab |":
+        - /url: /cars/delhi-to-chandigarh-cabs/
+    - listitem:
+      - link "pune to shirdi cab |":
+        - /url: /cars/pune-to-shirdi-cabs/
+    - listitem:
+      - link "delhi to jaipur cab |":
+        - /url: /cars/delhi-to-jaipur-cabs/
+    - listitem:
+      - link "mumbai to surat cab |":
+        - /url: /cars/mumbai-to-surat-cabs/
+    - listitem:
+      - link "vadodara to mumbai cab |":
+        - /url: /cars/vadodara-to-mumbai-cabs/
+    - listitem:
+      - link "pune to nashik cab |":
+        - /url: /cars/pune-to-nasik-cabs/
+    - listitem:
+      - link "chandigarh to manali cab |":
+        - /url: /cars/chandigarh-to-manali-cabs/
+    - listitem:
+      - link "delhi to shimla cab |":
+        - /url: /cars/delhi-to-shimla-cabs/
+    - listitem:
+      - link "pune to lonavala cab":
+        - /url: /cars/pune-to-lonavala-cabs/
+  - list:
+    - listitem: Popular Train Routes
+    - listitem:
+      - link "delhi to goa train |":
+        - /url: /trains/delhi-to-goa-trains/
+    - listitem:
+      - link "chennai to bangalore train |":
+        - /url: /trains/chennai-to-bangalore-trains/
+    - listitem:
+      - link "mumbai to goa train |":
+        - /url: /trains/mumbai-to-goa-trains/
+    - listitem:
+      - link "mumbai to delhi train |":
+        - /url: /trains/mumbai-to-delhi-trains/
+    - listitem:
+      - link "delhi to mumbai train |":
+        - /url: /trains/delhi-to-mumbai-trains/
+    - listitem:
+      - link "bangalore to chennai train |":
+        - /url: /trains/bangalore-to-chennai-trains/
+    - listitem:
+      - link "bangalore to goa train |":
+        - /url: /trains/bangalore-to-goa-trains/
+    - listitem:
+      - link "delhi to jaipur train |":
+        - /url: /trains/delhi-to-jaipur-trains/
+    - listitem:
+      - link "patna to gaya train |":
+        - /url: /trains/patna-to-gaya-trains/
+    - listitem:
+      - link "delhi to chandigarh train |":
+        - /url: /trains/delhi-to-chandigarh-trains/
+    - listitem:
+      - link "jaipur to delhi train |":
+        - /url: /trains/jaipur-to-delhi-trains/
+    - listitem:
+      - link "mysore to bangalore train |":
+        - /url: /trains/mysore-to-bangalore-trains/
+    - listitem:
+      - link "delhi to agra train |":
+        - /url: /trains/delhi-to-agra-trains/
+    - listitem:
+      - link "delhi to lucknow train |":
+        - /url: /trains/delhi-to-lucknow-trains/
+    - listitem:
+      - link "mumbai to pune train":
+        - /url: /trains/mumbai-to-pune-trains/
+  - list:
+    - listitem: Popular Flight Sectors
+    - listitem:
+      - link "Kolkata to Delhi Flight |":
+        - /url: https://www.goibibo.com/flights/kolkata-to-delhi-flights/
+    - listitem:
+      - link "Hyderabad to Delhi Flight |":
+        - /url: https://www.goibibo.com/flights/hyderabad-to-delhi-flights/
+    - listitem:
+      - link "Chennai to Hyderabad Flight |":
+        - /url: https://www.goibibo.com/flights/chennai-to-hyderabad-flights/
+    - listitem:
+      - link "Delhi to Guwahati Flight |":
+        - /url: https://www.goibibo.com/flights/delhi-to-guwahati-flights/
+    - listitem:
+      - link "Lucknow to Delhi Flight |":
+        - /url: https://www.goibibo.com/flights/lucknow-to-delhi-flights/
+    - listitem:
+      - link "Nagpur to Mumbai Flight |":
+        - /url: https://www.goibibo.com/flights/nagpur-to-mumbai-flights/
+    - listitem:
+      - link "Ranchi to Delhi Flight |":
+        - /url: https://www.goibibo.com/flights/ranchi-to-delhi-flights/
+    - listitem:
+      - link "Ahmedabad to Goa Flight |":
+        - /url: https://www.goibibo.com/flights/ahmedabad-to-goa-flights/
+    - listitem:
+      - link "Mumbai to Chandigarh Flight |":
+        - /url: https://www.goibibo.com/flights/mumbai-to-chandigarh-flights/
+    - listitem:
+      - link "Pune to Kolkata Flight |":
+        - /url: https://www.goibibo.com/flights/pune-to-kolkata-flights/
+    - listitem:
+      - link "Bangalore to Bhubaneshwar Flight |":
+        - /url: https://www.goibibo.com/flights/bangalore-to-bhubaneswar-flights/
+    - listitem:
+      - link "Bangalore to Guwahati Flight |":
+        - /url: https://www.goibibo.com/flights/bangalore-to-guwahati-flights/
+    - listitem:
+      - link "Chennai to Goa Flight |":
+        - /url: https://www.goibibo.com/flights/chennai-to-goa-flights/
+    - listitem:
+      - link "Chennai to Kolkata Flight |":
+        - /url: https://www.goibibo.com/flights/chennai-to-kolkata-flights/
+    - listitem:
+      - link "Delhi to Jaipur Flight |":
+        - /url: https://www.goibibo.com/flights/delhi-to-jaipur-flights/
+    - listitem:
+      - link "Delhi to Leh Flight |":
+        - /url: https://www.goibibo.com/flights/delhi-to-leh-flights/
+    - listitem:
+      - link "Hyderabad to Goa Flight |":
+        - /url: https://www.goibibo.com/flights/hyderabad-to-goa-flights/
+    - listitem:
+      - link "Bangalore to Ranchi Flight |":
+        - /url: https://www.goibibo.com/flights/bangalore-to-ranchi-flights/
+    - listitem:
+      - link "Delhi to Bagdogra Flight |":
+        - /url: https://www.goibibo.com/flights/delhi-to-siliguri-flights/
+    - listitem:
+      - link "Srinagar to Delhi Flight":
+        - /url: https://www.goibibo.com/flights/srinagar-to-delhi-flights/
+  - list:
+    - listitem: Top Routes
+    - listitem:
+      - link "Chandigarh to Delhi Flight |":
+        - /url: https://www.goibibo.com/flights/chandigarh-to-delhi-flights/
+    - listitem:
+      - link "Delhi to Bhopal Flight |":
+        - /url: https://www.goibibo.com/flights/delhi-to-bhopal-flights/
+    - listitem:
+      - link "Delhi to Dehradun Flight |":
+        - /url: https://www.goibibo.com/flights/delhi-to-dehradun-flights/
+    - listitem:
+      - link "Delhi to Udaipur Flight |":
+        - /url: https://www.goibibo.com/flights/delhi-to-udaipur-flights/
+    - listitem:
+      - link "Hyderabad to Tirupati Flight |":
+        - /url: https://www.goibibo.com/flights/hyderabad-to-tirupati-flights/
+    - listitem:
+      - link "Kolkata to Chennai Flight |":
+        - /url: https://www.goibibo.com/flights/kolkata-to-chennai-flights/
+    - listitem:
+      - link "Kolkata to Guwahati Flight |":
+        - /url: https://www.goibibo.com/flights/kolkata-to-guwahati-flights/
+    - listitem:
+      - link "Mumbai to Amritsar Flight |":
+        - /url: https://www.goibibo.com/flights/mumbai-to-amritsar-flights/
+    - listitem:
+      - link "Mumbai to Dehradun Flight |":
+        - /url: https://www.goibibo.com/flights/mumbai-to-dehradun-flights/
+    - listitem:
+      - link "Indore to Goa Flight |":
+        - /url: https://www.goibibo.com/flights/indore-to-goa-flights/
+    - listitem:
+      - link "Jaipur to Delhi Flight |":
+        - /url: https://www.goibibo.com/flights/jaipur-to-delhi-flights/
+    - listitem:
+      - link "Kolkata to Bagdogra Flight |":
+        - /url: https://www.goibibo.com/flights/kolkata-to-siliguri-flights/
+    - listitem:
+      - link "Patna to Bangalore Flight |":
+        - /url: https://www.goibibo.com/flights/patna-to-bangalore-flights/
+    - listitem:
+      - link "Varanasi to Delhi Flight |":
+        - /url: https://www.goibibo.com/flights/varanasi-to-delhi-flights/
+    - listitem:
+      - link "Ahmedabad to Kolkata Flight |":
+        - /url: https://www.goibibo.com/flights/ahmedabad-to-kolkata-flights/
+    - listitem:
+      - link "Delhi to Gorakhpur Flight |":
+        - /url: https://www.goibibo.com/flights/delhi-to-gorakhpur-flights/
+    - listitem:
+      - link "Guwahati to Kolkata Flight |":
+        - /url: https://www.goibibo.com/flights/guwahati-to-kolkata-flights/
+    - listitem:
+      - link "Indore to Bangalore Flight |":
+        - /url: https://www.goibibo.com/flights/indore-to-bangalore-flights/
+    - listitem:
+      - link "Jaipur to Pune Flight |":
+        - /url: https://www.goibibo.com/flights/jaipur-to-pune-flights/
+    - listitem:
+      - link "Mumbai to Raipur Flight":
+        - /url: https://www.goibibo.com/flights/mumbai-to-raipur-flights/
+  - list:
+    - listitem: Popular Domestic Routes
+    - listitem:
+      - link "Patna to Kolkata Flight |":
+        - /url: https://www.goibibo.com/flights/patna-to-kolkata-flights/
+    - listitem:
+      - link "Ranchi to Bangalore Flight |":
+        - /url: https://www.goibibo.com/flights/ranchi-to-bangalore-flights/
+    - listitem:
+      - link "Patna to Delhi Flight |":
+        - /url: https://www.goibibo.com/flights/patna-to-delhi-flights/
+    - listitem:
+      - link "Bangalore to Goa Flight |":
+        - /url: https://www.goibibo.com/flights/bangalore-to-goa-flights/
+    - listitem:
+      - link "Delhi to Ranchi Flight |":
+        - /url: https://www.goibibo.com/flights/delhi-to-ranchi-flights/
+    - listitem:
+      - link "Pune to Nagpur Flight |":
+        - /url: https://www.goibibo.com/flights/pune-to-nagpur-flights/
+    - listitem:
+      - link "Chennai to Coimbatore Flight |":
+        - /url: https://www.goibibo.com/flights/chennai-to-coimbatore-flights/
+    - listitem:
+      - link "Delhi to Srinagar Flight |":
+        - /url: https://www.goibibo.com/flights/delhi-to-srinagar-flights/
+    - listitem:
+      - link "Goa to Mumbai Flight |":
+        - /url: https://www.goibibo.com/flights/goa-to-mumbai-flights/
+    - listitem:
+      - link "Hyderabad to Bangalore Flight |":
+        - /url: https://www.goibibo.com/flights/hyderabad-to-bangalore-flights/
+    - listitem:
+      - link "Indore to Delhi Flight |":
+        - /url: https://www.goibibo.com/flights/indore-to-delhi-flights/
+    - listitem:
+      - link "Kolkata to Mumbai Flight |":
+        - /url: https://www.goibibo.com/flights/kolkata-to-mumbai-flights/
+    - listitem:
+      - link "Mumbai to Nagpur Flight |":
+        - /url: https://www.goibibo.com/flights/mumbai-to-nagpur-flights/
+    - listitem:
+      - link "Mumbai to Varanasi Flight |":
+        - /url: https://www.goibibo.com/flights/mumbai-to-varanasi-flights/
+    - listitem:
+      - link "Pune to Goa Flight |":
+        - /url: https://www.goibibo.com/flights/pune-to-goa-flights/
+    - listitem:
+      - link "Bangalore to Chennai Flight |":
+        - /url: https://www.goibibo.com/flights/bangalore-to-chennai-flights/
+    - listitem:
+      - link "Bangalore to Jaipur Flight |":
+        - /url: https://www.goibibo.com/flights/bangalore-to-jaipur-flights/
+    - listitem:
+      - link "Chennai to Bangalore Flight |":
+        - /url: https://www.goibibo.com/flights/chennai-to-bangalore-flights/
+    - listitem:
+      - link "Chennai to Madurai Flight |":
+        - /url: https://www.goibibo.com/flights/chennai-to-madurai-flights/
+    - listitem:
+      - link "Delhi to Indore Flight":
+        - /url: https://www.goibibo.com/flights/delhi-to-indore-flights/
+  - list:
+    - listitem: Top Sectors
+    - listitem:
+      - link "Delhi to Jammu Flight |":
+        - /url: https://www.goibibo.com/flights/delhi-to-jammu-flights/
+    - listitem:
+      - link "Delhi to Varanasi Flight |":
+        - /url: https://www.goibibo.com/flights/delhi-to-varanasi-flights/
+    - listitem:
+      - link "Hyderabad to Chennai Flight |":
+        - /url: https://www.goibibo.com/flights/hyderabad-to-chennai-flights/
+    - listitem:
+      - link "Hyderabad to Mumbai Flight |":
+        - /url: https://www.goibibo.com/flights/hyderabad-to-mumbai-flights/
+    - listitem:
+      - link "Jaipur to Mumbai Flight |":
+        - /url: https://www.goibibo.com/flights/jaipur-to-mumbai-flights/
+    - listitem:
+      - link "Bangalore to Srinagar Flight |":
+        - /url: https://www.goibibo.com/flights/bangalore-to-srinagar-flights/
+    - listitem:
+      - link "Bhopal to Chennai Flight |":
+        - /url: https://www.goibibo.com/flights/bhopal-to-chennai-flights/
+    - listitem:
+      - link "Chandigarh to Mumbai Flight |":
+        - /url: https://www.goibibo.com/flights/chandigarh-to-mumbai-flights/
+    - listitem:
+      - link "Coimbatore to Ahmedabad Flight |":
+        - /url: https://www.goibibo.com/flights/coimbatore-to-ahmedabad-flights/
+    - listitem:
+      - link "Coimbatore to Bangalore Flight |":
+        - /url: https://www.goibibo.com/flights/coimbatore-to-bangalore-flights/
+    - listitem:
+      - link "Coimbatore to Mumbai Flight |":
+        - /url: https://www.goibibo.com/flights/coimbatore-to-mumbai-flights/
+    - listitem:
+      - link "Delhi to Chandigarh Flight |":
+        - /url: https://www.goibibo.com/flights/delhi-to-chandigarh-flights/
+    - listitem:
+      - link "Delhi to Coimbatore Flight |":
+        - /url: https://www.goibibo.com/flights/delhi-to-coimbatore-flights/
+    - listitem:
+      - link "Delhi to Raipur Flight |":
+        - /url: https://www.goibibo.com/flights/delhi-to-raipur-flights/
+    - listitem:
+      - link "Hyderabad to Kolkata Flight |":
+        - /url: https://www.goibibo.com/flights/hyderabad-to-kolkata-flights/
+    - listitem:
+      - link "Hyderabad to Vijaywada Flight |":
+        - /url: https://www.goibibo.com/flights/hyderabad-to-vijayawada-flights/
+    - listitem:
+      - link "Lucknow to Ahmedabad Flight |":
+        - /url: https://www.goibibo.com/flights/lucknow-to-ahmedabad-flights/
+    - listitem:
+      - link "Madurai to Chennai Flight":
+        - /url: https://www.goibibo.com/flights/madurai-to-chennai-flights/
+  - list:
+    - listitem: Top Airline Sectors
+    - listitem:
+      - link "Delhi to Goa Indigo Flight |":
+        - /url: /flights/delhi-to-goa-indigo-airline-schedule/
+    - listitem:
+      - link "Delhi to Mumbai Indigo Flight |":
+        - /url: /flights/delhi-to-mumbai-indigo-airline-schedule/
+    - listitem:
+      - link "Mumbai to Delhi Air India Flight |":
+        - /url: /flights/mumbai-to-delhi-air-india-airline-schedule/
+    - listitem:
+      - link "Delhi to Mumbai Air India Flight |":
+        - /url: /flights/delhi-to-mumbai-air-india-airline-schedule/
+    - listitem:
+      - link "Delhi to Goa Air India Flight |":
+        - /url: /flights/delhi-to-goa-air-india-airline-schedule/
+    - listitem:
+      - link "Mumbai to Delhi Vistara Flight |":
+        - /url: /flights/mumbai-to-delhi-vistara-airline-schedule/
+    - listitem:
+      - link "Bangalore to Delhi Indigo Flight |":
+        - /url: /flights/bangalore-to-delhi-indigo-airline-schedule/
+    - listitem:
+      - link "Delhi to Mumbai Vistara Flight |":
+        - /url: /flights/delhi-to-mumbai-vistara-airline-schedule/
+    - listitem:
+      - link "Delhi to Bangalore Indigo Flight |":
+        - /url: /flights/delhi-to-bangalore-indigo-airline-schedule/
+    - listitem:
+      - link "Mumbai to Delhi Indigo Flight |":
+        - /url: /flights/mumbai-to-delhi-indigo-airline-schedule/
+    - listitem:
+      - link "Delhi to Hyderabad Spicejet Flight |":
+        - /url: /flights/delhi-to-hyderabad-spicejet-airline-schedule/
+    - listitem:
+      - link "Delhi to Bangalore Air India Flight |":
+        - /url: /flights/delhi-to-bangalore-air-india-airline-schedule/
+    - listitem:
+      - link "Kolkata to Delhi Indigo Flight |":
+        - /url: /flights/kolkata-to-delhi-indigo-airline-schedule/
+    - listitem:
+      - link "Delhi to Kolkata Indigo Flight |":
+        - /url: /flights/delhi-to-kolkata-indigo-airline-schedule/
+    - listitem:
+      - link "Delhi to Patna Indigo Flight |":
+        - /url: /flights/delhi-to-patna-indigo-airline-schedule/
+    - listitem:
+      - link "Pune to Delhi Indigo Flight |":
+        - /url: /flights/pune-to-delhi-indigo-airline-schedule/
+    - listitem:
+      - link "Kolkata to Bangalore Indigo Flight |":
+        - /url: /flights/kolkata-to-bangalore-indigo-airline-schedule/
+    - listitem:
+      - link "Bangalore to Delhi Air India Flight |":
+        - /url: /flights/bangalore-to-delhi-air-india-airline-schedule/
+    - listitem:
+      - link "Bangalore to Mumbai Indigo Flight |":
+        - /url: /flights/bangalore-to-mumbai-indigo-airline-schedule/
+    - listitem:
+      - link "Mumbai to Goa Indigo Flight":
+        - /url: /flights/mumbai-to-goa-indigo-airline-schedule/
+  - list:
+    - listitem: Important Routes
+    - listitem:
+      - link "Madurai to Hyderabad Flight |":
+        - /url: https://www.goibibo.com/flights/madurai-to-hyderabad-flights/
+    - listitem:
+      - link "Mumbai to Srinagar Flight |":
+        - /url: https://www.goibibo.com/flights/mumbai-to-srinagar-flights/
+    - listitem:
+      - link "Pune to Ranchi Flight |":
+        - /url: https://www.goibibo.com/flights/pune-to-ranchi-flights/
+    - listitem:
+      - link "Raipur to Hyderabad Flight |":
+        - /url: https://www.goibibo.com/flights/raipur-to-hyderabad-flights/
+    - listitem:
+      - link "Raipur to Mumbai Flight |":
+        - /url: https://www.goibibo.com/flights/raipur-to-mumbai-flights/
+    - listitem:
+      - link "Bhopal to Hyderabad Flight |":
+        - /url: https://www.goibibo.com/flights/bhopal-to-hyderabad-flights/
+    - listitem:
+      - link "Bhubaneshwar to Chennai Flight |":
+        - /url: https://www.goibibo.com/flights/bhubaneswar-to-chennai-flights/
+    - listitem:
+      - link "Chennai to Nagpur Flight |":
+        - /url: https://www.goibibo.com/flights/chennai-to-nagpur-flights/
+    - listitem:
+      - link "Chennai to Port Blair Flight |":
+        - /url: https://www.goibibo.com/flights/chennai-to-port-blair-flights/
+    - listitem:
+      - link "Cochin to Chennai Flight |":
+        - /url: https://www.goibibo.com/flights/ernakulam-to-chennai-flights/
+    - listitem:
+      - link "Delhi to Mangalore Flight |":
+        - /url: https://www.goibibo.com/flights/delhi-to-mangalore-flights/
+    - listitem:
+      - link "Hyderabad to Nagpur Flight |":
+        - /url: https://www.goibibo.com/flights/hyderabad-to-nagpur-flights/
+    - listitem:
+      - link "Jammu to Delhi Flight |":
+        - /url: https://www.goibibo.com/flights/jammu-to-delhi-flights/
+    - listitem:
+      - link "Kolkata to Aizawl Flight |":
+        - /url: https://www.goibibo.com/flights/kolkata-to-aizawl-flights/
+    - listitem:
+      - link "Lucknow to Hyderabad Flight |":
+        - /url: https://www.goibibo.com/flights/lucknow-to-hyderabad-flights/
+    - listitem:
+      - link "Udaipur to Delhi Flight |":
+        - /url: https://www.goibibo.com/flights/udaipur-to-delhi-flights/
+    - listitem:
+      - link "Agartala to Delhi Flight |":
+        - /url: https://www.goibibo.com/flights/agartala-to-delhi-flights/
+    - listitem:
+      - link "Bangalore to Imphal Flight |":
+        - /url: https://www.goibibo.com/flights/bangalore-to-imphal-flights/
+    - listitem:
+      - link "Imphal to Guwahati Flight |":
+        - /url: https://www.goibibo.com/flights/imphal-to-guwahati-flights/
+    - listitem:
+      - link "Imphal to Kolkata Flight |":
+        - /url: https://www.goibibo.com/flights/imphal-to-kolkata-flights/
+    - listitem:
+      - link "Indore to Raipur Flight |":
+        - /url: https://www.goibibo.com/flights/indore-to-raipur-flights/
+    - listitem:
+      - link "Kozhikode to Chennai Flight |":
+        - /url: https://www.goibibo.com/flights/kozhikode-to-chennai-flights/
+    - listitem:
+      - link "Mumbai to Imphal Flight":
+        - /url: https://www.goibibo.com/flights/mumbai-to-imphal-flights/
+  - list:
+    - listitem: Trending Domestic Routes
+    - listitem:
+      - link "Ahmedabad to Mumbai Flight |":
+        - /url: https://www.goibibo.com/flights/ahmedabad-to-mumbai-flights/
+    - listitem:
+      - link "Bagdogra to Kolkata Flight |":
+        - /url: https://www.goibibo.com/flights/siliguri-to-kolkata-flights/
+    - listitem:
+      - link "Bangalore to Udaipur Flight |":
+        - /url: https://www.goibibo.com/flights/bangalore-to-udaipur-flights/
+    - listitem:
+      - link "Bhopal to Bangalore Flight |":
+        - /url: https://www.goibibo.com/flights/bhopal-to-bangalore-flights/
+    - listitem:
+      - link "Bhubaneshwar to Mumbai Flight |":
+        - /url: https://www.goibibo.com/flights/bhubaneswar-to-mumbai-flights/
+    - listitem:
+      - link "Chandigarh to Chennai Flight |":
+        - /url: https://www.goibibo.com/flights/chandigarh-to-chennai-flights/
+    - listitem:
+      - link "Chennai to Jaipur Flight |":
+        - /url: https://www.goibibo.com/flights/chennai-to-jaipur-flights/
+    - listitem:
+      - link "Delhi to Vadodara Flight |":
+        - /url: https://www.goibibo.com/flights/delhi-to-vadodara-flights/
+    - listitem:
+      - link "Goa to Pune Flight |":
+        - /url: https://www.goibibo.com/flights/goa-to-pune-flights/
+    - listitem:
+      - link "Hyderabad to Coimbatore Flight |":
+        - /url: https://www.goibibo.com/flights/hyderabad-to-coimbatore-flights/
+    - listitem:
+      - link "Hyderabad to Patna Flight |":
+        - /url: https://www.goibibo.com/flights/hyderabad-to-patna-flights/
+    - listitem:
+      - link "Jaipur to Bangalore Flight |":
+        - /url: https://www.goibibo.com/flights/jaipur-to-bangalore-flights/
+    - listitem:
+      - link "Lucknow to Kolkata Flight |":
+        - /url: https://www.goibibo.com/flights/lucknow-to-kolkata-flights/
+    - listitem:
+      - link "Mangalore to Bangalore Flight |":
+        - /url: https://www.goibibo.com/flights/mangalore-to-bangalore-flights/
+    - listitem:
+      - link "Mumbai to Coimbatore Flight |":
+        - /url: https://www.goibibo.com/flights/mumbai-to-coimbatore-flights/
+    - listitem:
+      - link "Mumbai to Indore Flight |":
+        - /url: https://www.goibibo.com/flights/mumbai-to-indore-flights/
+    - listitem:
+      - link "Mumbai to Rajkot Flight |":
+        - /url: https://www.goibibo.com/flights/mumbai-to-rajkot-flights/
+    - listitem:
+      - link "Mumbai to Surat Flight |":
+        - /url: https://www.goibibo.com/flights/mumbai-to-surat-flights/
+    - listitem:
+      - link "Mumbai to Vijaywada Flight |":
+        - /url: https://www.goibibo.com/flights/mumbai-to-vijayawada-flights/
+    - listitem:
+      - link "Pune to Chennai Flight |":
+        - /url: https://www.goibibo.com/flights/pune-to-chennai-flights/
+    - listitem:
+      - link "Bhubaneshwar to Kolkata Flight |":
+        - /url: https://www.goibibo.com/flights/bhubaneswar-to-kolkata-flights/
+    - listitem:
+      - link "Delhi to Kozhikode Flight |":
+        - /url: https://www.goibibo.com/flights/delhi-to-kozhikode-flights/
+    - listitem:
+      - link "Mumbai to Jodhpur Flight |":
+        - /url: https://www.goibibo.com/flights/mumbai-to-jodhpur-flights/
+    - listitem:
+      - link "Ranchi to Mumbai Flight |":
+        - /url: https://www.goibibo.com/flights/ranchi-to-mumbai-flights/
+    - listitem:
+      - link "Vadodara to Chennai Flight":
+        - /url: https://www.goibibo.com/flights/vadodara-to-chennai-flights/
+  - list:
+    - listitem: New Udaan Sectors
+    - listitem:
+      - link "Guwahati to Rupsi Flight |":
+        - /url: https://www.goibibo.com/flights/guwahati-to-rupsi-flights/
+    - listitem:
+      - link "Rupsi to Kolkata Flight |":
+        - /url: https://www.goibibo.com/flights/rupsi-to-kolkata-flights/
+    - listitem:
+      - link "Guwahati to Agartala Flight |":
+        - /url: https://www.goibibo.com/flights/guwahati-to-agartala-flights/
+    - listitem:
+      - link "Agartala to Dibrugarh Flight |":
+        - /url: https://www.goibibo.com/flights/agartala-to-dibrugarh-flights/
+    - listitem:
+      - link "Dibrugarh to Agartala Flight |":
+        - /url: https://www.goibibo.com/flights/guwahati-to-rupsi-flights/
+    - listitem:
+      - link "Agartala to Guwahati Flight |":
+        - /url: https://www.goibibo.com/flights/agartala-to-guwahati-flights/
+    - listitem:
+      - link "Guwahati to Pasighat Flight |":
+        - /url: https://www.goibibo.com/flights/guwahati-to-pasighat-flights/
+    - listitem:
+      - link "Pasighat to Shillong Flight |":
+        - /url: https://www.goibibo.com/flights/pasighat-to-shillong-flights/
+    - listitem:
+      - link "Shillong to Pasighat Flight |":
+        - /url: https://www.goibibo.com/flights/shillong-to-pasighat-flights/
+    - listitem:
+      - link "Pasighat to Guwahati Flight":
+        - /url: https://www.goibibo.com/flights/pasighat-to-guwahati-flights/
+  - list:
+    - listitem: Travel Insurance For
+    - listitem:
+      - link "Australia |":
+        - /url: /travel-insurance/australia/
+    - listitem:
+      - link "Bali |":
+        - /url: /travel-insurance/bali/
+    - listitem:
+      - link "Canada |":
+        - /url: /travel-insurance/canada/
+    - listitem:
+      - link "Dubai - UAE |":
+        - /url: /travel-insurance/dubai/
+    - listitem:
+      - link "Europe |":
+        - /url: /travel-insurance/europe/
+    - listitem:
+      - link "Germany |":
+        - /url: /travel-insurance/germany/
+    - listitem:
+      - link "Indonesia |":
+        - /url: /travel-insurance/indonesia/
+    - listitem:
+      - link "Italy |":
+        - /url: /travel-insurance/italy/
+    - listitem:
+      - link "Japan |":
+        - /url: /travel-insurance/japan/
+    - listitem:
+      - link "Malaysia |":
+        - /url: /travel-insurance/malaysia/
+    - listitem:
+      - link "Maldives |":
+        - /url: /travel-insurance/maldives/
+    - listitem:
+      - link "New Zealand |":
+        - /url: /travel-insurance/new-zealand/
+    - listitem:
+      - link "Singapore |":
+        - /url: /travel-insurance/singapore/
+    - listitem:
+      - link "Spain |":
+        - /url: /travel-insurance/spain/
+    - listitem:
+      - link "Sri Lanka |":
+        - /url: /travel-insurance/sri-lanka/
+    - listitem:
+      - link "Switzerland |":
+        - /url: /travel-insurance/switzerland/
+    - listitem:
+      - link "Thailand |":
+        - /url: /travel-insurance/thailand/
+    - listitem:
+      - link "Turkey |":
+        - /url: /travel-insurance/turkey/
+    - listitem:
+      - link "UK - United Kingdom |":
+        - /url: /travel-insurance/uk/
+    - listitem:
+      - link "USA - United States |":
+        - /url: /travel-insurance/usa/
+    - listitem:
+      - link "Vietnam":
+        - /url: /travel-insurance/vietnam/
+  - paragraph: Follow Us
+  - link "Facebook":
+    - /url: http://www.facebook.com/goibibo
+  - link "Twitter":
+    - /url: http://twitter.com/goibibo
+  - link "youtube":
+    - /url: http://www.youtube.com/user/goibibo
+  - link "Google Plus":
+    - /url: https://plus.google.com/+goibibo/
+  - paragraph: Book Tickets faster. Download our mobile Apps
+  - link:
+    - /url: https://play.google.com/store/apps/details?id=com.goibibo&referrer=af_tranid%3DvxsPvRUmXy7VkUyrYCgpaQ%26pid%3Dmobile_site%26c%3Dm_header%26af_web_id%3Df6a83147-2300-4c5b-860d-d0a4e2e56160-c%26utm_source%3Dmobile_site%26utm_campaign%3Dm_header
+  - link:
+    - /url: https://apps.apple.com/in/app/goibibo-flight-bus-hotel-booking/id631927169
+  - link:
+    - /url: https://www.makemytrip.com/
+  - link:
+    - /url: https://www.redbus.in/
+  - text: © 2025 Makemytrip (India) Private Limited. All rights reserved
+- iframe
+```
+
+# Test source
+
+```ts
+   1 | import { test,expect } from "@playwright/test";
+   2 | test("Select cheap ticket flight",async ({page}) => {
+   3 |     await page.goto("https://www.goibibo.com/");
+   4 |     await page.locator("//span[@class='logSprite icClose']").click();
+   5 |     await page.locator("//span[text()='From']/..").click();
+   6 |     await page.locator("//span[text()='From']/..//input").fill("Bengaluru");
+   7 |     let li1=await page.locator("//li[@role='presentation']//span[@class='autoCompleteTitle ']");
+   8 |     let from=li1.filter({
+   9 |         hasText:"Bengaluru, India"
+  10 |     })
+  11 |     await from.click();
+> 12 |     await page.locator("//span[text()='To']/..").click();
+     |                                                  ^ Error: locator.click: Error: strict mode violation: locator('//span[text()=\'To\']/..') resolved to 2 elements:
+  13 |     await page.locator("//span[text()='To']/..//input").fill("Mysore");
+  14 |     let li2=await page.locator("//li[@role='presentation']//span[@class='autoCompleteTitle ']");
+  15 |     let to=li2.filter({
+  16 |         hasText:"Chennai, India"
+  17 |     })
+  18 |     await to.click();
+  19 |     await page.waitForTimeout(5000);
+  20 | });
+```

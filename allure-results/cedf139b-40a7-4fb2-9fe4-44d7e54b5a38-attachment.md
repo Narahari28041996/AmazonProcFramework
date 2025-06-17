@@ -1,0 +1,1361 @@
+# Test info
+
+- Name: Add to Cart and verify whether the product is displayed
+- Location: C:\Users\DELL\Desktop\Project One\tests\addtocartamazon.spec.js:3:5
+
+# Error details
+
+```
+Error: page.goto: Test timeout of 30000ms exceeded.
+Call log:
+  - navigating to "https://www.amazon.in/", waiting until "load"
+
+    at C:\Users\DELL\Desktop\Project One\tests\addtocartamazon.spec.js:4:16
+```
+
+# Page snapshot
+
+```yaml
+- button "Shortcuts menu"
+- banner:
+  - navigation "Primary":
+    - link "Amazon.in":
+      - /url: /ref=nav_logo
+      - text: .in
+    - button "Delivering to Bengaluru 562130 Update location"
+    - search:
+      - text: All
+      - combobox "Select the department you want to search in":
+        - option "All Categories" [selected]
+        - option "Alexa Skills"
+        - option "Amazon Devices"
+        - option "Amazon Fashion"
+        - option "Amazon Fresh"
+        - option "Amazon Pharmacy"
+        - option "Appliances"
+        - option "Apps & Games"
+        - option "Audible Audiobooks"
+        - option "Baby"
+        - option "Beauty"
+        - option "Books"
+        - option "Car & Motorbike"
+        - option "Clothing & Accessories"
+        - option "Collectibles"
+        - option "Computers & Accessories"
+        - option "Deals"
+        - option "Electronics"
+        - option "Furniture"
+        - option "Garden & Outdoors"
+        - option "Gift Cards"
+        - option "Grocery & Gourmet Foods"
+        - option "Health & Personal Care"
+        - option "Home & Kitchen"
+        - option "Industrial & Scientific"
+        - option "Jewellery"
+        - option "Kindle Store"
+        - option "Luggage & Bags"
+        - option "Luxury Beauty"
+        - option "Movies & TV Shows"
+        - option "MP3 Music"
+        - option "Music"
+        - option "Musical Instruments"
+        - option "Office Products"
+        - option "Pet Supplies"
+        - option "Prime Video"
+        - option "Shoes & Handbags"
+        - option "Software"
+        - option "Sports, Fitness & Outdoors"
+        - option "Subscribe & Save"
+        - option "Tools & Home Improvement"
+        - option "Toys & Games"
+        - option "Under ₹500"
+        - option "Video Games"
+        - option "Watches"
+      - searchbox "Search Amazon.in"
+      - button "Go"
+    - link "Choose a language for shopping in Amazon India. The current selection is English (EN).":
+      - /url: /customer-preferences/edit?ie=UTF8&preferencesReturnUrl=%2F&ref_=topnav_lang
+      - img "India"
+      - text: EN
+    - link "Hello, sign in Account & Lists":
+      - /url: https://www.amazon.in/ap/signin?openid.pape.max_auth_age=0&openid.return_to=https%3A%2F%2Fwww.amazon.in%2F%3Fref_%3Dnav_ya_signin&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.assoc_handle=inflex&openid.mode=checkid_setup&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0
+    - button "Expand Account and Lists"
+    - link "Returns & Orders":
+      - /url: /gp/css/order-history?ref_=nav_orders_first
+    - link "0 items in cart":
+      - /url: /gp/cart/view.html?ref_=nav_cart
+    - button "Open All Categories Menu": All
+    - list:
+      - listitem:
+        - link "Fresh":
+          - /url: /fresh?ref_=nav_cs_fresh
+      - listitem:
+        - link "MX Player":
+          - /url: /minitv?ref_=nav_avod_desktop_topnav
+      - listitem:
+        - link "Sell":
+          - /url: /b/32702023031?node=32702023031&ld=AZINSOANavDesktop_T3&ref_=nav_cs_sell_T3
+      - listitem:
+        - link "Bestsellers":
+          - /url: /gp/bestsellers/?ref_=nav_cs_bestsellers
+      - listitem:
+        - link "Today's Deals":
+          - /url: /deals?ref_=nav_cs_gb
+      - listitem:
+        - link "Mobiles":
+          - /url: /mobile-phones/b/?ie=UTF8&node=1389401031&ref_=nav_cs_mobiles
+      - listitem:
+        - link "Fashion":
+          - /url: /gp/browse.html?node=6648217031&ref_=nav_cs_fashion
+      - listitem:
+        - link "Customer Service":
+          - /url: /gp/help/customer/display.html?nodeId=200507590&ref_=nav_cs_help
+      - listitem:
+        - link "Prime":
+          - /url: /prime?ref_=nav_cs_primelink_nonmember
+        - button "Prime Details"
+      - listitem:
+        - link "New Releases":
+          - /url: /gp/new-releases/?ref_=nav_cs_newreleases
+      - listitem:
+        - link "Electronics":
+          - /url: /electronics/b/?ie=UTF8&node=976419031&ref_=nav_cs_electronics
+      - listitem:
+        - link "Home & Kitchen":
+          - /url: /Home-Kitchen/b/?ie=UTF8&node=976442031&ref_=nav_cs_home
+      - listitem:
+        - link "Amazon Pay":
+          - /url: /gp/sva/dashboard?ref_=nav_cs_apay
+      - listitem:
+        - link "Car & Motorbike":
+          - /url: /Car-Motorbike-Store/b/?ie=UTF8&node=4772060031&ref_=nav_cs_automotive
+      - listitem:
+        - link "Computers":
+          - /url: /computers-and-accessories/b/?ie=UTF8&node=976392031&ref_=nav_cs_pc
+      - listitem:
+        - link "Books":
+          - /url: /Books/b/?ie=UTF8&node=976389031&ref_=nav_cs_books
+      - listitem:
+        - link "Toys & Games":
+          - /url: /Toys-Games/b/?ie=UTF8&node=1350380031&ref_=nav_cs_toys
+      - listitem:
+        - link "Beauty & Personal Care":
+          - /url: /beauty/b/?ie=UTF8&node=1355016031&ref_=nav_cs_beauty
+      - listitem:
+        - link "Home Improvement":
+          - /url: /Home-Improvement/b/?ie=UTF8&node=4286640031&ref_=nav_cs_hi
+      - listitem:
+        - link "Gift Cards":
+          - /url: /gift-card-store/b/?ie=UTF8&node=3704982031&ref_=nav_cs_gc
+      - listitem:
+        - link "Health, Household & Personal Care":
+          - /url: /health-and-personal-care/b/?ie=UTF8&node=1350384031&ref_=nav_cs_hpc
+      - listitem:
+        - link "Sports, Fitness & Outdoors":
+          - /url: /Sports/b/?ie=UTF8&node=1984443031&ref_=nav_cs_sports
+      - listitem:
+        - link "Grocery & Gourmet Foods":
+          - /url: /Gourmet-Specialty-Foods/b/?ie=UTF8&node=2454178031&ref_=nav_cs_grocery
+      - listitem:
+        - link "Baby":
+          - /url: /Baby/b/?ie=UTF8&node=1571274031&ref_=nav_cs_baby
+      - listitem:
+        - link "Custom Products":
+          - /url: /Amazon-Custom/b/?ie=UTF8&node=32615889031&ref_=nav_cs_custom
+      - listitem:
+        - link "Video Games":
+          - /url: /video-games/b/?ie=UTF8&node=976460031&ref_=nav_cs_video_games
+      - listitem:
+        - link "Pet Supplies":
+          - /url: /Pet-Supplies/b/?ie=UTF8&node=2454181031&ref_=nav_cs_pets
+      - listitem:
+        - link "Gift Ideas":
+          - /url: /gcx/-/gfhz/?ref_=nav_cs_giftfinder
+      - listitem:
+        - link "AmazonBasics":
+          - /url: /b/?node=6637738031&ref_=nav_cs_amazonbasics
+      - listitem:
+        - link "Audible":
+          - /url: /Audible-Books-and-Originals/b/?ie=UTF8&node=17941593031&ref_=nav_cs_audible
+      - listitem:
+        - link "Subscribe & Save":
+          - /url: /auto-deliveries/landing?ref_=nav_cs_sns
+- main:
+  - banner:
+    - group "Featured content":
+      - link "Previous slide" [disabled]:
+        - /url: "#"
+      - group:
+        - list:
+          - listitem:
+            - link "op":
+              - /url: /b/ref=surl_fashion/?_encoding=UTF8&node=6648217031&pd_rd_w=gXD6l&content-id=amzn1.sym.92f22085-7f3a-4bea-9c0a-0ed9b4277c5c&pf_rd_p=92f22085-7f3a-4bea-9c0a-0ed9b4277c5c&pf_rd_r=T7MDK19RYQYVW8W6JVX0&pd_rd_wg=4CvzG&pd_rd_r=031b1d76-276d-4f64-9291-039823b516e8&ref_=pd_hp_d_hero_unk
+              - img "op"
+      - link "Next slide":
+        - /url: "#"
+  - heading "Appliances for your home | Up to 55% off" [level=2]
+  - link "ACs":
+    - /url: /s/?_encoding=UTF8&bbn=81107432031&rh=n%3A81107432031%2Cp_85%3A10440599031&pd_rd_w=AEM8h&content-id=amzn1.sym.58c90a12-100b-4a2f-8e15-7c06f1abe2be&pf_rd_p=58c90a12-100b-4a2f-8e15-7c06f1abe2be&pf_rd_r=T7MDK19RYQYVW8W6JVX0&pd_rd_wg=tdPgf&pd_rd_r=4d3aeae1-da61-41b1-a123-bfa06ae3d652&ref_=pd_hp_d_atf_unk
+    - img "ACs"
+    - text: Air conditioners
+  - link "Refrigerators":
+    - /url: /s/?_encoding=UTF8&bbn=81107433031&rh=n%3A81107433031%2Cp_85%3A10440599031&pd_rd_w=AEM8h&content-id=amzn1.sym.58c90a12-100b-4a2f-8e15-7c06f1abe2be&pf_rd_p=58c90a12-100b-4a2f-8e15-7c06f1abe2be&pf_rd_r=T7MDK19RYQYVW8W6JVX0&pd_rd_wg=tdPgf&pd_rd_r=4d3aeae1-da61-41b1-a123-bfa06ae3d652&ref_=pd_hp_d_atf_unk
+    - img "Refrigerators"
+    - text: Refrigerators
+  - link "Microwaves":
+    - /url: /s/?_encoding=UTF8&bbn=84514739031&rh=n%3A84514739031%2Cp_85%3A10440599031&pd_rd_w=AEM8h&content-id=amzn1.sym.58c90a12-100b-4a2f-8e15-7c06f1abe2be&pf_rd_p=58c90a12-100b-4a2f-8e15-7c06f1abe2be&pf_rd_r=T7MDK19RYQYVW8W6JVX0&pd_rd_wg=tdPgf&pd_rd_r=4d3aeae1-da61-41b1-a123-bfa06ae3d652&ref_=pd_hp_d_atf_unk
+    - img "Microwaves"
+    - text: Microwaves
+  - link "Washing machines":
+    - /url: /s/?_encoding=UTF8&bbn=84514752031&rh=n%3A84514752031%2Cp_85%3A10440599031&pd_rd_w=AEM8h&content-id=amzn1.sym.58c90a12-100b-4a2f-8e15-7c06f1abe2be&pf_rd_p=58c90a12-100b-4a2f-8e15-7c06f1abe2be&pf_rd_r=T7MDK19RYQYVW8W6JVX0&pd_rd_wg=tdPgf&pd_rd_r=4d3aeae1-da61-41b1-a123-bfa06ae3d652&ref_=pd_hp_d_atf_unk
+    - img "Washing machines"
+    - text: Washing machines
+  - link "Appliances for your home | Up to 55% off - See more":
+    - /url: /s/?_encoding=UTF8&bbn=84514735031&rh=n%3A84514735031%2Cp_85%3A10440599031&pd_rd_w=AEM8h&content-id=amzn1.sym.58c90a12-100b-4a2f-8e15-7c06f1abe2be&pf_rd_p=58c90a12-100b-4a2f-8e15-7c06f1abe2be&pf_rd_r=T7MDK19RYQYVW8W6JVX0&pd_rd_wg=tdPgf&pd_rd_r=4d3aeae1-da61-41b1-a123-bfa06ae3d652&ref_=pd_hp_d_atf_unk
+    - text: See more
+  - heading "Revamp your home in style" [level=2]
+  - link "Cushion covers, bedsheets & more":
+    - /url: /b/?_encoding=UTF8&node=1380442031&pd_rd_w=1G1mD&content-id=amzn1.sym.f8e82c51-0408-4554-a158-9be4d776850d&pf_rd_p=f8e82c51-0408-4554-a158-9be4d776850d&pf_rd_r=T7MDK19RYQYVW8W6JVX0&pd_rd_wg=tdPgf&pd_rd_r=4d3aeae1-da61-41b1-a123-bfa06ae3d652&ref_=pd_hp_d_atf_unk
+    - img "Cushion covers, bedsheets & more"
+    - text: Cushion covers, bedsheets & more
+  - link "Figurines, vases & more":
+    - /url: /b/?_encoding=UTF8&node=1380374031&pd_rd_w=1G1mD&content-id=amzn1.sym.f8e82c51-0408-4554-a158-9be4d776850d&pf_rd_p=f8e82c51-0408-4554-a158-9be4d776850d&pf_rd_r=T7MDK19RYQYVW8W6JVX0&pd_rd_wg=tdPgf&pd_rd_r=4d3aeae1-da61-41b1-a123-bfa06ae3d652&ref_=pd_hp_d_atf_unk
+    - img "Figurines, vases & more"
+    - text: Figurines, vases & more
+  - link "Home storage":
+    - /url: /b/?_encoding=UTF8&node=1380510031&pd_rd_w=1G1mD&content-id=amzn1.sym.f8e82c51-0408-4554-a158-9be4d776850d&pf_rd_p=f8e82c51-0408-4554-a158-9be4d776850d&pf_rd_r=T7MDK19RYQYVW8W6JVX0&pd_rd_wg=tdPgf&pd_rd_r=4d3aeae1-da61-41b1-a123-bfa06ae3d652&ref_=pd_hp_d_atf_unk
+    - img "Home storage"
+    - text: Home storage
+  - link "Lighting solutions":
+    - /url: /b/?_encoding=UTF8&node=1380485031&pd_rd_w=1G1mD&content-id=amzn1.sym.f8e82c51-0408-4554-a158-9be4d776850d&pf_rd_p=f8e82c51-0408-4554-a158-9be4d776850d&pf_rd_r=T7MDK19RYQYVW8W6JVX0&pd_rd_wg=tdPgf&pd_rd_r=4d3aeae1-da61-41b1-a123-bfa06ae3d652&ref_=pd_hp_d_atf_unk
+    - img "Lighting solutions"
+    - text: Lighting solutions
+  - link "Revamp your home in style - Explore all":
+    - /url: /b/?_encoding=UTF8&node=12414705031&pd_rd_w=1G1mD&content-id=amzn1.sym.f8e82c51-0408-4554-a158-9be4d776850d&pf_rd_p=f8e82c51-0408-4554-a158-9be4d776850d&pf_rd_r=T7MDK19RYQYVW8W6JVX0&pd_rd_wg=tdPgf&pd_rd_r=4d3aeae1-da61-41b1-a123-bfa06ae3d652&ref_=pd_hp_d_atf_unk
+    - text: Explore all
+  - heading "Starting ₹149 | Headphones" [level=2]
+  - link "boAt":
+    - /url: /s/?_encoding=UTF8&bbn=1388921031&rh=n%3A1388921031%2Cp_89%3AboAt&pd_rd_w=ZLtnc&content-id=amzn1.sym.82b20790-8877-4d70-8f73-9d8246e460aa&pf_rd_p=82b20790-8877-4d70-8f73-9d8246e460aa&pf_rd_r=T7MDK19RYQYVW8W6JVX0&pd_rd_wg=tdPgf&pd_rd_r=4d3aeae1-da61-41b1-a123-bfa06ae3d652&ref_=pd_hp_d_atf_unk
+    - img "boAt"
+    - text: Starting ₹249 | boAt
+  - link "boult":
+    - /url: /s/?_encoding=UTF8&i=electronics&bbn=1388921031&rh=n%3A1388921031%2Cp_89%3ABoult&pd_rd_w=ZLtnc&content-id=amzn1.sym.82b20790-8877-4d70-8f73-9d8246e460aa&pf_rd_p=82b20790-8877-4d70-8f73-9d8246e460aa&pf_rd_r=T7MDK19RYQYVW8W6JVX0&pd_rd_wg=tdPgf&pd_rd_r=4d3aeae1-da61-41b1-a123-bfa06ae3d652&ref_=pd_hp_d_atf_unk
+    - img "boult"
+    - text: Starting ₹349 | boult
+  - link "Noise":
+    - /url: /s/?_encoding=UTF8&k=noise&i=electronics&rh=n%3A1388921031%2Cp_n_condition-type%3A8609960031%2Cp_36%3A-200000&pd_rd_w=ZLtnc&content-id=amzn1.sym.82b20790-8877-4d70-8f73-9d8246e460aa&pf_rd_p=82b20790-8877-4d70-8f73-9d8246e460aa&pf_rd_r=T7MDK19RYQYVW8W6JVX0&pd_rd_wg=tdPgf&pd_rd_r=4d3aeae1-da61-41b1-a123-bfa06ae3d652&ref_=pd_hp_d_atf_unk
+    - img "Noise"
+    - text: Starting ₹649 | Noise
+  - link "Starting ₹149 | Zebronics":
+    - /url: /s/?_encoding=UTF8&k=zebronics&i=electronics&rh=n%3A976419031%2Cn%3A29561348031%2Cp_89%3AZEBRONICS&pd_rd_w=ZLtnc&content-id=amzn1.sym.82b20790-8877-4d70-8f73-9d8246e460aa&pf_rd_p=82b20790-8877-4d70-8f73-9d8246e460aa&pf_rd_r=T7MDK19RYQYVW8W6JVX0&pd_rd_wg=tdPgf&pd_rd_r=4d3aeae1-da61-41b1-a123-bfa06ae3d652&ref_=pd_hp_d_atf_unk
+    - img "Starting ₹149 | Zebronics"
+    - text: Starting ₹149 | Zebronics
+  - link "Starting ₹149 | Headphones - See all offers":
+    - /url: /b/?_encoding=UTF8&ie=UTF8&node=1388921031&pd_rd_w=ZLtnc&content-id=amzn1.sym.82b20790-8877-4d70-8f73-9d8246e460aa&pf_rd_p=82b20790-8877-4d70-8f73-9d8246e460aa&pf_rd_r=T7MDK19RYQYVW8W6JVX0&pd_rd_wg=tdPgf&pd_rd_r=4d3aeae1-da61-41b1-a123-bfa06ae3d652&ref_=pd_hp_d_atf_unk
+    - text: See all offers
+  - heading "Automotive essentials | Up to 60% off" [level=2]
+  - link "Cleaning accessories":
+    - /url: /b/?_encoding=UTF8&ie=UTF8&node=5257472031&pd_rd_w=AgtFw&content-id=amzn1.sym.9ff36f11-82d6-4600-a8fb-e52bb32e171c&pf_rd_p=9ff36f11-82d6-4600-a8fb-e52bb32e171c&pf_rd_r=T7MDK19RYQYVW8W6JVX0&pd_rd_wg=tdPgf&pd_rd_r=4d3aeae1-da61-41b1-a123-bfa06ae3d652&ref_=pd_hp_d_atf_unk
+    - img "Cleaning accessories"
+    - text: Cleaning accessories
+  - link "Tyre & rim care":
+    - /url: /b/?_encoding=UTF8&ie=UTF8&node=5257496031&pd_rd_w=AgtFw&content-id=amzn1.sym.9ff36f11-82d6-4600-a8fb-e52bb32e171c&pf_rd_p=9ff36f11-82d6-4600-a8fb-e52bb32e171c&pf_rd_r=T7MDK19RYQYVW8W6JVX0&pd_rd_wg=tdPgf&pd_rd_r=4d3aeae1-da61-41b1-a123-bfa06ae3d652&ref_=pd_hp_d_atf_unk
+    - img "Tyre & rim care"
+    - text: Tyre & rim care
+  - link "Helmets":
+    - /url: /b/?_encoding=UTF8&ie=UTF8&node=5258045031&pd_rd_w=AgtFw&content-id=amzn1.sym.9ff36f11-82d6-4600-a8fb-e52bb32e171c&pf_rd_p=9ff36f11-82d6-4600-a8fb-e52bb32e171c&pf_rd_r=T7MDK19RYQYVW8W6JVX0&pd_rd_wg=tdPgf&pd_rd_r=4d3aeae1-da61-41b1-a123-bfa06ae3d652&ref_=pd_hp_d_atf_unk
+    - img "Helmets"
+    - text: Helmets
+  - link "Vacuum cleaner":
+    - /url: /s/?_encoding=UTF8&bbn=21541481031&rh=n%3A21541481031%2Cp_72%3A1318477031&pd_rd_w=AgtFw&content-id=amzn1.sym.9ff36f11-82d6-4600-a8fb-e52bb32e171c&pf_rd_p=9ff36f11-82d6-4600-a8fb-e52bb32e171c&pf_rd_r=T7MDK19RYQYVW8W6JVX0&pd_rd_wg=tdPgf&pd_rd_r=4d3aeae1-da61-41b1-a123-bfa06ae3d652&ref_=pd_hp_d_atf_unk
+    - img "Vacuum cleaner"
+    - text: Vacuum cleaner
+  - link "Automotive essentials | Up to 60% off - See more":
+    - /url: /b/?_encoding=UTF8&ie=UTF8&node=4772060031&pd_rd_w=AgtFw&content-id=amzn1.sym.9ff36f11-82d6-4600-a8fb-e52bb32e171c&pf_rd_p=9ff36f11-82d6-4600-a8fb-e52bb32e171c&pf_rd_r=T7MDK19RYQYVW8W6JVX0&pd_rd_wg=tdPgf&pd_rd_r=4d3aeae1-da61-41b1-a123-bfa06ae3d652&ref_=pd_hp_d_atf_unk
+    - text: See more
+  - separator
+  - heading "Starting ₹199 | Amazon Brands & more" [level=2]
+  - link "Starting ₹199 | Bedsheets":
+    - /url: /s/?_encoding=UTF8&bbn=1380460031&rh=n%3A1380460031%2Cp_n_format_browse-bin%3A19560802031&pd_rd_w=8tCbt&content-id=amzn1.sym.4d494d65-8009-406a-9a50-5e08a16212d7&pf_rd_p=4d494d65-8009-406a-9a50-5e08a16212d7&pf_rd_r=T7MDK19RYQYVW8W6JVX0&pd_rd_wg=tdPgf&pd_rd_r=4d3aeae1-da61-41b1-a123-bfa06ae3d652&ref_=pd_hp_d_atf_unk
+    - img "Starting ₹199 | Bedsheets"
+    - text: Starting ₹199 | Bedsheets
+  - link "Starting ₹199 | Curtains":
+    - /url: /s/?_encoding=UTF8&bbn=1380479031&rh=n%3A1380479031%2Cp_n_format_browse-bin%3A19560802031&pd_rd_w=8tCbt&content-id=amzn1.sym.4d494d65-8009-406a-9a50-5e08a16212d7&pf_rd_p=4d494d65-8009-406a-9a50-5e08a16212d7&pf_rd_r=T7MDK19RYQYVW8W6JVX0&pd_rd_wg=tdPgf&pd_rd_r=4d3aeae1-da61-41b1-a123-bfa06ae3d652&ref_=pd_hp_d_atf_unk
+    - img "Starting ₹199 | Curtains"
+    - text: Starting ₹199 | Curtains
+  - link "Minimum 40% off | Ironing board & more":
+    - /url: /s/?_encoding=UTF8&bbn=1380510031&rh=n%3A1380510031%2Cp_n_format_browse-bin%3A19560790031&pd_rd_w=8tCbt&content-id=amzn1.sym.4d494d65-8009-406a-9a50-5e08a16212d7&pf_rd_p=4d494d65-8009-406a-9a50-5e08a16212d7&pf_rd_r=T7MDK19RYQYVW8W6JVX0&pd_rd_wg=tdPgf&pd_rd_r=4d3aeae1-da61-41b1-a123-bfa06ae3d652&ref_=pd_hp_d_atf_unk
+    - img "Minimum 40% off | Ironing board & more"
+    - text: Minimum 40% off | Ironing board & more
+  - link "Up to 60% off | Home decor":
+    - /url: /s/?_encoding=UTF8&bbn=1380374031&rh=n%3A1380374031%2Cp_n_format_browse-bin%3A19560799031&pd_rd_w=8tCbt&content-id=amzn1.sym.4d494d65-8009-406a-9a50-5e08a16212d7&pf_rd_p=4d494d65-8009-406a-9a50-5e08a16212d7&pf_rd_r=T7MDK19RYQYVW8W6JVX0&pd_rd_wg=tdPgf&pd_rd_r=4d3aeae1-da61-41b1-a123-bfa06ae3d652&ref_=pd_hp_d_atf_unk
+    - img "Up to 60% off | Home decor"
+    - text: Up to 60% off | Home decor
+  - link "Starting ₹199 | Amazon Brands & more - See more":
+    - /url: /s/?_encoding=UTF8&bbn=1380442031&rh=n%3A1380442031%2Cp_n_format_browse-bin%3A19560802031&pd_rd_w=8tCbt&content-id=amzn1.sym.4d494d65-8009-406a-9a50-5e08a16212d7&pf_rd_p=4d494d65-8009-406a-9a50-5e08a16212d7&pf_rd_r=T7MDK19RYQYVW8W6JVX0&pd_rd_wg=tdPgf&pd_rd_r=4d3aeae1-da61-41b1-a123-bfa06ae3d652&ref_=pd_hp_d_atf_unk
+    - text: See more
+  - heading "Under ₹499 | Deals on home improvement essentials" [level=2]
+  - link "Cleaning":
+    - /url: /s/?_encoding=UTF8&i=home-improvement&bbn=61028133031&rh=n%3A61028133031%2Cp_72%3A1318476031%2Cp_36%3A-19900&_encoding=UTF8&qid=1714749719&rnid=3444809031&ref=sr_nr_p_36_3&pd_rd_w=6Gi95&content-id=amzn1.sym.0a250fc6-18a4-49da-8c15-ae7cde5579f2&pf_rd_p=0a250fc6-18a4-49da-8c15-ae7cde5579f2&pf_rd_r=T7MDK19RYQYVW8W6JVX0&pd_rd_wg=tdPgf&pd_rd_r=4d3aeae1-da61-41b1-a123-bfa06ae3d652&ref_=pd_hp_d_atf_unk
+    - img "Cleaning"
+    - text: Under ₹199 | Cleaning supplies
+  - link "Bath accessories":
+    - /url: /s/?_encoding=UTF8&i=home-improvement&rh=n%3A60834830031%2Cp_36%3A-39900%2Cp_72%3A1318476031&dc=&fs=true&qid=1714744556&rnid=1318475031&ref=sr_nr_p_72_1&ds=v1%3AObcyf9vB3S72PU7NAfGZ%2FbllKjFxF%2BIh8NlJQg5c1A8%22&pd_rd_w=6Gi95&content-id=amzn1.sym.0a250fc6-18a4-49da-8c15-ae7cde5579f2&pf_rd_p=0a250fc6-18a4-49da-8c15-ae7cde5579f2&pf_rd_r=T7MDK19RYQYVW8W6JVX0&pd_rd_wg=tdPgf&pd_rd_r=4d3aeae1-da61-41b1-a123-bfa06ae3d652&ref_=pd_hp_d_atf_unk
+    - img "Bath accessories"
+    - text: Under ₹399 | Bathroom accessories
+  - link "Home tools":
+    - /url: /s/?_encoding=UTF8&i=home-improvement&rh=n%3A95174669031%2Cp_36%3A3444810031%2Cp_72%3A1318476031&pd_rd_w=6Gi95&content-id=amzn1.sym.0a250fc6-18a4-49da-8c15-ae7cde5579f2&pf_rd_p=0a250fc6-18a4-49da-8c15-ae7cde5579f2&pf_rd_r=T7MDK19RYQYVW8W6JVX0&pd_rd_wg=tdPgf&pd_rd_r=4d3aeae1-da61-41b1-a123-bfa06ae3d652&ref_=pd_hp_d_atf_unk
+    - img "Home tools"
+    - text: Under ₹499 | Home tools
+  - link "Wallpapers":
+    - /url: /s/?_encoding=UTF8&i=home-improvement&rh=n%3A87322479031%2Cp_36%3A-29900%2Cp_72%3A1318476031&dc=&fs=true&qid=1714750891&rnid=1318475031&ref=sr_nr_p_72_1&ds=v1%3AKT2aFWvve4xsaDjrU17ctKHJFfdbS%2FW1Ex2L5A6belw&pd_rd_w=6Gi95&content-id=amzn1.sym.0a250fc6-18a4-49da-8c15-ae7cde5579f2&pf_rd_p=0a250fc6-18a4-49da-8c15-ae7cde5579f2&pf_rd_r=T7MDK19RYQYVW8W6JVX0&pd_rd_wg=tdPgf&pd_rd_r=4d3aeae1-da61-41b1-a123-bfa06ae3d652&ref_=pd_hp_d_atf_unk
+    - img "Wallpapers"
+    - text: Under ₹299 | Wallpapers
+  - link "Under ₹499 | Deals on home improvement essentials - Explore all":
+    - /url: /b/?_encoding=UTF8&node=4286640031&pd_rd_w=6Gi95&content-id=amzn1.sym.0a250fc6-18a4-49da-8c15-ae7cde5579f2&pf_rd_p=0a250fc6-18a4-49da-8c15-ae7cde5579f2&pf_rd_r=T7MDK19RYQYVW8W6JVX0&pd_rd_wg=tdPgf&pd_rd_r=4d3aeae1-da61-41b1-a123-bfa06ae3d652&ref_=pd_hp_d_atf_unk
+    - text: Explore all
+  - heading "Up to 60% off | Styles for women" [level=2]
+  - link "Women's Clothing":
+    - /url: https://www.amazon.in/b/?_encoding=UTF8&ie=UTF8&node=206535185031&pd_rd_w=jjmbg&content-id=amzn1.sym.c1825632-6c61-4c9a-bb21-cec713f41be5&pf_rd_p=c1825632-6c61-4c9a-bb21-cec713f41be5&pf_rd_r=T7MDK19RYQYVW8W6JVX0&pd_rd_wg=tdPgf&pd_rd_r=4d3aeae1-da61-41b1-a123-bfa06ae3d652&ref_=pd_hp_d_atf_unk
+    - img "Women's Clothing"
+    - text: Women's Clothing
+  - link "Footwear+Handbags":
+    - /url: /b/ref=women&handbag/?_encoding=UTF8&node=29802312031&pd_rd_w=jjmbg&content-id=amzn1.sym.c1825632-6c61-4c9a-bb21-cec713f41be5&pf_rd_p=c1825632-6c61-4c9a-bb21-cec713f41be5&pf_rd_r=T7MDK19RYQYVW8W6JVX0&pd_rd_wg=tdPgf&pd_rd_r=4d3aeae1-da61-41b1-a123-bfa06ae3d652&ref_=pd_hp_d_atf_unk
+    - img "Footwear+Handbags"
+    - text: Footwear+Handbags
+  - link "Watches":
+    - /url: /s/ref=mega_sv_s23_1_3_1_1/?_encoding=UTF8&rh=i%3Awatches%2Cn%3A2563505031&ie=UTF8&lo=watches&pd_rd_w=jjmbg&content-id=amzn1.sym.c1825632-6c61-4c9a-bb21-cec713f41be5&pf_rd_p=c1825632-6c61-4c9a-bb21-cec713f41be5&pf_rd_r=T7MDK19RYQYVW8W6JVX0&pd_rd_wg=tdPgf&pd_rd_r=4d3aeae1-da61-41b1-a123-bfa06ae3d652&ref_=pd_hp_d_atf_unk
+    - img "Watches"
+    - text: Watches
+  - link "Fashion jewellery":
+    - /url: /ref=fj/b/?_encoding=UTF8&node=5210079031&pd_rd_w=jjmbg&content-id=amzn1.sym.c1825632-6c61-4c9a-bb21-cec713f41be5&pf_rd_p=c1825632-6c61-4c9a-bb21-cec713f41be5&pf_rd_r=T7MDK19RYQYVW8W6JVX0&pd_rd_wg=tdPgf&pd_rd_r=4d3aeae1-da61-41b1-a123-bfa06ae3d652&ref_=pd_hp_d_atf_unk
+    - img "Fashion jewellery"
+    - text: Fashion jewellery
+  - link "Up to 60% off | Styles for women - End of season sale":
+    - /url: /b/ref=sl_gw_feb20/?_encoding=UTF8&node=6648217031&pd_rd_w=jjmbg&content-id=amzn1.sym.c1825632-6c61-4c9a-bb21-cec713f41be5&pf_rd_p=c1825632-6c61-4c9a-bb21-cec713f41be5&pf_rd_r=T7MDK19RYQYVW8W6JVX0&pd_rd_wg=tdPgf&pd_rd_r=4d3aeae1-da61-41b1-a123-bfa06ae3d652&ref_=pd_hp_d_atf_unk
+    - text: End of season sale
+  - heading "Min. 40% off | Fun toys & games | Amazon Brands" [level=2]
+  - link "Min. 40% off | soft toys":
+    - /url: https://www.amazon.in/s/?_encoding=UTF8&bbn=1378445031&rh=n%3A1378445031%2Cp_n_format_browse-bin%3A30678570031&dc=&qid=1726311701&rnid=30678568031&ref=lp_1378445031_nr_p_n_format_browse-bin_0&pd_rd_w=4HDOc&content-id=amzn1.sym.c593d6f0-57d9-46f5-8bb6-19d275bcaaf9&pf_rd_p=c593d6f0-57d9-46f5-8bb6-19d275bcaaf9&pf_rd_r=T7MDK19RYQYVW8W6JVX0&pd_rd_wg=tdPgf&pd_rd_r=4d3aeae1-da61-41b1-a123-bfa06ae3d652&ref_=pd_hp_d_atf_unk
+    - img "Min. 40% off | soft toys"
+    - text: Min. 40% off | soft toys
+  - link "Min. 40% off | Ride ons":
+    - /url: /s/?_encoding=UTF8&rh=n%3A1378509031%2Cp_n_format_browse-bin%3A30678570031&pd_rd_w=4HDOc&content-id=amzn1.sym.c593d6f0-57d9-46f5-8bb6-19d275bcaaf9&pf_rd_p=c593d6f0-57d9-46f5-8bb6-19d275bcaaf9&pf_rd_r=T7MDK19RYQYVW8W6JVX0&pd_rd_wg=tdPgf&pd_rd_r=4d3aeae1-da61-41b1-a123-bfa06ae3d652&ref_=pd_hp_d_atf_unk
+    - img "Min. 40% off | Ride ons"
+    - text: Min. 50% off | Ride ons
+  - link "Min. 40% off | Indoor games":
+    - /url: /s/?_encoding=UTF8&i=toys&bbn=1350380031&rh=n%3A1350380031%2Cp_n_format_browse-bin%3A30678570031%2Cp_123%3A606242&hidden-keywords=a%20-plush&pd_rd_w=4HDOc&content-id=amzn1.sym.c593d6f0-57d9-46f5-8bb6-19d275bcaaf9&pf_rd_p=c593d6f0-57d9-46f5-8bb6-19d275bcaaf9&pf_rd_r=T7MDK19RYQYVW8W6JVX0&pd_rd_wg=tdPgf&pd_rd_r=4d3aeae1-da61-41b1-a123-bfa06ae3d652&ref_=pd_hp_d_atf_unk
+    - img "Min. 40% off | Indoor games"
+    - text: Min. 40% off | Indoor games
+  - link "Min. 40% off | outdoor games":
+    - /url: /s/?_encoding=UTF8&i=toys&rh=n%3A1378509031%2Cp_123%3A445047%7C606242&dc=&qid=1731662622&rnid=91049095031&ref=sr_pg_1&pd_rd_w=4HDOc&content-id=amzn1.sym.c593d6f0-57d9-46f5-8bb6-19d275bcaaf9&pf_rd_p=c593d6f0-57d9-46f5-8bb6-19d275bcaaf9&pf_rd_r=T7MDK19RYQYVW8W6JVX0&pd_rd_wg=tdPgf&pd_rd_r=4d3aeae1-da61-41b1-a123-bfa06ae3d652&ref_=pd_hp_d_atf_unk
+    - img "Min. 40% off | outdoor games"
+    - text: Min. 50% off | outdoor games
+  - link "Min. 40% off | Fun toys & games | Amazon Brands - See all offers":
+    - /url: /b/?_encoding=UTF8&_encoding=UTF8&ie=UTF8&node=17410462031&ref_=baby_gw_pcqc&pd_rd_w=4HDOc&content-id=amzn1.sym.c593d6f0-57d9-46f5-8bb6-19d275bcaaf9&pf_rd_p=c593d6f0-57d9-46f5-8bb6-19d275bcaaf9&pf_rd_r=T7MDK19RYQYVW8W6JVX0&pd_rd_wg=tdPgf&pd_rd_r=4d3aeae1-da61-41b1-a123-bfa06ae3d652
+    - text: See all offers
+  - heading "Up to 60% off | Trending products from Emerging Businesses" [level=2]
+  - list:
+    - listitem:
+      - link "Organic Nishaanii Aloe Vera Gel – Pure & Raw | Natural & Soothing for Face, Skin & Hair | No Parabens, No Fragrance, No...":
+        - /url: /Organic-Nishaanii-Hydrating-Paraben-Free-Fragrance-Free/dp/B0DW23H85G/?_encoding=UTF8&pd_rd_w=YiPpl&content-id=amzn1.sym.ee67b10b-7f09-4e67-8c24-6301b521570e&pf_rd_p=ee67b10b-7f09-4e67-8c24-6301b521570e&pf_rd_r=T7MDK19RYQYVW8W6JVX0&pd_rd_wg=t2nAO&pd_rd_r=1c2dfb23-f677-4fc3-81c5-44eb6918bba0&ref_=pd_hp_d_btf_NSS
+        - img "Organic Nishaanii Aloe Vera Gel – Pure & Raw | Natural & Soothing for Face, Skin & Hair | No Parabens, No Fragrance, No..."
+    - listitem:
+      - link "9 Pcs Stanley Cup Accessories, Straw Cover, Cover Cap Bow Straw Cap Butterfly Chain Suitable for Round Straws with A...":
+        - /url: /Accessories-Butterfly-Suitable-Diameter-Included/dp/B0DXB82FQH/?_encoding=UTF8&pd_rd_w=YiPpl&content-id=amzn1.sym.ee67b10b-7f09-4e67-8c24-6301b521570e&pf_rd_p=ee67b10b-7f09-4e67-8c24-6301b521570e&pf_rd_r=T7MDK19RYQYVW8W6JVX0&pd_rd_wg=t2nAO&pd_rd_r=1c2dfb23-f677-4fc3-81c5-44eb6918bba0&ref_=pd_hp_d_btf_NSS
+        - img "9 Pcs Stanley Cup Accessories, Straw Cover, Cover Cap Bow Straw Cap Butterfly Chain Suitable for Round Straws with A..."
+    - listitem:
+      - link "CoolShef Green Mini Comb for Kids - Soft Bristle Cushion Brush, Styling Tool for Girls, Boys, Women, Gentle Scalp Care,...":
+        - /url: /CoolShef-Green-Mini-Comb-Kids/dp/B0DT6YLPC7/?_encoding=UTF8&pd_rd_w=YiPpl&content-id=amzn1.sym.ee67b10b-7f09-4e67-8c24-6301b521570e&pf_rd_p=ee67b10b-7f09-4e67-8c24-6301b521570e&pf_rd_r=T7MDK19RYQYVW8W6JVX0&pd_rd_wg=t2nAO&pd_rd_r=1c2dfb23-f677-4fc3-81c5-44eb6918bba0&ref_=pd_hp_d_btf_NSS
+        - img "CoolShef Green Mini Comb for Kids - Soft Bristle Cushion Brush, Styling Tool for Girls, Boys, Women, Gentle Scalp Care,..."
+    - listitem:
+      - link "Fruit Essentials Watermelon Foaming Gel Wash | Hydrating Oil Complex with Watermelon & Niacinamide | Deep Hydration &...":
+        - /url: /Fruit-Essentials-Watermelon-Niacinamide-Antioxidant/dp/B0DS5BZQHL/?_encoding=UTF8&pd_rd_w=YiPpl&content-id=amzn1.sym.ee67b10b-7f09-4e67-8c24-6301b521570e&pf_rd_p=ee67b10b-7f09-4e67-8c24-6301b521570e&pf_rd_r=T7MDK19RYQYVW8W6JVX0&pd_rd_wg=t2nAO&pd_rd_r=1c2dfb23-f677-4fc3-81c5-44eb6918bba0&ref_=pd_hp_d_btf_NSS
+        - img "Fruit Essentials Watermelon Foaming Gel Wash | Hydrating Oil Complex with Watermelon & Niacinamide | Deep Hydration &..."
+    - listitem:
+      - link "APES Fusion Style Wireless Headphone, 40mm Dynamic Drivers, 50Hrs Playtime, Fast Charge (Black Grey)":
+        - /url: /APES-Wireless-Headphone-Dynamic-Playtime/dp/B0DTKXC8X6/?_encoding=UTF8&pd_rd_w=YiPpl&content-id=amzn1.sym.ee67b10b-7f09-4e67-8c24-6301b521570e&pf_rd_p=ee67b10b-7f09-4e67-8c24-6301b521570e&pf_rd_r=T7MDK19RYQYVW8W6JVX0&pd_rd_wg=t2nAO&pd_rd_r=1c2dfb23-f677-4fc3-81c5-44eb6918bba0&ref_=pd_hp_d_btf_NSS
+        - img "APES Fusion Style Wireless Headphone, 40mm Dynamic Drivers, 50Hrs Playtime, Fast Charge (Black Grey)"
+    - listitem:
+      - link "COSTEM Wall Shelves Kitchen Bathroom Shelf Self-Adhesive Sticker Hook Multipurpose Wall Holder Bathroom Storage Rack Box...":
+        - /url: /COSTEM-Shelves-Bathroom-Self-Adhesive-Multipurpose/dp/B0CJHZV82H/?_encoding=UTF8&pd_rd_w=YiPpl&content-id=amzn1.sym.ee67b10b-7f09-4e67-8c24-6301b521570e&pf_rd_p=ee67b10b-7f09-4e67-8c24-6301b521570e&pf_rd_r=T7MDK19RYQYVW8W6JVX0&pd_rd_wg=t2nAO&pd_rd_r=1c2dfb23-f677-4fc3-81c5-44eb6918bba0&ref_=pd_hp_d_btf_NSS
+        - img "COSTEM Wall Shelves Kitchen Bathroom Shelf Self-Adhesive Sticker Hook Multipurpose Wall Holder Bathroom Storage Rack Box..."
+    - listitem:
+      - link "Palind 1000ml & 1500ml Stainless Steel Food Storage Containers | 316 Food Grade Fridge storage container Leakproof |...":
+        - /url: /Palind-Stainless-Containers-container-Microwavable/dp/B0DWT2XQP5/?_encoding=UTF8&pd_rd_w=YiPpl&content-id=amzn1.sym.ee67b10b-7f09-4e67-8c24-6301b521570e&pf_rd_p=ee67b10b-7f09-4e67-8c24-6301b521570e&pf_rd_r=T7MDK19RYQYVW8W6JVX0&pd_rd_wg=t2nAO&pd_rd_r=1c2dfb23-f677-4fc3-81c5-44eb6918bba0&ref_=pd_hp_d_btf_NSS
+        - img "Palind 1000ml & 1500ml Stainless Steel Food Storage Containers | 316 Food Grade Fridge storage container Leakproof |..."
+    - listitem:
+      - link "Dokro Electric Instant Egg Boiler | Boils 7 Eggs | 3 Boiling modes(soft, medium, hard) | Smart Overheat Protection |...":
+        - /url: /Electric-Instant-Overheat-Protection-Measuring/dp/B0DY7Y5MRB/?_encoding=UTF8&pd_rd_w=YiPpl&content-id=amzn1.sym.ee67b10b-7f09-4e67-8c24-6301b521570e&pf_rd_p=ee67b10b-7f09-4e67-8c24-6301b521570e&pf_rd_r=T7MDK19RYQYVW8W6JVX0&pd_rd_wg=t2nAO&pd_rd_r=1c2dfb23-f677-4fc3-81c5-44eb6918bba0&ref_=pd_hp_d_btf_NSS
+        - img "Dokro Electric Instant Egg Boiler | Boils 7 Eggs | 3 Boiling modes(soft, medium, hard) | Smart Overheat Protection |..."
+    - listitem:
+      - link "Stvin Magnetic Cable Clips for Wire and Cord Management, Office and Home Desk Organizer for Phone, Laptop, Tablet, and...":
+        - /url: /Stvin-Magnetic-Cable-Cord-Management/dp/B0DX27F59W/?_encoding=UTF8&pd_rd_w=YiPpl&content-id=amzn1.sym.ee67b10b-7f09-4e67-8c24-6301b521570e&pf_rd_p=ee67b10b-7f09-4e67-8c24-6301b521570e&pf_rd_r=T7MDK19RYQYVW8W6JVX0&pd_rd_wg=t2nAO&pd_rd_r=1c2dfb23-f677-4fc3-81c5-44eb6918bba0&ref_=pd_hp_d_btf_NSS
+        - img "Stvin Magnetic Cable Clips for Wire and Cord Management, Office and Home Desk Organizer for Phone, Laptop, Tablet, and..."
+    - listitem:
+      - link "VELTO ENTERPRISES Self-Adhesive Photo Frame Hooks | No-Drill, Heavy-Duty Wall Hooks for Hanging Frames – Strong &...":
+        - /url: /VELTO-ENTERPRISES-Self-Adhesive-No-Drill-Heavy-Duty/dp/B0DWKRD3CV/?_encoding=UTF8&pd_rd_w=YiPpl&content-id=amzn1.sym.ee67b10b-7f09-4e67-8c24-6301b521570e&pf_rd_p=ee67b10b-7f09-4e67-8c24-6301b521570e&pf_rd_r=T7MDK19RYQYVW8W6JVX0&pd_rd_wg=t2nAO&pd_rd_r=1c2dfb23-f677-4fc3-81c5-44eb6918bba0&ref_=pd_hp_d_btf_NSS
+        - img "VELTO ENTERPRISES Self-Adhesive Photo Frame Hooks | No-Drill, Heavy-Duty Wall Hooks for Hanging Frames – Strong &..."
+    - listitem:
+      - link "Sierra Hard Water Filter Hand Shower For Bathroom helps Reduce HAIRFALL| Massage Points handheld shower | Mist flow |...":
+        - /url: /Sierra-Bathroom-HAIRFALL-handheld-Handheld/dp/B0DYF5LYV3/?_encoding=UTF8&pd_rd_w=YiPpl&content-id=amzn1.sym.ee67b10b-7f09-4e67-8c24-6301b521570e&pf_rd_p=ee67b10b-7f09-4e67-8c24-6301b521570e&pf_rd_r=T7MDK19RYQYVW8W6JVX0&pd_rd_wg=t2nAO&pd_rd_r=1c2dfb23-f677-4fc3-81c5-44eb6918bba0&ref_=pd_hp_d_btf_NSS
+        - img "Sierra Hard Water Filter Hand Shower For Bathroom helps Reduce HAIRFALL| Massage Points handheld shower | Mist flow |..."
+    - listitem:
+      - link "FreshLuxe Coffee Crush Body & Face Scrub | Exfoliation & De-Tan | Enriched with Walnut Powder | Unisex | 140g":
+        - /url: /FreshLuxe-Coffee-Exfoliation-Enriched-Walnut/dp/B0DRSWL27C/?_encoding=UTF8&pd_rd_w=YiPpl&content-id=amzn1.sym.ee67b10b-7f09-4e67-8c24-6301b521570e&pf_rd_p=ee67b10b-7f09-4e67-8c24-6301b521570e&pf_rd_r=T7MDK19RYQYVW8W6JVX0&pd_rd_wg=t2nAO&pd_rd_r=1c2dfb23-f677-4fc3-81c5-44eb6918bba0&ref_=pd_hp_d_btf_NSS
+        - img "FreshLuxe Coffee Crush Body & Face Scrub | Exfoliation & De-Tan | Enriched with Walnut Powder | Unisex | 140g"
+    - listitem:
+      - link "MV Platter Health Mix Dry Fruits Dry Fruits Mix | Dried Almonds, Black Raisins, Cashewnuts, Cranberries, Black Dates &...":
+        - /url: /Platter-Almonds-Cashewnuts-Cranberries-Breakfast/dp/B0DS61LC1K/?_encoding=UTF8&pd_rd_w=YiPpl&content-id=amzn1.sym.ee67b10b-7f09-4e67-8c24-6301b521570e&pf_rd_p=ee67b10b-7f09-4e67-8c24-6301b521570e&pf_rd_r=T7MDK19RYQYVW8W6JVX0&pd_rd_wg=t2nAO&pd_rd_r=1c2dfb23-f677-4fc3-81c5-44eb6918bba0&ref_=pd_hp_d_btf_NSS
+        - img "MV Platter Health Mix Dry Fruits Dry Fruits Mix | Dried Almonds, Black Raisins, Cashewnuts, Cranberries, Black Dates &..."
+  - separator
+  - heading "Starting ₹70,348 | Experience the freedom of two wheelers" [level=2]
+  - list:
+    - listitem:
+      - link "Hero MAVRICK 440 Bike(Mid) Celestial Blue Booking for Ex-Showroom Price":
+        - /url: /Hero-MAVRICK-Celestial-Booking-Ex-Showroom/dp/B0D1VVJJ29/?_encoding=UTF8&pd_rd_w=TdNXU&content-id=amzn1.sym.5e88c7b1-d6dd-463e-95f7-24271869827e&pf_rd_p=5e88c7b1-d6dd-463e-95f7-24271869827e&pf_rd_r=T7MDK19RYQYVW8W6JVX0&pd_rd_wg=t2nAO&pd_rd_r=1c2dfb23-f677-4fc3-81c5-44eb6918bba0&ref_=pd_hp_d_btf_ls_gwc_pc_en4_
+        - img "Hero MAVRICK 440 Bike(Mid) Celestial Blue Booking for Ex-Showroom Price"
+    - listitem:
+      - link "Hero Xpulse 200 4V (ABS Disc) Bike Booking for Ex-Showroom Price (Spoke Polestar)":
+        - /url: /Hero-Xpulse-Booking-Ex-Showroom-Polestar/dp/B0D9DLZ2DJ/?_encoding=UTF8&pd_rd_w=TdNXU&content-id=amzn1.sym.5e88c7b1-d6dd-463e-95f7-24271869827e&pf_rd_p=5e88c7b1-d6dd-463e-95f7-24271869827e&pf_rd_r=T7MDK19RYQYVW8W6JVX0&pd_rd_wg=t2nAO&pd_rd_r=1c2dfb23-f677-4fc3-81c5-44eb6918bba0&ref_=pd_hp_d_btf_ls_gwc_pc_en4_
+        - img "Hero Xpulse 200 4V (ABS Disc) Bike Booking for Ex-Showroom Price (Spoke Polestar)"
+    - listitem:
+      - link "Hero Xpulse 200 4V (ABS Disc) Bike Matt Nexus Blue White Booking for Ex-Showroom Price":
+        - /url: /Hero-Xpulse-Nexus-Booking-Ex-Showroom/dp/B0D9DM29TM/?_encoding=UTF8&pd_rd_w=TdNXU&content-id=amzn1.sym.5e88c7b1-d6dd-463e-95f7-24271869827e&pf_rd_p=5e88c7b1-d6dd-463e-95f7-24271869827e&pf_rd_r=T7MDK19RYQYVW8W6JVX0&pd_rd_wg=t2nAO&pd_rd_r=1c2dfb23-f677-4fc3-81c5-44eb6918bba0&ref_=pd_hp_d_btf_ls_gwc_pc_en4_
+        - img "Hero Xpulse 200 4V (ABS Disc) Bike Matt Nexus Blue White Booking for Ex-Showroom Price"
+    - listitem:
+      - link "Hero Xtreme 160R 4V Double Disc Bike Neon Shooting Star Booking for Ex-Showroom Price":
+        - /url: /Hero-Xtreme-Shooting-Booking-Ex-Showroom/dp/B0D9DL9B2N/?_encoding=UTF8&pd_rd_w=TdNXU&content-id=amzn1.sym.5e88c7b1-d6dd-463e-95f7-24271869827e&pf_rd_p=5e88c7b1-d6dd-463e-95f7-24271869827e&pf_rd_r=T7MDK19RYQYVW8W6JVX0&pd_rd_wg=t2nAO&pd_rd_r=1c2dfb23-f677-4fc3-81c5-44eb6918bba0&ref_=pd_hp_d_btf_ls_gwc_pc_en4_
+        - img "Hero Xtreme 160R 4V Double Disc Bike Neon Shooting Star Booking for Ex-Showroom Price"
+    - listitem:
+      - link "Hero Super Splendor (Drum) Bike Metallic Nexus Blue Booking for Ex-Showroom Price":
+        - /url: /Hero-Splendor-Metallic-Booking-Ex-Showroom/dp/B0D9DKP9XV/?_encoding=UTF8&pd_rd_w=TdNXU&content-id=amzn1.sym.5e88c7b1-d6dd-463e-95f7-24271869827e&pf_rd_p=5e88c7b1-d6dd-463e-95f7-24271869827e&pf_rd_r=T7MDK19RYQYVW8W6JVX0&pd_rd_wg=t2nAO&pd_rd_r=1c2dfb23-f677-4fc3-81c5-44eb6918bba0&ref_=pd_hp_d_btf_ls_gwc_pc_en4_
+        - img "Hero Super Splendor (Drum) Bike Metallic Nexus Blue Booking for Ex-Showroom Price"
+    - listitem:
+      - link "Hero Karizma XMR Bike Iconic Yellow Booking for Ex-Showroom Price":
+        - /url: /Hero-Karizma-Iconic-Booking-Ex-Showroom/dp/B0D9DNTJJ9/?_encoding=UTF8&pd_rd_w=TdNXU&content-id=amzn1.sym.5e88c7b1-d6dd-463e-95f7-24271869827e&pf_rd_p=5e88c7b1-d6dd-463e-95f7-24271869827e&pf_rd_r=T7MDK19RYQYVW8W6JVX0&pd_rd_wg=t2nAO&pd_rd_r=1c2dfb23-f677-4fc3-81c5-44eb6918bba0&ref_=pd_hp_d_btf_ls_gwc_pc_en4_
+        - img "Hero Karizma XMR Bike Iconic Yellow Booking for Ex-Showroom Price"
+    - listitem:
+      - link "Hero PLEASURE+ XTEC Scooter Polestar Blue Booking for Ex-Showroom Price":
+        - /url: /Hero-PLEASURE-Scooter-Polestar-Ex-Showroom/dp/B0D9DM58CF/?_encoding=UTF8&pd_rd_w=TdNXU&content-id=amzn1.sym.5e88c7b1-d6dd-463e-95f7-24271869827e&pf_rd_p=5e88c7b1-d6dd-463e-95f7-24271869827e&pf_rd_r=T7MDK19RYQYVW8W6JVX0&pd_rd_wg=t2nAO&pd_rd_r=1c2dfb23-f677-4fc3-81c5-44eb6918bba0&ref_=pd_hp_d_btf_ls_gwc_pc_en4_
+        - img "Hero PLEASURE+ XTEC Scooter Polestar Blue Booking for Ex-Showroom Price"
+    - listitem:
+      - link "Hero Xtreme 160R 4V Double Disc Bike Cast Pearl Red Booking for Ex-Showroom Price":
+        - /url: /Hero-Xtreme-Double-Booking-Ex-Showroom/dp/B0D9DN12N2/?_encoding=UTF8&pd_rd_w=TdNXU&content-id=amzn1.sym.5e88c7b1-d6dd-463e-95f7-24271869827e&pf_rd_p=5e88c7b1-d6dd-463e-95f7-24271869827e&pf_rd_r=T7MDK19RYQYVW8W6JVX0&pd_rd_wg=t2nAO&pd_rd_r=1c2dfb23-f677-4fc3-81c5-44eb6918bba0&ref_=pd_hp_d_btf_ls_gwc_pc_en4_
+        - img "Hero Xtreme 160R 4V Double Disc Bike Cast Pearl Red Booking for Ex-Showroom Price"
+    - listitem:
+      - link "Hero Xpulse 200 4V (ABS Disc) Bike Booking for Ex-Showroom Price (Spoke Sports Red)":
+        - /url: /Hero-Xpulse-Booking-Ex-Showroom-Sports/dp/B0D9DL9B2R/?_encoding=UTF8&pd_rd_w=TdNXU&content-id=amzn1.sym.5e88c7b1-d6dd-463e-95f7-24271869827e&pf_rd_p=5e88c7b1-d6dd-463e-95f7-24271869827e&pf_rd_r=T7MDK19RYQYVW8W6JVX0&pd_rd_wg=t2nAO&pd_rd_r=1c2dfb23-f677-4fc3-81c5-44eb6918bba0&ref_=pd_hp_d_btf_ls_gwc_pc_en4_
+        - img "Hero Xpulse 200 4V (ABS Disc) Bike Booking for Ex-Showroom Price (Spoke Sports Red)"
+    - listitem:
+      - link "Hero XTREME 125R Bike(IBS) Cobalt Blue Booking for Ex-Showroom Price":
+        - /url: /Hero-XTREME-Cobalt-Booking-Ex-Showroom/dp/B0D9DLZQRJ/?_encoding=UTF8&pd_rd_w=TdNXU&content-id=amzn1.sym.5e88c7b1-d6dd-463e-95f7-24271869827e&pf_rd_p=5e88c7b1-d6dd-463e-95f7-24271869827e&pf_rd_r=T7MDK19RYQYVW8W6JVX0&pd_rd_wg=t2nAO&pd_rd_r=1c2dfb23-f677-4fc3-81c5-44eb6918bba0&ref_=pd_hp_d_btf_ls_gwc_pc_en4_
+        - img "Hero XTREME 125R Bike(IBS) Cobalt Blue Booking for Ex-Showroom Price"
+    - listitem:
+      - link "Hero Karizma XMR Bike Matte Phantom Black Booking for Ex-Showroom Price":
+        - /url: /Hero-Karizma-Phantom-Booking-Ex-Showroom/dp/B0D9DMXP3R/?_encoding=UTF8&pd_rd_w=TdNXU&content-id=amzn1.sym.5e88c7b1-d6dd-463e-95f7-24271869827e&pf_rd_p=5e88c7b1-d6dd-463e-95f7-24271869827e&pf_rd_r=T7MDK19RYQYVW8W6JVX0&pd_rd_wg=t2nAO&pd_rd_r=1c2dfb23-f677-4fc3-81c5-44eb6918bba0&ref_=pd_hp_d_btf_ls_gwc_pc_en4_
+        - img "Hero Karizma XMR Bike Matte Phantom Black Booking for Ex-Showroom Price"
+    - listitem:
+      - link "Hero MAVRICK 440 Bike(Top) Phantom Black Booking for Ex-Showroom Price":
+        - /url: /Hero-MAVRICK-Phantom-Booking-Ex-Showroom/dp/B0D1VSR49D/?_encoding=UTF8&pd_rd_w=TdNXU&content-id=amzn1.sym.5e88c7b1-d6dd-463e-95f7-24271869827e&pf_rd_p=5e88c7b1-d6dd-463e-95f7-24271869827e&pf_rd_r=T7MDK19RYQYVW8W6JVX0&pd_rd_wg=t2nAO&pd_rd_r=1c2dfb23-f677-4fc3-81c5-44eb6918bba0&ref_=pd_hp_d_btf_ls_gwc_pc_en4_
+        - img "Hero MAVRICK 440 Bike(Top) Phantom Black Booking for Ex-Showroom Price"
+    - listitem:
+      - link "Hero Xpulse 200 4V (ABS Disc) Bike Black-Sports Red Booking for Ex-Showroom Price":
+        - /url: /Hero-Xpulse-Black-Sports-Booking-Ex-Showroom/dp/B0D9DJ3Z5J/?_encoding=UTF8&pd_rd_w=TdNXU&content-id=amzn1.sym.5e88c7b1-d6dd-463e-95f7-24271869827e&pf_rd_p=5e88c7b1-d6dd-463e-95f7-24271869827e&pf_rd_r=T7MDK19RYQYVW8W6JVX0&pd_rd_wg=t2nAO&pd_rd_r=1c2dfb23-f677-4fc3-81c5-44eb6918bba0&ref_=pd_hp_d_btf_ls_gwc_pc_en4_
+        - img "Hero Xpulse 200 4V (ABS Disc) Bike Black-Sports Red Booking for Ex-Showroom Price"
+    - listitem:
+      - link "Hero Super Splendor (Drum) Bike Black And Accent Booking for Ex-Showroom Price":
+        - /url: /Hero-Splendor-Accent-Booking-Ex-Showroom/dp/B0D9DMGGVP/?_encoding=UTF8&pd_rd_w=TdNXU&content-id=amzn1.sym.5e88c7b1-d6dd-463e-95f7-24271869827e&pf_rd_p=5e88c7b1-d6dd-463e-95f7-24271869827e&pf_rd_r=T7MDK19RYQYVW8W6JVX0&pd_rd_wg=t2nAO&pd_rd_r=1c2dfb23-f677-4fc3-81c5-44eb6918bba0&ref_=pd_hp_d_btf_ls_gwc_pc_en4_
+        - img "Hero Super Splendor (Drum) Bike Black And Accent Booking for Ex-Showroom Price"
+    - listitem:
+      - link "Hero XTREME 125R Bike(IBS) Firestorm Red Booking for Ex-Showroom Price":
+        - /url: /Hero-XTREME-Firestorm-Booking-Ex-Showroom/dp/B0D9DKVV41/?_encoding=UTF8&pd_rd_w=TdNXU&content-id=amzn1.sym.5e88c7b1-d6dd-463e-95f7-24271869827e&pf_rd_p=5e88c7b1-d6dd-463e-95f7-24271869827e&pf_rd_r=T7MDK19RYQYVW8W6JVX0&pd_rd_wg=t2nAO&pd_rd_r=1c2dfb23-f677-4fc3-81c5-44eb6918bba0&ref_=pd_hp_d_btf_ls_gwc_pc_en4_
+        - img "Hero XTREME 125R Bike(IBS) Firestorm Red Booking for Ex-Showroom Price"
+    - listitem:
+      - link "Hero Xpulse 200 4V (ABS Disc) Bike 199.6 Cc Booking for Ex-Showroom Price":
+        - /url: /Hero-Xpulse-199-6-Booking-Ex-Showroom/dp/B0D9DLZRPX/?_encoding=UTF8&pd_rd_w=TdNXU&content-id=amzn1.sym.5e88c7b1-d6dd-463e-95f7-24271869827e&pf_rd_p=5e88c7b1-d6dd-463e-95f7-24271869827e&pf_rd_r=T7MDK19RYQYVW8W6JVX0&pd_rd_wg=t2nAO&pd_rd_r=1c2dfb23-f677-4fc3-81c5-44eb6918bba0&ref_=pd_hp_d_btf_ls_gwc_pc_en4_
+        - img "Hero Xpulse 200 4V (ABS Disc) Bike 199.6 Cc Booking for Ex-Showroom Price"
+    - listitem:
+      - link "Hero Xtreme 160R 4V Double Disc Bike Cast Matt Slate Black Booking for Ex-Showroom Price":
+        - /url: /Hero-Xtreme-Double-Booking-Ex-Showroom/dp/B0D9DMXM6D/?_encoding=UTF8&pd_rd_w=TdNXU&content-id=amzn1.sym.5e88c7b1-d6dd-463e-95f7-24271869827e&pf_rd_p=5e88c7b1-d6dd-463e-95f7-24271869827e&pf_rd_r=T7MDK19RYQYVW8W6JVX0&pd_rd_wg=t2nAO&pd_rd_r=1c2dfb23-f677-4fc3-81c5-44eb6918bba0&ref_=pd_hp_d_btf_ls_gwc_pc_en4_
+        - img "Hero Xtreme 160R 4V Double Disc Bike Cast Matt Slate Black Booking for Ex-Showroom Price"
+    - listitem:
+      - link "Hero Super Splendor (Disc) Bike Black-Silver Str Booking for Ex-Showroom Price":
+        - /url: /Hero-Splendor-Black-Silver-Booking-Ex-Showroom/dp/B0D9DKHDMW/?_encoding=UTF8&pd_rd_w=TdNXU&content-id=amzn1.sym.5e88c7b1-d6dd-463e-95f7-24271869827e&pf_rd_p=5e88c7b1-d6dd-463e-95f7-24271869827e&pf_rd_r=T7MDK19RYQYVW8W6JVX0&pd_rd_wg=t2nAO&pd_rd_r=1c2dfb23-f677-4fc3-81c5-44eb6918bba0&ref_=pd_hp_d_btf_ls_gwc_pc_en4_
+        - img "Hero Super Splendor (Disc) Bike Black-Silver Str Booking for Ex-Showroom Price"
+    - listitem:
+      - link "Hero XTREME 125R Bike(ABS) Stallion Black Booking for Ex-Showroom Price":
+        - /url: /Hero-XTREME-Stallion-Booking-Ex-Showroom/dp/B0D9DL9B2P/?_encoding=UTF8&pd_rd_w=TdNXU&content-id=amzn1.sym.5e88c7b1-d6dd-463e-95f7-24271869827e&pf_rd_p=5e88c7b1-d6dd-463e-95f7-24271869827e&pf_rd_r=T7MDK19RYQYVW8W6JVX0&pd_rd_wg=t2nAO&pd_rd_r=1c2dfb23-f677-4fc3-81c5-44eb6918bba0&ref_=pd_hp_d_btf_ls_gwc_pc_en4_
+        - img "Hero XTREME 125R Bike(ABS) Stallion Black Booking for Ex-Showroom Price"
+    - listitem:
+      - link "Hero Super Splendor (Drum) Bike Candy Blazing Red Booking for Ex-Showroom Price":
+        - /url: /Hero-Splendor-Blazing-Booking-Ex-Showroom/dp/B0D9DM2449/?_encoding=UTF8&pd_rd_w=TdNXU&content-id=amzn1.sym.5e88c7b1-d6dd-463e-95f7-24271869827e&pf_rd_p=5e88c7b1-d6dd-463e-95f7-24271869827e&pf_rd_r=T7MDK19RYQYVW8W6JVX0&pd_rd_wg=t2nAO&pd_rd_r=1c2dfb23-f677-4fc3-81c5-44eb6918bba0&ref_=pd_hp_d_btf_ls_gwc_pc_en4_
+        - img "Hero Super Splendor (Drum) Bike Candy Blazing Red Booking for Ex-Showroom Price"
+    - listitem:
+      - link "Hero XTREME 125R Bike(ABS) Firestorm Red Booking for Ex-Showroom Price":
+        - /url: /Hero-XTREME-Firestorm-Booking-Ex-Showroom/dp/B0D9DM47P8/?_encoding=UTF8&pd_rd_w=TdNXU&content-id=amzn1.sym.5e88c7b1-d6dd-463e-95f7-24271869827e&pf_rd_p=5e88c7b1-d6dd-463e-95f7-24271869827e&pf_rd_r=T7MDK19RYQYVW8W6JVX0&pd_rd_wg=t2nAO&pd_rd_r=1c2dfb23-f677-4fc3-81c5-44eb6918bba0&ref_=pd_hp_d_btf_ls_gwc_pc_en4_
+        - img "Hero XTREME 125R Bike(ABS) Firestorm Red Booking for Ex-Showroom Price"
+    - listitem:
+      - link "Hero Super Splendor (Drum) Bike Heavy Grey Metallic Booking for Ex-Showroom Price":
+        - /url: /Hero-Splendor-Metallic-Booking-Ex-Showroom/dp/B0D9DHL7J5/?_encoding=UTF8&pd_rd_w=TdNXU&content-id=amzn1.sym.5e88c7b1-d6dd-463e-95f7-24271869827e&pf_rd_p=5e88c7b1-d6dd-463e-95f7-24271869827e&pf_rd_r=T7MDK19RYQYVW8W6JVX0&pd_rd_wg=t2nAO&pd_rd_r=1c2dfb23-f677-4fc3-81c5-44eb6918bba0&ref_=pd_hp_d_btf_ls_gwc_pc_en4_
+        - img "Hero Super Splendor (Drum) Bike Heavy Grey Metallic Booking for Ex-Showroom Price"
+    - listitem:
+      - link "Hero Passion+ (Drum) Bike Black Nexus Blue Booking for Ex-Showroom Price":
+        - /url: /Hero-Passion-Black-Booking-Ex-Showroom/dp/B0D9DMDVLS/?_encoding=UTF8&pd_rd_w=TdNXU&content-id=amzn1.sym.5e88c7b1-d6dd-463e-95f7-24271869827e&pf_rd_p=5e88c7b1-d6dd-463e-95f7-24271869827e&pf_rd_r=T7MDK19RYQYVW8W6JVX0&pd_rd_wg=t2nAO&pd_rd_r=1c2dfb23-f677-4fc3-81c5-44eb6918bba0&ref_=pd_hp_d_btf_ls_gwc_pc_en4_
+        - img "Hero Passion+ (Drum) Bike Black Nexus Blue Booking for Ex-Showroom Price"
+    - listitem:
+      - link "Hero Passion+ (Drum) Bike Black Grey Stripe Booking for Ex-Showroom Price":
+        - /url: /Hero-Passion-Stripe-Booking-Ex-Showroom/dp/B0D9DMTYXP/?_encoding=UTF8&pd_rd_w=TdNXU&content-id=amzn1.sym.5e88c7b1-d6dd-463e-95f7-24271869827e&pf_rd_p=5e88c7b1-d6dd-463e-95f7-24271869827e&pf_rd_r=T7MDK19RYQYVW8W6JVX0&pd_rd_wg=t2nAO&pd_rd_r=1c2dfb23-f677-4fc3-81c5-44eb6918bba0&ref_=pd_hp_d_btf_ls_gwc_pc_en4_
+        - img "Hero Passion+ (Drum) Bike Black Grey Stripe Booking for Ex-Showroom Price"
+    - listitem:
+      - link "Hero Passion+ (Drum) Bike Sport Red Booking for Ex-Showroom Price":
+        - /url: /Hero-Passion-Sport-Booking-Ex-Showroom/dp/B0D9DLZMCF/?_encoding=UTF8&pd_rd_w=TdNXU&content-id=amzn1.sym.5e88c7b1-d6dd-463e-95f7-24271869827e&pf_rd_p=5e88c7b1-d6dd-463e-95f7-24271869827e&pf_rd_r=T7MDK19RYQYVW8W6JVX0&pd_rd_wg=t2nAO&pd_rd_r=1c2dfb23-f677-4fc3-81c5-44eb6918bba0&ref_=pd_hp_d_btf_ls_gwc_pc_en4_
+        - img "Hero Passion+ (Drum) Bike Sport Red Booking for Ex-Showroom Price"
+    - listitem:
+      - link "Hero Super Splendor Xtec (Disc) Bike Black Booking for Ex-Showroom Price":
+        - /url: /Hero-Super-Splendor-Booking-Ex-Showroom/dp/B0D9DLWSNX/?_encoding=UTF8&pd_rd_w=TdNXU&content-id=amzn1.sym.5e88c7b1-d6dd-463e-95f7-24271869827e&pf_rd_p=5e88c7b1-d6dd-463e-95f7-24271869827e&pf_rd_r=T7MDK19RYQYVW8W6JVX0&pd_rd_wg=t2nAO&pd_rd_r=1c2dfb23-f677-4fc3-81c5-44eb6918bba0&ref_=pd_hp_d_btf_ls_gwc_pc_en4_
+        - img "Hero Super Splendor Xtec (Disc) Bike Black Booking for Ex-Showroom Price"
+    - listitem:
+      - link "Hero Super Splendor Xtec (Disc) Bike Candy Blazing Red Booking for Ex-Showroom Price":
+        - /url: /Hero-Splendor-Blazing-Booking-Ex-Showroom/dp/B0D9DLQBCV/?_encoding=UTF8&pd_rd_w=TdNXU&content-id=amzn1.sym.5e88c7b1-d6dd-463e-95f7-24271869827e&pf_rd_p=5e88c7b1-d6dd-463e-95f7-24271869827e&pf_rd_r=T7MDK19RYQYVW8W6JVX0&pd_rd_wg=t2nAO&pd_rd_r=1c2dfb23-f677-4fc3-81c5-44eb6918bba0&ref_=pd_hp_d_btf_ls_gwc_pc_en4_
+        - img "Hero Super Splendor Xtec (Disc) Bike Candy Blazing Red Booking for Ex-Showroom Price"
+    - listitem:
+      - link "Hero Super Splendor Xtec (Disc) Bike Matt Grey Booking for Ex-Showroom Price":
+        - /url: /Hero-Super-Splendor-Booking-Ex-Showroom/dp/B0D9DM6FJS/?_encoding=UTF8&pd_rd_w=TdNXU&content-id=amzn1.sym.5e88c7b1-d6dd-463e-95f7-24271869827e&pf_rd_p=5e88c7b1-d6dd-463e-95f7-24271869827e&pf_rd_r=T7MDK19RYQYVW8W6JVX0&pd_rd_wg=t2nAO&pd_rd_r=1c2dfb23-f677-4fc3-81c5-44eb6918bba0&ref_=pd_hp_d_btf_ls_gwc_pc_en4_
+        - img "Hero Super Splendor Xtec (Disc) Bike Matt Grey Booking for Ex-Showroom Price"
+    - listitem:
+      - link "Hero Super Splendor Xtec (Disc) Bike Matt Nexus Blue Booking for Ex-Showroom Price":
+        - /url: /Hero-Super-Splendor-Booking-Ex-Showroom/dp/B0D9DMGT8Y/?_encoding=UTF8&pd_rd_w=TdNXU&content-id=amzn1.sym.5e88c7b1-d6dd-463e-95f7-24271869827e&pf_rd_p=5e88c7b1-d6dd-463e-95f7-24271869827e&pf_rd_r=T7MDK19RYQYVW8W6JVX0&pd_rd_wg=t2nAO&pd_rd_r=1c2dfb23-f677-4fc3-81c5-44eb6918bba0&ref_=pd_hp_d_btf_ls_gwc_pc_en4_
+        - img "Hero Super Splendor Xtec (Disc) Bike Matt Nexus Blue Booking for Ex-Showroom Price"
+  - separator
+  - heading "Up to 60% off | Trending products from Emerging Businesses" [level=2]
+  - group:
+    - group:
+      - list:
+        - listitem:
+          - link "Stvin Magnetic Cable Clips for Wire and Cord Management, Office and Home Desk Organizer for Phone, Laptop, Tablet, and Car, Pack of 8, Black (Black)":
+            - /url: /Stvin-Magnetic-Cable-Cord-Management/dp/B0DX27F59W/?_encoding=UTF8&pd_rd_w=cNKqo&content-id=amzn1.sym.89d05381-8aaa-4569-bc28-9a8e2f0fa0bc&pf_rd_p=89d05381-8aaa-4569-bc28-9a8e2f0fa0bc&pf_rd_r=T7MDK19RYQYVW8W6JVX0&pd_rd_wg=t2nAO&pd_rd_r=1c2dfb23-f677-4fc3-81c5-44eb6918bba0&ref_=pd_hp_d_btf_NSS
+            - img "Stvin Magnetic Cable Clips for Wire and Cord Management, Office and Home Desk Organizer for Phone, Laptop, Tablet, and Car, Pack of 8, Black (Black)"
+        - listitem:
+          - link:
+            - /url: /Stvin-Magnetic-Cable-Cord-Management/dp/B0DX27F59W/?_encoding=UTF8&pd_rd_w=cNKqo&content-id=amzn1.sym.89d05381-8aaa-4569-bc28-9a8e2f0fa0bc&pf_rd_p=89d05381-8aaa-4569-bc28-9a8e2f0fa0bc&pf_rd_r=T7MDK19RYQYVW8W6JVX0&pd_rd_wg=t2nAO&pd_rd_r=1c2dfb23-f677-4fc3-81c5-44eb6918bba0&ref_=pd_hp_d_btf_NSS
+        - listitem:
+          - link:
+            - /url: /Stvin-Magnetic-Cable-Cord-Management/dp/B0DX27F59W/?_encoding=UTF8&pd_rd_w=cNKqo&content-id=amzn1.sym.89d05381-8aaa-4569-bc28-9a8e2f0fa0bc&pf_rd_p=89d05381-8aaa-4569-bc28-9a8e2f0fa0bc&pf_rd_r=T7MDK19RYQYVW8W6JVX0&pd_rd_wg=t2nAO&pd_rd_r=1c2dfb23-f677-4fc3-81c5-44eb6918bba0&ref_=pd_hp_d_btf_NSS
+        - listitem:
+          - link:
+            - /url: /Stvin-Magnetic-Cable-Cord-Management/dp/B0DX27F59W/?_encoding=UTF8&pd_rd_w=cNKqo&content-id=amzn1.sym.89d05381-8aaa-4569-bc28-9a8e2f0fa0bc&pf_rd_p=89d05381-8aaa-4569-bc28-9a8e2f0fa0bc&pf_rd_r=T7MDK19RYQYVW8W6JVX0&pd_rd_wg=t2nAO&pd_rd_r=1c2dfb23-f677-4fc3-81c5-44eb6918bba0&ref_=pd_hp_d_btf_NSS
+        - listitem:
+          - link:
+            - /url: /Stvin-Magnetic-Cable-Cord-Management/dp/B0DX27F59W/?_encoding=UTF8&pd_rd_w=cNKqo&content-id=amzn1.sym.89d05381-8aaa-4569-bc28-9a8e2f0fa0bc&pf_rd_p=89d05381-8aaa-4569-bc28-9a8e2f0fa0bc&pf_rd_r=T7MDK19RYQYVW8W6JVX0&pd_rd_wg=t2nAO&pd_rd_r=1c2dfb23-f677-4fc3-81c5-44eb6918bba0&ref_=pd_hp_d_btf_NSS
+        - listitem:
+          - link:
+            - /url: /Stvin-Magnetic-Cable-Cord-Management/dp/B0DX27F59W/?_encoding=UTF8&pd_rd_w=cNKqo&content-id=amzn1.sym.89d05381-8aaa-4569-bc28-9a8e2f0fa0bc&pf_rd_p=89d05381-8aaa-4569-bc28-9a8e2f0fa0bc&pf_rd_r=T7MDK19RYQYVW8W6JVX0&pd_rd_wg=t2nAO&pd_rd_r=1c2dfb23-f677-4fc3-81c5-44eb6918bba0&ref_=pd_hp_d_btf_NSS
+  - link "Stvin Magnetic Cable Clips for Wire and Cord Management, Office and Home Desk Organizer for Phone, Laptop, Tablet, and...":
+    - /url: /Stvin-Magnetic-Cable-Cord-Management/dp/B0DX27F59W/?_encoding=UTF8&pd_rd_w=cNKqo&content-id=amzn1.sym.89d05381-8aaa-4569-bc28-9a8e2f0fa0bc&pf_rd_p=89d05381-8aaa-4569-bc28-9a8e2f0fa0bc&pf_rd_r=T7MDK19RYQYVW8W6JVX0&pd_rd_wg=t2nAO&pd_rd_r=1c2dfb23-f677-4fc3-81c5-44eb6918bba0&ref_=pd_hp_d_btf_NSS
+    - paragraph: Stvin Magnetic Cable Clips for Wire and Cord Management, Office and Home Desk Organizer for Phone, Laptop, Tablet, and...
+  - text: "₹299.00 M.R.P: ₹699.00"
+  - heading "Latest styles | Dresses, kurta & more | 50% - 80% off" [level=2]
+  - link "Allen Solly, Fort Collins & more":
+    - /url: /s/?_encoding=UTF8&i=fashion&bbn=90505325031&rh=n%3A6648217031%2Cn%3A90418239031%2Cn%3A90505325031%2Cn%3A7459780031%2Cn%3A1953602031%2Cn%3A1968253031%2Cn%3A1968255031%2Cp_85%3A10440599031&hidden-keywords=-sponsored&pd_rd_w=IJAv4&content-id=amzn1.sym.de672dba-5fe0-46fb-90a6-19c0eec2d3c9&pf_rd_p=de672dba-5fe0-46fb-90a6-19c0eec2d3c9&pf_rd_r=T7MDK19RYQYVW8W6JVX0&pd_rd_wg=t2nAO&pd_rd_r=1c2dfb23-f677-4fc3-81c5-44eb6918bba0&ref_=pd_hp_d_btf_unk
+    - img "Allen Solly, Fort Collins & more"
+    - text: Kurta & sets
+  - link "Biba, Aurelia & more":
+    - /url: /s/?_encoding=UTF8&i=fashion&bbn=90505325031&rh=n%3A6648217031%2Cn%3A90418239031%2Cn%3A90505325031%2Cn%3A7459780031%2Cn%3A1953602031%2Cn%3A11400137031%2Cn%3A1968542031%2Cp_85%3A10440599031&hidden-keywords=-sponsored-men&pd_rd_w=IJAv4&content-id=amzn1.sym.de672dba-5fe0-46fb-90a6-19c0eec2d3c9&pf_rd_p=de672dba-5fe0-46fb-90a6-19c0eec2d3c9&pf_rd_r=T7MDK19RYQYVW8W6JVX0&pd_rd_wg=t2nAO&pd_rd_r=1c2dfb23-f677-4fc3-81c5-44eb6918bba0&ref_=pd_hp_d_btf_unk
+    - img "Biba, Aurelia & more"
+    - text: Tops
+  - link "Dresses":
+    - /url: /s/?_encoding=UTF8&i=fashion&bbn=90505325031&rh=n%3A6648217031%2Cn%3A90418239031%2Cn%3A90505325031%2Cn%3A7459780031%2Cn%3A1953602031%2Cn%3A11400137031%2Cn%3A15330093031%2Cp_85%3A10440599031&s=apparel&hidden-keywords=-sponsored&pd_rd_w=IJAv4&content-id=amzn1.sym.de672dba-5fe0-46fb-90a6-19c0eec2d3c9&pf_rd_p=de672dba-5fe0-46fb-90a6-19c0eec2d3c9&pf_rd_r=T7MDK19RYQYVW8W6JVX0&pd_rd_wg=t2nAO&pd_rd_r=1c2dfb23-f677-4fc3-81c5-44eb6918bba0&ref_=pd_hp_d_btf_unk
+    - img "Dresses"
+    - text: Dresses
+  - link "Sarees":
+    - /url: /s/?_encoding=UTF8&i=fashion&bbn=90505325031&rh=n%3A6648217031%2Cn%3A90418239031%2Cn%3A90505325031%2Cn%3A7459780031%2Cn%3A1953602031%2Cn%3A1968253031%2Cn%3A1968256031%2Cp_85%3A10440599031&hidden-keywords=-sponsored&pd_rd_w=IJAv4&content-id=amzn1.sym.de672dba-5fe0-46fb-90a6-19c0eec2d3c9&pf_rd_p=de672dba-5fe0-46fb-90a6-19c0eec2d3c9&pf_rd_r=T7MDK19RYQYVW8W6JVX0&pd_rd_wg=t2nAO&pd_rd_r=1c2dfb23-f677-4fc3-81c5-44eb6918bba0&ref_=pd_hp_d_btf_unk
+    - img "Sarees"
+    - text: Sarees
+  - link "Latest styles | Dresses, kurta & more | 50% - 80% off - See all deals":
+    - /url: /b/?_encoding=UTF8&ie=UTF8&node=84514749031&pd_rd_w=IJAv4&content-id=amzn1.sym.de672dba-5fe0-46fb-90a6-19c0eec2d3c9&pf_rd_p=de672dba-5fe0-46fb-90a6-19c0eec2d3c9&pf_rd_r=T7MDK19RYQYVW8W6JVX0&pd_rd_wg=t2nAO&pd_rd_r=1c2dfb23-f677-4fc3-81c5-44eb6918bba0&ref_=pd_hp_d_btf_unk
+    - text: See all deals
+  - heading "Up to 40% Off | Power & Comfort Essentials for Your Home" [level=2]
+  - group:
+    - group:
+      - list:
+        - listitem:
+          - link "ascension Plug in Night Lamp Night Light Energy Saving LED Plug in Lamp for Children Kids Bedroom Kids Bithday Return Gift, Multicolour (Pack of 1)":
+            - /url: /ascension-Plastic-Favourite-Birthday-Multicolour/dp/B0BFB7CTFL/?_encoding=UTF8&pd_rd_w=wpsxC&content-id=amzn1.sym.1cb4af68-ba97-47f9-949a-516784bc764d&pf_rd_p=1cb4af68-ba97-47f9-949a-516784bc764d&pf_rd_r=T7MDK19RYQYVW8W6JVX0&pd_rd_wg=t2nAO&pd_rd_r=1c2dfb23-f677-4fc3-81c5-44eb6918bba0&ref_=pd_hp_d_btf_ls_gwc_pc_en2_
+            - img "ascension Plug in Night Lamp Night Light Energy Saving LED Plug in Lamp for Children Kids Bedroom Kids Bithday Return Gift, Multicolour (Pack of 1)"
+        - listitem:
+          - link:
+            - /url: /ascension-Plastic-Favourite-Birthday-Multicolour/dp/B0BFB7CTFL/?_encoding=UTF8&pd_rd_w=wpsxC&content-id=amzn1.sym.1cb4af68-ba97-47f9-949a-516784bc764d&pf_rd_p=1cb4af68-ba97-47f9-949a-516784bc764d&pf_rd_r=T7MDK19RYQYVW8W6JVX0&pd_rd_wg=t2nAO&pd_rd_r=1c2dfb23-f677-4fc3-81c5-44eb6918bba0&ref_=pd_hp_d_btf_ls_gwc_pc_en2_
+        - listitem:
+          - link:
+            - /url: /ascension-Plastic-Favourite-Birthday-Multicolour/dp/B0BFB7CTFL/?_encoding=UTF8&pd_rd_w=wpsxC&content-id=amzn1.sym.1cb4af68-ba97-47f9-949a-516784bc764d&pf_rd_p=1cb4af68-ba97-47f9-949a-516784bc764d&pf_rd_r=T7MDK19RYQYVW8W6JVX0&pd_rd_wg=t2nAO&pd_rd_r=1c2dfb23-f677-4fc3-81c5-44eb6918bba0&ref_=pd_hp_d_btf_ls_gwc_pc_en2_
+        - listitem:
+          - link:
+            - /url: /ascension-Plastic-Favourite-Birthday-Multicolour/dp/B0BFB7CTFL/?_encoding=UTF8&pd_rd_w=wpsxC&content-id=amzn1.sym.1cb4af68-ba97-47f9-949a-516784bc764d&pf_rd_p=1cb4af68-ba97-47f9-949a-516784bc764d&pf_rd_r=T7MDK19RYQYVW8W6JVX0&pd_rd_wg=t2nAO&pd_rd_r=1c2dfb23-f677-4fc3-81c5-44eb6918bba0&ref_=pd_hp_d_btf_ls_gwc_pc_en2_
+        - listitem:
+          - link:
+            - /url: /ascension-Plastic-Favourite-Birthday-Multicolour/dp/B0BFB7CTFL/?_encoding=UTF8&pd_rd_w=wpsxC&content-id=amzn1.sym.1cb4af68-ba97-47f9-949a-516784bc764d&pf_rd_p=1cb4af68-ba97-47f9-949a-516784bc764d&pf_rd_r=T7MDK19RYQYVW8W6JVX0&pd_rd_wg=t2nAO&pd_rd_r=1c2dfb23-f677-4fc3-81c5-44eb6918bba0&ref_=pd_hp_d_btf_ls_gwc_pc_en2_
+        - listitem:
+          - link:
+            - /url: /ascension-Plastic-Favourite-Birthday-Multicolour/dp/B0BFB7CTFL/?_encoding=UTF8&pd_rd_w=wpsxC&content-id=amzn1.sym.1cb4af68-ba97-47f9-949a-516784bc764d&pf_rd_p=1cb4af68-ba97-47f9-949a-516784bc764d&pf_rd_r=T7MDK19RYQYVW8W6JVX0&pd_rd_wg=t2nAO&pd_rd_r=1c2dfb23-f677-4fc3-81c5-44eb6918bba0&ref_=pd_hp_d_btf_ls_gwc_pc_en2_
+  - link "ascension Plug in Night Lamp Night Light Energy Saving LED Plug in Lamp for Children Kids Bedroom Kids Bithday Return...":
+    - /url: /ascension-Plastic-Favourite-Birthday-Multicolour/dp/B0BFB7CTFL/?_encoding=UTF8&pd_rd_w=wpsxC&content-id=amzn1.sym.1cb4af68-ba97-47f9-949a-516784bc764d&pf_rd_p=1cb4af68-ba97-47f9-949a-516784bc764d&pf_rd_r=T7MDK19RYQYVW8W6JVX0&pd_rd_wg=t2nAO&pd_rd_r=1c2dfb23-f677-4fc3-81c5-44eb6918bba0&ref_=pd_hp_d_btf_ls_gwc_pc_en2_
+    - paragraph: ascension Plug in Night Lamp Night Light Energy Saving LED Plug in Lamp for Children Kids Bedroom Kids Bithday Return...
+  - text: "₹159.00 M.R.P: ₹599.00"
+  - heading "Best Sellers in Computers & Accessories" [level=2]
+  - link "Ambrane Unbreakable 3A Fast Charging 1.5m Braided Type C Cable for Smartphones, Tablets & other Type C devices, 480Mbps Data Sync, Quick Charge 3.0 (RCT15A, Black)":
+    - /url: /Ambrane-Unbreakable-Charging-Braided-Cable/dp/B098NS6PVG/?_encoding=UTF8&pd_rd_w=P3A02&content-id=amzn1.sym.211684f4-ebe1-443f-8a4a-0773471e979f&pf_rd_p=211684f4-ebe1-443f-8a4a-0773471e979f&pf_rd_r=T7MDK19RYQYVW8W6JVX0&pd_rd_wg=t2nAO&pd_rd_r=1c2dfb23-f677-4fc3-81c5-44eb6918bba0&ref_=pd_hp_d_btf_crs_zg_bs_976392031
+    - img "Ambrane Unbreakable 3A Fast Charging 1.5m Braided Type C Cable for Smartphones, Tablets & other Type C devices, 480Mbps Data Sync, Quick Charge 3.0 (RCT15A, Black)"
+  - link "Logitech M186 Wireless Mouse, 2.4GHz with USB Mini Receiver, 12-Month Battery Life, 1000 DPI Optical Tracking, Ambidextrous, Compatible with PC, Mac, Laptop":
+    - /url: /Logitech-Wireless-Receiver-Ambidextrous-Compatible/dp/B0D18192T2/?_encoding=UTF8&pd_rd_w=P3A02&content-id=amzn1.sym.211684f4-ebe1-443f-8a4a-0773471e979f&pf_rd_p=211684f4-ebe1-443f-8a4a-0773471e979f&pf_rd_r=T7MDK19RYQYVW8W6JVX0&pd_rd_wg=t2nAO&pd_rd_r=1c2dfb23-f677-4fc3-81c5-44eb6918bba0&ref_=pd_hp_d_btf_crs_zg_bs_976392031
+    - img "Logitech M186 Wireless Mouse, 2.4GHz with USB Mini Receiver, 12-Month Battery Life, 1000 DPI Optical Tracking, Ambidextrous, Compatible with PC, Mac, Laptop"
+  - link "Dyazo 6 Angles Adjustable Aluminum Ergonomic Foldable Portable Tabletop Laptop/Desktop Riser Stand Holder Compatible for MacBook, HP, Dell, Lenovo & All Other Notebook (Silver)":
+    - /url: /Dyazo-Computer-Adjustable-Ergonomic-Compatible/dp/B08LHTJTBB/?_encoding=UTF8&pd_rd_w=P3A02&content-id=amzn1.sym.211684f4-ebe1-443f-8a4a-0773471e979f&pf_rd_p=211684f4-ebe1-443f-8a4a-0773471e979f&pf_rd_r=T7MDK19RYQYVW8W6JVX0&pd_rd_wg=t2nAO&pd_rd_r=1c2dfb23-f677-4fc3-81c5-44eb6918bba0&ref_=pd_hp_d_btf_crs_zg_bs_976392031
+    - img "Dyazo 6 Angles Adjustable Aluminum Ergonomic Foldable Portable Tabletop Laptop/Desktop Riser Stand Holder Compatible for MacBook, HP, Dell, Lenovo & All Other Notebook (Silver)"
+  - link "Dell MS116 Wired Optical Mouse, 1000DPI, LED Tracking, Scrolling Wheel, Plug and Play":
+    - /url: /Dell-MS116-1000DPI-Wired-Optical/dp/B01HJI0FS2/?_encoding=UTF8&pd_rd_w=P3A02&content-id=amzn1.sym.211684f4-ebe1-443f-8a4a-0773471e979f&pf_rd_p=211684f4-ebe1-443f-8a4a-0773471e979f&pf_rd_r=T7MDK19RYQYVW8W6JVX0&pd_rd_wg=t2nAO&pd_rd_r=1c2dfb23-f677-4fc3-81c5-44eb6918bba0&ref_=pd_hp_d_btf_crs_zg_bs_976392031
+    - img "Dell MS116 Wired Optical Mouse, 1000DPI, LED Tracking, Scrolling Wheel, Plug and Play"
+  - separator
+  - heading "Best Sellers in Sports, Fitness & Outdoors" [level=2]
+  - list:
+    - listitem:
+      - link "Lifelong PVC Hex Dumbbells Pack of 2 (5kg*2) Black Color for Home Gym Equipment Fitness Barbell|Gym Exercise|Home...":
+        - /url: /Lifelong-Dumbbells-Equipment-Exercise-Warranty/dp/B09W5PSTBP/?_encoding=UTF8&pd_rd_w=IQ0p6&content-id=amzn1.sym.211684f4-ebe1-443f-8a4a-0773471e979f&pf_rd_p=211684f4-ebe1-443f-8a4a-0773471e979f&pf_rd_r=T7MDK19RYQYVW8W6JVX0&pd_rd_wg=t2nAO&pd_rd_r=1c2dfb23-f677-4fc3-81c5-44eb6918bba0&ref_=pd_hp_d_btf_crs_zg_bs_1984443031
+        - img "Lifelong PVC Hex Dumbbells Pack of 2 (5kg*2) Black Color for Home Gym Equipment Fitness Barbell|Gym Exercise|Home..."
+    - listitem:
+      - link "AMZTOP Mini Hand Tally Counter Finger Ring Digital Electronic Head Count,Japa Counter Counting Machine For Mantra Jap...":
+        - /url: /AARADHYA-Counter-Digital-Electronic-Counting/dp/B08GYVDKQ7/?_encoding=UTF8&pd_rd_w=IQ0p6&content-id=amzn1.sym.211684f4-ebe1-443f-8a4a-0773471e979f&pf_rd_p=211684f4-ebe1-443f-8a4a-0773471e979f&pf_rd_r=T7MDK19RYQYVW8W6JVX0&pd_rd_wg=t2nAO&pd_rd_r=1c2dfb23-f677-4fc3-81c5-44eb6918bba0&ref_=pd_hp_d_btf_crs_zg_bs_1984443031
+        - img "AMZTOP Mini Hand Tally Counter Finger Ring Digital Electronic Head Count,Japa Counter Counting Machine For Mantra Jap..."
+    - listitem:
+      - link "Boldfit Adjustable Hand Grip Strengthener, Hand Gripper for Men & Women for Gym Workout Hand Exercise Equipment to Use...":
+        - /url: /Boldfit-Adjustable-Strengthener-Exercise-Equipment/dp/B0B77X44MX/?_encoding=UTF8&pd_rd_w=IQ0p6&content-id=amzn1.sym.211684f4-ebe1-443f-8a4a-0773471e979f&pf_rd_p=211684f4-ebe1-443f-8a4a-0773471e979f&pf_rd_r=T7MDK19RYQYVW8W6JVX0&pd_rd_wg=t2nAO&pd_rd_r=1c2dfb23-f677-4fc3-81c5-44eb6918bba0&ref_=pd_hp_d_btf_crs_zg_bs_1984443031
+        - img "Boldfit Adjustable Hand Grip Strengthener, Hand Gripper for Men & Women for Gym Workout Hand Exercise Equipment to Use..."
+    - listitem:
+      - link "Boldfit Ethylene Vinyl Acetate Yoga Mats For Women Yoga Mat For Men Exercise Mat For Home Workout Gym Mat Anti Slip Yoga...":
+        - /url: /Boldfit-Women-Exercise-workout-Workout/dp/B0B7599YRJ/?_encoding=UTF8&pd_rd_w=IQ0p6&content-id=amzn1.sym.211684f4-ebe1-443f-8a4a-0773471e979f&pf_rd_p=211684f4-ebe1-443f-8a4a-0773471e979f&pf_rd_r=T7MDK19RYQYVW8W6JVX0&pd_rd_wg=t2nAO&pd_rd_r=1c2dfb23-f677-4fc3-81c5-44eb6918bba0&ref_=pd_hp_d_btf_crs_zg_bs_1984443031
+        - img "Boldfit Ethylene Vinyl Acetate Yoga Mats For Women Yoga Mat For Men Exercise Mat For Home Workout Gym Mat Anti Slip Yoga..."
+    - listitem:
+      - link "Yonex Mavis 350 Green Cap Nylon Shuttlecock (Yellow)":
+        - /url: /Yonex-Mavis-350-Shuttlecock-Yellow/dp/B000FI8ER8/?_encoding=UTF8&pd_rd_w=IQ0p6&content-id=amzn1.sym.211684f4-ebe1-443f-8a4a-0773471e979f&pf_rd_p=211684f4-ebe1-443f-8a4a-0773471e979f&pf_rd_r=T7MDK19RYQYVW8W6JVX0&pd_rd_wg=t2nAO&pd_rd_r=1c2dfb23-f677-4fc3-81c5-44eb6918bba0&ref_=pd_hp_d_btf_crs_zg_bs_1984443031
+        - img "Yonex Mavis 350 Green Cap Nylon Shuttlecock (Yellow)"
+    - listitem:
+      - link "Boldfit Heavy Resistance Band for Exercise & Stretching, Pull Up Band Suitable in Home & Gym Workout, Power Bands for...":
+        - /url: /Boldfit-Resistance-Band-Stretching-Resistances/dp/B08H8KD72Q/?_encoding=UTF8&pd_rd_w=IQ0p6&content-id=amzn1.sym.211684f4-ebe1-443f-8a4a-0773471e979f&pf_rd_p=211684f4-ebe1-443f-8a4a-0773471e979f&pf_rd_r=T7MDK19RYQYVW8W6JVX0&pd_rd_wg=t2nAO&pd_rd_r=1c2dfb23-f677-4fc3-81c5-44eb6918bba0&ref_=pd_hp_d_btf_crs_zg_bs_1984443031
+        - img "Boldfit Heavy Resistance Band for Exercise & Stretching, Pull Up Band Suitable in Home & Gym Workout, Power Bands for..."
+    - listitem:
+      - link "Boldfit Skipping Rope for Men and Women Jumping Rope With Adjustable Height Speed Skipping Rope for Kids, Women, Girls...":
+        - /url: /Boldfit-Polyvinyl-Chloride-Skipping-Adjustable/dp/B0B5N956P2/?_encoding=UTF8&pd_rd_w=IQ0p6&content-id=amzn1.sym.211684f4-ebe1-443f-8a4a-0773471e979f&pf_rd_p=211684f4-ebe1-443f-8a4a-0773471e979f&pf_rd_r=T7MDK19RYQYVW8W6JVX0&pd_rd_wg=t2nAO&pd_rd_r=1c2dfb23-f677-4fc3-81c5-44eb6918bba0&ref_=pd_hp_d_btf_crs_zg_bs_1984443031
+        - img "Boldfit Skipping Rope for Men and Women Jumping Rope With Adjustable Height Speed Skipping Rope for Kids, Women, Girls..."
+    - listitem:
+      - link "Boldfit Polyester Wrist Supporter for Gym Wrist Band for Men Gym & Women with Thumb Loop Straps Accessories for Men Hand...":
+        - /url: /Boldfit-Wrist-Supporter-Women-Straps/dp/B0B8RR5VQF/?_encoding=UTF8&pd_rd_w=IQ0p6&content-id=amzn1.sym.211684f4-ebe1-443f-8a4a-0773471e979f&pf_rd_p=211684f4-ebe1-443f-8a4a-0773471e979f&pf_rd_r=T7MDK19RYQYVW8W6JVX0&pd_rd_wg=t2nAO&pd_rd_r=1c2dfb23-f677-4fc3-81c5-44eb6918bba0&ref_=pd_hp_d_btf_crs_zg_bs_1984443031
+        - img "Boldfit Polyester Wrist Supporter for Gym Wrist Band for Men Gym & Women with Thumb Loop Straps Accessories for Men Hand..."
+    - listitem:
+      - 'link "Lifelong LLKS03 Foldable Kick Skating Cycle| Skate Scooter for Kids(Max User Weight: 50Kg) Kids Scooter (Pink, Blue)"':
+        - /url: /Lifelong-Adjustable-Weight-50-Manufacturers-LLKS03/dp/B0C862R9VF/?_encoding=UTF8&pd_rd_w=IQ0p6&content-id=amzn1.sym.211684f4-ebe1-443f-8a4a-0773471e979f&pf_rd_p=211684f4-ebe1-443f-8a4a-0773471e979f&pf_rd_r=T7MDK19RYQYVW8W6JVX0&pd_rd_wg=t2nAO&pd_rd_r=1c2dfb23-f677-4fc3-81c5-44eb6918bba0&ref_=pd_hp_d_btf_crs_zg_bs_1984443031
+        - 'img "Lifelong LLKS03 Foldable Kick Skating Cycle| Skate Scooter for Kids(Max User Weight: 50Kg) Kids Scooter (Pink, Blue)"'
+    - listitem:
+      - link "Jaspo Slog Plastic Tennis Cricket Bat Full Size Bat (34 X 4.5 Inch) for All Age Group (Slog Cricket Bat)":
+        - /url: /Plastic-Cricket-inches-Premium-Groups/dp/B09WVXMG96/?_encoding=UTF8&pd_rd_w=IQ0p6&content-id=amzn1.sym.211684f4-ebe1-443f-8a4a-0773471e979f&pf_rd_p=211684f4-ebe1-443f-8a4a-0773471e979f&pf_rd_r=T7MDK19RYQYVW8W6JVX0&pd_rd_wg=t2nAO&pd_rd_r=1c2dfb23-f677-4fc3-81c5-44eb6918bba0&ref_=pd_hp_d_btf_crs_zg_bs_1984443031
+        - img "Jaspo Slog Plastic Tennis Cricket Bat Full Size Bat (34 X 4.5 Inch) for All Age Group (Slog Cricket Bat)"
+    - listitem:
+      - link "Nivia Storm Football - Size 5 (White), Rubber":
+        - /url: /Nivia-Storm-Football-Size-White/dp/B00ICCYF0E/?_encoding=UTF8&pd_rd_w=IQ0p6&content-id=amzn1.sym.211684f4-ebe1-443f-8a4a-0773471e979f&pf_rd_p=211684f4-ebe1-443f-8a4a-0773471e979f&pf_rd_r=T7MDK19RYQYVW8W6JVX0&pd_rd_wg=t2nAO&pd_rd_r=1c2dfb23-f677-4fc3-81c5-44eb6918bba0&ref_=pd_hp_d_btf_crs_zg_bs_1984443031
+        - img "Nivia Storm Football - Size 5 (White), Rubber"
+    - listitem:
+      - link "Boldfit Resistance Bands Mini Loop Set (Pack of 3) Hip Band Toning Exercise Band for Gym Booty Belt Latex Bands...":
+        - /url: /Boldfit-Resistance-Theraband-Multicolor-RMiniloopLightSet3/dp/B09TR82NXB/?_encoding=UTF8&pd_rd_w=IQ0p6&content-id=amzn1.sym.211684f4-ebe1-443f-8a4a-0773471e979f&pf_rd_p=211684f4-ebe1-443f-8a4a-0773471e979f&pf_rd_r=T7MDK19RYQYVW8W6JVX0&pd_rd_wg=t2nAO&pd_rd_r=1c2dfb23-f677-4fc3-81c5-44eb6918bba0&ref_=pd_hp_d_btf_crs_zg_bs_1984443031
+        - img "Boldfit Resistance Bands Mini Loop Set (Pack of 3) Hip Band Toning Exercise Band for Gym Booty Belt Latex Bands..."
+    - listitem:
+      - link "Boldfit Gym Gloves for Men & Women with Wrist Support Accessories for Weightlifting, Training, Exercise, Cycling Gloves,...":
+        - /url: /Boldfit-Accessories-Weightlifting-Training-Exercise/dp/B0BN1V4GYB/?_encoding=UTF8&pd_rd_w=IQ0p6&content-id=amzn1.sym.211684f4-ebe1-443f-8a4a-0773471e979f&pf_rd_p=211684f4-ebe1-443f-8a4a-0773471e979f&pf_rd_r=T7MDK19RYQYVW8W6JVX0&pd_rd_wg=t2nAO&pd_rd_r=1c2dfb23-f677-4fc3-81c5-44eb6918bba0&ref_=pd_hp_d_btf_crs_zg_bs_1984443031
+        - img "Boldfit Gym Gloves for Men & Women with Wrist Support Accessories for Weightlifting, Training, Exercise, Cycling Gloves,..."
+    - listitem:
+      - link "Eveready CITYLITE Multipurpose Emergency Rechargeable Lantern|HL50|2W Torch & 3W Lantern|Micro USB Fast...":
+        - /url: /EVEREADY-CITYLITE-Lantern-Emergency-Multicolor/dp/B0C43NYG9R/?_encoding=UTF8&pd_rd_w=IQ0p6&content-id=amzn1.sym.211684f4-ebe1-443f-8a4a-0773471e979f&pf_rd_p=211684f4-ebe1-443f-8a4a-0773471e979f&pf_rd_r=T7MDK19RYQYVW8W6JVX0&pd_rd_wg=t2nAO&pd_rd_r=1c2dfb23-f677-4fc3-81c5-44eb6918bba0&ref_=pd_hp_d_btf_crs_zg_bs_1984443031
+        - img "Eveready CITYLITE Multipurpose Emergency Rechargeable Lantern|HL50|2W Torch & 3W Lantern|Micro USB Fast..."
+    - listitem:
+      - link "MiNi aIr cOoLeR MiSt fAn pOrTaBlE HuMiDiFiEr CoOlEr fOr hOmE WiTh 3 sPeEd mOdE WiTh wAtEr sPrAy, 7 CoLoR LeD AnD TiMeR,...":
+        - /url: /cOoLeR-pOrTaBlE-HuMiDiFiEr-CoOlEr-pErSoNaL/dp/B0F7L9S1Y6/?_encoding=UTF8&pd_rd_w=IQ0p6&content-id=amzn1.sym.211684f4-ebe1-443f-8a4a-0773471e979f&pf_rd_p=211684f4-ebe1-443f-8a4a-0773471e979f&pf_rd_r=T7MDK19RYQYVW8W6JVX0&pd_rd_wg=t2nAO&pd_rd_r=1c2dfb23-f677-4fc3-81c5-44eb6918bba0&ref_=pd_hp_d_btf_crs_zg_bs_1984443031
+        - img "MiNi aIr cOoLeR MiSt fAn pOrTaBlE HuMiDiFiEr CoOlEr fOr hOmE WiTh 3 sPeEd mOdE WiTh wAtEr sPrAy, 7 CoLoR LeD AnD TiMeR,..."
+    - listitem:
+      - link "Slovic Door Pull Up Bar for Home Workout [100 Kg Load Capacity]| No Screw pull up bars stand with Anti-Skid Grip [Length...":
+        - /url: /SLOVIC-Door-Pull-Workout-Capacity/dp/B0B6NSDR2H/?_encoding=UTF8&pd_rd_w=IQ0p6&content-id=amzn1.sym.211684f4-ebe1-443f-8a4a-0773471e979f&pf_rd_p=211684f4-ebe1-443f-8a4a-0773471e979f&pf_rd_r=T7MDK19RYQYVW8W6JVX0&pd_rd_wg=t2nAO&pd_rd_r=1c2dfb23-f677-4fc3-81c5-44eb6918bba0&ref_=pd_hp_d_btf_crs_zg_bs_1984443031
+        - img "Slovic Door Pull Up Bar for Home Workout [100 Kg Load Capacity]| No Screw pull up bars stand with Anti-Skid Grip [Length..."
+    - listitem:
+      - link "Lifelong LLYM92 Yoga mat for Women & Men EVA Material 4mm Grey Anti Slip for Gym Workout":
+        - /url: /Lifelong-LLYM92-Women-Material-Workout/dp/B09YJ475JC/?_encoding=UTF8&pd_rd_w=IQ0p6&content-id=amzn1.sym.211684f4-ebe1-443f-8a4a-0773471e979f&pf_rd_p=211684f4-ebe1-443f-8a4a-0773471e979f&pf_rd_r=T7MDK19RYQYVW8W6JVX0&pd_rd_wg=t2nAO&pd_rd_r=1c2dfb23-f677-4fc3-81c5-44eb6918bba0&ref_=pd_hp_d_btf_crs_zg_bs_1984443031
+        - img "Lifelong LLYM92 Yoga mat for Women & Men EVA Material 4mm Grey Anti Slip for Gym Workout"
+    - listitem:
+      - link "Lifelong Dual Color TPE Material Yoga Mat for Women & Men|6mm Anti-Slip Yoga Mat for Gym Workout Exercise Mat for Home...":
+        - /url: /Lifelong-Material-Anti-Slip-Exercise-Multicolor/dp/B0D9VVQD2S/?_encoding=UTF8&pd_rd_w=IQ0p6&content-id=amzn1.sym.211684f4-ebe1-443f-8a4a-0773471e979f&pf_rd_p=211684f4-ebe1-443f-8a4a-0773471e979f&pf_rd_r=T7MDK19RYQYVW8W6JVX0&pd_rd_wg=t2nAO&pd_rd_r=1c2dfb23-f677-4fc3-81c5-44eb6918bba0&ref_=pd_hp_d_btf_crs_zg_bs_1984443031
+        - img "Lifelong Dual Color TPE Material Yoga Mat for Women & Men|6mm Anti-Slip Yoga Mat for Gym Workout Exercise Mat for Home..."
+    - listitem:
+      - link "Boldfit Resistance Bands for Workout for Women Pilate Bands for Home Exercise Thera Band Toning Exercise for Gym Latex...":
+        - /url: /Boldfit-Resistance-Exercise-Theraband-Stretching/dp/B0D6R39TXG/?_encoding=UTF8&pd_rd_w=IQ0p6&content-id=amzn1.sym.211684f4-ebe1-443f-8a4a-0773471e979f&pf_rd_p=211684f4-ebe1-443f-8a4a-0773471e979f&pf_rd_r=T7MDK19RYQYVW8W6JVX0&pd_rd_wg=t2nAO&pd_rd_r=1c2dfb23-f677-4fc3-81c5-44eb6918bba0&ref_=pd_hp_d_btf_crs_zg_bs_1984443031
+        - img "Boldfit Resistance Bands for Workout for Women Pilate Bands for Home Exercise Thera Band Toning Exercise for Gym Latex..."
+    - listitem:
+      - link "Amazon Basics Canvas Ankle Weight, 1 Kg, Set of 2":
+        - /url: /Amazon-Basics-Canvas-Ankle-Weight/dp/B0D153917L/?_encoding=UTF8&pd_rd_w=IQ0p6&content-id=amzn1.sym.211684f4-ebe1-443f-8a4a-0773471e979f&pf_rd_p=211684f4-ebe1-443f-8a4a-0773471e979f&pf_rd_r=T7MDK19RYQYVW8W6JVX0&pd_rd_wg=t2nAO&pd_rd_r=1c2dfb23-f677-4fc3-81c5-44eb6918bba0&ref_=pd_hp_d_btf_crs_zg_bs_1984443031
+        - img "Amazon Basics Canvas Ankle Weight, 1 Kg, Set of 2"
+    - listitem:
+      - link "Amazon Brand - Symactive PVC (Round/Hex) Dumbbell Sets and Fitnessfor Men and Women Body Workout":
+        - /url: /Amazon-Brand-Symactive-Dumbbells-Workout/dp/B0CV84LYG4/?_encoding=UTF8&pd_rd_w=IQ0p6&content-id=amzn1.sym.211684f4-ebe1-443f-8a4a-0773471e979f&pf_rd_p=211684f4-ebe1-443f-8a4a-0773471e979f&pf_rd_r=T7MDK19RYQYVW8W6JVX0&pd_rd_wg=t2nAO&pd_rd_r=1c2dfb23-f677-4fc3-81c5-44eb6918bba0&ref_=pd_hp_d_btf_crs_zg_bs_1984443031
+        - img "Amazon Brand - Symactive PVC (Round/Hex) Dumbbell Sets and Fitnessfor Men and Women Body Workout"
+    - listitem:
+      - link "Yonex ZR 100 Light Aluminium Badminton Racquet with Full Cover | Made in India (Black,Pack of 1)":
+        - /url: /ZR-Aluminum-Strung-Badminton-Racquet/dp/B07QWSR4FH/?_encoding=UTF8&pd_rd_w=IQ0p6&content-id=amzn1.sym.211684f4-ebe1-443f-8a4a-0773471e979f&pf_rd_p=211684f4-ebe1-443f-8a4a-0773471e979f&pf_rd_r=T7MDK19RYQYVW8W6JVX0&pd_rd_wg=t2nAO&pd_rd_r=1c2dfb23-f677-4fc3-81c5-44eb6918bba0&ref_=pd_hp_d_btf_crs_zg_bs_1984443031
+        - img "Yonex ZR 100 Light Aluminium Badminton Racquet with Full Cover | Made in India (Black,Pack of 1)"
+    - listitem:
+      - link "Kidsmate Cruiser Kick Scooter for Kids with Broad Wheels | 3-Wheel Skate Scooter for Boys & Girls of Ages 2-12 Years |...":
+        - /url: /Kidsmate-Cruiser-Scooter-3-Wheel-Adjustable/dp/B0D4DZ7WL2/?_encoding=UTF8&pd_rd_w=IQ0p6&content-id=amzn1.sym.211684f4-ebe1-443f-8a4a-0773471e979f&pf_rd_p=211684f4-ebe1-443f-8a4a-0773471e979f&pf_rd_r=T7MDK19RYQYVW8W6JVX0&pd_rd_wg=t2nAO&pd_rd_r=1c2dfb23-f677-4fc3-81c5-44eb6918bba0&ref_=pd_hp_d_btf_crs_zg_bs_1984443031
+        - img "Kidsmate Cruiser Kick Scooter for Kids with Broad Wheels | 3-Wheel Skate Scooter for Boys & Girls of Ages 2-12 Years |..."
+    - listitem:
+      - link "Silver's Micro Badminton Kit (2 Racquets with Full Cover, 1 Box Feather Shuttlecock Pack of 3), Multicolor":
+        - /url: /Silvers-Badminton-Racquets-Shuttlecock-Multicolor/dp/B0D9H14F4L/?_encoding=UTF8&pd_rd_w=IQ0p6&content-id=amzn1.sym.211684f4-ebe1-443f-8a4a-0773471e979f&pf_rd_p=211684f4-ebe1-443f-8a4a-0773471e979f&pf_rd_r=T7MDK19RYQYVW8W6JVX0&pd_rd_wg=t2nAO&pd_rd_r=1c2dfb23-f677-4fc3-81c5-44eb6918bba0&ref_=pd_hp_d_btf_crs_zg_bs_1984443031
+        - img "Silver's Micro Badminton Kit (2 Racquets with Full Cover, 1 Box Feather Shuttlecock Pack of 3), Multicolor"
+    - listitem:
+      - link "Boldfit Resistance Tube with Foam Handles, Door Anchor for Exercise & Stretching, Suitable in Home & Gym Workout for Men...":
+        - /url: /Boldfit-Resistance-Handles-Black-15KG/dp/B08NDNX269/?_encoding=UTF8&pd_rd_w=IQ0p6&content-id=amzn1.sym.211684f4-ebe1-443f-8a4a-0773471e979f&pf_rd_p=211684f4-ebe1-443f-8a4a-0773471e979f&pf_rd_r=T7MDK19RYQYVW8W6JVX0&pd_rd_wg=t2nAO&pd_rd_r=1c2dfb23-f677-4fc3-81c5-44eb6918bba0&ref_=pd_hp_d_btf_crs_zg_bs_1984443031
+        - img "Boldfit Resistance Tube with Foam Handles, Door Anchor for Exercise & Stretching, Suitable in Home & Gym Workout for Men..."
+    - listitem:
+      - link "Hundred Cosmogear Badminton Kit-Bag (Navy)|Double Zipper|Bag with Front Zipper Pocket Polyester":
+        - /url: /Hundred-Cosmogear-Badminton-Kit-Bag-Double/dp/B0CP2G5L89/?_encoding=UTF8&pd_rd_w=IQ0p6&content-id=amzn1.sym.211684f4-ebe1-443f-8a4a-0773471e979f&pf_rd_p=211684f4-ebe1-443f-8a4a-0773471e979f&pf_rd_r=T7MDK19RYQYVW8W6JVX0&pd_rd_wg=t2nAO&pd_rd_r=1c2dfb23-f677-4fc3-81c5-44eb6918bba0&ref_=pd_hp_d_btf_crs_zg_bs_1984443031
+        - img "Hundred Cosmogear Badminton Kit-Bag (Navy)|Double Zipper|Bag with Front Zipper Pocket Polyester"
+    - listitem:
+      - link "Wiselife Tru Alignment Yoga Mat + Sleek Yoga Strap For Men And Women (Probalance Tpe Material 6Mm Extra Thick Extra Long...":
+        - /url: /WiseLife-Alignment-ProBalance-Material-Emerald/dp/B0CKYTJNS7/?_encoding=UTF8&pd_rd_w=IQ0p6&content-id=amzn1.sym.211684f4-ebe1-443f-8a4a-0773471e979f&pf_rd_p=211684f4-ebe1-443f-8a4a-0773471e979f&pf_rd_r=T7MDK19RYQYVW8W6JVX0&pd_rd_wg=t2nAO&pd_rd_r=1c2dfb23-f677-4fc3-81c5-44eb6918bba0&ref_=pd_hp_d_btf_crs_zg_bs_1984443031
+        - img "Wiselife Tru Alignment Yoga Mat + Sleek Yoga Strap For Men And Women (Probalance Tpe Material 6Mm Extra Thick Extra Long..."
+    - listitem:
+      - link "Boldfit Cricket Stumps with Stand Cricket Kit Plastic Wickets for Cricket Standard Wickets for Cricket Ground, Match,...":
+        - /url: /Boldfit-Standard-Tournament-Fluorescent-Plastic/dp/B0C4LCHRS9/?_encoding=UTF8&pd_rd_w=IQ0p6&content-id=amzn1.sym.211684f4-ebe1-443f-8a4a-0773471e979f&pf_rd_p=211684f4-ebe1-443f-8a4a-0773471e979f&pf_rd_r=T7MDK19RYQYVW8W6JVX0&pd_rd_wg=t2nAO&pd_rd_r=1c2dfb23-f677-4fc3-81c5-44eb6918bba0&ref_=pd_hp_d_btf_crs_zg_bs_1984443031
+        - img "Boldfit Cricket Stumps with Stand Cricket Kit Plastic Wickets for Cricket Standard Wickets for Cricket Ground, Match,..."
+    - listitem:
+      - link "Boldfit Nylon Wrist Supporter for Gym Wrist Band for Men Gym&Women with Thumb Loop Straps-Wrist Wrap Gym Accessories for...":
+        - /url: /Boldfit-Wrist-Supporter-Women-Straps/dp/B0CH1769G7/?_encoding=UTF8&pd_rd_w=IQ0p6&content-id=amzn1.sym.211684f4-ebe1-443f-8a4a-0773471e979f&pf_rd_p=211684f4-ebe1-443f-8a4a-0773471e979f&pf_rd_r=T7MDK19RYQYVW8W6JVX0&pd_rd_wg=t2nAO&pd_rd_r=1c2dfb23-f677-4fc3-81c5-44eb6918bba0&ref_=pd_hp_d_btf_crs_zg_bs_1984443031
+        - img "Boldfit Nylon Wrist Supporter for Gym Wrist Band for Men Gym&Women with Thumb Loop Straps-Wrist Wrap Gym Accessories for..."
+    - listitem:
+      - link "Boldfit Adjustable Hand Grip Strengthener, Hand Gripper With Counter for Men & Women for Gym Workout Hand Exercise...":
+        - /url: /Boldfit-Adjustable-Strengthener-Exercise-Equipment/dp/B0BR3LQ4TT/?_encoding=UTF8&pd_rd_w=IQ0p6&content-id=amzn1.sym.211684f4-ebe1-443f-8a4a-0773471e979f&pf_rd_p=211684f4-ebe1-443f-8a4a-0773471e979f&pf_rd_r=T7MDK19RYQYVW8W6JVX0&pd_rd_wg=t2nAO&pd_rd_r=1c2dfb23-f677-4fc3-81c5-44eb6918bba0&ref_=pd_hp_d_btf_crs_zg_bs_1984443031
+        - img "Boldfit Adjustable Hand Grip Strengthener, Hand Gripper With Counter for Men & Women for Gym Workout Hand Exercise..."
+  - separator
+  - heading "Starting ₹229 | Unique home essentials from nearby stores" [level=2]
+  - list:
+    - listitem:
+      - link "StyleMyWay Ceramic Bathroom Set in Pristine White (White, 1 Liquid Soap Dispenser, 1 Soap Tray, 1 Toothbrush Holder) |...":
+        - /url: /StyleMyWay-Bathroom-Pristine-Dispenser-Toothbrush/dp/B0CMXPT6TQ/?_encoding=UTF8&pd_rd_w=7zhqe&content-id=amzn1.sym.3f75a84e-71e3-42c4-a08d-39a70ec91aab&pf_rd_p=3f75a84e-71e3-42c4-a08d-39a70ec91aab&pf_rd_r=T7MDK19RYQYVW8W6JVX0&pd_rd_wg=t2nAO&pd_rd_r=1c2dfb23-f677-4fc3-81c5-44eb6918bba0&ref_=pd_hp_d_btf_ls_gwc_pc_en2_
+        - img "StyleMyWay Ceramic Bathroom Set in Pristine White (White, 1 Liquid Soap Dispenser, 1 Soap Tray, 1 Toothbrush Holder) |..."
+    - listitem:
+      - link "Self Design Blue Set of 2 Cushion Covers for Sofa Home Bedroom (16x16 inch or 40 x 40 cm)":
+        - /url: /Design-Cushion-Covers-Bedroom-16x16/dp/B0D5VSBZ15/?_encoding=UTF8&pd_rd_w=7zhqe&content-id=amzn1.sym.3f75a84e-71e3-42c4-a08d-39a70ec91aab&pf_rd_p=3f75a84e-71e3-42c4-a08d-39a70ec91aab&pf_rd_r=T7MDK19RYQYVW8W6JVX0&pd_rd_wg=t2nAO&pd_rd_r=1c2dfb23-f677-4fc3-81c5-44eb6918bba0&ref_=pd_hp_d_btf_ls_gwc_pc_en2_
+        - img "Self Design Blue Set of 2 Cushion Covers for Sofa Home Bedroom (16x16 inch or 40 x 40 cm)"
+    - listitem:
+      - link "WOODISA KRAFTS Wooden and Cast Iron Small Brushed Cycle Home Decorative Item (Black, 10 x 7 inch)":
+        - /url: /WOODISA-KRAFTS-Wooden-Brushed-Decorative/dp/B0CRMTCPDS/?_encoding=UTF8&pd_rd_w=7zhqe&content-id=amzn1.sym.3f75a84e-71e3-42c4-a08d-39a70ec91aab&pf_rd_p=3f75a84e-71e3-42c4-a08d-39a70ec91aab&pf_rd_r=T7MDK19RYQYVW8W6JVX0&pd_rd_wg=t2nAO&pd_rd_r=1c2dfb23-f677-4fc3-81c5-44eb6918bba0&ref_=pd_hp_d_btf_ls_gwc_pc_en2_
+        - img "WOODISA KRAFTS Wooden and Cast Iron Small Brushed Cycle Home Decorative Item (Black, 10 x 7 inch)"
+    - listitem:
+      - link "The Fragrance People Hyacinth Reed Diffuser Oil in Glass Bottle | Includes 8 (175ml) Set of Reed Sticks | Home Scented...":
+        - /url: /Fragrance-People-Hyacinth-Freshener-Essential/dp/B0CPLJJ4DH/?_encoding=UTF8&pd_rd_w=7zhqe&content-id=amzn1.sym.3f75a84e-71e3-42c4-a08d-39a70ec91aab&pf_rd_p=3f75a84e-71e3-42c4-a08d-39a70ec91aab&pf_rd_r=T7MDK19RYQYVW8W6JVX0&pd_rd_wg=t2nAO&pd_rd_r=1c2dfb23-f677-4fc3-81c5-44eb6918bba0&ref_=pd_hp_d_btf_ls_gwc_pc_en2_
+        - img "The Fragrance People Hyacinth Reed Diffuser Oil in Glass Bottle | Includes 8 (175ml) Set of Reed Sticks | Home Scented..."
+    - listitem:
+      - link "Bright Wood Craft Personalized Name Plate With Designer Acrylic Letters For Door| House/Appt./Bunglow|Wooden |10x12...":
+        - /url: /Bright-Wood-Craft-Personalized-Designer/dp/B0C4H6GVC1/?_encoding=UTF8&pd_rd_w=7zhqe&content-id=amzn1.sym.3f75a84e-71e3-42c4-a08d-39a70ec91aab&pf_rd_p=3f75a84e-71e3-42c4-a08d-39a70ec91aab&pf_rd_r=T7MDK19RYQYVW8W6JVX0&pd_rd_wg=t2nAO&pd_rd_r=1c2dfb23-f677-4fc3-81c5-44eb6918bba0&ref_=pd_hp_d_btf_ls_gwc_pc_en2_
+        - img "Bright Wood Craft Personalized Name Plate With Designer Acrylic Letters For Door| House/Appt./Bunglow|Wooden |10x12..."
+    - listitem:
+      - link "FlowerAura Decorative Elegant Seven Chakra & Luck Colorful Jar Wax Candle for Valentine's Day Gift, Birthday Gift,...":
+        - /url: /FlowerAura-Decorative-Valentines-Anniversary-Memorable/dp/B0D4DSYTST/?_encoding=UTF8&pd_rd_w=7zhqe&content-id=amzn1.sym.3f75a84e-71e3-42c4-a08d-39a70ec91aab&pf_rd_p=3f75a84e-71e3-42c4-a08d-39a70ec91aab&pf_rd_r=T7MDK19RYQYVW8W6JVX0&pd_rd_wg=t2nAO&pd_rd_r=1c2dfb23-f677-4fc3-81c5-44eb6918bba0&ref_=pd_hp_d_btf_ls_gwc_pc_en2_
+        - img "FlowerAura Decorative Elegant Seven Chakra & Luck Colorful Jar Wax Candle for Valentine's Day Gift, Birthday Gift,..."
+    - listitem:
+      - link "PANCHOLI UNIQUE Premium Rajasthani Wind Chimes � Hanging Bells for Positive Vibes | Perfect for Living Room, Patio,...":
+        - /url: /PANCHOLI-UNIQUE-Premium-Rajasthani-Chimes/dp/B0DDCKCYS7/?_encoding=UTF8&pd_rd_w=7zhqe&content-id=amzn1.sym.3f75a84e-71e3-42c4-a08d-39a70ec91aab&pf_rd_p=3f75a84e-71e3-42c4-a08d-39a70ec91aab&pf_rd_r=T7MDK19RYQYVW8W6JVX0&pd_rd_wg=t2nAO&pd_rd_r=1c2dfb23-f677-4fc3-81c5-44eb6918bba0&ref_=pd_hp_d_btf_ls_gwc_pc_en2_
+        - img "PANCHOLI UNIQUE Premium Rajasthani Wind Chimes � Hanging Bells for Positive Vibes | Perfect for Living Room, Patio,..."
+    - listitem:
+      - link "Simply Vedic Unisex Adult Combo Of 7 Chakra Crystal Tree Of Life And Tiger Eye Bracelet| For Positive Energy, Good Luck...":
+        - /url: /Simply-Vedic-Bracelet-Gemstones-Spiritual/dp/B0D8L7SZTW/?_encoding=UTF8&pd_rd_w=7zhqe&content-id=amzn1.sym.3f75a84e-71e3-42c4-a08d-39a70ec91aab&pf_rd_p=3f75a84e-71e3-42c4-a08d-39a70ec91aab&pf_rd_r=T7MDK19RYQYVW8W6JVX0&pd_rd_wg=t2nAO&pd_rd_r=1c2dfb23-f677-4fc3-81c5-44eb6918bba0&ref_=pd_hp_d_btf_ls_gwc_pc_en2_
+        - img "Simply Vedic Unisex Adult Combo Of 7 Chakra Crystal Tree Of Life And Tiger Eye Bracelet| For Positive Energy, Good Luck..."
+    - listitem:
+      - link "NEXTSTEP1 Portugese Wall Plates for home decoration | Wall decor items for living room | Metal Wall décor | Gift Items...":
+        - /url: /NEXTSTEP1-Portugese-Plates-decoration-plates/dp/B0DWSPR7BK/?_encoding=UTF8&pd_rd_w=7zhqe&content-id=amzn1.sym.3f75a84e-71e3-42c4-a08d-39a70ec91aab&pf_rd_p=3f75a84e-71e3-42c4-a08d-39a70ec91aab&pf_rd_r=T7MDK19RYQYVW8W6JVX0&pd_rd_wg=t2nAO&pd_rd_r=1c2dfb23-f677-4fc3-81c5-44eb6918bba0&ref_=pd_hp_d_btf_ls_gwc_pc_en2_
+        - img "NEXTSTEP1 Portugese Wall Plates for home decoration | Wall decor items for living room | Metal Wall décor | Gift Items..."
+    - listitem:
+      - link "SR DecorGanesha Idol Car Dashboard IdolGanesha Murti Ganpati Idol for Home Decor Puja Lord Ganesh Statue Gift for Office...":
+        - /url: /DecorGanesha-Dashboard-IdolGanesha-Figurine-Bansuri/dp/B0D5D2C2V6/?_encoding=UTF8&pd_rd_w=7zhqe&content-id=amzn1.sym.3f75a84e-71e3-42c4-a08d-39a70ec91aab&pf_rd_p=3f75a84e-71e3-42c4-a08d-39a70ec91aab&pf_rd_r=T7MDK19RYQYVW8W6JVX0&pd_rd_wg=t2nAO&pd_rd_r=1c2dfb23-f677-4fc3-81c5-44eb6918bba0&ref_=pd_hp_d_btf_ls_gwc_pc_en2_
+        - img "SR DecorGanesha Idol Car Dashboard IdolGanesha Murti Ganpati Idol for Home Decor Puja Lord Ganesh Statue Gift for Office..."
+    - listitem:
+      - link "Large Memorial 7 Sun Copper Feng Shui/Vastu Wind Chimes for Home, Office, Indoor & Outdoor Decoration | Decorative...":
+        - /url: /Memorial-Copper-Decoration-Decorative-Vibrations/dp/B0CPY7NH48/?_encoding=UTF8&pd_rd_w=7zhqe&content-id=amzn1.sym.3f75a84e-71e3-42c4-a08d-39a70ec91aab&pf_rd_p=3f75a84e-71e3-42c4-a08d-39a70ec91aab&pf_rd_r=T7MDK19RYQYVW8W6JVX0&pd_rd_wg=t2nAO&pd_rd_r=1c2dfb23-f677-4fc3-81c5-44eb6918bba0&ref_=pd_hp_d_btf_ls_gwc_pc_en2_
+        - img "Large Memorial 7 Sun Copper Feng Shui/Vastu Wind Chimes for Home, Office, Indoor & Outdoor Decoration | Decorative..."
+    - listitem:
+      - link "Plus Value Premium Handicraft Vastu Feng Shui Brass Tortoise Turtle with Plate [Career, Good Luck]":
+        - /url: /Plus-Value-Premium-Handicraft-Tortoise/dp/B09YVCQQFL/?_encoding=UTF8&pd_rd_w=7zhqe&content-id=amzn1.sym.3f75a84e-71e3-42c4-a08d-39a70ec91aab&pf_rd_p=3f75a84e-71e3-42c4-a08d-39a70ec91aab&pf_rd_r=T7MDK19RYQYVW8W6JVX0&pd_rd_wg=t2nAO&pd_rd_r=1c2dfb23-f677-4fc3-81c5-44eb6918bba0&ref_=pd_hp_d_btf_ls_gwc_pc_en2_
+        - img "Plus Value Premium Handicraft Vastu Feng Shui Brass Tortoise Turtle with Plate [Career, Good Luck]"
+    - listitem:
+      - link "Matz and More Kids Carpet/Area Rug for Childrens Play Room, Bedroom with Anti Slip Backing, 3.3X 5 feet, Nylon Floor Mat...":
+        - /url: /Matz-More-Childrens-Letters-Yellow/dp/B0CZMKXV8J/?_encoding=UTF8&pd_rd_w=7zhqe&content-id=amzn1.sym.3f75a84e-71e3-42c4-a08d-39a70ec91aab&pf_rd_p=3f75a84e-71e3-42c4-a08d-39a70ec91aab&pf_rd_r=T7MDK19RYQYVW8W6JVX0&pd_rd_wg=t2nAO&pd_rd_r=1c2dfb23-f677-4fc3-81c5-44eb6918bba0&ref_=pd_hp_d_btf_ls_gwc_pc_en2_
+        - img "Matz and More Kids Carpet/Area Rug for Childrens Play Room, Bedroom with Anti Slip Backing, 3.3X 5 feet, Nylon Floor Mat..."
+    - listitem:
+      - link "Home Decor Iron Metal Heavy Quality Tea Cup Stand Mug Holder Organizer for 6 Cups (Black)":
+        - /url: /Decor-Heavy-Quality-Holder-Organizer/dp/B0CMT9SRY3/?_encoding=UTF8&pd_rd_w=7zhqe&content-id=amzn1.sym.3f75a84e-71e3-42c4-a08d-39a70ec91aab&pf_rd_p=3f75a84e-71e3-42c4-a08d-39a70ec91aab&pf_rd_r=T7MDK19RYQYVW8W6JVX0&pd_rd_wg=t2nAO&pd_rd_r=1c2dfb23-f677-4fc3-81c5-44eb6918bba0&ref_=pd_hp_d_btf_ls_gwc_pc_en2_
+        - img "Home Decor Iron Metal Heavy Quality Tea Cup Stand Mug Holder Organizer for 6 Cups (Black)"
+    - listitem:
+      - link "Plus Value Metal Limbu Mirchi Door Hanging Feng Shui Vastu Remedies for Protection from Negativity at Home, Office,...":
+        - /url: /Plusvalue-Hanging-Remedies-Protection-Negativity/dp/B08LGPXBVQ/?_encoding=UTF8&pd_rd_w=7zhqe&content-id=amzn1.sym.3f75a84e-71e3-42c4-a08d-39a70ec91aab&pf_rd_p=3f75a84e-71e3-42c4-a08d-39a70ec91aab&pf_rd_r=T7MDK19RYQYVW8W6JVX0&pd_rd_wg=t2nAO&pd_rd_r=1c2dfb23-f677-4fc3-81c5-44eb6918bba0&ref_=pd_hp_d_btf_ls_gwc_pc_en2_
+        - img "Plus Value Metal Limbu Mirchi Door Hanging Feng Shui Vastu Remedies for Protection from Negativity at Home, Office,..."
+    - listitem:
+      - link "The Decor Affair Round Chinese Japanese Paper Lantern Hanging Paper Lanterns Metal Frame for Home Lamps, Party, Event...":
+        - /url: /Decor-Affair-Japanese-Lanterns-Decoration/dp/B0BJX9CZP5/?_encoding=UTF8&pd_rd_w=7zhqe&content-id=amzn1.sym.3f75a84e-71e3-42c4-a08d-39a70ec91aab&pf_rd_p=3f75a84e-71e3-42c4-a08d-39a70ec91aab&pf_rd_r=T7MDK19RYQYVW8W6JVX0&pd_rd_wg=t2nAO&pd_rd_r=1c2dfb23-f677-4fc3-81c5-44eb6918bba0&ref_=pd_hp_d_btf_ls_gwc_pc_en2_
+        - img "The Decor Affair Round Chinese Japanese Paper Lantern Hanging Paper Lanterns Metal Frame for Home Lamps, Party, Event..."
+    - listitem:
+      - link "Neema Lord Krishna Hands with Flute Idol (Small Size) | Krishna Flute Hand Statue | Krishnaji Divine Hands Idol with...":
+        - /url: /Krishna-Krishnaji-Peacock-Feather-Dashboard/dp/B0DHVKVV1X/?_encoding=UTF8&pd_rd_w=7zhqe&content-id=amzn1.sym.3f75a84e-71e3-42c4-a08d-39a70ec91aab&pf_rd_p=3f75a84e-71e3-42c4-a08d-39a70ec91aab&pf_rd_r=T7MDK19RYQYVW8W6JVX0&pd_rd_wg=t2nAO&pd_rd_r=1c2dfb23-f677-4fc3-81c5-44eb6918bba0&ref_=pd_hp_d_btf_ls_gwc_pc_en2_
+        - img "Neema Lord Krishna Hands with Flute Idol (Small Size) | Krishna Flute Hand Statue | Krishnaji Divine Hands Idol with..."
+    - listitem:
+      - link "COTTONTEE MDF Assorted Rangoli Stencil Desgion I MDF Rangoli Stencil I Rangoli Pouch Free I Rangoli for Diwali...":
+        - /url: /COTTONTEE-Assorted-Rangoli-Stencil-Festivals/dp/B0DHXYXFDR/?_encoding=UTF8&pd_rd_w=7zhqe&content-id=amzn1.sym.3f75a84e-71e3-42c4-a08d-39a70ec91aab&pf_rd_p=3f75a84e-71e3-42c4-a08d-39a70ec91aab&pf_rd_r=T7MDK19RYQYVW8W6JVX0&pd_rd_wg=t2nAO&pd_rd_r=1c2dfb23-f677-4fc3-81c5-44eb6918bba0&ref_=pd_hp_d_btf_ls_gwc_pc_en2_
+        - img "COTTONTEE MDF Assorted Rangoli Stencil Desgion I MDF Rangoli Stencil I Rangoli Pouch Free I Rangoli for Diwali..."
+    - listitem:
+      - link "DEKORSTATION Elegant Golden and Green Flowers Leaf Floating Framed Canvas Painting for Home Decor|Floral Canvas Painting...":
+        - /url: /DEKORSTATION-Elegant-Floating-Painting-Decoration/dp/B0DCC5Q7W6/?_encoding=UTF8&pd_rd_w=7zhqe&content-id=amzn1.sym.3f75a84e-71e3-42c4-a08d-39a70ec91aab&pf_rd_p=3f75a84e-71e3-42c4-a08d-39a70ec91aab&pf_rd_r=T7MDK19RYQYVW8W6JVX0&pd_rd_wg=t2nAO&pd_rd_r=1c2dfb23-f677-4fc3-81c5-44eb6918bba0&ref_=pd_hp_d_btf_ls_gwc_pc_en2_
+        - img "DEKORSTATION Elegant Golden and Green Flowers Leaf Floating Framed Canvas Painting for Home Decor|Floral Canvas Painting..."
+    - listitem:
+      - link "Nytroks Plug & Play Energy Saving 0.5w 2pin Decorative led Night lamp with Plug for Bedroom, Living Room (Blue) (Pack of 2)":
+        - /url: /NYTROKS-Energy-Saving-Night-Umbrella/dp/B0B7KHFP23/?_encoding=UTF8&pd_rd_w=7zhqe&content-id=amzn1.sym.3f75a84e-71e3-42c4-a08d-39a70ec91aab&pf_rd_p=3f75a84e-71e3-42c4-a08d-39a70ec91aab&pf_rd_r=T7MDK19RYQYVW8W6JVX0&pd_rd_wg=t2nAO&pd_rd_r=1c2dfb23-f677-4fc3-81c5-44eb6918bba0&ref_=pd_hp_d_btf_ls_gwc_pc_en2_
+        - img "Nytroks Plug & Play Energy Saving 0.5w 2pin Decorative led Night lamp with Plug for Bedroom, Living Room (Blue) (Pack of 2)"
+    - listitem:
+      - link "GLADTOGIFT Friends Peephole Frame with pics | Fridge magnet Frame | Friends TV Show Monica apartment Peephole Frame...":
+        - /url: /GLADTOGIFT-Friends-Peephole-apartment-Magnet/dp/B0BPJ7ZFW3/?_encoding=UTF8&pd_rd_w=7zhqe&content-id=amzn1.sym.3f75a84e-71e3-42c4-a08d-39a70ec91aab&pf_rd_p=3f75a84e-71e3-42c4-a08d-39a70ec91aab&pf_rd_r=T7MDK19RYQYVW8W6JVX0&pd_rd_wg=t2nAO&pd_rd_r=1c2dfb23-f677-4fc3-81c5-44eb6918bba0&ref_=pd_hp_d_btf_ls_gwc_pc_en2_
+        - img "GLADTOGIFT Friends Peephole Frame with pics | Fridge magnet Frame | Friends TV Show Monica apartment Peephole Frame..."
+    - listitem:
+      - link "Mos Handicraft Hanging Wall Mirror with Macrame Fringe Round Decoration Boho Antique Mirror with Wood Beads Feather...":
+        - /url: /MOS-HANDICRAFT-Decoration-Pendantfor-Apartment/dp/B0CZXYQYTR/?_encoding=UTF8&pd_rd_w=7zhqe&content-id=amzn1.sym.3f75a84e-71e3-42c4-a08d-39a70ec91aab&pf_rd_p=3f75a84e-71e3-42c4-a08d-39a70ec91aab&pf_rd_r=T7MDK19RYQYVW8W6JVX0&pd_rd_wg=t2nAO&pd_rd_r=1c2dfb23-f677-4fc3-81c5-44eb6918bba0&ref_=pd_hp_d_btf_ls_gwc_pc_en2_
+        - img "Mos Handicraft Hanging Wall Mirror with Macrame Fringe Round Decoration Boho Antique Mirror with Wood Beads Feather..."
+    - listitem:
+      - link "HYPPY Favourite Things Tapestry | Multicolor | 40 x 53 Inches | 100% Pure Cotton | Wall Decoration | Room Decor | Home...":
+        - /url: /Hyppy-Favourite-Tapestry-Multicolor-Decoration/dp/B0CZJ1L191/?_encoding=UTF8&pd_rd_w=7zhqe&content-id=amzn1.sym.3f75a84e-71e3-42c4-a08d-39a70ec91aab&pf_rd_p=3f75a84e-71e3-42c4-a08d-39a70ec91aab&pf_rd_r=T7MDK19RYQYVW8W6JVX0&pd_rd_wg=t2nAO&pd_rd_r=1c2dfb23-f677-4fc3-81c5-44eb6918bba0&ref_=pd_hp_d_btf_ls_gwc_pc_en2_
+        - img "HYPPY Favourite Things Tapestry | Multicolor | 40 x 53 Inches | 100% Pure Cotton | Wall Decoration | Room Decor | Home..."
+    - listitem:
+      - link "ZARYAN ORIENTAL CARPETS_Soft Fluffy Shag Area Rugs for Living Room, Shaggy Floor Carpet for Bedroom, Girls Carpets Kids...":
+        - /url: /ZARYAN-ORIENTAL-CARPETS_Soft-Bedroom-Non-Slip/dp/B0CNWPT2Y8/?_encoding=UTF8&pd_rd_w=7zhqe&content-id=amzn1.sym.3f75a84e-71e3-42c4-a08d-39a70ec91aab&pf_rd_p=3f75a84e-71e3-42c4-a08d-39a70ec91aab&pf_rd_r=T7MDK19RYQYVW8W6JVX0&pd_rd_wg=t2nAO&pd_rd_r=1c2dfb23-f677-4fc3-81c5-44eb6918bba0&ref_=pd_hp_d_btf_ls_gwc_pc_en2_
+        - img "ZARYAN ORIENTAL CARPETS_Soft Fluffy Shag Area Rugs for Living Room, Shaggy Floor Carpet for Bedroom, Girls Carpets Kids..."
+    - listitem:
+      - link "ZOCI VOCI Golden Hues – A lamp of Inspiration Best Anniversery Gift for Husband, Wife | Unique Home Decor LED Table Lamp...":
+        - /url: /ZOCI-VOCI-Golden-Hues-Inspiration/dp/B0CKC1CTX7/?_encoding=UTF8&pd_rd_w=7zhqe&content-id=amzn1.sym.3f75a84e-71e3-42c4-a08d-39a70ec91aab&pf_rd_p=3f75a84e-71e3-42c4-a08d-39a70ec91aab&pf_rd_r=T7MDK19RYQYVW8W6JVX0&pd_rd_wg=t2nAO&pd_rd_r=1c2dfb23-f677-4fc3-81c5-44eb6918bba0&ref_=pd_hp_d_btf_ls_gwc_pc_en2_
+        - img "ZOCI VOCI Golden Hues – A lamp of Inspiration Best Anniversery Gift for Husband, Wife | Unique Home Decor LED Table Lamp..."
+    - listitem:
+      - link "CASITA HOME ARTS Home Decor Astronaut Statue Decoration Bedroom Model Rack Theme Party Space Decoration Desktop...":
+        - /url: /CASITA-HOME-ARTS-Astronaut-Decoration/dp/B0CC5Y2XQC/?_encoding=UTF8&pd_rd_w=7zhqe&content-id=amzn1.sym.3f75a84e-71e3-42c4-a08d-39a70ec91aab&pf_rd_p=3f75a84e-71e3-42c4-a08d-39a70ec91aab&pf_rd_r=T7MDK19RYQYVW8W6JVX0&pd_rd_wg=t2nAO&pd_rd_r=1c2dfb23-f677-4fc3-81c5-44eb6918bba0&ref_=pd_hp_d_btf_ls_gwc_pc_en2_
+        - img "CASITA HOME ARTS Home Decor Astronaut Statue Decoration Bedroom Model Rack Theme Party Space Decoration Desktop..."
+    - listitem:
+      - link "COOZLY Velvet Round Cushions for Floor 25 Inches X 25 Inches | Outdoor Floor Pad | Meditation Cushion for Yoga, Living...":
+        - /url: /Cushions-Outdoor-Meditation-Cushion-Balcony/dp/B08SJHD4KQ/?_encoding=UTF8&pd_rd_w=7zhqe&content-id=amzn1.sym.3f75a84e-71e3-42c4-a08d-39a70ec91aab&pf_rd_p=3f75a84e-71e3-42c4-a08d-39a70ec91aab&pf_rd_r=T7MDK19RYQYVW8W6JVX0&pd_rd_wg=t2nAO&pd_rd_r=1c2dfb23-f677-4fc3-81c5-44eb6918bba0&ref_=pd_hp_d_btf_ls_gwc_pc_en2_
+        - img "COOZLY Velvet Round Cushions for Floor 25 Inches X 25 Inches | Outdoor Floor Pad | Meditation Cushion for Yoga, Living..."
+    - listitem:
+      - link "The Home Market Small Tray Set of 4 Pcs Assorted for Snacks Tea Coffee Biscuit Namkeen to Serve to Your Guest 8\" Inches":
+        - /url: /Market-Assorted-Snacks-Biscuit-Namkeen/dp/B0CLKNKHCP/?_encoding=UTF8&pd_rd_w=7zhqe&content-id=amzn1.sym.3f75a84e-71e3-42c4-a08d-39a70ec91aab&pf_rd_p=3f75a84e-71e3-42c4-a08d-39a70ec91aab&pf_rd_r=T7MDK19RYQYVW8W6JVX0&pd_rd_wg=t2nAO&pd_rd_r=1c2dfb23-f677-4fc3-81c5-44eb6918bba0&ref_=pd_hp_d_btf_ls_gwc_pc_en2_
+        - img "The Home Market Small Tray Set of 4 Pcs Assorted for Snacks Tea Coffee Biscuit Namkeen to Serve to Your Guest 8\" Inches"
+    - listitem:
+      - link "Oak & Lily Set of 2 Pot Holders in Red & White Polka Dot Pattern | 100% Cotton | Heat Resistant | European Quality |...":
+        - /url: /Oak-Lily-Holders-Resistant-European/dp/B0CW6DF62D/?_encoding=UTF8&pd_rd_w=7zhqe&content-id=amzn1.sym.3f75a84e-71e3-42c4-a08d-39a70ec91aab&pf_rd_p=3f75a84e-71e3-42c4-a08d-39a70ec91aab&pf_rd_r=T7MDK19RYQYVW8W6JVX0&pd_rd_wg=t2nAO&pd_rd_r=1c2dfb23-f677-4fc3-81c5-44eb6918bba0&ref_=pd_hp_d_btf_ls_gwc_pc_en2_
+        - img "Oak & Lily Set of 2 Pot Holders in Red & White Polka Dot Pattern | 100% Cotton | Heat Resistant | European Quality |..."
+    - listitem:
+      - link "Sonas Creation Paperus, Small Size 8 Inch TALL, 5 Liter, Color Natural, Open Top Waste Basket, Dustbin, Trashcan, Paper...":
+        - /url: /Sonas-Creation-Trashcan-Eco-friendly-Handmade/dp/B07LDFR5XF/?_encoding=UTF8&pd_rd_w=7zhqe&content-id=amzn1.sym.3f75a84e-71e3-42c4-a08d-39a70ec91aab&pf_rd_p=3f75a84e-71e3-42c4-a08d-39a70ec91aab&pf_rd_r=T7MDK19RYQYVW8W6JVX0&pd_rd_wg=t2nAO&pd_rd_r=1c2dfb23-f677-4fc3-81c5-44eb6918bba0&ref_=pd_hp_d_btf_ls_gwc_pc_en2_
+        - img "Sonas Creation Paperus, Small Size 8 Inch TALL, 5 Liter, Color Natural, Open Top Waste Basket, Dustbin, Trashcan, Paper..."
+  - separator
+  - heading "Up to 60% off | Curated kitchen products | Amazon Launchpad" [level=2]
+  - group:
+    - group:
+      - list:
+        - listitem:
+          - link "DDN_R_ Portable Plastic Bag Sealing Machine || Mini Bag Sealer with Cutter and Magnet || Packet Sealer for Food, Chips, Snacks, Traveling Food Packets Bags (Rechargeable) 1Pcs (Rich Green)":
+            - /url: /DDN_R_-Portable-Plastic-Traveling-Rechargeable/dp/B0DFPQX9GF/?_encoding=UTF8&pd_rd_w=4K1az&content-id=amzn1.sym.38811c73-8c80-4189-8924-e2a1b2ac600c&pf_rd_p=38811c73-8c80-4189-8924-e2a1b2ac600c&pf_rd_r=T7MDK19RYQYVW8W6JVX0&pd_rd_wg=t2nAO&pd_rd_r=1c2dfb23-f677-4fc3-81c5-44eb6918bba0&ref_=pd_hp_d_btf_LPDEALS
+            - img "DDN_R_ Portable Plastic Bag Sealing Machine || Mini Bag Sealer with Cutter and Magnet || Packet Sealer for Food, Chips, Snacks, Traveling Food Packets Bags (Rechargeable) 1Pcs (Rich Green)"
+        - listitem:
+          - link:
+            - /url: /DDN_R_-Portable-Plastic-Traveling-Rechargeable/dp/B0DFPQX9GF/?_encoding=UTF8&pd_rd_w=4K1az&content-id=amzn1.sym.38811c73-8c80-4189-8924-e2a1b2ac600c&pf_rd_p=38811c73-8c80-4189-8924-e2a1b2ac600c&pf_rd_r=T7MDK19RYQYVW8W6JVX0&pd_rd_wg=t2nAO&pd_rd_r=1c2dfb23-f677-4fc3-81c5-44eb6918bba0&ref_=pd_hp_d_btf_LPDEALS
+        - listitem:
+          - link:
+            - /url: /DDN_R_-Portable-Plastic-Traveling-Rechargeable/dp/B0DFPQX9GF/?_encoding=UTF8&pd_rd_w=4K1az&content-id=amzn1.sym.38811c73-8c80-4189-8924-e2a1b2ac600c&pf_rd_p=38811c73-8c80-4189-8924-e2a1b2ac600c&pf_rd_r=T7MDK19RYQYVW8W6JVX0&pd_rd_wg=t2nAO&pd_rd_r=1c2dfb23-f677-4fc3-81c5-44eb6918bba0&ref_=pd_hp_d_btf_LPDEALS
+        - listitem:
+          - link:
+            - /url: /DDN_R_-Portable-Plastic-Traveling-Rechargeable/dp/B0DFPQX9GF/?_encoding=UTF8&pd_rd_w=4K1az&content-id=amzn1.sym.38811c73-8c80-4189-8924-e2a1b2ac600c&pf_rd_p=38811c73-8c80-4189-8924-e2a1b2ac600c&pf_rd_r=T7MDK19RYQYVW8W6JVX0&pd_rd_wg=t2nAO&pd_rd_r=1c2dfb23-f677-4fc3-81c5-44eb6918bba0&ref_=pd_hp_d_btf_LPDEALS
+        - listitem:
+          - link:
+            - /url: /DDN_R_-Portable-Plastic-Traveling-Rechargeable/dp/B0DFPQX9GF/?_encoding=UTF8&pd_rd_w=4K1az&content-id=amzn1.sym.38811c73-8c80-4189-8924-e2a1b2ac600c&pf_rd_p=38811c73-8c80-4189-8924-e2a1b2ac600c&pf_rd_r=T7MDK19RYQYVW8W6JVX0&pd_rd_wg=t2nAO&pd_rd_r=1c2dfb23-f677-4fc3-81c5-44eb6918bba0&ref_=pd_hp_d_btf_LPDEALS
+        - listitem:
+          - link:
+            - /url: /DDN_R_-Portable-Plastic-Traveling-Rechargeable/dp/B0DFPQX9GF/?_encoding=UTF8&pd_rd_w=4K1az&content-id=amzn1.sym.38811c73-8c80-4189-8924-e2a1b2ac600c&pf_rd_p=38811c73-8c80-4189-8924-e2a1b2ac600c&pf_rd_r=T7MDK19RYQYVW8W6JVX0&pd_rd_wg=t2nAO&pd_rd_r=1c2dfb23-f677-4fc3-81c5-44eb6918bba0&ref_=pd_hp_d_btf_LPDEALS
+  - link "DDN_R_ Portable Plastic Bag Sealing Machine || Mini Bag Sealer with Cutter and Magnet || Packet Sealer for Food, Chips,...":
+    - /url: /DDN_R_-Portable-Plastic-Traveling-Rechargeable/dp/B0DFPQX9GF/?_encoding=UTF8&pd_rd_w=4K1az&content-id=amzn1.sym.38811c73-8c80-4189-8924-e2a1b2ac600c&pf_rd_p=38811c73-8c80-4189-8924-e2a1b2ac600c&pf_rd_r=T7MDK19RYQYVW8W6JVX0&pd_rd_wg=t2nAO&pd_rd_r=1c2dfb23-f677-4fc3-81c5-44eb6918bba0&ref_=pd_hp_d_btf_LPDEALS
+    - paragraph: DDN_R_ Portable Plastic Bag Sealing Machine || Mini Bag Sealer with Cutter and Magnet || Packet Sealer for Food, Chips,...
+  - text: "₹199.00 M.R.P: ₹1,299.00"
+  - heading "Furniture Steals | Up to 50% Off from stores near you" [level=2]
+  - group:
+    - group:
+      - list:
+        - listitem:
+          - link "KARP Kitchen 4 Tier Plastic Trolley Spice Organizer Storage Racks Shelf with Wheels for Books, Bathroom, Toilet, Kitchen and Office Accessories (4 Layer)":
+            - /url: /KARP-Organizer-Storage-Shelf-Accessories/dp/B0BX3W29F5/?_encoding=UTF8&pd_rd_w=5HyVT&content-id=amzn1.sym.232544d3-04cf-4177-ae7b-a723343ffb1d&pf_rd_p=232544d3-04cf-4177-ae7b-a723343ffb1d&pf_rd_r=T7MDK19RYQYVW8W6JVX0&pd_rd_wg=t2nAO&pd_rd_r=1c2dfb23-f677-4fc3-81c5-44eb6918bba0&ref_=pd_hp_d_btf_ls_gwc_pc_en2_
+            - img "KARP Kitchen 4 Tier Plastic Trolley Spice Organizer Storage Racks Shelf with Wheels for Books, Bathroom, Toilet, Kitchen and Office Accessories (4 Layer)"
+        - listitem:
+          - link:
+            - /url: /KARP-Organizer-Storage-Shelf-Accessories/dp/B0BX3W29F5/?_encoding=UTF8&pd_rd_w=5HyVT&content-id=amzn1.sym.232544d3-04cf-4177-ae7b-a723343ffb1d&pf_rd_p=232544d3-04cf-4177-ae7b-a723343ffb1d&pf_rd_r=T7MDK19RYQYVW8W6JVX0&pd_rd_wg=t2nAO&pd_rd_r=1c2dfb23-f677-4fc3-81c5-44eb6918bba0&ref_=pd_hp_d_btf_ls_gwc_pc_en2_
+        - listitem:
+          - link:
+            - /url: /KARP-Organizer-Storage-Shelf-Accessories/dp/B0BX3W29F5/?_encoding=UTF8&pd_rd_w=5HyVT&content-id=amzn1.sym.232544d3-04cf-4177-ae7b-a723343ffb1d&pf_rd_p=232544d3-04cf-4177-ae7b-a723343ffb1d&pf_rd_r=T7MDK19RYQYVW8W6JVX0&pd_rd_wg=t2nAO&pd_rd_r=1c2dfb23-f677-4fc3-81c5-44eb6918bba0&ref_=pd_hp_d_btf_ls_gwc_pc_en2_
+        - listitem:
+          - link:
+            - /url: /KARP-Organizer-Storage-Shelf-Accessories/dp/B0BX3W29F5/?_encoding=UTF8&pd_rd_w=5HyVT&content-id=amzn1.sym.232544d3-04cf-4177-ae7b-a723343ffb1d&pf_rd_p=232544d3-04cf-4177-ae7b-a723343ffb1d&pf_rd_r=T7MDK19RYQYVW8W6JVX0&pd_rd_wg=t2nAO&pd_rd_r=1c2dfb23-f677-4fc3-81c5-44eb6918bba0&ref_=pd_hp_d_btf_ls_gwc_pc_en2_
+        - listitem:
+          - link:
+            - /url: /KARP-Organizer-Storage-Shelf-Accessories/dp/B0BX3W29F5/?_encoding=UTF8&pd_rd_w=5HyVT&content-id=amzn1.sym.232544d3-04cf-4177-ae7b-a723343ffb1d&pf_rd_p=232544d3-04cf-4177-ae7b-a723343ffb1d&pf_rd_r=T7MDK19RYQYVW8W6JVX0&pd_rd_wg=t2nAO&pd_rd_r=1c2dfb23-f677-4fc3-81c5-44eb6918bba0&ref_=pd_hp_d_btf_ls_gwc_pc_en2_
+        - listitem:
+          - link:
+            - /url: /KARP-Organizer-Storage-Shelf-Accessories/dp/B0BX3W29F5/?_encoding=UTF8&pd_rd_w=5HyVT&content-id=amzn1.sym.232544d3-04cf-4177-ae7b-a723343ffb1d&pf_rd_p=232544d3-04cf-4177-ae7b-a723343ffb1d&pf_rd_r=T7MDK19RYQYVW8W6JVX0&pd_rd_wg=t2nAO&pd_rd_r=1c2dfb23-f677-4fc3-81c5-44eb6918bba0&ref_=pd_hp_d_btf_ls_gwc_pc_en2_
+  - link "KARP Kitchen 4 Tier Plastic Trolley Spice Organizer Storage Racks Shelf with Wheels for Books, Bathroom, Toilet, Kitchen...":
+    - /url: /KARP-Organizer-Storage-Shelf-Accessories/dp/B0BX3W29F5/?_encoding=UTF8&pd_rd_w=5HyVT&content-id=amzn1.sym.232544d3-04cf-4177-ae7b-a723343ffb1d&pf_rd_p=232544d3-04cf-4177-ae7b-a723343ffb1d&pf_rd_r=T7MDK19RYQYVW8W6JVX0&pd_rd_wg=t2nAO&pd_rd_r=1c2dfb23-f677-4fc3-81c5-44eb6918bba0&ref_=pd_hp_d_btf_ls_gwc_pc_en2_
+    - paragraph: KARP Kitchen 4 Tier Plastic Trolley Spice Organizer Storage Racks Shelf with Wheels for Books, Bathroom, Toilet, Kitchen...
+  - text: "₹1,469.00 M.R.P: ₹2,599.00"
+  - heading "Up to 60% off | Kitchen essentials from stores near you" [level=2]
+  - group:
+    - group:
+      - list:
+        - listitem:
+          - link "YELONA Gorilla Grip Durable Kitchen Cutting Board Set of 3, BPA Free, Large Dishwasher Safe Reversible Plastic Boards, Nonslip Handle and Border, Chopping Food, Cooking, Mint":
+            - /url: /YELONA-Gorilla-Dishwasher-Reversible-Chopping/dp/B0CB4HF2RJ/?_encoding=UTF8&pd_rd_w=5xUk0&content-id=amzn1.sym.dce00e8e-3c15-42cf-9efd-3d6cd4eff199&pf_rd_p=dce00e8e-3c15-42cf-9efd-3d6cd4eff199&pf_rd_r=T7MDK19RYQYVW8W6JVX0&pd_rd_wg=t2nAO&pd_rd_r=1c2dfb23-f677-4fc3-81c5-44eb6918bba0&ref_=pd_hp_d_btf_ls_gwc_pc_en2_
+            - img "YELONA Gorilla Grip Durable Kitchen Cutting Board Set of 3, BPA Free, Large Dishwasher Safe Reversible Plastic Boards, Nonslip Handle and Border, Chopping Food, Cooking, Mint"
+        - listitem:
+          - link:
+            - /url: /YELONA-Gorilla-Dishwasher-Reversible-Chopping/dp/B0CB4HF2RJ/?_encoding=UTF8&pd_rd_w=5xUk0&content-id=amzn1.sym.dce00e8e-3c15-42cf-9efd-3d6cd4eff199&pf_rd_p=dce00e8e-3c15-42cf-9efd-3d6cd4eff199&pf_rd_r=T7MDK19RYQYVW8W6JVX0&pd_rd_wg=t2nAO&pd_rd_r=1c2dfb23-f677-4fc3-81c5-44eb6918bba0&ref_=pd_hp_d_btf_ls_gwc_pc_en2_
+        - listitem:
+          - link:
+            - /url: /YELONA-Gorilla-Dishwasher-Reversible-Chopping/dp/B0CB4HF2RJ/?_encoding=UTF8&pd_rd_w=5xUk0&content-id=amzn1.sym.dce00e8e-3c15-42cf-9efd-3d6cd4eff199&pf_rd_p=dce00e8e-3c15-42cf-9efd-3d6cd4eff199&pf_rd_r=T7MDK19RYQYVW8W6JVX0&pd_rd_wg=t2nAO&pd_rd_r=1c2dfb23-f677-4fc3-81c5-44eb6918bba0&ref_=pd_hp_d_btf_ls_gwc_pc_en2_
+        - listitem:
+          - link:
+            - /url: /YELONA-Gorilla-Dishwasher-Reversible-Chopping/dp/B0CB4HF2RJ/?_encoding=UTF8&pd_rd_w=5xUk0&content-id=amzn1.sym.dce00e8e-3c15-42cf-9efd-3d6cd4eff199&pf_rd_p=dce00e8e-3c15-42cf-9efd-3d6cd4eff199&pf_rd_r=T7MDK19RYQYVW8W6JVX0&pd_rd_wg=t2nAO&pd_rd_r=1c2dfb23-f677-4fc3-81c5-44eb6918bba0&ref_=pd_hp_d_btf_ls_gwc_pc_en2_
+        - listitem:
+          - link:
+            - /url: /YELONA-Gorilla-Dishwasher-Reversible-Chopping/dp/B0CB4HF2RJ/?_encoding=UTF8&pd_rd_w=5xUk0&content-id=amzn1.sym.dce00e8e-3c15-42cf-9efd-3d6cd4eff199&pf_rd_p=dce00e8e-3c15-42cf-9efd-3d6cd4eff199&pf_rd_r=T7MDK19RYQYVW8W6JVX0&pd_rd_wg=t2nAO&pd_rd_r=1c2dfb23-f677-4fc3-81c5-44eb6918bba0&ref_=pd_hp_d_btf_ls_gwc_pc_en2_
+        - listitem:
+          - link:
+            - /url: /YELONA-Gorilla-Dishwasher-Reversible-Chopping/dp/B0CB4HF2RJ/?_encoding=UTF8&pd_rd_w=5xUk0&content-id=amzn1.sym.dce00e8e-3c15-42cf-9efd-3d6cd4eff199&pf_rd_p=dce00e8e-3c15-42cf-9efd-3d6cd4eff199&pf_rd_r=T7MDK19RYQYVW8W6JVX0&pd_rd_wg=t2nAO&pd_rd_r=1c2dfb23-f677-4fc3-81c5-44eb6918bba0&ref_=pd_hp_d_btf_ls_gwc_pc_en2_
+  - link "YELONA Gorilla Grip Durable Kitchen Cutting Board Set of 3, BPA Free, Large Dishwasher Safe Reversible Plastic Boards,...":
+    - /url: /YELONA-Gorilla-Dishwasher-Reversible-Chopping/dp/B0CB4HF2RJ/?_encoding=UTF8&pd_rd_w=5xUk0&content-id=amzn1.sym.dce00e8e-3c15-42cf-9efd-3d6cd4eff199&pf_rd_p=dce00e8e-3c15-42cf-9efd-3d6cd4eff199&pf_rd_r=T7MDK19RYQYVW8W6JVX0&pd_rd_wg=t2nAO&pd_rd_r=1c2dfb23-f677-4fc3-81c5-44eb6918bba0&ref_=pd_hp_d_btf_ls_gwc_pc_en2_
+    - paragraph: YELONA Gorilla Grip Durable Kitchen Cutting Board Set of 3, BPA Free, Large Dishwasher Safe Reversible Plastic Boards,...
+  - text: "₹749.00 M.R.P: ₹1,999.00"
+  - heading "Customers’ Most-Loved Fashion for you" [level=2]
+  - link "Allen Solly Men's Regular Fit Polo (ASKPQRGF701338_Medium Blue_L)":
+    - /url: /Allen-Solly-Regular-T-Shirt-ASKPQRGF701338_Medium/dp/B08KTVFFHF/?_encoding=UTF8&pd_rd_w=7Wm60&content-id=amzn1.sym.6a567e3d-fd9a-4932-aa05-d0107e1bcce7&pf_rd_p=6a567e3d-fd9a-4932-aa05-d0107e1bcce7&pf_rd_r=T7MDK19RYQYVW8W6JVX0&pd_rd_wg=t2nAO&pd_rd_r=1c2dfb23-f677-4fc3-81c5-44eb6918bba0&ref_=pd_hp_d_btf_a2i_gw_cml
+    - img "Allen Solly Men's Regular Fit Polo (ASKPQRGF701338_Medium Blue_L)"
+  - link "Puma Mens Melanite Slip on Black-White Sneaker - 6 UK (39185801)":
+    - /url: /Puma-Mens-Melanite-Black-White-Sneaker/dp/B0C5J8SWPW/?_encoding=UTF8&pd_rd_w=7Wm60&content-id=amzn1.sym.6a567e3d-fd9a-4932-aa05-d0107e1bcce7&pf_rd_p=6a567e3d-fd9a-4932-aa05-d0107e1bcce7&pf_rd_r=T7MDK19RYQYVW8W6JVX0&pd_rd_wg=t2nAO&pd_rd_r=1c2dfb23-f677-4fc3-81c5-44eb6918bba0&ref_=pd_hp_d_btf_a2i_gw_cml
+    - img "Puma Mens Melanite Slip on Black-White Sneaker - 6 UK (39185801)"
+  - link "Campus Women's Raise Sneakers WHT - 6UK/India":
+    - /url: /Campus-Womens-Raise-Running-Shoes/dp/B0BHH5BNKL/?_encoding=UTF8&pd_rd_w=7Wm60&content-id=amzn1.sym.6a567e3d-fd9a-4932-aa05-d0107e1bcce7&pf_rd_p=6a567e3d-fd9a-4932-aa05-d0107e1bcce7&pf_rd_r=T7MDK19RYQYVW8W6JVX0&pd_rd_wg=t2nAO&pd_rd_r=1c2dfb23-f677-4fc3-81c5-44eb6918bba0&ref_=pd_hp_d_btf_a2i_gw_cml
+    - img "Campus Women's Raise Sneakers WHT - 6UK/India"
+  - link "London Hills Oversized Tshirt for Women":
+    - /url: /London-Hills-Cotton-Oversized-T-Shirts/dp/B0C8YKXJ5G/?_encoding=UTF8&pd_rd_w=7Wm60&content-id=amzn1.sym.6a567e3d-fd9a-4932-aa05-d0107e1bcce7&pf_rd_p=6a567e3d-fd9a-4932-aa05-d0107e1bcce7&pf_rd_r=T7MDK19RYQYVW8W6JVX0&pd_rd_wg=t2nAO&pd_rd_r=1c2dfb23-f677-4fc3-81c5-44eb6918bba0&ref_=pd_hp_d_btf_a2i_gw_cml
+    - img "London Hills Oversized Tshirt for Women"
+  - link "Customers’ Most-Loved Fashion for you - Explore more":
+    - /url: /s/?_encoding=UTF8&node=50916365031&pd_rd_w=7Wm60&content-id=amzn1.sym.6a567e3d-fd9a-4932-aa05-d0107e1bcce7&pf_rd_p=6a567e3d-fd9a-4932-aa05-d0107e1bcce7&pf_rd_r=T7MDK19RYQYVW8W6JVX0&pd_rd_wg=t2nAO&pd_rd_r=1c2dfb23-f677-4fc3-81c5-44eb6918bba0&ref_=pd_hp_d_btf_a2i_gw_cml
+    - text: Explore more
+  - separator
+  - separator
+  - heading "Never before offer | Up to 50% off on electronics & accessories" [level=2]
+  - list:
+    - listitem:
+      - link "Portronics MODESK Universal Mobile Holder Stand with Metal Body, Anti Skid Design, Light Weight for All Smartphones,...":
+        - /url: /Portronics-POR-122-MODESK-Universal-Mobile/dp/B07N8RQ6W7/?_encoding=UTF8&pd_rd_w=PNIdK&content-id=amzn1.sym.ac07fe90-7dc1-45da-80ea-51bc2ad84d10&pf_rd_p=ac07fe90-7dc1-45da-80ea-51bc2ad84d10&pf_rd_r=T7MDK19RYQYVW8W6JVX0&pd_rd_wg=t2nAO&pd_rd_r=1c2dfb23-f677-4fc3-81c5-44eb6918bba0&ref_=pd_hp_d_btf_ls_gwc_pc_en2_
+        - img "Portronics MODESK Universal Mobile Holder Stand with Metal Body, Anti Skid Design, Light Weight for All Smartphones,..."
+    - listitem:
+      - link "Noise Twist Round dial Smart Watch with Bluetooth Calling, 1.38\" TFT Display, up-to 7 Days Battery, 100+ Watch Faces,...":
+        - /url: /Noise-Launched-Bluetooth-Calling-Tracking/dp/B0BJ73KHKJ/?_encoding=UTF8&pd_rd_w=PNIdK&content-id=amzn1.sym.ac07fe90-7dc1-45da-80ea-51bc2ad84d10&pf_rd_p=ac07fe90-7dc1-45da-80ea-51bc2ad84d10&pf_rd_r=T7MDK19RYQYVW8W6JVX0&pd_rd_wg=t2nAO&pd_rd_r=1c2dfb23-f677-4fc3-81c5-44eb6918bba0&ref_=pd_hp_d_btf_ls_gwc_pc_en2_
+        - img "Noise Twist Round dial Smart Watch with Bluetooth Calling, 1.38\" TFT Display, up-to 7 Days Battery, 100+ Watch Faces,..."
+    - listitem:
+      - link "LIRAMARK Mobile Phone Charging Stand, Storage Holder, Bedside Fixed Rack, Home Organization and Storage Supplies,...":
+        - /url: /LIRAMARK-Mounted-Storage-Purpose-Charging/dp/B0BQMJZZNM/?_encoding=UTF8&pd_rd_w=PNIdK&content-id=amzn1.sym.ac07fe90-7dc1-45da-80ea-51bc2ad84d10&pf_rd_p=ac07fe90-7dc1-45da-80ea-51bc2ad84d10&pf_rd_r=T7MDK19RYQYVW8W6JVX0&pd_rd_wg=t2nAO&pd_rd_r=1c2dfb23-f677-4fc3-81c5-44eb6918bba0&ref_=pd_hp_d_btf_ls_gwc_pc_en2_
+        - img "LIRAMARK Mobile Phone Charging Stand, Storage Holder, Bedside Fixed Rack, Home Organization and Storage Supplies,..."
+    - listitem:
+      - link "Echo Dot (5th Gen) | Smart speaker with Bigger sound, Motion Detection, Temperature Sensor, Alexa and Bluetooth| Blue":
+        - /url: /Echo-Dot-5th-Gen-Alexa-smart-speaker/dp/B09B8XJDW5/?_encoding=UTF8&pd_rd_w=PNIdK&content-id=amzn1.sym.ac07fe90-7dc1-45da-80ea-51bc2ad84d10&pf_rd_p=ac07fe90-7dc1-45da-80ea-51bc2ad84d10&pf_rd_r=T7MDK19RYQYVW8W6JVX0&pd_rd_wg=t2nAO&pd_rd_r=1c2dfb23-f677-4fc3-81c5-44eb6918bba0&ref_=pd_hp_d_btf_ls_gwc_pc_en2_
+        - img "Echo Dot (5th Gen) | Smart speaker with Bigger sound, Motion Detection, Temperature Sensor, Alexa and Bluetooth| Blue"
+    - listitem:
+      - link "Tygot Bluetooth Extendable Selfie Sticks with Wireless Remote and Tripod Stand, 3-in-1 Multifunctional Selfie Stick with...":
+        - /url: /Tygot-Bluetooth-Extendable-Multifunctional-Compatible/dp/B094YFFSMY/?_encoding=UTF8&pd_rd_w=PNIdK&content-id=amzn1.sym.ac07fe90-7dc1-45da-80ea-51bc2ad84d10&pf_rd_p=ac07fe90-7dc1-45da-80ea-51bc2ad84d10&pf_rd_r=T7MDK19RYQYVW8W6JVX0&pd_rd_wg=t2nAO&pd_rd_r=1c2dfb23-f677-4fc3-81c5-44eb6918bba0&ref_=pd_hp_d_btf_ls_gwc_pc_en2_
+        - img "Tygot Bluetooth Extendable Selfie Sticks with Wireless Remote and Tripod Stand, 3-in-1 Multifunctional Selfie Stick with..."
+    - listitem:
+      - link "Zerfa 8 in 1 Soft Brush Multifunction Cleaning Tools Kit for Keyboard, Earphone, Laptop, Camera & Lens, LED LCD Screen...":
+        - /url: /Zerfa-Multifunction-Cleaning-Keyboard-High-Density/dp/B0D32528F5/?_encoding=UTF8&pd_rd_w=PNIdK&content-id=amzn1.sym.ac07fe90-7dc1-45da-80ea-51bc2ad84d10&pf_rd_p=ac07fe90-7dc1-45da-80ea-51bc2ad84d10&pf_rd_r=T7MDK19RYQYVW8W6JVX0&pd_rd_wg=t2nAO&pd_rd_r=1c2dfb23-f677-4fc3-81c5-44eb6918bba0&ref_=pd_hp_d_btf_ls_gwc_pc_en2_
+        - img "Zerfa 8 in 1 Soft Brush Multifunction Cleaning Tools Kit for Keyboard, Earphone, Laptop, Camera & Lens, LED LCD Screen..."
+    - listitem:
+      - link "Boult Audio Z20 Pro Truly Wireless Bluetooth Ear buds with 60 Hours Playtime, 4 Mics Clear Calling, 45ms Low Latency,...":
+        - /url: /Boult-Launched-Wireless-Bluetooth-Earbuds/dp/B0D22SQY7D/?_encoding=UTF8&pd_rd_w=PNIdK&content-id=amzn1.sym.ac07fe90-7dc1-45da-80ea-51bc2ad84d10&pf_rd_p=ac07fe90-7dc1-45da-80ea-51bc2ad84d10&pf_rd_r=T7MDK19RYQYVW8W6JVX0&pd_rd_wg=t2nAO&pd_rd_r=1c2dfb23-f677-4fc3-81c5-44eb6918bba0&ref_=pd_hp_d_btf_ls_gwc_pc_en2_
+        - img "Boult Audio Z20 Pro Truly Wireless Bluetooth Ear buds with 60 Hours Playtime, 4 Mics Clear Calling, 45ms Low Latency,..."
+    - listitem:
+      - link "Portronics POR 343 UFO USB Home Charger 6 Ports 8A Charging Station for Smartphones and Tablets - White":
+        - /url: /Portronics-POR-343-Charging-Station/dp/B00TGUX8T0/?_encoding=UTF8&pd_rd_w=PNIdK&content-id=amzn1.sym.ac07fe90-7dc1-45da-80ea-51bc2ad84d10&pf_rd_p=ac07fe90-7dc1-45da-80ea-51bc2ad84d10&pf_rd_r=T7MDK19RYQYVW8W6JVX0&pd_rd_wg=t2nAO&pd_rd_r=1c2dfb23-f677-4fc3-81c5-44eb6918bba0&ref_=pd_hp_d_btf_ls_gwc_pc_en2_
+        - img "Portronics POR 343 UFO USB Home Charger 6 Ports 8A Charging Station for Smartphones and Tablets - White"
+    - listitem:
+      - link "Tukzer Universal Stylus Pen for Smartphone/Tablet/iPad/Pro/Air/iPhone/iOS/Android/All Touch Screens Devices| Fine Point...":
+        - /url: /Tukzer-Capacitive-Lightweight-Magnetism-Smartphones/dp/B08K4PSZ3V/?_encoding=UTF8&pd_rd_w=PNIdK&content-id=amzn1.sym.ac07fe90-7dc1-45da-80ea-51bc2ad84d10&pf_rd_p=ac07fe90-7dc1-45da-80ea-51bc2ad84d10&pf_rd_r=T7MDK19RYQYVW8W6JVX0&pd_rd_wg=t2nAO&pd_rd_r=1c2dfb23-f677-4fc3-81c5-44eb6918bba0&ref_=pd_hp_d_btf_ls_gwc_pc_en2_
+        - img "Tukzer Universal Stylus Pen for Smartphone/Tablet/iPad/Pro/Air/iPhone/iOS/Android/All Touch Screens Devices| Fine Point..."
+    - listitem:
+      - link "STRIFF Adjustable Laptop Tabletop Stand Patented Riser Ventilated Portable Foldable Compatible with MacBook Notebook...":
+        - /url: /STRIFF-Adjustable-Patented-Ventilated-Compatible/dp/B07XCM6T4N/?_encoding=UTF8&pd_rd_w=PNIdK&content-id=amzn1.sym.ac07fe90-7dc1-45da-80ea-51bc2ad84d10&pf_rd_p=ac07fe90-7dc1-45da-80ea-51bc2ad84d10&pf_rd_r=T7MDK19RYQYVW8W6JVX0&pd_rd_wg=t2nAO&pd_rd_r=1c2dfb23-f677-4fc3-81c5-44eb6918bba0&ref_=pd_hp_d_btf_ls_gwc_pc_en2_
+        - img "STRIFF Adjustable Laptop Tabletop Stand Patented Riser Ventilated Portable Foldable Compatible with MacBook Notebook..."
+    - listitem:
+      - link "HUION HS64 Graphics Drawing Tablet Battery-Free Stylus Android Windows macOS with 6.3 x 4 inch Working Area Pen Tablet...":
+        - /url: /Graphics-Drawing-Battery-Free-Android-Windows/dp/B07P4MSJZ8/?_encoding=UTF8&pd_rd_w=PNIdK&content-id=amzn1.sym.ac07fe90-7dc1-45da-80ea-51bc2ad84d10&pf_rd_p=ac07fe90-7dc1-45da-80ea-51bc2ad84d10&pf_rd_r=T7MDK19RYQYVW8W6JVX0&pd_rd_wg=t2nAO&pd_rd_r=1c2dfb23-f677-4fc3-81c5-44eb6918bba0&ref_=pd_hp_d_btf_ls_gwc_pc_en2_
+        - img "HUION HS64 Graphics Drawing Tablet Battery-Free Stylus Android Windows macOS with 6.3 x 4 inch Working Area Pen Tablet..."
+    - listitem:
+      - link "Boat Airdopes 141, Low Latency, ENx Tech, 42HRS Battery, Fast Charge, IWP, IPX4, v5.1 Bluetooth Earbuds, TWS Ear Buds...":
+        - /url: /Airdopes-141-Bluetooth-Wireless-Playtime/dp/B09N3XMZ5F/?_encoding=UTF8&pd_rd_w=PNIdK&content-id=amzn1.sym.ac07fe90-7dc1-45da-80ea-51bc2ad84d10&pf_rd_p=ac07fe90-7dc1-45da-80ea-51bc2ad84d10&pf_rd_r=T7MDK19RYQYVW8W6JVX0&pd_rd_wg=t2nAO&pd_rd_r=1c2dfb23-f677-4fc3-81c5-44eb6918bba0&ref_=pd_hp_d_btf_ls_gwc_pc_en2_
+        - img "Boat Airdopes 141, Low Latency, ENx Tech, 42HRS Battery, Fast Charge, IWP, IPX4, v5.1 Bluetooth Earbuds, TWS Ear Buds..."
+    - listitem:
+      - link "TVS ELECTRONICS Platina Wireless Mechanical Combo (Keyboard, Mouse) Strong Tilt Legs, Laser-Etched Key CapsLED...":
+        - /url: /TVS-Electronics-Wireless-Mechanical-Keyboard/dp/B0989Y2M4C/?_encoding=UTF8&pd_rd_w=PNIdK&content-id=amzn1.sym.ac07fe90-7dc1-45da-80ea-51bc2ad84d10&pf_rd_p=ac07fe90-7dc1-45da-80ea-51bc2ad84d10&pf_rd_r=T7MDK19RYQYVW8W6JVX0&pd_rd_wg=t2nAO&pd_rd_r=1c2dfb23-f677-4fc3-81c5-44eb6918bba0&ref_=pd_hp_d_btf_ls_gwc_pc_en2_
+        - img "TVS ELECTRONICS Platina Wireless Mechanical Combo (Keyboard, Mouse) Strong Tilt Legs, Laser-Etched Key CapsLED..."
+    - listitem:
+      - link "CEZO USB Charger USB Charging Station with Rapid Charging Auto Detect Technology Safety Guaranteed 10-Port Family-Sized...":
+        - /url: /CEZO-Charging-Technology-Guaranteed-Family-Sized/dp/B08X79BRQ4/?_encoding=UTF8&pd_rd_w=PNIdK&content-id=amzn1.sym.ac07fe90-7dc1-45da-80ea-51bc2ad84d10&pf_rd_p=ac07fe90-7dc1-45da-80ea-51bc2ad84d10&pf_rd_r=T7MDK19RYQYVW8W6JVX0&pd_rd_wg=t2nAO&pd_rd_r=1c2dfb23-f677-4fc3-81c5-44eb6918bba0&ref_=pd_hp_d_btf_ls_gwc_pc_en2_
+        - img "CEZO USB Charger USB Charging Station with Rapid Charging Auto Detect Technology Safety Guaranteed 10-Port Family-Sized..."
+    - listitem:
+      - link "UnionSine 500GB 2.5\" Ultra Slim Portable External Hard Disk Drive HDD-USB 3.0 for PC, Mac, Laptop, PS4, Xbox one,Xbox...":
+        - /url: /UnionSine-Portable-External-Storage-Compatible/dp/B091FSXH5V/?_encoding=UTF8&pd_rd_w=PNIdK&content-id=amzn1.sym.ac07fe90-7dc1-45da-80ea-51bc2ad84d10&pf_rd_p=ac07fe90-7dc1-45da-80ea-51bc2ad84d10&pf_rd_r=T7MDK19RYQYVW8W6JVX0&pd_rd_wg=t2nAO&pd_rd_r=1c2dfb23-f677-4fc3-81c5-44eb6918bba0&ref_=pd_hp_d_btf_ls_gwc_pc_en2_
+        - img "UnionSine 500GB 2.5\" Ultra Slim Portable External Hard Disk Drive HDD-USB 3.0 for PC, Mac, Laptop, PS4, Xbox one,Xbox..."
+    - listitem:
+      - link "Airtel Xstream Only Box | Android TV Box | 1 Month Hindi Entertainment HD Pack | Free Installation | No Dish Antenna":
+        - /url: /Airtel-Xstream-Android-Entertainment-Installation/dp/B0DGG3X54H/?_encoding=UTF8&pd_rd_w=PNIdK&content-id=amzn1.sym.ac07fe90-7dc1-45da-80ea-51bc2ad84d10&pf_rd_p=ac07fe90-7dc1-45da-80ea-51bc2ad84d10&pf_rd_r=T7MDK19RYQYVW8W6JVX0&pd_rd_wg=t2nAO&pd_rd_r=1c2dfb23-f677-4fc3-81c5-44eb6918bba0&ref_=pd_hp_d_btf_ls_gwc_pc_en2_
+        - img "Airtel Xstream Only Box | Android TV Box | 1 Month Hindi Entertainment HD Pack | Free Installation | No Dish Antenna"
+    - listitem:
+      - link "Goton Waterproof Case for Apple Watch 44mm SE (2nd Gen) Series 6 5 4 with Tempered Glass Screen Protector, iWatch Full...":
+        - /url: /Goton-Waterproof-Compatible-Protective-Accessories/dp/B097P22ZR6/?_encoding=UTF8&pd_rd_w=PNIdK&content-id=amzn1.sym.ac07fe90-7dc1-45da-80ea-51bc2ad84d10&pf_rd_p=ac07fe90-7dc1-45da-80ea-51bc2ad84d10&pf_rd_r=T7MDK19RYQYVW8W6JVX0&pd_rd_wg=t2nAO&pd_rd_r=1c2dfb23-f677-4fc3-81c5-44eb6918bba0&ref_=pd_hp_d_btf_ls_gwc_pc_en2_
+        - img "Goton Waterproof Case for Apple Watch 44mm SE (2nd Gen) Series 6 5 4 with Tempered Glass Screen Protector, iWatch Full..."
+    - listitem:
+      - link "JioTag Air for iOS|Apple Find My Network Item Finder| Worldwide Tracking for Keys, Wallets, Luggage, Pets, Gadgets and...":
+        - /url: /Tracking-Tracker-Wallets-Luggage-Gadgets/dp/B0D59VZ1RS/?_encoding=UTF8&pd_rd_w=PNIdK&content-id=amzn1.sym.ac07fe90-7dc1-45da-80ea-51bc2ad84d10&pf_rd_p=ac07fe90-7dc1-45da-80ea-51bc2ad84d10&pf_rd_r=T7MDK19RYQYVW8W6JVX0&pd_rd_wg=t2nAO&pd_rd_r=1c2dfb23-f677-4fc3-81c5-44eb6918bba0&ref_=pd_hp_d_btf_ls_gwc_pc_en2_
+        - img "JioTag Air for iOS|Apple Find My Network Item Finder| Worldwide Tracking for Keys, Wallets, Luggage, Pets, Gadgets and..."
+    - listitem:
+      - link "Portronics Bridge X USB 3.0 Type C Female to USB Male OTG Adapter, 5Gbps High Speed Data Transfer, Fast Charging,...":
+        - /url: /Portronics-Transfer-Charging-Compatible-Smartphone/dp/B0DH8BZ7V9/?_encoding=UTF8&pd_rd_w=PNIdK&content-id=amzn1.sym.ac07fe90-7dc1-45da-80ea-51bc2ad84d10&pf_rd_p=ac07fe90-7dc1-45da-80ea-51bc2ad84d10&pf_rd_r=T7MDK19RYQYVW8W6JVX0&pd_rd_wg=t2nAO&pd_rd_r=1c2dfb23-f677-4fc3-81c5-44eb6918bba0&ref_=pd_hp_d_btf_ls_gwc_pc_en2_
+        - img "Portronics Bridge X USB 3.0 Type C Female to USB Male OTG Adapter, 5Gbps High Speed Data Transfer, Fast Charging,..."
+    - listitem:
+      - link "Elv Foldable, Portable, Tablet/Phone Stand. Compatible Phone Holder for iPhone, Android, Samsung, OnePlus, Xiaomi, Oppo,...":
+        - /url: /Foldable-Portable-Compatible-Android-Samsung/dp/B0B5LR494N/?_encoding=UTF8&pd_rd_w=PNIdK&content-id=amzn1.sym.ac07fe90-7dc1-45da-80ea-51bc2ad84d10&pf_rd_p=ac07fe90-7dc1-45da-80ea-51bc2ad84d10&pf_rd_r=T7MDK19RYQYVW8W6JVX0&pd_rd_wg=t2nAO&pd_rd_r=1c2dfb23-f677-4fc3-81c5-44eb6918bba0&ref_=pd_hp_d_btf_ls_gwc_pc_en2_
+        - img "Elv Foldable, Portable, Tablet/Phone Stand. Compatible Phone Holder for iPhone, Android, Samsung, OnePlus, Xiaomi, Oppo,..."
+    - listitem:
+      - link "Redragon M810 Pro Wireless Gaming Mouse, 10000 DPI Wired/Wireless Gamer Mouse w/Rapid Fire Key, 8 Macro Buttons, 45-Hour...":
+        - /url: /Redragon-M810-Wireless-Buttons-Capacity/dp/B0C592ZYJ3/?_encoding=UTF8&pd_rd_w=PNIdK&content-id=amzn1.sym.ac07fe90-7dc1-45da-80ea-51bc2ad84d10&pf_rd_p=ac07fe90-7dc1-45da-80ea-51bc2ad84d10&pf_rd_r=T7MDK19RYQYVW8W6JVX0&pd_rd_wg=t2nAO&pd_rd_r=1c2dfb23-f677-4fc3-81c5-44eb6918bba0&ref_=pd_hp_d_btf_ls_gwc_pc_en2_
+        - img "Redragon M810 Pro Wireless Gaming Mouse, 10000 DPI Wired/Wireless Gamer Mouse w/Rapid Fire Key, 8 Macro Buttons, 45-Hour..."
+    - listitem:
+      - link "TG-113 10 Watt Wireless Bluetooth Portable Speaker (Multicolour)":
+        - /url: /Wireless-Bluetooth-Portable-Speaker-Multicolour/dp/B09NRCSK1J/?_encoding=UTF8&pd_rd_w=PNIdK&content-id=amzn1.sym.ac07fe90-7dc1-45da-80ea-51bc2ad84d10&pf_rd_p=ac07fe90-7dc1-45da-80ea-51bc2ad84d10&pf_rd_r=T7MDK19RYQYVW8W6JVX0&pd_rd_wg=t2nAO&pd_rd_r=1c2dfb23-f677-4fc3-81c5-44eb6918bba0&ref_=pd_hp_d_btf_ls_gwc_pc_en2_
+        - img "TG-113 10 Watt Wireless Bluetooth Portable Speaker (Multicolour)"
+    - listitem:
+      - link "SH-12 Wireless Bluetooth Over the Ear Headphone with Mic (Blue)":
+        - /url: /SH-12-Wireless-Universal-Bluetooth-Headphone/dp/B08PTCJ4DS/?_encoding=UTF8&pd_rd_w=PNIdK&content-id=amzn1.sym.ac07fe90-7dc1-45da-80ea-51bc2ad84d10&pf_rd_p=ac07fe90-7dc1-45da-80ea-51bc2ad84d10&pf_rd_r=T7MDK19RYQYVW8W6JVX0&pd_rd_wg=t2nAO&pd_rd_r=1c2dfb23-f677-4fc3-81c5-44eb6918bba0&ref_=pd_hp_d_btf_ls_gwc_pc_en2_
+        - img "SH-12 Wireless Bluetooth Over the Ear Headphone with Mic (Blue)"
+    - listitem:
+      - link "soundcore P40I by Anker,Noise Cancelling Wireless in Ear Earbuds,Adaptive Noise Cancelling to Environments,Heavy...":
+        - /url: /soundcore-Cancelling-Wireless-Environments-Bluetooth/dp/B0CQXG17RL/?_encoding=UTF8&pd_rd_w=PNIdK&content-id=amzn1.sym.ac07fe90-7dc1-45da-80ea-51bc2ad84d10&pf_rd_p=ac07fe90-7dc1-45da-80ea-51bc2ad84d10&pf_rd_r=T7MDK19RYQYVW8W6JVX0&pd_rd_wg=t2nAO&pd_rd_r=1c2dfb23-f677-4fc3-81c5-44eb6918bba0&ref_=pd_hp_d_btf_ls_gwc_pc_en2_
+        - img "soundcore P40I by Anker,Noise Cancelling Wireless in Ear Earbuds,Adaptive Noise Cancelling to Environments,Heavy..."
+    - listitem:
+      - link "SYEEKOM Smart Watch For Women (Answer/Make Call) 1.57\" HD Fitness Tracker With Heart Rate Oxygen Saturation And Sleep...":
+        - /url: /SYEEKOM-Fitness-Saturation-Monitoring-Waterproof/dp/B0C81645R8/?_encoding=UTF8&pd_rd_w=PNIdK&content-id=amzn1.sym.ac07fe90-7dc1-45da-80ea-51bc2ad84d10&pf_rd_p=ac07fe90-7dc1-45da-80ea-51bc2ad84d10&pf_rd_r=T7MDK19RYQYVW8W6JVX0&pd_rd_wg=t2nAO&pd_rd_r=1c2dfb23-f677-4fc3-81c5-44eb6918bba0&ref_=pd_hp_d_btf_ls_gwc_pc_en2_
+        - img "SYEEKOM Smart Watch For Women (Answer/Make Call) 1.57\" HD Fitness Tracker With Heart Rate Oxygen Saturation And Sleep..."
+    - listitem:
+      - link "M19 Wireless Earbuds TWS 5.1 Large Screen Dual LED Digital Display Touch Bluetooth Headphones Mini Compact Portable...":
+        - /url: /Wireless-Bluetooth-Headphones-Waterproof-Earphones/dp/B0BRTSSKSV/?_encoding=UTF8&pd_rd_w=PNIdK&content-id=amzn1.sym.ac07fe90-7dc1-45da-80ea-51bc2ad84d10&pf_rd_p=ac07fe90-7dc1-45da-80ea-51bc2ad84d10&pf_rd_r=T7MDK19RYQYVW8W6JVX0&pd_rd_wg=t2nAO&pd_rd_r=1c2dfb23-f677-4fc3-81c5-44eb6918bba0&ref_=pd_hp_d_btf_ls_gwc_pc_en2_
+        - img "M19 Wireless Earbuds TWS 5.1 Large Screen Dual LED Digital Display Touch Bluetooth Headphones Mini Compact Portable..."
+    - listitem:
+      - link "The Original 2 Rechargeable Headlights for Croc Charms, Rechargeable Flashlight Attachment for Croc Accessories Kids...":
+        - /url: /Rechargeable-Headlights-Flashlight-Shoe-Accessories/dp/B0C1SS4BZY/?_encoding=UTF8&pd_rd_w=PNIdK&content-id=amzn1.sym.ac07fe90-7dc1-45da-80ea-51bc2ad84d10&pf_rd_p=ac07fe90-7dc1-45da-80ea-51bc2ad84d10&pf_rd_r=T7MDK19RYQYVW8W6JVX0&pd_rd_wg=t2nAO&pd_rd_r=1c2dfb23-f677-4fc3-81c5-44eb6918bba0&ref_=pd_hp_d_btf_ls_gwc_pc_en2_
+        - img "The Original 2 Rechargeable Headlights for Croc Charms, Rechargeable Flashlight Attachment for Croc Accessories Kids..."
+    - listitem:
+      - link "CYY Mini Kids Karaoke Machine, Unique Gifts for Girls Boys with Wonderful Lamp, Karaoke Toys for Kids with 2 Wireless...":
+        - /url: /CYY-Colorful-Wireless-Microphones-Birthday/dp/B0CQYK3Z67/?_encoding=UTF8&pd_rd_w=PNIdK&content-id=amzn1.sym.ac07fe90-7dc1-45da-80ea-51bc2ad84d10&pf_rd_p=ac07fe90-7dc1-45da-80ea-51bc2ad84d10&pf_rd_r=T7MDK19RYQYVW8W6JVX0&pd_rd_wg=t2nAO&pd_rd_r=1c2dfb23-f677-4fc3-81c5-44eb6918bba0&ref_=pd_hp_d_btf_ls_gwc_pc_en2_
+        - img "CYY Mini Kids Karaoke Machine, Unique Gifts for Girls Boys with Wonderful Lamp, Karaoke Toys for Kids with 2 Wireless..."
+    - listitem:
+      - link "MOSISO Laptop Case 13.3 inch, 13-13.3 inch Laptop Sleeve Compatible with MacBook Air/Pro 13 / Pro 14, HP Dell ASUS...":
+        - /url: /MOSISO-Compatible-Repellent-Polyester-Protective/dp/B07JYZK9R1/?_encoding=UTF8&pd_rd_w=PNIdK&content-id=amzn1.sym.ac07fe90-7dc1-45da-80ea-51bc2ad84d10&pf_rd_p=ac07fe90-7dc1-45da-80ea-51bc2ad84d10&pf_rd_r=T7MDK19RYQYVW8W6JVX0&pd_rd_wg=t2nAO&pd_rd_r=1c2dfb23-f677-4fc3-81c5-44eb6918bba0&ref_=pd_hp_d_btf_ls_gwc_pc_en2_
+        - img "MOSISO Laptop Case 13.3 inch, 13-13.3 inch Laptop Sleeve Compatible with MacBook Air/Pro 13 / Pro 14, HP Dell ASUS..."
+  - separator
+  - heading "Best Sellers in Toys & Games" [level=2]
+  - link "Mattel Uno Playing Card Game for 7 Yrs and Above for Adult,Set of 112 Cards, Multicolor":
+    - /url: /Mattel-Playing-Above-Adult-Multicolor/dp/B00004TZY8/?_encoding=UTF8&pd_rd_w=fqXPG&content-id=amzn1.sym.211684f4-ebe1-443f-8a4a-0773471e979f&pf_rd_p=211684f4-ebe1-443f-8a4a-0773471e979f&pf_rd_r=T7MDK19RYQYVW8W6JVX0&pd_rd_wg=t2nAO&pd_rd_r=1c2dfb23-f677-4fc3-81c5-44eb6918bba0&ref_=pd_hp_d_btf_crs_zg_bs_1350380031
+    - img "Mattel Uno Playing Card Game for 7 Yrs and Above for Adult,Set of 112 Cards, Multicolor"
+  - link "Wirescorts Angle Geometric Plastic Blocks, Sorting & Stacking Toys for Toddlers and Kids Preschool, Color Stacker Shape Sorter Gift Educational Learning Toy for 1 2 3 Years Boys and Girls, Multicolor":
+    - /url: /WireScorts-Geometric-Preschool-Educational-Multicolor/dp/B0CFGB45S2/?_encoding=UTF8&pd_rd_w=fqXPG&content-id=amzn1.sym.211684f4-ebe1-443f-8a4a-0773471e979f&pf_rd_p=211684f4-ebe1-443f-8a4a-0773471e979f&pf_rd_r=T7MDK19RYQYVW8W6JVX0&pd_rd_wg=t2nAO&pd_rd_r=1c2dfb23-f677-4fc3-81c5-44eb6918bba0&ref_=pd_hp_d_btf_crs_zg_bs_1350380031
+    - img "Wirescorts Angle Geometric Plastic Blocks, Sorting & Stacking Toys for Toddlers and Kids Preschool, Color Stacker Shape Sorter Gift Educational Learning Toy for 1 2 3 Years Boys and Girls, Multicolor"
+  - 'link "Lifelong LLKS03 Foldable Kick Skating Cycle| Skate Scooter for Kids(Max User Weight: 50Kg) Kids Scooter (Pink, Blue)"':
+    - /url: /Lifelong-Adjustable-Weight-50-Manufacturers-LLKS03/dp/B0C862R9VF/?_encoding=UTF8&pd_rd_w=fqXPG&content-id=amzn1.sym.211684f4-ebe1-443f-8a4a-0773471e979f&pf_rd_p=211684f4-ebe1-443f-8a4a-0773471e979f&pf_rd_r=T7MDK19RYQYVW8W6JVX0&pd_rd_wg=t2nAO&pd_rd_r=1c2dfb23-f677-4fc3-81c5-44eb6918bba0&ref_=pd_hp_d_btf_crs_zg_bs_1350380031
+    - 'img "Lifelong LLKS03 Foldable Kick Skating Cycle| Skate Scooter for Kids(Max User Weight: 50Kg) Kids Scooter (Pink, Blue)"'
+  - link "Mattel Games UNO Show ‘em No Mercy Card Game for Kids, Adults & Family Parties and Travel with Extra Cards, Special Rules and Tougher Penalties.":
+    - /url: /Mattel-Games-Parties-Special-Penalties/dp/B0CBNR2ML6/?_encoding=UTF8&pd_rd_w=fqXPG&content-id=amzn1.sym.211684f4-ebe1-443f-8a4a-0773471e979f&pf_rd_p=211684f4-ebe1-443f-8a4a-0773471e979f&pf_rd_r=T7MDK19RYQYVW8W6JVX0&pd_rd_wg=t2nAO&pd_rd_r=1c2dfb23-f677-4fc3-81c5-44eb6918bba0&ref_=pd_hp_d_btf_crs_zg_bs_1350380031
+    - img "Mattel Games UNO Show ‘em No Mercy Card Game for Kids, Adults & Family Parties and Travel with Extra Cards, Special Rules and Tougher Penalties."
+  - heading "Best Sellers in Grocery & Gourmet Foods" [level=2]
+  - 'link "Tata Salt 1 Kg, Free Flowing and Iodised Namak, Vacuum Evaporated, Salt in Fresh Price: ₹26.00, M.R.P.: ₹50.00"':
+    - /url: /Flowing-Iodised-Namak-Vacuum-Evaporated/dp/B07575FPC3/?_encoding=UTF8&pd_rd_w=CTfsE&content-id=amzn1.sym.211684f4-ebe1-443f-8a4a-0773471e979f&pf_rd_p=211684f4-ebe1-443f-8a4a-0773471e979f&pf_rd_r=T7MDK19RYQYVW8W6JVX0&pd_rd_wg=t2nAO&pd_rd_r=1c2dfb23-f677-4fc3-81c5-44eb6918bba0&ref_=pd_hp_d_btf_crs_zg_bs_2454178031
+    - text: "Tata Salt 1 Kg, Free Flowing and Iodised Namak, Vacuum Evaporated, Salt in Fresh ₹26.00 M.R.P: ₹50.00"
+  - radiogroup:
+    - radio "Tata Salt 1 Kg, Free Flowing and Iodised Namak, Vacuum Evaporated, Salt in Fresh":
+      - link "Tata Salt 1 Kg, Free Flowing and Iodised Namak, Vacuum Evaporated, Salt in Fresh":
+        - /url: /Flowing-Iodised-Namak-Vacuum-Evaporated/dp/B07575FPC3/?_encoding=UTF8&pd_rd_w=CTfsE&content-id=amzn1.sym.211684f4-ebe1-443f-8a4a-0773471e979f&pf_rd_p=211684f4-ebe1-443f-8a4a-0773471e979f&pf_rd_r=T7MDK19RYQYVW8W6JVX0&pd_rd_wg=t2nAO&pd_rd_r=1c2dfb23-f677-4fc3-81c5-44eb6918bba0&ref_=pd_hp_d_btf_crs_zg_bs_2454178031
+        - img "Tata Salt 1 Kg, Free Flowing and Iodised Namak, Vacuum Evaporated, Salt in Fresh"
+    - radio "Tata Sampann Unpolished Toor Dal/Arhar Dal, 1kg":
+      - link "Tata Sampann Unpolished Toor Dal/Arhar Dal, 1kg":
+        - /url: /Tata-Sampann-Pulses-Toor-Dal/dp/B074N7VHV4/?_encoding=UTF8&pd_rd_w=CTfsE&content-id=amzn1.sym.211684f4-ebe1-443f-8a4a-0773471e979f&pf_rd_p=211684f4-ebe1-443f-8a4a-0773471e979f&pf_rd_r=T7MDK19RYQYVW8W6JVX0&pd_rd_wg=t2nAO&pd_rd_r=1c2dfb23-f677-4fc3-81c5-44eb6918bba0&ref_=pd_hp_d_btf_crs_zg_bs_2454178031
+        - img "Tata Sampann Unpolished Toor Dal/Arhar Dal, 1kg"
+    - radio "Fortune Sunlite Refined Sunflower Oil, 870 gm Pouch (Weight May Vary)":
+      - link "Fortune Sunlite Refined Sunflower Oil, 870 gm Pouch (Weight May Vary)":
+        - /url: /Fortune-Sunlite-Refined-Sunflower-Oil/dp/B00NYZTGEO/?_encoding=UTF8&pd_rd_w=CTfsE&content-id=amzn1.sym.211684f4-ebe1-443f-8a4a-0773471e979f&pf_rd_p=211684f4-ebe1-443f-8a4a-0773471e979f&pf_rd_r=T7MDK19RYQYVW8W6JVX0&pd_rd_wg=t2nAO&pd_rd_r=1c2dfb23-f677-4fc3-81c5-44eb6918bba0&ref_=pd_hp_d_btf_crs_zg_bs_2454178031
+        - img "Fortune Sunlite Refined Sunflower Oil, 870 gm Pouch (Weight May Vary)"
+    - radio "MAGGI 2-Minute Instant Noodles,Masala Noodles With Goodness Of Iron,Made With Choicest Quality Spices,Favourite Masala...":
+      - link "MAGGI 2-Minute Instant Noodles,Masala Noodles With Goodness Of Iron,Made With Choicest Quality Spices,Favourite Masala...":
+        - /url: /MAGGI-2-minute-Goodness-Choicest-Favourite/dp/B07B4KQRZG/?_encoding=UTF8&pd_rd_w=CTfsE&content-id=amzn1.sym.211684f4-ebe1-443f-8a4a-0773471e979f&pf_rd_p=211684f4-ebe1-443f-8a4a-0773471e979f&pf_rd_r=T7MDK19RYQYVW8W6JVX0&pd_rd_wg=t2nAO&pd_rd_r=1c2dfb23-f677-4fc3-81c5-44eb6918bba0&ref_=pd_hp_d_btf_crs_zg_bs_2454178031
+        - img "MAGGI 2-Minute Instant Noodles,Masala Noodles With Goodness Of Iron,Made With Choicest Quality Spices,Favourite Masala..."
+  - heading "Best Sellers in Beauty" [level=2]
+  - 'link "Ghar Soaps Sandalwood & Saffron Magic Soaps For Bath (100 Gms Pack Of 2) | Paraben Free | Chandan & Kesar Bath Soap |... Price: ₹299.00, M.R.P.: ₹999.00"':
+    - /url: /Sandalwood-Saffron-Paraben-Handmade-Brightening/dp/B0CXXQL33D/?_encoding=UTF8&pd_rd_w=Rntok&content-id=amzn1.sym.211684f4-ebe1-443f-8a4a-0773471e979f&pf_rd_p=211684f4-ebe1-443f-8a4a-0773471e979f&pf_rd_r=T7MDK19RYQYVW8W6JVX0&pd_rd_wg=t2nAO&pd_rd_r=1c2dfb23-f677-4fc3-81c5-44eb6918bba0&ref_=pd_hp_d_btf_crs_zg_bs_1355016031
+    - text: "Ghar Soaps Sandalwood & Saffron Magic Soaps For Bath (100 Gms Pack Of 2) | Paraben Free | Chandan & Kesar Bath Soap |... ₹299.00 M.R.P: ₹999.00"
+  - radiogroup:
+    - radio "Ghar Soaps Sandalwood & Saffron Magic Soaps For Bath (100 Gms Pack Of 2) | Paraben Free | Chandan & Kesar Bath Soap |...":
+      - link "Ghar Soaps Sandalwood & Saffron Magic Soaps For Bath (100 Gms Pack Of 2) | Paraben Free | Chandan & Kesar Bath Soap |...":
+        - /url: /Sandalwood-Saffron-Paraben-Handmade-Brightening/dp/B0CXXQL33D/?_encoding=UTF8&pd_rd_w=Rntok&content-id=amzn1.sym.211684f4-ebe1-443f-8a4a-0773471e979f&pf_rd_p=211684f4-ebe1-443f-8a4a-0773471e979f&pf_rd_r=T7MDK19RYQYVW8W6JVX0&pd_rd_wg=t2nAO&pd_rd_r=1c2dfb23-f677-4fc3-81c5-44eb6918bba0&ref_=pd_hp_d_btf_crs_zg_bs_1355016031
+        - img "Ghar Soaps Sandalwood & Saffron Magic Soaps For Bath (100 Gms Pack Of 2) | Paraben Free | Chandan & Kesar Bath Soap |..."
+    - radio "Cetaphil Paraben, Sulphate-Free Gentle Skin Hydrating Face Wash Cleanser with Niacinamide, Vitamin B5 for Dry to Normal,...":
+      - link "Cetaphil Paraben, Sulphate-Free Gentle Skin Hydrating Face Wash Cleanser with Niacinamide, Vitamin B5 for Dry to Normal,...":
+        - /url: /Cetaphil-Sulphate-Free-Hydrating-Niacinamide-Sensitive/dp/B01CCGW4OE/?_encoding=UTF8&pd_rd_w=Rntok&content-id=amzn1.sym.211684f4-ebe1-443f-8a4a-0773471e979f&pf_rd_p=211684f4-ebe1-443f-8a4a-0773471e979f&pf_rd_r=T7MDK19RYQYVW8W6JVX0&pd_rd_wg=t2nAO&pd_rd_r=1c2dfb23-f677-4fc3-81c5-44eb6918bba0&ref_=pd_hp_d_btf_crs_zg_bs_1355016031
+        - img "Cetaphil Paraben, Sulphate-Free Gentle Skin Hydrating Face Wash Cleanser with Niacinamide, Vitamin B5 for Dry to Normal,..."
+    - radio "The Derma Co 1% Hyaluronic Sunscreen Aqua Gel SPF 50 PA++++ I For Oily, Dry, Acne-prone Skin | Ultra Lightweight Texture...":
+      - link "The Derma Co 1% Hyaluronic Sunscreen Aqua Gel SPF 50 PA++++ I For Oily, Dry, Acne-prone Skin | Ultra Lightweight Texture...":
+        - /url: /Derma-Co-Hyaluronic-Lightweight-white-cast/dp/B0C6M3KHXV/?_encoding=UTF8&pd_rd_w=Rntok&content-id=amzn1.sym.211684f4-ebe1-443f-8a4a-0773471e979f&pf_rd_p=211684f4-ebe1-443f-8a4a-0773471e979f&pf_rd_r=T7MDK19RYQYVW8W6JVX0&pd_rd_wg=t2nAO&pd_rd_r=1c2dfb23-f677-4fc3-81c5-44eb6918bba0&ref_=pd_hp_d_btf_crs_zg_bs_1355016031
+        - img "The Derma Co 1% Hyaluronic Sunscreen Aqua Gel SPF 50 PA++++ I For Oily, Dry, Acne-prone Skin | Ultra Lightweight Texture..."
+    - radio "Be Bodywise 4% Aha Bha Underarm Roll On 50ml | 2% Lactic Acid, 1% Mandelic Acid, 1% Salicylic Acid | Controls Odour &...":
+      - link "Be Bodywise 4% Aha Bha Underarm Roll On 50ml | 2% Lactic Acid, 1% Mandelic Acid, 1% Salicylic Acid | Controls Odour &...":
+        - /url: /Be-Bodywise-Salicylic-Pigmentation-Fragrance/dp/B0BRJWZNVM/?_encoding=UTF8&pd_rd_w=Rntok&content-id=amzn1.sym.211684f4-ebe1-443f-8a4a-0773471e979f&pf_rd_p=211684f4-ebe1-443f-8a4a-0773471e979f&pf_rd_r=T7MDK19RYQYVW8W6JVX0&pd_rd_wg=t2nAO&pd_rd_r=1c2dfb23-f677-4fc3-81c5-44eb6918bba0&ref_=pd_hp_d_btf_crs_zg_bs_1355016031
+        - img "Be Bodywise 4% Aha Bha Underarm Roll On 50ml | 2% Lactic Acid, 1% Mandelic Acid, 1% Salicylic Acid | Controls Odour &..."
+  - heading "Min. 40% off | Handcrafted treasures from artisans" [level=2]
+  - group:
+    - group:
+      - list:
+        - listitem:
+          - link "CartaDen Wooden Serving Trays Unique Style with Round Handle Large, Medium and Small for Food, Wooden Trays for Breakfast - Natural Wood and Brown (Set of 3)":
+            - /url: /CartaDen-Wooden-Serving-Unique-Breakfast/dp/B0BM7CQKX5/?_encoding=UTF8&pd_rd_w=nevda&content-id=amzn1.sym.31cf8faf-c8a4-4ed6-8663-a192d7d072d2&pf_rd_p=31cf8faf-c8a4-4ed6-8663-a192d7d072d2&pf_rd_r=T7MDK19RYQYVW8W6JVX0&pd_rd_wg=t2nAO&pd_rd_r=1c2dfb23-f677-4fc3-81c5-44eb6918bba0&ref_=pd_hp_d_btf_kar_gw_pc_en_
+            - img "CartaDen Wooden Serving Trays Unique Style with Round Handle Large, Medium and Small for Food, Wooden Trays for Breakfast - Natural Wood and Brown (Set of 3)"
+        - listitem:
+          - link:
+            - /url: /CartaDen-Wooden-Serving-Unique-Breakfast/dp/B0BM7CQKX5/?_encoding=UTF8&pd_rd_w=nevda&content-id=amzn1.sym.31cf8faf-c8a4-4ed6-8663-a192d7d072d2&pf_rd_p=31cf8faf-c8a4-4ed6-8663-a192d7d072d2&pf_rd_r=T7MDK19RYQYVW8W6JVX0&pd_rd_wg=t2nAO&pd_rd_r=1c2dfb23-f677-4fc3-81c5-44eb6918bba0&ref_=pd_hp_d_btf_kar_gw_pc_en_
+        - listitem:
+          - link:
+            - /url: /CartaDen-Wooden-Serving-Unique-Breakfast/dp/B0BM7CQKX5/?_encoding=UTF8&pd_rd_w=nevda&content-id=amzn1.sym.31cf8faf-c8a4-4ed6-8663-a192d7d072d2&pf_rd_p=31cf8faf-c8a4-4ed6-8663-a192d7d072d2&pf_rd_r=T7MDK19RYQYVW8W6JVX0&pd_rd_wg=t2nAO&pd_rd_r=1c2dfb23-f677-4fc3-81c5-44eb6918bba0&ref_=pd_hp_d_btf_kar_gw_pc_en_
+        - listitem:
+          - link:
+            - /url: /CartaDen-Wooden-Serving-Unique-Breakfast/dp/B0BM7CQKX5/?_encoding=UTF8&pd_rd_w=nevda&content-id=amzn1.sym.31cf8faf-c8a4-4ed6-8663-a192d7d072d2&pf_rd_p=31cf8faf-c8a4-4ed6-8663-a192d7d072d2&pf_rd_r=T7MDK19RYQYVW8W6JVX0&pd_rd_wg=t2nAO&pd_rd_r=1c2dfb23-f677-4fc3-81c5-44eb6918bba0&ref_=pd_hp_d_btf_kar_gw_pc_en_
+        - listitem:
+          - link:
+            - /url: /CartaDen-Wooden-Serving-Unique-Breakfast/dp/B0BM7CQKX5/?_encoding=UTF8&pd_rd_w=nevda&content-id=amzn1.sym.31cf8faf-c8a4-4ed6-8663-a192d7d072d2&pf_rd_p=31cf8faf-c8a4-4ed6-8663-a192d7d072d2&pf_rd_r=T7MDK19RYQYVW8W6JVX0&pd_rd_wg=t2nAO&pd_rd_r=1c2dfb23-f677-4fc3-81c5-44eb6918bba0&ref_=pd_hp_d_btf_kar_gw_pc_en_
+        - listitem:
+          - link:
+            - /url: /CartaDen-Wooden-Serving-Unique-Breakfast/dp/B0BM7CQKX5/?_encoding=UTF8&pd_rd_w=nevda&content-id=amzn1.sym.31cf8faf-c8a4-4ed6-8663-a192d7d072d2&pf_rd_p=31cf8faf-c8a4-4ed6-8663-a192d7d072d2&pf_rd_r=T7MDK19RYQYVW8W6JVX0&pd_rd_wg=t2nAO&pd_rd_r=1c2dfb23-f677-4fc3-81c5-44eb6918bba0&ref_=pd_hp_d_btf_kar_gw_pc_en_
+  - link "CartaDen Wooden Serving Trays Unique Style with Round Handle Large, Medium and Small for Food, Wooden Trays for...":
+    - /url: /CartaDen-Wooden-Serving-Unique-Breakfast/dp/B0BM7CQKX5/?_encoding=UTF8&pd_rd_w=nevda&content-id=amzn1.sym.31cf8faf-c8a4-4ed6-8663-a192d7d072d2&pf_rd_p=31cf8faf-c8a4-4ed6-8663-a192d7d072d2&pf_rd_r=T7MDK19RYQYVW8W6JVX0&pd_rd_wg=t2nAO&pd_rd_r=1c2dfb23-f677-4fc3-81c5-44eb6918bba0&ref_=pd_hp_d_btf_kar_gw_pc_en_
+    - paragraph: CartaDen Wooden Serving Trays Unique Style with Round Handle Large, Medium and Small for Food, Wooden Trays for...
+  - text: "₹759.00 M.R.P: ₹1,499.00"
+  - separator
+  - heading "Best Sellers in Clothing & Accessories" [level=2]
+  - list:
+    - listitem:
+      - link "SJeware 12 Pairs Solid Cotton Ankle Length Socks for Men & Women, Multicolor, Pack of 12, Free Size":
+        - /url: /SJEWARE-Pairs-Solid-Ankle-Multicolor/dp/B0BZVZYXV5/?_encoding=UTF8&pd_rd_w=qDQVS&content-id=amzn1.sym.211684f4-ebe1-443f-8a4a-0773471e979f&pf_rd_p=211684f4-ebe1-443f-8a4a-0773471e979f&pf_rd_r=T7MDK19RYQYVW8W6JVX0&pd_rd_wg=t2nAO&pd_rd_r=1c2dfb23-f677-4fc3-81c5-44eb6918bba0&ref_=pd_hp_d_btf_crs_zg_bs_1571271031
+        - img "SJeware 12 Pairs Solid Cotton Ankle Length Socks for Men & Women, Multicolor, Pack of 12, Free Size"
+    - listitem:
+      - link "Allen Solly Men's Cotton Regular Fit Polo T-Shirt":
+        - /url: /Allen-Solly-Regular-AMKP317G04249_Jet-Black_Large/dp/B06Y2FG6R7/?_encoding=UTF8&pd_rd_w=qDQVS&content-id=amzn1.sym.211684f4-ebe1-443f-8a4a-0773471e979f&pf_rd_p=211684f4-ebe1-443f-8a4a-0773471e979f&pf_rd_r=T7MDK19RYQYVW8W6JVX0&pd_rd_wg=t2nAO&pd_rd_r=1c2dfb23-f677-4fc3-81c5-44eb6918bba0&ref_=pd_hp_d_btf_crs_zg_bs_1571271031
+        - img "Allen Solly Men's Cotton Regular Fit Polo T-Shirt"
+    - listitem:
+      - link "GoSriKi Women's Rayon Viscose Printed Anarkali Kurta with Palazzo & Dupatta":
+        - /url: /GoSriKi-Anarkali-Printed-Dupatta-Yellow-GS_XL_Yellow_X-Large/dp/B0DD78S3M2/?_encoding=UTF8&pd_rd_w=qDQVS&content-id=amzn1.sym.211684f4-ebe1-443f-8a4a-0773471e979f&pf_rd_p=211684f4-ebe1-443f-8a4a-0773471e979f&pf_rd_r=T7MDK19RYQYVW8W6JVX0&pd_rd_wg=t2nAO&pd_rd_r=1c2dfb23-f677-4fc3-81c5-44eb6918bba0&ref_=pd_hp_d_btf_crs_zg_bs_1571271031
+        - img "GoSriKi Women's Rayon Viscose Printed Anarkali Kurta with Palazzo & Dupatta"
+    - listitem:
+      - link "Amazon Brand - Symbol Men's Solid Cotton Rich Polo T Shirt | Collar Tshirts | Half Sleeves | Plain-Regular Fit...":
+        - /url: /Amazon-Brand-Symbol-Polo_SS19PLS2_Fog-Teal_Large/dp/B07MZG27XK/?_encoding=UTF8&pd_rd_w=qDQVS&content-id=amzn1.sym.211684f4-ebe1-443f-8a4a-0773471e979f&pf_rd_p=211684f4-ebe1-443f-8a4a-0773471e979f&pf_rd_r=T7MDK19RYQYVW8W6JVX0&pd_rd_wg=t2nAO&pd_rd_r=1c2dfb23-f677-4fc3-81c5-44eb6918bba0&ref_=pd_hp_d_btf_crs_zg_bs_1571271031
+        - img "Amazon Brand - Symbol Men's Solid Cotton Rich Polo T Shirt | Collar Tshirts | Half Sleeves | Plain-Regular Fit..."
+    - listitem:
+      - link "ANNI DESIGNER Women's Rayon Blend Solid Straight Kurta with Pant & Dupatta":
+        - /url: /ANNI-DESIGNER-Raja-Saab-Purple-VKS01_M_Purple_Medium/dp/B0DC5B84VL/?_encoding=UTF8&pd_rd_w=qDQVS&content-id=amzn1.sym.211684f4-ebe1-443f-8a4a-0773471e979f&pf_rd_p=211684f4-ebe1-443f-8a4a-0773471e979f&pf_rd_r=T7MDK19RYQYVW8W6JVX0&pd_rd_wg=t2nAO&pd_rd_r=1c2dfb23-f677-4fc3-81c5-44eb6918bba0&ref_=pd_hp_d_btf_crs_zg_bs_1571271031
+        - img "ANNI DESIGNER Women's Rayon Blend Solid Straight Kurta with Pant & Dupatta"
+    - listitem:
+      - link "Lymio Men Shorts || Men Shorts Cotton || Men Shorts Casual (Short 09-12)":
+        - /url: /Men-shorts-cotton-casual-Short-11-Lightgrey-L/dp/B0DRFN3SBV/?_encoding=UTF8&pd_rd_w=qDQVS&content-id=amzn1.sym.211684f4-ebe1-443f-8a4a-0773471e979f&pf_rd_p=211684f4-ebe1-443f-8a4a-0773471e979f&pf_rd_r=T7MDK19RYQYVW8W6JVX0&pd_rd_wg=t2nAO&pd_rd_r=1c2dfb23-f677-4fc3-81c5-44eb6918bba0&ref_=pd_hp_d_btf_crs_zg_bs_1571271031
+        - img "Lymio Men Shorts || Men Shorts Cotton || Men Shorts Casual (Short 09-12)"
+    - listitem:
+      - link "Van Heusen Men's Solid Regular Fit T-Shirt":
+        - /url: /Van-Heusen-Solid-Regular-VSKP517S011419_Nautical_Large/dp/B076CMJXML/?_encoding=UTF8&pd_rd_w=qDQVS&content-id=amzn1.sym.211684f4-ebe1-443f-8a4a-0773471e979f&pf_rd_p=211684f4-ebe1-443f-8a4a-0773471e979f&pf_rd_r=T7MDK19RYQYVW8W6JVX0&pd_rd_wg=t2nAO&pd_rd_r=1c2dfb23-f677-4fc3-81c5-44eb6918bba0&ref_=pd_hp_d_btf_crs_zg_bs_1571271031
+        - img "Van Heusen Men's Solid Regular Fit T-Shirt"
+    - listitem:
+      - link "Jockey 8820 Men's Super Combed Cotton Round Neck Sleeveless Regular Fit Vest with Extended Length for Easy Tuck (Pack of 3)":
+        - /url: /Jockey-Mens-Cotton-Assorted-Medium/dp/B07C666KVN/?_encoding=UTF8&pd_rd_w=qDQVS&content-id=amzn1.sym.211684f4-ebe1-443f-8a4a-0773471e979f&pf_rd_p=211684f4-ebe1-443f-8a4a-0773471e979f&pf_rd_r=T7MDK19RYQYVW8W6JVX0&pd_rd_wg=t2nAO&pd_rd_r=1c2dfb23-f677-4fc3-81c5-44eb6918bba0&ref_=pd_hp_d_btf_crs_zg_bs_1571271031
+        - img "Jockey 8820 Men's Super Combed Cotton Round Neck Sleeveless Regular Fit Vest with Extended Length for Easy Tuck (Pack of 3)"
+    - listitem:
+      - link "Lux Cozi Men's White Round Neck Sleeveless Cotton Vest (Pack of 3)":
+        - /url: /Lux-Cozi-Mens-Cotton-8904209871077_COZI_WH_RN_90_White/dp/B071KKRY5N/?_encoding=UTF8&pd_rd_w=qDQVS&content-id=amzn1.sym.211684f4-ebe1-443f-8a4a-0773471e979f&pf_rd_p=211684f4-ebe1-443f-8a4a-0773471e979f&pf_rd_r=T7MDK19RYQYVW8W6JVX0&pd_rd_wg=t2nAO&pd_rd_r=1c2dfb23-f677-4fc3-81c5-44eb6918bba0&ref_=pd_hp_d_btf_crs_zg_bs_1571271031
+        - img "Lux Cozi Men's White Round Neck Sleeveless Cotton Vest (Pack of 3)"
+    - listitem:
+      - link "GoSriKi Women's Rayon Viscose Straight Bandhej Printed Kurta with Pant & Dupatta":
+        - /url: /GoSriKi-Straight-Printed-Dupatta-Rani-GS_XL_Pink_X-Large/dp/B0DCK9NRC5/?_encoding=UTF8&pd_rd_w=qDQVS&content-id=amzn1.sym.211684f4-ebe1-443f-8a4a-0773471e979f&pf_rd_p=211684f4-ebe1-443f-8a4a-0773471e979f&pf_rd_r=T7MDK19RYQYVW8W6JVX0&pd_rd_wg=t2nAO&pd_rd_r=1c2dfb23-f677-4fc3-81c5-44eb6918bba0&ref_=pd_hp_d_btf_crs_zg_bs_1571271031
+        - img "GoSriKi Women's Rayon Viscose Straight Bandhej Printed Kurta with Pant & Dupatta"
+- complementary "Your recently viewed items and featured recommendations"
+- button "Back to top"
+- heading "Get to Know Us" [level=6]
+- list:
+  - listitem:
+    - link "About Amazon":
+      - /url: https://www.aboutamazon.in/?utm_source=gateway&utm_medium=footer
+  - listitem:
+    - link "Careers":
+      - /url: https://amazon.jobs
+  - listitem:
+    - link "Press Releases":
+      - /url: https://press.aboutamazon.in/?utm_source=gateway&utm_medium=footer
+  - listitem:
+    - link "Amazon Science":
+      - /url: https://www.amazon.science
+- heading "Connect with Us" [level=6]
+- list:
+  - listitem:
+    - link "Facebook":
+      - /url: https://www.amazon.in/gp/redirect.html/ref=footer_fb?location=http://www.facebook.com/AmazonIN&token=2075D5EAC7BB214089728E2183FD391706D41E94&6
+  - listitem:
+    - link "Twitter":
+      - /url: https://www.amazon.in/gp/redirect.html/ref=footer_twitter?location=http://twitter.com/AmazonIN&token=A309DFBFCB1E37A808FF531934855DC817F130B6&6
+  - listitem:
+    - link "Instagram":
+      - /url: https://www.amazon.in/gp/redirect.html?location=https://www.instagram.com/amazondotin&token=264882C912E9D005CB1D9B61F12E125D5DF9BFC7&source=standards
+- heading "Make Money with Us" [level=6]
+- list:
+  - listitem:
+    - link "Sell on Amazon":
+      - /url: /b/?node=2838698031&ld=AZINSOANavDesktopFooter_C&ref_=nav_footer_sell_C
+  - listitem:
+    - link "Sell under Amazon Accelerator":
+      - /url: https://accelerator.amazon.in/?ref_=map_1_b2b_GW_FT
+  - listitem:
+    - link "Protect and Build Your Brand":
+      - /url: https://brandservices.amazon.in/?ref=AOINABRLGNRFOOT&ld=AOINABRLGNRFOOT
+  - listitem:
+    - link "Amazon Global Selling":
+      - /url: https://sell.amazon.in/grow-your-business/amazon-global-selling.html?ld=AZIN_Footer_V1&ref=AZIN_Footer_V1
+  - listitem:
+    - link "Supply to Amazon":
+      - /url: https://supply.amazon.com/?ref_=footer_sta&lang=en-IN
+  - listitem:
+    - link "Become an Affiliate":
+      - /url: https://affiliate-program.amazon.in/?utm_campaign=assocshowcase&utm_medium=footer&utm_source=GW&ref_=footer_assoc
+  - listitem:
+    - link "Fulfilment by Amazon":
+      - /url: https://services.amazon.in/services/fulfilment-by-amazon/benefits.html/ref=az_footer_fba?ld=AWRGINFBAfooter
+  - listitem:
+    - link "Advertise Your Products":
+      - /url: https://advertising.amazon.in/?ref=Amz.in
+  - listitem:
+    - link "Amazon Pay on Merchants":
+      - /url: https://www.amazonpay.in/merchant
+- heading "Let Us Help You" [level=6]
+- list:
+  - listitem:
+    - link "Your Account":
+      - /url: /gp/css/homepage.html?ref_=footer_ya
+  - listitem:
+    - link "Returns Centre":
+      - /url: /gp/css/returns/homepage.html?ref_=footer_hy_f_4
+  - listitem:
+    - link "Recalls and Product Safety Alerts":
+      - /url: https://www.amazon.in/your-product-safety-alerts?ref_=footer_bsx_ypsa
+  - listitem:
+    - link "100% Purchase Protection":
+      - /url: /gp/help/customer/display.html?nodeId=201083470&ref_=footer_swc
+  - listitem:
+    - link "Amazon App Download":
+      - /url: /gp/browse.html?node=6967393031&ref_=footer_mobapp
+  - listitem:
+    - link "Help":
+      - /url: /gp/help/customer/display.html?nodeId=200507590&ref_=footer_gw_m_b_he
+- link "Amazon India Home":
+  - /url: /ref=footer_logo
+- link "Choose a language for shopping. Current selection is English.":
+  - /url: /customer-preferences/edit?ie=UTF8&preferencesReturnUrl=%2F&ref_=footer_lang
+  - text: English
+  - button "Expand to Change Language or Country"
+- button "Choose a country/region for shopping. The current selection is India.": India
+- list:
+  - listitem:
+    - link "AbeBooks Books, art & collectibles":
+      - /url: https://www.abebooks.com/
+      - heading "AbeBooks" [level=5]
+      - text: Books, art & collectibles
+  - listitem:
+    - link "Amazon Web Services Scalable Cloud Computing Services":
+      - /url: https://aws.amazon.com/what-is-cloud-computing/?sc_channel=EL&sc_campaign=IN_amazonfooter
+      - heading "Amazon Web Services" [level=5]
+      - text: Scalable Cloud Computing Services
+  - listitem:
+    - link "Audible Download Audio Books":
+      - /url: https://www.audible.in/
+      - heading "Audible" [level=5]
+      - text: Download Audio Books
+  - listitem:
+    - link "IMDb Movies, TV & Celebrities":
+      - /url: https://www.imdb.com/
+      - heading "IMDb" [level=5]
+      - text: Movies, TV & Celebrities
+- list:
+  - listitem:
+    - link "Shopbop Designer Fashion Brands":
+      - /url: https://www.shopbop.com/
+      - heading "Shopbop" [level=5]
+      - text: Designer Fashion Brands
+  - listitem:
+    - link "Amazon Business Everything For Your Business":
+      - /url: /business?ref=footer_aingw
+      - heading "Amazon Business" [level=5]
+      - text: Everything For Your Business
+  - listitem:
+    - link "Prime Now 2-Hour Delivery on Everyday Items":
+      - /url: /now?ref=footer_amznow
+      - heading "Prime Now" [level=5]
+      - text: 2-Hour Delivery on Everyday Items
+  - listitem:
+    - link "Amazon Prime Music 100 million songs, ad-free Over 15 million podcast episodes":
+      - /url: /music/prime?ref=footer_apm
+      - heading "Amazon Prime Music" [level=5]
+      - text: 100 million songs, ad-free Over 15 million podcast episodes
+- list:
+  - listitem:
+    - link "Conditions of Use & Sale":
+      - /url: /gp/help/customer/display.html?nodeId=200545940&ref_=footer_cou
+  - listitem:
+    - link "Privacy Notice":
+      - /url: /gp/help/customer/display.html?nodeId=200534380&ref_=footer_privacy
+  - listitem:
+    - link "Interest-Based Ads":
+      - /url: /gp/help/customer/display.html?nodeId=202075050&ref_=footer_iba
+- text: © 1996-2025, Amazon.com, Inc. or its affiliates
+```
+
+# Test source
+
+```ts
+   1 | import { test,expect } from "@playwright/test";
+   2 |
+   3 | test("Add to Cart and verify whether the product is displayed",async ({page}) => {
+>  4 |     await page.goto("https://www.amazon.in/");
+     |                ^ Error: page.goto: Test timeout of 30000ms exceeded.
+   5 |     await page.getByPlaceholder("Search Amazon.in").fill("fastrack watches for man");
+   6 |     await page.locator("//input[@value='Go']").click();
+   7 |     await page.locator("//span[contains(text(),'Fastrack Dezire')]/ancestor::div[@class='a-section a-spacing-base']").click();
+   8 |     await page.locator("//input[@value='Add to Cart']").click();
+   9 |     await page.locator("//span[@class='nav-cart-icon nav-sprite']").click();
+  10 |     await expect(page.locator("//h3[@class='a-text-normal']")).toBeTruthy();
+  11 | })
+```

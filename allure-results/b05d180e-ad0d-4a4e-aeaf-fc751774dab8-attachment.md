@@ -1,0 +1,1253 @@
+# Test info
+
+- Name: Add to Cart and verify whether the product is displayed
+- Location: C:\Users\DELL\Desktop\Project One\tests\addtocartamazon.spec.js:3:5
+
+# Error details
+
+```
+Error: locator.textContent: Error: strict mode violation: locator('//div[@class=\'puisg-col-inner\']/descendant::span[text()=\'₹3,299\']') resolved to 2 elements:
+    1) <span class="a-offscreen">₹3,299</span> aka getByRole('link', { name: '₹3,299 M.R.P: ₹5,999 M.R.P: ₹' }).first()
+    2) <span class="a-offscreen">₹3,299</span> aka getByRole('link', { name: '₹3,299 M.R.P: ₹5,999 M.R.P: ₹' }).nth(1)
+
+Call log:
+  - waiting for locator('//div[@class=\'puisg-col-inner\']/descendant::span[text()=\'₹3,299\']')
+
+    at C:\Users\DELL\Desktop\Project One\tests\addtocartamazon.spec.js:11:103
+```
+
+# Page snapshot
+
+```yaml
+- navigation "Shortcuts menu":
+  - heading "Skip to" [level=2]
+  - list "Skip to":
+    - listitem:
+      - link "main content":
+        - /url: "#skippedLink"
+        - text: Main content
+    - listitem:
+      - link "Results":
+        - /url: .s-asin a:has(h2)
+    - listitem:
+      - link "Filters":
+        - /url: "#s-skipLinkTargetForFilterOptions"
+  - heading "Keyboard shortcuts" [level=2]
+  - list "Keyboard shortcuts":
+    - listitem:
+      - link "Search, alt, forward slash"
+    - listitem:
+      - link "Cart, shift, alt, c"
+    - listitem:
+      - link "Home, shift, alt, h"
+    - listitem:
+      - link "Your orders, shift, alt, o"
+    - listitem:
+      - button "Show/hide shortcuts, shift, alt, z"
+  - text: To move between items, use your keyboard's up or down arrows.
+- banner:
+  - navigation "Primary":
+    - link "Amazon.in":
+      - /url: /ref=nav_logo
+      - text: .in
+    - button "Delivering to Bengaluru 562130 Update location"
+    - search:
+      - text: All
+      - combobox "Select the department you want to search in":
+        - option "All Categories" [selected]
+        - option "Alexa Skills"
+        - option "Amazon Devices"
+        - option "Amazon Fashion"
+        - option "Amazon Fresh"
+        - option "Amazon Pharmacy"
+        - option "Appliances"
+        - option "Apps & Games"
+        - option "Audible Audiobooks"
+        - option "Baby"
+        - option "Beauty"
+        - option "Books"
+        - option "Car & Motorbike"
+        - option "Clothing & Accessories"
+        - option "Collectibles"
+        - option "Computers & Accessories"
+        - option "Deals"
+        - option "Electronics"
+        - option "Furniture"
+        - option "Garden & Outdoors"
+        - option "Gift Cards"
+        - option "Grocery & Gourmet Foods"
+        - option "Health & Personal Care"
+        - option "Home & Kitchen"
+        - option "Industrial & Scientific"
+        - option "Jewellery"
+        - option "Kindle Store"
+        - option "Luggage & Bags"
+        - option "Luxury Beauty"
+        - option "Movies & TV Shows"
+        - option "MP3 Music"
+        - option "Music"
+        - option "Musical Instruments"
+        - option "Office Products"
+        - option "Pet Supplies"
+        - option "Prime Video"
+        - option "Shoes & Handbags"
+        - option "Software"
+        - option "Sports, Fitness & Outdoors"
+        - option "Subscribe & Save"
+        - option "Tools & Home Improvement"
+        - option "Toys & Games"
+        - option "Under ₹500"
+        - option "Video Games"
+        - option "Watches"
+      - searchbox "Search Amazon.in": fastrack dezire fx1 pro
+      - button "Go"
+    - link "Choose a language for shopping in Amazon India. The current selection is English (EN).":
+      - /url: /customer-preferences/edit?ie=UTF8&preferencesReturnUrl=%2F&ref_=topnav_lang
+      - img "India"
+      - text: EN
+    - button "Expand to Change Language or Country"
+    - link "Hello, sign in Account & Lists":
+      - /url: https://www.amazon.in/ap/signin?openid.pape.max_auth_age=0&openid.return_to=https%3A%2F%2Fwww.amazon.in%2Fs%3Fk%3Dfastrack%2Bdezire%2Bfx1%2Bpro%26crid%3D1MB4SWDSU01PH%26sprefix%3Dfastrack%2Bdezire%2Bfx1%2Bpro%252Caps%252C315%26ref%3Dnav_ya_signin&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.assoc_handle=inflex&openid.mode=checkid_setup&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0
+    - button "Expand Account and Lists"
+    - link "Returns & Orders":
+      - /url: /gp/css/order-history?ref_=nav_orders_first
+    - link "0 items in cart":
+      - /url: /gp/cart/view.html?ref_=nav_cart
+    - button "Open All Categories Menu": All
+    - list:
+      - listitem:
+        - link "Fresh":
+          - /url: /fresh?ref_=nav_cs_fresh
+      - listitem:
+        - link "MX Player":
+          - /url: /minitv?ref_=nav_avod_desktop_topnav
+      - listitem:
+        - link "Sell":
+          - /url: /b/32702023031?node=32702023031&ld=AZINSOANavDesktop_T3&ref_=nav_cs_sell_T3
+      - listitem:
+        - link "Bestsellers":
+          - /url: /gp/bestsellers/?ref_=nav_cs_bestsellers
+      - listitem:
+        - link "Today's Deals":
+          - /url: /deals?ref_=nav_cs_gb
+      - listitem:
+        - link "Mobiles":
+          - /url: /mobile-phones/b/?ie=UTF8&node=1389401031&ref_=nav_cs_mobiles
+      - listitem:
+        - link "Fashion":
+          - /url: /gp/browse.html?node=6648217031&ref_=nav_cs_fashion
+      - listitem:
+        - link "Customer Service":
+          - /url: /gp/help/customer/display.html?nodeId=200507590&ref_=nav_cs_help
+      - listitem:
+        - link "Prime":
+          - /url: /prime?ref_=nav_cs_primelink_nonmember
+        - button "Prime Details"
+      - listitem:
+        - link "New Releases":
+          - /url: /gp/new-releases/?ref_=nav_cs_newreleases
+      - listitem:
+        - link "Electronics":
+          - /url: /electronics/b/?ie=UTF8&node=976419031&ref_=nav_cs_electronics
+      - listitem:
+        - link "Home & Kitchen":
+          - /url: /Home-Kitchen/b/?ie=UTF8&node=976442031&ref_=nav_cs_home
+      - listitem:
+        - link "Amazon Pay":
+          - /url: /gp/sva/dashboard?ref_=nav_cs_apay
+      - listitem:
+        - link "Car & Motorbike":
+          - /url: /Car-Motorbike-Store/b/?ie=UTF8&node=4772060031&ref_=nav_cs_automotive
+      - listitem:
+        - link "Computers":
+          - /url: /computers-and-accessories/b/?ie=UTF8&node=976392031&ref_=nav_cs_pc
+      - listitem:
+        - link "Books":
+          - /url: /Books/b/?ie=UTF8&node=976389031&ref_=nav_cs_books
+      - listitem:
+        - link "Toys & Games":
+          - /url: /Toys-Games/b/?ie=UTF8&node=1350380031&ref_=nav_cs_toys
+      - listitem:
+        - link "Beauty & Personal Care":
+          - /url: /beauty/b/?ie=UTF8&node=1355016031&ref_=nav_cs_beauty
+      - listitem:
+        - link "Home Improvement":
+          - /url: /Home-Improvement/b/?ie=UTF8&node=4286640031&ref_=nav_cs_hi
+      - listitem:
+        - link "Gift Cards":
+          - /url: /gift-card-store/b/?ie=UTF8&node=3704982031&ref_=nav_cs_gc
+      - listitem:
+        - link "Sports, Fitness & Outdoors":
+          - /url: /Sports/b/?ie=UTF8&node=1984443031&ref_=nav_cs_sports
+      - listitem:
+        - link "Health, Household & Personal Care":
+          - /url: /health-and-personal-care/b/?ie=UTF8&node=1350384031&ref_=nav_cs_hpc
+      - listitem:
+        - link "Grocery & Gourmet Foods":
+          - /url: /Gourmet-Specialty-Foods/b/?ie=UTF8&node=2454178031&ref_=nav_cs_grocery
+      - listitem:
+        - link "Baby":
+          - /url: /Baby/b/?ie=UTF8&node=1571274031&ref_=nav_cs_baby
+      - listitem:
+        - link "Custom Products":
+          - /url: /Amazon-Custom/b/?ie=UTF8&node=32615889031&ref_=nav_cs_custom
+      - listitem:
+        - link "Video Games":
+          - /url: /video-games/b/?ie=UTF8&node=976460031&ref_=nav_cs_video_games
+      - listitem:
+        - link "Pet Supplies":
+          - /url: /Pet-Supplies/b/?ie=UTF8&node=2454181031&ref_=nav_cs_pets
+      - listitem:
+        - link "Gift Ideas":
+          - /url: /gcx/-/gfhz/?ref_=nav_cs_giftfinder
+      - listitem:
+        - link "AmazonBasics":
+          - /url: /b/?node=6637738031&ref_=nav_cs_amazonbasics
+      - listitem:
+        - link "Audible":
+          - /url: /Audible-Books-and-Originals/b/?ie=UTF8&node=17941593031&ref_=nav_cs_audible
+      - listitem:
+        - link "Subscribe & Save":
+          - /url: /auto-deliveries/landing?ref_=nav_cs_sns
+    - dialog
+- 'heading "1-16 of 612 results for \"fastrack dezire fx1 pro\" Sort by: Featured" [level=1]':
+  - heading "1-16 of 612 results for \"fastrack dezire fx1 pro\"" [level=2]
+  - text: "Sort by:"
+  - combobox "Sort by:":
+    - option "Featured" [selected]
+    - 'option "Price: Low to High"'
+    - 'option "Price: High to Low"'
+    - option "Avg. Customer Review"
+    - option "Newest Arrivals"
+    - option "Best Sellers"
+- link "Shop the Noise Store on Amazon":
+  - /url: https://aax-eu.amazon.in/x/c/JI5DKrj0xu_nXel7kI3khIQAAAGW3IagjQMAAAH2AQBvbm9fdHhuX2JpZDIgICBvbm9fdHhuX2ltcDIgICC4hJxA/https://www.amazon.in/stores/page/1FBB6F0D-B22D-4238-8563-CDDC6BBFB0F0/?_encoding=UTF8&pd_rd_plhdr=t&pd_rd_i=B0D6N5STXQ&ref_=sbx_be_s_sparkle_ssd_logo&store_ref=SBV_A0363435ODSPLZSQRI8H-A0935901SZSNWBR22QYZ&lp_asins=B0D6N5STXQ%2CB0D6N83X6D%2CB0D6N5V9PY&pd_rd_w=YbgTL&content-id=amzn1.sym.5e94cbee-68a7-46b5-b2e9-bb5445edd00f%3Aamzn1.sym.5e94cbee-68a7-46b5-b2e9-bb5445edd00f&pf_rd_p=5e94cbee-68a7-46b5-b2e9-bb5445edd00f&pf_rd_r=F6E1NNZVHVZD1HA522Y4&pd_rd_wg=nLSQZ&pd_rd_r=6b8369ef-b44a-454f-b197-37c528b20f80
+  - img "Shop the Noise Store on Amazon"
+- 'link "New Halo 2: Our 1st Rotating Dial, AMOLED Display - Shop the Noise Store on Amazon"':
+  - /url: https://aax-eu.amazon.in/x/c/JI5DKrj0xu_nXel7kI3khIQAAAGW3IagjQMAAAH2AQBvbm9fdHhuX2JpZDIgICBvbm9fdHhuX2ltcDIgICC4hJxA/https://www.amazon.in/stores/page/1FBB6F0D-B22D-4238-8563-CDDC6BBFB0F0/?_encoding=UTF8&pd_rd_plhdr=t&pd_rd_i=B0D6N5STXQ&ref_=sbx_be_s_sparkle_ssd_hl&store_ref=SBV_A0363435ODSPLZSQRI8H-A0935901SZSNWBR22QYZ&lp_asins=B0D6N5STXQ%2CB0D6N83X6D%2CB0D6N5V9PY&pd_rd_w=YbgTL&content-id=amzn1.sym.5e94cbee-68a7-46b5-b2e9-bb5445edd00f%3Aamzn1.sym.5e94cbee-68a7-46b5-b2e9-bb5445edd00f&pf_rd_p=5e94cbee-68a7-46b5-b2e9-bb5445edd00f&pf_rd_r=F6E1NNZVHVZD1HA522Y4&pd_rd_wg=nLSQZ&pd_rd_r=6b8369ef-b44a-454f-b197-37c528b20f80
+  - text: "New Halo 2: Our 1st Rotating Dial, AMOLED Display"
+- link "Shop Noise":
+  - /url: https://aax-eu.amazon.in/x/c/JI5DKrj0xu_nXel7kI3khIQAAAGW3IagjQMAAAH2AQBvbm9fdHhuX2JpZDIgICBvbm9fdHhuX2ltcDIgICC4hJxA/https://www.amazon.in/stores/page/1FBB6F0D-B22D-4238-8563-CDDC6BBFB0F0/?_encoding=UTF8&pd_rd_plhdr=t&pd_rd_i=B0D6N5STXQ&ref_=sbx_be_s_sparkle_ssd_cta&store_ref=SBV_A0363435ODSPLZSQRI8H-A0935901SZSNWBR22QYZ&lp_asins=B0D6N5STXQ%2CB0D6N83X6D%2CB0D6N5V9PY&pd_rd_w=YbgTL&content-id=amzn1.sym.5e94cbee-68a7-46b5-b2e9-bb5445edd00f%3Aamzn1.sym.5e94cbee-68a7-46b5-b2e9-bb5445edd00f&pf_rd_p=5e94cbee-68a7-46b5-b2e9-bb5445edd00f&pf_rd_r=F6E1NNZVHVZD1HA522Y4&pd_rd_wg=nLSQZ&pd_rd_r=6b8369ef-b44a-454f-b197-37c528b20f80
+- link "Sponsored video from Noise, click to learn more about offerings from Noise on Amazon.":
+  - /url: https://aax-eu.amazon.in/x/c/JI5DKrj0xu_nXel7kI3khIQAAAGW3IagjQMAAAH2AQBvbm9fdHhuX2JpZDIgICBvbm9fdHhuX2ltcDIgICC4hJxA/https://www.amazon.in/stores/page/1FBB6F0D-B22D-4238-8563-CDDC6BBFB0F0/?_encoding=UTF8&pd_rd_plhdr=t&pd_rd_i=B0D6N5STXQ&ref_=sbx_be_s_sparkle_ssd_vid&store_ref=SBV_A0363435ODSPLZSQRI8H-A0935901SZSNWBR22QYZ&lp_asins=B0D6N5STXQ%2CB0D6N83X6D%2CB0D6N5V9PY&pd_rd_w=YbgTL&content-id=amzn1.sym.5e94cbee-68a7-46b5-b2e9-bb5445edd00f%3Aamzn1.sym.5e94cbee-68a7-46b5-b2e9-bb5445edd00f&pf_rd_p=5e94cbee-68a7-46b5-b2e9-bb5445edd00f&pf_rd_r=F6E1NNZVHVZD1HA522Y4&pd_rd_wg=nLSQZ&pd_rd_r=6b8369ef-b44a-454f-b197-37c528b20f80
+- button "Play Sponsored Video":
+  - img
+- group:
+  - group:
+    - list:
+      - listitem:
+        - link "Noise Newly Launched Halo 2 Smart Watch 1st Ever Functional Rotating Dial (Axe-Cut Bezel), 1.43\" AMOLED, Stainless Steel Build, Custom Transition Effects, BT Calling, Health Suite (Gold Blue)":
+          - /url: https://aax-eu.amazon.in/x/c/JI5DKrj0xu_nXel7kI3khIQAAAGW3IagjQMAAAH2AQBvbm9fdHhuX2JpZDIgICBvbm9fdHhuX2ltcDIgICC4hJxA/https://www.amazon.in/dp/B0D6N5STXQ/?_encoding=UTF8&pd_rd_i=B0D6N5STXQ&ref_=sbx_be_s_sparkle_ssd_img&qid=1747456532&pd_rd_w=YbgTL&content-id=amzn1.sym.5e94cbee-68a7-46b5-b2e9-bb5445edd00f%3Aamzn1.sym.5e94cbee-68a7-46b5-b2e9-bb5445edd00f&pf_rd_p=5e94cbee-68a7-46b5-b2e9-bb5445edd00f&pf_rd_r=F6E1NNZVHVZD1HA522Y4&pd_rd_wg=nLSQZ&pd_rd_r=6b8369ef-b44a-454f-b197-37c528b20f80&pd_rd_plhdr=t
+          - img "Noise Newly Launched Halo 2 Smart Watch 1st Ever Functional Rotating Dial (Axe-Cut Bezel), 1.43\" AMOLED, Stainless Steel Build, Custom Transition Effects, BT Calling, Health Suite (Gold Blue)"
+        - link "Noise Newly Launched Halo 2 Smart Watch 1st Ever Functional Rotating Dial (Axe-Cut Bezel), 1.43\" AMOLED, Stainless Steel Build, Custom Transition Effects, BT Calling, Health Suite (Gold Blue)":
+          - /url: https://aax-eu.amazon.in/x/c/JI5DKrj0xu_nXel7kI3khIQAAAGW3IagjQMAAAH2AQBvbm9fdHhuX2JpZDIgICBvbm9fdHhuX2ltcDIgICC4hJxA/https://www.amazon.in/dp/B0D6N5STXQ/?_encoding=UTF8&pd_rd_i=B0D6N5STXQ&ref_=sbx_be_s_sparkle_ssd_tt&qid=1747456532&pd_rd_w=YbgTL&content-id=amzn1.sym.5e94cbee-68a7-46b5-b2e9-bb5445edd00f%3Aamzn1.sym.5e94cbee-68a7-46b5-b2e9-bb5445edd00f&pf_rd_p=5e94cbee-68a7-46b5-b2e9-bb5445edd00f&pf_rd_r=F6E1NNZVHVZD1HA522Y4&pd_rd_wg=nLSQZ&pd_rd_r=6b8369ef-b44a-454f-b197-37c528b20f80&pd_rd_plhdr=t
+        - link "Rated 3.8 out of 5 stars from 3,676 reviews":
+          - /url: https://aax-eu.amazon.in/x/c/JI5DKrj0xu_nXel7kI3khIQAAAGW3IagjQMAAAH2AQBvbm9fdHhuX2JpZDIgICBvbm9fdHhuX2ltcDIgICC4hJxA/https://www.amazon.in/dp/B0D6N5STXQ/?_encoding=UTF8&pd_rd_i=B0D6N5STXQ&ref_=sbx_be_s_sparkle_ssd_rev&qid=1747456532&pd_rd_w=YbgTL&content-id=amzn1.sym.5e94cbee-68a7-46b5-b2e9-bb5445edd00f%3Aamzn1.sym.5e94cbee-68a7-46b5-b2e9-bb5445edd00f&pf_rd_p=5e94cbee-68a7-46b5-b2e9-bb5445edd00f&pf_rd_r=F6E1NNZVHVZD1HA522Y4&pd_rd_wg=nLSQZ&pd_rd_r=6b8369ef-b44a-454f-b197-37c528b20f80&pd_rd_plhdr=t
+          - text: 3.8 3,676
+        - link:
+          - /url: https://aax-eu.amazon.in/x/c/JI5DKrj0xu_nXel7kI3khIQAAAGW3IagjQMAAAH2AQBvbm9fdHhuX2JpZDIgICBvbm9fdHhuX2ltcDIgICC4hJxA/https://www.amazon.in/dp/B0D6N5STXQ/?_encoding=UTF8&pd_rd_i=B0D6N5STXQ&ref_=sbx_be_s_sparkle_ssd_pce&qid=1747456532&pd_rd_w=YbgTL&content-id=amzn1.sym.5e94cbee-68a7-46b5-b2e9-bb5445edd00f%3Aamzn1.sym.5e94cbee-68a7-46b5-b2e9-bb5445edd00f&pf_rd_p=5e94cbee-68a7-46b5-b2e9-bb5445edd00f&pf_rd_r=F6E1NNZVHVZD1HA522Y4&pd_rd_wg=nLSQZ&pd_rd_r=6b8369ef-b44a-454f-b197-37c528b20f80&pd_rd_plhdr=t
+      - listitem:
+        - link "Noise Newly Launched Halo 2 Smart Watch 1st Ever Functional Rotating Dial (Axe-Cut Bezel), 1.43\" AMOLED, Stainless Steel Build, Custom Transition Effects, BT Calling, Health Suite (Vintage Brown)":
+          - /url: https://aax-eu.amazon.in/x/c/JI5DKrj0xu_nXel7kI3khIQAAAGW3IagjQMAAAH2AQBvbm9fdHhuX2JpZDIgICBvbm9fdHhuX2ltcDIgICC4hJxA/https://www.amazon.in/dp/B0D6N83X6D/?_encoding=UTF8&pd_rd_i=B0D6N83X6D&ref_=sbx_be_s_sparkle_ssd_img&qid=1747456532&pd_rd_w=YbgTL&content-id=amzn1.sym.5e94cbee-68a7-46b5-b2e9-bb5445edd00f%3Aamzn1.sym.5e94cbee-68a7-46b5-b2e9-bb5445edd00f&pf_rd_p=5e94cbee-68a7-46b5-b2e9-bb5445edd00f&pf_rd_r=F6E1NNZVHVZD1HA522Y4&pd_rd_wg=nLSQZ&pd_rd_r=6b8369ef-b44a-454f-b197-37c528b20f80&pd_rd_plhdr=t
+          - img "Noise Newly Launched Halo 2 Smart Watch 1st Ever Functional Rotating Dial (Axe-Cut Bezel), 1.43\" AMOLED, Stainless Steel Build, Custom Transition Effects, BT Calling, Health Suite (Vintage Brown)"
+        - link "Noise Newly Launched Halo 2 Smart Watch 1st Ever Functional Rotating Dial (Axe-Cut Bezel), 1.43\" AMOLED, Stainless Steel Build, Custom Transition Effects, BT Calling, Health Suite (Vintage Brown)":
+          - /url: https://aax-eu.amazon.in/x/c/JI5DKrj0xu_nXel7kI3khIQAAAGW3IagjQMAAAH2AQBvbm9fdHhuX2JpZDIgICBvbm9fdHhuX2ltcDIgICC4hJxA/https://www.amazon.in/dp/B0D6N83X6D/?_encoding=UTF8&pd_rd_i=B0D6N83X6D&ref_=sbx_be_s_sparkle_ssd_tt&qid=1747456532&pd_rd_w=YbgTL&content-id=amzn1.sym.5e94cbee-68a7-46b5-b2e9-bb5445edd00f%3Aamzn1.sym.5e94cbee-68a7-46b5-b2e9-bb5445edd00f&pf_rd_p=5e94cbee-68a7-46b5-b2e9-bb5445edd00f&pf_rd_r=F6E1NNZVHVZD1HA522Y4&pd_rd_wg=nLSQZ&pd_rd_r=6b8369ef-b44a-454f-b197-37c528b20f80&pd_rd_plhdr=t
+        - link "Rated 3.8 out of 5 stars from 3,676 reviews":
+          - /url: https://aax-eu.amazon.in/x/c/JI5DKrj0xu_nXel7kI3khIQAAAGW3IagjQMAAAH2AQBvbm9fdHhuX2JpZDIgICBvbm9fdHhuX2ltcDIgICC4hJxA/https://www.amazon.in/dp/B0D6N83X6D/?_encoding=UTF8&pd_rd_i=B0D6N83X6D&ref_=sbx_be_s_sparkle_ssd_rev&qid=1747456532&pd_rd_w=YbgTL&content-id=amzn1.sym.5e94cbee-68a7-46b5-b2e9-bb5445edd00f%3Aamzn1.sym.5e94cbee-68a7-46b5-b2e9-bb5445edd00f&pf_rd_p=5e94cbee-68a7-46b5-b2e9-bb5445edd00f&pf_rd_r=F6E1NNZVHVZD1HA522Y4&pd_rd_wg=nLSQZ&pd_rd_r=6b8369ef-b44a-454f-b197-37c528b20f80&pd_rd_plhdr=t
+          - text: 3.8 3,676
+        - link:
+          - /url: https://aax-eu.amazon.in/x/c/JI5DKrj0xu_nXel7kI3khIQAAAGW3IagjQMAAAH2AQBvbm9fdHhuX2JpZDIgICBvbm9fdHhuX2ltcDIgICC4hJxA/https://www.amazon.in/dp/B0D6N83X6D/?_encoding=UTF8&pd_rd_i=B0D6N83X6D&ref_=sbx_be_s_sparkle_ssd_pce&qid=1747456532&pd_rd_w=YbgTL&content-id=amzn1.sym.5e94cbee-68a7-46b5-b2e9-bb5445edd00f%3Aamzn1.sym.5e94cbee-68a7-46b5-b2e9-bb5445edd00f&pf_rd_p=5e94cbee-68a7-46b5-b2e9-bb5445edd00f&pf_rd_r=F6E1NNZVHVZD1HA522Y4&pd_rd_wg=nLSQZ&pd_rd_r=6b8369ef-b44a-454f-b197-37c528b20f80&pd_rd_plhdr=t
+  - button "Next page"
+- button "Leave feedback on Sponsored ad": Sponsored
+- heading "Results" [level=2]
+- text: Check each product page for other buying options. Price and other details may vary based on product size and colour.
+- list:
+  - listitem:
+    - link:
+      - /url: /sspa/click?ie=UTF8&spc=MTo4MTE1Mjc3MDc0NjMwODA3OjE3NDc0NTY1MzI6c3BfYXRmOjMwMDQxNDM2MDU3MzMzMjo6MDo6&url=%2FFastrack-Smartwatch-Resolution-SingleSync-Watchfaces%2Fdp%2FB0D6YJGGW2%2Fref%3Dsr_1_1_sspa%3Fcrid%3D1MB4SWDSU01PH%26dib%3DeyJ2IjoiMSJ9.QSioPGK2jY0QvRLT9OnVQ1SD2FA5lfKC_chHREXbvGlHYSre21Hw3ZKKdwSSZJ9j_gbW67XV5mnVe4AQRkCqXEz0C3MU5tvIjp0968Nf1v4r_STlTYknaBMkxdI6cw0s-ptkokTTkc4Fpr9aNcJMn1hLmrRy0x7ld4fWilPtWaNB8MGCjaaprHs_FKt6YA9gwcjv_pIeTbfbENoP5s5Vyi2lS5sm8CYAgLNJKhQe6CI.6n-gTEKYOLPLeNThF3W7xw-Dla6-nvPyxx2WJHfLQkU%26dib_tag%3Dse%26keywords%3Dfastrack%2Bdezire%2Bfx1%2Bpro%26nsdOptOutParam%3Dtrue%26qid%3D1747456532%26sprefix%3Dfastrack%2Bdezire%2Bfx1%2Bpro%252Caps%252C315%26sr%3D8-1-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9hdGY%26psc%3D1
+    - button "View Sponsored information or leave ad feedback": Sponsored
+    - link "Sponsored Ad - Fastrack Dezire FX1 PRO Fashion Smart Watch, 1.43\" AMOLED, 466*466 Pixel Resolution, SingleSync BT Calling, AI Voice Assistant, 100+ Sports Modes & Smartwatch Faces, Upto 5 Day Battery, IP68 (Black)":
+      - /url: /sspa/click?ie=UTF8&spc=MTo4MTE1Mjc3MDc0NjMwODA3OjE3NDc0NTY1MzI6c3BfYXRmOjMwMDQxNDM2MDU3MzMzMjo6MDo6&url=%2FFastrack-Smartwatch-Resolution-SingleSync-Watchfaces%2Fdp%2FB0D6YJGGW2%2Fref%3Dsr_1_1_sspa%3Fcrid%3D1MB4SWDSU01PH%26dib%3DeyJ2IjoiMSJ9.QSioPGK2jY0QvRLT9OnVQ1SD2FA5lfKC_chHREXbvGlHYSre21Hw3ZKKdwSSZJ9j_gbW67XV5mnVe4AQRkCqXEz0C3MU5tvIjp0968Nf1v4r_STlTYknaBMkxdI6cw0s-ptkokTTkc4Fpr9aNcJMn1hLmrRy0x7ld4fWilPtWaNB8MGCjaaprHs_FKt6YA9gwcjv_pIeTbfbENoP5s5Vyi2lS5sm8CYAgLNJKhQe6CI.6n-gTEKYOLPLeNThF3W7xw-Dla6-nvPyxx2WJHfLQkU%26dib_tag%3Dse%26keywords%3Dfastrack%2Bdezire%2Bfx1%2Bpro%26nsdOptOutParam%3Dtrue%26qid%3D1747456532%26sprefix%3Dfastrack%2Bdezire%2Bfx1%2Bpro%252Caps%252C315%26sr%3D8-1-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9hdGY%26psc%3D1
+      - heading "Sponsored Ad - Fastrack Dezire FX1 PRO Fashion Smart Watch, 1.43\" AMOLED, 466*466 Pixel Resolution, SingleSync BT Calling, AI Voice Assistant, 100+ Sports Modes & Smartwatch Faces, Upto 5 Day Battery, IP68 (Black)" [level=2]: Fastrack Dezire FX1 PRO Fashion Smart Watch, 1.43" AMOLED, 466*466 Pixel Resolution, SingleSync BT Calling, AI Voice Assistant, 100+ Sports Modes & Smartwatch Faces, Upto 5 Day Battery, IP68 (Black)
+    - button "3.9 out of 5 stars, rating details"
+    - link "3,720 ratings":
+      - /url: /sspa/click?ie=UTF8&spc=MTo4MTE1Mjc3MDc0NjMwODA3OjE3NDc0NTY1MzI6c3BfYXRmOjMwMDQxNDM2MDU3MzMzMjo6MDo6&url=%2FFastrack-Smartwatch-Resolution-SingleSync-Watchfaces%2Fdp%2FB0D6YJGGW2%2Fref%3Dsr_1_1_sspa%3Fcrid%3D1MB4SWDSU01PH%26dib%3DeyJ2IjoiMSJ9.QSioPGK2jY0QvRLT9OnVQ1SD2FA5lfKC_chHREXbvGlHYSre21Hw3ZKKdwSSZJ9j_gbW67XV5mnVe4AQRkCqXEz0C3MU5tvIjp0968Nf1v4r_STlTYknaBMkxdI6cw0s-ptkokTTkc4Fpr9aNcJMn1hLmrRy0x7ld4fWilPtWaNB8MGCjaaprHs_FKt6YA9gwcjv_pIeTbfbENoP5s5Vyi2lS5sm8CYAgLNJKhQe6CI.6n-gTEKYOLPLeNThF3W7xw-Dla6-nvPyxx2WJHfLQkU%26dib_tag%3Dse%26keywords%3Dfastrack%2Bdezire%2Bfx1%2Bpro%26nsdOptOutParam%3Dtrue%26qid%3D1747456532%26sprefix%3Dfastrack%2Bdezire%2Bfx1%2Bpro%252Caps%252C315%26sr%3D8-1-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9hdGY%26psc%3D1#customerReviews
+    - text: 100+ bought in past month Price, product page
+    - 'link "₹3,299 M.R.P: ₹5,999 M.R.P: ₹5,999"':
+      - /url: /sspa/click?ie=UTF8&spc=MTo4MTE1Mjc3MDc0NjMwODA3OjE3NDc0NTY1MzI6c3BfYXRmOjMwMDQxNDM2MDU3MzMzMjo6MDo6&url=%2FFastrack-Smartwatch-Resolution-SingleSync-Watchfaces%2Fdp%2FB0D6YJGGW2%2Fref%3Dsr_1_1_sspa%3Fcrid%3D1MB4SWDSU01PH%26dib%3DeyJ2IjoiMSJ9.QSioPGK2jY0QvRLT9OnVQ1SD2FA5lfKC_chHREXbvGlHYSre21Hw3ZKKdwSSZJ9j_gbW67XV5mnVe4AQRkCqXEz0C3MU5tvIjp0968Nf1v4r_STlTYknaBMkxdI6cw0s-ptkokTTkc4Fpr9aNcJMn1hLmrRy0x7ld4fWilPtWaNB8MGCjaaprHs_FKt6YA9gwcjv_pIeTbfbENoP5s5Vyi2lS5sm8CYAgLNJKhQe6CI.6n-gTEKYOLPLeNThF3W7xw-Dla6-nvPyxx2WJHfLQkU%26dib_tag%3Dse%26keywords%3Dfastrack%2Bdezire%2Bfx1%2Bpro%26nsdOptOutParam%3Dtrue%26qid%3D1747456532%26sprefix%3Dfastrack%2Bdezire%2Bfx1%2Bpro%252Caps%252C315%26sr%3D8-1-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9hdGY%26psc%3D1
+    - text: (45% off) 10% Off on Select Bank Cards
+    - img "Amazon Prime"
+    - text: "FREE delivery Mon, 19 May Service: Installation"
+    - button "Add to cart"
+  - listitem:
+    - link:
+      - /url: /sspa/click?ie=UTF8&spc=MTo4MTE1Mjc3MDc0NjMwODA3OjE3NDc0NTY1MzI6c3BfYXRmOjMwMDM0OTIyNTA5OTIzMjo6MDo6&url=%2FFastrack-Resolution-SingleSync-Assistant-Smartwatch%2Fdp%2FB0DGGVHMDS%2Fref%3Dsr_1_2_sspa%3Fcrid%3D1MB4SWDSU01PH%26dib%3DeyJ2IjoiMSJ9.QSioPGK2jY0QvRLT9OnVQ1SD2FA5lfKC_chHREXbvGlHYSre21Hw3ZKKdwSSZJ9j_gbW67XV5mnVe4AQRkCqXEz0C3MU5tvIjp0968Nf1v4r_STlTYknaBMkxdI6cw0s-ptkokTTkc4Fpr9aNcJMn1hLmrRy0x7ld4fWilPtWaNB8MGCjaaprHs_FKt6YA9gwcjv_pIeTbfbENoP5s5Vyi2lS5sm8CYAgLNJKhQe6CI.6n-gTEKYOLPLeNThF3W7xw-Dla6-nvPyxx2WJHfLQkU%26dib_tag%3Dse%26keywords%3Dfastrack%2Bdezire%2Bfx1%2Bpro%26nsdOptOutParam%3Dtrue%26qid%3D1747456532%26sprefix%3Dfastrack%2Bdezire%2Bfx1%2Bpro%252Caps%252C315%26sr%3D8-2-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9hdGY%26psc%3D1
+    - button "View Sponsored information or leave ad feedback": Sponsored
+    - link "Sponsored Ad - Fastrack Astor FR2 Pro Smart Watch, 1.43” AMOLED Display, 466 * 466 Pixel Resolution, SingleSync BT Calling, AI Voice Assistant, 100+ Sports Modes and Smartwatch Faces, IP68 (Black)":
+      - /url: /sspa/click?ie=UTF8&spc=MTo4MTE1Mjc3MDc0NjMwODA3OjE3NDc0NTY1MzI6c3BfYXRmOjMwMDM0OTIyNTA5OTIzMjo6MDo6&url=%2FFastrack-Resolution-SingleSync-Assistant-Smartwatch%2Fdp%2FB0DGGVHMDS%2Fref%3Dsr_1_2_sspa%3Fcrid%3D1MB4SWDSU01PH%26dib%3DeyJ2IjoiMSJ9.QSioPGK2jY0QvRLT9OnVQ1SD2FA5lfKC_chHREXbvGlHYSre21Hw3ZKKdwSSZJ9j_gbW67XV5mnVe4AQRkCqXEz0C3MU5tvIjp0968Nf1v4r_STlTYknaBMkxdI6cw0s-ptkokTTkc4Fpr9aNcJMn1hLmrRy0x7ld4fWilPtWaNB8MGCjaaprHs_FKt6YA9gwcjv_pIeTbfbENoP5s5Vyi2lS5sm8CYAgLNJKhQe6CI.6n-gTEKYOLPLeNThF3W7xw-Dla6-nvPyxx2WJHfLQkU%26dib_tag%3Dse%26keywords%3Dfastrack%2Bdezire%2Bfx1%2Bpro%26nsdOptOutParam%3Dtrue%26qid%3D1747456532%26sprefix%3Dfastrack%2Bdezire%2Bfx1%2Bpro%252Caps%252C315%26sr%3D8-2-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9hdGY%26psc%3D1
+      - heading "Sponsored Ad - Fastrack Astor FR2 Pro Smart Watch, 1.43” AMOLED Display, 466 * 466 Pixel Resolution, SingleSync BT Calling, AI Voice Assistant, 100+ Sports Modes and Smartwatch Faces, IP68 (Black)" [level=2]: Fastrack Astor FR2 Pro Smart Watch, 1.43” AMOLED Display, 466 * 466 Pixel Resolution, SingleSync BT Calling, AI Voice Assistant, 100+ Sports Modes and Smartwatch Faces, IP68 (Black)
+    - button "3.9 out of 5 stars, rating details"
+    - link "7,499 ratings":
+      - /url: /sspa/click?ie=UTF8&spc=MTo4MTE1Mjc3MDc0NjMwODA3OjE3NDc0NTY1MzI6c3BfYXRmOjMwMDM0OTIyNTA5OTIzMjo6MDo6&url=%2FFastrack-Resolution-SingleSync-Assistant-Smartwatch%2Fdp%2FB0DGGVHMDS%2Fref%3Dsr_1_2_sspa%3Fcrid%3D1MB4SWDSU01PH%26dib%3DeyJ2IjoiMSJ9.QSioPGK2jY0QvRLT9OnVQ1SD2FA5lfKC_chHREXbvGlHYSre21Hw3ZKKdwSSZJ9j_gbW67XV5mnVe4AQRkCqXEz0C3MU5tvIjp0968Nf1v4r_STlTYknaBMkxdI6cw0s-ptkokTTkc4Fpr9aNcJMn1hLmrRy0x7ld4fWilPtWaNB8MGCjaaprHs_FKt6YA9gwcjv_pIeTbfbENoP5s5Vyi2lS5sm8CYAgLNJKhQe6CI.6n-gTEKYOLPLeNThF3W7xw-Dla6-nvPyxx2WJHfLQkU%26dib_tag%3Dse%26keywords%3Dfastrack%2Bdezire%2Bfx1%2Bpro%26nsdOptOutParam%3Dtrue%26qid%3D1747456532%26sprefix%3Dfastrack%2Bdezire%2Bfx1%2Bpro%252Caps%252C315%26sr%3D8-2-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9hdGY%26psc%3D1#customerReviews
+    - text: 2K+ bought in past month Price, product page
+    - 'link "₹2,999 M.R.P: ₹5,499 M.R.P: ₹5,499"':
+      - /url: /sspa/click?ie=UTF8&spc=MTo4MTE1Mjc3MDc0NjMwODA3OjE3NDc0NTY1MzI6c3BfYXRmOjMwMDM0OTIyNTA5OTIzMjo6MDo6&url=%2FFastrack-Resolution-SingleSync-Assistant-Smartwatch%2Fdp%2FB0DGGVHMDS%2Fref%3Dsr_1_2_sspa%3Fcrid%3D1MB4SWDSU01PH%26dib%3DeyJ2IjoiMSJ9.QSioPGK2jY0QvRLT9OnVQ1SD2FA5lfKC_chHREXbvGlHYSre21Hw3ZKKdwSSZJ9j_gbW67XV5mnVe4AQRkCqXEz0C3MU5tvIjp0968Nf1v4r_STlTYknaBMkxdI6cw0s-ptkokTTkc4Fpr9aNcJMn1hLmrRy0x7ld4fWilPtWaNB8MGCjaaprHs_FKt6YA9gwcjv_pIeTbfbENoP5s5Vyi2lS5sm8CYAgLNJKhQe6CI.6n-gTEKYOLPLeNThF3W7xw-Dla6-nvPyxx2WJHfLQkU%26dib_tag%3Dse%26keywords%3Dfastrack%2Bdezire%2Bfx1%2Bpro%26nsdOptOutParam%3Dtrue%26qid%3D1747456532%26sprefix%3Dfastrack%2Bdezire%2Bfx1%2Bpro%252Caps%252C315%26sr%3D8-2-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9hdGY%26psc%3D1
+    - text: (45% off)
+    - img "Amazon Prime"
+    - text: "FREE delivery Mon, 19 May Or fastest delivery Tomorrow, 18 May Service: Installation"
+    - button "Add to cart"
+  - listitem:
+    - link:
+      - /url: /Fastrack-Smartwatch-Resolution-SingleSync-Watchfaces/dp/B0D6YJGGW2/ref=sr_1_3?crid=1MB4SWDSU01PH&dib=eyJ2IjoiMSJ9.QSioPGK2jY0QvRLT9OnVQ1SD2FA5lfKC_chHREXbvGlHYSre21Hw3ZKKdwSSZJ9j_gbW67XV5mnVe4AQRkCqXEz0C3MU5tvIjp0968Nf1v4r_STlTYknaBMkxdI6cw0s-ptkokTTkc4Fpr9aNcJMn1hLmrRy0x7ld4fWilPtWaNB8MGCjaaprHs_FKt6YA9gwcjv_pIeTbfbENoP5s5Vyi2lS5sm8CYAgLNJKhQe6CI.6n-gTEKYOLPLeNThF3W7xw-Dla6-nvPyxx2WJHfLQkU&dib_tag=se&keywords=fastrack+dezire+fx1+pro&nsdOptOutParam=true&qid=1747456532&sprefix=fastrack+dezire+fx1+pro%2Caps%2C315&sr=8-3
+    - link "Fastrack Dezire FX1 PRO Fashion Smart Watch, 1.43\" AMOLED, 466*466 Pixel Resolution, SingleSync BT Calling, AI Voice Assistant, 100+ Sports Modes & Smartwatch Faces, Upto 5 Day Battery, IP68 (Black)":
+      - /url: /Fastrack-Smartwatch-Resolution-SingleSync-Watchfaces/dp/B0D6YJGGW2/ref=sr_1_3?crid=1MB4SWDSU01PH&dib=eyJ2IjoiMSJ9.QSioPGK2jY0QvRLT9OnVQ1SD2FA5lfKC_chHREXbvGlHYSre21Hw3ZKKdwSSZJ9j_gbW67XV5mnVe4AQRkCqXEz0C3MU5tvIjp0968Nf1v4r_STlTYknaBMkxdI6cw0s-ptkokTTkc4Fpr9aNcJMn1hLmrRy0x7ld4fWilPtWaNB8MGCjaaprHs_FKt6YA9gwcjv_pIeTbfbENoP5s5Vyi2lS5sm8CYAgLNJKhQe6CI.6n-gTEKYOLPLeNThF3W7xw-Dla6-nvPyxx2WJHfLQkU&dib_tag=se&keywords=fastrack+dezire+fx1+pro&nsdOptOutParam=true&qid=1747456532&sprefix=fastrack+dezire+fx1+pro%2Caps%2C315&sr=8-3
+      - heading "Fastrack Dezire FX1 PRO Fashion Smart Watch, 1.43\" AMOLED, 466*466 Pixel Resolution, SingleSync BT Calling, AI Voice Assistant, 100+ Sports Modes & Smartwatch Faces, Upto 5 Day Battery, IP68 (Black)" [level=2]
+    - button "3.9 out of 5 stars, rating details"
+    - link "3,720 ratings":
+      - /url: /Fastrack-Smartwatch-Resolution-SingleSync-Watchfaces/dp/B0D6YJGGW2/ref=sr_1_3?crid=1MB4SWDSU01PH&dib=eyJ2IjoiMSJ9.QSioPGK2jY0QvRLT9OnVQ1SD2FA5lfKC_chHREXbvGlHYSre21Hw3ZKKdwSSZJ9j_gbW67XV5mnVe4AQRkCqXEz0C3MU5tvIjp0968Nf1v4r_STlTYknaBMkxdI6cw0s-ptkokTTkc4Fpr9aNcJMn1hLmrRy0x7ld4fWilPtWaNB8MGCjaaprHs_FKt6YA9gwcjv_pIeTbfbENoP5s5Vyi2lS5sm8CYAgLNJKhQe6CI.6n-gTEKYOLPLeNThF3W7xw-Dla6-nvPyxx2WJHfLQkU&dib_tag=se&keywords=fastrack+dezire+fx1+pro&nsdOptOutParam=true&qid=1747456532&sprefix=fastrack+dezire+fx1+pro%2Caps%2C315&sr=8-3#customerReviews
+    - text: 100+ bought in past month Price, product page
+    - 'link "₹3,299 M.R.P: ₹5,999 M.R.P: ₹5,999"':
+      - /url: /Fastrack-Smartwatch-Resolution-SingleSync-Watchfaces/dp/B0D6YJGGW2/ref=sr_1_3?crid=1MB4SWDSU01PH&dib=eyJ2IjoiMSJ9.QSioPGK2jY0QvRLT9OnVQ1SD2FA5lfKC_chHREXbvGlHYSre21Hw3ZKKdwSSZJ9j_gbW67XV5mnVe4AQRkCqXEz0C3MU5tvIjp0968Nf1v4r_STlTYknaBMkxdI6cw0s-ptkokTTkc4Fpr9aNcJMn1hLmrRy0x7ld4fWilPtWaNB8MGCjaaprHs_FKt6YA9gwcjv_pIeTbfbENoP5s5Vyi2lS5sm8CYAgLNJKhQe6CI.6n-gTEKYOLPLeNThF3W7xw-Dla6-nvPyxx2WJHfLQkU&dib_tag=se&keywords=fastrack+dezire+fx1+pro&nsdOptOutParam=true&qid=1747456532&sprefix=fastrack+dezire+fx1+pro%2Caps%2C315&sr=8-3
+    - text: (45% off) 10% Off on Select Bank Cards
+    - img "Amazon Prime"
+    - text: "FREE delivery Mon, 19 May Service: Installation"
+    - button "Add to cart"
+  - listitem:
+    - link:
+      - /url: /Fastrack-Smartwatch-Resolution-SingleSync-Watchfaces/dp/B0D6YL5886/ref=sr_1_4?crid=1MB4SWDSU01PH&dib=eyJ2IjoiMSJ9.QSioPGK2jY0QvRLT9OnVQ1SD2FA5lfKC_chHREXbvGlHYSre21Hw3ZKKdwSSZJ9j_gbW67XV5mnVe4AQRkCqXEz0C3MU5tvIjp0968Nf1v4r_STlTYknaBMkxdI6cw0s-ptkokTTkc4Fpr9aNcJMn1hLmrRy0x7ld4fWilPtWaNB8MGCjaaprHs_FKt6YA9gwcjv_pIeTbfbENoP5s5Vyi2lS5sm8CYAgLNJKhQe6CI.6n-gTEKYOLPLeNThF3W7xw-Dla6-nvPyxx2WJHfLQkU&dib_tag=se&keywords=fastrack+dezire+fx1+pro&nsdOptOutParam=true&qid=1747456532&sprefix=fastrack+dezire+fx1+pro%2Caps%2C315&sr=8-4
+    - link "Fastrack Dezire FX1 PRO Fashion Smart Watch, 1.43\" AMOLED, 466 * 466 Resolution, SingleSync BT Calling, AI Voice Assistant, 100+ Sports Modes & Smartwatch Faces, Upto 5 Day Battery, IP68 (Rose Gold)":
+      - /url: /Fastrack-Smartwatch-Resolution-SingleSync-Watchfaces/dp/B0D6YL5886/ref=sr_1_4?crid=1MB4SWDSU01PH&dib=eyJ2IjoiMSJ9.QSioPGK2jY0QvRLT9OnVQ1SD2FA5lfKC_chHREXbvGlHYSre21Hw3ZKKdwSSZJ9j_gbW67XV5mnVe4AQRkCqXEz0C3MU5tvIjp0968Nf1v4r_STlTYknaBMkxdI6cw0s-ptkokTTkc4Fpr9aNcJMn1hLmrRy0x7ld4fWilPtWaNB8MGCjaaprHs_FKt6YA9gwcjv_pIeTbfbENoP5s5Vyi2lS5sm8CYAgLNJKhQe6CI.6n-gTEKYOLPLeNThF3W7xw-Dla6-nvPyxx2WJHfLQkU&dib_tag=se&keywords=fastrack+dezire+fx1+pro&nsdOptOutParam=true&qid=1747456532&sprefix=fastrack+dezire+fx1+pro%2Caps%2C315&sr=8-4
+      - heading "Fastrack Dezire FX1 PRO Fashion Smart Watch, 1.43\" AMOLED, 466 * 466 Resolution, SingleSync BT Calling, AI Voice Assistant, 100+ Sports Modes & Smartwatch Faces, Upto 5 Day Battery, IP68 (Rose Gold)" [level=2]
+    - button "3.9 out of 5 stars, rating details"
+    - link "3,720 ratings":
+      - /url: /Fastrack-Smartwatch-Resolution-SingleSync-Watchfaces/dp/B0D6YL5886/ref=sr_1_4?crid=1MB4SWDSU01PH&dib=eyJ2IjoiMSJ9.QSioPGK2jY0QvRLT9OnVQ1SD2FA5lfKC_chHREXbvGlHYSre21Hw3ZKKdwSSZJ9j_gbW67XV5mnVe4AQRkCqXEz0C3MU5tvIjp0968Nf1v4r_STlTYknaBMkxdI6cw0s-ptkokTTkc4Fpr9aNcJMn1hLmrRy0x7ld4fWilPtWaNB8MGCjaaprHs_FKt6YA9gwcjv_pIeTbfbENoP5s5Vyi2lS5sm8CYAgLNJKhQe6CI.6n-gTEKYOLPLeNThF3W7xw-Dla6-nvPyxx2WJHfLQkU&dib_tag=se&keywords=fastrack+dezire+fx1+pro&nsdOptOutParam=true&qid=1747456532&sprefix=fastrack+dezire+fx1+pro%2Caps%2C315&sr=8-4#customerReviews
+    - link "Limited time deal":
+      - /url: /gp/goldbox/
+    - text: Price, product page
+    - 'link "₹3,499 M.R.P: ₹5,999 M.R.P: ₹5,999"':
+      - /url: /Fastrack-Smartwatch-Resolution-SingleSync-Watchfaces/dp/B0D6YL5886/ref=sr_1_4?crid=1MB4SWDSU01PH&dib=eyJ2IjoiMSJ9.QSioPGK2jY0QvRLT9OnVQ1SD2FA5lfKC_chHREXbvGlHYSre21Hw3ZKKdwSSZJ9j_gbW67XV5mnVe4AQRkCqXEz0C3MU5tvIjp0968Nf1v4r_STlTYknaBMkxdI6cw0s-ptkokTTkc4Fpr9aNcJMn1hLmrRy0x7ld4fWilPtWaNB8MGCjaaprHs_FKt6YA9gwcjv_pIeTbfbENoP5s5Vyi2lS5sm8CYAgLNJKhQe6CI.6n-gTEKYOLPLeNThF3W7xw-Dla6-nvPyxx2WJHfLQkU&dib_tag=se&keywords=fastrack+dezire+fx1+pro&nsdOptOutParam=true&qid=1747456532&sprefix=fastrack+dezire+fx1+pro%2Caps%2C315&sr=8-4
+    - text: (42% off) 10% Off on Select Bank Cards
+    - img "Amazon Prime"
+    - text: "FREE delivery Mon, 19 May Or fastest delivery Tomorrow, 18 May Only 2 left in stock. Service: Installation"
+    - button "Add to cart"
+  - listitem:
+    - link:
+      - /url: /Fastrack-Smartwatch-Resolution-Functional-SingleSync/dp/B0D6YJ9CH8/ref=sr_1_5?crid=1MB4SWDSU01PH&dib=eyJ2IjoiMSJ9.QSioPGK2jY0QvRLT9OnVQ1SD2FA5lfKC_chHREXbvGlHYSre21Hw3ZKKdwSSZJ9j_gbW67XV5mnVe4AQRkCqXEz0C3MU5tvIjp0968Nf1v4r_STlTYknaBMkxdI6cw0s-ptkokTTkc4Fpr9aNcJMn1hLmrRy0x7ld4fWilPtWaNB8MGCjaaprHs_FKt6YA9gwcjv_pIeTbfbENoP5s5Vyi2lS5sm8CYAgLNJKhQe6CI.6n-gTEKYOLPLeNThF3W7xw-Dla6-nvPyxx2WJHfLQkU&dib_tag=se&keywords=fastrack+dezire+fx1+pro&nsdOptOutParam=true&qid=1747456532&sprefix=fastrack+dezire+fx1+pro%2Caps%2C315&sr=8-5
+    - link "Fastrack Dezire FX1 Luxury Metal Smart Watch, 1.38” UltraVU HD Display, Functional Crown, SingleSync BT Calling, AI Voice Assistant, 100+ Smartwatch Faces, IP68, Upto 5 Day Battery (Rose Gold)":
+      - /url: /Fastrack-Smartwatch-Resolution-Functional-SingleSync/dp/B0D6YJ9CH8/ref=sr_1_5?crid=1MB4SWDSU01PH&dib=eyJ2IjoiMSJ9.QSioPGK2jY0QvRLT9OnVQ1SD2FA5lfKC_chHREXbvGlHYSre21Hw3ZKKdwSSZJ9j_gbW67XV5mnVe4AQRkCqXEz0C3MU5tvIjp0968Nf1v4r_STlTYknaBMkxdI6cw0s-ptkokTTkc4Fpr9aNcJMn1hLmrRy0x7ld4fWilPtWaNB8MGCjaaprHs_FKt6YA9gwcjv_pIeTbfbENoP5s5Vyi2lS5sm8CYAgLNJKhQe6CI.6n-gTEKYOLPLeNThF3W7xw-Dla6-nvPyxx2WJHfLQkU&dib_tag=se&keywords=fastrack+dezire+fx1+pro&nsdOptOutParam=true&qid=1747456532&sprefix=fastrack+dezire+fx1+pro%2Caps%2C315&sr=8-5
+      - heading "Fastrack Dezire FX1 Luxury Metal Smart Watch, 1.38” UltraVU HD Display, Functional Crown, SingleSync BT Calling, AI Voice Assistant, 100+ Smartwatch Faces, IP68, Upto 5 Day Battery (Rose Gold)" [level=2]
+    - button "3.6 out of 5 stars, rating details"
+    - link "35 ratings":
+      - /url: /Fastrack-Smartwatch-Resolution-Functional-SingleSync/dp/B0D6YJ9CH8/ref=sr_1_5?crid=1MB4SWDSU01PH&dib=eyJ2IjoiMSJ9.QSioPGK2jY0QvRLT9OnVQ1SD2FA5lfKC_chHREXbvGlHYSre21Hw3ZKKdwSSZJ9j_gbW67XV5mnVe4AQRkCqXEz0C3MU5tvIjp0968Nf1v4r_STlTYknaBMkxdI6cw0s-ptkokTTkc4Fpr9aNcJMn1hLmrRy0x7ld4fWilPtWaNB8MGCjaaprHs_FKt6YA9gwcjv_pIeTbfbENoP5s5Vyi2lS5sm8CYAgLNJKhQe6CI.6n-gTEKYOLPLeNThF3W7xw-Dla6-nvPyxx2WJHfLQkU&dib_tag=se&keywords=fastrack+dezire+fx1+pro&nsdOptOutParam=true&qid=1747456532&sprefix=fastrack+dezire+fx1+pro%2Caps%2C315&sr=8-5#customerReviews
+    - text: 100+ bought in past month Price, product page
+    - 'link "₹2,599 M.R.P: ₹4,999 M.R.P: ₹4,999"':
+      - /url: /Fastrack-Smartwatch-Resolution-Functional-SingleSync/dp/B0D6YJ9CH8/ref=sr_1_5?crid=1MB4SWDSU01PH&dib=eyJ2IjoiMSJ9.QSioPGK2jY0QvRLT9OnVQ1SD2FA5lfKC_chHREXbvGlHYSre21Hw3ZKKdwSSZJ9j_gbW67XV5mnVe4AQRkCqXEz0C3MU5tvIjp0968Nf1v4r_STlTYknaBMkxdI6cw0s-ptkokTTkc4Fpr9aNcJMn1hLmrRy0x7ld4fWilPtWaNB8MGCjaaprHs_FKt6YA9gwcjv_pIeTbfbENoP5s5Vyi2lS5sm8CYAgLNJKhQe6CI.6n-gTEKYOLPLeNThF3W7xw-Dla6-nvPyxx2WJHfLQkU&dib_tag=se&keywords=fastrack+dezire+fx1+pro&nsdOptOutParam=true&qid=1747456532&sprefix=fastrack+dezire+fx1+pro%2Caps%2C315&sr=8-5
+    - text: (48% off)
+    - img "Amazon Prime"
+    - text: "FREE delivery Thu, 22 May Service: Installation"
+    - button "Add to cart"
+- heading "Highly rated" [level=2]
+- button "View Sponsored information or leave ad feedback": Sponsored
+- text: "| Based on star rating and number of customer ratings"
+- group "Highly rated":
+  - group:
+    - list:
+      - listitem "1 of 4":
+        - link:
+          - /url: /sspa/click?ie=UTF8&spc=MToxOTQ1ODQ5MjAwOTI5NjE6MTc0NzQ1NjUzMjpzcF9zZWFyY2hfdGhlbWF0aWM6MzAwNTE0MTMwOTgyNDMyOjoxOjo&url=%2FNoise-Smartwatch-Diamond-Metallic-Display%2Fdp%2FB0CSPQZBT7%2Fref%3Dsxin_15_pa_sp_search_thematic_sspa%3Fcontent-id%3Damzn1.sym.0ec29fff-e589-42c1-a226-6d7b30a9905a%253Aamzn1.sym.0ec29fff-e589-42c1-a226-6d7b30a9905a%26crid%3D1MB4SWDSU01PH%26cv_ct_cx%3Dfastrack%2Bdezire%2Bfx1%2Bpro%26keywords%3Dfastrack%2Bdezire%2Bfx1%2Bpro%26nsdOptOutParam%3Dtrue%26pd_rd_i%3DB0CSPQZBT7%26pd_rd_r%3Ddc144f5d-84d4-4c1e-8900-799f34ad52b2%26pd_rd_w%3Dgfoy6%26pd_rd_wg%3DBYyHW%26pf_rd_p%3D0ec29fff-e589-42c1-a226-6d7b30a9905a%26pf_rd_r%3DF6E1NNZVHVZD1HA522Y4%26qid%3D1747456532%26sbo%3DRZvfv%252F%252FHxDF%252BO5021pAnSA%253D%253D%26sprefix%3Dfastrack%2Bdezire%2Bfx1%2Bpro%252Caps%252C315%26sr%3D1-1-ced4eeeb-b190-41d6-902a-1ecb3fb8b7c4-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM%26psc%3D1
+        - link "Sponsored Ad - Noise Diva Smartwatch for Women with Diamond Cut Dial, Glossy Metallic Finish, AMOLED Display, New Metal Straps, 100+ Watch Faces, Female Cycle Tracker Smart Watch for Women (Rose Gold)":
+          - /url: /sspa/click?ie=UTF8&spc=MToxOTQ1ODQ5MjAwOTI5NjE6MTc0NzQ1NjUzMjpzcF9zZWFyY2hfdGhlbWF0aWM6MzAwNTE0MTMwOTgyNDMyOjoxOjo&url=%2FNoise-Smartwatch-Diamond-Metallic-Display%2Fdp%2FB0CSPQZBT7%2Fref%3Dsxin_15_pa_sp_search_thematic_sspa%3Fcontent-id%3Damzn1.sym.0ec29fff-e589-42c1-a226-6d7b30a9905a%253Aamzn1.sym.0ec29fff-e589-42c1-a226-6d7b30a9905a%26crid%3D1MB4SWDSU01PH%26cv_ct_cx%3Dfastrack%2Bdezire%2Bfx1%2Bpro%26keywords%3Dfastrack%2Bdezire%2Bfx1%2Bpro%26nsdOptOutParam%3Dtrue%26pd_rd_i%3DB0CSPQZBT7%26pd_rd_r%3Ddc144f5d-84d4-4c1e-8900-799f34ad52b2%26pd_rd_w%3Dgfoy6%26pd_rd_wg%3DBYyHW%26pf_rd_p%3D0ec29fff-e589-42c1-a226-6d7b30a9905a%26pf_rd_r%3DF6E1NNZVHVZD1HA522Y4%26qid%3D1747456532%26sbo%3DRZvfv%252F%252FHxDF%252BO5021pAnSA%253D%253D%26sprefix%3Dfastrack%2Bdezire%2Bfx1%2Bpro%252Caps%252C315%26sr%3D1-1-ced4eeeb-b190-41d6-902a-1ecb3fb8b7c4-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM%26psc%3D1
+          - heading "Sponsored Ad - Noise Diva Smartwatch for Women with Diamond Cut Dial, Glossy Metallic Finish, AMOLED Display, New Metal Straps, 100+ Watch Faces, Female Cycle Tracker Smart Watch for Women (Rose Gold)" [level=2]: Noise Diva Smartwatch for Women with Diamond Cut Dial, Glossy Metallic Finish, AMOLED Display, New Metal Straps, 100+ Watch Faces, Female Cycle Tracker Smart Watch for Women (Rose Gold)
+        - button "4.2 out of 5 stars, rating details"
+        - link "1,141 ratings":
+          - /url: /sspa/click?ie=UTF8&spc=MToxOTQ1ODQ5MjAwOTI5NjE6MTc0NzQ1NjUzMjpzcF9zZWFyY2hfdGhlbWF0aWM6MzAwNTE0MTMwOTgyNDMyOjoxOjo&url=%2FNoise-Smartwatch-Diamond-Metallic-Display%2Fdp%2FB0CSPQZBT7%2Fref%3Dsxin_15_pa_sp_search_thematic_sspa%3Fcontent-id%3Damzn1.sym.0ec29fff-e589-42c1-a226-6d7b30a9905a%253Aamzn1.sym.0ec29fff-e589-42c1-a226-6d7b30a9905a%26crid%3D1MB4SWDSU01PH%26cv_ct_cx%3Dfastrack%2Bdezire%2Bfx1%2Bpro%26keywords%3Dfastrack%2Bdezire%2Bfx1%2Bpro%26nsdOptOutParam%3Dtrue%26pd_rd_i%3DB0CSPQZBT7%26pd_rd_r%3Ddc144f5d-84d4-4c1e-8900-799f34ad52b2%26pd_rd_w%3Dgfoy6%26pd_rd_wg%3DBYyHW%26pf_rd_p%3D0ec29fff-e589-42c1-a226-6d7b30a9905a%26pf_rd_r%3DF6E1NNZVHVZD1HA522Y4%26qid%3D1747456532%26sbo%3DRZvfv%252F%252FHxDF%252BO5021pAnSA%253D%253D%26sprefix%3Dfastrack%2Bdezire%2Bfx1%2Bpro%252Caps%252C315%26sr%3D1-1-ced4eeeb-b190-41d6-902a-1ecb3fb8b7c4-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM%26psc%3D1#customerReviews
+        - text: 300+ bought in past month
+        - link "Limited time deal":
+          - /url: /gp/goldbox/
+        - text: Price, product page
+        - 'link "₹3,497 M.R.P: ₹5,999 M.R.P: ₹5,999"':
+          - /url: /sspa/click?ie=UTF8&spc=MToxOTQ1ODQ5MjAwOTI5NjE6MTc0NzQ1NjUzMjpzcF9zZWFyY2hfdGhlbWF0aWM6MzAwNTE0MTMwOTgyNDMyOjoxOjo&url=%2FNoise-Smartwatch-Diamond-Metallic-Display%2Fdp%2FB0CSPQZBT7%2Fref%3Dsxin_15_pa_sp_search_thematic_sspa%3Fcontent-id%3Damzn1.sym.0ec29fff-e589-42c1-a226-6d7b30a9905a%253Aamzn1.sym.0ec29fff-e589-42c1-a226-6d7b30a9905a%26crid%3D1MB4SWDSU01PH%26cv_ct_cx%3Dfastrack%2Bdezire%2Bfx1%2Bpro%26keywords%3Dfastrack%2Bdezire%2Bfx1%2Bpro%26nsdOptOutParam%3Dtrue%26pd_rd_i%3DB0CSPQZBT7%26pd_rd_r%3Ddc144f5d-84d4-4c1e-8900-799f34ad52b2%26pd_rd_w%3Dgfoy6%26pd_rd_wg%3DBYyHW%26pf_rd_p%3D0ec29fff-e589-42c1-a226-6d7b30a9905a%26pf_rd_r%3DF6E1NNZVHVZD1HA522Y4%26qid%3D1747456532%26sbo%3DRZvfv%252F%252FHxDF%252BO5021pAnSA%253D%253D%26sprefix%3Dfastrack%2Bdezire%2Bfx1%2Bpro%252Caps%252C315%26sr%3D1-1-ced4eeeb-b190-41d6-902a-1ecb3fb8b7c4-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM%26psc%3D1
+        - text: (42% off)
+        - img "Amazon Prime"
+        - text: "Service: Installation"
+      - listitem "2 of 4":
+        - link:
+          - /url: /sspa/click?ie=UTF8&spc=MToxOTQ1ODQ5MjAwOTI5NjE6MTc0NzQ1NjUzMjpzcF9zZWFyY2hfdGhlbWF0aWM6MzAwMzU4MzAyOTkzMDMyOjoyOjo&url=%2FNoise-Smartwatch-Diamond-Metallic-Display%2Fdp%2FB0C5X2MGX3%2Fref%3Dsxin_15_pa_sp_search_thematic_sspa%3Fcontent-id%3Damzn1.sym.0ec29fff-e589-42c1-a226-6d7b30a9905a%253Aamzn1.sym.0ec29fff-e589-42c1-a226-6d7b30a9905a%26crid%3D1MB4SWDSU01PH%26cv_ct_cx%3Dfastrack%2Bdezire%2Bfx1%2Bpro%26keywords%3Dfastrack%2Bdezire%2Bfx1%2Bpro%26nsdOptOutParam%3Dtrue%26pd_rd_i%3DB0C5X2MGX3%26pd_rd_r%3Ddc144f5d-84d4-4c1e-8900-799f34ad52b2%26pd_rd_w%3Dgfoy6%26pd_rd_wg%3DBYyHW%26pf_rd_p%3D0ec29fff-e589-42c1-a226-6d7b30a9905a%26pf_rd_r%3DF6E1NNZVHVZD1HA522Y4%26qid%3D1747456532%26sbo%3DRZvfv%252F%252FHxDF%252BO5021pAnSA%253D%253D%26sprefix%3Dfastrack%2Bdezire%2Bfx1%2Bpro%252Caps%252C315%26sr%3D1-2-ced4eeeb-b190-41d6-902a-1ecb3fb8b7c4-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM%26psc%3D1
+        - link "Sponsored Ad - Noise Diva Smartwatch with Diamond Cut dial, Glossy Metallic Finish, AMOLED Display, Mesh Metal and Leather Strap Options, 100+ Watch Faces, Female Cycle Tracker Smart Watch for Women (Gold Link)":
+          - /url: /sspa/click?ie=UTF8&spc=MToxOTQ1ODQ5MjAwOTI5NjE6MTc0NzQ1NjUzMjpzcF9zZWFyY2hfdGhlbWF0aWM6MzAwMzU4MzAyOTkzMDMyOjoyOjo&url=%2FNoise-Smartwatch-Diamond-Metallic-Display%2Fdp%2FB0C5X2MGX3%2Fref%3Dsxin_15_pa_sp_search_thematic_sspa%3Fcontent-id%3Damzn1.sym.0ec29fff-e589-42c1-a226-6d7b30a9905a%253Aamzn1.sym.0ec29fff-e589-42c1-a226-6d7b30a9905a%26crid%3D1MB4SWDSU01PH%26cv_ct_cx%3Dfastrack%2Bdezire%2Bfx1%2Bpro%26keywords%3Dfastrack%2Bdezire%2Bfx1%2Bpro%26nsdOptOutParam%3Dtrue%26pd_rd_i%3DB0C5X2MGX3%26pd_rd_r%3Ddc144f5d-84d4-4c1e-8900-799f34ad52b2%26pd_rd_w%3Dgfoy6%26pd_rd_wg%3DBYyHW%26pf_rd_p%3D0ec29fff-e589-42c1-a226-6d7b30a9905a%26pf_rd_r%3DF6E1NNZVHVZD1HA522Y4%26qid%3D1747456532%26sbo%3DRZvfv%252F%252FHxDF%252BO5021pAnSA%253D%253D%26sprefix%3Dfastrack%2Bdezire%2Bfx1%2Bpro%252Caps%252C315%26sr%3D1-2-ced4eeeb-b190-41d6-902a-1ecb3fb8b7c4-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM%26psc%3D1
+          - heading "Sponsored Ad - Noise Diva Smartwatch with Diamond Cut dial, Glossy Metallic Finish, AMOLED Display, Mesh Metal and Leather Strap Options, 100+ Watch Faces, Female Cycle Tracker Smart Watch for Women (Gold Link)" [level=2]: Noise Diva Smartwatch with Diamond Cut dial, Glossy Metallic Finish, AMOLED Display, Mesh Metal and Leather Strap Options, 100+ Watch Faces, Female Cycle Tracker Smart Watch for Women (Gold Link)
+        - button "4.1 out of 5 stars, rating details"
+        - link "2,308 ratings":
+          - /url: /sspa/click?ie=UTF8&spc=MToxOTQ1ODQ5MjAwOTI5NjE6MTc0NzQ1NjUzMjpzcF9zZWFyY2hfdGhlbWF0aWM6MzAwMzU4MzAyOTkzMDMyOjoyOjo&url=%2FNoise-Smartwatch-Diamond-Metallic-Display%2Fdp%2FB0C5X2MGX3%2Fref%3Dsxin_15_pa_sp_search_thematic_sspa%3Fcontent-id%3Damzn1.sym.0ec29fff-e589-42c1-a226-6d7b30a9905a%253Aamzn1.sym.0ec29fff-e589-42c1-a226-6d7b30a9905a%26crid%3D1MB4SWDSU01PH%26cv_ct_cx%3Dfastrack%2Bdezire%2Bfx1%2Bpro%26keywords%3Dfastrack%2Bdezire%2Bfx1%2Bpro%26nsdOptOutParam%3Dtrue%26pd_rd_i%3DB0C5X2MGX3%26pd_rd_r%3Ddc144f5d-84d4-4c1e-8900-799f34ad52b2%26pd_rd_w%3Dgfoy6%26pd_rd_wg%3DBYyHW%26pf_rd_p%3D0ec29fff-e589-42c1-a226-6d7b30a9905a%26pf_rd_r%3DF6E1NNZVHVZD1HA522Y4%26qid%3D1747456532%26sbo%3DRZvfv%252F%252FHxDF%252BO5021pAnSA%253D%253D%26sprefix%3Dfastrack%2Bdezire%2Bfx1%2Bpro%252Caps%252C315%26sr%3D1-2-ced4eeeb-b190-41d6-902a-1ecb3fb8b7c4-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM%26psc%3D1#customerReviews
+        - text: 2K+ bought in past month
+        - link "Limited time deal":
+          - /url: /gp/goldbox/
+        - text: Price, product page
+        - 'link "₹3,497 M.R.P: ₹5,999 M.R.P: ₹5,999"':
+          - /url: /sspa/click?ie=UTF8&spc=MToxOTQ1ODQ5MjAwOTI5NjE6MTc0NzQ1NjUzMjpzcF9zZWFyY2hfdGhlbWF0aWM6MzAwMzU4MzAyOTkzMDMyOjoyOjo&url=%2FNoise-Smartwatch-Diamond-Metallic-Display%2Fdp%2FB0C5X2MGX3%2Fref%3Dsxin_15_pa_sp_search_thematic_sspa%3Fcontent-id%3Damzn1.sym.0ec29fff-e589-42c1-a226-6d7b30a9905a%253Aamzn1.sym.0ec29fff-e589-42c1-a226-6d7b30a9905a%26crid%3D1MB4SWDSU01PH%26cv_ct_cx%3Dfastrack%2Bdezire%2Bfx1%2Bpro%26keywords%3Dfastrack%2Bdezire%2Bfx1%2Bpro%26nsdOptOutParam%3Dtrue%26pd_rd_i%3DB0C5X2MGX3%26pd_rd_r%3Ddc144f5d-84d4-4c1e-8900-799f34ad52b2%26pd_rd_w%3Dgfoy6%26pd_rd_wg%3DBYyHW%26pf_rd_p%3D0ec29fff-e589-42c1-a226-6d7b30a9905a%26pf_rd_r%3DF6E1NNZVHVZD1HA522Y4%26qid%3D1747456532%26sbo%3DRZvfv%252F%252FHxDF%252BO5021pAnSA%253D%253D%26sprefix%3Dfastrack%2Bdezire%2Bfx1%2Bpro%252Caps%252C315%26sr%3D1-2-ced4eeeb-b190-41d6-902a-1ecb3fb8b7c4-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM%26psc%3D1
+        - text: (42% off) Save extra with No Cost EMI
+        - img "Amazon Prime"
+        - text: "Service: Installation"
+      - listitem "3 of 4":
+        - link:
+          - /url: /sspa/click?ie=UTF8&spc=MToxOTQ1ODQ5MjAwOTI5NjE6MTc0NzQ1NjUzMjpzcF9zZWFyY2hfdGhlbWF0aWM6MzAwMjAyODk0OTM1ODMyOjozOjo&url=%2FFire-Boltt-Stainless-Smartwatch-Monitoring-Multicolor%2Fdp%2FB0BY2NM7C8%2Fref%3Dsxin_15_pa_sp_search_thematic_sspa%3Fcontent-id%3Damzn1.sym.0ec29fff-e589-42c1-a226-6d7b30a9905a%253Aamzn1.sym.0ec29fff-e589-42c1-a226-6d7b30a9905a%26crid%3D1MB4SWDSU01PH%26cv_ct_cx%3Dfastrack%2Bdezire%2Bfx1%2Bpro%26keywords%3Dfastrack%2Bdezire%2Bfx1%2Bpro%26nsdOptOutParam%3Dtrue%26pd_rd_i%3DB0BY2NM7C8%26pd_rd_r%3Ddc144f5d-84d4-4c1e-8900-799f34ad52b2%26pd_rd_w%3Dgfoy6%26pd_rd_wg%3DBYyHW%26pf_rd_p%3D0ec29fff-e589-42c1-a226-6d7b30a9905a%26pf_rd_r%3DF6E1NNZVHVZD1HA522Y4%26qid%3D1747456532%26sbo%3DRZvfv%252F%252FHxDF%252BO5021pAnSA%253D%253D%26sprefix%3Dfastrack%2Bdezire%2Bfx1%2Bpro%252Caps%252C315%26sr%3D1-3-ced4eeeb-b190-41d6-902a-1ecb3fb8b7c4-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM%26psc%3D1
+        - link "Sponsored Ad - Fire-Boltt Phoenix Ultra Smart Watch 1.39 inch Bluetooth Calling, AI Voice Assistant, Metal Body with 120+ Sports Modes, SpO2, Heart Rate Monitoring (Rainbow SS)":
+          - /url: /sspa/click?ie=UTF8&spc=MToxOTQ1ODQ5MjAwOTI5NjE6MTc0NzQ1NjUzMjpzcF9zZWFyY2hfdGhlbWF0aWM6MzAwMjAyODk0OTM1ODMyOjozOjo&url=%2FFire-Boltt-Stainless-Smartwatch-Monitoring-Multicolor%2Fdp%2FB0BY2NM7C8%2Fref%3Dsxin_15_pa_sp_search_thematic_sspa%3Fcontent-id%3Damzn1.sym.0ec29fff-e589-42c1-a226-6d7b30a9905a%253Aamzn1.sym.0ec29fff-e589-42c1-a226-6d7b30a9905a%26crid%3D1MB4SWDSU01PH%26cv_ct_cx%3Dfastrack%2Bdezire%2Bfx1%2Bpro%26keywords%3Dfastrack%2Bdezire%2Bfx1%2Bpro%26nsdOptOutParam%3Dtrue%26pd_rd_i%3DB0BY2NM7C8%26pd_rd_r%3Ddc144f5d-84d4-4c1e-8900-799f34ad52b2%26pd_rd_w%3Dgfoy6%26pd_rd_wg%3DBYyHW%26pf_rd_p%3D0ec29fff-e589-42c1-a226-6d7b30a9905a%26pf_rd_r%3DF6E1NNZVHVZD1HA522Y4%26qid%3D1747456532%26sbo%3DRZvfv%252F%252FHxDF%252BO5021pAnSA%253D%253D%26sprefix%3Dfastrack%2Bdezire%2Bfx1%2Bpro%252Caps%252C315%26sr%3D1-3-ced4eeeb-b190-41d6-902a-1ecb3fb8b7c4-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM%26psc%3D1
+          - heading "Sponsored Ad - Fire-Boltt Phoenix Ultra Smart Watch 1.39 inch Bluetooth Calling, AI Voice Assistant, Metal Body with 120+ Sports Modes, SpO2, Heart Rate Monitoring (Rainbow SS)" [level=2]: Fire-Boltt Phoenix Ultra Smart Watch 1.39 inch Bluetooth Calling, AI Voice Assistant, Metal Body with 120+ Sports Modes, SpO2, Heart Rate Monitoring (Rainbow SS)
+        - button "4.3 out of 5 stars, rating details"
+        - link "213 ratings":
+          - /url: /sspa/click?ie=UTF8&spc=MToxOTQ1ODQ5MjAwOTI5NjE6MTc0NzQ1NjUzMjpzcF9zZWFyY2hfdGhlbWF0aWM6MzAwMjAyODk0OTM1ODMyOjozOjo&url=%2FFire-Boltt-Stainless-Smartwatch-Monitoring-Multicolor%2Fdp%2FB0BY2NM7C8%2Fref%3Dsxin_15_pa_sp_search_thematic_sspa%3Fcontent-id%3Damzn1.sym.0ec29fff-e589-42c1-a226-6d7b30a9905a%253Aamzn1.sym.0ec29fff-e589-42c1-a226-6d7b30a9905a%26crid%3D1MB4SWDSU01PH%26cv_ct_cx%3Dfastrack%2Bdezire%2Bfx1%2Bpro%26keywords%3Dfastrack%2Bdezire%2Bfx1%2Bpro%26nsdOptOutParam%3Dtrue%26pd_rd_i%3DB0BY2NM7C8%26pd_rd_r%3Ddc144f5d-84d4-4c1e-8900-799f34ad52b2%26pd_rd_w%3Dgfoy6%26pd_rd_wg%3DBYyHW%26pf_rd_p%3D0ec29fff-e589-42c1-a226-6d7b30a9905a%26pf_rd_r%3DF6E1NNZVHVZD1HA522Y4%26qid%3D1747456532%26sbo%3DRZvfv%252F%252FHxDF%252BO5021pAnSA%253D%253D%26sprefix%3Dfastrack%2Bdezire%2Bfx1%2Bpro%252Caps%252C315%26sr%3D1-3-ced4eeeb-b190-41d6-902a-1ecb3fb8b7c4-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM%26psc%3D1#customerReviews
+        - text: 1K+ bought in past month
+        - link "Limited time deal":
+          - /url: /gp/goldbox/
+        - text: Price, product page
+        - 'link "₹1,699 M.R.P: ₹12,499 M.R.P: ₹12,499"':
+          - /url: /sspa/click?ie=UTF8&spc=MToxOTQ1ODQ5MjAwOTI5NjE6MTc0NzQ1NjUzMjpzcF9zZWFyY2hfdGhlbWF0aWM6MzAwMjAyODk0OTM1ODMyOjozOjo&url=%2FFire-Boltt-Stainless-Smartwatch-Monitoring-Multicolor%2Fdp%2FB0BY2NM7C8%2Fref%3Dsxin_15_pa_sp_search_thematic_sspa%3Fcontent-id%3Damzn1.sym.0ec29fff-e589-42c1-a226-6d7b30a9905a%253Aamzn1.sym.0ec29fff-e589-42c1-a226-6d7b30a9905a%26crid%3D1MB4SWDSU01PH%26cv_ct_cx%3Dfastrack%2Bdezire%2Bfx1%2Bpro%26keywords%3Dfastrack%2Bdezire%2Bfx1%2Bpro%26nsdOptOutParam%3Dtrue%26pd_rd_i%3DB0BY2NM7C8%26pd_rd_r%3Ddc144f5d-84d4-4c1e-8900-799f34ad52b2%26pd_rd_w%3Dgfoy6%26pd_rd_wg%3DBYyHW%26pf_rd_p%3D0ec29fff-e589-42c1-a226-6d7b30a9905a%26pf_rd_r%3DF6E1NNZVHVZD1HA522Y4%26qid%3D1747456532%26sbo%3DRZvfv%252F%252FHxDF%252BO5021pAnSA%253D%253D%26sprefix%3Dfastrack%2Bdezire%2Bfx1%2Bpro%252Caps%252C315%26sr%3D1-3-ced4eeeb-b190-41d6-902a-1ecb3fb8b7c4-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM%26psc%3D1
+        - text: (86% off)
+        - img "Amazon Prime"
+        - text: "Service: Installation"
+      - listitem "4 of 4":
+        - link:
+          - /url: /sspa/click?ie=UTF8&spc=MToxOTQ1ODQ5MjAwOTI5NjE6MTc0NzQ1NjUzMjpzcF9zZWFyY2hfdGhlbWF0aWM6MzAwNDAzMDg1OTQ4NDMyOjo0Ojo&url=%2FNoise-Launched-Bluetooth-Calling-Tracking%2Fdp%2FB0BJ6ZWPX5%2Fref%3Dsxin_15_pa_sp_search_thematic_sspa%3Fcontent-id%3Damzn1.sym.0ec29fff-e589-42c1-a226-6d7b30a9905a%253Aamzn1.sym.0ec29fff-e589-42c1-a226-6d7b30a9905a%26crid%3D1MB4SWDSU01PH%26cv_ct_cx%3Dfastrack%2Bdezire%2Bfx1%2Bpro%26keywords%3Dfastrack%2Bdezire%2Bfx1%2Bpro%26nsdOptOutParam%3Dtrue%26pd_rd_i%3DB0BJ6ZWPX5%26pd_rd_r%3Ddc144f5d-84d4-4c1e-8900-799f34ad52b2%26pd_rd_w%3Dgfoy6%26pd_rd_wg%3DBYyHW%26pf_rd_p%3D0ec29fff-e589-42c1-a226-6d7b30a9905a%26pf_rd_r%3DF6E1NNZVHVZD1HA522Y4%26qid%3D1747456532%26sbo%3DRZvfv%252F%252FHxDF%252BO5021pAnSA%253D%253D%26sprefix%3Dfastrack%2Bdezire%2Bfx1%2Bpro%252Caps%252C315%26sr%3D1-4-ced4eeeb-b190-41d6-902a-1ecb3fb8b7c4-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM%26psc%3D1
+        - link "Sponsored Ad - Noise Twist Round dial Smart Watch with Bluetooth Calling, 1.38\" TFT Display, up-to 7 Days Battery, 100+ Watch Faces, IP68, Heart Rate Monitor, Sleep Tracking (Rose Pink)":
+          - /url: /sspa/click?ie=UTF8&spc=MToxOTQ1ODQ5MjAwOTI5NjE6MTc0NzQ1NjUzMjpzcF9zZWFyY2hfdGhlbWF0aWM6MzAwNDAzMDg1OTQ4NDMyOjo0Ojo&url=%2FNoise-Launched-Bluetooth-Calling-Tracking%2Fdp%2FB0BJ6ZWPX5%2Fref%3Dsxin_15_pa_sp_search_thematic_sspa%3Fcontent-id%3Damzn1.sym.0ec29fff-e589-42c1-a226-6d7b30a9905a%253Aamzn1.sym.0ec29fff-e589-42c1-a226-6d7b30a9905a%26crid%3D1MB4SWDSU01PH%26cv_ct_cx%3Dfastrack%2Bdezire%2Bfx1%2Bpro%26keywords%3Dfastrack%2Bdezire%2Bfx1%2Bpro%26nsdOptOutParam%3Dtrue%26pd_rd_i%3DB0BJ6ZWPX5%26pd_rd_r%3Ddc144f5d-84d4-4c1e-8900-799f34ad52b2%26pd_rd_w%3Dgfoy6%26pd_rd_wg%3DBYyHW%26pf_rd_p%3D0ec29fff-e589-42c1-a226-6d7b30a9905a%26pf_rd_r%3DF6E1NNZVHVZD1HA522Y4%26qid%3D1747456532%26sbo%3DRZvfv%252F%252FHxDF%252BO5021pAnSA%253D%253D%26sprefix%3Dfastrack%2Bdezire%2Bfx1%2Bpro%252Caps%252C315%26sr%3D1-4-ced4eeeb-b190-41d6-902a-1ecb3fb8b7c4-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM%26psc%3D1
+          - heading "Sponsored Ad - Noise Twist Round dial Smart Watch with Bluetooth Calling, 1.38\" TFT Display, up-to 7 Days Battery, 100+ Watch Faces, IP68, Heart Rate Monitor, Sleep Tracking (Rose Pink)" [level=2]: Noise Twist Round dial Smart Watch with Bluetooth Calling, 1.38" TFT Display, up-to 7 Days Battery, 100+ Watch Faces, IP68, Heart Rate Monitor, Sleep Tracking (Rose Pink)
+        - button "4.0 out of 5 stars, rating details"
+        - link "14,046 ratings":
+          - /url: /sspa/click?ie=UTF8&spc=MToxOTQ1ODQ5MjAwOTI5NjE6MTc0NzQ1NjUzMjpzcF9zZWFyY2hfdGhlbWF0aWM6MzAwNDAzMDg1OTQ4NDMyOjo0Ojo&url=%2FNoise-Launched-Bluetooth-Calling-Tracking%2Fdp%2FB0BJ6ZWPX5%2Fref%3Dsxin_15_pa_sp_search_thematic_sspa%3Fcontent-id%3Damzn1.sym.0ec29fff-e589-42c1-a226-6d7b30a9905a%253Aamzn1.sym.0ec29fff-e589-42c1-a226-6d7b30a9905a%26crid%3D1MB4SWDSU01PH%26cv_ct_cx%3Dfastrack%2Bdezire%2Bfx1%2Bpro%26keywords%3Dfastrack%2Bdezire%2Bfx1%2Bpro%26nsdOptOutParam%3Dtrue%26pd_rd_i%3DB0BJ6ZWPX5%26pd_rd_r%3Ddc144f5d-84d4-4c1e-8900-799f34ad52b2%26pd_rd_w%3Dgfoy6%26pd_rd_wg%3DBYyHW%26pf_rd_p%3D0ec29fff-e589-42c1-a226-6d7b30a9905a%26pf_rd_r%3DF6E1NNZVHVZD1HA522Y4%26qid%3D1747456532%26sbo%3DRZvfv%252F%252FHxDF%252BO5021pAnSA%253D%253D%26sprefix%3Dfastrack%2Bdezire%2Bfx1%2Bpro%252Caps%252C315%26sr%3D1-4-ced4eeeb-b190-41d6-902a-1ecb3fb8b7c4-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM%26psc%3D1#customerReviews
+        - text: 2K+ bought in past month
+        - link "Limited time deal":
+          - /url: /gp/goldbox/
+        - text: Price, product page
+        - 'link "₹1,399 M.R.P: ₹4,999 M.R.P: ₹4,999"':
+          - /url: /sspa/click?ie=UTF8&spc=MToxOTQ1ODQ5MjAwOTI5NjE6MTc0NzQ1NjUzMjpzcF9zZWFyY2hfdGhlbWF0aWM6MzAwNDAzMDg1OTQ4NDMyOjo0Ojo&url=%2FNoise-Launched-Bluetooth-Calling-Tracking%2Fdp%2FB0BJ6ZWPX5%2Fref%3Dsxin_15_pa_sp_search_thematic_sspa%3Fcontent-id%3Damzn1.sym.0ec29fff-e589-42c1-a226-6d7b30a9905a%253Aamzn1.sym.0ec29fff-e589-42c1-a226-6d7b30a9905a%26crid%3D1MB4SWDSU01PH%26cv_ct_cx%3Dfastrack%2Bdezire%2Bfx1%2Bpro%26keywords%3Dfastrack%2Bdezire%2Bfx1%2Bpro%26nsdOptOutParam%3Dtrue%26pd_rd_i%3DB0BJ6ZWPX5%26pd_rd_r%3Ddc144f5d-84d4-4c1e-8900-799f34ad52b2%26pd_rd_w%3Dgfoy6%26pd_rd_wg%3DBYyHW%26pf_rd_p%3D0ec29fff-e589-42c1-a226-6d7b30a9905a%26pf_rd_r%3DF6E1NNZVHVZD1HA522Y4%26qid%3D1747456532%26sbo%3DRZvfv%252F%252FHxDF%252BO5021pAnSA%253D%253D%26sprefix%3Dfastrack%2Bdezire%2Bfx1%2Bpro%252Caps%252C315%26sr%3D1-4-ced4eeeb-b190-41d6-902a-1ecb3fb8b7c4-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM%26psc%3D1
+        - text: (72% off)
+        - img "Amazon Prime"
+        - text: "Service: Installation"
+- link "Sponsored video; click to navigate to featured product page.":
+  - /url: https://aax-eu.amazon.in/x/c/JNdvQ7SXmbd54V2qJ8YmgksAAAGW3IagkwMAAAH2AQBvbm9fdHhuX2JpZDMgICBvbm9fdHhuX2ltcDEgICDJ-ErZ/https://www.amazon.in/dp/B0CJYC1XK9?pd_rd_i=B0CJYC1XK9&pf_rd_p=afa2b5bc-3fc2-47df-b406-8973730b574f&pf_rd_r=F6E1NNZVHVZD1HA522Y4&pd_rd_wg=BYyHW&pd_rd_w=Iqtgn&pd_rd_r=dc144f5d-84d4-4c1e-8900-799f34ad52b2
+- link:
+  - /url: https://aax-eu.amazon.in/x/c/JNdvQ7SXmbd54V2qJ8YmgksAAAGW3IagkwMAAAH2AQBvbm9fdHhuX2JpZDMgICBvbm9fdHhuX2ltcDEgICDJ-ErZ/https://www.amazon.in/HAMMER-Polar-Bluetooth-Assistant-Brightness/dp/B0CJYC1XK9/ref=sxin_16_sbv_search_btf?content-id=amzn1.sym.afa2b5bc-3fc2-47df-b406-8973730b574f%3Aamzn1.sym.afa2b5bc-3fc2-47df-b406-8973730b574f&crid=1MB4SWDSU01PH&cv_ct_cx=fastrack+dezire+fx1+pro&keywords=fastrack+dezire+fx1+pro&nsdOptOutParam=true&pd_rd_i=B0CJYC1XK9&pd_rd_r=dc144f5d-84d4-4c1e-8900-799f34ad52b2&pd_rd_w=Iqtgn&pd_rd_wg=BYyHW&pf_rd_p=afa2b5bc-3fc2-47df-b406-8973730b574f&pf_rd_r=F6E1NNZVHVZD1HA522Y4&qid=1747456532&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sprefix=fastrack+dezire+fx1+pro%2Caps%2C315&sr=1-1-9131241a-a358-4619-a7b8-0f5a65d91d81
+- text: Sponsored
+- link "HAMMER Polar 2.01\" IPS Always on Display, Advanced Bluetooth Calling Smart Watch, Dual Mode, Voice Assistant, Rotating Crown, Sleek Desgin, Sports Modes, 500 Nits Brightness, 240x296 PX (Ice Grey)":
+  - /url: https://aax-eu.amazon.in/x/c/JNdvQ7SXmbd54V2qJ8YmgksAAAGW3IagkwMAAAH2AQBvbm9fdHhuX2JpZDMgICBvbm9fdHhuX2ltcDEgICDJ-ErZ/https://www.amazon.in/HAMMER-Polar-Bluetooth-Assistant-Brightness/dp/B0CJYC1XK9/ref=sxin_16_sbv_search_btf?content-id=amzn1.sym.afa2b5bc-3fc2-47df-b406-8973730b574f%3Aamzn1.sym.afa2b5bc-3fc2-47df-b406-8973730b574f&crid=1MB4SWDSU01PH&cv_ct_cx=fastrack+dezire+fx1+pro&keywords=fastrack+dezire+fx1+pro&nsdOptOutParam=true&pd_rd_i=B0CJYC1XK9&pd_rd_r=dc144f5d-84d4-4c1e-8900-799f34ad52b2&pd_rd_w=Iqtgn&pd_rd_wg=BYyHW&pf_rd_p=afa2b5bc-3fc2-47df-b406-8973730b574f&pf_rd_r=F6E1NNZVHVZD1HA522Y4&qid=1747456532&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sprefix=fastrack+dezire+fx1+pro%2Caps%2C315&sr=1-1-9131241a-a358-4619-a7b8-0f5a65d91d81
+  - heading "HAMMER Polar 2.01\" IPS Always on Display, Advanced Bluetooth Calling Smart Watch, Dual Mode, Voice Assistant, Rotating Crown, Sleek Desgin, Sports Modes, 500 Nits Brightness, 240x296 PX (Ice Grey)" [level=2]
+- button "3.9 out of 5 stars, rating details"
+- link "542 ratings":
+  - /url: https://aax-eu.amazon.in/x/c/JNdvQ7SXmbd54V2qJ8YmgksAAAGW3IagkwMAAAH2AQBvbm9fdHhuX2JpZDMgICBvbm9fdHhuX2ltcDEgICDJ-ErZ/https://www.amazon.in/HAMMER-Polar-Bluetooth-Assistant-Brightness/dp/B0CJYC1XK9/ref=sxin_16_sbv_search_btf?content-id=amzn1.sym.afa2b5bc-3fc2-47df-b406-8973730b574f%3Aamzn1.sym.afa2b5bc-3fc2-47df-b406-8973730b574f&crid=1MB4SWDSU01PH&cv_ct_cx=fastrack+dezire+fx1+pro&keywords=fastrack+dezire+fx1+pro&nsdOptOutParam=true&pd_rd_i=B0CJYC1XK9&pd_rd_r=dc144f5d-84d4-4c1e-8900-799f34ad52b2&pd_rd_w=Iqtgn&pd_rd_wg=BYyHW&pf_rd_p=afa2b5bc-3fc2-47df-b406-8973730b574f&pf_rd_r=F6E1NNZVHVZD1HA522Y4&qid=1747456532&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sprefix=fastrack+dezire+fx1+pro%2Caps%2C315&sr=1-1-9131241a-a358-4619-a7b8-0f5a65d91d81#customerReviews
+- link "Limited time deal":
+  - /url: /gp/goldbox/
+- text: Price, product page
+- 'link "₹1,499 M.R.P: ₹5,999 M.R.P: ₹5,999"':
+  - /url: https://aax-eu.amazon.in/x/c/JNdvQ7SXmbd54V2qJ8YmgksAAAGW3IagkwMAAAH2AQBvbm9fdHhuX2JpZDMgICBvbm9fdHhuX2ltcDEgICDJ-ErZ/https://www.amazon.in/HAMMER-Polar-Bluetooth-Assistant-Brightness/dp/B0CJYC1XK9/ref=sxin_16_sbv_search_btf?content-id=amzn1.sym.afa2b5bc-3fc2-47df-b406-8973730b574f%3Aamzn1.sym.afa2b5bc-3fc2-47df-b406-8973730b574f&crid=1MB4SWDSU01PH&cv_ct_cx=fastrack+dezire+fx1+pro&keywords=fastrack+dezire+fx1+pro&nsdOptOutParam=true&pd_rd_i=B0CJYC1XK9&pd_rd_r=dc144f5d-84d4-4c1e-8900-799f34ad52b2&pd_rd_w=Iqtgn&pd_rd_wg=BYyHW&pf_rd_p=afa2b5bc-3fc2-47df-b406-8973730b574f&pf_rd_r=F6E1NNZVHVZD1HA522Y4&qid=1747456532&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sprefix=fastrack+dezire+fx1+pro%2Caps%2C315&sr=1-1-9131241a-a358-4619-a7b8-0f5a65d91d81
+- text: (75% off)
+- img "Amazon Prime"
+- text: Get it by Tomorrow, 18 May FREE Delivery by Amazon
+- heading "More results" [level=2]
+- list:
+  - listitem:
+    - link:
+      - /url: /Fastrack-Smartwatch-Resolution-Functional-SingleSync/dp/B0D6YJH7DJ/ref=sr_1_6?crid=1MB4SWDSU01PH&dib=eyJ2IjoiMSJ9.QSioPGK2jY0QvRLT9OnVQ1SD2FA5lfKC_chHREXbvGlHYSre21Hw3ZKKdwSSZJ9j_gbW67XV5mnVe4AQRkCqXEz0C3MU5tvIjp0968Nf1v4r_STlTYknaBMkxdI6cw0s-ptkokTTkc4Fpr9aNcJMn1hLmrRy0x7ld4fWilPtWaNB8MGCjaaprHs_FKt6YA9gwcjv_pIeTbfbENoP5s5Vyi2lS5sm8CYAgLNJKhQe6CI.6n-gTEKYOLPLeNThF3W7xw-Dla6-nvPyxx2WJHfLQkU&dib_tag=se&keywords=fastrack+dezire+fx1+pro&nsdOptOutParam=true&qid=1747456532&sprefix=fastrack+dezire+fx1+pro%2Caps%2C315&sr=8-6
+    - link "Fastrack Dezire FX1 Luxury Metal Smart Watch, 1.38” UltraVU HD Display, Functional Crown, SingleSync BT Calling, AI Voice Assistant, 100+ Smartwatch Faces, IP68, Upto 5 Day Battery (Black)":
+      - /url: /Fastrack-Smartwatch-Resolution-Functional-SingleSync/dp/B0D6YJH7DJ/ref=sr_1_6?crid=1MB4SWDSU01PH&dib=eyJ2IjoiMSJ9.QSioPGK2jY0QvRLT9OnVQ1SD2FA5lfKC_chHREXbvGlHYSre21Hw3ZKKdwSSZJ9j_gbW67XV5mnVe4AQRkCqXEz0C3MU5tvIjp0968Nf1v4r_STlTYknaBMkxdI6cw0s-ptkokTTkc4Fpr9aNcJMn1hLmrRy0x7ld4fWilPtWaNB8MGCjaaprHs_FKt6YA9gwcjv_pIeTbfbENoP5s5Vyi2lS5sm8CYAgLNJKhQe6CI.6n-gTEKYOLPLeNThF3W7xw-Dla6-nvPyxx2WJHfLQkU&dib_tag=se&keywords=fastrack+dezire+fx1+pro&nsdOptOutParam=true&qid=1747456532&sprefix=fastrack+dezire+fx1+pro%2Caps%2C315&sr=8-6
+      - heading "Fastrack Dezire FX1 Luxury Metal Smart Watch, 1.38” UltraVU HD Display, Functional Crown, SingleSync BT Calling, AI Voice Assistant, 100+ Smartwatch Faces, IP68, Upto 5 Day Battery (Black)" [level=2]
+    - button "3.9 out of 5 stars, rating details"
+    - link "3,720 ratings":
+      - /url: /Fastrack-Smartwatch-Resolution-Functional-SingleSync/dp/B0D6YJH7DJ/ref=sr_1_6?crid=1MB4SWDSU01PH&dib=eyJ2IjoiMSJ9.QSioPGK2jY0QvRLT9OnVQ1SD2FA5lfKC_chHREXbvGlHYSre21Hw3ZKKdwSSZJ9j_gbW67XV5mnVe4AQRkCqXEz0C3MU5tvIjp0968Nf1v4r_STlTYknaBMkxdI6cw0s-ptkokTTkc4Fpr9aNcJMn1hLmrRy0x7ld4fWilPtWaNB8MGCjaaprHs_FKt6YA9gwcjv_pIeTbfbENoP5s5Vyi2lS5sm8CYAgLNJKhQe6CI.6n-gTEKYOLPLeNThF3W7xw-Dla6-nvPyxx2WJHfLQkU&dib_tag=se&keywords=fastrack+dezire+fx1+pro&nsdOptOutParam=true&qid=1747456532&sprefix=fastrack+dezire+fx1+pro%2Caps%2C315&sr=8-6#customerReviews
+    - text: 50+ bought in past month
+    - link "See options":
+      - /url: /Fastrack-Smartwatch-Resolution-Functional-SingleSync/dp/B0D6YJH7DJ/ref=sr_1_6_so_WEARABLE_COMPUTER?crid=1MB4SWDSU01PH&dib=eyJ2IjoiMSJ9.QSioPGK2jY0QvRLT9OnVQ1SD2FA5lfKC_chHREXbvGlHYSre21Hw3ZKKdwSSZJ9j_gbW67XV5mnVe4AQRkCqXEz0C3MU5tvIjp0968Nf1v4r_STlTYknaBMkxdI6cw0s-ptkokTTkc4Fpr9aNcJMn1hLmrRy0x7ld4fWilPtWaNB8MGCjaaprHs_FKt6YA9gwcjv_pIeTbfbENoP5s5Vyi2lS5sm8CYAgLNJKhQe6CI.6n-gTEKYOLPLeNThF3W7xw-Dla6-nvPyxx2WJHfLQkU&dib_tag=se&keywords=fastrack+dezire+fx1+pro&nsdOptOutParam=true&qid=1747456532&sprefix=fastrack+dezire+fx1+pro%2Caps%2C315&sr=8-6
+    - text: No featured offers available ₹2,599
+    - link "(1 new offer)":
+      - /url: /gp/offer-listing/B0D6YJH7DJ/ref=sr_1_6_olp?keywords=fastrack+dezire+fx1+pro&crid=1MB4SWDSU01PH&sprefix=fastrack+dezire+fx1+pro%2Caps%2C315&dib_tag=se&dib=eyJ2IjoiMSJ9.QSioPGK2jY0QvRLT9OnVQ1SD2FA5lfKC_chHREXbvGlHYSre21Hw3ZKKdwSSZJ9j_gbW67XV5mnVe4AQRkCqXEz0C3MU5tvIjp0968Nf1v4r_STlTYknaBMkxdI6cw0s-ptkokTTkc4Fpr9aNcJMn1hLmrRy0x7ld4fWilPtWaNB8MGCjaaprHs_FKt6YA9gwcjv_pIeTbfbENoP5s5Vyi2lS5sm8CYAgLNJKhQe6CI.6n-gTEKYOLPLeNThF3W7xw-Dla6-nvPyxx2WJHfLQkU&qid=1747456532&sr=8-6
+  - listitem:
+    - link:
+      - /url: /Fastrack-Smartwatch-Resolution-SingleSync-Watchfaces/dp/B0D6YDPS29/ref=sr_1_7?crid=1MB4SWDSU01PH&dib=eyJ2IjoiMSJ9.QSioPGK2jY0QvRLT9OnVQ1SD2FA5lfKC_chHREXbvGlHYSre21Hw3ZKKdwSSZJ9j_gbW67XV5mnVe4AQRkCqXEz0C3MU5tvIjp0968Nf1v4r_STlTYknaBMkxdI6cw0s-ptkokTTkc4Fpr9aNcJMn1hLmrRy0x7ld4fWilPtWaNB8MGCjaaprHs_FKt6YA9gwcjv_pIeTbfbENoP5s5Vyi2lS5sm8CYAgLNJKhQe6CI.6n-gTEKYOLPLeNThF3W7xw-Dla6-nvPyxx2WJHfLQkU&dib_tag=se&keywords=fastrack+dezire+fx1+pro&nsdOptOutParam=true&qid=1747456532&sprefix=fastrack+dezire+fx1+pro%2Caps%2C315&sr=8-7
+    - link "Fastrack Dezire FX1 PRO Fashion Smart Watch, 1.43\" AMOLED, 466*466 Pixel Resolution, SingleSync BT Calling, AI Voice Assistant, 100+ Sports Modes & Smartwatch Faces, Upto 5 Day Battery, IP68 (Sliver)":
+      - /url: /Fastrack-Smartwatch-Resolution-SingleSync-Watchfaces/dp/B0D6YDPS29/ref=sr_1_7?crid=1MB4SWDSU01PH&dib=eyJ2IjoiMSJ9.QSioPGK2jY0QvRLT9OnVQ1SD2FA5lfKC_chHREXbvGlHYSre21Hw3ZKKdwSSZJ9j_gbW67XV5mnVe4AQRkCqXEz0C3MU5tvIjp0968Nf1v4r_STlTYknaBMkxdI6cw0s-ptkokTTkc4Fpr9aNcJMn1hLmrRy0x7ld4fWilPtWaNB8MGCjaaprHs_FKt6YA9gwcjv_pIeTbfbENoP5s5Vyi2lS5sm8CYAgLNJKhQe6CI.6n-gTEKYOLPLeNThF3W7xw-Dla6-nvPyxx2WJHfLQkU&dib_tag=se&keywords=fastrack+dezire+fx1+pro&nsdOptOutParam=true&qid=1747456532&sprefix=fastrack+dezire+fx1+pro%2Caps%2C315&sr=8-7
+      - heading "Fastrack Dezire FX1 PRO Fashion Smart Watch, 1.43\" AMOLED, 466*466 Pixel Resolution, SingleSync BT Calling, AI Voice Assistant, 100+ Sports Modes & Smartwatch Faces, Upto 5 Day Battery, IP68 (Sliver)" [level=2]
+    - link "See options":
+      - /url: /Fastrack-Smartwatch-Resolution-SingleSync-Watchfaces/dp/B0D6YDPS29/ref=sr_1_7_so_WEARABLE_COMPUTER?crid=1MB4SWDSU01PH&dib=eyJ2IjoiMSJ9.QSioPGK2jY0QvRLT9OnVQ1SD2FA5lfKC_chHREXbvGlHYSre21Hw3ZKKdwSSZJ9j_gbW67XV5mnVe4AQRkCqXEz0C3MU5tvIjp0968Nf1v4r_STlTYknaBMkxdI6cw0s-ptkokTTkc4Fpr9aNcJMn1hLmrRy0x7ld4fWilPtWaNB8MGCjaaprHs_FKt6YA9gwcjv_pIeTbfbENoP5s5Vyi2lS5sm8CYAgLNJKhQe6CI.6n-gTEKYOLPLeNThF3W7xw-Dla6-nvPyxx2WJHfLQkU&dib_tag=se&keywords=fastrack+dezire+fx1+pro&nsdOptOutParam=true&qid=1747456532&sprefix=fastrack+dezire+fx1+pro%2Caps%2C315&sr=8-7
+    - text: No featured offers available ₹5,999
+    - link "(1 new offer)":
+      - /url: /gp/offer-listing/B0D6YDPS29/ref=sr_1_7_olp?keywords=fastrack+dezire+fx1+pro&crid=1MB4SWDSU01PH&sprefix=fastrack+dezire+fx1+pro%2Caps%2C315&dib_tag=se&dib=eyJ2IjoiMSJ9.QSioPGK2jY0QvRLT9OnVQ1SD2FA5lfKC_chHREXbvGlHYSre21Hw3ZKKdwSSZJ9j_gbW67XV5mnVe4AQRkCqXEz0C3MU5tvIjp0968Nf1v4r_STlTYknaBMkxdI6cw0s-ptkokTTkc4Fpr9aNcJMn1hLmrRy0x7ld4fWilPtWaNB8MGCjaaprHs_FKt6YA9gwcjv_pIeTbfbENoP5s5Vyi2lS5sm8CYAgLNJKhQe6CI.6n-gTEKYOLPLeNThF3W7xw-Dla6-nvPyxx2WJHfLQkU&qid=1747456532&sr=8-7
+  - listitem:
+    - link:
+      - /url: /Fastrack-Resolution-SingleSync-Assistant-Smartwatch/dp/B0DGGVHMDS/ref=sr_1_8?crid=1MB4SWDSU01PH&dib=eyJ2IjoiMSJ9.QSioPGK2jY0QvRLT9OnVQ1SD2FA5lfKC_chHREXbvGlHYSre21Hw3ZKKdwSSZJ9j_gbW67XV5mnVe4AQRkCqXEz0C3MU5tvIjp0968Nf1v4r_STlTYknaBMkxdI6cw0s-ptkokTTkc4Fpr9aNcJMn1hLmrRy0x7ld4fWilPtWaNB8MGCjaaprHs_FKt6YA9gwcjv_pIeTbfbENoP5s5Vyi2lS5sm8CYAgLNJKhQe6CI.6n-gTEKYOLPLeNThF3W7xw-Dla6-nvPyxx2WJHfLQkU&dib_tag=se&keywords=fastrack+dezire+fx1+pro&nsdOptOutParam=true&qid=1747456532&sprefix=fastrack+dezire+fx1+pro%2Caps%2C315&sr=8-8
+    - link "Fastrack Astor FR2 Pro Smart Watch, 1.43” AMOLED Display, 466 * 466 Pixel Resolution, SingleSync BT Calling, AI Voice Assistant, 100+ Sports Modes and Smartwatch Faces, IP68 (Black)":
+      - /url: /Fastrack-Resolution-SingleSync-Assistant-Smartwatch/dp/B0DGGVHMDS/ref=sr_1_8?crid=1MB4SWDSU01PH&dib=eyJ2IjoiMSJ9.QSioPGK2jY0QvRLT9OnVQ1SD2FA5lfKC_chHREXbvGlHYSre21Hw3ZKKdwSSZJ9j_gbW67XV5mnVe4AQRkCqXEz0C3MU5tvIjp0968Nf1v4r_STlTYknaBMkxdI6cw0s-ptkokTTkc4Fpr9aNcJMn1hLmrRy0x7ld4fWilPtWaNB8MGCjaaprHs_FKt6YA9gwcjv_pIeTbfbENoP5s5Vyi2lS5sm8CYAgLNJKhQe6CI.6n-gTEKYOLPLeNThF3W7xw-Dla6-nvPyxx2WJHfLQkU&dib_tag=se&keywords=fastrack+dezire+fx1+pro&nsdOptOutParam=true&qid=1747456532&sprefix=fastrack+dezire+fx1+pro%2Caps%2C315&sr=8-8
+      - heading "Fastrack Astor FR2 Pro Smart Watch, 1.43” AMOLED Display, 466 * 466 Pixel Resolution, SingleSync BT Calling, AI Voice Assistant, 100+ Sports Modes and Smartwatch Faces, IP68 (Black)" [level=2]
+    - button "3.9 out of 5 stars, rating details"
+    - link "7,499 ratings":
+      - /url: /Fastrack-Resolution-SingleSync-Assistant-Smartwatch/dp/B0DGGVHMDS/ref=sr_1_8?crid=1MB4SWDSU01PH&dib=eyJ2IjoiMSJ9.QSioPGK2jY0QvRLT9OnVQ1SD2FA5lfKC_chHREXbvGlHYSre21Hw3ZKKdwSSZJ9j_gbW67XV5mnVe4AQRkCqXEz0C3MU5tvIjp0968Nf1v4r_STlTYknaBMkxdI6cw0s-ptkokTTkc4Fpr9aNcJMn1hLmrRy0x7ld4fWilPtWaNB8MGCjaaprHs_FKt6YA9gwcjv_pIeTbfbENoP5s5Vyi2lS5sm8CYAgLNJKhQe6CI.6n-gTEKYOLPLeNThF3W7xw-Dla6-nvPyxx2WJHfLQkU&dib_tag=se&keywords=fastrack+dezire+fx1+pro&nsdOptOutParam=true&qid=1747456532&sprefix=fastrack+dezire+fx1+pro%2Caps%2C315&sr=8-8#customerReviews
+    - text: 2K+ bought in past month Price, product page
+    - 'link "₹2,999 M.R.P: ₹5,499 M.R.P: ₹5,499"':
+      - /url: /Fastrack-Resolution-SingleSync-Assistant-Smartwatch/dp/B0DGGVHMDS/ref=sr_1_8?crid=1MB4SWDSU01PH&dib=eyJ2IjoiMSJ9.QSioPGK2jY0QvRLT9OnVQ1SD2FA5lfKC_chHREXbvGlHYSre21Hw3ZKKdwSSZJ9j_gbW67XV5mnVe4AQRkCqXEz0C3MU5tvIjp0968Nf1v4r_STlTYknaBMkxdI6cw0s-ptkokTTkc4Fpr9aNcJMn1hLmrRy0x7ld4fWilPtWaNB8MGCjaaprHs_FKt6YA9gwcjv_pIeTbfbENoP5s5Vyi2lS5sm8CYAgLNJKhQe6CI.6n-gTEKYOLPLeNThF3W7xw-Dla6-nvPyxx2WJHfLQkU&dib_tag=se&keywords=fastrack+dezire+fx1+pro&nsdOptOutParam=true&qid=1747456532&sprefix=fastrack+dezire+fx1+pro%2Caps%2C315&sr=8-8
+    - text: (45% off)
+    - img "Amazon Prime"
+    - text: "FREE delivery Mon, 19 May Or fastest delivery Tomorrow, 18 May Service: Installation"
+    - button "Add to cart"
+  - listitem:
+    - link:
+      - /url: /Fastrack-Smartwatch-Resolution-Functional-SingleSync/dp/B0D6YGXNZV/ref=sr_1_9?crid=1MB4SWDSU01PH&dib=eyJ2IjoiMSJ9.QSioPGK2jY0QvRLT9OnVQ1SD2FA5lfKC_chHREXbvGlHYSre21Hw3ZKKdwSSZJ9j_gbW67XV5mnVe4AQRkCqXEz0C3MU5tvIjp0968Nf1v4r_STlTYknaBMkxdI6cw0s-ptkokTTkc4Fpr9aNcJMn1hLmrRy0x7ld4fWilPtWaNB8MGCjaaprHs_FKt6YA9gwcjv_pIeTbfbENoP5s5Vyi2lS5sm8CYAgLNJKhQe6CI.6n-gTEKYOLPLeNThF3W7xw-Dla6-nvPyxx2WJHfLQkU&dib_tag=se&keywords=fastrack+dezire+fx1+pro&nsdOptOutParam=true&qid=1747456532&sprefix=fastrack+dezire+fx1+pro%2Caps%2C315&sr=8-9
+    - link "Fastrack Dezire FX1 Luxury Metal Smart Watch, 1.38” UltraVU HD Display, Functional Crown, SingleSync BT Calling, AI Voice Assistant, 100+ Smartwatch Faces, IP68, Upto 5 Day Battery (Silver)":
+      - /url: /Fastrack-Smartwatch-Resolution-Functional-SingleSync/dp/B0D6YGXNZV/ref=sr_1_9?crid=1MB4SWDSU01PH&dib=eyJ2IjoiMSJ9.QSioPGK2jY0QvRLT9OnVQ1SD2FA5lfKC_chHREXbvGlHYSre21Hw3ZKKdwSSZJ9j_gbW67XV5mnVe4AQRkCqXEz0C3MU5tvIjp0968Nf1v4r_STlTYknaBMkxdI6cw0s-ptkokTTkc4Fpr9aNcJMn1hLmrRy0x7ld4fWilPtWaNB8MGCjaaprHs_FKt6YA9gwcjv_pIeTbfbENoP5s5Vyi2lS5sm8CYAgLNJKhQe6CI.6n-gTEKYOLPLeNThF3W7xw-Dla6-nvPyxx2WJHfLQkU&dib_tag=se&keywords=fastrack+dezire+fx1+pro&nsdOptOutParam=true&qid=1747456532&sprefix=fastrack+dezire+fx1+pro%2Caps%2C315&sr=8-9
+      - heading "Fastrack Dezire FX1 Luxury Metal Smart Watch, 1.38” UltraVU HD Display, Functional Crown, SingleSync BT Calling, AI Voice Assistant, 100+ Smartwatch Faces, IP68, Upto 5 Day Battery (Silver)" [level=2]
+    - button "4.8 out of 5 stars, rating details"
+    - link "8 ratings":
+      - /url: /Fastrack-Smartwatch-Resolution-Functional-SingleSync/dp/B0D6YGXNZV/ref=sr_1_9?crid=1MB4SWDSU01PH&dib=eyJ2IjoiMSJ9.QSioPGK2jY0QvRLT9OnVQ1SD2FA5lfKC_chHREXbvGlHYSre21Hw3ZKKdwSSZJ9j_gbW67XV5mnVe4AQRkCqXEz0C3MU5tvIjp0968Nf1v4r_STlTYknaBMkxdI6cw0s-ptkokTTkc4Fpr9aNcJMn1hLmrRy0x7ld4fWilPtWaNB8MGCjaaprHs_FKt6YA9gwcjv_pIeTbfbENoP5s5Vyi2lS5sm8CYAgLNJKhQe6CI.6n-gTEKYOLPLeNThF3W7xw-Dla6-nvPyxx2WJHfLQkU&dib_tag=se&keywords=fastrack+dezire+fx1+pro&nsdOptOutParam=true&qid=1747456532&sprefix=fastrack+dezire+fx1+pro%2Caps%2C315&sr=8-9#customerReviews
+    - link "See options":
+      - /url: /Fastrack-Smartwatch-Resolution-Functional-SingleSync/dp/B0D6YGXNZV/ref=sr_1_9_so_WEARABLE_COMPUTER?crid=1MB4SWDSU01PH&dib=eyJ2IjoiMSJ9.QSioPGK2jY0QvRLT9OnVQ1SD2FA5lfKC_chHREXbvGlHYSre21Hw3ZKKdwSSZJ9j_gbW67XV5mnVe4AQRkCqXEz0C3MU5tvIjp0968Nf1v4r_STlTYknaBMkxdI6cw0s-ptkokTTkc4Fpr9aNcJMn1hLmrRy0x7ld4fWilPtWaNB8MGCjaaprHs_FKt6YA9gwcjv_pIeTbfbENoP5s5Vyi2lS5sm8CYAgLNJKhQe6CI.6n-gTEKYOLPLeNThF3W7xw-Dla6-nvPyxx2WJHfLQkU&dib_tag=se&keywords=fastrack+dezire+fx1+pro&nsdOptOutParam=true&qid=1747456532&sprefix=fastrack+dezire+fx1+pro%2Caps%2C315&sr=8-9
+    - text: No featured offers available ₹4,999
+    - link "(2 new offers)":
+      - /url: /gp/offer-listing/B0D6YGXNZV/ref=sr_1_9_olp?keywords=fastrack+dezire+fx1+pro&crid=1MB4SWDSU01PH&sprefix=fastrack+dezire+fx1+pro%2Caps%2C315&dib_tag=se&dib=eyJ2IjoiMSJ9.QSioPGK2jY0QvRLT9OnVQ1SD2FA5lfKC_chHREXbvGlHYSre21Hw3ZKKdwSSZJ9j_gbW67XV5mnVe4AQRkCqXEz0C3MU5tvIjp0968Nf1v4r_STlTYknaBMkxdI6cw0s-ptkokTTkc4Fpr9aNcJMn1hLmrRy0x7ld4fWilPtWaNB8MGCjaaprHs_FKt6YA9gwcjv_pIeTbfbENoP5s5Vyi2lS5sm8CYAgLNJKhQe6CI.6n-gTEKYOLPLeNThF3W7xw-Dla6-nvPyxx2WJHfLQkU&qid=1747456532&sr=8-9
+  - listitem:
+    - link:
+      - /url: /AONES-Silicone-Magnetic-Limitless-Smartwatch/dp/B0DR5YD3MD/ref=sr_1_10?crid=1MB4SWDSU01PH&dib=eyJ2IjoiMSJ9.QSioPGK2jY0QvRLT9OnVQ1SD2FA5lfKC_chHREXbvGlHYSre21Hw3ZKKdwSSZJ9j_gbW67XV5mnVe4AQRkCqXEz0C3MU5tvIjp0968Nf1v4r_STlTYknaBMkxdI6cw0s-ptkokTTkc4Fpr9aNcJMn1hLmrRy0x7ld4fWilPtWaNB8MGCjaaprHs_FKt6YA9gwcjv_pIeTbfbENoP5s5Vyi2lS5sm8CYAgLNJKhQe6CI.6n-gTEKYOLPLeNThF3W7xw-Dla6-nvPyxx2WJHfLQkU&dib_tag=se&keywords=fastrack+dezire+fx1+pro&nsdOptOutParam=true&qid=1747456532&sprefix=fastrack+dezire+fx1+pro%2Caps%2C315&sr=8-10
+    - link "AONES 22mm Silicone Belt Watch Strap Magnetic Folding Buckle for Fastrack Dezire Fx1 Pro/Fastrack Dezire Fx1/ Fastrack Nitro Pro/Fastrack Limitless X2/ Fastrack Xtreme Pro Smartwatch Band":
+      - /url: /AONES-Silicone-Magnetic-Limitless-Smartwatch/dp/B0DR5YD3MD/ref=sr_1_10?crid=1MB4SWDSU01PH&dib=eyJ2IjoiMSJ9.QSioPGK2jY0QvRLT9OnVQ1SD2FA5lfKC_chHREXbvGlHYSre21Hw3ZKKdwSSZJ9j_gbW67XV5mnVe4AQRkCqXEz0C3MU5tvIjp0968Nf1v4r_STlTYknaBMkxdI6cw0s-ptkokTTkc4Fpr9aNcJMn1hLmrRy0x7ld4fWilPtWaNB8MGCjaaprHs_FKt6YA9gwcjv_pIeTbfbENoP5s5Vyi2lS5sm8CYAgLNJKhQe6CI.6n-gTEKYOLPLeNThF3W7xw-Dla6-nvPyxx2WJHfLQkU&dib_tag=se&keywords=fastrack+dezire+fx1+pro&nsdOptOutParam=true&qid=1747456532&sprefix=fastrack+dezire+fx1+pro%2Caps%2C315&sr=8-10
+      - heading "AONES 22mm Silicone Belt Watch Strap Magnetic Folding Buckle for Fastrack Dezire Fx1 Pro/Fastrack Dezire Fx1/ Fastrack Nitro Pro/Fastrack Limitless X2/ Fastrack Xtreme Pro Smartwatch Band" [level=2]
+    - text: Price, product page
+    - 'link "₹349 M.R.P: ₹990 M.R.P: ₹990"':
+      - /url: /AONES-Silicone-Magnetic-Limitless-Smartwatch/dp/B0DR5YD3MD/ref=sr_1_10?crid=1MB4SWDSU01PH&dib=eyJ2IjoiMSJ9.QSioPGK2jY0QvRLT9OnVQ1SD2FA5lfKC_chHREXbvGlHYSre21Hw3ZKKdwSSZJ9j_gbW67XV5mnVe4AQRkCqXEz0C3MU5tvIjp0968Nf1v4r_STlTYknaBMkxdI6cw0s-ptkokTTkc4Fpr9aNcJMn1hLmrRy0x7ld4fWilPtWaNB8MGCjaaprHs_FKt6YA9gwcjv_pIeTbfbENoP5s5Vyi2lS5sm8CYAgLNJKhQe6CI.6n-gTEKYOLPLeNThF3W7xw-Dla6-nvPyxx2WJHfLQkU&dib_tag=se&keywords=fastrack+dezire+fx1+pro&nsdOptOutParam=true&qid=1747456532&sprefix=fastrack+dezire+fx1+pro%2Caps%2C315&sr=8-10
+    - text: (65% off) FREE delivery Wed, 21 May
+    - button "Add to cart"
+  - listitem:
+    - link:
+      - /url: /sspa/click?ie=UTF8&spc=MTo4MTE1Mjc3MDc0NjMwODA3OjE3NDc0NTY1MzI6c3BfbXRmOjMwMDQ5MDkxNzYzMjYzMjo6MDo6&url=%2FBoult-Smartwatch-Brightness-Watchfaces-Monitoring%2Fdp%2FB0DT9MLLPQ%2Fref%3Dsr_1_11_sspa%3Fcrid%3D1MB4SWDSU01PH%26dib%3DeyJ2IjoiMSJ9.QSioPGK2jY0QvRLT9OnVQ1SD2FA5lfKC_chHREXbvGlHYSre21Hw3ZKKdwSSZJ9j_gbW67XV5mnVe4AQRkCqXEz0C3MU5tvIjp0968Nf1v4r_STlTYknaBMkxdI6cw0s-ptkokTTkc4Fpr9aNcJMn1hLmrRy0x7ld4fWilPtWaNB8MGCjaaprHs_FKt6YA9gwcjv_pIeTbfbENoP5s5Vyi2lS5sm8CYAgLNJKhQe6CI.6n-gTEKYOLPLeNThF3W7xw-Dla6-nvPyxx2WJHfLQkU%26dib_tag%3Dse%26keywords%3Dfastrack%2Bdezire%2Bfx1%2Bpro%26nsdOptOutParam%3Dtrue%26qid%3D1747456532%26sprefix%3Dfastrack%2Bdezire%2Bfx1%2Bpro%252Caps%252C315%26sr%3D8-11-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9tdGY%26psc%3D1
+    - button "View Sponsored information or leave ad feedback": Sponsored
+    - link "Sponsored Ad - Boult Rover Pro Smartwatch 1.43'' AMOLED, BT Calling 5.3, 1000 Nits Brightness, IP68, 150+ Watchfaces, 120+ Sports Modes, AI Voice Assistant, SpO2 Monitoring (Coal Black)":
+      - /url: /sspa/click?ie=UTF8&spc=MTo4MTE1Mjc3MDc0NjMwODA3OjE3NDc0NTY1MzI6c3BfbXRmOjMwMDQ5MDkxNzYzMjYzMjo6MDo6&url=%2FBoult-Smartwatch-Brightness-Watchfaces-Monitoring%2Fdp%2FB0DT9MLLPQ%2Fref%3Dsr_1_11_sspa%3Fcrid%3D1MB4SWDSU01PH%26dib%3DeyJ2IjoiMSJ9.QSioPGK2jY0QvRLT9OnVQ1SD2FA5lfKC_chHREXbvGlHYSre21Hw3ZKKdwSSZJ9j_gbW67XV5mnVe4AQRkCqXEz0C3MU5tvIjp0968Nf1v4r_STlTYknaBMkxdI6cw0s-ptkokTTkc4Fpr9aNcJMn1hLmrRy0x7ld4fWilPtWaNB8MGCjaaprHs_FKt6YA9gwcjv_pIeTbfbENoP5s5Vyi2lS5sm8CYAgLNJKhQe6CI.6n-gTEKYOLPLeNThF3W7xw-Dla6-nvPyxx2WJHfLQkU%26dib_tag%3Dse%26keywords%3Dfastrack%2Bdezire%2Bfx1%2Bpro%26nsdOptOutParam%3Dtrue%26qid%3D1747456532%26sprefix%3Dfastrack%2Bdezire%2Bfx1%2Bpro%252Caps%252C315%26sr%3D8-11-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9tdGY%26psc%3D1
+      - heading "Sponsored Ad - Boult Rover Pro Smartwatch 1.43'' AMOLED, BT Calling 5.3, 1000 Nits Brightness, IP68, 150+ Watchfaces, 120+ Sports Modes, AI Voice Assistant, SpO2 Monitoring (Coal Black)" [level=2]: Boult Rover Pro Smartwatch 1.43'' AMOLED, BT Calling 5.3, 1000 Nits Brightness, IP68, 150+ Watchfaces, 120+ Sports Modes, AI Voice Assistant, SpO2 Monitoring (Coal Black)
+    - button "3.4 out of 5 stars, rating details"
+    - link "618 ratings":
+      - /url: /sspa/click?ie=UTF8&spc=MTo4MTE1Mjc3MDc0NjMwODA3OjE3NDc0NTY1MzI6c3BfbXRmOjMwMDQ5MDkxNzYzMjYzMjo6MDo6&url=%2FBoult-Smartwatch-Brightness-Watchfaces-Monitoring%2Fdp%2FB0DT9MLLPQ%2Fref%3Dsr_1_11_sspa%3Fcrid%3D1MB4SWDSU01PH%26dib%3DeyJ2IjoiMSJ9.QSioPGK2jY0QvRLT9OnVQ1SD2FA5lfKC_chHREXbvGlHYSre21Hw3ZKKdwSSZJ9j_gbW67XV5mnVe4AQRkCqXEz0C3MU5tvIjp0968Nf1v4r_STlTYknaBMkxdI6cw0s-ptkokTTkc4Fpr9aNcJMn1hLmrRy0x7ld4fWilPtWaNB8MGCjaaprHs_FKt6YA9gwcjv_pIeTbfbENoP5s5Vyi2lS5sm8CYAgLNJKhQe6CI.6n-gTEKYOLPLeNThF3W7xw-Dla6-nvPyxx2WJHfLQkU%26dib_tag%3Dse%26keywords%3Dfastrack%2Bdezire%2Bfx1%2Bpro%26nsdOptOutParam%3Dtrue%26qid%3D1747456532%26sprefix%3Dfastrack%2Bdezire%2Bfx1%2Bpro%252Caps%252C315%26sr%3D8-11-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9tdGY%26psc%3D1#customerReviews
+    - text: 300+ bought in past month Price, product page
+    - 'link "₹1,999 M.R.P: ₹10,999 M.R.P: ₹10,999"':
+      - /url: /sspa/click?ie=UTF8&spc=MTo4MTE1Mjc3MDc0NjMwODA3OjE3NDc0NTY1MzI6c3BfbXRmOjMwMDQ5MDkxNzYzMjYzMjo6MDo6&url=%2FBoult-Smartwatch-Brightness-Watchfaces-Monitoring%2Fdp%2FB0DT9MLLPQ%2Fref%3Dsr_1_11_sspa%3Fcrid%3D1MB4SWDSU01PH%26dib%3DeyJ2IjoiMSJ9.QSioPGK2jY0QvRLT9OnVQ1SD2FA5lfKC_chHREXbvGlHYSre21Hw3ZKKdwSSZJ9j_gbW67XV5mnVe4AQRkCqXEz0C3MU5tvIjp0968Nf1v4r_STlTYknaBMkxdI6cw0s-ptkokTTkc4Fpr9aNcJMn1hLmrRy0x7ld4fWilPtWaNB8MGCjaaprHs_FKt6YA9gwcjv_pIeTbfbENoP5s5Vyi2lS5sm8CYAgLNJKhQe6CI.6n-gTEKYOLPLeNThF3W7xw-Dla6-nvPyxx2WJHfLQkU%26dib_tag%3Dse%26keywords%3Dfastrack%2Bdezire%2Bfx1%2Bpro%26nsdOptOutParam%3Dtrue%26qid%3D1747456532%26sprefix%3Dfastrack%2Bdezire%2Bfx1%2Bpro%252Caps%252C315%26sr%3D8-11-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9tdGY%26psc%3D1
+    - text: (82% off)
+    - img "Amazon Prime"
+    - text: FREE delivery Mon, 19 May Or fastest delivery Tomorrow, 18 May
+    - button "Add to cart"
+  - listitem:
+    - link:
+      - /url: /sspa/click?ie=UTF8&spc=MTo4MTE1Mjc3MDc0NjMwODA3OjE3NDc0NTY1MzI6c3BfbXRmOjMwMDQzODA3MzI5MTQzMjo6MDo6&url=%2FGOBOULT-Bluetooth-Brightness-Assistant-Monitoring%2Fdp%2FB0DM5L9BFZ%2Fref%3Dsr_1_12_sspa%3Fcrid%3D1MB4SWDSU01PH%26dib%3DeyJ2IjoiMSJ9.QSioPGK2jY0QvRLT9OnVQ1SD2FA5lfKC_chHREXbvGlHYSre21Hw3ZKKdwSSZJ9j_gbW67XV5mnVe4AQRkCqXEz0C3MU5tvIjp0968Nf1v4r_STlTYknaBMkxdI6cw0s-ptkokTTkc4Fpr9aNcJMn1hLmrRy0x7ld4fWilPtWaNB8MGCjaaprHs_FKt6YA9gwcjv_pIeTbfbENoP5s5Vyi2lS5sm8CYAgLNJKhQe6CI.6n-gTEKYOLPLeNThF3W7xw-Dla6-nvPyxx2WJHfLQkU%26dib_tag%3Dse%26keywords%3Dfastrack%2Bdezire%2Bfx1%2Bpro%26nsdOptOutParam%3Dtrue%26qid%3D1747456532%26sprefix%3Dfastrack%2Bdezire%2Bfx1%2Bpro%252Caps%252C315%26sr%3D8-12-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9tdGY%26psc%3D1
+    - button "View Sponsored information or leave ad feedback": Sponsored
+    - link "Sponsored Ad - GOBOULT Mirage Smart Watch 1.39''HD Screen, Bluetooth Calling, IP67, Zinc Alloy Frame, 500 Nits Brightness, AI Voice Assistant, SpO2 Monitoring, 120+ Sports Mode (Amber Blue)":
+      - /url: /sspa/click?ie=UTF8&spc=MTo4MTE1Mjc3MDc0NjMwODA3OjE3NDc0NTY1MzI6c3BfbXRmOjMwMDQzODA3MzI5MTQzMjo6MDo6&url=%2FGOBOULT-Bluetooth-Brightness-Assistant-Monitoring%2Fdp%2FB0DM5L9BFZ%2Fref%3Dsr_1_12_sspa%3Fcrid%3D1MB4SWDSU01PH%26dib%3DeyJ2IjoiMSJ9.QSioPGK2jY0QvRLT9OnVQ1SD2FA5lfKC_chHREXbvGlHYSre21Hw3ZKKdwSSZJ9j_gbW67XV5mnVe4AQRkCqXEz0C3MU5tvIjp0968Nf1v4r_STlTYknaBMkxdI6cw0s-ptkokTTkc4Fpr9aNcJMn1hLmrRy0x7ld4fWilPtWaNB8MGCjaaprHs_FKt6YA9gwcjv_pIeTbfbENoP5s5Vyi2lS5sm8CYAgLNJKhQe6CI.6n-gTEKYOLPLeNThF3W7xw-Dla6-nvPyxx2WJHfLQkU%26dib_tag%3Dse%26keywords%3Dfastrack%2Bdezire%2Bfx1%2Bpro%26nsdOptOutParam%3Dtrue%26qid%3D1747456532%26sprefix%3Dfastrack%2Bdezire%2Bfx1%2Bpro%252Caps%252C315%26sr%3D8-12-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9tdGY%26psc%3D1
+      - heading "Sponsored Ad - GOBOULT Mirage Smart Watch 1.39''HD Screen, Bluetooth Calling, IP67, Zinc Alloy Frame, 500 Nits Brightness, AI Voice Assistant, SpO2 Monitoring, 120+ Sports Mode (Amber Blue)" [level=2]: GOBOULT Mirage Smart Watch 1.39''HD Screen, Bluetooth Calling, IP67, Zinc Alloy Frame, 500 Nits Brightness, AI Voice Assistant, SpO2 Monitoring, 120+ Sports Mode (Amber Blue)
+    - button "3.8 out of 5 stars, rating details"
+    - link "285 ratings":
+      - /url: /sspa/click?ie=UTF8&spc=MTo4MTE1Mjc3MDc0NjMwODA3OjE3NDc0NTY1MzI6c3BfbXRmOjMwMDQzODA3MzI5MTQzMjo6MDo6&url=%2FGOBOULT-Bluetooth-Brightness-Assistant-Monitoring%2Fdp%2FB0DM5L9BFZ%2Fref%3Dsr_1_12_sspa%3Fcrid%3D1MB4SWDSU01PH%26dib%3DeyJ2IjoiMSJ9.QSioPGK2jY0QvRLT9OnVQ1SD2FA5lfKC_chHREXbvGlHYSre21Hw3ZKKdwSSZJ9j_gbW67XV5mnVe4AQRkCqXEz0C3MU5tvIjp0968Nf1v4r_STlTYknaBMkxdI6cw0s-ptkokTTkc4Fpr9aNcJMn1hLmrRy0x7ld4fWilPtWaNB8MGCjaaprHs_FKt6YA9gwcjv_pIeTbfbENoP5s5Vyi2lS5sm8CYAgLNJKhQe6CI.6n-gTEKYOLPLeNThF3W7xw-Dla6-nvPyxx2WJHfLQkU%26dib_tag%3Dse%26keywords%3Dfastrack%2Bdezire%2Bfx1%2Bpro%26nsdOptOutParam%3Dtrue%26qid%3D1747456532%26sprefix%3Dfastrack%2Bdezire%2Bfx1%2Bpro%252Caps%252C315%26sr%3D8-12-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9tdGY%26psc%3D1#customerReviews
+    - text: 200+ bought in past month Price, product page
+    - 'link "₹1,799 M.R.P: ₹4,999 M.R.P: ₹4,999"':
+      - /url: /sspa/click?ie=UTF8&spc=MTo4MTE1Mjc3MDc0NjMwODA3OjE3NDc0NTY1MzI6c3BfbXRmOjMwMDQzODA3MzI5MTQzMjo6MDo6&url=%2FGOBOULT-Bluetooth-Brightness-Assistant-Monitoring%2Fdp%2FB0DM5L9BFZ%2Fref%3Dsr_1_12_sspa%3Fcrid%3D1MB4SWDSU01PH%26dib%3DeyJ2IjoiMSJ9.QSioPGK2jY0QvRLT9OnVQ1SD2FA5lfKC_chHREXbvGlHYSre21Hw3ZKKdwSSZJ9j_gbW67XV5mnVe4AQRkCqXEz0C3MU5tvIjp0968Nf1v4r_STlTYknaBMkxdI6cw0s-ptkokTTkc4Fpr9aNcJMn1hLmrRy0x7ld4fWilPtWaNB8MGCjaaprHs_FKt6YA9gwcjv_pIeTbfbENoP5s5Vyi2lS5sm8CYAgLNJKhQe6CI.6n-gTEKYOLPLeNThF3W7xw-Dla6-nvPyxx2WJHfLQkU%26dib_tag%3Dse%26keywords%3Dfastrack%2Bdezire%2Bfx1%2Bpro%26nsdOptOutParam%3Dtrue%26qid%3D1747456532%26sprefix%3Dfastrack%2Bdezire%2Bfx1%2Bpro%252Caps%252C315%26sr%3D8-12-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9tdGY%26psc%3D1
+    - text: (64% off)
+    - img "Amazon Prime"
+    - text: FREE delivery Mon, 19 May Or fastest delivery Tomorrow, 18 May
+    - button "Add to cart"
+  - listitem:
+    - link:
+      - /url: /Fastrack-Radiant-Functional-SingleSync-Smartwatch/dp/B0D7LWVMDM/ref=sr_1_13?crid=1MB4SWDSU01PH&dib=eyJ2IjoiMSJ9.QSioPGK2jY0QvRLT9OnVQ1SD2FA5lfKC_chHREXbvGlHYSre21Hw3ZKKdwSSZJ9j_gbW67XV5mnVe4AQRkCqXEz0C3MU5tvIjp0968Nf1v4r_STlTYknaBMkxdI6cw0s-ptkokTTkc4Fpr9aNcJMn1hLmrRy0x7ld4fWilPtWaNB8MGCjaaprHs_FKt6YA9gwcjv_pIeTbfbENoP5s5Vyi2lS5sm8CYAgLNJKhQe6CI.6n-gTEKYOLPLeNThF3W7xw-Dla6-nvPyxx2WJHfLQkU&dib_tag=se&keywords=fastrack+dezire+fx1+pro&nsdOptOutParam=true&qid=1747456532&sprefix=fastrack+dezire+fx1+pro%2Caps%2C315&sr=8-13
+    - link "Fastrack Radiant FX1 Luxury Metal Smart Watch, 1.43” AMOLED 60Hz Display, AOD, Functional Crown, SingleSync BT Calling, AI Voice, Upto 5 Day Battery, 100+ Smartwatch Faces & Sport Modes, IP68 (Black)":
+      - /url: /Fastrack-Radiant-Functional-SingleSync-Smartwatch/dp/B0D7LWVMDM/ref=sr_1_13?crid=1MB4SWDSU01PH&dib=eyJ2IjoiMSJ9.QSioPGK2jY0QvRLT9OnVQ1SD2FA5lfKC_chHREXbvGlHYSre21Hw3ZKKdwSSZJ9j_gbW67XV5mnVe4AQRkCqXEz0C3MU5tvIjp0968Nf1v4r_STlTYknaBMkxdI6cw0s-ptkokTTkc4Fpr9aNcJMn1hLmrRy0x7ld4fWilPtWaNB8MGCjaaprHs_FKt6YA9gwcjv_pIeTbfbENoP5s5Vyi2lS5sm8CYAgLNJKhQe6CI.6n-gTEKYOLPLeNThF3W7xw-Dla6-nvPyxx2WJHfLQkU&dib_tag=se&keywords=fastrack+dezire+fx1+pro&nsdOptOutParam=true&qid=1747456532&sprefix=fastrack+dezire+fx1+pro%2Caps%2C315&sr=8-13
+      - heading "Fastrack Radiant FX1 Luxury Metal Smart Watch, 1.43” AMOLED 60Hz Display, AOD, Functional Crown, SingleSync BT Calling, AI Voice, Upto 5 Day Battery, 100+ Smartwatch Faces & Sport Modes, IP68 (Black)" [level=2]
+    - button "3.3 out of 5 stars, rating details"
+    - link "17 ratings":
+      - /url: /Fastrack-Radiant-Functional-SingleSync-Smartwatch/dp/B0D7LWVMDM/ref=sr_1_13?crid=1MB4SWDSU01PH&dib=eyJ2IjoiMSJ9.QSioPGK2jY0QvRLT9OnVQ1SD2FA5lfKC_chHREXbvGlHYSre21Hw3ZKKdwSSZJ9j_gbW67XV5mnVe4AQRkCqXEz0C3MU5tvIjp0968Nf1v4r_STlTYknaBMkxdI6cw0s-ptkokTTkc4Fpr9aNcJMn1hLmrRy0x7ld4fWilPtWaNB8MGCjaaprHs_FKt6YA9gwcjv_pIeTbfbENoP5s5Vyi2lS5sm8CYAgLNJKhQe6CI.6n-gTEKYOLPLeNThF3W7xw-Dla6-nvPyxx2WJHfLQkU&dib_tag=se&keywords=fastrack+dezire+fx1+pro&nsdOptOutParam=true&qid=1747456532&sprefix=fastrack+dezire+fx1+pro%2Caps%2C315&sr=8-13#customerReviews
+    - text: Price, product page
+    - 'link "₹3,999 M.R.P: ₹8,995 M.R.P: ₹8,995"':
+      - /url: /Fastrack-Radiant-Functional-SingleSync-Smartwatch/dp/B0D7LWVMDM/ref=sr_1_13?crid=1MB4SWDSU01PH&dib=eyJ2IjoiMSJ9.QSioPGK2jY0QvRLT9OnVQ1SD2FA5lfKC_chHREXbvGlHYSre21Hw3ZKKdwSSZJ9j_gbW67XV5mnVe4AQRkCqXEz0C3MU5tvIjp0968Nf1v4r_STlTYknaBMkxdI6cw0s-ptkokTTkc4Fpr9aNcJMn1hLmrRy0x7ld4fWilPtWaNB8MGCjaaprHs_FKt6YA9gwcjv_pIeTbfbENoP5s5Vyi2lS5sm8CYAgLNJKhQe6CI.6n-gTEKYOLPLeNThF3W7xw-Dla6-nvPyxx2WJHfLQkU&dib_tag=se&keywords=fastrack+dezire+fx1+pro&nsdOptOutParam=true&qid=1747456532&sprefix=fastrack+dezire+fx1+pro%2Caps%2C315&sr=8-13
+    - text: (56% off)
+    - img "Amazon Prime"
+    - text: "FREE delivery Mon, 19 May Or fastest delivery Tomorrow, 18 May Service: Installation"
+    - button "Add to cart"
+  - listitem:
+    - link:
+      - /url: /ARBAN-Protector-Smartwatch-SMARTWATCH-PROTECTOR/dp/B0DKT71DZQ/ref=sr_1_14?crid=1MB4SWDSU01PH&dib=eyJ2IjoiMSJ9.QSioPGK2jY0QvRLT9OnVQ1SD2FA5lfKC_chHREXbvGlHYSre21Hw3ZKKdwSSZJ9j_gbW67XV5mnVe4AQRkCqXEz0C3MU5tvIjp0968Nf1v4r_STlTYknaBMkxdI6cw0s-ptkokTTkc4Fpr9aNcJMn1hLmrRy0x7ld4fWilPtWaNB8MGCjaaprHs_FKt6YA9gwcjv_pIeTbfbENoP5s5Vyi2lS5sm8CYAgLNJKhQe6CI.6n-gTEKYOLPLeNThF3W7xw-Dla6-nvPyxx2WJHfLQkU&dib_tag=se&keywords=fastrack+dezire+fx1+pro&nsdOptOutParam=true&qid=1747456532&sprefix=fastrack+dezire+fx1+pro%2Caps%2C315&sr=8-14
+    - link "ARBAN Screen Protector for Smartwatch Fastrack Dezire FX1 PRO 1.43 inch (Pack-3 SMARTWATCH SCREEN PROTECTOR)":
+      - /url: /ARBAN-Protector-Smartwatch-SMARTWATCH-PROTECTOR/dp/B0DKT71DZQ/ref=sr_1_14?crid=1MB4SWDSU01PH&dib=eyJ2IjoiMSJ9.QSioPGK2jY0QvRLT9OnVQ1SD2FA5lfKC_chHREXbvGlHYSre21Hw3ZKKdwSSZJ9j_gbW67XV5mnVe4AQRkCqXEz0C3MU5tvIjp0968Nf1v4r_STlTYknaBMkxdI6cw0s-ptkokTTkc4Fpr9aNcJMn1hLmrRy0x7ld4fWilPtWaNB8MGCjaaprHs_FKt6YA9gwcjv_pIeTbfbENoP5s5Vyi2lS5sm8CYAgLNJKhQe6CI.6n-gTEKYOLPLeNThF3W7xw-Dla6-nvPyxx2WJHfLQkU&dib_tag=se&keywords=fastrack+dezire+fx1+pro&nsdOptOutParam=true&qid=1747456532&sprefix=fastrack+dezire+fx1+pro%2Caps%2C315&sr=8-14
+      - heading "ARBAN Screen Protector for Smartwatch Fastrack Dezire FX1 PRO 1.43 inch (Pack-3 SMARTWATCH SCREEN PROTECTOR)" [level=2]
+    - text: Price, product page
+    - 'link "₹259 M.R.P: ₹599 M.R.P: ₹599"':
+      - /url: /ARBAN-Protector-Smartwatch-SMARTWATCH-PROTECTOR/dp/B0DKT71DZQ/ref=sr_1_14?crid=1MB4SWDSU01PH&dib=eyJ2IjoiMSJ9.QSioPGK2jY0QvRLT9OnVQ1SD2FA5lfKC_chHREXbvGlHYSre21Hw3ZKKdwSSZJ9j_gbW67XV5mnVe4AQRkCqXEz0C3MU5tvIjp0968Nf1v4r_STlTYknaBMkxdI6cw0s-ptkokTTkc4Fpr9aNcJMn1hLmrRy0x7ld4fWilPtWaNB8MGCjaaprHs_FKt6YA9gwcjv_pIeTbfbENoP5s5Vyi2lS5sm8CYAgLNJKhQe6CI.6n-gTEKYOLPLeNThF3W7xw-Dla6-nvPyxx2WJHfLQkU&dib_tag=se&keywords=fastrack+dezire+fx1+pro&nsdOptOutParam=true&qid=1747456532&sprefix=fastrack+dezire+fx1+pro%2Caps%2C315&sr=8-14
+    - text: (57% off) Delivery Fri, 23 May
+    - button "Add to cart"
+  - listitem:
+    - link:
+      - /url: /Smartwatch-Protector-Compatible-Fastrack-Protective/dp/B0DNFRYWVP/ref=sr_1_15?crid=1MB4SWDSU01PH&dib=eyJ2IjoiMSJ9.QSioPGK2jY0QvRLT9OnVQ1SD2FA5lfKC_chHREXbvGlHYSre21Hw3ZKKdwSSZJ9j_gbW67XV5mnVe4AQRkCqXEz0C3MU5tvIjp0968Nf1v4r_STlTYknaBMkxdI6cw0s-ptkokTTkc4Fpr9aNcJMn1hLmrRy0x7ld4fWilPtWaNB8MGCjaaprHs_FKt6YA9gwcjv_pIeTbfbENoP5s5Vyi2lS5sm8CYAgLNJKhQe6CI.6n-gTEKYOLPLeNThF3W7xw-Dla6-nvPyxx2WJHfLQkU&dib_tag=se&keywords=fastrack+dezire+fx1+pro&nsdOptOutParam=true&qid=1747456532&sprefix=fastrack+dezire+fx1+pro%2Caps%2C315&sr=8-15
+    - link "DVTECH® Smartwatch Screen Protector Compatible with Fastrack Dezire FX1 Pro Protective Ultra Clear (Flexible Screen Protector) (Pack of 02)":
+      - /url: /Smartwatch-Protector-Compatible-Fastrack-Protective/dp/B0DNFRYWVP/ref=sr_1_15?crid=1MB4SWDSU01PH&dib=eyJ2IjoiMSJ9.QSioPGK2jY0QvRLT9OnVQ1SD2FA5lfKC_chHREXbvGlHYSre21Hw3ZKKdwSSZJ9j_gbW67XV5mnVe4AQRkCqXEz0C3MU5tvIjp0968Nf1v4r_STlTYknaBMkxdI6cw0s-ptkokTTkc4Fpr9aNcJMn1hLmrRy0x7ld4fWilPtWaNB8MGCjaaprHs_FKt6YA9gwcjv_pIeTbfbENoP5s5Vyi2lS5sm8CYAgLNJKhQe6CI.6n-gTEKYOLPLeNThF3W7xw-Dla6-nvPyxx2WJHfLQkU&dib_tag=se&keywords=fastrack+dezire+fx1+pro&nsdOptOutParam=true&qid=1747456532&sprefix=fastrack+dezire+fx1+pro%2Caps%2C315&sr=8-15
+      - heading "DVTECH® Smartwatch Screen Protector Compatible with Fastrack Dezire FX1 Pro Protective Ultra Clear (Flexible Screen Protector) (Pack of 02)" [level=2]
+    - button "1.0 out of 5 stars, rating details"
+    - link "1 ratings":
+      - /url: /Smartwatch-Protector-Compatible-Fastrack-Protective/dp/B0DNFRYWVP/ref=sr_1_15?crid=1MB4SWDSU01PH&dib=eyJ2IjoiMSJ9.QSioPGK2jY0QvRLT9OnVQ1SD2FA5lfKC_chHREXbvGlHYSre21Hw3ZKKdwSSZJ9j_gbW67XV5mnVe4AQRkCqXEz0C3MU5tvIjp0968Nf1v4r_STlTYknaBMkxdI6cw0s-ptkokTTkc4Fpr9aNcJMn1hLmrRy0x7ld4fWilPtWaNB8MGCjaaprHs_FKt6YA9gwcjv_pIeTbfbENoP5s5Vyi2lS5sm8CYAgLNJKhQe6CI.6n-gTEKYOLPLeNThF3W7xw-Dla6-nvPyxx2WJHfLQkU&dib_tag=se&keywords=fastrack+dezire+fx1+pro&nsdOptOutParam=true&qid=1747456532&sprefix=fastrack+dezire+fx1+pro%2Caps%2C315&sr=8-15#customerReviews
+    - text: Price, product page
+    - 'link "₹149 M.R.P: ₹549 M.R.P: ₹549"':
+      - /url: /Smartwatch-Protector-Compatible-Fastrack-Protective/dp/B0DNFRYWVP/ref=sr_1_15?crid=1MB4SWDSU01PH&dib=eyJ2IjoiMSJ9.QSioPGK2jY0QvRLT9OnVQ1SD2FA5lfKC_chHREXbvGlHYSre21Hw3ZKKdwSSZJ9j_gbW67XV5mnVe4AQRkCqXEz0C3MU5tvIjp0968Nf1v4r_STlTYknaBMkxdI6cw0s-ptkokTTkc4Fpr9aNcJMn1hLmrRy0x7ld4fWilPtWaNB8MGCjaaprHs_FKt6YA9gwcjv_pIeTbfbENoP5s5Vyi2lS5sm8CYAgLNJKhQe6CI.6n-gTEKYOLPLeNThF3W7xw-Dla6-nvPyxx2WJHfLQkU&dib_tag=se&keywords=fastrack+dezire+fx1+pro&nsdOptOutParam=true&qid=1747456532&sprefix=fastrack+dezire+fx1+pro%2Caps%2C315&sr=8-15
+    - text: (73% off) FREE delivery Wed, 21 May
+    - button "Add to cart"
+  - listitem:
+    - link:
+      - /url: /HELLOSCREEN-Fastrack-Dezire-FX1-1-43/dp/B0DXC7YQXN/ref=sr_1_16?crid=1MB4SWDSU01PH&dib=eyJ2IjoiMSJ9.QSioPGK2jY0QvRLT9OnVQ1SD2FA5lfKC_chHREXbvGlHYSre21Hw3ZKKdwSSZJ9j_gbW67XV5mnVe4AQRkCqXEz0C3MU5tvIjp0968Nf1v4r_STlTYknaBMkxdI6cw0s-ptkokTTkc4Fpr9aNcJMn1hLmrRy0x7ld4fWilPtWaNB8MGCjaaprHs_FKt6YA9gwcjv_pIeTbfbENoP5s5Vyi2lS5sm8CYAgLNJKhQe6CI.6n-gTEKYOLPLeNThF3W7xw-Dla6-nvPyxx2WJHfLQkU&dib_tag=se&keywords=fastrack+dezire+fx1+pro&nsdOptOutParam=true&qid=1747456532&sprefix=fastrack+dezire+fx1+pro%2Caps%2C315&sr=8-16
+    - link "HELLOSCREEN |2 Pack| Smartwatch Screen Protector for Fastrack Dezire FX1 PRO |1.43 inch| | Flexible TPU Film, 9H Scratch Resistant, Bubble Free Installation - Not Tempered Glass":
+      - /url: /HELLOSCREEN-Fastrack-Dezire-FX1-1-43/dp/B0DXC7YQXN/ref=sr_1_16?crid=1MB4SWDSU01PH&dib=eyJ2IjoiMSJ9.QSioPGK2jY0QvRLT9OnVQ1SD2FA5lfKC_chHREXbvGlHYSre21Hw3ZKKdwSSZJ9j_gbW67XV5mnVe4AQRkCqXEz0C3MU5tvIjp0968Nf1v4r_STlTYknaBMkxdI6cw0s-ptkokTTkc4Fpr9aNcJMn1hLmrRy0x7ld4fWilPtWaNB8MGCjaaprHs_FKt6YA9gwcjv_pIeTbfbENoP5s5Vyi2lS5sm8CYAgLNJKhQe6CI.6n-gTEKYOLPLeNThF3W7xw-Dla6-nvPyxx2WJHfLQkU&dib_tag=se&keywords=fastrack+dezire+fx1+pro&nsdOptOutParam=true&qid=1747456532&sprefix=fastrack+dezire+fx1+pro%2Caps%2C315&sr=8-16
+      - heading "HELLOSCREEN |2 Pack| Smartwatch Screen Protector for Fastrack Dezire FX1 PRO |1.43 inch| | Flexible TPU Film, 9H Scratch Resistant, Bubble Free Installation - Not Tempered Glass" [level=2]
+    - button "1.0 out of 5 stars, rating details"
+    - link "1 ratings":
+      - /url: /HELLOSCREEN-Fastrack-Dezire-FX1-1-43/dp/B0DXC7YQXN/ref=sr_1_16?crid=1MB4SWDSU01PH&dib=eyJ2IjoiMSJ9.QSioPGK2jY0QvRLT9OnVQ1SD2FA5lfKC_chHREXbvGlHYSre21Hw3ZKKdwSSZJ9j_gbW67XV5mnVe4AQRkCqXEz0C3MU5tvIjp0968Nf1v4r_STlTYknaBMkxdI6cw0s-ptkokTTkc4Fpr9aNcJMn1hLmrRy0x7ld4fWilPtWaNB8MGCjaaprHs_FKt6YA9gwcjv_pIeTbfbENoP5s5Vyi2lS5sm8CYAgLNJKhQe6CI.6n-gTEKYOLPLeNThF3W7xw-Dla6-nvPyxx2WJHfLQkU&dib_tag=se&keywords=fastrack+dezire+fx1+pro&nsdOptOutParam=true&qid=1747456532&sprefix=fastrack+dezire+fx1+pro%2Caps%2C315&sr=8-16#customerReviews
+    - text: Price, product page
+    - 'link "₹149 ( ₹74.50 /pack) M.R.P: ₹699 M.R.P: ₹699"':
+      - /url: /HELLOSCREEN-Fastrack-Dezire-FX1-1-43/dp/B0DXC7YQXN/ref=sr_1_16?crid=1MB4SWDSU01PH&dib=eyJ2IjoiMSJ9.QSioPGK2jY0QvRLT9OnVQ1SD2FA5lfKC_chHREXbvGlHYSre21Hw3ZKKdwSSZJ9j_gbW67XV5mnVe4AQRkCqXEz0C3MU5tvIjp0968Nf1v4r_STlTYknaBMkxdI6cw0s-ptkokTTkc4Fpr9aNcJMn1hLmrRy0x7ld4fWilPtWaNB8MGCjaaprHs_FKt6YA9gwcjv_pIeTbfbENoP5s5Vyi2lS5sm8CYAgLNJKhQe6CI.6n-gTEKYOLPLeNThF3W7xw-Dla6-nvPyxx2WJHfLQkU&dib_tag=se&keywords=fastrack+dezire+fx1+pro&nsdOptOutParam=true&qid=1747456532&sprefix=fastrack+dezire+fx1+pro%2Caps%2C315&sr=8-16
+    - text: (79% off) FREE delivery Fri, 23 May
+    - button "Add to cart"
+  - listitem:
+    - link:
+      - /url: /MOBLING-Protector-Compatible-Fastrack-Smartwatch/dp/B0DTC2KT6N/ref=sr_1_17?crid=1MB4SWDSU01PH&dib=eyJ2IjoiMSJ9.QSioPGK2jY0QvRLT9OnVQ1SD2FA5lfKC_chHREXbvGlHYSre21Hw3ZKKdwSSZJ9j_gbW67XV5mnVe4AQRkCqXEz0C3MU5tvIjp0968Nf1v4r_STlTYknaBMkxdI6cw0s-ptkokTTkc4Fpr9aNcJMn1hLmrRy0x7ld4fWilPtWaNB8MGCjaaprHs_FKt6YA9gwcjv_pIeTbfbENoP5s5Vyi2lS5sm8CYAgLNJKhQe6CI.6n-gTEKYOLPLeNThF3W7xw-Dla6-nvPyxx2WJHfLQkU&dib_tag=se&keywords=fastrack+dezire+fx1+pro&nsdOptOutParam=true&qid=1747456532&sprefix=fastrack+dezire+fx1+pro%2Caps%2C315&sr=8-17
+    - link "MOBLING Screen Protector Compatible With Fastrack Dezire FX1 Pro Smartwatch, Edge to Edge Full Coverage Hydrogel TPU Fiber Screen Guard not a Tempered Glass (Pack of 2)":
+      - /url: /MOBLING-Protector-Compatible-Fastrack-Smartwatch/dp/B0DTC2KT6N/ref=sr_1_17?crid=1MB4SWDSU01PH&dib=eyJ2IjoiMSJ9.QSioPGK2jY0QvRLT9OnVQ1SD2FA5lfKC_chHREXbvGlHYSre21Hw3ZKKdwSSZJ9j_gbW67XV5mnVe4AQRkCqXEz0C3MU5tvIjp0968Nf1v4r_STlTYknaBMkxdI6cw0s-ptkokTTkc4Fpr9aNcJMn1hLmrRy0x7ld4fWilPtWaNB8MGCjaaprHs_FKt6YA9gwcjv_pIeTbfbENoP5s5Vyi2lS5sm8CYAgLNJKhQe6CI.6n-gTEKYOLPLeNThF3W7xw-Dla6-nvPyxx2WJHfLQkU&dib_tag=se&keywords=fastrack+dezire+fx1+pro&nsdOptOutParam=true&qid=1747456532&sprefix=fastrack+dezire+fx1+pro%2Caps%2C315&sr=8-17
+      - heading "MOBLING Screen Protector Compatible With Fastrack Dezire FX1 Pro Smartwatch, Edge to Edge Full Coverage Hydrogel TPU Fiber Screen Guard not a Tempered Glass (Pack of 2)" [level=2]
+    - button "1.0 out of 5 stars, rating details"
+    - link "1 ratings":
+      - /url: /MOBLING-Protector-Compatible-Fastrack-Smartwatch/dp/B0DTC2KT6N/ref=sr_1_17?crid=1MB4SWDSU01PH&dib=eyJ2IjoiMSJ9.QSioPGK2jY0QvRLT9OnVQ1SD2FA5lfKC_chHREXbvGlHYSre21Hw3ZKKdwSSZJ9j_gbW67XV5mnVe4AQRkCqXEz0C3MU5tvIjp0968Nf1v4r_STlTYknaBMkxdI6cw0s-ptkokTTkc4Fpr9aNcJMn1hLmrRy0x7ld4fWilPtWaNB8MGCjaaprHs_FKt6YA9gwcjv_pIeTbfbENoP5s5Vyi2lS5sm8CYAgLNJKhQe6CI.6n-gTEKYOLPLeNThF3W7xw-Dla6-nvPyxx2WJHfLQkU&dib_tag=se&keywords=fastrack+dezire+fx1+pro&nsdOptOutParam=true&qid=1747456532&sprefix=fastrack+dezire+fx1+pro%2Caps%2C315&sr=8-17#customerReviews
+    - text: Price, product page
+    - 'link "₹149 M.R.P: ₹799 M.R.P: ₹799"':
+      - /url: /MOBLING-Protector-Compatible-Fastrack-Smartwatch/dp/B0DTC2KT6N/ref=sr_1_17?crid=1MB4SWDSU01PH&dib=eyJ2IjoiMSJ9.QSioPGK2jY0QvRLT9OnVQ1SD2FA5lfKC_chHREXbvGlHYSre21Hw3ZKKdwSSZJ9j_gbW67XV5mnVe4AQRkCqXEz0C3MU5tvIjp0968Nf1v4r_STlTYknaBMkxdI6cw0s-ptkokTTkc4Fpr9aNcJMn1hLmrRy0x7ld4fWilPtWaNB8MGCjaaprHs_FKt6YA9gwcjv_pIeTbfbENoP5s5Vyi2lS5sm8CYAgLNJKhQe6CI.6n-gTEKYOLPLeNThF3W7xw-Dla6-nvPyxx2WJHfLQkU&dib_tag=se&keywords=fastrack+dezire+fx1+pro&nsdOptOutParam=true&qid=1747456532&sprefix=fastrack+dezire+fx1+pro%2Caps%2C315&sr=8-17
+    - text: (81% off)
+    - img "Amazon Prime"
+    - text: FREE delivery Thu, 22 May
+    - button "Add to cart"
+  - listitem:
+    - link:
+      - /url: /Silicone-Magnetic-Compatible-Fastrack-Smartwatch/dp/B0DK6SJ5BQ/ref=sr_1_18?crid=1MB4SWDSU01PH&dib=eyJ2IjoiMSJ9.QSioPGK2jY0QvRLT9OnVQ1SD2FA5lfKC_chHREXbvGlHYSre21Hw3ZKKdwSSZJ9j_gbW67XV5mnVe4AQRkCqXEz0C3MU5tvIjp0968Nf1v4r_STlTYknaBMkxdI6cw0s-ptkokTTkc4Fpr9aNcJMn1hLmrRy0x7ld4fWilPtWaNB8MGCjaaprHs_FKt6YA9gwcjv_pIeTbfbENoP5s5Vyi2lS5sm8CYAgLNJKhQe6CI.6n-gTEKYOLPLeNThF3W7xw-Dla6-nvPyxx2WJHfLQkU&dib_tag=se&keywords=fastrack+dezire+fx1+pro&nsdOptOutParam=true&qid=1747456532&sprefix=fastrack+dezire+fx1+pro%2Caps%2C315&sr=8-18
+    - link "22mm Silicone Belt Watch Strap Magnetic Folding Buckle Compatible for Fastrack Dezire Fx1 Pro Smartwatch Band":
+      - /url: /Silicone-Magnetic-Compatible-Fastrack-Smartwatch/dp/B0DK6SJ5BQ/ref=sr_1_18?crid=1MB4SWDSU01PH&dib=eyJ2IjoiMSJ9.QSioPGK2jY0QvRLT9OnVQ1SD2FA5lfKC_chHREXbvGlHYSre21Hw3ZKKdwSSZJ9j_gbW67XV5mnVe4AQRkCqXEz0C3MU5tvIjp0968Nf1v4r_STlTYknaBMkxdI6cw0s-ptkokTTkc4Fpr9aNcJMn1hLmrRy0x7ld4fWilPtWaNB8MGCjaaprHs_FKt6YA9gwcjv_pIeTbfbENoP5s5Vyi2lS5sm8CYAgLNJKhQe6CI.6n-gTEKYOLPLeNThF3W7xw-Dla6-nvPyxx2WJHfLQkU&dib_tag=se&keywords=fastrack+dezire+fx1+pro&nsdOptOutParam=true&qid=1747456532&sprefix=fastrack+dezire+fx1+pro%2Caps%2C315&sr=8-18
+      - heading "22mm Silicone Belt Watch Strap Magnetic Folding Buckle Compatible for Fastrack Dezire Fx1 Pro Smartwatch Band" [level=2]
+    - text: Price, product page
+    - 'link "₹399 M.R.P: ₹990 M.R.P: ₹990"':
+      - /url: /Silicone-Magnetic-Compatible-Fastrack-Smartwatch/dp/B0DK6SJ5BQ/ref=sr_1_18?crid=1MB4SWDSU01PH&dib=eyJ2IjoiMSJ9.QSioPGK2jY0QvRLT9OnVQ1SD2FA5lfKC_chHREXbvGlHYSre21Hw3ZKKdwSSZJ9j_gbW67XV5mnVe4AQRkCqXEz0C3MU5tvIjp0968Nf1v4r_STlTYknaBMkxdI6cw0s-ptkokTTkc4Fpr9aNcJMn1hLmrRy0x7ld4fWilPtWaNB8MGCjaaprHs_FKt6YA9gwcjv_pIeTbfbENoP5s5Vyi2lS5sm8CYAgLNJKhQe6CI.6n-gTEKYOLPLeNThF3W7xw-Dla6-nvPyxx2WJHfLQkU&dib_tag=se&keywords=fastrack+dezire+fx1+pro&nsdOptOutParam=true&qid=1747456532&sprefix=fastrack+dezire+fx1+pro%2Caps%2C315&sr=8-18
+    - text: (60% off) Save ₹10 with coupon (limited sizes/colours) FREE delivery Wed, 21 May
+    - button "Add to cart"
+  - listitem:
+    - link:
+      - /url: /AONES-Alpine-Fastrack-Limitless-Smartwatch/dp/B0DR5VV78W/ref=sr_1_19?crid=1MB4SWDSU01PH&dib=eyJ2IjoiMSJ9.QSioPGK2jY0QvRLT9OnVQ1SD2FA5lfKC_chHREXbvGlHYSre21Hw3ZKKdwSSZJ9j_gbW67XV5mnVe4AQRkCqXEz0C3MU5tvIjp0968Nf1v4r_STlTYknaBMkxdI6cw0s-ptkokTTkc4Fpr9aNcJMn1hLmrRy0x7ld4fWilPtWaNB8MGCjaaprHs_FKt6YA9gwcjv_pIeTbfbENoP5s5Vyi2lS5sm8CYAgLNJKhQe6CI.6n-gTEKYOLPLeNThF3W7xw-Dla6-nvPyxx2WJHfLQkU&dib_tag=se&keywords=fastrack+dezire+fx1+pro&nsdOptOutParam=true&qid=1747456532&sprefix=fastrack+dezire+fx1+pro%2Caps%2C315&sr=8-19
+    - link "AONES 22mm Alpine Nylon Loop Watch Strap for Fastrack Dezire Fx1 Pro/Fastrack Dezire Fx1/ Fastrack Nitro Pro/Fastrack Limitless X2/ Fastrack Xtreme Pro Smartwatch Band":
+      - /url: /AONES-Alpine-Fastrack-Limitless-Smartwatch/dp/B0DR5VV78W/ref=sr_1_19?crid=1MB4SWDSU01PH&dib=eyJ2IjoiMSJ9.QSioPGK2jY0QvRLT9OnVQ1SD2FA5lfKC_chHREXbvGlHYSre21Hw3ZKKdwSSZJ9j_gbW67XV5mnVe4AQRkCqXEz0C3MU5tvIjp0968Nf1v4r_STlTYknaBMkxdI6cw0s-ptkokTTkc4Fpr9aNcJMn1hLmrRy0x7ld4fWilPtWaNB8MGCjaaprHs_FKt6YA9gwcjv_pIeTbfbENoP5s5Vyi2lS5sm8CYAgLNJKhQe6CI.6n-gTEKYOLPLeNThF3W7xw-Dla6-nvPyxx2WJHfLQkU&dib_tag=se&keywords=fastrack+dezire+fx1+pro&nsdOptOutParam=true&qid=1747456532&sprefix=fastrack+dezire+fx1+pro%2Caps%2C315&sr=8-19
+      - heading "AONES 22mm Alpine Nylon Loop Watch Strap for Fastrack Dezire Fx1 Pro/Fastrack Dezire Fx1/ Fastrack Nitro Pro/Fastrack Limitless X2/ Fastrack Xtreme Pro Smartwatch Band" [level=2]
+    - text: Price, product page
+    - 'link "₹299 M.R.P: ₹990 M.R.P: ₹990"':
+      - /url: /AONES-Alpine-Fastrack-Limitless-Smartwatch/dp/B0DR5VV78W/ref=sr_1_19?crid=1MB4SWDSU01PH&dib=eyJ2IjoiMSJ9.QSioPGK2jY0QvRLT9OnVQ1SD2FA5lfKC_chHREXbvGlHYSre21Hw3ZKKdwSSZJ9j_gbW67XV5mnVe4AQRkCqXEz0C3MU5tvIjp0968Nf1v4r_STlTYknaBMkxdI6cw0s-ptkokTTkc4Fpr9aNcJMn1hLmrRy0x7ld4fWilPtWaNB8MGCjaaprHs_FKt6YA9gwcjv_pIeTbfbENoP5s5Vyi2lS5sm8CYAgLNJKhQe6CI.6n-gTEKYOLPLeNThF3W7xw-Dla6-nvPyxx2WJHfLQkU&dib_tag=se&keywords=fastrack+dezire+fx1+pro&nsdOptOutParam=true&qid=1747456532&sprefix=fastrack+dezire+fx1+pro%2Caps%2C315&sr=8-19
+    - text: (70% off) FREE delivery Wed, 21 May
+    - button "Add to cart"
+  - listitem:
+    - link:
+      - /url: /AONES-Magnetic-Fastrack-Limitless-SmartWatch/dp/B0DR5Y39T9/ref=sr_1_20?crid=1MB4SWDSU01PH&dib=eyJ2IjoiMSJ9.QSioPGK2jY0QvRLT9OnVQ1SD2FA5lfKC_chHREXbvGlHYSre21Hw3ZKKdwSSZJ9j_gbW67XV5mnVe4AQRkCqXEz0C3MU5tvIjp0968Nf1v4r_STlTYknaBMkxdI6cw0s-ptkokTTkc4Fpr9aNcJMn1hLmrRy0x7ld4fWilPtWaNB8MGCjaaprHs_FKt6YA9gwcjv_pIeTbfbENoP5s5Vyi2lS5sm8CYAgLNJKhQe6CI.6n-gTEKYOLPLeNThF3W7xw-Dla6-nvPyxx2WJHfLQkU&dib_tag=se&keywords=fastrack+dezire+fx1+pro&nsdOptOutParam=true&qid=1747456532&sprefix=fastrack+dezire+fx1+pro%2Caps%2C315&sr=8-20
+    - link "AONES 22mm Magnetic Loop Watch Strap for Fastrack Dezire Fx1 Pro/Fastrack Dezire Fx1/ Fastrack Nitro Pro/Fastrack Limitless X2/ Fastrack Xtreme Pro Metal Chain SmartWatch Band":
+      - /url: /AONES-Magnetic-Fastrack-Limitless-SmartWatch/dp/B0DR5Y39T9/ref=sr_1_20?crid=1MB4SWDSU01PH&dib=eyJ2IjoiMSJ9.QSioPGK2jY0QvRLT9OnVQ1SD2FA5lfKC_chHREXbvGlHYSre21Hw3ZKKdwSSZJ9j_gbW67XV5mnVe4AQRkCqXEz0C3MU5tvIjp0968Nf1v4r_STlTYknaBMkxdI6cw0s-ptkokTTkc4Fpr9aNcJMn1hLmrRy0x7ld4fWilPtWaNB8MGCjaaprHs_FKt6YA9gwcjv_pIeTbfbENoP5s5Vyi2lS5sm8CYAgLNJKhQe6CI.6n-gTEKYOLPLeNThF3W7xw-Dla6-nvPyxx2WJHfLQkU&dib_tag=se&keywords=fastrack+dezire+fx1+pro&nsdOptOutParam=true&qid=1747456532&sprefix=fastrack+dezire+fx1+pro%2Caps%2C315&sr=8-20
+      - heading "AONES 22mm Magnetic Loop Watch Strap for Fastrack Dezire Fx1 Pro/Fastrack Dezire Fx1/ Fastrack Nitro Pro/Fastrack Limitless X2/ Fastrack Xtreme Pro Metal Chain SmartWatch Band" [level=2]
+    - text: Price, product page
+    - 'link "₹399 M.R.P: ₹990 M.R.P: ₹990"':
+      - /url: /AONES-Magnetic-Fastrack-Limitless-SmartWatch/dp/B0DR5Y39T9/ref=sr_1_20?crid=1MB4SWDSU01PH&dib=eyJ2IjoiMSJ9.QSioPGK2jY0QvRLT9OnVQ1SD2FA5lfKC_chHREXbvGlHYSre21Hw3ZKKdwSSZJ9j_gbW67XV5mnVe4AQRkCqXEz0C3MU5tvIjp0968Nf1v4r_STlTYknaBMkxdI6cw0s-ptkokTTkc4Fpr9aNcJMn1hLmrRy0x7ld4fWilPtWaNB8MGCjaaprHs_FKt6YA9gwcjv_pIeTbfbENoP5s5Vyi2lS5sm8CYAgLNJKhQe6CI.6n-gTEKYOLPLeNThF3W7xw-Dla6-nvPyxx2WJHfLQkU&dib_tag=se&keywords=fastrack+dezire+fx1+pro&nsdOptOutParam=true&qid=1747456532&sprefix=fastrack+dezire+fx1+pro%2Caps%2C315&sr=8-20
+    - text: (60% off) FREE delivery Wed, 21 May
+    - button "Add to cart"
+  - listitem:
+    - link:
+      - /url: /sspa/click?ie=UTF8&spc=MTo4MTE1Mjc3MDc0NjMwODA3OjE3NDc0NTY1MzI6c3BfYnRmOjMwMDMzODUwNTQ2MTkzMjo6MDo6&url=%2FFastrack-Limitless-SingleSync-Smartwatch-Assistant%2Fdp%2FB0D9629NJQ%2Fref%3Dsr_1_21_sspa%3Fcrid%3D1MB4SWDSU01PH%26dib%3DeyJ2IjoiMSJ9.QSioPGK2jY0QvRLT9OnVQ1SD2FA5lfKC_chHREXbvGlHYSre21Hw3ZKKdwSSZJ9j_gbW67XV5mnVe4AQRkCqXEz0C3MU5tvIjp0968Nf1v4r_STlTYknaBMkxdI6cw0s-ptkokTTkc4Fpr9aNcJMn1hLmrRy0x7ld4fWilPtWaNB8MGCjaaprHs_FKt6YA9gwcjv_pIeTbfbENoP5s5Vyi2lS5sm8CYAgLNJKhQe6CI.6n-gTEKYOLPLeNThF3W7xw-Dla6-nvPyxx2WJHfLQkU%26dib_tag%3Dse%26keywords%3Dfastrack%2Bdezire%2Bfx1%2Bpro%26nsdOptOutParam%3Dtrue%26qid%3D1747456532%26sprefix%3Dfastrack%2Bdezire%2Bfx1%2Bpro%252Caps%252C315%26sr%3D8-21-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9idGY%26psc%3D1
+    - button "View Sponsored information or leave ad feedback": Sponsored
+    - link "Sponsored Ad - Fastrack Limitless Glide Smart Watch, Advanced UltraVU HD Display, SingleSync BT Calling, Advance Chipset, 85+ Sports Modes & Smartwatch Faces, AI Voice Assistant, 24 * 7 Health Suite, IP67 (Black)":
+      - /url: /sspa/click?ie=UTF8&spc=MTo4MTE1Mjc3MDc0NjMwODA3OjE3NDc0NTY1MzI6c3BfYnRmOjMwMDMzODUwNTQ2MTkzMjo6MDo6&url=%2FFastrack-Limitless-SingleSync-Smartwatch-Assistant%2Fdp%2FB0D9629NJQ%2Fref%3Dsr_1_21_sspa%3Fcrid%3D1MB4SWDSU01PH%26dib%3DeyJ2IjoiMSJ9.QSioPGK2jY0QvRLT9OnVQ1SD2FA5lfKC_chHREXbvGlHYSre21Hw3ZKKdwSSZJ9j_gbW67XV5mnVe4AQRkCqXEz0C3MU5tvIjp0968Nf1v4r_STlTYknaBMkxdI6cw0s-ptkokTTkc4Fpr9aNcJMn1hLmrRy0x7ld4fWilPtWaNB8MGCjaaprHs_FKt6YA9gwcjv_pIeTbfbENoP5s5Vyi2lS5sm8CYAgLNJKhQe6CI.6n-gTEKYOLPLeNThF3W7xw-Dla6-nvPyxx2WJHfLQkU%26dib_tag%3Dse%26keywords%3Dfastrack%2Bdezire%2Bfx1%2Bpro%26nsdOptOutParam%3Dtrue%26qid%3D1747456532%26sprefix%3Dfastrack%2Bdezire%2Bfx1%2Bpro%252Caps%252C315%26sr%3D8-21-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9idGY%26psc%3D1
+      - heading "Sponsored Ad - Fastrack Limitless Glide Smart Watch, Advanced UltraVU HD Display, SingleSync BT Calling, Advance Chipset, 85+ Sports Modes & Smartwatch Faces, AI Voice Assistant, 24 * 7 Health Suite, IP67 (Black)" [level=2]: Fastrack Limitless Glide Smart Watch, Advanced UltraVU HD Display, SingleSync BT Calling, Advance Chipset, 85+ Sports Modes & Smartwatch Faces, AI Voice Assistant, 24 * 7 Health Suite, IP67 (Black)
+    - button "3.8 out of 5 stars, rating details"
+    - link "3,940 ratings":
+      - /url: /sspa/click?ie=UTF8&spc=MTo4MTE1Mjc3MDc0NjMwODA3OjE3NDc0NTY1MzI6c3BfYnRmOjMwMDMzODUwNTQ2MTkzMjo6MDo6&url=%2FFastrack-Limitless-SingleSync-Smartwatch-Assistant%2Fdp%2FB0D9629NJQ%2Fref%3Dsr_1_21_sspa%3Fcrid%3D1MB4SWDSU01PH%26dib%3DeyJ2IjoiMSJ9.QSioPGK2jY0QvRLT9OnVQ1SD2FA5lfKC_chHREXbvGlHYSre21Hw3ZKKdwSSZJ9j_gbW67XV5mnVe4AQRkCqXEz0C3MU5tvIjp0968Nf1v4r_STlTYknaBMkxdI6cw0s-ptkokTTkc4Fpr9aNcJMn1hLmrRy0x7ld4fWilPtWaNB8MGCjaaprHs_FKt6YA9gwcjv_pIeTbfbENoP5s5Vyi2lS5sm8CYAgLNJKhQe6CI.6n-gTEKYOLPLeNThF3W7xw-Dla6-nvPyxx2WJHfLQkU%26dib_tag%3Dse%26keywords%3Dfastrack%2Bdezire%2Bfx1%2Bpro%26nsdOptOutParam%3Dtrue%26qid%3D1747456532%26sprefix%3Dfastrack%2Bdezire%2Bfx1%2Bpro%252Caps%252C315%26sr%3D8-21-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9idGY%26psc%3D1#customerReviews
+    - text: 1K+ bought in past month Price, product page
+    - 'link "₹1,499 M.R.P: ₹2,799 M.R.P: ₹2,799"':
+      - /url: /sspa/click?ie=UTF8&spc=MTo4MTE1Mjc3MDc0NjMwODA3OjE3NDc0NTY1MzI6c3BfYnRmOjMwMDMzODUwNTQ2MTkzMjo6MDo6&url=%2FFastrack-Limitless-SingleSync-Smartwatch-Assistant%2Fdp%2FB0D9629NJQ%2Fref%3Dsr_1_21_sspa%3Fcrid%3D1MB4SWDSU01PH%26dib%3DeyJ2IjoiMSJ9.QSioPGK2jY0QvRLT9OnVQ1SD2FA5lfKC_chHREXbvGlHYSre21Hw3ZKKdwSSZJ9j_gbW67XV5mnVe4AQRkCqXEz0C3MU5tvIjp0968Nf1v4r_STlTYknaBMkxdI6cw0s-ptkokTTkc4Fpr9aNcJMn1hLmrRy0x7ld4fWilPtWaNB8MGCjaaprHs_FKt6YA9gwcjv_pIeTbfbENoP5s5Vyi2lS5sm8CYAgLNJKhQe6CI.6n-gTEKYOLPLeNThF3W7xw-Dla6-nvPyxx2WJHfLQkU%26dib_tag%3Dse%26keywords%3Dfastrack%2Bdezire%2Bfx1%2Bpro%26nsdOptOutParam%3Dtrue%26qid%3D1747456532%26sprefix%3Dfastrack%2Bdezire%2Bfx1%2Bpro%252Caps%252C315%26sr%3D8-21-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9idGY%26psc%3D1
+    - text: (46% off)
+    - img "Amazon Prime"
+    - text: "FREE delivery Mon, 19 May Or fastest delivery Tomorrow, 18 May Service: Installation"
+    - button "Add to cart"
+  - listitem:
+    - link:
+      - /url: /sspa/click?ie=UTF8&spc=MTo4MTE1Mjc3MDc0NjMwODA3OjE3NDc0NTY1MzI6c3BfYnRmOjMwMDMyNzMzNTUyNDgzMjo6MDo6&url=%2FNoise-Launched-Functional-Stainless-Transition%2Fdp%2FB0D6N83X6D%2Fref%3Dsr_1_22_sspa%3Fcrid%3D1MB4SWDSU01PH%26dib%3DeyJ2IjoiMSJ9.QSioPGK2jY0QvRLT9OnVQ1SD2FA5lfKC_chHREXbvGlHYSre21Hw3ZKKdwSSZJ9j_gbW67XV5mnVe4AQRkCqXEz0C3MU5tvIjp0968Nf1v4r_STlTYknaBMkxdI6cw0s-ptkokTTkc4Fpr9aNcJMn1hLmrRy0x7ld4fWilPtWaNB8MGCjaaprHs_FKt6YA9gwcjv_pIeTbfbENoP5s5Vyi2lS5sm8CYAgLNJKhQe6CI.6n-gTEKYOLPLeNThF3W7xw-Dla6-nvPyxx2WJHfLQkU%26dib_tag%3Dse%26keywords%3Dfastrack%2Bdezire%2Bfx1%2Bpro%26nsdOptOutParam%3Dtrue%26qid%3D1747456532%26sprefix%3Dfastrack%2Bdezire%2Bfx1%2Bpro%252Caps%252C315%26sr%3D8-22-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9idGY%26psc%3D1
+    - button "View Sponsored information or leave ad feedback": Sponsored
+    - link "Sponsored Ad - Noise Newly Launched Halo 2 Smart Watch 1st Ever Functional Rotating Dial (Axe-Cut Bezel), 1.43\" AMOLED, Stainless Steel Build, Custom Transition Effects, BT Calling, Health Suite (Vintage Brown)":
+      - /url: /sspa/click?ie=UTF8&spc=MTo4MTE1Mjc3MDc0NjMwODA3OjE3NDc0NTY1MzI6c3BfYnRmOjMwMDMyNzMzNTUyNDgzMjo6MDo6&url=%2FNoise-Launched-Functional-Stainless-Transition%2Fdp%2FB0D6N83X6D%2Fref%3Dsr_1_22_sspa%3Fcrid%3D1MB4SWDSU01PH%26dib%3DeyJ2IjoiMSJ9.QSioPGK2jY0QvRLT9OnVQ1SD2FA5lfKC_chHREXbvGlHYSre21Hw3ZKKdwSSZJ9j_gbW67XV5mnVe4AQRkCqXEz0C3MU5tvIjp0968Nf1v4r_STlTYknaBMkxdI6cw0s-ptkokTTkc4Fpr9aNcJMn1hLmrRy0x7ld4fWilPtWaNB8MGCjaaprHs_FKt6YA9gwcjv_pIeTbfbENoP5s5Vyi2lS5sm8CYAgLNJKhQe6CI.6n-gTEKYOLPLeNThF3W7xw-Dla6-nvPyxx2WJHfLQkU%26dib_tag%3Dse%26keywords%3Dfastrack%2Bdezire%2Bfx1%2Bpro%26nsdOptOutParam%3Dtrue%26qid%3D1747456532%26sprefix%3Dfastrack%2Bdezire%2Bfx1%2Bpro%252Caps%252C315%26sr%3D8-22-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9idGY%26psc%3D1
+      - heading "Sponsored Ad - Noise Newly Launched Halo 2 Smart Watch 1st Ever Functional Rotating Dial (Axe-Cut Bezel), 1.43\" AMOLED, Stainless Steel Build, Custom Transition Effects, BT Calling, Health Suite (Vintage Brown)" [level=2]: Noise Newly Launched Halo 2 Smart Watch 1st Ever Functional Rotating Dial (Axe-Cut Bezel), 1.43" AMOLED, Stainless Steel Build, Custom Transition Effects, BT Calling, Health Suite (Vintage Brown)
+    - button "3.8 out of 5 stars, rating details"
+    - link "3,676 ratings":
+      - /url: /sspa/click?ie=UTF8&spc=MTo4MTE1Mjc3MDc0NjMwODA3OjE3NDc0NTY1MzI6c3BfYnRmOjMwMDMyNzMzNTUyNDgzMjo6MDo6&url=%2FNoise-Launched-Functional-Stainless-Transition%2Fdp%2FB0D6N83X6D%2Fref%3Dsr_1_22_sspa%3Fcrid%3D1MB4SWDSU01PH%26dib%3DeyJ2IjoiMSJ9.QSioPGK2jY0QvRLT9OnVQ1SD2FA5lfKC_chHREXbvGlHYSre21Hw3ZKKdwSSZJ9j_gbW67XV5mnVe4AQRkCqXEz0C3MU5tvIjp0968Nf1v4r_STlTYknaBMkxdI6cw0s-ptkokTTkc4Fpr9aNcJMn1hLmrRy0x7ld4fWilPtWaNB8MGCjaaprHs_FKt6YA9gwcjv_pIeTbfbENoP5s5Vyi2lS5sm8CYAgLNJKhQe6CI.6n-gTEKYOLPLeNThF3W7xw-Dla6-nvPyxx2WJHfLQkU%26dib_tag%3Dse%26keywords%3Dfastrack%2Bdezire%2Bfx1%2Bpro%26nsdOptOutParam%3Dtrue%26qid%3D1747456532%26sprefix%3Dfastrack%2Bdezire%2Bfx1%2Bpro%252Caps%252C315%26sr%3D8-22-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9idGY%26psc%3D1#customerReviews
+    - text: 200+ bought in past month Price, product page
+    - 'link "₹3,999 M.R.P: ₹6,999 M.R.P: ₹6,999"':
+      - /url: /sspa/click?ie=UTF8&spc=MTo4MTE1Mjc3MDc0NjMwODA3OjE3NDc0NTY1MzI6c3BfYnRmOjMwMDMyNzMzNTUyNDgzMjo6MDo6&url=%2FNoise-Launched-Functional-Stainless-Transition%2Fdp%2FB0D6N83X6D%2Fref%3Dsr_1_22_sspa%3Fcrid%3D1MB4SWDSU01PH%26dib%3DeyJ2IjoiMSJ9.QSioPGK2jY0QvRLT9OnVQ1SD2FA5lfKC_chHREXbvGlHYSre21Hw3ZKKdwSSZJ9j_gbW67XV5mnVe4AQRkCqXEz0C3MU5tvIjp0968Nf1v4r_STlTYknaBMkxdI6cw0s-ptkokTTkc4Fpr9aNcJMn1hLmrRy0x7ld4fWilPtWaNB8MGCjaaprHs_FKt6YA9gwcjv_pIeTbfbENoP5s5Vyi2lS5sm8CYAgLNJKhQe6CI.6n-gTEKYOLPLeNThF3W7xw-Dla6-nvPyxx2WJHfLQkU%26dib_tag%3Dse%26keywords%3Dfastrack%2Bdezire%2Bfx1%2Bpro%26nsdOptOutParam%3Dtrue%26qid%3D1747456532%26sprefix%3Dfastrack%2Bdezire%2Bfx1%2Bpro%252Caps%252C315%26sr%3D8-22-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9idGY%26psc%3D1
+    - text: (43% off)
+    - img "Amazon Prime"
+    - text: "FREE delivery Tue, 20 May Service: Installation"
+    - button "Add to cart"
+- link "Sponsored video; click to navigate to featured product page.":
+  - /url: https://aax-eu.amazon.in/x/c/JNoysUi0mk3u279V-aMzg3QAAAGW3IagkgMAAAH2AQBvbm9fdHhuX2JpZDMgICBvbm9fdHhuX2ltcDIgICAEbDQm/https://www.amazon.in/dp/B0DDT8BLYX?pd_rd_i=B0DDT8BLYX&pf_rd_p=c6080562-3381-4d95-ad87-c0347e4ad274&pf_rd_r=F6E1NNZVHVZD1HA522Y4&pd_rd_wg=vAy1O&pd_rd_w=0xWCo&pd_rd_r=16e8bb6e-fa66-440d-8a2e-7654227be404
+- link:
+  - /url: https://aax-eu.amazon.in/x/c/JNoysUi0mk3u279V-aMzg3QAAAGW3IagkgMAAAH2AQBvbm9fdHhuX2JpZDMgICBvbm9fdHhuX2ltcDIgICAEbDQm/https://www.amazon.in/OLEVS-Chronograph-Stainless-Business-Waterproof/dp/B0DDT8BLYX/ref=sxbs_sbv_search_btf?content-id=amzn1.sym.c6080562-3381-4d95-ad87-c0347e4ad274%3Aamzn1.sym.c6080562-3381-4d95-ad87-c0347e4ad274&crid=1MB4SWDSU01PH&cv_ct_cx=fastrack+dezire+fx1+pro&keywords=fastrack+dezire+fx1+pro&nsdOptOutParam=true&pd_rd_i=B0DDT8BLYX&pd_rd_r=16e8bb6e-fa66-440d-8a2e-7654227be404&pd_rd_w=0xWCo&pd_rd_wg=vAy1O&pf_rd_p=c6080562-3381-4d95-ad87-c0347e4ad274&pf_rd_r=F6E1NNZVHVZD1HA522Y4&qid=1747456532&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sprefix=fastrack+dezire+fx1+pro%2Caps%2C315&sr=1-1-f1821008-9dea-4812-b2b6-4a6e4a4f2d55
+- text: Sponsored
+- link "OLEVS Mens Chronograph Watch Gold Silver Stainless Steel Chain Quartz Wrist Watches Business Dress Waterproof Luminous Date Watch":
+  - /url: https://aax-eu.amazon.in/x/c/JNoysUi0mk3u279V-aMzg3QAAAGW3IagkgMAAAH2AQBvbm9fdHhuX2JpZDMgICBvbm9fdHhuX2ltcDIgICAEbDQm/https://www.amazon.in/OLEVS-Chronograph-Stainless-Business-Waterproof/dp/B0DDT8BLYX/ref=sxbs_sbv_search_btf?content-id=amzn1.sym.c6080562-3381-4d95-ad87-c0347e4ad274%3Aamzn1.sym.c6080562-3381-4d95-ad87-c0347e4ad274&crid=1MB4SWDSU01PH&cv_ct_cx=fastrack+dezire+fx1+pro&keywords=fastrack+dezire+fx1+pro&nsdOptOutParam=true&pd_rd_i=B0DDT8BLYX&pd_rd_r=16e8bb6e-fa66-440d-8a2e-7654227be404&pd_rd_w=0xWCo&pd_rd_wg=vAy1O&pf_rd_p=c6080562-3381-4d95-ad87-c0347e4ad274&pf_rd_r=F6E1NNZVHVZD1HA522Y4&qid=1747456532&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sprefix=fastrack+dezire+fx1+pro%2Caps%2C315&sr=1-1-f1821008-9dea-4812-b2b6-4a6e4a4f2d55
+  - heading "OLEVS Mens Chronograph Watch Gold Silver Stainless Steel Chain Quartz Wrist Watches Business Dress Waterproof Luminous Date Watch" [level=2]
+- button "3.9 out of 5 stars, rating details"
+- link "1,487 ratings":
+  - /url: https://aax-eu.amazon.in/x/c/JNoysUi0mk3u279V-aMzg3QAAAGW3IagkgMAAAH2AQBvbm9fdHhuX2JpZDMgICBvbm9fdHhuX2ltcDIgICAEbDQm/https://www.amazon.in/OLEVS-Chronograph-Stainless-Business-Waterproof/dp/B0DDT8BLYX/ref=sxbs_sbv_search_btf?content-id=amzn1.sym.c6080562-3381-4d95-ad87-c0347e4ad274%3Aamzn1.sym.c6080562-3381-4d95-ad87-c0347e4ad274&crid=1MB4SWDSU01PH&cv_ct_cx=fastrack+dezire+fx1+pro&keywords=fastrack+dezire+fx1+pro&nsdOptOutParam=true&pd_rd_i=B0DDT8BLYX&pd_rd_r=16e8bb6e-fa66-440d-8a2e-7654227be404&pd_rd_w=0xWCo&pd_rd_wg=vAy1O&pf_rd_p=c6080562-3381-4d95-ad87-c0347e4ad274&pf_rd_r=F6E1NNZVHVZD1HA522Y4&qid=1747456532&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sprefix=fastrack+dezire+fx1+pro%2Caps%2C315&sr=1-1-f1821008-9dea-4812-b2b6-4a6e4a4f2d55#customerReviews
+- text: 50+ bought in past month
+- link "Limited time deal":
+  - /url: /gp/goldbox/
+- text: Price, product page
+- 'link "₹3,419 M.R.P: ₹3,900 M.R.P: ₹3,900"':
+  - /url: https://aax-eu.amazon.in/x/c/JNoysUi0mk3u279V-aMzg3QAAAGW3IagkgMAAAH2AQBvbm9fdHhuX2JpZDMgICBvbm9fdHhuX2ltcDIgICAEbDQm/https://www.amazon.in/OLEVS-Chronograph-Stainless-Business-Waterproof/dp/B0DDT8BLYX/ref=sxbs_sbv_search_btf?content-id=amzn1.sym.c6080562-3381-4d95-ad87-c0347e4ad274%3Aamzn1.sym.c6080562-3381-4d95-ad87-c0347e4ad274&crid=1MB4SWDSU01PH&cv_ct_cx=fastrack+dezire+fx1+pro&keywords=fastrack+dezire+fx1+pro&nsdOptOutParam=true&pd_rd_i=B0DDT8BLYX&pd_rd_r=16e8bb6e-fa66-440d-8a2e-7654227be404&pd_rd_w=0xWCo&pd_rd_wg=vAy1O&pf_rd_p=c6080562-3381-4d95-ad87-c0347e4ad274&pf_rd_r=F6E1NNZVHVZD1HA522Y4&qid=1747456532&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sprefix=fastrack+dezire+fx1+pro%2Caps%2C315&sr=1-1-f1821008-9dea-4812-b2b6-4a6e4a4f2d55
+- text: (12% off) Save ₹100 with coupon
+- img "Amazon Prime"
+- text: Get it by Wednesday, 21 May FREE Delivery by Amazon
+- navigation:
+  - region "pagination":
+    - list:
+      - button "Previous" [disabled]
+      - listitem:
+        - button "Page 1": "1"
+      - listitem:
+        - button "Go to page 2": "2"
+      - listitem:
+        - button "Go to page 3": "3"
+      - button [disabled]
+      - button "20" [disabled]
+      - listitem:
+        - button "Go to next page, page 2": Next
+- heading "Brands related to your search"
+- button "Leave feedback on Sponsored ad": Sponsored
+- link "Branded image from Amazfit":
+  - /url: https://aax-eu.amazon.in/x/c/JAplBar7HoJuZ0sv63ZtitAAAAGW3IahFAMAAAH2AQBvbm9fdHhuX2JpZDMgICBvbm9fdHhuX2ltcDEgICB3jn42/https://www.amazon.in/stores/page/D14E96D9-82B1-4BFC-8C83-560561606CC4/?_encoding=UTF8&store_ref=SB_A01054632X3VBQIAKVEED-A078214030N2TCPX12D1F&pd_rd_plhdr=t&aaxitk=01920d74cee92083505d2493966c80bb&hsa_cr_id=0&lp_asins=B0CDX74LYS%2CB0CDX8H6XF%2CB0DDY17RJ3&lp_query=fastrack%20dezire%20fx1%20pro&lp_slot=desktop-hsa-3psl&ref_=sbx_be_s_3psl_mbd_mb0_ls&pd_rd_w=AYHHZ&content-id=amzn1.sym.b886e04b-39e7-411c-8add-a6879775de2f%3Aamzn1.sym.b886e04b-39e7-411c-8add-a6879775de2f&pf_rd_p=b886e04b-39e7-411c-8add-a6879775de2f&pf_rd_r=F6E1NNZVHVZD1HA522Y4&pd_rd_wg=KuQUO&pd_rd_r=8759988e-961b-4943-b5c3-93d54ab27041
+  - img "Branded image from Amazfit"
+- link "Amazfit":
+  - /url: https://aax-eu.amazon.in/x/c/JAplBar7HoJuZ0sv63ZtitAAAAGW3IahFAMAAAH2AQBvbm9fdHhuX2JpZDMgICBvbm9fdHhuX2ltcDEgICB3jn42/https://www.amazon.in/stores/page/D14E96D9-82B1-4BFC-8C83-560561606CC4/?_encoding=UTF8&store_ref=SB_A01054632X3VBQIAKVEED-A078214030N2TCPX12D1F&pd_rd_plhdr=t&aaxitk=01920d74cee92083505d2493966c80bb&hsa_cr_id=0&lp_asins=B0CDX74LYS%2CB0CDX8H6XF%2CB0DDY17RJ3&lp_query=fastrack%20dezire%20fx1%20pro&lp_slot=desktop-hsa-3psl&ref_=sbx_be_s_3psl_mbd_mb0_logo&pd_rd_w=AYHHZ&content-id=amzn1.sym.b886e04b-39e7-411c-8add-a6879775de2f%3Aamzn1.sym.b886e04b-39e7-411c-8add-a6879775de2f&pf_rd_p=b886e04b-39e7-411c-8add-a6879775de2f&pf_rd_r=F6E1NNZVHVZD1HA522Y4&pd_rd_wg=KuQUO&pd_rd_r=8759988e-961b-4943-b5c3-93d54ab27041
+  - img "Amazfit"
+- link "Amazfit Balance Watches":
+  - /url: https://aax-eu.amazon.in/x/c/JAplBar7HoJuZ0sv63ZtitAAAAGW3IahFAMAAAH2AQBvbm9fdHhuX2JpZDMgICBvbm9fdHhuX2ltcDEgICB3jn42/https://www.amazon.in/stores/page/D14E96D9-82B1-4BFC-8C83-560561606CC4/?_encoding=UTF8&store_ref=SB_A01054632X3VBQIAKVEED-A078214030N2TCPX12D1F&pd_rd_plhdr=t&aaxitk=01920d74cee92083505d2493966c80bb&hsa_cr_id=0&lp_asins=B0CDX74LYS%2CB0CDX8H6XF%2CB0DDY17RJ3&lp_query=fastrack%20dezire%20fx1%20pro&lp_slot=desktop-hsa-3psl&ref_=sbx_be_s_3psl_mbd_mb0_hl&pd_rd_w=AYHHZ&content-id=amzn1.sym.b886e04b-39e7-411c-8add-a6879775de2f%3Aamzn1.sym.b886e04b-39e7-411c-8add-a6879775de2f&pf_rd_p=b886e04b-39e7-411c-8add-a6879775de2f&pf_rd_r=F6E1NNZVHVZD1HA522Y4&pd_rd_wg=KuQUO&pd_rd_r=8759988e-961b-4943-b5c3-93d54ab27041
+- link "Branded image from Boult Smartwatch":
+  - /url: https://aax-eu.amazon.in/x/c/JN_MUkXB9J7VYEvo5Lae9qwAAAGW3IahFAMAAAH2AQBvbm9fdHhuX2JpZDMgICBvbm9fdHhuX2ltcDEgICCoUlmR/https://www.amazon.in/stores/page/30F4F36B-C24F-4B7D-A9F5-CE12B1259B47/?_encoding=UTF8&store_ref=SB_A01345861GZ81Y8KA6ZFO-A0480269159C2VK5C4KK1&pd_rd_plhdr=t&aaxitk=fb783018969991d6a3368c281738d77b&hsa_cr_id=0&lp_asins=B0DT9X9NVX%2CB0DT9XFQCC%2CB0DSLRYYKL&lp_query=fastrack%20dezire%20fx1%20pro&lp_slot=desktop-hsa-3psl&ref_=sbx_be_s_3psl_mbd_mb1_ls&pd_rd_w=AYHHZ&content-id=amzn1.sym.b886e04b-39e7-411c-8add-a6879775de2f%3Aamzn1.sym.b886e04b-39e7-411c-8add-a6879775de2f&pf_rd_p=b886e04b-39e7-411c-8add-a6879775de2f&pf_rd_r=F6E1NNZVHVZD1HA522Y4&pd_rd_wg=KuQUO&pd_rd_r=8759988e-961b-4943-b5c3-93d54ab27041
+  - img "Branded image from Boult Smartwatch"
+- link "Boult Smartwatch":
+  - /url: https://aax-eu.amazon.in/x/c/JN_MUkXB9J7VYEvo5Lae9qwAAAGW3IahFAMAAAH2AQBvbm9fdHhuX2JpZDMgICBvbm9fdHhuX2ltcDEgICCoUlmR/https://www.amazon.in/stores/page/30F4F36B-C24F-4B7D-A9F5-CE12B1259B47/?_encoding=UTF8&store_ref=SB_A01345861GZ81Y8KA6ZFO-A0480269159C2VK5C4KK1&pd_rd_plhdr=t&aaxitk=fb783018969991d6a3368c281738d77b&hsa_cr_id=0&lp_asins=B0DT9X9NVX%2CB0DT9XFQCC%2CB0DSLRYYKL&lp_query=fastrack%20dezire%20fx1%20pro&lp_slot=desktop-hsa-3psl&ref_=sbx_be_s_3psl_mbd_mb1_logo&pd_rd_w=AYHHZ&content-id=amzn1.sym.b886e04b-39e7-411c-8add-a6879775de2f%3Aamzn1.sym.b886e04b-39e7-411c-8add-a6879775de2f&pf_rd_p=b886e04b-39e7-411c-8add-a6879775de2f&pf_rd_r=F6E1NNZVHVZD1HA522Y4&pd_rd_wg=KuQUO&pd_rd_r=8759988e-961b-4943-b5c3-93d54ab27041
+  - img "Boult Smartwatch"
+- link "Drift Max- The Ultimate Upgrade in Smartwatches!":
+  - /url: https://aax-eu.amazon.in/x/c/JN_MUkXB9J7VYEvo5Lae9qwAAAGW3IahFAMAAAH2AQBvbm9fdHhuX2JpZDMgICBvbm9fdHhuX2ltcDEgICCoUlmR/https://www.amazon.in/stores/page/30F4F36B-C24F-4B7D-A9F5-CE12B1259B47/?_encoding=UTF8&store_ref=SB_A01345861GZ81Y8KA6ZFO-A0480269159C2VK5C4KK1&pd_rd_plhdr=t&aaxitk=fb783018969991d6a3368c281738d77b&hsa_cr_id=0&lp_asins=B0DT9X9NVX%2CB0DT9XFQCC%2CB0DSLRYYKL&lp_query=fastrack%20dezire%20fx1%20pro&lp_slot=desktop-hsa-3psl&ref_=sbx_be_s_3psl_mbd_mb1_hl&pd_rd_w=AYHHZ&content-id=amzn1.sym.b886e04b-39e7-411c-8add-a6879775de2f%3Aamzn1.sym.b886e04b-39e7-411c-8add-a6879775de2f&pf_rd_p=b886e04b-39e7-411c-8add-a6879775de2f&pf_rd_r=F6E1NNZVHVZD1HA522Y4&pd_rd_wg=KuQUO&pd_rd_r=8759988e-961b-4943-b5c3-93d54ab27041
+- link "Branded image from Hammer":
+  - /url: https://aax-eu.amazon.in/x/c/JCQpQE4sDGPz_GDX0H3htjoAAAGW3IahFQMAAAH2AQBvbm9fdHhuX2JpZDMgICBvbm9fdHhuX2ltcDEgICBo3pS1/https://www.amazon.in/stores/page/BE0D4404-9535-4272-B2DE-FE2C637B7CCF/?_encoding=UTF8&store_ref=SB_A0959576JAFLSVAACGY4-A0876040HZU0HC6IRAOQ&pd_rd_plhdr=t&aaxitk=a3ee6039b2ceaaddbb4ce672b1a2ae0f&hsa_cr_id=0&lp_asins=B0C59FK8QQ&lp_query=fastrack%20dezire%20fx1%20pro&lp_slot=desktop-hsa-3psl&ref_=sbx_be_s_3psl_mbd_mb2_ls&pd_rd_w=AYHHZ&content-id=amzn1.sym.b886e04b-39e7-411c-8add-a6879775de2f%3Aamzn1.sym.b886e04b-39e7-411c-8add-a6879775de2f&pf_rd_p=b886e04b-39e7-411c-8add-a6879775de2f&pf_rd_r=F6E1NNZVHVZD1HA522Y4&pd_rd_wg=KuQUO&pd_rd_r=8759988e-961b-4943-b5c3-93d54ab27041
+  - img "Branded image from Hammer"
+- link "Hammer":
+  - /url: https://aax-eu.amazon.in/x/c/JCQpQE4sDGPz_GDX0H3htjoAAAGW3IahFQMAAAH2AQBvbm9fdHhuX2JpZDMgICBvbm9fdHhuX2ltcDEgICBo3pS1/https://www.amazon.in/stores/page/BE0D4404-9535-4272-B2DE-FE2C637B7CCF/?_encoding=UTF8&store_ref=SB_A0959576JAFLSVAACGY4-A0876040HZU0HC6IRAOQ&pd_rd_plhdr=t&aaxitk=a3ee6039b2ceaaddbb4ce672b1a2ae0f&hsa_cr_id=0&lp_asins=B0C59FK8QQ&lp_query=fastrack%20dezire%20fx1%20pro&lp_slot=desktop-hsa-3psl&ref_=sbx_be_s_3psl_mbd_mb2_logo&pd_rd_w=AYHHZ&content-id=amzn1.sym.b886e04b-39e7-411c-8add-a6879775de2f%3Aamzn1.sym.b886e04b-39e7-411c-8add-a6879775de2f&pf_rd_p=b886e04b-39e7-411c-8add-a6879775de2f&pf_rd_r=F6E1NNZVHVZD1HA522Y4&pd_rd_wg=KuQUO&pd_rd_r=8759988e-961b-4943-b5c3-93d54ab27041
+  - img "Hammer"
+- link "1.96\" Display, BT Calling, Metal Body, AOD":
+  - /url: https://aax-eu.amazon.in/x/c/JCQpQE4sDGPz_GDX0H3htjoAAAGW3IahFQMAAAH2AQBvbm9fdHhuX2JpZDMgICBvbm9fdHhuX2ltcDEgICBo3pS1/https://www.amazon.in/stores/page/BE0D4404-9535-4272-B2DE-FE2C637B7CCF/?_encoding=UTF8&store_ref=SB_A0959576JAFLSVAACGY4-A0876040HZU0HC6IRAOQ&pd_rd_plhdr=t&aaxitk=a3ee6039b2ceaaddbb4ce672b1a2ae0f&hsa_cr_id=0&lp_asins=B0C59FK8QQ&lp_query=fastrack%20dezire%20fx1%20pro&lp_slot=desktop-hsa-3psl&ref_=sbx_be_s_3psl_mbd_mb2_hl&pd_rd_w=AYHHZ&content-id=amzn1.sym.b886e04b-39e7-411c-8add-a6879775de2f%3Aamzn1.sym.b886e04b-39e7-411c-8add-a6879775de2f&pf_rd_p=b886e04b-39e7-411c-8add-a6879775de2f&pf_rd_r=F6E1NNZVHVZD1HA522Y4&pd_rd_wg=KuQUO&pd_rd_r=8759988e-961b-4943-b5c3-93d54ab27041
+- heading "Need help?" [level=2]
+- link "Visit the help section":
+  - /url: /gp/help/customer/display.html?nodeId=201889520
+- text: or
+- link "contact us":
+  - /url: /gp/help/customer/contact-us
+- iframe
+- button "Leave feedback on Sponsored advertisement"
+- link "Go back to filtering menu":
+  - /url: "#s-skipLinkTargetForFilterOptions"
+- link "Skip to main search results":
+  - /url: "#s-skipLinkTargetForMainSearchResults"
+- group "Brands":
+  - heading "Brands" [level=2]
+  - list "Brands":
+    - listitem:
+      - link "Apply the filter Fastrack to narrow results":
+        - /url: /s?k=fastrack+dezire+fx1+pro&rh=p_123%3A230542&dc&crid=1MB4SWDSU01PH&qid=1747456532&rnid=91049095031&sprefix=fastrack+dezire+fx1+pro%2Caps%2C315&ref=sr_nr_p_123_1&ds=v1%3APQQLlkxeeg4%2BO8Edjl0zB8gDZNsaWRXpRcAYDNZdNHY
+        - text: Fastrack
+    - listitem:
+      - link "Apply the filter Noise to narrow results":
+        - /url: /s?k=fastrack+dezire+fx1+pro&rh=p_123%3A42717&dc&crid=1MB4SWDSU01PH&qid=1747456532&rnid=91049095031&sprefix=fastrack+dezire+fx1+pro%2Caps%2C315&ref=sr_nr_p_123_2&ds=v1%3AYjp%2F7qZiC3mqDj4A6vbKP3eu0tRl1yreeMYxOl0bcac
+        - text: Noise
+    - listitem:
+      - link "Apply the filter Fire-Boltt to narrow results":
+        - /url: /s?k=fastrack+dezire+fx1+pro&rh=p_123%3A851753&dc&crid=1MB4SWDSU01PH&qid=1747456532&rnid=91049095031&sprefix=fastrack+dezire+fx1+pro%2Caps%2C315&ref=sr_nr_p_123_3&ds=v1%3ALuM6rVCazmkGGgjJ1LpchDEuYm4KSt29v6V9VeoXgR4
+        - text: Fire-Boltt
+    - listitem:
+      - link "Apply the filter Boult to narrow results":
+        - /url: /s?k=fastrack+dezire+fx1+pro&rh=p_123%3A445583&dc&crid=1MB4SWDSU01PH&qid=1747456532&rnid=91049095031&sprefix=fastrack+dezire+fx1+pro%2Caps%2C315&ref=sr_nr_p_123_4&ds=v1%3AsY%2BPFcA9%2F61anh1ILT9cdnIt1PkRMnrEcMvW5jKPFQY
+        - text: Boult
+- group "Customer Review":
+  - heading "Customer Review" [level=2]
+  - list "Customer Review":
+    - listitem:
+      - link "Apply the filter 4 Stars & Up to narrow results":
+        - /url: /s?k=fastrack+dezire+fx1+pro&rh=p_72%3A1318476031&dc&crid=1MB4SWDSU01PH&qid=1747456532&rnid=1318475031&sprefix=fastrack+dezire+fx1+pro%2Caps%2C315&ref=sr_nr_p_72_1&ds=v1%3AeRfcj6V9p5tBWJQN3VzTOvVvr6Fb0a2LSL5esnkEnUk
+        - text: 4 Stars & Up
+- group "Category":
+  - heading "Category" [level=2]
+  - list "Category":
+    - listitem:
+      - link "Wearable Technology":
+        - /url: /s?k=fastrack+dezire+fx1+pro&rh=n%3A11599648031&dc&crid=1MB4SWDSU01PH&qid=1747456532&rnid=3576079031&sprefix=fastrack+dezire+fx1+pro%2Caps%2C315&ref=sr_nr_n_1&ds=v1%3AQYNIhFCrhtE2t143x9N%2BSlgLTdhS39PFIUbgDIhOl%2Bk
+    - listitem:
+      - link "Smart Watches":
+        - /url: /s?k=fastrack+dezire+fx1+pro&rh=n%3A11599648031%2Cn%3A5605728031&dc&crid=1MB4SWDSU01PH&qid=1747456532&rnid=3576079031&sprefix=fastrack+dezire+fx1+pro%2Caps%2C315&ref=sr_nr_n_2&ds=v1%3AUEnZkPmTDoO55yj2n7oi%2FPQwtgec25v7aSLKaZVUlU0
+    - listitem:
+      - link "Men's Watches":
+        - /url: /s?k=fastrack+dezire+fx1+pro&rh=n%3A2563504031&dc&crid=1MB4SWDSU01PH&qid=1747456532&rnid=3576079031&sprefix=fastrack+dezire+fx1+pro%2Caps%2C315&ref=sr_nr_n_3&ds=v1%3AfhQa2amCMPBrmYujE%2F00KKTquWDY%2ByrTgWgTullGJ2Q
+    - listitem:
+      - link "Men's Fashion Smartwatches":
+        - /url: /s?k=fastrack+dezire+fx1+pro&rh=n%3A2563504031%2Cn%3A15723938031&dc&crid=1MB4SWDSU01PH&qid=1747456532&rnid=3576079031&sprefix=fastrack+dezire+fx1+pro%2Caps%2C315&ref=sr_nr_n_4&ds=v1%3ADlli7dX4E7UDyJyRnKrjhuJt%2F%2BTx%2BY6rC%2FhTEauUdyY
+    - listitem:
+      - link "Women's Watches":
+        - /url: /s?k=fastrack+dezire+fx1+pro&rh=n%3A2563505031&dc&crid=1MB4SWDSU01PH&qid=1747456532&rnid=3576079031&sprefix=fastrack+dezire+fx1+pro%2Caps%2C315&ref=sr_nr_n_5&ds=v1%3AuoUh6WQsbZ14FDeqVslqNiYZKOjY58vG75DWLoKuMqE
+    - listitem:
+      - link "Women's Fashion Smartwatches":
+        - /url: /s?k=fastrack+dezire+fx1+pro&rh=n%3A2563505031%2Cn%3A15723942031&dc&crid=1MB4SWDSU01PH&qid=1747456532&rnid=3576079031&sprefix=fastrack+dezire+fx1+pro%2Caps%2C315&ref=sr_nr_n_6&ds=v1%3AJXJPJce0t79wYsEmHU%2FJn%2BVqChuEuzWliLNxTnnHwtY
+- group:
+  - text: Price ₹255 ₹9,000+
+  - slider "Minimum price": "0"
+  - slider "Maximum price": "152"
+  - button "Go - Submit price range"
+  - heading "Deals & Discounts" [level=2]
+  - list "Deals & Discounts":
+    - listitem:
+      - link "All Discounts":
+        - /url: /s?k=fastrack+dezire+fx1+pro&rh=p_n_deal_type%3A26921226031&dc&crid=1MB4SWDSU01PH&qid=1747456532&rnid=26921223031&sprefix=fastrack+dezire+fx1+pro%2Caps%2C315&ref=sr_nr_p_n_deal_type_1&ds=v1%3AeArJ0KtrMPL8fdV0mXknoY9tZYwVVRrWE0mfz8ow4hU
+    - listitem:
+      - link "Today's Deals":
+        - /url: /s?k=fastrack+dezire+fx1+pro&rh=p_n_deal_type%3A26921224031&dc&crid=1MB4SWDSU01PH&qid=1747456532&rnid=26921223031&sprefix=fastrack+dezire+fx1+pro%2Caps%2C315&ref=sr_nr_p_n_deal_type_2&ds=v1%3ABrBopsXQXVNJB55LvstDc%2BQFMdsGUsPzeTm4VqsWPxs
+- group "Discount":
+  - heading "Discount" [level=2]
+  - list "Discount":
+    - listitem:
+      - link "10% Off or more":
+        - /url: /s?k=fastrack+dezire+fx1+pro&rh=p_n_pct-off-with-tax%3A2665399031&dc&crid=1MB4SWDSU01PH&qid=1747456532&rnid=2665398031&sprefix=fastrack+dezire+fx1+pro%2Caps%2C315&ref=sr_nr_p_n_pct-off-with-tax_1&ds=v1%3AbsQzF6jscIWFK1ACh8o6L6RPeWgv4DmsAwFEAVlhA3c
+    - listitem:
+      - link "25% Off or more":
+        - /url: /s?k=fastrack+dezire+fx1+pro&rh=p_n_pct-off-with-tax%3A2665400031&dc&crid=1MB4SWDSU01PH&qid=1747456532&rnid=2665398031&sprefix=fastrack+dezire+fx1+pro%2Caps%2C315&ref=sr_nr_p_n_pct-off-with-tax_2&ds=v1%3AP%2FMMCzpqSPZrFrUjn%2FIG8I5914s4ChtRq8AGG07nwvA
+    - listitem:
+      - link "35% Off or more":
+        - /url: /s?k=fastrack+dezire+fx1+pro&rh=p_n_pct-off-with-tax%3A2665402031&dc&crid=1MB4SWDSU01PH&qid=1747456532&rnid=2665398031&sprefix=fastrack+dezire+fx1+pro%2Caps%2C315&ref=sr_nr_p_n_pct-off-with-tax_3&ds=v1%3A0O6ernvFui3E0AsR9ktaZhkaHnazJLB0VdWWGYjkcKw
+    - listitem:
+      - link "50% Off or more":
+        - /url: /s?k=fastrack+dezire+fx1+pro&rh=p_n_pct-off-with-tax%3A2665401031&dc&crid=1MB4SWDSU01PH&qid=1747456532&rnid=2665398031&sprefix=fastrack+dezire+fx1+pro%2Caps%2C315&ref=sr_nr_p_n_pct-off-with-tax_4&ds=v1%3AbD8L0nMRuf6srtpTiVYm1mvoZ6TWh%2FZtU9txCmqh8K8
+    - listitem:
+      - link "60% Off or more":
+        - /url: /s?k=fastrack+dezire+fx1+pro&rh=p_n_pct-off-with-tax%3A27060456031&dc&crid=1MB4SWDSU01PH&qid=1747456532&rnid=2665398031&sprefix=fastrack+dezire+fx1+pro%2Caps%2C315&ref=sr_nr_p_n_pct-off-with-tax_5&ds=v1%3Aire1r2fUEwZ339o6R%2FJFnZldtzFGCI%2BbhvyYrLnDyP4
+    - listitem:
+      - link "70% Off or more":
+        - /url: /s?k=fastrack+dezire+fx1+pro&rh=p_n_pct-off-with-tax%3A27060457031&dc&crid=1MB4SWDSU01PH&qid=1747456532&rnid=2665398031&sprefix=fastrack+dezire+fx1+pro%2Caps%2C315&ref=sr_nr_p_n_pct-off-with-tax_6&ds=v1%3AKSlTSaybnxNMhZtMKB2z7Jshdv1drFFOZhC21i3aaw4
+- group "Computers & Accessories Brands":
+  - heading "Computers & Accessories Brands" [level=2]
+  - list "Computers & Accessories Brands":
+    - listitem:
+      - link "Apply the filter Top Brands to narrow results":
+        - /url: /s?k=fastrack+dezire+fx1+pro&rh=p_n_format_browse-bin%3A30678576031&dc&crid=1MB4SWDSU01PH&qid=1747456532&rnid=30678571031&sprefix=fastrack+dezire+fx1+pro%2Caps%2C315&ref=sr_nr_p_n_format_browse-bin_1&ds=v1%3Ah3rIXI556UCHz%2Fy7DMs5RNXANJ0Z57fV7scs5PzIP84
+        - text: Top Brands
+- group "Special Features":
+  - heading "Special Features" [level=2]
+  - list "Special Features":
+    - listitem:
+      - link "Apply the filter Activity Tracker to narrow results":
+        - /url: /s?k=fastrack+dezire+fx1+pro&rh=p_n_feature_twenty-three_browse-bin%3A28365711031&dc&crid=1MB4SWDSU01PH&qid=1747456532&rnid=28365709031&sprefix=fastrack+dezire+fx1+pro%2Caps%2C315&ref=sr_nr_p_n_feature_twenty-three_browse-bin_1&ds=v1%3AuI%2FYIhSZ8fPBpnJoZ3TgVF4B8WJ8PaLwCfnvlpjAb%2Fo
+        - text: Activity Tracker
+    - listitem:
+      - link "Apply the filter Alarm Clock to narrow results":
+        - /url: /s?k=fastrack+dezire+fx1+pro&rh=p_n_feature_twenty-three_browse-bin%3A28365751031&dc&crid=1MB4SWDSU01PH&qid=1747456532&rnid=28365709031&sprefix=fastrack+dezire+fx1+pro%2Caps%2C315&ref=sr_nr_p_n_feature_twenty-three_browse-bin_2&ds=v1%3AuvBBYdRyPCENXP6spbbmSZaq8i5cX3etardL7vwg1rg
+        - text: Alarm Clock
+    - listitem:
+      - link "Apply the filter Notifications to narrow results":
+        - /url: /s?k=fastrack+dezire+fx1+pro&rh=p_n_feature_twenty-three_browse-bin%3A28365749031&dc&crid=1MB4SWDSU01PH&qid=1747456532&rnid=28365709031&sprefix=fastrack+dezire+fx1+pro%2Caps%2C315&ref=sr_nr_p_n_feature_twenty-three_browse-bin_3&ds=v1%3AxEU1kyMKuTT1IhqIGDe0ST%2Fygj99PYPiaonuMAoojuM
+        - text: Notifications
+    - listitem:
+      - link "Apply the filter Phone Call to narrow results":
+        - /url: /s?k=fastrack+dezire+fx1+pro&rh=p_n_feature_twenty-three_browse-bin%3A28365742031&dc&crid=1MB4SWDSU01PH&qid=1747456532&rnid=28365709031&sprefix=fastrack+dezire+fx1+pro%2Caps%2C315&ref=sr_nr_p_n_feature_twenty-three_browse-bin_4&ds=v1%3A5leFgfjuGcTX0%2Fe58MgtdsR0dhKNvSz6f%2Bfc4E1CQGc
+        - text: Phone Call
+    - listitem:
+      - link "Apply the filter Daily Workout Memory to narrow results":
+        - /url: /s?k=fastrack+dezire+fx1+pro&rh=p_n_feature_twenty-three_browse-bin%3A28365750031&dc&crid=1MB4SWDSU01PH&qid=1747456532&rnid=28365709031&sprefix=fastrack+dezire+fx1+pro%2Caps%2C315&ref=sr_nr_p_n_feature_twenty-three_browse-bin_5&ds=v1%3AOu%2B4Uh0G6iJ0qQKGCrm4eSFi6LEfuGEDafdHFApyR3I
+        - text: Daily Workout Memory
+    - listitem:
+      - link "Apply the filter Lightweight to narrow results":
+        - /url: /s?k=fastrack+dezire+fx1+pro&rh=p_n_feature_twenty-three_browse-bin%3A99973441031&dc&crid=1MB4SWDSU01PH&qid=1747456532&rnid=28365709031&sprefix=fastrack+dezire+fx1+pro%2Caps%2C315&ref=sr_nr_p_n_feature_twenty-three_browse-bin_6&ds=v1%3ARbNfd6Pbm0x8YT9Ivvh9F3jDvDx4xLbZScIMDfyVdXk
+        - text: Lightweight
+    - listitem:
+      - link "Apply the filter Multisport Tracker to narrow results":
+        - /url: /s?k=fastrack+dezire+fx1+pro&rh=p_n_feature_twenty-three_browse-bin%3A28365717031&dc&crid=1MB4SWDSU01PH&qid=1747456532&rnid=28365709031&sprefix=fastrack+dezire+fx1+pro%2Caps%2C315&ref=sr_nr_p_n_feature_twenty-three_browse-bin_7&ds=v1%3AYNcluA%2BAulyowGQD%2BEeACod5xmgCWXhD0IyIBS0lLvI
+        - text: Multisport Tracker
+    - listitem:
+      - button "See more, Special Features": See more
+- group "Colour":
+  - heading "Colour" [level=2]
+  - list "Colour":
+    - listitem:
+      - link "Apply the filter Black to narrow results":
+        - /url: /s?k=fastrack+dezire+fx1+pro&rh=p_n_size_two_browse-vebin%3A6631644031&dc&crid=1MB4SWDSU01PH&qid=1747456532&rnid=6631642031&sprefix=fastrack+dezire+fx1+pro%2Caps%2C315&ref=sr_nr_p_n_size_two_browse-vebin_1&ds=v1%3AqbmMjUfEVph9M%2FpYDxbRAK584Ij4OA4TllqJsezufdA
+    - listitem:
+      - link "Apply the filter Brown to narrow results":
+        - /url: /s?k=fastrack+dezire+fx1+pro&rh=p_n_size_two_browse-vebin%3A6631646031&dc&crid=1MB4SWDSU01PH&qid=1747456532&rnid=6631642031&sprefix=fastrack+dezire+fx1+pro%2Caps%2C315&ref=sr_nr_p_n_size_two_browse-vebin_2&ds=v1%3APfUCUE03w8hsmZrnU0kJoIft%2FYYkUN%2F83eVShypHJ%2Bw
+    - listitem:
+      - link "Apply the filter Orange to narrow results":
+        - /url: /s?k=fastrack+dezire+fx1+pro&rh=p_n_size_two_browse-vebin%3A6631652031&dc&crid=1MB4SWDSU01PH&qid=1747456532&rnid=6631642031&sprefix=fastrack+dezire+fx1+pro%2Caps%2C315&ref=sr_nr_p_n_size_two_browse-vebin_3&ds=v1%3Aqr9aZpiOvcrzhxFnnFxNj3%2BAgWwCS0PpLyWyYOl0MTs
+    - listitem:
+      - link "Apply the filter Silver to narrow results":
+        - /url: /s?k=fastrack+dezire+fx1+pro&rh=p_n_size_two_browse-vebin%3A6631656031&dc&crid=1MB4SWDSU01PH&qid=1747456532&rnid=6631642031&sprefix=fastrack+dezire+fx1+pro%2Caps%2C315&ref=sr_nr_p_n_size_two_browse-vebin_4&ds=v1%3AfRkjp4hO04jC9tfzDiZ6PHSyDH%2BkQXZ5sMhfUj0dIA4
+    - listitem:
+      - link "Apply the filter Transparent to narrow results":
+        - /url: /s?k=fastrack+dezire+fx1+pro&rh=p_n_size_two_browse-vebin%3A6631657031&dc&crid=1MB4SWDSU01PH&qid=1747456532&rnid=6631642031&sprefix=fastrack+dezire+fx1+pro%2Caps%2C315&ref=sr_nr_p_n_size_two_browse-vebin_5&ds=v1%3AxZOHldTBK6KK%2B%2FcrjyRWpbvzr5Ivt08MVxpwHtPLejc
+- group "Item Condition":
+  - heading "Item Condition" [level=2]
+  - list "Item Condition":
+    - listitem:
+      - link "New":
+        - /url: /s?k=fastrack+dezire+fx1+pro&rh=p_n_condition-type%3A8609960031&dc&crid=1MB4SWDSU01PH&qid=1747456532&rnid=8609959031&sprefix=fastrack+dezire+fx1+pro%2Caps%2C315&ref=sr_nr_p_n_condition-type_1&ds=v1%3ApBYooEJEloMcLDOFi%2BfXVQc0CJxJK5%2F%2FcvbZHRoRfh8
+- group "Availability":
+  - heading "Availability" [level=2]
+  - list "Availability":
+    - listitem:
+      - link "Apply the filter Include Out of Stock to narrow results":
+        - /url: /s?k=fastrack+dezire+fx1+pro&rh=p_n_availability%3A1318485031&dc&crid=1MB4SWDSU01PH&qid=1747456532&rnid=1318483031&sprefix=fastrack+dezire+fx1+pro%2Caps%2C315&ref=sr_nr_p_n_availability_2&ds=v1%3A0MYdRkw3RXlIe7nATac1HuD1ZmAVfggwQpVQ0UUs3uM
+        - text: Include Out of Stock
+- group "Compatible Phone Models":
+  - heading "Compatible Phone Models" [level=2]
+  - list "Compatible Phone Models":
+    - listitem:
+      - link "Apply the filter Android Devices to narrow results":
+        - /url: /s?k=fastrack+dezire+fx1+pro&rh=p_n_feature_thirty_browse-bin%3A66444057031&dc&crid=1MB4SWDSU01PH&qid=1747456532&rnid=66444049031&sprefix=fastrack+dezire+fx1+pro%2Caps%2C315&ref=sr_nr_p_n_feature_thirty_browse-bin_1&ds=v1%3AMtcR3CmTDCoF5TarFhfat5DMIoSq%2FCXzol%2FmkyZT1jA
+        - text: Android Devices
+    - listitem:
+      - link "Apply the filter iOS Devices to narrow results":
+        - /url: /s?k=fastrack+dezire+fx1+pro&rh=p_n_feature_thirty_browse-bin%3A66444058031&dc&crid=1MB4SWDSU01PH&qid=1747456532&rnid=66444049031&sprefix=fastrack+dezire+fx1+pro%2Caps%2C315&ref=sr_nr_p_n_feature_thirty_browse-bin_2&ds=v1%3A1QVm%2F30Q%2BTBC780BrZxUOetLXpLfWCw%2FN5dBHNF%2Fnzk
+        - text: iOS Devices
+- group "Pay On Delivery":
+  - heading "Pay On Delivery" [level=2]
+  - list "Pay On Delivery":
+    - listitem:
+      - link "Apply the filter Eligible for Pay On Delivery to narrow results":
+        - /url: /s?k=fastrack+dezire+fx1+pro&rh=p_n_is_cod_eligible%3A4931671031&dc&crid=1MB4SWDSU01PH&qid=1747456532&rnid=4931670031&sprefix=fastrack+dezire+fx1+pro%2Caps%2C315&ref=sr_nr_p_n_is_cod_eligible_1&ds=v1%3AT610XQd99j%2FJxRnYArOtOhfe7jEYpgv5XywigO%2FAHeY
+        - text: Eligible for Pay On Delivery
+- group "Wearable Computer Battery Average Life":
+  - heading "Wearable Computer Battery Average Life" [level=2]
+  - list "Wearable Computer Battery Average Life":
+    - listitem:
+      - link "Apply the filter Up to 166 h to narrow results":
+        - /url: /s?k=fastrack+dezire+fx1+pro&rh=p_n_feature_twenty-six_browse-bin%3A49876607031&dc&crid=1MB4SWDSU01PH&qid=1747456532&rnid=49876606031&sprefix=fastrack+dezire+fx1+pro%2Caps%2C315&ref=sr_nr_p_n_feature_twenty-six_browse-bin_1&ds=v1%3A7yMvPusTBaFlgrsuQcUj9dAKOA9gk5jpS3DNf2Xk100
+        - text: Up to 166 h
+    - listitem:
+      - link "Apply the filter 167 to 203 h to narrow results":
+        - /url: /s?k=fastrack+dezire+fx1+pro&rh=p_n_feature_twenty-six_browse-bin%3A49876609031&dc&crid=1MB4SWDSU01PH&qid=1747456532&rnid=49876606031&sprefix=fastrack+dezire+fx1+pro%2Caps%2C315&ref=sr_nr_p_n_feature_twenty-six_browse-bin_2&ds=v1%3A0iaGTlyocfXjFysqd6PYnBAPcY2RYnE3eQjgwsRd7gI
+        - text: 167 to 203 h
+    - listitem:
+      - link "Apply the filter 204 to 240 h to narrow results":
+        - /url: /s?k=fastrack+dezire+fx1+pro&rh=p_n_feature_twenty-six_browse-bin%3A49876608031&dc&crid=1MB4SWDSU01PH&qid=1747456532&rnid=49876606031&sprefix=fastrack+dezire+fx1+pro%2Caps%2C315&ref=sr_nr_p_n_feature_twenty-six_browse-bin_3&ds=v1%3ABlmdEvkvp54WfVKJZ5o5CfTM8yHYa1RbNXJCC3wwUDg
+        - text: 204 to 240 h
+    - listitem:
+      - link "Apply the filter 241 h & Above to narrow results":
+        - /url: /s?k=fastrack+dezire+fx1+pro&rh=p_n_feature_twenty-six_browse-bin%3A49876610031&dc&crid=1MB4SWDSU01PH&qid=1747456532&rnid=49876606031&sprefix=fastrack+dezire+fx1+pro%2Caps%2C315&ref=sr_nr_p_n_feature_twenty-six_browse-bin_4&ds=v1%3AzsYuG6rViYKS9FX6Mj%2BIVS4aJwSwG%2BRE9xtHSHUJzbk
+        - text: 241 h & Above
+- group "Seller":
+  - heading "Seller" [level=2]
+  - list "Seller":
+    - listitem:
+      - link "Apply the filter ACCESSORIESMASTERS to narrow results":
+        - /url: /s?k=fastrack+dezire+fx1+pro&rh=p_6%3AA2SQXY79JAT94&dc&crid=1MB4SWDSU01PH&qid=1747456532&rnid=1318474031&sprefix=fastrack+dezire+fx1+pro%2Caps%2C315&ref=sr_nr_p_6_1&ds=v1%3ApZNzqpiaQRVEyNlBDl7nRx%2F5gcOB1sNkuA39ySCufpU
+        - text: ACCESSORIESMASTERS
+    - listitem:
+      - link "Apply the filter VRP Telematics to narrow results":
+        - /url: /s?k=fastrack+dezire+fx1+pro&rh=p_6%3AA1JFLV2BUSJ5AK&dc&crid=1MB4SWDSU01PH&qid=1747456532&rnid=1318474031&sprefix=fastrack+dezire+fx1+pro%2Caps%2C315&ref=sr_nr_p_6_2&ds=v1%3A%2B%2Bd10gTCizxf3pRWhceiBD2vb2YwgZUn06kAfTuCcZU
+        - text: VRP Telematics
+    - listitem:
+      - button "See more, Seller": See more
+- group "Style":
+  - heading "Style" [level=2]
+  - list "Style":
+    - listitem:
+      - link "Apply the filter Casual to narrow results":
+        - /url: /s?k=fastrack+dezire+fx1+pro&rh=p_n_feature_twenty-one_browse-bin%3A28264081031&dc&crid=1MB4SWDSU01PH&qid=1747456532&rnid=28264074031&sprefix=fastrack+dezire+fx1+pro%2Caps%2C315&ref=sr_nr_p_n_feature_twenty-one_browse-bin_1&ds=v1%3AONA%2BlpJ0MGx6Yu1LcEf8hmEZoygtrUMOx5MKrkZ8tBk
+        - text: Casual
+    - listitem:
+      - link "Apply the filter Modern to narrow results":
+        - /url: /s?k=fastrack+dezire+fx1+pro&rh=p_n_feature_twenty-one_browse-bin%3A28264078031&dc&crid=1MB4SWDSU01PH&qid=1747456532&rnid=28264074031&sprefix=fastrack+dezire+fx1+pro%2Caps%2C315&ref=sr_nr_p_n_feature_twenty-one_browse-bin_2&ds=v1%3ArZ4s8L9QtuKX4qrTSLSCwEBdQ7bj8YesQ0dma2T6VAo
+        - text: Modern
+- group "Wearable Computer Compatible Devices":
+  - heading "Wearable Computer Compatible Devices" [level=2]
+  - list "Wearable Computer Compatible Devices":
+    - listitem:
+      - link "Apply the filter Laptop to narrow results":
+        - /url: /s?k=fastrack+dezire+fx1+pro&rh=p_n_feature_thirty-one_browse-bin%3A88212028031&dc&crid=1MB4SWDSU01PH&qid=1747456532&rnid=88211855031&sprefix=fastrack+dezire+fx1+pro%2Caps%2C315&ref=sr_nr_p_n_feature_thirty-one_browse-bin_1&ds=v1%3A54pldhqVF2LqBcJpRLFFRAu3sTz2zVjehxOOTnm3C2g
+        - text: Laptop
+    - listitem:
+      - link "Apply the filter Smartphone to narrow results":
+        - /url: /s?k=fastrack+dezire+fx1+pro&rh=p_n_feature_thirty-one_browse-bin%3A88212026031&dc&crid=1MB4SWDSU01PH&qid=1747456532&rnid=88211855031&sprefix=fastrack+dezire+fx1+pro%2Caps%2C315&ref=sr_nr_p_n_feature_thirty-one_browse-bin_2&ds=v1%3AKXxWHWlrtW0AL2baV606t6MGDuRSdkykpb8%2FlTncXNU
+        - text: Smartphone
+    - listitem:
+      - link "Apply the filter Tablet to narrow results":
+        - /url: /s?k=fastrack+dezire+fx1+pro&rh=p_n_feature_thirty-one_browse-bin%3A88212027031&dc&crid=1MB4SWDSU01PH&qid=1747456532&rnid=88211855031&sprefix=fastrack+dezire+fx1+pro%2Caps%2C315&ref=sr_nr_p_n_feature_thirty-one_browse-bin_3&ds=v1%3AfoBns%2FKR8iYmKhAST1Ns1DfZFK7ByJnjFP1fS%2F55YEc
+        - text: Tablet
+- group "New Arrivals":
+  - heading "New Arrivals" [level=2]
+  - list "New Arrivals":
+    - listitem:
+      - link "Last 90 days":
+        - /url: /s?k=fastrack+dezire+fx1+pro&rh=p_n_date_first_available_absolute%3A1318488031&dc&crid=1MB4SWDSU01PH&qid=1747456532&rnid=1318486031&sprefix=fastrack+dezire+fx1+pro%2Caps%2C315&ref=sr_nr_p_n_date_first_available_absolute_1&ds=v1%3AVQd6Gy8QEyMWfYP4oD%2BtLg45493X1VwL2C6QIuYqxf8
+- group "Controller Type":
+  - heading "Controller Type" [level=2]
+  - list "Controller Type":
+    - listitem:
+      - link "Apply the filter Google Assistant to narrow results":
+        - /url: /s?k=fastrack+dezire+fx1+pro&rh=p_n_feature_thirteen_browse-bin%3A42093884031&dc&crid=1MB4SWDSU01PH&qid=1747456532&rnid=42093882031&sprefix=fastrack+dezire+fx1+pro%2Caps%2C315&ref=sr_nr_p_n_feature_thirteen_browse-bin_1&ds=v1%3A7xLotIjoOhLiU%2BkSYF7rpbiQaQNnE5d7zznL7YQ9NK4
+        - text: Google Assistant
+    - listitem:
+      - link "Apply the filter Siri to narrow results":
+        - /url: /s?k=fastrack+dezire+fx1+pro&rh=p_n_feature_thirteen_browse-bin%3A42093883031&dc&crid=1MB4SWDSU01PH&qid=1747456532&rnid=42093882031&sprefix=fastrack+dezire+fx1+pro%2Caps%2C315&ref=sr_nr_p_n_feature_thirteen_browse-bin_2&ds=v1%3A7HW32EFVoVtynFujRx9hJJZcfiGNEcrcirH88kFDgGY
+        - text: Siri
+- group "Wearable Computer Operating System":
+  - heading "Wearable Computer Operating System" [level=2]
+  - list "Wearable Computer Operating System":
+    - listitem:
+      - link "Apply the filter Android Wear to narrow results":
+        - /url: /s?k=fastrack+dezire+fx1+pro&rh=p_n_feature_fifteen_browse-bin%3A27356562031&dc&crid=1MB4SWDSU01PH&qid=1747456532&rnid=27356554031&sprefix=fastrack+dezire+fx1+pro%2Caps%2C315&ref=sr_nr_p_n_feature_fifteen_browse-bin_1&ds=v1%3AmU8SzoqxcEwcnX4yqu9c5syeZwUIW7J10uJKr389XGo
+        - text: Android Wear
+    - listitem:
+      - link "Apply the filter Pebble OS to narrow results":
+        - /url: /s?k=fastrack+dezire+fx1+pro&rh=p_n_feature_fifteen_browse-bin%3A27356564031&dc&crid=1MB4SWDSU01PH&qid=1747456532&rnid=27356554031&sprefix=fastrack+dezire+fx1+pro%2Caps%2C315&ref=sr_nr_p_n_feature_fifteen_browse-bin_2&ds=v1%3AwhNc%2FveoC66ozMeaCyzZc8PUOVF2U0%2BHDx7%2BomhXMuw
+        - text: Pebble OS
+- group "Water Resistance Level":
+  - heading "Water Resistance Level" [level=2]
+  - list "Water Resistance Level":
+    - listitem:
+      - link "Apply the filter Water Repellent to narrow results":
+        - /url: /s?k=fastrack+dezire+fx1+pro&rh=p_n_feature_thirty-five_browse-bin%3A205747521031&dc&crid=1MB4SWDSU01PH&qid=1747456532&rnid=205747517031&sprefix=fastrack+dezire+fx1+pro%2Caps%2C315&ref=sr_nr_p_n_feature_thirty-five_browse-bin_1&ds=v1%3A9swIRD4JvI1hk5gFN6VptByB9jpsviu5uAuHQDRTwDs
+        - text: Water Repellent
+    - listitem:
+      - link "Apply the filter Water Resistant to narrow results":
+        - /url: /s?k=fastrack+dezire+fx1+pro&rh=p_n_feature_thirty-five_browse-bin%3A205747520031&dc&crid=1MB4SWDSU01PH&qid=1747456532&rnid=205747517031&sprefix=fastrack+dezire+fx1+pro%2Caps%2C315&ref=sr_nr_p_n_feature_thirty-five_browse-bin_2&ds=v1%3AejHy0HbkCI4ZneVdGJlW2aIzvcY4wHDZ3Q0dRtdoT5s
+        - text: Water Resistant
+- group "Metrics Measured":
+  - heading "Metrics Measured" [level=2]
+  - list "Metrics Measured":
+    - listitem:
+      - link "Apply the filter Blood Oxygen (SpO2) to narrow results":
+        - /url: /s?k=fastrack+dezire+fx1+pro&rh=p_n_feature_thirty-two_browse-bin%3A93134276031&dc&crid=1MB4SWDSU01PH&qid=1747456532&rnid=93133933031&sprefix=fastrack+dezire+fx1+pro%2Caps%2C315&ref=sr_nr_p_n_feature_thirty-two_browse-bin_1&ds=v1%3A3jSIJoRYOx%2BBgZHUZIakBmIfnQjm%2Bh0NngdKJVpBHh0
+        - text: Blood Oxygen (SpO2)
+    - listitem:
+      - link "Apply the filter Blood Pressure to narrow results":
+        - /url: /s?k=fastrack+dezire+fx1+pro&rh=p_n_feature_thirty-two_browse-bin%3A93134321031&dc&crid=1MB4SWDSU01PH&qid=1747456532&rnid=93133933031&sprefix=fastrack+dezire+fx1+pro%2Caps%2C315&ref=sr_nr_p_n_feature_thirty-two_browse-bin_2&ds=v1%3A1q0HWE%2FqpPHwigAAhGSoLaLdmJjwIO8wdarXBpgg3wA
+        - text: Blood Pressure
+    - listitem:
+      - link "Apply the filter Calories Burned to narrow results":
+        - /url: /s?k=fastrack+dezire+fx1+pro&rh=p_n_feature_thirty-two_browse-bin%3A93134264031&dc&crid=1MB4SWDSU01PH&qid=1747456532&rnid=93133933031&sprefix=fastrack+dezire+fx1+pro%2Caps%2C315&ref=sr_nr_p_n_feature_thirty-two_browse-bin_3&ds=v1%3Ala7EY2JXbhkHljiyO6AYeGmXyZ2F0MSWPb6HycNHQak
+        - text: Calories Burned
+    - listitem:
+      - link "Apply the filter Distance to narrow results":
+        - /url: /s?k=fastrack+dezire+fx1+pro&rh=p_n_feature_thirty-two_browse-bin%3A93134272031&dc&crid=1MB4SWDSU01PH&qid=1747456532&rnid=93133933031&sprefix=fastrack+dezire+fx1+pro%2Caps%2C315&ref=sr_nr_p_n_feature_thirty-two_browse-bin_4&ds=v1%3AZfky%2FW%2BfUlGARGupLs%2FMyKGvj6zcZt6dDRVmZzwcTZ8
+        - text: Distance
+    - listitem:
+      - link "Apply the filter Heart Rate to narrow results":
+        - /url: /s?k=fastrack+dezire+fx1+pro&rh=p_n_feature_thirty-two_browse-bin%3A93134297031&dc&crid=1MB4SWDSU01PH&qid=1747456532&rnid=93133933031&sprefix=fastrack+dezire+fx1+pro%2Caps%2C315&ref=sr_nr_p_n_feature_thirty-two_browse-bin_5&ds=v1%3Av8wR59jQAwEShza%2BtqT%2FcoSF9UakXPR1p%2BrhG3D2zcI
+        - text: Heart Rate
+    - listitem:
+      - link "Apply the filter Menstrual Cycle to narrow results":
+        - /url: /s?k=fastrack+dezire+fx1+pro&rh=p_n_feature_thirty-two_browse-bin%3A205115215031&dc&crid=1MB4SWDSU01PH&qid=1747456532&rnid=93133933031&sprefix=fastrack+dezire+fx1+pro%2Caps%2C315&ref=sr_nr_p_n_feature_thirty-two_browse-bin_6&ds=v1%3AbmG%2F%2BDOi9X8IhrJbqLs%2FUaNfprvIJFQPvDV41e8csk0
+        - text: Menstrual Cycle
+    - listitem:
+      - link "Apply the filter Sleep Duration to narrow results":
+        - /url: /s?k=fastrack+dezire+fx1+pro&rh=p_n_feature_thirty-two_browse-bin%3A93134259031&dc&crid=1MB4SWDSU01PH&qid=1747456532&rnid=93133933031&sprefix=fastrack+dezire+fx1+pro%2Caps%2C315&ref=sr_nr_p_n_feature_thirty-two_browse-bin_7&ds=v1%3APRZ2fr1ysPBxn4fWqn0gGbHkzgfmJU1nJpBeJt4MY9Q
+        - text: Sleep Duration
+    - listitem:
+      - button "See more, Metrics Measured": See more
+- group "Communication Feature":
+  - heading "Communication Feature" [level=2]
+  - list "Communication Feature":
+    - listitem:
+      - link "Apply the filter Email to narrow results":
+        - /url: /s?k=fastrack+dezire+fx1+pro&rh=p_n_feature_nineteen_browse-bin%3A204533025031&dc&crid=1MB4SWDSU01PH&qid=1747456532&rnid=204533019031&sprefix=fastrack+dezire+fx1+pro%2Caps%2C315&ref=sr_nr_p_n_feature_nineteen_browse-bin_1&ds=v1%3Ah1yCGRJQNfAAbbN3QxLJCM1rPWy%2BmDMOO5Zxgcv98kI
+        - text: Email
+    - listitem:
+      - link "Apply the filter Notification to narrow results":
+        - /url: /s?k=fastrack+dezire+fx1+pro&rh=p_n_feature_nineteen_browse-bin%3A204533023031&dc&crid=1MB4SWDSU01PH&qid=1747456532&rnid=204533019031&sprefix=fastrack+dezire+fx1+pro%2Caps%2C315&ref=sr_nr_p_n_feature_nineteen_browse-bin_2&ds=v1%3AUZWyurs13cvcpiXLdDskEYFUJYyMa2watgBHQs6zzBc
+        - text: Notification
+    - listitem:
+      - link "Apply the filter Phone Call to narrow results":
+        - /url: /s?k=fastrack+dezire+fx1+pro&rh=p_n_feature_nineteen_browse-bin%3A204533020031&dc&crid=1MB4SWDSU01PH&qid=1747456532&rnid=204533019031&sprefix=fastrack+dezire+fx1+pro%2Caps%2C315&ref=sr_nr_p_n_feature_nineteen_browse-bin_3&ds=v1%3As4PzQQyEG2kLTdqbqnyhGhNumfVRNh3XmMjbmWw7dzY
+        - text: Phone Call
+    - listitem:
+      - link "Apply the filter Text Message to narrow results":
+        - /url: /s?k=fastrack+dezire+fx1+pro&rh=p_n_feature_nineteen_browse-bin%3A204533022031&dc&crid=1MB4SWDSU01PH&qid=1747456532&rnid=204533019031&sprefix=fastrack+dezire+fx1+pro%2Caps%2C315&ref=sr_nr_p_n_feature_nineteen_browse-bin_4&ds=v1%3AkPr4GYLB6HwgGXAjC2LdfbIvYI2r7hO7US%2FsAylQGA0
+        - text: Text Message
+    - listitem:
+      - link "Apply the filter Voice Call to narrow results":
+        - /url: /s?k=fastrack+dezire+fx1+pro&rh=p_n_feature_nineteen_browse-bin%3A204533021031&dc&crid=1MB4SWDSU01PH&qid=1747456532&rnid=204533019031&sprefix=fastrack+dezire+fx1+pro%2Caps%2C315&ref=sr_nr_p_n_feature_nineteen_browse-bin_5&ds=v1%3Ad%2BkVWTRbhoRh5IU6n6U9FSg8Q5soF4kOVX9xLkzxuSI
+        - text: Voice Call
+- group "Wireless Communication Standard":
+  - heading "Wireless Communication Standard" [level=2]
+  - list "Wireless Communication Standard":
+    - listitem:
+      - link "Apply the filter Bluetooth to narrow results":
+        - /url: /s?k=fastrack+dezire+fx1+pro&rh=p_n_feature_thirty-three_browse-bin%3A100722347031&dc&crid=1MB4SWDSU01PH&qid=1747456532&rnid=100722281031&sprefix=fastrack+dezire+fx1+pro%2Caps%2C315&ref=sr_nr_p_n_feature_thirty-three_browse-bin_1&ds=v1%3AABvn80HNUIZ1D1BwVDgagukLzZcQaK%2FOlzGySnPaoes
+        - text: Bluetooth
+- iframe
+- button "Leave feedback on Sponsored advertisement"
+- iframe
+- button "Leave feedback on Sponsored advertisement"
+- complementary "Your recently viewed items and featured recommendations"
+- button "Back to top"
+- heading "Get to Know Us" [level=6]
+- list:
+  - listitem:
+    - link "About Amazon":
+      - /url: https://www.aboutamazon.in/?utm_source=gateway&utm_medium=footer
+  - listitem:
+    - link "Careers":
+      - /url: https://amazon.jobs
+  - listitem:
+    - link "Press Releases":
+      - /url: https://press.aboutamazon.in/?utm_source=gateway&utm_medium=footer
+  - listitem:
+    - link "Amazon Science":
+      - /url: https://www.amazon.science
+- heading "Connect with Us" [level=6]
+- list:
+  - listitem:
+    - link "Facebook":
+      - /url: https://www.amazon.in/gp/redirect.html/ref=footer_fb?location=http://www.facebook.com/AmazonIN&token=2075D5EAC7BB214089728E2183FD391706D41E94&6
+  - listitem:
+    - link "Twitter":
+      - /url: https://www.amazon.in/gp/redirect.html/ref=footer_twitter?location=http://twitter.com/AmazonIN&token=A309DFBFCB1E37A808FF531934855DC817F130B6&6
+  - listitem:
+    - link "Instagram":
+      - /url: https://www.amazon.in/gp/redirect.html?location=https://www.instagram.com/amazondotin&token=264882C912E9D005CB1D9B61F12E125D5DF9BFC7&source=standards
+- heading "Make Money with Us" [level=6]
+- list:
+  - listitem:
+    - link "Sell on Amazon":
+      - /url: /b/?node=2838698031&ld=AZINSOANavDesktopFooter_C&ref_=nav_footer_sell_C
+  - listitem:
+    - link "Sell under Amazon Accelerator":
+      - /url: https://accelerator.amazon.in/?ref_=map_1_b2b_GW_FT
+  - listitem:
+    - link "Protect and Build Your Brand":
+      - /url: https://brandservices.amazon.in/?ref=AOINABRLGNRFOOT&ld=AOINABRLGNRFOOT
+  - listitem:
+    - link "Amazon Global Selling":
+      - /url: https://sell.amazon.in/grow-your-business/amazon-global-selling.html?ld=AZIN_Footer_V1&ref=AZIN_Footer_V1
+  - listitem:
+    - link "Supply to Amazon":
+      - /url: https://supply.amazon.com/?ref_=footer_sta&lang=en-IN
+  - listitem:
+    - link "Become an Affiliate":
+      - /url: https://affiliate-program.amazon.in/?utm_campaign=assocshowcase&utm_medium=footer&utm_source=GW&ref_=footer_assoc
+  - listitem:
+    - link "Fulfilment by Amazon":
+      - /url: https://services.amazon.in/services/fulfilment-by-amazon/benefits.html/ref=az_footer_fba?ld=AWRGINFBAfooter
+  - listitem:
+    - link "Advertise Your Products":
+      - /url: https://advertising.amazon.in/?ref=Amz.in
+  - listitem:
+    - link "Amazon Pay on Merchants":
+      - /url: https://www.amazonpay.in/merchant
+- heading "Let Us Help You" [level=6]
+- list:
+  - listitem:
+    - link "Your Account":
+      - /url: /gp/css/homepage.html?ref_=footer_ya
+  - listitem:
+    - link "Returns Centre":
+      - /url: /gp/css/returns/homepage.html?ref_=footer_hy_f_4
+  - listitem:
+    - link "Recalls and Product Safety Alerts":
+      - /url: https://www.amazon.in/your-product-safety-alerts?ref_=footer_bsx_ypsa
+  - listitem:
+    - link "100% Purchase Protection":
+      - /url: /gp/help/customer/display.html?nodeId=201083470&ref_=footer_swc
+  - listitem:
+    - link "Amazon App Download":
+      - /url: /gp/browse.html?node=6967393031&ref_=footer_mobapp
+  - listitem:
+    - link "Help":
+      - /url: /gp/help/customer/display.html?nodeId=200507590&ref_=footer_gw_m_b_he
+- link "Amazon India Home":
+  - /url: /ref=footer_logo
+- link "Choose a language for shopping. Current selection is English.":
+  - /url: /customer-preferences/edit?ie=UTF8&preferencesReturnUrl=%2Fs%3Fk%3Dfastrack%2Bdezire%2Bfx1%2Bpro%26crid%3D1MB4SWDSU01PH%26sprefix%3Dfastrack%2Bdezire%2Bfx1%2Bpro%252Caps%252C315%26ref%3Dnb_sb_noss_1&ref_=footer_lang
+  - text: English
+  - button "Expand to Change Language or Country"
+- button "Choose a country/region for shopping. The current selection is India.": India
+- list:
+  - listitem:
+    - link "AbeBooks Books, art & collectibles":
+      - /url: https://www.abebooks.com/
+      - heading "AbeBooks" [level=5]
+      - text: Books, art & collectibles
+  - listitem:
+    - link "Amazon Web Services Scalable Cloud Computing Services":
+      - /url: https://aws.amazon.com/what-is-cloud-computing/?sc_channel=EL&sc_campaign=IN_amazonfooter
+      - heading "Amazon Web Services" [level=5]
+      - text: Scalable Cloud Computing Services
+  - listitem:
+    - link "Audible Download Audio Books":
+      - /url: https://www.audible.in/
+      - heading "Audible" [level=5]
+      - text: Download Audio Books
+  - listitem:
+    - link "IMDb Movies, TV & Celebrities":
+      - /url: https://www.imdb.com/
+      - heading "IMDb" [level=5]
+      - text: Movies, TV & Celebrities
+- list:
+  - listitem:
+    - link "Shopbop Designer Fashion Brands":
+      - /url: https://www.shopbop.com/
+      - heading "Shopbop" [level=5]
+      - text: Designer Fashion Brands
+  - listitem:
+    - link "Amazon Business Everything For Your Business":
+      - /url: /business?ref=footer_aingw
+      - heading "Amazon Business" [level=5]
+      - text: Everything For Your Business
+  - listitem:
+    - link "Prime Now 2-Hour Delivery on Everyday Items":
+      - /url: /now?ref=footer_amznow
+      - heading "Prime Now" [level=5]
+      - text: 2-Hour Delivery on Everyday Items
+  - listitem:
+    - link "Amazon Prime Music 100 million songs, ad-free Over 15 million podcast episodes":
+      - /url: /music/prime?ref=footer_apm
+      - heading "Amazon Prime Music" [level=5]
+      - text: 100 million songs, ad-free Over 15 million podcast episodes
+- list:
+  - listitem:
+    - link "Conditions of Use & Sale":
+      - /url: /gp/help/customer/display.html?nodeId=200545940&ref_=footer_cou
+  - listitem:
+    - link "Privacy Notice":
+      - /url: /gp/help/customer/display.html?nodeId=200534380&ref_=footer_privacy
+  - listitem:
+    - link "Interest-Based Ads":
+      - /url: /gp/help/customer/display.html?nodeId=202075050&ref_=footer_iba
+- text: © 1996-2025, Amazon.com, Inc. or its affiliates
+```
+
+# Test source
+
+```ts
+   1 | import { test,expect } from "@playwright/test";
+   2 |
+   3 | test("Add to Cart and verify whether the product is displayed",async ({browser}) => {
+   4 |     const context = await browser.newContext();
+   5 |     const page = await context.newPage();
+   6 |     await page.goto("https://www.amazon.in/");
+   7 |     const title=await page.title();
+   8 |     await expect(page).toHaveTitle(title);
+   9 |     await page.getByPlaceholder("Search Amazon.in").fill("fastrack dezire fx1 pro");
+  10 |     await page.keyboard.press("Enter");
+> 11 |     let price=await page.locator("//div[@class='puisg-col-inner']/descendant::span[text()='₹3,299']").textContent();
+     |                                                                                                       ^ Error: locator.textContent: Error: strict mode violation: locator('//div[@class=\'puisg-col-inner\']/descendant::span[text()=\'₹3,299\']') resolved to 2 elements:
+  12 |     console.log(price);
+  13 |     // await page.click("//div[@class='a-section a-spacing-small puis-padding-left-micro puis-padding-right-micro' and contains(.,'Fastrack Dezire FX1 PRO Fashion Smart Watch')]/descendant::button");
+  14 |     // await page.locator("//div[@class=' nav-progressive-attribute']/parent::a[@class='nav-a nav-a-2 nav-progressive-attribute']").click();
+  15 |     // let subtotalText=await page.locator("//span[@class='a-size-medium sc-number-of-items' and contains(.,'Subtotal (1 item):')]/parent::div[@class='a-row a-spacing-mini sc-subtotal sc-subtotal-activecart sc-java-remote-feature']/descendant::span[@class='a-size-medium a-color-base sc-price sc-white-space-nowrap']").textContent();
+  16 |     // console.log(subtotalText.slice(1,6));    
+  17 |     // await expect(subtotalText).toContain(price);
+  18 | })
+```

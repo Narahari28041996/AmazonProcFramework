@@ -1,0 +1,118 @@
+# Test info
+
+- Name: Display and validate NYC Temperature
+- Location: C:\Users\DELL\Desktop\Project One\tests\validateTemperature.spec.js:2:5
+
+# Error details
+
+```
+Error: locator.click: Error: strict mode violation: getByRole('button', { name: 'Google Search' }) resolved to 2 elements:
+    1) <input name="btnK" tabindex="0" role="button" type="submit" class="gNO89b" value="Google Search" aria-label="Google Search" data-ved="0ahUKEwiNppmb1MCNAxXZk68BHV6TNhkQ4dUDCA8"/> aka getByRole('button', { name: 'Google Search' }).first()
+    2) <input name="btnK" tabindex="0" role="button" type="submit" class="gNO89b" value="Google Search" aria-label="Google Search" data-ved="0ahUKEwiNppmb1MCNAxXZk68BHV6TNhkQ4dUDCBI"/> aka getByRole('button', { name: 'Google Search' }).nth(1)
+
+Call log:
+  - waiting for getByRole('button', { name: 'Google Search' })
+
+    at C:\Users\DELL\Desktop\Project One\tests\validateTemperature.spec.js:10:59
+```
+
+# Page snapshot
+
+```yaml
+- navigation:
+  - link "About":
+    - /url: https://about.google/?fg=1&utm_source=google-IN&utm_medium=referral&utm_campaign=hp-header
+  - link "Store":
+    - /url: https://store.google.com/IN?utm_source=hp_header&utm_medium=google_ooo&utm_campaign=GS100042&hl=en-IN
+  - link "Gmail":
+    - /url: https://mail.google.com/mail/&ogbl
+  - link "Search for Images":
+    - /url: https://www.google.com/imghp?hl=en&ogbl
+    - text: Images
+  - button "Google apps":
+    - img
+  - link "Sign in":
+    - /url: https://accounts.google.com/ServiceLogin?hl=en&passive=true&continue=https://www.google.com/%3Fauthuser%3D0&ec=futura_exp_og_so_72776762_e
+- img
+- search:
+  - img
+  - combobox "Search" [expanded]:
+    - text: highest temperature in new york
+    - listbox:
+      - option "highest temperature in new york"
+      - option "highest temperature in new york during recent week"
+      - option "highest temperature in new york in summer 2024"
+      - option "highest temperature in new york in summer"
+      - option "highest temperature in new york ever"
+      - option "highest temperature in new york city"
+      - option "highest temperature in new york ever recorded"
+      - option "highest temperature in new york city today"
+      - option "highest temperature in new york today"
+      - option "highest temperature in new york last year"
+  - button "Clear":
+    - img
+  - button "Search by voice":
+    - img
+  - button "Search by image":
+    - img
+  - button "Google Search"
+  - button "I'm Feeling Lucky"
+  - button "Report inappropriate predictions"
+  - button "Google Search"
+  - button "I'm Feeling Lucky"
+- text: "🐙 Today's Googly:"
+- link "What’s the colour of an octopus’ blood?"
+- text: "Google offered in:"
+- link "हिन्दी":
+  - /url: https://www.google.com/setprefs?sig=0_eFMtBNB-9lLJkK_-ED6ksLrLbh8%3D&hl=hi&source=homepage&sa=X&ved=0ahUKEwiNppmb1MCNAxXZk68BHV6TNhkQ2ZgBCBc
+- link "বাংলা":
+  - /url: https://www.google.com/setprefs?sig=0_eFMtBNB-9lLJkK_-ED6ksLrLbh8%3D&hl=bn&source=homepage&sa=X&ved=0ahUKEwiNppmb1MCNAxXZk68BHV6TNhkQ2ZgBCBg
+- link "తెలుగు":
+  - /url: https://www.google.com/setprefs?sig=0_eFMtBNB-9lLJkK_-ED6ksLrLbh8%3D&hl=te&source=homepage&sa=X&ved=0ahUKEwiNppmb1MCNAxXZk68BHV6TNhkQ2ZgBCBk
+- link "मराठी":
+  - /url: https://www.google.com/setprefs?sig=0_eFMtBNB-9lLJkK_-ED6ksLrLbh8%3D&hl=mr&source=homepage&sa=X&ved=0ahUKEwiNppmb1MCNAxXZk68BHV6TNhkQ2ZgBCBo
+- link "தமிழ்":
+  - /url: https://www.google.com/setprefs?sig=0_eFMtBNB-9lLJkK_-ED6ksLrLbh8%3D&hl=ta&source=homepage&sa=X&ved=0ahUKEwiNppmb1MCNAxXZk68BHV6TNhkQ2ZgBCBs
+- link "ગુજરાતી":
+  - /url: https://www.google.com/setprefs?sig=0_eFMtBNB-9lLJkK_-ED6ksLrLbh8%3D&hl=gu&source=homepage&sa=X&ved=0ahUKEwiNppmb1MCNAxXZk68BHV6TNhkQ2ZgBCBw
+- link "ಕನ್ನಡ":
+  - /url: https://www.google.com/setprefs?sig=0_eFMtBNB-9lLJkK_-ED6ksLrLbh8%3D&hl=kn&source=homepage&sa=X&ved=0ahUKEwiNppmb1MCNAxXZk68BHV6TNhkQ2ZgBCB0
+- link "മലയാളം":
+  - /url: https://www.google.com/setprefs?sig=0_eFMtBNB-9lLJkK_-ED6ksLrLbh8%3D&hl=ml&source=homepage&sa=X&ved=0ahUKEwiNppmb1MCNAxXZk68BHV6TNhkQ2ZgBCB4
+- link "ਪੰਜਾਬੀ":
+  - /url: https://www.google.com/setprefs?sig=0_eFMtBNB-9lLJkK_-ED6ksLrLbh8%3D&hl=pa&source=homepage&sa=X&ved=0ahUKEwiNppmb1MCNAxXZk68BHV6TNhkQ2ZgBCB8
+- contentinfo:
+  - text: India
+  - link "Advertising":
+    - /url: https://www.google.com/intl/en_in/ads/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpafooter&fg=1
+  - link "Business":
+    - /url: https://www.google.com/services/?subid=ww-ww-et-g-awa-a-g_hpbfoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpbfooter&fg=1
+  - link "How Search works":
+    - /url: https://google.com/search/howsearchworks/?fg=1
+  - link "Privacy":
+    - /url: https://policies.google.com/privacy?hl=en-IN&fg=1
+  - link "Terms":
+    - /url: https://policies.google.com/terms?hl=en-IN&fg=1
+  - button "Settings"
+- dialog "Sign in to Google":
+  - text: Sign in to Google Get the most from your Google account
+  - button "Stay signed out"
+  - button "Sign in"
+```
+
+# Test source
+
+```ts
+   1 | import { test,expect } from "@playwright/test";
+   2 | test("Display and validate NYC Temperature",async ({page}) => {
+   3 |     await page.goto("https://www.google.com/?authuser=0");
+   4 |     await expect(page).toHaveTitle("Google");
+   5 |     await expect(page.locator("//textarea[@id='APjFqb']")).toBeVisible();
+   6 |     await expect(page.locator("//textarea[@id='APjFqb']")).toBeEnabled();
+   7 |     await expect(page.locator("//textarea[@id='APjFqb']")).toBeEmpty();
+   8 |     await page.locator("//textarea[@id='APjFqb']").fill("highest temperature in new york");
+   9 |     await expect(page.locator("//textarea[@id='APjFqb']")).toHaveValue("highest temperature in new york");
+> 10 |     await page.getByRole('button',{name:'Google Search'}).click();    
+     |                                                           ^ Error: locator.click: Error: strict mode violation: getByRole('button', { name: 'Google Search' }) resolved to 2 elements:
+  11 | })
+```

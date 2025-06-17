@@ -1,0 +1,495 @@
+# Test info
+
+- Name: Select cheap ticket flight
+- Location: C:\Users\DELL\Desktop\Project One\tests\cheapflightpricetest.spec.js:2:5
+
+# Error details
+
+```
+Error: locator.fill: Error: Element is not an <input>, <textarea>, <select> or [contenteditable] and does not have a role allowing [aria-readonly]
+Call log:
+  - waiting for locator('//div[text()=\'From\']')
+    - locator resolved to <div class="label___201428 ">From</div>
+    - fill("Shimla")
+  - attempting fill action
+    - waiting for element to be visible, enabled and editable
+
+    at C:\Users\DELL\Desktop\Project One\tests\cheapflightpricetest.spec.js:4:48
+```
+
+# Page snapshot
+
+```yaml
+- banner:
+  - img "redBus"
+  - img "Online Bus Tickets Booking"
+  - text: Bus tickets
+  - img "Online Train Tickets Booking"
+  - text: Train tickets  Bookings  Help  Account
+- img "homeBanner"
+- heading "India's No. 1 online bus ticket booking site" [level=1]
+- text:  From  To  Date of Journey 08 May, 2025 Booking for women Know more
+- checkbox "toggle"
+- button " Search buses"
+- article:
+  - text: Book trains on redBus Book now to get confirmed ticket Get ₹100 off using code
+  - strong: FESTIVE
+  - text: Jun Bakrid Jul Aug Independace day Rakhi Sep Ganpati
+  - button " Book trains now"
+  - text: Authorised IRCTC partner
+- text: 13,000+ people booked from Shimla on redBus last month Offers for you
+- button "View more"
+- text: All Bus Train
+- img "offerImage"
+- text: Bus Save up to Rs 250 on bus tickets Valid till 31 May
+- button " FIRST"
+- img "offerImage"
+- text: Bus Save up to Rs 300 on bus tickets Valid till 31 May
+- button " BUS300"
+- img "offerImage"
+- text: Train Get Rs 60 off on train tickets Valid till 31 May
+- button " SUPERB60"
+- img "offerImage"
+- text: Train ZERO Convenience FEE Valid till 31 May
+- button " NOFEE"
+- img "offerImage"
+- text: Bus Save up to Rs. 50 on IntrCity SmartBus operator Valid till 01 Jun
+- button " INTRCITY"
+- img "offerImage"
+- text: Bus Save up to Rs 50 on bus tickets Valid till 31 May
+- button " YOLORED"
+- img "offerImage"
+- text: Bus Save 10% Discount on bus tickets Valid till 31 May
+- button " RKTBUS"
+- img "offerImage"
+- text: Bus Save 10% Discount on bus tickets Valid till 31 May
+- button " DREAMLINE10"
+- text: What's new
+- img "Free Cancellation"
+- img "Bus Timetable"
+- img "Flexi"
+- img "RAP"
+- img "Referral"
+- img "Primo"
+- img "Lightning Fast Refund"
+- text: Government Buses
+- img "APSRTC"
+- text: APSRTC  3.85 ఆంధ్రప్రదేశ్ రాష్ట్ర రోడ్డు రవాణా సంస్థ 1539 services including Garuda, Garuda Plus and more Official booking partner of APSRTC Use code APSRTCNEW to save upto ₹250 (only for first time users) Get 25% concession for senior citizen passengers 24*7 customer service (Call or chat) Get instant refund with UPI payments redBus is the most trusted place to book APSRTC tickets online
+- img "TGSRTC"
+- text: TGSRTC  3.71 తెలంగాణ రాష్ట్ర రోడ్డు రవాణా సంస్థ 1450 services including Garuda Plus, Rajdhani and more Official booking partner of TGSRTC Use code FIRST to save upto ₹250 (only for first-time users) 24*7 customer service (Call or chat) Get instant refund with UPI payments redBus is the most trusted place to book TGSRTC tickets online
+- img "KERALA RTC"
+- text: KERALA RTC  3.85 കേരള സ്റ്റേറ്റ് റോഡ് ട്രാൻസ്പോർട്ട് കോർപ്പറേഷൻ 940 services including Swift, AC Multiaxle and more Official booking partner of KSRTC Use code FIRST to save upto ₹250 (only for first time users) Rs. 30 discount on group booking of 4 seats 24*7 customer service (Call or chat) Get instant refund with UPI payments redBus is the most trusted place to book KSRTC KERALA tickets online
+- img "KTCL"
+- text: KTCL  3.83 कदंब येरादारी म्हामंडळ 60 services including Volvo Bus, AC & Non AC Bus and more Official booking partner of KTCL Use code FIRST to save upto ₹250 (only for first time users) 24*7 customer service (Call or chat) Get instant refund with UPI payments redBus is the most trusted place to book KTCL tickets online
+- img "RSRTC"
+- text: RSRTC  3.71 राजस्थान स्टेट रोड ट्रांसपोर्ट कॉर्पोरशन 6000 services including Deluxe, Ordinary and more Official booking partner of RSRTC Use code FIRST to save upto ₹250 (only for first time users) 30% concession for female passengers 24*7 customer service (Call or chat) Get instant refund with UPI payments redBus is the most trusted place to book RSRTC tickets online
+- img "SBSTC"
+- text: SBSTC  3.95 দক্ষিণবঙ্গ রাষ্ট্রীয় পরিবহণ সংস্থা 480 services including Volvo Bus, AC & Non AC Bus and more Official booking partner of SBSTC Use code FIRST to save upto ₹250 (only for first time users) 24*7 customer service (Call or chat) Get instant refund with UPI payments redBus is the most trusted place to book SBSTC tickets online
+- img "HRTC"
+- text: HRTC  3.98 हिमाचल रोड ट्रान्सपोर्ट कॉर्पोरेशन 480 services including Himgaurav, Himmani and more Official booking partner of HRTC Use code FIRST to save upto ₹250 (only for first time users) 24*7 customer service (Call or chat) Get instant refund with UPI payments redBus is the most trusted place to book HRTC tickets online
+- img "ASTC"
+- text: ASTC  4.02 অসম ৰাজ্যিক পৰিবহন নিগম் 200 services including Volvo Bus, AC & Non AC Bus and more Official booking partner of ASTC Use code FIRST to save upto ₹250 (only for first time users) 24*7 customer service (Call or chat) Get instant refund with UPI payments redBus is the most trusted place to book ASTC tickets online
+- img "UPSRTC"
+- text: UPSRTC  3.94 उत्तर प्रदेश राज्य सड़क परिवहन निगम 1738 services including Janrath,Shatabdi and more Official booking partner of UPSRTC 24*7 customer service (Call or chat) Get instant refund with UPI payments redBus is the most trusted place to book UPSRTC tickets online
+- img "WBTC"
+- text: WBTC  3.96 পশ্চিমবঙ্গ রাষ্ট্রীয় পরিবহণ নিগম 120 services including Volvo Bus, AC & Non AC Bus and more Official booking partner of WBTC Use code FIRST to save upto ₹250 (only for first time users) 24*7 customer service (Call or chat) Get instant refund with UPI payments redBus is the most trusted place to book WBTC tickets online
+- img "CTURTC"
+- text: CTURTC  3.85 चंडीगढ़ परिवहन उपक्रम 143 services including AC & Non AC Bus and more Official booking partner of CTU Use code FIRST to save upto ₹250 (only for first time users) 24*7 customer service (Call or chat) Get instant refund with UPI payments redBus is the most trusted place to book CTURTC tickets online
+- img "PEPSU"
+- text: PEPSU  3.83 ਪੈਪਸੂ ਰੋਡ ਟਰਾਂਸਪੋਰਟ ਕਾਰਪੋਰੇਸ਼ਨ 100 services including Volvo Bus, AC & Non AC Bus and more Official booking partner of PEPSU Use code FIRST to save upto ₹250 (only for first time users) 24*7 customer service (Call or chat) Get instant refund with UPI payments redBus is the most trusted place to book PEPSU tickets online
+- img "NBSTC"
+- text: NBSTC  3.93 উত্তরবঙ্গ রাজ্য পরিবহন কর্পোরেশন 30 services including Volvo Bus, AC & Non AC Bus and more Official booking partner of NBSTC Use code FIRST to save upto ₹250 (only for first time users) 24*7 customer service (Call or chat) Get instant refund with UPI payments redBus is the most trusted place to book NBSTC tickets online
+- img "BSRTC"
+- text: BSRTC  3.91 बिहार राज्य रोड ट्रान्सपोर्ट कॉर्पोरेशन 220 services including Volvo Bus, AC & Non AC Bus and more Official booking partner of BSRTC Use code FIRST to save upto ₹250 (only for first time users) 24*7 customer service (Call or chat) Get instant refund with UPI payments redBus is the most trusted place to book BSRTC tickets online
+- img "KAAC Transport"
+- text: KAAC Transport  3.71 কাৰ্বি আংলং স্বায়ত্ত শাসিত পৰিষদ পৰিবহণ 10 services including AC & Non AC Bus and more Official booking partner of KAAC Use code FIRST to save upto ₹250 (only for first time users) 24*7 customer service (Call or chat) Get instant refund with UPI payments redBus is the most trusted place to book KAAC tickets online
+- img "WBSTC"
+- text: WBSTC  3.98 পশ্চিমবঙ্গ রাষ্ট্রীয় পরিবহণ নিগম 20 services including Volvo Bus, AC & Non AC Bus and more Official booking partner of WBSTC Use code FIRST to save upto ₹250 (only for first time users) 24*7 customer service (Call or chat) Get instant refund with UPI payments redBus is the most trusted place to book WBSTC tickets online
+- img "JKSRTC"
+- text: JKSRTC  3.85 जम्मू और कश्मीर सड़क परिवहन निगम। 16 services including Volvo Bus, AC & Non AC Bus and more Official booking partner of JKSRTC Use code FIRST to save upto ₹250 (only for first time users) 24*7 customer service (Call or chat) Get instant refund with UPI payments redBus is the most trusted place to book JKSRTC tickets online Testimonials Hear from our satisfied customers in their own words Incredible Journey. Safest and comfortable. Suresh Kumar redbus customer since 2015 Punctual and clean buses Abhinav Jain redbus customer since 2016 All time favourite buses Mohit Patil 2019 से redBus ग्राहक Get the redBus App Rated 4.6 on Play Store Download for exciting offers!
+- button "Download app"
+- article:
+  - heading "Online Bus Ticket Booking on redBus" [level=2]
+  - paragraph: redBus is India’s most trusted bus ticket booking platform. The platform offers an easy-to-use online bus booking service with over 36 million satisfied customers. Partnering with over 3500+ bus operators, redBus offers affordable prices and various bus types to choose from. Also, provides secure payment options and exclusive offers for a smooth and convenient booking experience.
+  - paragraph: Planning a trip with RTC, Government bus operators like APSRTC, TGSRTC, KSRTC (Kerala), RSRTC or private operators like VRL and Orange Travels? redBus offers easy access to lakhs of routes and a wide range of bus types such as AC or Non-AC, Sleeper, Seater, Volvo and more. With a wide range of bus options and services, redBus ensures a reliable and comfortable journey for every passenger.
+  - heading "How to Book Bus Tickets on redBus?" [level=3]
+  - paragraph: Booking a bus ticket online on the redBus app or website is very simple. Follow the stepwise process for bus booking on redBus.
+  - list:
+    - listitem [level=1]:
+      - strong: "Enter Travel Details:"
+      - text: Enter your source, destination & travel date to check the top-rated bus services available.
+    - listitem [level=1]:
+      - strong: Search Buses
+      - text: ": Filter bus type, duration, bus timings, boarding and dropping point, number of seats available, user ratings & amenities for your desired route."
+    - listitem [level=1]:
+      - strong: "Choose Buses:"
+      - text: Select your preferred seat, boarding and dropping points. Once selected, check the ticket price details and proceed to pay.
+    - listitem [level=1]:
+      - strong: "Enter Passenger Details:"
+      - text: Fill in the passenger information and contact details.
+    - listitem [level=1]:
+      - strong: "Payment:"
+      - text: Once you fill in the information, click on “Proceed” to pay to complete the payment process.
+    - listitem [level=1]:
+      - strong: "Ticket Confirmation:"
+      - text: After the payment process, receive the bus ticket confirmation on your registered email ID or mobile number.
+  - paragraph: With redBus, get assured safe & secure payment methods and guaranteed travel with the best seat and bus operator of your choice at an affordable bus ticket price.
+- article:
+  - heading "Reasons for Bus Booking on redBus" [level=2]
+  - paragraph: "redBus offers key services that benefit passengers when booking bus tickets online, such as:"
+  - list:
+    - listitem [level=1]:
+      - strong: "Free Cancellation:"
+      - text: Cancel bus tickets without paying cancellation charges. Receive a full refund 6 hours prior to departure.
+    - listitem [level=1]:
+      - strong: "Change Travel Date:"
+      - text: Select a Flexi ticket to modify your travel date at least 8 hours before departure. Receive a 50% refund for cancelling bus tickets 12 hours before the scheduled journey date.
+    - listitem [level=1]:
+      - strong: "Booking for Women:"
+      - text: Access exclusive deals for women travellers, view the number of women on your bus, enjoy priority helplines, and find buses preferred by women.
+    - listitem [level=1]:
+      - strong: "Assurance Program:"
+      - text: Secure a trip against the cancellation of tickets by bus operators and receive up to 500 INR in your wallet.
+    - listitem [level=1]:
+      - strong: "Earn Rewards:"
+      - text: Refer your friend and get INR 100 in your redBus wallet after they complete their first trip.
+    - listitem [level=1]:
+      - strong: "Primo Services:"
+      - text: Select top-rated bus operators that offer timely and customer-friendly Primo services.
+    - listitem [level=1]:
+      - strong: "24/7 Customer Support:"
+      - text: Receive 24/7 customer service for any assistance related to bus ticket bookings.
+    - listitem [level=1]:
+      - strong: "Instant Refund:"
+      - text: Get an instant refund for cancellation or booking-related issues.
+    - listitem [level=1]:
+      - strong: Live Bus Tracking
+      - text: ": Track your bus in real-time and plan your journey more efficiently."
+- heading "Bus Booking redDeals on redBus" [level=2]
+- paragraph: Don't miss out on these incredible offers, book your bus tickets now and travel with convenience and affordability. Hurry, grab the best bus booking deals before they're gone!
+- img "rb-logo"
+- text: Unlock Unbeatable Exclusive redDeals! 20% OFF 3940 Deals . 1712 Bus Operators . 732677 Routes
+- button "Book now"
+- heading "FAQs related to Bus Tickets Booking" [level=2]
+- text: General Ticket-related Payment Cancellation & Refund
+- group: Can I track the location of my booked bus online? 
+- group: What are the advantages of purchasing a bus ticket with redBus? 
+- group: Why book bus tickets online on redBus? 
+- group: Do I need to create an account on the redBus site to book my bus ticket? 
+- group: Does bus booking online cost me more? 
+- group: How can I get the discounts on the bus booking? 
+- group: What's New in Bus Booking on redBus? 
+- group: Can I book a Government bus ticket on redBus? 
+- heading "Popular Bus Routes " [level=3]
+- link "https://www.redbus.in/bus-tickets/delhi-to-manali":
+  - /url: https://www.redbus.in/bus-tickets/delhi-to-manali
+  - text: Delhi To Manali Bus
+- link "https://www.redbus.in/bus-tickets/delhi-to-rishikesh":
+  - /url: https://www.redbus.in/bus-tickets/delhi-to-rishikesh
+  - text: Delhi To Rishikesh Bus
+- link "https://www.redbus.in/bus-tickets/delhi-to-shimla":
+  - /url: https://www.redbus.in/bus-tickets/delhi-to-shimla
+  - text: Delhi To Shimla Bus
+- link "https://www.redbus.in/bus-tickets/delhi-to-nainital":
+  - /url: https://www.redbus.in/bus-tickets/delhi-to-nainital
+  - text: Delhi To Nainital Bus
+- link "https://www.redbus.in/bus-tickets/delhi-to-katra":
+  - /url: https://www.redbus.in/bus-tickets/delhi-to-katra
+  - text: Delhi To Katra Bus
+- link "https://www.redbus.in/bus-tickets/bangalore-to-goa":
+  - /url: https://www.redbus.in/bus-tickets/bangalore-to-goa
+  - text: Bangalore To Goa Bus
+- link "https://www.redbus.in/bus-tickets/bangalore-to-hyderabad":
+  - /url: https://www.redbus.in/bus-tickets/bangalore-to-hyderabad
+  - text: Bangalore To Hyderabad Bus
+- link "https://www.redbus.in/bus-tickets/bangalore-to-tirupathi":
+  - /url: https://www.redbus.in/bus-tickets/bangalore-to-tirupathi
+  - text: Bangalore To Tirupathi Bus
+- link "https://www.redbus.in/bus-tickets/bangalore-to-chennai":
+  - /url: https://www.redbus.in/bus-tickets/bangalore-to-chennai
+  - text: Bangalore To Chennai Bus
+- link "https://www.redbus.in/bus-tickets/bangalore-to-pondicherry":
+  - /url: https://www.redbus.in/bus-tickets/bangalore-to-pondicherry
+  - text: Bangalore To Pondicherry Bus
+- link "https://www.redbus.in/bus-tickets/hyderabad-to-bangalore":
+  - /url: https://www.redbus.in/bus-tickets/hyderabad-to-bangalore
+  - text: Hyderabad To Bangalore Bus
+- link "https://www.redbus.in/bus-tickets/hyderabad-to-goa":
+  - /url: https://www.redbus.in/bus-tickets/hyderabad-to-goa
+  - text: Hyderabad To Goa Bus
+- link "https://www.redbus.in/bus-tickets/hyderabad-to-srisailam":
+  - /url: https://www.redbus.in/bus-tickets/hyderabad-to-srisailam
+  - text: Hyderabad To Srisailam Bus
+- link "https://www.redbus.in/bus-tickets/hyderabad-to-vijayawada":
+  - /url: https://www.redbus.in/bus-tickets/hyderabad-to-vijayawada
+  - text: Hyderabad To Vijayawada Bus
+- link "https://www.redbus.in/bus-tickets/hyderabad-to-tirupathi":
+  - /url: https://www.redbus.in/bus-tickets/hyderabad-to-tirupathi
+  - text: Hyderabad To Tirupathi Bus
+- link "https://www.redbus.in/bus-tickets/pune-to-goa":
+  - /url: https://www.redbus.in/bus-tickets/pune-to-goa
+  - text: Pune To Goa Bus
+- link "https://www.redbus.in/bus-tickets/pune-to-mumbai":
+  - /url: https://www.redbus.in/bus-tickets/pune-to-mumbai
+  - text: Pune To Mumbai Bus
+- link "https://www.redbus.in/bus-tickets/pune-to-nagpur":
+  - /url: https://www.redbus.in/bus-tickets/pune-to-nagpur
+  - text: Pune To Nagpur Bus
+- link "https://www.redbus.in/bus-tickets/pune-to-kolhapur-maharashtra":
+  - /url: https://www.redbus.in/bus-tickets/pune-to-kolhapur-maharashtra
+  - text: Pune To Kolhapur Bus
+- link "https://www.redbus.in/bus-tickets/pune-to-nashik":
+  - /url: https://www.redbus.in/bus-tickets/pune-to-nashik
+  - text: Pune To Nashik Bus
+- link "https://www.redbus.in/bus-tickets/mumbai-to-goa":
+  - /url: https://www.redbus.in/bus-tickets/mumbai-to-goa
+  - text: Mumbai To Goa Bus
+- link "https://www.redbus.in/bus-tickets/mumbai-to-pune":
+  - /url: https://www.redbus.in/bus-tickets/mumbai-to-pune
+  - text: Mumbai To Pune Bus
+- link "https://www.redbus.in/bus-tickets/mumbai-to-shirdi":
+  - /url: https://www.redbus.in/bus-tickets/mumbai-to-shirdi
+  - text: Mumbai To Shirdi Bus
+- link "https://www.redbus.in/bus-tickets/mumbai-to-mahabaleshwar":
+  - /url: https://www.redbus.in/bus-tickets/mumbai-to-mahabaleshwar
+  - text: Mumbai To Mahabaleshwar Bus
+- link "https://www.redbus.in/bus-tickets/mumbai-to-kolhapur-maharashtra":
+  - /url: https://www.redbus.in/bus-tickets/mumbai-to-kolhapur-maharashtra
+  - text: Mumbai To Kolhapur Bus
+- link "https://www.redbus.in/bus-tickets/kolkata-to-digha":
+  - /url: https://www.redbus.in/bus-tickets/kolkata-to-digha
+  - text: Kolkata To Digha Bus
+- link "https://www.redbus.in/bus-tickets/kolkata-to-siliguri":
+  - /url: https://www.redbus.in/bus-tickets/kolkata-to-siliguri
+  - text: Kolkata To Siliguri Bus
+- link "https://www.redbus.in/bus-tickets/kolkata-to-puri":
+  - /url: https://www.redbus.in/bus-tickets/kolkata-to-puri
+  - text: Kolkata To Puri Bus
+- link "https://www.redbus.in/bus-tickets/kolkata-to-bakkhali":
+  - /url: https://www.redbus.in/bus-tickets/kolkata-to-bakkhali
+  - text: Kolkata To Bakkhali Bus
+- link "https://www.redbus.in/bus-tickets/kolkata-to-mandarmani":
+  - /url: https://www.redbus.in/bus-tickets/kolkata-to-mandarmani
+  - text: Kolkata To Mandarmani Bus
+- link "https://www.redbus.in/bus-tickets/chennai-to-bangalore":
+  - /url: https://www.redbus.in/bus-tickets/chennai-to-bangalore
+  - text: Chennai To Bangalore Bus
+- link "https://www.redbus.in/bus-tickets/chennai-to-pondicherry":
+  - /url: https://www.redbus.in/bus-tickets/chennai-to-pondicherry
+  - text: Chennai To Pondicherry Bus
+- link "https://www.redbus.in/bus-tickets/chennai-to-coimbatore":
+  - /url: https://www.redbus.in/bus-tickets/chennai-to-coimbatore
+  - text: Chennai To Coimbatore Bus
+- link "https://www.redbus.in/bus-tickets/chennai-to-madurai":
+  - /url: https://www.redbus.in/bus-tickets/chennai-to-madurai
+  - text: Chennai To Madurai Bus
+- link "https://www.redbus.in/bus-tickets/chennai-to-tirupathi":
+  - /url: https://www.redbus.in/bus-tickets/chennai-to-tirupathi
+  - text: Chennai To Tirupathi Bus
+- link "https://www.redbus.in/bus-tickets/chandigarh-to-manali":
+  - /url: https://www.redbus.in/bus-tickets/chandigarh-to-manali
+  - text: Chandigarh To Manali Bus
+- link "https://www.redbus.in/bus-tickets/chandigarh-to-shimla":
+  - /url: https://www.redbus.in/bus-tickets/chandigarh-to-shimla
+  - text: Chandigarh To Shimla Bus
+- link "https://www.redbus.in/bus-tickets/chandigarh-to-delhi":
+  - /url: https://www.redbus.in/bus-tickets/chandigarh-to-delhi
+  - text: Chandigarh To Delhi Bus
+- link "https://www.redbus.in/bus-tickets/chandigarh-to-dehradun":
+  - /url: https://www.redbus.in/bus-tickets/chandigarh-to-dehradun
+  - text: Chandigarh To Dehradun Bus
+- link "https://www.redbus.in/bus-tickets/chandigarh-to-amritsar":
+  - /url: https://www.redbus.in/bus-tickets/chandigarh-to-amritsar
+  - text: Chandigarh To Amritsar Bus
+- link "https://www.redbus.in/bus-tickets/coimbatore-to-chennai":
+  - /url: https://www.redbus.in/bus-tickets/coimbatore-to-chennai
+  - text: Coimbatore To Chennai Bus
+- link "https://www.redbus.in/bus-tickets/coimbatore-to-bangalore":
+  - /url: https://www.redbus.in/bus-tickets/coimbatore-to-bangalore
+  - text: Coimbatore To Bangalore Bus
+- link "https://www.redbus.in/bus-tickets/coimbatore-to-ooty":
+  - /url: https://www.redbus.in/bus-tickets/coimbatore-to-ooty
+  - text: Coimbatore To Ooty Bus
+- link "https://www.redbus.in/bus-tickets/coimbatore-to-tiruchendur":
+  - /url: https://www.redbus.in/bus-tickets/coimbatore-to-tiruchendur
+  - text: Coimbatore To Tiruchendur Bus
+- link "https://www.redbus.in/bus-tickets/coimbatore-to-madurai":
+  - /url: https://www.redbus.in/bus-tickets/coimbatore-to-madurai
+  - text: Coimbatore To Madurai Bus
+- link "https://www.redbus.in/bus-tickets/agra-to-bareilly":
+  - /url: https://www.redbus.in/bus-tickets/agra-to-bareilly
+  - text: Agra to Bareilly Bus
+- link "https://www.redbus.in/bus-tickets/hisar-to-chandigarh":
+  - /url: https://www.redbus.in/bus-tickets/hisar-to-chandigarh
+  - text: Hisar to Chandigarh Bus
+- link "https://www.redbus.in/bus-tickets/ayodhya-to-varanasi":
+  - /url: https://www.redbus.in/bus-tickets/ayodhya-to-varanasi
+  - text: Ayodhya to Varanasi
+- link "https://www.redbus.in/bus-tickets/lucknow-to-ballia":
+  - /url: https://www.redbus.in/bus-tickets/lucknow-to-ballia
+  - text: Lucknow to Ballia Bus
+- link "https://www.redbus.in/bus-tickets/lucknow-to-moradabad":
+  - /url: https://www.redbus.in/bus-tickets/lucknow-to-moradabad
+  - text: Lucknow to Moradabad Bus
+- link "https://www.redbus.in/bus-tickets/rajkot-to-dwarka":
+  - /url: https://www.redbus.in/bus-tickets/rajkot-to-dwarka
+  - text: Rajkot to Dwarka Bus
+- link "https://www.redbus.in/bus-tickets/siliguri-to-gangtok":
+  - /url: https://www.redbus.in/bus-tickets/siliguri-to-gangtok
+  - text: Siliguri to Gangtok Bus
+- link "https://www.redbus.in/bus-tickets/ahmedabad-to-goa":
+  - /url: https://www.redbus.in/bus-tickets/ahmedabad-to-goa
+  - text: Ahmedabad to Goa Bus
+- link "https://www.redbus.in/bus-tickets/ahmedabad-to-kanpur":
+  - /url: https://www.redbus.in/bus-tickets/ahmedabad-to-kanpur
+  - text: Ahmedabad to Kanpur Bus
+- link "https://www.redbus.in/bus-tickets/akola-to-pune":
+  - /url: https://www.redbus.in/bus-tickets/akola-to-pune
+  - text: Akola to Pune Bus
+- link "https://www.redbus.in/bus-tickets/delhi-to-dehradun":
+  - /url: https://www.redbus.in/bus-tickets/delhi-to-dehradun
+  - text: Delhi to Dehradun Bus
+- link "https://www.redbus.in/bus-tickets/delhi-to-haridwar":
+  - /url: https://www.redbus.in/bus-tickets/delhi-to-haridwar
+  - text: Delhi to Haridwar Bus
+- link "https://www.redbus.in/bus-tickets/dehradun-to-delhi":
+  - /url: https://www.redbus.in/bus-tickets/dehradun-to-delhi
+  - text: Dehradun to Delhi Bus
+- link "https://www.redbus.in/bus-tickets/delhi-to-agra":
+  - /url: https://www.redbus.in/bus-tickets/delhi-to-agra
+  - text: Delhi to Agra Bus
+- link "https://www.redbus.in/bus-tickets/delhi-to-varanasi":
+  - /url: https://www.redbus.in/bus-tickets/delhi-to-varanasi
+  - text: Delhi to Varanasi Bus
+- heading "Popular Cities " [level=3]
+- link "buses/hyderabad-bus-tickets":
+  - /url: buses/hyderabad-bus-tickets
+  - text: Hyderabad Bus Booking
+- link "buses/bangalore-bus-tickets":
+  - /url: buses/bangalore-bus-tickets
+  - text: Bangalore Bus Booking
+- link "buses/chennai-bus-tickets":
+  - /url: buses/chennai-bus-tickets
+  - text: Chennai Bus Booking
+- link "buses/pune-bus-tickets":
+  - /url: buses/pune-bus-tickets
+  - text: Pune Bus Booking
+- link "buses/delhi-bus-tickets":
+  - /url: buses/delhi-bus-tickets
+  - text: Delhi Bus Booking
+- link "buses/mumbai-bus-tickets":
+  - /url: buses/mumbai-bus-tickets
+  - text: Mumbai Bus Booking
+- link "buses/kolkata-bus-tickets":
+  - /url: buses/kolkata-bus-tickets
+  - text: Kolkata Bus Booking
+- link "buses/ernakulam-bus-tickets":
+  - /url: buses/ernakulam-bus-tickets
+  - text: Ernakulam Bus Booking
+- link "buses/ahmedabad-bus-tickets":
+  - /url: buses/ahmedabad-bus-tickets
+  - text: Ahmedabad Bus Booking
+- link "buses/vijayawada-bus-tickets":
+  - /url: buses/vijayawada-bus-tickets
+  - text: Vijayawada Bus Booking
+- link "buses/jaipur-bus-tickets":
+  - /url: buses/jaipur-bus-tickets
+  - text: Jaipur Bus Booking
+- link "buses/indore-bus-tickets":
+  - /url: buses/indore-bus-tickets
+  - text: Indore Bus Booking
+- link "buses/lucknow-bus-tickets":
+  - /url: buses/lucknow-bus-tickets
+  - text: Lucknow Bus Booking
+- link "buses/bhopal-bus-tickets":
+  - /url: buses/bhopal-bus-tickets
+  - text: Bhopal Bus Booking
+- link "buses/goa-bus-tickets":
+  - /url: buses/goa-bus-tickets
+  - text: Goa Bus Booking
+- link "buses/ayodhya-bus-tickets":
+  - /url: buses/ayodhya-bus-tickets
+  - text: Ayodhya Bus Booking
+- link "buses/allahabad-bus-tickets":
+  - /url: buses/allahabad-bus-tickets
+  - text: Prayagraj Bus Booking
+- link "buses/varanasi-bus-tickets":
+  - /url: buses/varanasi-bus-tickets
+  - text: Varanasi Bus Booking
+- heading "About redBus" [level=2]
+- link "Contact us":
+  - /url: https://www.redbus.in/info/contactus
+- link "Sitemap":
+  - /url: https://www.redbus.in/sitemap.html
+- link "Offers":
+  - /url: https://www.redbus.in/offers
+- link "Careers":
+  - /url: https://www.redbus.in/careers
+- heading "Info" [level=2]
+- link "T&C":
+  - /url: https://www.redbus.in/info/termscondition
+- link "Privacy policy":
+  - /url: https://www.redbus.in/info/privacypolicy
+- link "Blog":
+  - /url: https://blog.redbus.in
+- link "Bus operator registration":
+  - /url: https://onboardvendor.redbus.in/
+- link "Agent registration":
+  - /url: https://in3.seatseller.travel/
+- link "Insurance partner":
+  - /url: https://www.acko.com/
+- link "User agreement":
+  - /url: https://www.redbus.in/info/useragreement
+- link "Primo Bus":
+  - /url: https://www.redbus.in/primo/primo-service
+- link "Bus Timetable":
+  - /url: https://www.redbus.in/bus-timetable
+- heading "Global Sites" [level=2]
+- link "India":
+  - /url: https://www.redbus.in/
+- link "Singapore":
+  - /url: https://www.redbus.sg/
+- link "Malaysia":
+  - /url: https://www.redbus.my/
+- link "Indonesia":
+  - /url: https://www.redbus.id/
+- link "Peru":
+  - /url: https://www.redbus.pe/
+- link "Colombia":
+  - /url: https://www.redbus.co/
+- link "Cambodia":
+  - /url: https://www.redbus.com.kh/
+- link "Vietnam":
+  - /url: https://www.redbus.vn/
+- heading "Our Partners" [level=2]
+- link "Goibibo Bus":
+  - /url: https://www.goibibo.com/bus/
+- link "Goibibo Hotels":
+  - /url: https://www.goibibo.com/hotels/
+- link "Makemytrip Hotels":
+  - /url: https://www.makemytrip.com/hotels/
+- text: redBus is the world's largest online bus ticket booking service trusted by over 25 million happy customers globally. redBus offers bus ticket booking through its website, iOS and Android mobile apps for all major routes. Ⓒ 2025 Redbus India Pvt Ltd. All rights reserved
+- link "redbus_facebook":
+  - /url: https://www.facebook.com/redbus.in/
+  - img "redbus_facebook"
+- link "redbus_linkedin":
+  - /url: https://in.linkedin.com/company/redbus_2/
+  - img "redbus_linkedin"
+- link "redbus_twitter":
+  - /url: https://twitter.com/redBus_in/
+  - img "redbus_twitter"
+- link "redbus_instagram":
+  - /url: https://www.instagram.com/accounts/login/?next=/redbusindia/
+  - img "redbus_instagram"
+```
+
+# Test source
+
+```ts
+  1 | import { test,expect } from "@playwright/test";
+  2 | test("Select cheap ticket flight",async ({page}) => {
+  3 |     await page.goto("https://www.redbus.in/");
+> 4 |     await page.locator("//div[text()='From']").fill("Shimla");
+    |                                                ^ Error: locator.fill: Error: Element is not an <input>, <textarea>, <select> or [contenteditable] and does not have a role allowing [aria-readonly]
+  5 | })
+```

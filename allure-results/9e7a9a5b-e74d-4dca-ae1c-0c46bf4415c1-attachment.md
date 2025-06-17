@@ -1,0 +1,2158 @@
+# Test info
+
+- Name: Add to Cart and verify whether the product is displayed
+- Location: C:\Users\DELL\Desktop\Project One\tests\addtocartamazon.spec.js:3:5
+
+# Error details
+
+```
+Error: locator.textContent: Error: strict mode violation: locator('//div[@class=\'a-section a-spacing-small puis-padding-left-micro puis-padding-right-micro\']/descendant::span[@class=\'a-offscreen\']') resolved to 169 elements:
+    1) <span class="a-offscreen">₹2,499</span> aka getByRole('link', { name: '₹2,499 M.R.P: ₹4,999 M.R.P: ₹' })
+    2) <span class="a-offscreen">M.R.P: ₹4,999</span> aka getByRole('link', { name: '₹2,499 M.R.P: ₹4,999 M.R.P: ₹' })
+    3) <span class="a-offscreen">₹4,999</span> aka getByRole('link', { name: '₹2,499 M.R.P: ₹4,999 M.R.P: ₹' })
+    4) <span class="a-offscreen">₹1,399</span> aka getByRole('link', { name: '₹1,399 M.R.P: ₹9,999 M.R.P: ₹' })
+    5) <span class="a-offscreen">M.R.P: ₹9,999</span> aka getByRole('link', { name: '₹1,399 M.R.P: ₹9,999 M.R.P: ₹' })
+    6) <span class="a-offscreen">₹9,999</span> aka getByRole('link', { name: '₹1,399 M.R.P: ₹9,999 M.R.P: ₹' })
+    7) <span class="a-offscreen">₹1,399</span> aka getByRole('link', { name: '₹1,399 M.R.P: ₹14,999 M.R.P: ₹' })
+    8) <span class="a-offscreen">M.R.P: ₹14,999</span> aka getByRole('link', { name: '₹1,399 M.R.P: ₹14,999 M.R.P: ₹' })
+    9) <span class="a-offscreen">₹14,999</span> aka getByRole('link', { name: '₹1,399 M.R.P: ₹14,999 M.R.P: ₹' })
+    10) <span class="a-offscreen">₹2,999</span> aka getByRole('link', { name: '₹2,999 M.R.P: ₹7,999 M.R.P: ₹' })
+    ...
+
+Call log:
+  - waiting for locator('//div[@class=\'a-section a-spacing-small puis-padding-left-micro puis-padding-right-micro\']/descendant::span[@class=\'a-offscreen\']')
+
+    at C:\Users\DELL\Desktop\Project One\tests\addtocartamazon.spec.js:11:167
+```
+
+# Page snapshot
+
+```yaml
+- button "Shortcuts menu"
+- banner:
+  - navigation "Primary":
+    - link "Amazon.in":
+      - /url: /ref=nav_logo
+      - text: .in
+    - button "Delivering to Bengaluru 562130 Update location"
+    - search:
+      - text: All
+      - combobox "Select the department you want to search in":
+        - option "All Categories" [selected]
+        - option "Alexa Skills"
+        - option "Amazon Devices"
+        - option "Amazon Fashion"
+        - option "Amazon Fresh"
+        - option "Amazon Pharmacy"
+        - option "Appliances"
+        - option "Apps & Games"
+        - option "Audible Audiobooks"
+        - option "Baby"
+        - option "Beauty"
+        - option "Books"
+        - option "Car & Motorbike"
+        - option "Clothing & Accessories"
+        - option "Collectibles"
+        - option "Computers & Accessories"
+        - option "Deals"
+        - option "Electronics"
+        - option "Furniture"
+        - option "Garden & Outdoors"
+        - option "Gift Cards"
+        - option "Grocery & Gourmet Foods"
+        - option "Health & Personal Care"
+        - option "Home & Kitchen"
+        - option "Industrial & Scientific"
+        - option "Jewellery"
+        - option "Kindle Store"
+        - option "Luggage & Bags"
+        - option "Luxury Beauty"
+        - option "Movies & TV Shows"
+        - option "MP3 Music"
+        - option "Music"
+        - option "Musical Instruments"
+        - option "Office Products"
+        - option "Pet Supplies"
+        - option "Prime Video"
+        - option "Shoes & Handbags"
+        - option "Software"
+        - option "Sports, Fitness & Outdoors"
+        - option "Subscribe & Save"
+        - option "Tools & Home Improvement"
+        - option "Toys & Games"
+        - option "Under ₹500"
+        - option "Video Games"
+        - option "Watches"
+      - searchbox "Search Amazon.in": fastrack watches for man
+      - button "Go"
+    - link "Choose a language for shopping in Amazon India. The current selection is English (EN).":
+      - /url: /customer-preferences/edit?ie=UTF8&preferencesReturnUrl=%2F&ref_=topnav_lang
+      - img "India"
+      - text: EN
+    - button "Expand to Change Language or Country"
+    - link "Hello, sign in Account & Lists":
+      - /url: https://www.amazon.in/ap/signin?openid.pape.max_auth_age=0&openid.return_to=https%3A%2F%2Fwww.amazon.in%2Fs%3Fk%3Dfastrack%2Bwatches%2Bfor%2Bman%26crid%3D1W90282OOSS0O%26sprefix%3Dfastrack%2Bwatches%2Bfor%2Bman%252Caps%252C227%26ref%3Dnav_ya_signin&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.assoc_handle=inflex&openid.mode=checkid_setup&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0
+    - button "Expand Account and Lists"
+    - link "Returns & Orders":
+      - /url: /gp/css/order-history?ref_=nav_orders_first
+    - link "0 items in cart":
+      - /url: /gp/cart/view.html?ref_=nav_cart
+    - button "Open All Categories Menu": All
+    - list:
+      - listitem:
+        - link "Fresh":
+          - /url: /fresh?ref_=nav_cs_fresh
+      - listitem:
+        - link "MX Player":
+          - /url: /minitv?ref_=nav_avod_desktop_topnav
+      - listitem:
+        - link "Sell":
+          - /url: /b/32702023031?node=32702023031&ld=AZINSOANavDesktop_T3&ref_=nav_cs_sell_T3
+      - listitem:
+        - link "Bestsellers":
+          - /url: /gp/bestsellers/?ref_=nav_cs_bestsellers
+      - listitem:
+        - link "Today's Deals":
+          - /url: /deals?ref_=nav_cs_gb
+      - listitem:
+        - link "Mobiles":
+          - /url: /mobile-phones/b/?ie=UTF8&node=1389401031&ref_=nav_cs_mobiles
+      - listitem:
+        - link "Fashion":
+          - /url: /gp/browse.html?node=6648217031&ref_=nav_cs_fashion
+      - listitem:
+        - link "Customer Service":
+          - /url: /gp/help/customer/display.html?nodeId=200507590&ref_=nav_cs_help
+      - listitem:
+        - link "Prime":
+          - /url: /prime?ref_=nav_cs_primelink_nonmember
+        - button "Prime Details"
+      - listitem:
+        - link "New Releases":
+          - /url: /gp/new-releases/?ref_=nav_cs_newreleases
+      - listitem:
+        - link "Electronics":
+          - /url: /electronics/b/?ie=UTF8&node=976419031&ref_=nav_cs_electronics
+      - listitem:
+        - link "Home & Kitchen":
+          - /url: /Home-Kitchen/b/?ie=UTF8&node=976442031&ref_=nav_cs_home
+      - listitem:
+        - link "Amazon Pay":
+          - /url: /gp/sva/dashboard?ref_=nav_cs_apay
+      - listitem:
+        - link "Car & Motorbike":
+          - /url: /Car-Motorbike-Store/b/?ie=UTF8&node=4772060031&ref_=nav_cs_automotive
+      - listitem:
+        - link "Computers":
+          - /url: /computers-and-accessories/b/?ie=UTF8&node=976392031&ref_=nav_cs_pc
+      - listitem:
+        - link "Books":
+          - /url: /Books/b/?ie=UTF8&node=976389031&ref_=nav_cs_books
+      - listitem:
+        - link "Toys & Games":
+          - /url: /Toys-Games/b/?ie=UTF8&node=1350380031&ref_=nav_cs_toys
+      - listitem:
+        - link "Beauty & Personal Care":
+          - /url: /beauty/b/?ie=UTF8&node=1355016031&ref_=nav_cs_beauty
+      - listitem:
+        - link "Home Improvement":
+          - /url: /Home-Improvement/b/?ie=UTF8&node=4286640031&ref_=nav_cs_hi
+      - listitem:
+        - link "Gift Cards":
+          - /url: /gift-card-store/b/?ie=UTF8&node=3704982031&ref_=nav_cs_gc
+      - listitem:
+        - link "Sports, Fitness & Outdoors":
+          - /url: /Sports/b/?ie=UTF8&node=1984443031&ref_=nav_cs_sports
+      - listitem:
+        - link "Health, Household & Personal Care":
+          - /url: /health-and-personal-care/b/?ie=UTF8&node=1350384031&ref_=nav_cs_hpc
+      - listitem:
+        - link "Grocery & Gourmet Foods":
+          - /url: /Gourmet-Specialty-Foods/b/?ie=UTF8&node=2454178031&ref_=nav_cs_grocery
+      - listitem:
+        - link "Baby":
+          - /url: /Baby/b/?ie=UTF8&node=1571274031&ref_=nav_cs_baby
+      - listitem:
+        - link "Custom Products":
+          - /url: /Amazon-Custom/b/?ie=UTF8&node=32615889031&ref_=nav_cs_custom
+      - listitem:
+        - link "Video Games":
+          - /url: /video-games/b/?ie=UTF8&node=976460031&ref_=nav_cs_video_games
+      - listitem:
+        - link "Pet Supplies":
+          - /url: /Pet-Supplies/b/?ie=UTF8&node=2454181031&ref_=nav_cs_pets
+      - listitem:
+        - link "Gift Ideas":
+          - /url: /gcx/-/gfhz/?ref_=nav_cs_giftfinder
+      - listitem:
+        - link "AmazonBasics":
+          - /url: /b/?node=6637738031&ref_=nav_cs_amazonbasics
+      - listitem:
+        - link "Audible":
+          - /url: /Audible-Books-and-Originals/b/?ie=UTF8&node=17941593031&ref_=nav_cs_audible
+      - listitem:
+        - link "Subscribe & Save":
+          - /url: /auto-deliveries/landing?ref_=nav_cs_sns
+    - dialog
+- 'heading "1-48 of over 10,000 results for \"fastrack watches for man\" Sort by: Featured" [level=1]':
+  - heading "1-48 of over 10,000 results for \"fastrack watches for man\"" [level=2]
+  - text: "Sort by:"
+  - combobox "Sort by:":
+    - option "Featured" [selected]
+    - 'option "Price: Low to High"'
+    - 'option "Price: High to Low"'
+    - option "Avg. Customer Review"
+    - option "Newest Arrivals"
+    - option "Best Sellers"
+- link "Sponsored video from SKMEI, click to learn more about offerings from SKMEI on Amazon.":
+  - /url: https://aax-eu.amazon.in/x/c/JAAknPsU7ceT84u2MntcYmMAAAGW2hukFAMAAAH2AQBvbm9fdHhuX2JpZDIgICBvbm9fdHhuX2ltcDIgICB95Q7O/https://www.amazon.in/dp/B0CCFWD2S9/?_encoding=UTF8&_encoding=UTF8&pd_rd_i=B0CCFWD2S9&ref_=sxts_sparkle_sbv&ref_=sbx_be_s_sparkle_ssd_vid&qid=1747415966&pd_rd_w=bzuPV&content-id=amzn1.sym.5e94cbee-68a7-46b5-b2e9-bb5445edd00f%3Aamzn1.sym.5e94cbee-68a7-46b5-b2e9-bb5445edd00f&pf_rd_p=5e94cbee-68a7-46b5-b2e9-bb5445edd00f&pf_rd_r=5D4RDBAR12B4XNRRA774&pd_rd_wg=d0Jp3&pd_rd_r=99ca6863-b647-444e-a6f2-049c03000ace
+- button "Play Sponsored Video":
+  - img
+- link "SKMEI Spinning Car Wheels Rolling Watch for Men Analog Display Black-Red Dial Zinc Alloy Men's Stainless Steel Black Color Stylish Band, Water-Resistant & Scratch-Resistant-1990":
+  - /url: https://aax-eu.amazon.in/x/c/JAAknPsU7ceT84u2MntcYmMAAAGW2hukFAMAAAH2AQBvbm9fdHhuX2JpZDIgICBvbm9fdHhuX2ltcDIgICB95Q7O/https://amazon.in/stores/page/13DD93EA-2CD8-4C39-B78D-4239370278DC/?_encoding=UTF8&pd_rd_plhdr=t&pd_rd_i=B0CCFWD2S9&ref_=sbx_be_s_sparkle_ssd_asin&store_ref=SBV_A0736705121FONENL03B6-A0690077MY2WYC3OZ7TC&lp_asins=B0CCFWD2S9&pd_rd_w=bzuPV&content-id=amzn1.sym.5e94cbee-68a7-46b5-b2e9-bb5445edd00f%3Aamzn1.sym.5e94cbee-68a7-46b5-b2e9-bb5445edd00f&pf_rd_p=5e94cbee-68a7-46b5-b2e9-bb5445edd00f&pf_rd_r=5D4RDBAR12B4XNRRA774&pd_rd_wg=d0Jp3&pd_rd_r=99ca6863-b647-444e-a6f2-049c03000ace
+  - img "SKMEI Spinning Car Wheels Rolling Watch for Men Analog Display Black-Red Dial Zinc Alloy Men's Stainless Steel Black Color Stylish Band, Water-Resistant & Scratch-Resistant-1990"
+- link "Shop the SKMEI Store on Amazon":
+  - /url: https://aax-eu.amazon.in/x/c/JAAknPsU7ceT84u2MntcYmMAAAGW2hukFAMAAAH2AQBvbm9fdHhuX2JpZDIgICBvbm9fdHhuX2ltcDIgICB95Q7O/https://amazon.in/stores/page/13DD93EA-2CD8-4C39-B78D-4239370278DC/?_encoding=UTF8&pd_rd_plhdr=t&pd_rd_i=B0CCFWD2S9&ref_=sbx_be_s_sparkle_ssd_logo&store_ref=SBV_A0736705121FONENL03B6-A0690077MY2WYC3OZ7TC&lp_asins=B0CCFWD2S9&pd_rd_w=bzuPV&content-id=amzn1.sym.5e94cbee-68a7-46b5-b2e9-bb5445edd00f%3Aamzn1.sym.5e94cbee-68a7-46b5-b2e9-bb5445edd00f&pf_rd_p=5e94cbee-68a7-46b5-b2e9-bb5445edd00f&pf_rd_r=5D4RDBAR12B4XNRRA774&pd_rd_wg=d0Jp3&pd_rd_r=99ca6863-b647-444e-a6f2-049c03000ace
+  - img "Shop the SKMEI Store on Amazon"
+- link "Shop SKMEI":
+  - /url: https://aax-eu.amazon.in/x/c/JAAknPsU7ceT84u2MntcYmMAAAGW2hukFAMAAAH2AQBvbm9fdHhuX2JpZDIgICBvbm9fdHhuX2ltcDIgICB95Q7O/https://amazon.in/stores/page/13DD93EA-2CD8-4C39-B78D-4239370278DC/?_encoding=UTF8&pd_rd_plhdr=t&pd_rd_i=B0CCFWD2S9&ref_=sbx_be_s_sparkle_ssd_cta&store_ref=SBV_A0736705121FONENL03B6-A0690077MY2WYC3OZ7TC&lp_asins=B0CCFWD2S9&pd_rd_w=bzuPV&content-id=amzn1.sym.5e94cbee-68a7-46b5-b2e9-bb5445edd00f%3Aamzn1.sym.5e94cbee-68a7-46b5-b2e9-bb5445edd00f&pf_rd_p=5e94cbee-68a7-46b5-b2e9-bb5445edd00f&pf_rd_r=5D4RDBAR12B4XNRRA774&pd_rd_wg=d0Jp3&pd_rd_r=99ca6863-b647-444e-a6f2-049c03000ace
+- button "Leave feedback on Sponsored ad": Sponsored
+- heading "Results" [level=2]
+- text: Check each product page for other buying options.
+- list:
+  - listitem:
+    - link:
+      - /url: /sspa/click?ie=UTF8&spc=MTo2MDAwMTA2MjkzMjYzMDI4OjE3NDc0MTU5NjY6c3BfYXRmOjMwMDM0NDk2NjU1MzYzMjo6MDo6&url=%2FFastrack-Assistance-Functional-SingleSync-Smartwatch%2Fdp%2FB0DB5XSKLJ%2Fref%3Dsr_1_1_sspa%3Fcrid%3D1W90282OOSS0O%26dib%3DeyJ2IjoiMSJ9.6XcBA4w6Npm_pwAOvvXVcDAPsx0DXQfkVFdJcc8795AOyRoEAhGIodxusTSNBOZ8GZ7QBjv4Xt1bRcOCSc7OPyg0r7pbMkcvB09GR1rcV2Hv6-XZa7g2Q8g8nJ7gGOcgFAOZyjmW0D8EBSwRzt5ZLhyzgrlRZDQO2I47cGai7f1oUrbIgt_sp2btrvSp45rWYR6j0JmsaV8Wsx-9rp2JS-7UU9pPDNHCoUby43irvwg_ifcPUtb6FRLvaWwBvj-JicFnhFTLKr8rqCKZmUSCEVOjPRvoBdaW3KTXPWtRxY8.QetsUIpXMVylXIFUheBctZesc8qVn29qmyuGSeKzctY%26dib_tag%3Dse%26keywords%3Dfastrack%2Bwatches%2Bfor%2Bman%26nsdOptOutParam%3Dtrue%26qid%3D1747415966%26sprefix%3Dfastrack%2Bwatches%2Bfor%2Bman%252Caps%252C227%26sr%3D8-1-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9hdGY%26psc%3D1
+    - button "View Sponsored information or leave ad feedback": Sponsored
+    - heading "Fastrack" [level=2]
+    - link "Sponsored Ad - Fastrack New Astor FS1 PRO Smart Watch, Large Super AMOLED Display (1.97\") AOD, AI Voice Assistance, Functional Crown, SingleSync BT Calling, 100+ Sports Modes & Smartwatch Faces, IP68 (Black)":
+      - /url: /sspa/click?ie=UTF8&spc=MTo2MDAwMTA2MjkzMjYzMDI4OjE3NDc0MTU5NjY6c3BfYXRmOjMwMDM0NDk2NjU1MzYzMjo6MDo6&url=%2FFastrack-Assistance-Functional-SingleSync-Smartwatch%2Fdp%2FB0DB5XSKLJ%2Fref%3Dsr_1_1_sspa%3Fcrid%3D1W90282OOSS0O%26dib%3DeyJ2IjoiMSJ9.6XcBA4w6Npm_pwAOvvXVcDAPsx0DXQfkVFdJcc8795AOyRoEAhGIodxusTSNBOZ8GZ7QBjv4Xt1bRcOCSc7OPyg0r7pbMkcvB09GR1rcV2Hv6-XZa7g2Q8g8nJ7gGOcgFAOZyjmW0D8EBSwRzt5ZLhyzgrlRZDQO2I47cGai7f1oUrbIgt_sp2btrvSp45rWYR6j0JmsaV8Wsx-9rp2JS-7UU9pPDNHCoUby43irvwg_ifcPUtb6FRLvaWwBvj-JicFnhFTLKr8rqCKZmUSCEVOjPRvoBdaW3KTXPWtRxY8.QetsUIpXMVylXIFUheBctZesc8qVn29qmyuGSeKzctY%26dib_tag%3Dse%26keywords%3Dfastrack%2Bwatches%2Bfor%2Bman%26nsdOptOutParam%3Dtrue%26qid%3D1747415966%26sprefix%3Dfastrack%2Bwatches%2Bfor%2Bman%252Caps%252C227%26sr%3D8-1-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9hdGY%26psc%3D1
+      - heading "Sponsored Ad - Fastrack New Astor FS1 PRO Smart Watch, Large Super AMOLED Display (1.97\") AOD, AI Voice Assistance, Functional Crown, SingleSync BT Calling, 100+ Sports Modes & Smartwatch Faces, IP68 (Black)" [level=2]: Fastrack New Astor FS1 PRO Smart Watch, Large Super AMOLED Display (1.97") AOD, AI Voice Assistance, Functional Crown, SingleSync BT Calling, 100+ Sports Modes & Smartwatch Faces, IP68 (Black)
+    - button "3.9 out of 5 stars, rating details"
+    - link "7,498 ratings":
+      - /url: /sspa/click?ie=UTF8&spc=MTo2MDAwMTA2MjkzMjYzMDI4OjE3NDc0MTU5NjY6c3BfYXRmOjMwMDM0NDk2NjU1MzYzMjo6MDo6&url=%2FFastrack-Assistance-Functional-SingleSync-Smartwatch%2Fdp%2FB0DB5XSKLJ%2Fref%3Dsr_1_1_sspa%3Fcrid%3D1W90282OOSS0O%26dib%3DeyJ2IjoiMSJ9.6XcBA4w6Npm_pwAOvvXVcDAPsx0DXQfkVFdJcc8795AOyRoEAhGIodxusTSNBOZ8GZ7QBjv4Xt1bRcOCSc7OPyg0r7pbMkcvB09GR1rcV2Hv6-XZa7g2Q8g8nJ7gGOcgFAOZyjmW0D8EBSwRzt5ZLhyzgrlRZDQO2I47cGai7f1oUrbIgt_sp2btrvSp45rWYR6j0JmsaV8Wsx-9rp2JS-7UU9pPDNHCoUby43irvwg_ifcPUtb6FRLvaWwBvj-JicFnhFTLKr8rqCKZmUSCEVOjPRvoBdaW3KTXPWtRxY8.QetsUIpXMVylXIFUheBctZesc8qVn29qmyuGSeKzctY%26dib_tag%3Dse%26keywords%3Dfastrack%2Bwatches%2Bfor%2Bman%26nsdOptOutParam%3Dtrue%26qid%3D1747415966%26sprefix%3Dfastrack%2Bwatches%2Bfor%2Bman%252Caps%252C227%26sr%3D8-1-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9hdGY%26psc%3D1#customerReviews
+    - text: 2K+ bought in past month Price, product page
+    - 'link "₹2,499 M.R.P: ₹4,999 M.R.P: ₹4,999"':
+      - /url: /sspa/click?ie=UTF8&spc=MTo2MDAwMTA2MjkzMjYzMDI4OjE3NDc0MTU5NjY6c3BfYXRmOjMwMDM0NDk2NjU1MzYzMjo6MDo6&url=%2FFastrack-Assistance-Functional-SingleSync-Smartwatch%2Fdp%2FB0DB5XSKLJ%2Fref%3Dsr_1_1_sspa%3Fcrid%3D1W90282OOSS0O%26dib%3DeyJ2IjoiMSJ9.6XcBA4w6Npm_pwAOvvXVcDAPsx0DXQfkVFdJcc8795AOyRoEAhGIodxusTSNBOZ8GZ7QBjv4Xt1bRcOCSc7OPyg0r7pbMkcvB09GR1rcV2Hv6-XZa7g2Q8g8nJ7gGOcgFAOZyjmW0D8EBSwRzt5ZLhyzgrlRZDQO2I47cGai7f1oUrbIgt_sp2btrvSp45rWYR6j0JmsaV8Wsx-9rp2JS-7UU9pPDNHCoUby43irvwg_ifcPUtb6FRLvaWwBvj-JicFnhFTLKr8rqCKZmUSCEVOjPRvoBdaW3KTXPWtRxY8.QetsUIpXMVylXIFUheBctZesc8qVn29qmyuGSeKzctY%26dib_tag%3Dse%26keywords%3Dfastrack%2Bwatches%2Bfor%2Bman%26nsdOptOutParam%3Dtrue%26qid%3D1747415966%26sprefix%3Dfastrack%2Bwatches%2Bfor%2Bman%252Caps%252C227%26sr%3D8-1-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9hdGY%26psc%3D1
+    - text: (50% off) Up to 5% back with Amazon Pay ICICI card
+    - img "Amazon Prime"
+    - text: "FREE delivery Sun, 18 May Or fastest delivery Tomorrow, 17 May Service: Installation"
+    - button "Add to cart"
+  - listitem:
+    - link:
+      - /url: /sspa/click?ie=UTF8&spc=MTo2MDAwMTA2MjkzMjYzMDI4OjE3NDc0MTU5NjY6c3BfYXRmOjMwMDIwMzEyNjA4NjczMjo6MDo6&url=%2FFire-Boltt-Phoenix-Bluetooth-Calling-Monitoring%2Fdp%2FB0B3RRWSF6%2Fref%3Dsr_1_2_sspa%3Fcrid%3D1W90282OOSS0O%26dib%3DeyJ2IjoiMSJ9.6XcBA4w6Npm_pwAOvvXVcDAPsx0DXQfkVFdJcc8795AOyRoEAhGIodxusTSNBOZ8GZ7QBjv4Xt1bRcOCSc7OPyg0r7pbMkcvB09GR1rcV2Hv6-XZa7g2Q8g8nJ7gGOcgFAOZyjmW0D8EBSwRzt5ZLhyzgrlRZDQO2I47cGai7f1oUrbIgt_sp2btrvSp45rWYR6j0JmsaV8Wsx-9rp2JS-7UU9pPDNHCoUby43irvwg_ifcPUtb6FRLvaWwBvj-JicFnhFTLKr8rqCKZmUSCEVOjPRvoBdaW3KTXPWtRxY8.QetsUIpXMVylXIFUheBctZesc8qVn29qmyuGSeKzctY%26dib_tag%3Dse%26keywords%3Dfastrack%2Bwatches%2Bfor%2Bman%26nsdOptOutParam%3Dtrue%26qid%3D1747415966%26sprefix%3Dfastrack%2Bwatches%2Bfor%2Bman%252Caps%252C227%26sr%3D8-2-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9hdGY%26psc%3D1
+    - button "View Sponsored information or leave ad feedback": Sponsored
+    - heading "Fire-Boltt" [level=2]
+    - link "Sponsored Ad - Fire-Boltt Phoenix Smart Watch with Bluetooth Calling 1.3,120+ Sports Modes, 240 * 240 PX High Res with SpO2, Heart Rate Monitoring & IP67 Rating (Black)":
+      - /url: /sspa/click?ie=UTF8&spc=MTo2MDAwMTA2MjkzMjYzMDI4OjE3NDc0MTU5NjY6c3BfYXRmOjMwMDIwMzEyNjA4NjczMjo6MDo6&url=%2FFire-Boltt-Phoenix-Bluetooth-Calling-Monitoring%2Fdp%2FB0B3RRWSF6%2Fref%3Dsr_1_2_sspa%3Fcrid%3D1W90282OOSS0O%26dib%3DeyJ2IjoiMSJ9.6XcBA4w6Npm_pwAOvvXVcDAPsx0DXQfkVFdJcc8795AOyRoEAhGIodxusTSNBOZ8GZ7QBjv4Xt1bRcOCSc7OPyg0r7pbMkcvB09GR1rcV2Hv6-XZa7g2Q8g8nJ7gGOcgFAOZyjmW0D8EBSwRzt5ZLhyzgrlRZDQO2I47cGai7f1oUrbIgt_sp2btrvSp45rWYR6j0JmsaV8Wsx-9rp2JS-7UU9pPDNHCoUby43irvwg_ifcPUtb6FRLvaWwBvj-JicFnhFTLKr8rqCKZmUSCEVOjPRvoBdaW3KTXPWtRxY8.QetsUIpXMVylXIFUheBctZesc8qVn29qmyuGSeKzctY%26dib_tag%3Dse%26keywords%3Dfastrack%2Bwatches%2Bfor%2Bman%26nsdOptOutParam%3Dtrue%26qid%3D1747415966%26sprefix%3Dfastrack%2Bwatches%2Bfor%2Bman%252Caps%252C227%26sr%3D8-2-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9hdGY%26psc%3D1
+      - heading "Sponsored Ad - Fire-Boltt Phoenix Smart Watch with Bluetooth Calling 1.3,120+ Sports Modes, 240 * 240 PX High Res with SpO2, Heart Rate Monitoring & IP67 Rating (Black)" [level=2]: Fire-Boltt Phoenix Smart Watch with Bluetooth Calling 1.3,120+ Sports Modes, 240 * 240 PX High Res with SpO2, Heart Rate Monitoring & IP67 Rating (Black)
+    - button "3.9 out of 5 stars, rating details"
+    - link "53,791 ratings":
+      - /url: /sspa/click?ie=UTF8&spc=MTo2MDAwMTA2MjkzMjYzMDI4OjE3NDc0MTU5NjY6c3BfYXRmOjMwMDIwMzEyNjA4NjczMjo6MDo6&url=%2FFire-Boltt-Phoenix-Bluetooth-Calling-Monitoring%2Fdp%2FB0B3RRWSF6%2Fref%3Dsr_1_2_sspa%3Fcrid%3D1W90282OOSS0O%26dib%3DeyJ2IjoiMSJ9.6XcBA4w6Npm_pwAOvvXVcDAPsx0DXQfkVFdJcc8795AOyRoEAhGIodxusTSNBOZ8GZ7QBjv4Xt1bRcOCSc7OPyg0r7pbMkcvB09GR1rcV2Hv6-XZa7g2Q8g8nJ7gGOcgFAOZyjmW0D8EBSwRzt5ZLhyzgrlRZDQO2I47cGai7f1oUrbIgt_sp2btrvSp45rWYR6j0JmsaV8Wsx-9rp2JS-7UU9pPDNHCoUby43irvwg_ifcPUtb6FRLvaWwBvj-JicFnhFTLKr8rqCKZmUSCEVOjPRvoBdaW3KTXPWtRxY8.QetsUIpXMVylXIFUheBctZesc8qVn29qmyuGSeKzctY%26dib_tag%3Dse%26keywords%3Dfastrack%2Bwatches%2Bfor%2Bman%26nsdOptOutParam%3Dtrue%26qid%3D1747415966%26sprefix%3Dfastrack%2Bwatches%2Bfor%2Bman%252Caps%252C227%26sr%3D8-2-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9hdGY%26psc%3D1#customerReviews
+    - text: 2K+ bought in past month Price, product page
+    - 'link "₹1,399 M.R.P: ₹9,999 M.R.P: ₹9,999"':
+      - /url: /sspa/click?ie=UTF8&spc=MTo2MDAwMTA2MjkzMjYzMDI4OjE3NDc0MTU5NjY6c3BfYXRmOjMwMDIwMzEyNjA4NjczMjo6MDo6&url=%2FFire-Boltt-Phoenix-Bluetooth-Calling-Monitoring%2Fdp%2FB0B3RRWSF6%2Fref%3Dsr_1_2_sspa%3Fcrid%3D1W90282OOSS0O%26dib%3DeyJ2IjoiMSJ9.6XcBA4w6Npm_pwAOvvXVcDAPsx0DXQfkVFdJcc8795AOyRoEAhGIodxusTSNBOZ8GZ7QBjv4Xt1bRcOCSc7OPyg0r7pbMkcvB09GR1rcV2Hv6-XZa7g2Q8g8nJ7gGOcgFAOZyjmW0D8EBSwRzt5ZLhyzgrlRZDQO2I47cGai7f1oUrbIgt_sp2btrvSp45rWYR6j0JmsaV8Wsx-9rp2JS-7UU9pPDNHCoUby43irvwg_ifcPUtb6FRLvaWwBvj-JicFnhFTLKr8rqCKZmUSCEVOjPRvoBdaW3KTXPWtRxY8.QetsUIpXMVylXIFUheBctZesc8qVn29qmyuGSeKzctY%26dib_tag%3Dse%26keywords%3Dfastrack%2Bwatches%2Bfor%2Bman%26nsdOptOutParam%3Dtrue%26qid%3D1747415966%26sprefix%3Dfastrack%2Bwatches%2Bfor%2Bman%252Caps%252C227%26sr%3D8-2-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9hdGY%26psc%3D1
+    - text: "(86% off) FREE delivery 6 - 7 Jun Service: Installation"
+    - button "Add to cart"
+  - listitem:
+    - link:
+      - /url: /sspa/click?ie=UTF8&spc=MTo2MDAwMTA2MjkzMjYzMDI4OjE3NDc0MTU5NjY6c3BfYXRmOjMwMDIwMzAxMDQ2NjczMjo6MDo6&url=%2FFire-Boltt-Launched-Display-Bluetooth-Assistance%2Fdp%2FB0C497XVG9%2Fref%3Dsr_1_3_sspa%3Fcrid%3D1W90282OOSS0O%26dib%3DeyJ2IjoiMSJ9.6XcBA4w6Npm_pwAOvvXVcDAPsx0DXQfkVFdJcc8795AOyRoEAhGIodxusTSNBOZ8GZ7QBjv4Xt1bRcOCSc7OPyg0r7pbMkcvB09GR1rcV2Hv6-XZa7g2Q8g8nJ7gGOcgFAOZyjmW0D8EBSwRzt5ZLhyzgrlRZDQO2I47cGai7f1oUrbIgt_sp2btrvSp45rWYR6j0JmsaV8Wsx-9rp2JS-7UU9pPDNHCoUby43irvwg_ifcPUtb6FRLvaWwBvj-JicFnhFTLKr8rqCKZmUSCEVOjPRvoBdaW3KTXPWtRxY8.QetsUIpXMVylXIFUheBctZesc8qVn29qmyuGSeKzctY%26dib_tag%3Dse%26keywords%3Dfastrack%2Bwatches%2Bfor%2Bman%26nsdOptOutParam%3Dtrue%26qid%3D1747415966%26sprefix%3Dfastrack%2Bwatches%2Bfor%2Bman%252Caps%252C227%26sr%3D8-3-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9hdGY%26psc%3D1
+    - button "View Sponsored information or leave ad feedback": Sponsored
+    - heading "Fire-Boltt" [level=2]
+    - link "Sponsored Ad - Fire-Boltt Ninja Call Pro Max Smart Watch 2.01 inch Display, Bluetooth Calling, 120+ Sports Modes, Health Suite, Voice Assistance (Blue)":
+      - /url: /sspa/click?ie=UTF8&spc=MTo2MDAwMTA2MjkzMjYzMDI4OjE3NDc0MTU5NjY6c3BfYXRmOjMwMDIwMzAxMDQ2NjczMjo6MDo6&url=%2FFire-Boltt-Launched-Display-Bluetooth-Assistance%2Fdp%2FB0C497XVG9%2Fref%3Dsr_1_3_sspa%3Fcrid%3D1W90282OOSS0O%26dib%3DeyJ2IjoiMSJ9.6XcBA4w6Npm_pwAOvvXVcDAPsx0DXQfkVFdJcc8795AOyRoEAhGIodxusTSNBOZ8GZ7QBjv4Xt1bRcOCSc7OPyg0r7pbMkcvB09GR1rcV2Hv6-XZa7g2Q8g8nJ7gGOcgFAOZyjmW0D8EBSwRzt5ZLhyzgrlRZDQO2I47cGai7f1oUrbIgt_sp2btrvSp45rWYR6j0JmsaV8Wsx-9rp2JS-7UU9pPDNHCoUby43irvwg_ifcPUtb6FRLvaWwBvj-JicFnhFTLKr8rqCKZmUSCEVOjPRvoBdaW3KTXPWtRxY8.QetsUIpXMVylXIFUheBctZesc8qVn29qmyuGSeKzctY%26dib_tag%3Dse%26keywords%3Dfastrack%2Bwatches%2Bfor%2Bman%26nsdOptOutParam%3Dtrue%26qid%3D1747415966%26sprefix%3Dfastrack%2Bwatches%2Bfor%2Bman%252Caps%252C227%26sr%3D8-3-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9hdGY%26psc%3D1
+      - heading "Sponsored Ad - Fire-Boltt Ninja Call Pro Max Smart Watch 2.01 inch Display, Bluetooth Calling, 120+ Sports Modes, Health Suite, Voice Assistance (Blue)" [level=2]: Fire-Boltt Ninja Call Pro Max Smart Watch 2.01 inch Display, Bluetooth Calling, 120+ Sports Modes, Health Suite, Voice Assistance (Blue)
+    - button "3.8 out of 5 stars, rating details"
+    - link "32,690 ratings":
+      - /url: /sspa/click?ie=UTF8&spc=MTo2MDAwMTA2MjkzMjYzMDI4OjE3NDc0MTU5NjY6c3BfYXRmOjMwMDIwMzAxMDQ2NjczMjo6MDo6&url=%2FFire-Boltt-Launched-Display-Bluetooth-Assistance%2Fdp%2FB0C497XVG9%2Fref%3Dsr_1_3_sspa%3Fcrid%3D1W90282OOSS0O%26dib%3DeyJ2IjoiMSJ9.6XcBA4w6Npm_pwAOvvXVcDAPsx0DXQfkVFdJcc8795AOyRoEAhGIodxusTSNBOZ8GZ7QBjv4Xt1bRcOCSc7OPyg0r7pbMkcvB09GR1rcV2Hv6-XZa7g2Q8g8nJ7gGOcgFAOZyjmW0D8EBSwRzt5ZLhyzgrlRZDQO2I47cGai7f1oUrbIgt_sp2btrvSp45rWYR6j0JmsaV8Wsx-9rp2JS-7UU9pPDNHCoUby43irvwg_ifcPUtb6FRLvaWwBvj-JicFnhFTLKr8rqCKZmUSCEVOjPRvoBdaW3KTXPWtRxY8.QetsUIpXMVylXIFUheBctZesc8qVn29qmyuGSeKzctY%26dib_tag%3Dse%26keywords%3Dfastrack%2Bwatches%2Bfor%2Bman%26nsdOptOutParam%3Dtrue%26qid%3D1747415966%26sprefix%3Dfastrack%2Bwatches%2Bfor%2Bman%252Caps%252C227%26sr%3D8-3-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9hdGY%26psc%3D1#customerReviews
+    - text: 1K+ bought in past month Price, product page
+    - 'link "₹1,399 M.R.P: ₹14,999 M.R.P: ₹14,999"':
+      - /url: /sspa/click?ie=UTF8&spc=MTo2MDAwMTA2MjkzMjYzMDI4OjE3NDc0MTU5NjY6c3BfYXRmOjMwMDIwMzAxMDQ2NjczMjo6MDo6&url=%2FFire-Boltt-Launched-Display-Bluetooth-Assistance%2Fdp%2FB0C497XVG9%2Fref%3Dsr_1_3_sspa%3Fcrid%3D1W90282OOSS0O%26dib%3DeyJ2IjoiMSJ9.6XcBA4w6Npm_pwAOvvXVcDAPsx0DXQfkVFdJcc8795AOyRoEAhGIodxusTSNBOZ8GZ7QBjv4Xt1bRcOCSc7OPyg0r7pbMkcvB09GR1rcV2Hv6-XZa7g2Q8g8nJ7gGOcgFAOZyjmW0D8EBSwRzt5ZLhyzgrlRZDQO2I47cGai7f1oUrbIgt_sp2btrvSp45rWYR6j0JmsaV8Wsx-9rp2JS-7UU9pPDNHCoUby43irvwg_ifcPUtb6FRLvaWwBvj-JicFnhFTLKr8rqCKZmUSCEVOjPRvoBdaW3KTXPWtRxY8.QetsUIpXMVylXIFUheBctZesc8qVn29qmyuGSeKzctY%26dib_tag%3Dse%26keywords%3Dfastrack%2Bwatches%2Bfor%2Bman%26nsdOptOutParam%3Dtrue%26qid%3D1747415966%26sprefix%3Dfastrack%2Bwatches%2Bfor%2Bman%252Caps%252C227%26sr%3D8-3-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9hdGY%26psc%3D1
+    - text: (91% off)
+    - img "Amazon Prime"
+    - text: "FREE delivery Sun, 18 May Or fastest delivery Tomorrow, 17 May Service: Installation"
+    - button "Add to cart"
+  - listitem:
+    - link:
+      - /url: /sspa/click?ie=UTF8&spc=MTo2MDAwMTA2MjkzMjYzMDI4OjE3NDc0MTU5NjY6c3BfYXRmOjMwMDM1ODMwMjk5MjUzMjo6MDo6&url=%2FNoiseFit-Display-Bluetooth-Calling-Metallic%2Fdp%2FB0BN1ZG1QZ%2Fref%3Dsr_1_4_sspa%3Fcrid%3D1W90282OOSS0O%26dib%3DeyJ2IjoiMSJ9.6XcBA4w6Npm_pwAOvvXVcDAPsx0DXQfkVFdJcc8795AOyRoEAhGIodxusTSNBOZ8GZ7QBjv4Xt1bRcOCSc7OPyg0r7pbMkcvB09GR1rcV2Hv6-XZa7g2Q8g8nJ7gGOcgFAOZyjmW0D8EBSwRzt5ZLhyzgrlRZDQO2I47cGai7f1oUrbIgt_sp2btrvSp45rWYR6j0JmsaV8Wsx-9rp2JS-7UU9pPDNHCoUby43irvwg_ifcPUtb6FRLvaWwBvj-JicFnhFTLKr8rqCKZmUSCEVOjPRvoBdaW3KTXPWtRxY8.QetsUIpXMVylXIFUheBctZesc8qVn29qmyuGSeKzctY%26dib_tag%3Dse%26keywords%3Dfastrack%2Bwatches%2Bfor%2Bman%26nsdOptOutParam%3Dtrue%26qid%3D1747415966%26sprefix%3Dfastrack%2Bwatches%2Bfor%2Bman%252Caps%252C227%26sr%3D8-4-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9hdGY%26psc%3D1
+    - button "View Sponsored information or leave ad feedback": Sponsored
+    - heading "Noise" [level=2]
+    - link "Sponsored Ad - NoiseFit Halo 1.43\" AMOLED Display, Bluetooth Calling Round Dial Smart Watch, Premium Metallic Build, Always on Display, Smart Gesture Control, 100 Sports Modes (Vintage Brown)":
+      - /url: /sspa/click?ie=UTF8&spc=MTo2MDAwMTA2MjkzMjYzMDI4OjE3NDc0MTU5NjY6c3BfYXRmOjMwMDM1ODMwMjk5MjUzMjo6MDo6&url=%2FNoiseFit-Display-Bluetooth-Calling-Metallic%2Fdp%2FB0BN1ZG1QZ%2Fref%3Dsr_1_4_sspa%3Fcrid%3D1W90282OOSS0O%26dib%3DeyJ2IjoiMSJ9.6XcBA4w6Npm_pwAOvvXVcDAPsx0DXQfkVFdJcc8795AOyRoEAhGIodxusTSNBOZ8GZ7QBjv4Xt1bRcOCSc7OPyg0r7pbMkcvB09GR1rcV2Hv6-XZa7g2Q8g8nJ7gGOcgFAOZyjmW0D8EBSwRzt5ZLhyzgrlRZDQO2I47cGai7f1oUrbIgt_sp2btrvSp45rWYR6j0JmsaV8Wsx-9rp2JS-7UU9pPDNHCoUby43irvwg_ifcPUtb6FRLvaWwBvj-JicFnhFTLKr8rqCKZmUSCEVOjPRvoBdaW3KTXPWtRxY8.QetsUIpXMVylXIFUheBctZesc8qVn29qmyuGSeKzctY%26dib_tag%3Dse%26keywords%3Dfastrack%2Bwatches%2Bfor%2Bman%26nsdOptOutParam%3Dtrue%26qid%3D1747415966%26sprefix%3Dfastrack%2Bwatches%2Bfor%2Bman%252Caps%252C227%26sr%3D8-4-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9hdGY%26psc%3D1
+      - heading "Sponsored Ad - NoiseFit Halo 1.43\" AMOLED Display, Bluetooth Calling Round Dial Smart Watch, Premium Metallic Build, Always on Display, Smart Gesture Control, 100 Sports Modes (Vintage Brown)" [level=2]: NoiseFit Halo 1.43" AMOLED Display, Bluetooth Calling Round Dial Smart Watch, Premium Metallic Build, Always on Display, Smart Gesture Control, 100 Sports Modes (Vintage Brown)
+    - button "4.1 out of 5 stars, rating details"
+    - link "15,923 ratings":
+      - /url: /sspa/click?ie=UTF8&spc=MTo2MDAwMTA2MjkzMjYzMDI4OjE3NDc0MTU5NjY6c3BfYXRmOjMwMDM1ODMwMjk5MjUzMjo6MDo6&url=%2FNoiseFit-Display-Bluetooth-Calling-Metallic%2Fdp%2FB0BN1ZG1QZ%2Fref%3Dsr_1_4_sspa%3Fcrid%3D1W90282OOSS0O%26dib%3DeyJ2IjoiMSJ9.6XcBA4w6Npm_pwAOvvXVcDAPsx0DXQfkVFdJcc8795AOyRoEAhGIodxusTSNBOZ8GZ7QBjv4Xt1bRcOCSc7OPyg0r7pbMkcvB09GR1rcV2Hv6-XZa7g2Q8g8nJ7gGOcgFAOZyjmW0D8EBSwRzt5ZLhyzgrlRZDQO2I47cGai7f1oUrbIgt_sp2btrvSp45rWYR6j0JmsaV8Wsx-9rp2JS-7UU9pPDNHCoUby43irvwg_ifcPUtb6FRLvaWwBvj-JicFnhFTLKr8rqCKZmUSCEVOjPRvoBdaW3KTXPWtRxY8.QetsUIpXMVylXIFUheBctZesc8qVn29qmyuGSeKzctY%26dib_tag%3Dse%26keywords%3Dfastrack%2Bwatches%2Bfor%2Bman%26nsdOptOutParam%3Dtrue%26qid%3D1747415966%26sprefix%3Dfastrack%2Bwatches%2Bfor%2Bman%252Caps%252C227%26sr%3D8-4-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9hdGY%26psc%3D1#customerReviews
+    - text: 2K+ bought in past month
+    - link "Limited time deal":
+      - /url: /gp/goldbox/
+    - text: Price, product page
+    - 'link "₹2,999 M.R.P: ₹7,999 M.R.P: ₹7,999"':
+      - /url: /sspa/click?ie=UTF8&spc=MTo2MDAwMTA2MjkzMjYzMDI4OjE3NDc0MTU5NjY6c3BfYXRmOjMwMDM1ODMwMjk5MjUzMjo6MDo6&url=%2FNoiseFit-Display-Bluetooth-Calling-Metallic%2Fdp%2FB0BN1ZG1QZ%2Fref%3Dsr_1_4_sspa%3Fcrid%3D1W90282OOSS0O%26dib%3DeyJ2IjoiMSJ9.6XcBA4w6Npm_pwAOvvXVcDAPsx0DXQfkVFdJcc8795AOyRoEAhGIodxusTSNBOZ8GZ7QBjv4Xt1bRcOCSc7OPyg0r7pbMkcvB09GR1rcV2Hv6-XZa7g2Q8g8nJ7gGOcgFAOZyjmW0D8EBSwRzt5ZLhyzgrlRZDQO2I47cGai7f1oUrbIgt_sp2btrvSp45rWYR6j0JmsaV8Wsx-9rp2JS-7UU9pPDNHCoUby43irvwg_ifcPUtb6FRLvaWwBvj-JicFnhFTLKr8rqCKZmUSCEVOjPRvoBdaW3KTXPWtRxY8.QetsUIpXMVylXIFUheBctZesc8qVn29qmyuGSeKzctY%26dib_tag%3Dse%26keywords%3Dfastrack%2Bwatches%2Bfor%2Bman%26nsdOptOutParam%3Dtrue%26qid%3D1747415966%26sprefix%3Dfastrack%2Bwatches%2Bfor%2Bman%252Caps%252C227%26sr%3D8-4-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9hdGY%26psc%3D1
+    - text: (63% off) Save extra with No Cost EMI
+    - img "Amazon Prime"
+    - text: "FREE delivery Sun, 18 May Or fastest delivery Tomorrow, 17 May Service: Installation"
+    - button "Add to cart"
+  - listitem:
+    - group "Amazon's Choice for \"fastrack watches for man\""
+    - link:
+      - /url: /Fastrack-Analog-Black-Unisex-Adult-Watch-38024PP25/dp/B099WNYHY2/ref=sr_1_5?crid=1W90282OOSS0O&dib=eyJ2IjoiMSJ9.6XcBA4w6Npm_pwAOvvXVcDAPsx0DXQfkVFdJcc8795AOyRoEAhGIodxusTSNBOZ8GZ7QBjv4Xt1bRcOCSc7OPyg0r7pbMkcvB09GR1rcV2Hv6-XZa7g2Q8g8nJ7gGOcgFAOZyjmW0D8EBSwRzt5ZLhyzgrlRZDQO2I47cGai7f1oUrbIgt_sp2btrvSp45rWYR6j0JmsaV8Wsx-9rp2JS-7UU9pPDNHCoUby43irvwg_ifcPUtb6FRLvaWwBvj-JicFnhFTLKr8rqCKZmUSCEVOjPRvoBdaW3KTXPWtRxY8.QetsUIpXMVylXIFUheBctZesc8qVn29qmyuGSeKzctY&dib_tag=se&keywords=fastrack+watches+for+man&nsdOptOutParam=true&qid=1747415966&sprefix=fastrack+watches+for+man%2Caps%2C227&sr=8-5
+    - heading "Fastrack" [level=2]
+    - link "Analog Unisex-Adult Watch":
+      - /url: /Fastrack-Analog-Black-Unisex-Adult-Watch-38024PP25/dp/B099WNYHY2/ref=sr_1_5?crid=1W90282OOSS0O&dib=eyJ2IjoiMSJ9.6XcBA4w6Npm_pwAOvvXVcDAPsx0DXQfkVFdJcc8795AOyRoEAhGIodxusTSNBOZ8GZ7QBjv4Xt1bRcOCSc7OPyg0r7pbMkcvB09GR1rcV2Hv6-XZa7g2Q8g8nJ7gGOcgFAOZyjmW0D8EBSwRzt5ZLhyzgrlRZDQO2I47cGai7f1oUrbIgt_sp2btrvSp45rWYR6j0JmsaV8Wsx-9rp2JS-7UU9pPDNHCoUby43irvwg_ifcPUtb6FRLvaWwBvj-JicFnhFTLKr8rqCKZmUSCEVOjPRvoBdaW3KTXPWtRxY8.QetsUIpXMVylXIFUheBctZesc8qVn29qmyuGSeKzctY&dib_tag=se&keywords=fastrack+watches+for+man&nsdOptOutParam=true&qid=1747415966&sprefix=fastrack+watches+for+man%2Caps%2C227&sr=8-5
+      - heading "Analog Unisex-Adult Watch" [level=2]
+    - button "4.1 out of 5 stars, rating details"
+    - link "13,928 ratings":
+      - /url: /Fastrack-Analog-Black-Unisex-Adult-Watch-38024PP25/dp/B099WNYHY2/ref=sr_1_5?crid=1W90282OOSS0O&dib=eyJ2IjoiMSJ9.6XcBA4w6Npm_pwAOvvXVcDAPsx0DXQfkVFdJcc8795AOyRoEAhGIodxusTSNBOZ8GZ7QBjv4Xt1bRcOCSc7OPyg0r7pbMkcvB09GR1rcV2Hv6-XZa7g2Q8g8nJ7gGOcgFAOZyjmW0D8EBSwRzt5ZLhyzgrlRZDQO2I47cGai7f1oUrbIgt_sp2btrvSp45rWYR6j0JmsaV8Wsx-9rp2JS-7UU9pPDNHCoUby43irvwg_ifcPUtb6FRLvaWwBvj-JicFnhFTLKr8rqCKZmUSCEVOjPRvoBdaW3KTXPWtRxY8.QetsUIpXMVylXIFUheBctZesc8qVn29qmyuGSeKzctY&dib_tag=se&keywords=fastrack+watches+for+man&nsdOptOutParam=true&qid=1747415966&sprefix=fastrack+watches+for+man%2Caps%2C227&sr=8-5#customerReviews
+    - text: 1K+ bought in past month Price, product page
+    - link "₹895":
+      - /url: /Fastrack-Analog-Black-Unisex-Adult-Watch-38024PP25/dp/B099WNYHY2/ref=sr_1_5?crid=1W90282OOSS0O&dib=eyJ2IjoiMSJ9.6XcBA4w6Npm_pwAOvvXVcDAPsx0DXQfkVFdJcc8795AOyRoEAhGIodxusTSNBOZ8GZ7QBjv4Xt1bRcOCSc7OPyg0r7pbMkcvB09GR1rcV2Hv6-XZa7g2Q8g8nJ7gGOcgFAOZyjmW0D8EBSwRzt5ZLhyzgrlRZDQO2I47cGai7f1oUrbIgt_sp2btrvSp45rWYR6j0JmsaV8Wsx-9rp2JS-7UU9pPDNHCoUby43irvwg_ifcPUtb6FRLvaWwBvj-JicFnhFTLKr8rqCKZmUSCEVOjPRvoBdaW3KTXPWtRxY8.QetsUIpXMVylXIFUheBctZesc8qVn29qmyuGSeKzctY&dib_tag=se&keywords=fastrack+watches+for+man&nsdOptOutParam=true&qid=1747415966&sprefix=fastrack+watches+for+man%2Caps%2C227&sr=8-5
+    - img "Amazon Prime"
+    - text: FREE delivery Sun, 18 May Or fastest delivery Tomorrow, 17 May
+    - button "Add to cart"
+  - listitem:
+    - link:
+      - /url: /Fastrack-Tees-Analog-Unisex-Adult-Watch-68011PP08/dp/B099WR4WHC/ref=sr_1_6?crid=1W90282OOSS0O&dib=eyJ2IjoiMSJ9.6XcBA4w6Npm_pwAOvvXVcDAPsx0DXQfkVFdJcc8795AOyRoEAhGIodxusTSNBOZ8GZ7QBjv4Xt1bRcOCSc7OPyg0r7pbMkcvB09GR1rcV2Hv6-XZa7g2Q8g8nJ7gGOcgFAOZyjmW0D8EBSwRzt5ZLhyzgrlRZDQO2I47cGai7f1oUrbIgt_sp2btrvSp45rWYR6j0JmsaV8Wsx-9rp2JS-7UU9pPDNHCoUby43irvwg_ifcPUtb6FRLvaWwBvj-JicFnhFTLKr8rqCKZmUSCEVOjPRvoBdaW3KTXPWtRxY8.QetsUIpXMVylXIFUheBctZesc8qVn29qmyuGSeKzctY&dib_tag=se&keywords=fastrack+watches+for+man&nsdOptOutParam=true&qid=1747415966&sprefix=fastrack+watches+for+man%2Caps%2C227&sr=8-6
+    - heading "Fastrack" [level=2]
+    - link "Tees Analog Grey Dial Unisex-Adult Watch-68011PP08":
+      - /url: /Fastrack-Tees-Analog-Unisex-Adult-Watch-68011PP08/dp/B099WR4WHC/ref=sr_1_6?crid=1W90282OOSS0O&dib=eyJ2IjoiMSJ9.6XcBA4w6Npm_pwAOvvXVcDAPsx0DXQfkVFdJcc8795AOyRoEAhGIodxusTSNBOZ8GZ7QBjv4Xt1bRcOCSc7OPyg0r7pbMkcvB09GR1rcV2Hv6-XZa7g2Q8g8nJ7gGOcgFAOZyjmW0D8EBSwRzt5ZLhyzgrlRZDQO2I47cGai7f1oUrbIgt_sp2btrvSp45rWYR6j0JmsaV8Wsx-9rp2JS-7UU9pPDNHCoUby43irvwg_ifcPUtb6FRLvaWwBvj-JicFnhFTLKr8rqCKZmUSCEVOjPRvoBdaW3KTXPWtRxY8.QetsUIpXMVylXIFUheBctZesc8qVn29qmyuGSeKzctY&dib_tag=se&keywords=fastrack+watches+for+man&nsdOptOutParam=true&qid=1747415966&sprefix=fastrack+watches+for+man%2Caps%2C227&sr=8-6
+      - heading "Tees Analog Grey Dial Unisex-Adult Watch-68011PP08" [level=2]
+    - button "4.2 out of 5 stars, rating details"
+    - link "1,344 ratings":
+      - /url: /Fastrack-Tees-Analog-Unisex-Adult-Watch-68011PP08/dp/B099WR4WHC/ref=sr_1_6?crid=1W90282OOSS0O&dib=eyJ2IjoiMSJ9.6XcBA4w6Npm_pwAOvvXVcDAPsx0DXQfkVFdJcc8795AOyRoEAhGIodxusTSNBOZ8GZ7QBjv4Xt1bRcOCSc7OPyg0r7pbMkcvB09GR1rcV2Hv6-XZa7g2Q8g8nJ7gGOcgFAOZyjmW0D8EBSwRzt5ZLhyzgrlRZDQO2I47cGai7f1oUrbIgt_sp2btrvSp45rWYR6j0JmsaV8Wsx-9rp2JS-7UU9pPDNHCoUby43irvwg_ifcPUtb6FRLvaWwBvj-JicFnhFTLKr8rqCKZmUSCEVOjPRvoBdaW3KTXPWtRxY8.QetsUIpXMVylXIFUheBctZesc8qVn29qmyuGSeKzctY&dib_tag=se&keywords=fastrack+watches+for+man&nsdOptOutParam=true&qid=1747415966&sprefix=fastrack+watches+for+man%2Caps%2C227&sr=8-6#customerReviews
+    - text: 1K+ bought in past month
+    - link "Limited time deal":
+      - /url: /gp/goldbox/
+    - text: Price, product page
+    - 'link "₹895 M.R.P: ₹950 M.R.P: ₹950"':
+      - /url: /Fastrack-Tees-Analog-Unisex-Adult-Watch-68011PP08/dp/B099WR4WHC/ref=sr_1_6?crid=1W90282OOSS0O&dib=eyJ2IjoiMSJ9.6XcBA4w6Npm_pwAOvvXVcDAPsx0DXQfkVFdJcc8795AOyRoEAhGIodxusTSNBOZ8GZ7QBjv4Xt1bRcOCSc7OPyg0r7pbMkcvB09GR1rcV2Hv6-XZa7g2Q8g8nJ7gGOcgFAOZyjmW0D8EBSwRzt5ZLhyzgrlRZDQO2I47cGai7f1oUrbIgt_sp2btrvSp45rWYR6j0JmsaV8Wsx-9rp2JS-7UU9pPDNHCoUby43irvwg_ifcPUtb6FRLvaWwBvj-JicFnhFTLKr8rqCKZmUSCEVOjPRvoBdaW3KTXPWtRxY8.QetsUIpXMVylXIFUheBctZesc8qVn29qmyuGSeKzctY&dib_tag=se&keywords=fastrack+watches+for+man&nsdOptOutParam=true&qid=1747415966&sprefix=fastrack+watches+for+man%2Caps%2C227&sr=8-6
+    - text: (6% off)
+    - img "Amazon Prime"
+    - text: FREE delivery Sun, 18 May Or fastest delivery Tomorrow, 17 May
+    - button "Add to cart"
+  - listitem:
+    - link:
+      - /url: /Fastrack-Limitless-SingleSync-Smartwatch-Assistant/dp/B0D9629NJQ/ref=sr_1_7?crid=1W90282OOSS0O&dib=eyJ2IjoiMSJ9.6XcBA4w6Npm_pwAOvvXVcDAPsx0DXQfkVFdJcc8795AOyRoEAhGIodxusTSNBOZ8GZ7QBjv4Xt1bRcOCSc7OPyg0r7pbMkcvB09GR1rcV2Hv6-XZa7g2Q8g8nJ7gGOcgFAOZyjmW0D8EBSwRzt5ZLhyzgrlRZDQO2I47cGai7f1oUrbIgt_sp2btrvSp45rWYR6j0JmsaV8Wsx-9rp2JS-7UU9pPDNHCoUby43irvwg_ifcPUtb6FRLvaWwBvj-JicFnhFTLKr8rqCKZmUSCEVOjPRvoBdaW3KTXPWtRxY8.QetsUIpXMVylXIFUheBctZesc8qVn29qmyuGSeKzctY&dib_tag=se&keywords=fastrack+watches+for+man&nsdOptOutParam=true&qid=1747415966&sprefix=fastrack+watches+for+man%2Caps%2C227&sr=8-7
+    - heading "Fastrack" [level=2]
+    - link "Fastrack Limitless Glide Smart Watch, Advanced UltraVU HD Display, SingleSync BT Calling, Advance Chipset, 85+ Sports Modes & Smartwatch Faces, AI Voice Assistant, 24 * 7 Health Suite, IP67 (Black)":
+      - /url: /Fastrack-Limitless-SingleSync-Smartwatch-Assistant/dp/B0D9629NJQ/ref=sr_1_7?crid=1W90282OOSS0O&dib=eyJ2IjoiMSJ9.6XcBA4w6Npm_pwAOvvXVcDAPsx0DXQfkVFdJcc8795AOyRoEAhGIodxusTSNBOZ8GZ7QBjv4Xt1bRcOCSc7OPyg0r7pbMkcvB09GR1rcV2Hv6-XZa7g2Q8g8nJ7gGOcgFAOZyjmW0D8EBSwRzt5ZLhyzgrlRZDQO2I47cGai7f1oUrbIgt_sp2btrvSp45rWYR6j0JmsaV8Wsx-9rp2JS-7UU9pPDNHCoUby43irvwg_ifcPUtb6FRLvaWwBvj-JicFnhFTLKr8rqCKZmUSCEVOjPRvoBdaW3KTXPWtRxY8.QetsUIpXMVylXIFUheBctZesc8qVn29qmyuGSeKzctY&dib_tag=se&keywords=fastrack+watches+for+man&nsdOptOutParam=true&qid=1747415966&sprefix=fastrack+watches+for+man%2Caps%2C227&sr=8-7
+      - heading "Fastrack Limitless Glide Smart Watch, Advanced UltraVU HD Display, SingleSync BT Calling, Advance Chipset, 85+ Sports Modes & Smartwatch Faces, AI Voice Assistant, 24 * 7 Health Suite, IP67 (Black)" [level=2]
+    - button "3.8 out of 5 stars, rating details"
+    - link "3,936 ratings":
+      - /url: /Fastrack-Limitless-SingleSync-Smartwatch-Assistant/dp/B0D9629NJQ/ref=sr_1_7?crid=1W90282OOSS0O&dib=eyJ2IjoiMSJ9.6XcBA4w6Npm_pwAOvvXVcDAPsx0DXQfkVFdJcc8795AOyRoEAhGIodxusTSNBOZ8GZ7QBjv4Xt1bRcOCSc7OPyg0r7pbMkcvB09GR1rcV2Hv6-XZa7g2Q8g8nJ7gGOcgFAOZyjmW0D8EBSwRzt5ZLhyzgrlRZDQO2I47cGai7f1oUrbIgt_sp2btrvSp45rWYR6j0JmsaV8Wsx-9rp2JS-7UU9pPDNHCoUby43irvwg_ifcPUtb6FRLvaWwBvj-JicFnhFTLKr8rqCKZmUSCEVOjPRvoBdaW3KTXPWtRxY8.QetsUIpXMVylXIFUheBctZesc8qVn29qmyuGSeKzctY&dib_tag=se&keywords=fastrack+watches+for+man&nsdOptOutParam=true&qid=1747415966&sprefix=fastrack+watches+for+man%2Caps%2C227&sr=8-7#customerReviews
+    - text: 1K+ bought in past month Price, product page
+    - 'link "₹1,499 M.R.P: ₹2,799 M.R.P: ₹2,799"':
+      - /url: /Fastrack-Limitless-SingleSync-Smartwatch-Assistant/dp/B0D9629NJQ/ref=sr_1_7?crid=1W90282OOSS0O&dib=eyJ2IjoiMSJ9.6XcBA4w6Npm_pwAOvvXVcDAPsx0DXQfkVFdJcc8795AOyRoEAhGIodxusTSNBOZ8GZ7QBjv4Xt1bRcOCSc7OPyg0r7pbMkcvB09GR1rcV2Hv6-XZa7g2Q8g8nJ7gGOcgFAOZyjmW0D8EBSwRzt5ZLhyzgrlRZDQO2I47cGai7f1oUrbIgt_sp2btrvSp45rWYR6j0JmsaV8Wsx-9rp2JS-7UU9pPDNHCoUby43irvwg_ifcPUtb6FRLvaWwBvj-JicFnhFTLKr8rqCKZmUSCEVOjPRvoBdaW3KTXPWtRxY8.QetsUIpXMVylXIFUheBctZesc8qVn29qmyuGSeKzctY&dib_tag=se&keywords=fastrack+watches+for+man&nsdOptOutParam=true&qid=1747415966&sprefix=fastrack+watches+for+man%2Caps%2C227&sr=8-7
+    - text: (46% off)
+    - img "Amazon Prime"
+    - text: "FREE delivery Sun, 18 May Or fastest delivery Tomorrow, 17 May Service: Installation"
+    - button "Add to cart"
+  - listitem:
+    - link:
+      - /url: /Fastrack-Quartz-Stainless-Guys-NS38051SM07-NT38051SM07/dp/B07JFXW454/ref=sr_1_8?crid=1W90282OOSS0O&dib=eyJ2IjoiMSJ9.6XcBA4w6Npm_pwAOvvXVcDAPsx0DXQfkVFdJcc8795AOyRoEAhGIodxusTSNBOZ8GZ7QBjv4Xt1bRcOCSc7OPyg0r7pbMkcvB09GR1rcV2Hv6-XZa7g2Q8g8nJ7gGOcgFAOZyjmW0D8EBSwRzt5ZLhyzgrlRZDQO2I47cGai7f1oUrbIgt_sp2btrvSp45rWYR6j0JmsaV8Wsx-9rp2JS-7UU9pPDNHCoUby43irvwg_ifcPUtb6FRLvaWwBvj-JicFnhFTLKr8rqCKZmUSCEVOjPRvoBdaW3KTXPWtRxY8.QetsUIpXMVylXIFUheBctZesc8qVn29qmyuGSeKzctY&dib_tag=se&keywords=fastrack+watches+for+man&nsdOptOutParam=true&qid=1747415966&sprefix=fastrack+watches+for+man%2Caps%2C227&sr=8-8
+    - heading "Fastrack" [level=2]
+    - link "Men Bold Quartz Analog Black Dial Stainless Steel Strap Watch for Guys-NS38051SM07/NT38051SM07":
+      - /url: /Fastrack-Quartz-Stainless-Guys-NS38051SM07-NT38051SM07/dp/B07JFXW454/ref=sr_1_8?crid=1W90282OOSS0O&dib=eyJ2IjoiMSJ9.6XcBA4w6Npm_pwAOvvXVcDAPsx0DXQfkVFdJcc8795AOyRoEAhGIodxusTSNBOZ8GZ7QBjv4Xt1bRcOCSc7OPyg0r7pbMkcvB09GR1rcV2Hv6-XZa7g2Q8g8nJ7gGOcgFAOZyjmW0D8EBSwRzt5ZLhyzgrlRZDQO2I47cGai7f1oUrbIgt_sp2btrvSp45rWYR6j0JmsaV8Wsx-9rp2JS-7UU9pPDNHCoUby43irvwg_ifcPUtb6FRLvaWwBvj-JicFnhFTLKr8rqCKZmUSCEVOjPRvoBdaW3KTXPWtRxY8.QetsUIpXMVylXIFUheBctZesc8qVn29qmyuGSeKzctY&dib_tag=se&keywords=fastrack+watches+for+man&nsdOptOutParam=true&qid=1747415966&sprefix=fastrack+watches+for+man%2Caps%2C227&sr=8-8
+      - heading "Men Bold Quartz Analog Black Dial Stainless Steel Strap Watch for Guys-NS38051SM07/NT38051SM07" [level=2]
+    - button "4.2 out of 5 stars, rating details"
+    - link "1,290 ratings":
+      - /url: /Fastrack-Quartz-Stainless-Guys-NS38051SM07-NT38051SM07/dp/B07JFXW454/ref=sr_1_8?crid=1W90282OOSS0O&dib=eyJ2IjoiMSJ9.6XcBA4w6Npm_pwAOvvXVcDAPsx0DXQfkVFdJcc8795AOyRoEAhGIodxusTSNBOZ8GZ7QBjv4Xt1bRcOCSc7OPyg0r7pbMkcvB09GR1rcV2Hv6-XZa7g2Q8g8nJ7gGOcgFAOZyjmW0D8EBSwRzt5ZLhyzgrlRZDQO2I47cGai7f1oUrbIgt_sp2btrvSp45rWYR6j0JmsaV8Wsx-9rp2JS-7UU9pPDNHCoUby43irvwg_ifcPUtb6FRLvaWwBvj-JicFnhFTLKr8rqCKZmUSCEVOjPRvoBdaW3KTXPWtRxY8.QetsUIpXMVylXIFUheBctZesc8qVn29qmyuGSeKzctY&dib_tag=se&keywords=fastrack+watches+for+man&nsdOptOutParam=true&qid=1747415966&sprefix=fastrack+watches+for+man%2Caps%2C227&sr=8-8#customerReviews
+    - text: 800+ bought in past month Price, product page
+    - link "₹1,995":
+      - /url: /Fastrack-Quartz-Stainless-Guys-NS38051SM07-NT38051SM07/dp/B07JFXW454/ref=sr_1_8?crid=1W90282OOSS0O&dib=eyJ2IjoiMSJ9.6XcBA4w6Npm_pwAOvvXVcDAPsx0DXQfkVFdJcc8795AOyRoEAhGIodxusTSNBOZ8GZ7QBjv4Xt1bRcOCSc7OPyg0r7pbMkcvB09GR1rcV2Hv6-XZa7g2Q8g8nJ7gGOcgFAOZyjmW0D8EBSwRzt5ZLhyzgrlRZDQO2I47cGai7f1oUrbIgt_sp2btrvSp45rWYR6j0JmsaV8Wsx-9rp2JS-7UU9pPDNHCoUby43irvwg_ifcPUtb6FRLvaWwBvj-JicFnhFTLKr8rqCKZmUSCEVOjPRvoBdaW3KTXPWtRxY8.QetsUIpXMVylXIFUheBctZesc8qVn29qmyuGSeKzctY&dib_tag=se&keywords=fastrack+watches+for+man&nsdOptOutParam=true&qid=1747415966&sprefix=fastrack+watches+for+man%2Caps%2C227&sr=8-8
+    - img "Amazon Prime"
+    - text: FREE delivery Sun, 18 May Or fastest delivery Tomorrow, 17 May
+    - button "Add to cart"
+  - listitem:
+    - link:
+      - /url: /Fastrack-Resolution-SingleSync-Assistant-Smartwatch/dp/B0DGGVHMDS/ref=sr_1_9?crid=1W90282OOSS0O&dib=eyJ2IjoiMSJ9.6XcBA4w6Npm_pwAOvvXVcDAPsx0DXQfkVFdJcc8795AOyRoEAhGIodxusTSNBOZ8GZ7QBjv4Xt1bRcOCSc7OPyg0r7pbMkcvB09GR1rcV2Hv6-XZa7g2Q8g8nJ7gGOcgFAOZyjmW0D8EBSwRzt5ZLhyzgrlRZDQO2I47cGai7f1oUrbIgt_sp2btrvSp45rWYR6j0JmsaV8Wsx-9rp2JS-7UU9pPDNHCoUby43irvwg_ifcPUtb6FRLvaWwBvj-JicFnhFTLKr8rqCKZmUSCEVOjPRvoBdaW3KTXPWtRxY8.QetsUIpXMVylXIFUheBctZesc8qVn29qmyuGSeKzctY&dib_tag=se&keywords=fastrack+watches+for+man&nsdOptOutParam=true&qid=1747415966&sprefix=fastrack+watches+for+man%2Caps%2C227&sr=8-9
+    - heading "Fastrack" [level=2]
+    - link "Fastrack Astor FR2 Pro Smart Watch, 1.43” AMOLED Display, 466 * 466 Pixel Resolution, SingleSync BT Calling, AI Voice Assistant, 100+ Sports Modes and Smartwatch Faces, IP68 (Black)":
+      - /url: /Fastrack-Resolution-SingleSync-Assistant-Smartwatch/dp/B0DGGVHMDS/ref=sr_1_9?crid=1W90282OOSS0O&dib=eyJ2IjoiMSJ9.6XcBA4w6Npm_pwAOvvXVcDAPsx0DXQfkVFdJcc8795AOyRoEAhGIodxusTSNBOZ8GZ7QBjv4Xt1bRcOCSc7OPyg0r7pbMkcvB09GR1rcV2Hv6-XZa7g2Q8g8nJ7gGOcgFAOZyjmW0D8EBSwRzt5ZLhyzgrlRZDQO2I47cGai7f1oUrbIgt_sp2btrvSp45rWYR6j0JmsaV8Wsx-9rp2JS-7UU9pPDNHCoUby43irvwg_ifcPUtb6FRLvaWwBvj-JicFnhFTLKr8rqCKZmUSCEVOjPRvoBdaW3KTXPWtRxY8.QetsUIpXMVylXIFUheBctZesc8qVn29qmyuGSeKzctY&dib_tag=se&keywords=fastrack+watches+for+man&nsdOptOutParam=true&qid=1747415966&sprefix=fastrack+watches+for+man%2Caps%2C227&sr=8-9
+      - heading "Fastrack Astor FR2 Pro Smart Watch, 1.43” AMOLED Display, 466 * 466 Pixel Resolution, SingleSync BT Calling, AI Voice Assistant, 100+ Sports Modes and Smartwatch Faces, IP68 (Black)" [level=2]
+    - button "3.9 out of 5 stars, rating details"
+    - link "7,498 ratings":
+      - /url: /Fastrack-Resolution-SingleSync-Assistant-Smartwatch/dp/B0DGGVHMDS/ref=sr_1_9?crid=1W90282OOSS0O&dib=eyJ2IjoiMSJ9.6XcBA4w6Npm_pwAOvvXVcDAPsx0DXQfkVFdJcc8795AOyRoEAhGIodxusTSNBOZ8GZ7QBjv4Xt1bRcOCSc7OPyg0r7pbMkcvB09GR1rcV2Hv6-XZa7g2Q8g8nJ7gGOcgFAOZyjmW0D8EBSwRzt5ZLhyzgrlRZDQO2I47cGai7f1oUrbIgt_sp2btrvSp45rWYR6j0JmsaV8Wsx-9rp2JS-7UU9pPDNHCoUby43irvwg_ifcPUtb6FRLvaWwBvj-JicFnhFTLKr8rqCKZmUSCEVOjPRvoBdaW3KTXPWtRxY8.QetsUIpXMVylXIFUheBctZesc8qVn29qmyuGSeKzctY&dib_tag=se&keywords=fastrack+watches+for+man&nsdOptOutParam=true&qid=1747415966&sprefix=fastrack+watches+for+man%2Caps%2C227&sr=8-9#customerReviews
+    - text: 1K+ bought in past month Price, product page
+    - 'link "₹2,999 M.R.P: ₹5,499 M.R.P: ₹5,499"':
+      - /url: /Fastrack-Resolution-SingleSync-Assistant-Smartwatch/dp/B0DGGVHMDS/ref=sr_1_9?crid=1W90282OOSS0O&dib=eyJ2IjoiMSJ9.6XcBA4w6Npm_pwAOvvXVcDAPsx0DXQfkVFdJcc8795AOyRoEAhGIodxusTSNBOZ8GZ7QBjv4Xt1bRcOCSc7OPyg0r7pbMkcvB09GR1rcV2Hv6-XZa7g2Q8g8nJ7gGOcgFAOZyjmW0D8EBSwRzt5ZLhyzgrlRZDQO2I47cGai7f1oUrbIgt_sp2btrvSp45rWYR6j0JmsaV8Wsx-9rp2JS-7UU9pPDNHCoUby43irvwg_ifcPUtb6FRLvaWwBvj-JicFnhFTLKr8rqCKZmUSCEVOjPRvoBdaW3KTXPWtRxY8.QetsUIpXMVylXIFUheBctZesc8qVn29qmyuGSeKzctY&dib_tag=se&keywords=fastrack+watches+for+man&nsdOptOutParam=true&qid=1747415966&sprefix=fastrack+watches+for+man%2Caps%2C227&sr=8-9
+    - text: (45% off) Up to 5% back with Amazon Pay ICICI card
+    - img "Amazon Prime"
+    - text: "FREE delivery Sun, 18 May Or fastest delivery Tomorrow, 17 May Service: Installation"
+    - button "Add to cart"
+  - listitem:
+    - link:
+      - /url: /Fastrack-Stunners-Quartz-Guys-NR3291SM02-NT3291SM02/dp/B0BHTJ3HVY/ref=sr_1_10?crid=1W90282OOSS0O&dib=eyJ2IjoiMSJ9.6XcBA4w6Npm_pwAOvvXVcDAPsx0DXQfkVFdJcc8795AOyRoEAhGIodxusTSNBOZ8GZ7QBjv4Xt1bRcOCSc7OPyg0r7pbMkcvB09GR1rcV2Hv6-XZa7g2Q8g8nJ7gGOcgFAOZyjmW0D8EBSwRzt5ZLhyzgrlRZDQO2I47cGai7f1oUrbIgt_sp2btrvSp45rWYR6j0JmsaV8Wsx-9rp2JS-7UU9pPDNHCoUby43irvwg_ifcPUtb6FRLvaWwBvj-JicFnhFTLKr8rqCKZmUSCEVOjPRvoBdaW3KTXPWtRxY8.QetsUIpXMVylXIFUheBctZesc8qVn29qmyuGSeKzctY&dib_tag=se&keywords=fastrack+watches+for+man&nsdOptOutParam=true&qid=1747415966&sprefix=fastrack+watches+for+man%2Caps%2C227&sr=8-10
+    - heading "Fastrack" [level=2]
+    - link "Men Stunners Quartz Analog Silver Dial Metal Strap Watch for Guys-NR3291SM02/NT3291SM02":
+      - /url: /Fastrack-Stunners-Quartz-Guys-NR3291SM02-NT3291SM02/dp/B0BHTJ3HVY/ref=sr_1_10?crid=1W90282OOSS0O&dib=eyJ2IjoiMSJ9.6XcBA4w6Npm_pwAOvvXVcDAPsx0DXQfkVFdJcc8795AOyRoEAhGIodxusTSNBOZ8GZ7QBjv4Xt1bRcOCSc7OPyg0r7pbMkcvB09GR1rcV2Hv6-XZa7g2Q8g8nJ7gGOcgFAOZyjmW0D8EBSwRzt5ZLhyzgrlRZDQO2I47cGai7f1oUrbIgt_sp2btrvSp45rWYR6j0JmsaV8Wsx-9rp2JS-7UU9pPDNHCoUby43irvwg_ifcPUtb6FRLvaWwBvj-JicFnhFTLKr8rqCKZmUSCEVOjPRvoBdaW3KTXPWtRxY8.QetsUIpXMVylXIFUheBctZesc8qVn29qmyuGSeKzctY&dib_tag=se&keywords=fastrack+watches+for+man&nsdOptOutParam=true&qid=1747415966&sprefix=fastrack+watches+for+man%2Caps%2C227&sr=8-10
+      - heading "Men Stunners Quartz Analog Silver Dial Metal Strap Watch for Guys-NR3291SM02/NT3291SM02" [level=2]
+    - button "4.1 out of 5 stars, rating details"
+    - link "298 ratings":
+      - /url: /Fastrack-Stunners-Quartz-Guys-NR3291SM02-NT3291SM02/dp/B0BHTJ3HVY/ref=sr_1_10?crid=1W90282OOSS0O&dib=eyJ2IjoiMSJ9.6XcBA4w6Npm_pwAOvvXVcDAPsx0DXQfkVFdJcc8795AOyRoEAhGIodxusTSNBOZ8GZ7QBjv4Xt1bRcOCSc7OPyg0r7pbMkcvB09GR1rcV2Hv6-XZa7g2Q8g8nJ7gGOcgFAOZyjmW0D8EBSwRzt5ZLhyzgrlRZDQO2I47cGai7f1oUrbIgt_sp2btrvSp45rWYR6j0JmsaV8Wsx-9rp2JS-7UU9pPDNHCoUby43irvwg_ifcPUtb6FRLvaWwBvj-JicFnhFTLKr8rqCKZmUSCEVOjPRvoBdaW3KTXPWtRxY8.QetsUIpXMVylXIFUheBctZesc8qVn29qmyuGSeKzctY&dib_tag=se&keywords=fastrack+watches+for+man&nsdOptOutParam=true&qid=1747415966&sprefix=fastrack+watches+for+man%2Caps%2C227&sr=8-10#customerReviews
+    - text: 300+ bought in past month
+    - link "Limited time deal":
+      - /url: /gp/goldbox/
+    - text: Price, product page
+    - 'link "₹1,436 M.R.P: ₹1,595 M.R.P: ₹1,595"':
+      - /url: /Fastrack-Stunners-Quartz-Guys-NR3291SM02-NT3291SM02/dp/B0BHTJ3HVY/ref=sr_1_10?crid=1W90282OOSS0O&dib=eyJ2IjoiMSJ9.6XcBA4w6Npm_pwAOvvXVcDAPsx0DXQfkVFdJcc8795AOyRoEAhGIodxusTSNBOZ8GZ7QBjv4Xt1bRcOCSc7OPyg0r7pbMkcvB09GR1rcV2Hv6-XZa7g2Q8g8nJ7gGOcgFAOZyjmW0D8EBSwRzt5ZLhyzgrlRZDQO2I47cGai7f1oUrbIgt_sp2btrvSp45rWYR6j0JmsaV8Wsx-9rp2JS-7UU9pPDNHCoUby43irvwg_ifcPUtb6FRLvaWwBvj-JicFnhFTLKr8rqCKZmUSCEVOjPRvoBdaW3KTXPWtRxY8.QetsUIpXMVylXIFUheBctZesc8qVn29qmyuGSeKzctY&dib_tag=se&keywords=fastrack+watches+for+man&nsdOptOutParam=true&qid=1747415966&sprefix=fastrack+watches+for+man%2Caps%2C227&sr=8-10
+    - text: (10% off)
+    - img "Amazon Prime"
+    - text: FREE delivery Sun, 18 May Or fastest delivery Tomorrow, 17 May
+    - button "Add to cart"
+  - listitem:
+    - link:
+      - /url: /Fastrack-Analog-White-NM38051SL06-NN38051SL06/dp/B07JFMYZ1K/ref=sr_1_11?crid=1W90282OOSS0O&dib=eyJ2IjoiMSJ9.6XcBA4w6Npm_pwAOvvXVcDAPsx0DXQfkVFdJcc8795AOyRoEAhGIodxusTSNBOZ8GZ7QBjv4Xt1bRcOCSc7OPyg0r7pbMkcvB09GR1rcV2Hv6-XZa7g2Q8g8nJ7gGOcgFAOZyjmW0D8EBSwRzt5ZLhyzgrlRZDQO2I47cGai7f1oUrbIgt_sp2btrvSp45rWYR6j0JmsaV8Wsx-9rp2JS-7UU9pPDNHCoUby43irvwg_ifcPUtb6FRLvaWwBvj-JicFnhFTLKr8rqCKZmUSCEVOjPRvoBdaW3KTXPWtRxY8.QetsUIpXMVylXIFUheBctZesc8qVn29qmyuGSeKzctY&dib_tag=se&keywords=fastrack+watches+for+man&nsdOptOutParam=true&qid=1747415966&sprefix=fastrack+watches+for+man%2Caps%2C227&sr=8-11
+    - heading "Fastrack" [level=2]
+    - link "Bold Analog White Dial Men's Watch NM38051SL06/NN38051SL06":
+      - /url: /Fastrack-Analog-White-NM38051SL06-NN38051SL06/dp/B07JFMYZ1K/ref=sr_1_11?crid=1W90282OOSS0O&dib=eyJ2IjoiMSJ9.6XcBA4w6Npm_pwAOvvXVcDAPsx0DXQfkVFdJcc8795AOyRoEAhGIodxusTSNBOZ8GZ7QBjv4Xt1bRcOCSc7OPyg0r7pbMkcvB09GR1rcV2Hv6-XZa7g2Q8g8nJ7gGOcgFAOZyjmW0D8EBSwRzt5ZLhyzgrlRZDQO2I47cGai7f1oUrbIgt_sp2btrvSp45rWYR6j0JmsaV8Wsx-9rp2JS-7UU9pPDNHCoUby43irvwg_ifcPUtb6FRLvaWwBvj-JicFnhFTLKr8rqCKZmUSCEVOjPRvoBdaW3KTXPWtRxY8.QetsUIpXMVylXIFUheBctZesc8qVn29qmyuGSeKzctY&dib_tag=se&keywords=fastrack+watches+for+man&nsdOptOutParam=true&qid=1747415966&sprefix=fastrack+watches+for+man%2Caps%2C227&sr=8-11
+      - heading "Bold Analog White Dial Men's Watch NM38051SL06/NN38051SL06" [level=2]
+    - button "4.3 out of 5 stars, rating details"
+    - link "588 ratings":
+      - /url: /Fastrack-Analog-White-NM38051SL06-NN38051SL06/dp/B07JFMYZ1K/ref=sr_1_11?crid=1W90282OOSS0O&dib=eyJ2IjoiMSJ9.6XcBA4w6Npm_pwAOvvXVcDAPsx0DXQfkVFdJcc8795AOyRoEAhGIodxusTSNBOZ8GZ7QBjv4Xt1bRcOCSc7OPyg0r7pbMkcvB09GR1rcV2Hv6-XZa7g2Q8g8nJ7gGOcgFAOZyjmW0D8EBSwRzt5ZLhyzgrlRZDQO2I47cGai7f1oUrbIgt_sp2btrvSp45rWYR6j0JmsaV8Wsx-9rp2JS-7UU9pPDNHCoUby43irvwg_ifcPUtb6FRLvaWwBvj-JicFnhFTLKr8rqCKZmUSCEVOjPRvoBdaW3KTXPWtRxY8.QetsUIpXMVylXIFUheBctZesc8qVn29qmyuGSeKzctY&dib_tag=se&keywords=fastrack+watches+for+man&nsdOptOutParam=true&qid=1747415966&sprefix=fastrack+watches+for+man%2Caps%2C227&sr=8-11#customerReviews
+    - text: 200+ bought in past month
+    - link "Limited time deal":
+      - /url: /gp/goldbox/
+    - text: Price, product page
+    - 'link "₹1,596 M.R.P: ₹1,995 M.R.P: ₹1,995"':
+      - /url: /Fastrack-Analog-White-NM38051SL06-NN38051SL06/dp/B07JFMYZ1K/ref=sr_1_11?crid=1W90282OOSS0O&dib=eyJ2IjoiMSJ9.6XcBA4w6Npm_pwAOvvXVcDAPsx0DXQfkVFdJcc8795AOyRoEAhGIodxusTSNBOZ8GZ7QBjv4Xt1bRcOCSc7OPyg0r7pbMkcvB09GR1rcV2Hv6-XZa7g2Q8g8nJ7gGOcgFAOZyjmW0D8EBSwRzt5ZLhyzgrlRZDQO2I47cGai7f1oUrbIgt_sp2btrvSp45rWYR6j0JmsaV8Wsx-9rp2JS-7UU9pPDNHCoUby43irvwg_ifcPUtb6FRLvaWwBvj-JicFnhFTLKr8rqCKZmUSCEVOjPRvoBdaW3KTXPWtRxY8.QetsUIpXMVylXIFUheBctZesc8qVn29qmyuGSeKzctY&dib_tag=se&keywords=fastrack+watches+for+man&nsdOptOutParam=true&qid=1747415966&sprefix=fastrack+watches+for+man%2Caps%2C227&sr=8-11
+    - text: (20% off)
+    - img "Amazon Prime"
+    - text: FREE delivery Sun, 18 May Or fastest delivery Tomorrow, 17 May
+    - button "Add to cart"
+  - listitem:
+    - link:
+      - /url: /Fastrack-Quartz-Analog-Plastic-Guys-NS3114PP01/dp/B00NLASVBQ/ref=sr_1_12?crid=1W90282OOSS0O&dib=eyJ2IjoiMSJ9.6XcBA4w6Npm_pwAOvvXVcDAPsx0DXQfkVFdJcc8795AOyRoEAhGIodxusTSNBOZ8GZ7QBjv4Xt1bRcOCSc7OPyg0r7pbMkcvB09GR1rcV2Hv6-XZa7g2Q8g8nJ7gGOcgFAOZyjmW0D8EBSwRzt5ZLhyzgrlRZDQO2I47cGai7f1oUrbIgt_sp2btrvSp45rWYR6j0JmsaV8Wsx-9rp2JS-7UU9pPDNHCoUby43irvwg_ifcPUtb6FRLvaWwBvj-JicFnhFTLKr8rqCKZmUSCEVOjPRvoBdaW3KTXPWtRxY8.QetsUIpXMVylXIFUheBctZesc8qVn29qmyuGSeKzctY&dib_tag=se&keywords=fastrack+watches+for+man&nsdOptOutParam=true&qid=1747415966&sprefix=fastrack+watches+for+man%2Caps%2C227&sr=8-12
+    - heading "Fastrack" [level=2]
+    - link "Casual Analog White Dial Men's Watch NM3114PP01/NN3114PP01/NP3114PP01":
+      - /url: /Fastrack-Quartz-Analog-Plastic-Guys-NS3114PP01/dp/B00NLASVBQ/ref=sr_1_12?crid=1W90282OOSS0O&dib=eyJ2IjoiMSJ9.6XcBA4w6Npm_pwAOvvXVcDAPsx0DXQfkVFdJcc8795AOyRoEAhGIodxusTSNBOZ8GZ7QBjv4Xt1bRcOCSc7OPyg0r7pbMkcvB09GR1rcV2Hv6-XZa7g2Q8g8nJ7gGOcgFAOZyjmW0D8EBSwRzt5ZLhyzgrlRZDQO2I47cGai7f1oUrbIgt_sp2btrvSp45rWYR6j0JmsaV8Wsx-9rp2JS-7UU9pPDNHCoUby43irvwg_ifcPUtb6FRLvaWwBvj-JicFnhFTLKr8rqCKZmUSCEVOjPRvoBdaW3KTXPWtRxY8.QetsUIpXMVylXIFUheBctZesc8qVn29qmyuGSeKzctY&dib_tag=se&keywords=fastrack+watches+for+man&nsdOptOutParam=true&qid=1747415966&sprefix=fastrack+watches+for+man%2Caps%2C227&sr=8-12
+      - heading "Casual Analog White Dial Men's Watch NM3114PP01/NN3114PP01/NP3114PP01" [level=2]
+    - button "4.0 out of 5 stars, rating details"
+    - link "5,685 ratings":
+      - /url: /Fastrack-Quartz-Analog-Plastic-Guys-NS3114PP01/dp/B00NLASVBQ/ref=sr_1_12?crid=1W90282OOSS0O&dib=eyJ2IjoiMSJ9.6XcBA4w6Npm_pwAOvvXVcDAPsx0DXQfkVFdJcc8795AOyRoEAhGIodxusTSNBOZ8GZ7QBjv4Xt1bRcOCSc7OPyg0r7pbMkcvB09GR1rcV2Hv6-XZa7g2Q8g8nJ7gGOcgFAOZyjmW0D8EBSwRzt5ZLhyzgrlRZDQO2I47cGai7f1oUrbIgt_sp2btrvSp45rWYR6j0JmsaV8Wsx-9rp2JS-7UU9pPDNHCoUby43irvwg_ifcPUtb6FRLvaWwBvj-JicFnhFTLKr8rqCKZmUSCEVOjPRvoBdaW3KTXPWtRxY8.QetsUIpXMVylXIFUheBctZesc8qVn29qmyuGSeKzctY&dib_tag=se&keywords=fastrack+watches+for+man&nsdOptOutParam=true&qid=1747415966&sprefix=fastrack+watches+for+man%2Caps%2C227&sr=8-12#customerReviews
+    - text: 200+ bought in past month
+    - link "Limited time deal":
+      - /url: /gp/goldbox/
+    - text: Price, product page
+    - 'link "₹1,046 M.R.P: ₹1,195 M.R.P: ₹1,195"':
+      - /url: /Fastrack-Quartz-Analog-Plastic-Guys-NS3114PP01/dp/B00NLASVBQ/ref=sr_1_12?crid=1W90282OOSS0O&dib=eyJ2IjoiMSJ9.6XcBA4w6Npm_pwAOvvXVcDAPsx0DXQfkVFdJcc8795AOyRoEAhGIodxusTSNBOZ8GZ7QBjv4Xt1bRcOCSc7OPyg0r7pbMkcvB09GR1rcV2Hv6-XZa7g2Q8g8nJ7gGOcgFAOZyjmW0D8EBSwRzt5ZLhyzgrlRZDQO2I47cGai7f1oUrbIgt_sp2btrvSp45rWYR6j0JmsaV8Wsx-9rp2JS-7UU9pPDNHCoUby43irvwg_ifcPUtb6FRLvaWwBvj-JicFnhFTLKr8rqCKZmUSCEVOjPRvoBdaW3KTXPWtRxY8.QetsUIpXMVylXIFUheBctZesc8qVn29qmyuGSeKzctY&dib_tag=se&keywords=fastrack+watches+for+man&nsdOptOutParam=true&qid=1747415966&sprefix=fastrack+watches+for+man%2Caps%2C227&sr=8-12
+    - text: (12% off)
+    - img "Amazon Prime"
+    - text: FREE delivery Sun, 18 May Or fastest delivery Tomorrow, 17 May
+    - button "Add to cart"
+  - listitem:
+    - link:
+      - /url: /Fastrack-Stunners-4-0-Analog-Watch/dp/B0B7BK55X1/ref=sr_1_13?crid=1W90282OOSS0O&dib=eyJ2IjoiMSJ9.6XcBA4w6Npm_pwAOvvXVcDAPsx0DXQfkVFdJcc8795AOyRoEAhGIodxusTSNBOZ8GZ7QBjv4Xt1bRcOCSc7OPyg0r7pbMkcvB09GR1rcV2Hv6-XZa7g2Q8g8nJ7gGOcgFAOZyjmW0D8EBSwRzt5ZLhyzgrlRZDQO2I47cGai7f1oUrbIgt_sp2btrvSp45rWYR6j0JmsaV8Wsx-9rp2JS-7UU9pPDNHCoUby43irvwg_ifcPUtb6FRLvaWwBvj-JicFnhFTLKr8rqCKZmUSCEVOjPRvoBdaW3KTXPWtRxY8.QetsUIpXMVylXIFUheBctZesc8qVn29qmyuGSeKzctY&dib_tag=se&keywords=fastrack+watches+for+man&nsdOptOutParam=true&qid=1747415966&sprefix=fastrack+watches+for+man%2Caps%2C227&sr=8-13
+    - heading "Fastrack" [level=2]
+    - link "Mens Stunners Quartz Analog Black Dial Stainless Steel Strap Watch for Guys-NS3255NM02/NT3255NM02":
+      - /url: /Fastrack-Stunners-4-0-Analog-Watch/dp/B0B7BK55X1/ref=sr_1_13?crid=1W90282OOSS0O&dib=eyJ2IjoiMSJ9.6XcBA4w6Npm_pwAOvvXVcDAPsx0DXQfkVFdJcc8795AOyRoEAhGIodxusTSNBOZ8GZ7QBjv4Xt1bRcOCSc7OPyg0r7pbMkcvB09GR1rcV2Hv6-XZa7g2Q8g8nJ7gGOcgFAOZyjmW0D8EBSwRzt5ZLhyzgrlRZDQO2I47cGai7f1oUrbIgt_sp2btrvSp45rWYR6j0JmsaV8Wsx-9rp2JS-7UU9pPDNHCoUby43irvwg_ifcPUtb6FRLvaWwBvj-JicFnhFTLKr8rqCKZmUSCEVOjPRvoBdaW3KTXPWtRxY8.QetsUIpXMVylXIFUheBctZesc8qVn29qmyuGSeKzctY&dib_tag=se&keywords=fastrack+watches+for+man&nsdOptOutParam=true&qid=1747415966&sprefix=fastrack+watches+for+man%2Caps%2C227&sr=8-13
+      - heading "Mens Stunners Quartz Analog Black Dial Stainless Steel Strap Watch for Guys-NS3255NM02/NT3255NM02" [level=2]
+    - button "4.3 out of 5 stars, rating details"
+    - link "242 ratings":
+      - /url: /Fastrack-Stunners-4-0-Analog-Watch/dp/B0B7BK55X1/ref=sr_1_13?crid=1W90282OOSS0O&dib=eyJ2IjoiMSJ9.6XcBA4w6Npm_pwAOvvXVcDAPsx0DXQfkVFdJcc8795AOyRoEAhGIodxusTSNBOZ8GZ7QBjv4Xt1bRcOCSc7OPyg0r7pbMkcvB09GR1rcV2Hv6-XZa7g2Q8g8nJ7gGOcgFAOZyjmW0D8EBSwRzt5ZLhyzgrlRZDQO2I47cGai7f1oUrbIgt_sp2btrvSp45rWYR6j0JmsaV8Wsx-9rp2JS-7UU9pPDNHCoUby43irvwg_ifcPUtb6FRLvaWwBvj-JicFnhFTLKr8rqCKZmUSCEVOjPRvoBdaW3KTXPWtRxY8.QetsUIpXMVylXIFUheBctZesc8qVn29qmyuGSeKzctY&dib_tag=se&keywords=fastrack+watches+for+man&nsdOptOutParam=true&qid=1747415966&sprefix=fastrack+watches+for+man%2Caps%2C227&sr=8-13#customerReviews
+    - text: 400+ bought in past month
+    - link "Limited time deal":
+      - /url: /gp/goldbox/
+    - text: Price, product page
+    - 'link "₹2,156 M.R.P: ₹2,495 M.R.P: ₹2,495"':
+      - /url: /Fastrack-Stunners-4-0-Analog-Watch/dp/B0B7BK55X1/ref=sr_1_13?crid=1W90282OOSS0O&dib=eyJ2IjoiMSJ9.6XcBA4w6Npm_pwAOvvXVcDAPsx0DXQfkVFdJcc8795AOyRoEAhGIodxusTSNBOZ8GZ7QBjv4Xt1bRcOCSc7OPyg0r7pbMkcvB09GR1rcV2Hv6-XZa7g2Q8g8nJ7gGOcgFAOZyjmW0D8EBSwRzt5ZLhyzgrlRZDQO2I47cGai7f1oUrbIgt_sp2btrvSp45rWYR6j0JmsaV8Wsx-9rp2JS-7UU9pPDNHCoUby43irvwg_ifcPUtb6FRLvaWwBvj-JicFnhFTLKr8rqCKZmUSCEVOjPRvoBdaW3KTXPWtRxY8.QetsUIpXMVylXIFUheBctZesc8qVn29qmyuGSeKzctY&dib_tag=se&keywords=fastrack+watches+for+man&nsdOptOutParam=true&qid=1747415966&sprefix=fastrack+watches+for+man%2Caps%2C227&sr=8-13
+    - text: (14% off)
+    - img "Amazon Prime"
+    - text: FREE delivery Sun, 18 May Or fastest delivery Tomorrow, 17 May
+    - button "Add to cart"
+  - listitem:
+    - link:
+      - /url: /Fastrack-Trendies-Analog-Black-Watch-38058PP03/dp/B08K9946WZ/ref=sr_1_14?crid=1W90282OOSS0O&dib=eyJ2IjoiMSJ9.6XcBA4w6Npm_pwAOvvXVcDAPsx0DXQfkVFdJcc8795AOyRoEAhGIodxusTSNBOZ8GZ7QBjv4Xt1bRcOCSc7OPyg0r7pbMkcvB09GR1rcV2Hv6-XZa7g2Q8g8nJ7gGOcgFAOZyjmW0D8EBSwRzt5ZLhyzgrlRZDQO2I47cGai7f1oUrbIgt_sp2btrvSp45rWYR6j0JmsaV8Wsx-9rp2JS-7UU9pPDNHCoUby43irvwg_ifcPUtb6FRLvaWwBvj-JicFnhFTLKr8rqCKZmUSCEVOjPRvoBdaW3KTXPWtRxY8.QetsUIpXMVylXIFUheBctZesc8qVn29qmyuGSeKzctY&dib_tag=se&keywords=fastrack+watches+for+man&nsdOptOutParam=true&qid=1747415966&sprefix=fastrack+watches+for+man%2Caps%2C227&sr=8-14
+    - heading "Fastrack" [level=2]
+    - link "Trendies Analog Black Dial Men's Watch-38058PP03/NP38058PP03":
+      - /url: /Fastrack-Trendies-Analog-Black-Watch-38058PP03/dp/B08K9946WZ/ref=sr_1_14?crid=1W90282OOSS0O&dib=eyJ2IjoiMSJ9.6XcBA4w6Npm_pwAOvvXVcDAPsx0DXQfkVFdJcc8795AOyRoEAhGIodxusTSNBOZ8GZ7QBjv4Xt1bRcOCSc7OPyg0r7pbMkcvB09GR1rcV2Hv6-XZa7g2Q8g8nJ7gGOcgFAOZyjmW0D8EBSwRzt5ZLhyzgrlRZDQO2I47cGai7f1oUrbIgt_sp2btrvSp45rWYR6j0JmsaV8Wsx-9rp2JS-7UU9pPDNHCoUby43irvwg_ifcPUtb6FRLvaWwBvj-JicFnhFTLKr8rqCKZmUSCEVOjPRvoBdaW3KTXPWtRxY8.QetsUIpXMVylXIFUheBctZesc8qVn29qmyuGSeKzctY&dib_tag=se&keywords=fastrack+watches+for+man&nsdOptOutParam=true&qid=1747415966&sprefix=fastrack+watches+for+man%2Caps%2C227&sr=8-14
+      - heading "Trendies Analog Black Dial Men's Watch-38058PP03/NP38058PP03" [level=2]
+    - button "4.2 out of 5 stars, rating details"
+    - link "399 ratings":
+      - /url: /Fastrack-Trendies-Analog-Black-Watch-38058PP03/dp/B08K9946WZ/ref=sr_1_14?crid=1W90282OOSS0O&dib=eyJ2IjoiMSJ9.6XcBA4w6Npm_pwAOvvXVcDAPsx0DXQfkVFdJcc8795AOyRoEAhGIodxusTSNBOZ8GZ7QBjv4Xt1bRcOCSc7OPyg0r7pbMkcvB09GR1rcV2Hv6-XZa7g2Q8g8nJ7gGOcgFAOZyjmW0D8EBSwRzt5ZLhyzgrlRZDQO2I47cGai7f1oUrbIgt_sp2btrvSp45rWYR6j0JmsaV8Wsx-9rp2JS-7UU9pPDNHCoUby43irvwg_ifcPUtb6FRLvaWwBvj-JicFnhFTLKr8rqCKZmUSCEVOjPRvoBdaW3KTXPWtRxY8.QetsUIpXMVylXIFUheBctZesc8qVn29qmyuGSeKzctY&dib_tag=se&keywords=fastrack+watches+for+man&nsdOptOutParam=true&qid=1747415966&sprefix=fastrack+watches+for+man%2Caps%2C227&sr=8-14#customerReviews
+    - text: 300+ bought in past month Price, product page
+    - link "₹1,595":
+      - /url: /Fastrack-Trendies-Analog-Black-Watch-38058PP03/dp/B08K9946WZ/ref=sr_1_14?crid=1W90282OOSS0O&dib=eyJ2IjoiMSJ9.6XcBA4w6Npm_pwAOvvXVcDAPsx0DXQfkVFdJcc8795AOyRoEAhGIodxusTSNBOZ8GZ7QBjv4Xt1bRcOCSc7OPyg0r7pbMkcvB09GR1rcV2Hv6-XZa7g2Q8g8nJ7gGOcgFAOZyjmW0D8EBSwRzt5ZLhyzgrlRZDQO2I47cGai7f1oUrbIgt_sp2btrvSp45rWYR6j0JmsaV8Wsx-9rp2JS-7UU9pPDNHCoUby43irvwg_ifcPUtb6FRLvaWwBvj-JicFnhFTLKr8rqCKZmUSCEVOjPRvoBdaW3KTXPWtRxY8.QetsUIpXMVylXIFUheBctZesc8qVn29qmyuGSeKzctY&dib_tag=se&keywords=fastrack+watches+for+man&nsdOptOutParam=true&qid=1747415966&sprefix=fastrack+watches+for+man%2Caps%2C227&sr=8-14
+    - img "Amazon Prime"
+    - text: FREE delivery Sun, 18 May Or fastest delivery Tomorrow, 17 May
+    - button "Add to cart"
+  - listitem:
+    - link:
+      - /url: /Fastrack-Analog-Watch-Unisex-38076PP05W/dp/B0CCWBM4DY/ref=sr_1_15?crid=1W90282OOSS0O&dib=eyJ2IjoiMSJ9.6XcBA4w6Npm_pwAOvvXVcDAPsx0DXQfkVFdJcc8795AOyRoEAhGIodxusTSNBOZ8GZ7QBjv4Xt1bRcOCSc7OPyg0r7pbMkcvB09GR1rcV2Hv6-XZa7g2Q8g8nJ7gGOcgFAOZyjmW0D8EBSwRzt5ZLhyzgrlRZDQO2I47cGai7f1oUrbIgt_sp2btrvSp45rWYR6j0JmsaV8Wsx-9rp2JS-7UU9pPDNHCoUby43irvwg_ifcPUtb6FRLvaWwBvj-JicFnhFTLKr8rqCKZmUSCEVOjPRvoBdaW3KTXPWtRxY8.QetsUIpXMVylXIFUheBctZesc8qVn29qmyuGSeKzctY&dib_tag=se&keywords=fastrack+watches+for+man&nsdOptOutParam=true&qid=1747415966&sprefix=fastrack+watches+for+man%2Caps%2C227&sr=8-15
+    - heading "Fastrack" [level=2]
+    - link "Anadigi Black Dial Plastic Strap Unisex Analog Digital Watch-38076PP05W/NT38076PP05W":
+      - /url: /Fastrack-Analog-Watch-Unisex-38076PP05W/dp/B0CCWBM4DY/ref=sr_1_15?crid=1W90282OOSS0O&dib=eyJ2IjoiMSJ9.6XcBA4w6Npm_pwAOvvXVcDAPsx0DXQfkVFdJcc8795AOyRoEAhGIodxusTSNBOZ8GZ7QBjv4Xt1bRcOCSc7OPyg0r7pbMkcvB09GR1rcV2Hv6-XZa7g2Q8g8nJ7gGOcgFAOZyjmW0D8EBSwRzt5ZLhyzgrlRZDQO2I47cGai7f1oUrbIgt_sp2btrvSp45rWYR6j0JmsaV8Wsx-9rp2JS-7UU9pPDNHCoUby43irvwg_ifcPUtb6FRLvaWwBvj-JicFnhFTLKr8rqCKZmUSCEVOjPRvoBdaW3KTXPWtRxY8.QetsUIpXMVylXIFUheBctZesc8qVn29qmyuGSeKzctY&dib_tag=se&keywords=fastrack+watches+for+man&nsdOptOutParam=true&qid=1747415966&sprefix=fastrack+watches+for+man%2Caps%2C227&sr=8-15
+      - heading "Anadigi Black Dial Plastic Strap Unisex Analog Digital Watch-38076PP05W/NT38076PP05W" [level=2]
+    - button "4.2 out of 5 stars, rating details"
+    - link "59 ratings":
+      - /url: /Fastrack-Analog-Watch-Unisex-38076PP05W/dp/B0CCWBM4DY/ref=sr_1_15?crid=1W90282OOSS0O&dib=eyJ2IjoiMSJ9.6XcBA4w6Npm_pwAOvvXVcDAPsx0DXQfkVFdJcc8795AOyRoEAhGIodxusTSNBOZ8GZ7QBjv4Xt1bRcOCSc7OPyg0r7pbMkcvB09GR1rcV2Hv6-XZa7g2Q8g8nJ7gGOcgFAOZyjmW0D8EBSwRzt5ZLhyzgrlRZDQO2I47cGai7f1oUrbIgt_sp2btrvSp45rWYR6j0JmsaV8Wsx-9rp2JS-7UU9pPDNHCoUby43irvwg_ifcPUtb6FRLvaWwBvj-JicFnhFTLKr8rqCKZmUSCEVOjPRvoBdaW3KTXPWtRxY8.QetsUIpXMVylXIFUheBctZesc8qVn29qmyuGSeKzctY&dib_tag=se&keywords=fastrack+watches+for+man&nsdOptOutParam=true&qid=1747415966&sprefix=fastrack+watches+for+man%2Caps%2C227&sr=8-15#customerReviews
+    - text: 100+ bought in past month
+    - link "Limited time deal":
+      - /url: /gp/goldbox/
+    - text: Price, product page
+    - 'link "₹1,836 M.R.P: ₹2,295 M.R.P: ₹2,295"':
+      - /url: /Fastrack-Analog-Watch-Unisex-38076PP05W/dp/B0CCWBM4DY/ref=sr_1_15?crid=1W90282OOSS0O&dib=eyJ2IjoiMSJ9.6XcBA4w6Npm_pwAOvvXVcDAPsx0DXQfkVFdJcc8795AOyRoEAhGIodxusTSNBOZ8GZ7QBjv4Xt1bRcOCSc7OPyg0r7pbMkcvB09GR1rcV2Hv6-XZa7g2Q8g8nJ7gGOcgFAOZyjmW0D8EBSwRzt5ZLhyzgrlRZDQO2I47cGai7f1oUrbIgt_sp2btrvSp45rWYR6j0JmsaV8Wsx-9rp2JS-7UU9pPDNHCoUby43irvwg_ifcPUtb6FRLvaWwBvj-JicFnhFTLKr8rqCKZmUSCEVOjPRvoBdaW3KTXPWtRxY8.QetsUIpXMVylXIFUheBctZesc8qVn29qmyuGSeKzctY&dib_tag=se&keywords=fastrack+watches+for+man&nsdOptOutParam=true&qid=1747415966&sprefix=fastrack+watches+for+man%2Caps%2C227&sr=8-15
+    - text: (20% off)
+    - img "Amazon Prime"
+    - text: FREE delivery Sun, 18 May Or fastest delivery Tomorrow, 17 May
+    - button "Add to cart"
+  - listitem:
+    - link:
+      - /url: /Fastrack-Stunners-Quartz-Leather-Guys-NR3291SL02/dp/B0BHTJCPFQ/ref=sr_1_16?crid=1W90282OOSS0O&dib=eyJ2IjoiMSJ9.6XcBA4w6Npm_pwAOvvXVcDAPsx0DXQfkVFdJcc8795AOyRoEAhGIodxusTSNBOZ8GZ7QBjv4Xt1bRcOCSc7OPyg0r7pbMkcvB09GR1rcV2Hv6-XZa7g2Q8g8nJ7gGOcgFAOZyjmW0D8EBSwRzt5ZLhyzgrlRZDQO2I47cGai7f1oUrbIgt_sp2btrvSp45rWYR6j0JmsaV8Wsx-9rp2JS-7UU9pPDNHCoUby43irvwg_ifcPUtb6FRLvaWwBvj-JicFnhFTLKr8rqCKZmUSCEVOjPRvoBdaW3KTXPWtRxY8.QetsUIpXMVylXIFUheBctZesc8qVn29qmyuGSeKzctY&dib_tag=se&keywords=fastrack+watches+for+man&nsdOptOutParam=true&qid=1747415966&sprefix=fastrack+watches+for+man%2Caps%2C227&sr=8-16
+    - heading "Fastrack" [level=2]
+    - link "Mens Stunners Quartz Analog Silver Dial Leather Strap Watch for Guys-NR3291SL02":
+      - /url: /Fastrack-Stunners-Quartz-Leather-Guys-NR3291SL02/dp/B0BHTJCPFQ/ref=sr_1_16?crid=1W90282OOSS0O&dib=eyJ2IjoiMSJ9.6XcBA4w6Npm_pwAOvvXVcDAPsx0DXQfkVFdJcc8795AOyRoEAhGIodxusTSNBOZ8GZ7QBjv4Xt1bRcOCSc7OPyg0r7pbMkcvB09GR1rcV2Hv6-XZa7g2Q8g8nJ7gGOcgFAOZyjmW0D8EBSwRzt5ZLhyzgrlRZDQO2I47cGai7f1oUrbIgt_sp2btrvSp45rWYR6j0JmsaV8Wsx-9rp2JS-7UU9pPDNHCoUby43irvwg_ifcPUtb6FRLvaWwBvj-JicFnhFTLKr8rqCKZmUSCEVOjPRvoBdaW3KTXPWtRxY8.QetsUIpXMVylXIFUheBctZesc8qVn29qmyuGSeKzctY&dib_tag=se&keywords=fastrack+watches+for+man&nsdOptOutParam=true&qid=1747415966&sprefix=fastrack+watches+for+man%2Caps%2C227&sr=8-16
+      - heading "Mens Stunners Quartz Analog Silver Dial Leather Strap Watch for Guys-NR3291SL02" [level=2]
+    - button "4.2 out of 5 stars, rating details"
+    - link "176 ratings":
+      - /url: /Fastrack-Stunners-Quartz-Leather-Guys-NR3291SL02/dp/B0BHTJCPFQ/ref=sr_1_16?crid=1W90282OOSS0O&dib=eyJ2IjoiMSJ9.6XcBA4w6Npm_pwAOvvXVcDAPsx0DXQfkVFdJcc8795AOyRoEAhGIodxusTSNBOZ8GZ7QBjv4Xt1bRcOCSc7OPyg0r7pbMkcvB09GR1rcV2Hv6-XZa7g2Q8g8nJ7gGOcgFAOZyjmW0D8EBSwRzt5ZLhyzgrlRZDQO2I47cGai7f1oUrbIgt_sp2btrvSp45rWYR6j0JmsaV8Wsx-9rp2JS-7UU9pPDNHCoUby43irvwg_ifcPUtb6FRLvaWwBvj-JicFnhFTLKr8rqCKZmUSCEVOjPRvoBdaW3KTXPWtRxY8.QetsUIpXMVylXIFUheBctZesc8qVn29qmyuGSeKzctY&dib_tag=se&keywords=fastrack+watches+for+man&nsdOptOutParam=true&qid=1747415966&sprefix=fastrack+watches+for+man%2Caps%2C227&sr=8-16#customerReviews
+    - text: 200+ bought in past month
+    - link "Limited time deal":
+      - /url: /gp/goldbox/
+    - text: Price, product page
+    - 'link "₹1,196 M.R.P: ₹1,495 M.R.P: ₹1,495"':
+      - /url: /Fastrack-Stunners-Quartz-Leather-Guys-NR3291SL02/dp/B0BHTJCPFQ/ref=sr_1_16?crid=1W90282OOSS0O&dib=eyJ2IjoiMSJ9.6XcBA4w6Npm_pwAOvvXVcDAPsx0DXQfkVFdJcc8795AOyRoEAhGIodxusTSNBOZ8GZ7QBjv4Xt1bRcOCSc7OPyg0r7pbMkcvB09GR1rcV2Hv6-XZa7g2Q8g8nJ7gGOcgFAOZyjmW0D8EBSwRzt5ZLhyzgrlRZDQO2I47cGai7f1oUrbIgt_sp2btrvSp45rWYR6j0JmsaV8Wsx-9rp2JS-7UU9pPDNHCoUby43irvwg_ifcPUtb6FRLvaWwBvj-JicFnhFTLKr8rqCKZmUSCEVOjPRvoBdaW3KTXPWtRxY8.QetsUIpXMVylXIFUheBctZesc8qVn29qmyuGSeKzctY&dib_tag=se&keywords=fastrack+watches+for+man&nsdOptOutParam=true&qid=1747415966&sprefix=fastrack+watches+for+man%2Caps%2C227&sr=8-16
+    - text: (20% off)
+    - img "Amazon Prime"
+    - text: FREE delivery Sun, 18 May Or fastest delivery Tomorrow, 17 May
+    - button "Add to cart"
+  - listitem:
+    - link:
+      - /url: /Fastrack-Trendies-Digital-Silicone-Guys-NS38045PP03/dp/B079VTDT5G/ref=sr_1_17?crid=1W90282OOSS0O&dib=eyJ2IjoiMSJ9.6XcBA4w6Npm_pwAOvvXVcDAPsx0DXQfkVFdJcc8795AOyRoEAhGIodxusTSNBOZ8GZ7QBjv4Xt1bRcOCSc7OPyg0r7pbMkcvB09GR1rcV2Hv6-XZa7g2Q8g8nJ7gGOcgFAOZyjmW0D8EBSwRzt5ZLhyzgrlRZDQO2I47cGai7f1oUrbIgt_sp2btrvSp45rWYR6j0JmsaV8Wsx-9rp2JS-7UU9pPDNHCoUby43irvwg_ifcPUtb6FRLvaWwBvj-JicFnhFTLKr8rqCKZmUSCEVOjPRvoBdaW3KTXPWtRxY8.QetsUIpXMVylXIFUheBctZesc8qVn29qmyuGSeKzctY&dib_tag=se&keywords=fastrack+watches+for+man&nsdOptOutParam=true&qid=1747415966&sprefix=fastrack+watches+for+man%2Caps%2C227&sr=8-17
+    - heading "Fastrack" [level=2]
+    - link "Trendies Analog Black Dial Men's Watch NM38045PP03/NN38045PP03":
+      - /url: /Fastrack-Trendies-Digital-Silicone-Guys-NS38045PP03/dp/B079VTDT5G/ref=sr_1_17?crid=1W90282OOSS0O&dib=eyJ2IjoiMSJ9.6XcBA4w6Npm_pwAOvvXVcDAPsx0DXQfkVFdJcc8795AOyRoEAhGIodxusTSNBOZ8GZ7QBjv4Xt1bRcOCSc7OPyg0r7pbMkcvB09GR1rcV2Hv6-XZa7g2Q8g8nJ7gGOcgFAOZyjmW0D8EBSwRzt5ZLhyzgrlRZDQO2I47cGai7f1oUrbIgt_sp2btrvSp45rWYR6j0JmsaV8Wsx-9rp2JS-7UU9pPDNHCoUby43irvwg_ifcPUtb6FRLvaWwBvj-JicFnhFTLKr8rqCKZmUSCEVOjPRvoBdaW3KTXPWtRxY8.QetsUIpXMVylXIFUheBctZesc8qVn29qmyuGSeKzctY&dib_tag=se&keywords=fastrack+watches+for+man&nsdOptOutParam=true&qid=1747415966&sprefix=fastrack+watches+for+man%2Caps%2C227&sr=8-17
+      - heading "Trendies Analog Black Dial Men's Watch NM38045PP03/NN38045PP03" [level=2]
+    - button "4.3 out of 5 stars, rating details"
+    - link "2,639 ratings":
+      - /url: /Fastrack-Trendies-Digital-Silicone-Guys-NS38045PP03/dp/B079VTDT5G/ref=sr_1_17?crid=1W90282OOSS0O&dib=eyJ2IjoiMSJ9.6XcBA4w6Npm_pwAOvvXVcDAPsx0DXQfkVFdJcc8795AOyRoEAhGIodxusTSNBOZ8GZ7QBjv4Xt1bRcOCSc7OPyg0r7pbMkcvB09GR1rcV2Hv6-XZa7g2Q8g8nJ7gGOcgFAOZyjmW0D8EBSwRzt5ZLhyzgrlRZDQO2I47cGai7f1oUrbIgt_sp2btrvSp45rWYR6j0JmsaV8Wsx-9rp2JS-7UU9pPDNHCoUby43irvwg_ifcPUtb6FRLvaWwBvj-JicFnhFTLKr8rqCKZmUSCEVOjPRvoBdaW3KTXPWtRxY8.QetsUIpXMVylXIFUheBctZesc8qVn29qmyuGSeKzctY&dib_tag=se&keywords=fastrack+watches+for+man&nsdOptOutParam=true&qid=1747415966&sprefix=fastrack+watches+for+man%2Caps%2C227&sr=8-17#customerReviews
+    - text: 200+ bought in past month
+    - link "Limited time deal":
+      - /url: /gp/goldbox/
+    - text: Price, product page
+    - 'link "₹2,156 M.R.P: ₹2,195 M.R.P: ₹2,195"':
+      - /url: /Fastrack-Trendies-Digital-Silicone-Guys-NS38045PP03/dp/B079VTDT5G/ref=sr_1_17?crid=1W90282OOSS0O&dib=eyJ2IjoiMSJ9.6XcBA4w6Npm_pwAOvvXVcDAPsx0DXQfkVFdJcc8795AOyRoEAhGIodxusTSNBOZ8GZ7QBjv4Xt1bRcOCSc7OPyg0r7pbMkcvB09GR1rcV2Hv6-XZa7g2Q8g8nJ7gGOcgFAOZyjmW0D8EBSwRzt5ZLhyzgrlRZDQO2I47cGai7f1oUrbIgt_sp2btrvSp45rWYR6j0JmsaV8Wsx-9rp2JS-7UU9pPDNHCoUby43irvwg_ifcPUtb6FRLvaWwBvj-JicFnhFTLKr8rqCKZmUSCEVOjPRvoBdaW3KTXPWtRxY8.QetsUIpXMVylXIFUheBctZesc8qVn29qmyuGSeKzctY&dib_tag=se&keywords=fastrack+watches+for+man&nsdOptOutParam=true&qid=1747415966&sprefix=fastrack+watches+for+man%2Caps%2C227&sr=8-17
+    - text: (2% off)
+    - img "Amazon Prime"
+    - text: FREE delivery Sun, 18 May Or fastest delivery Tomorrow, 17 May
+    - button "Add to cart"
+  - listitem:
+    - link:
+      - /url: /Fastrack-Silver-Analog-Watch-3278SM04/dp/B0C1C374G3/ref=sr_1_18?crid=1W90282OOSS0O&dib=eyJ2IjoiMSJ9.6XcBA4w6Npm_pwAOvvXVcDAPsx0DXQfkVFdJcc8795AOyRoEAhGIodxusTSNBOZ8GZ7QBjv4Xt1bRcOCSc7OPyg0r7pbMkcvB09GR1rcV2Hv6-XZa7g2Q8g8nJ7gGOcgFAOZyjmW0D8EBSwRzt5ZLhyzgrlRZDQO2I47cGai7f1oUrbIgt_sp2btrvSp45rWYR6j0JmsaV8Wsx-9rp2JS-7UU9pPDNHCoUby43irvwg_ifcPUtb6FRLvaWwBvj-JicFnhFTLKr8rqCKZmUSCEVOjPRvoBdaW3KTXPWtRxY8.QetsUIpXMVylXIFUheBctZesc8qVn29qmyuGSeKzctY&dib_tag=se&keywords=fastrack+watches+for+man&nsdOptOutParam=true&qid=1747415966&sprefix=fastrack+watches+for+man%2Caps%2C227&sr=8-18
+    - heading "Fastrack" [level=2]
+    - link "Silver White Dial Analog Metal Watch for Men - 3278Sm04":
+      - /url: /Fastrack-Silver-Analog-Watch-3278SM04/dp/B0C1C374G3/ref=sr_1_18?crid=1W90282OOSS0O&dib=eyJ2IjoiMSJ9.6XcBA4w6Npm_pwAOvvXVcDAPsx0DXQfkVFdJcc8795AOyRoEAhGIodxusTSNBOZ8GZ7QBjv4Xt1bRcOCSc7OPyg0r7pbMkcvB09GR1rcV2Hv6-XZa7g2Q8g8nJ7gGOcgFAOZyjmW0D8EBSwRzt5ZLhyzgrlRZDQO2I47cGai7f1oUrbIgt_sp2btrvSp45rWYR6j0JmsaV8Wsx-9rp2JS-7UU9pPDNHCoUby43irvwg_ifcPUtb6FRLvaWwBvj-JicFnhFTLKr8rqCKZmUSCEVOjPRvoBdaW3KTXPWtRxY8.QetsUIpXMVylXIFUheBctZesc8qVn29qmyuGSeKzctY&dib_tag=se&keywords=fastrack+watches+for+man&nsdOptOutParam=true&qid=1747415966&sprefix=fastrack+watches+for+man%2Caps%2C227&sr=8-18
+      - heading "Silver White Dial Analog Metal Watch for Men - 3278Sm04" [level=2]
+    - button "4.1 out of 5 stars, rating details"
+    - link "78 ratings":
+      - /url: /Fastrack-Silver-Analog-Watch-3278SM04/dp/B0C1C374G3/ref=sr_1_18?crid=1W90282OOSS0O&dib=eyJ2IjoiMSJ9.6XcBA4w6Npm_pwAOvvXVcDAPsx0DXQfkVFdJcc8795AOyRoEAhGIodxusTSNBOZ8GZ7QBjv4Xt1bRcOCSc7OPyg0r7pbMkcvB09GR1rcV2Hv6-XZa7g2Q8g8nJ7gGOcgFAOZyjmW0D8EBSwRzt5ZLhyzgrlRZDQO2I47cGai7f1oUrbIgt_sp2btrvSp45rWYR6j0JmsaV8Wsx-9rp2JS-7UU9pPDNHCoUby43irvwg_ifcPUtb6FRLvaWwBvj-JicFnhFTLKr8rqCKZmUSCEVOjPRvoBdaW3KTXPWtRxY8.QetsUIpXMVylXIFUheBctZesc8qVn29qmyuGSeKzctY&dib_tag=se&keywords=fastrack+watches+for+man&nsdOptOutParam=true&qid=1747415966&sprefix=fastrack+watches+for+man%2Caps%2C227&sr=8-18#customerReviews
+    - text: 200+ bought in past month
+    - link "Limited time deal":
+      - /url: /gp/goldbox/
+    - text: Price, product page
+    - 'link "₹1,196 M.R.P: ₹1,495 M.R.P: ₹1,495"':
+      - /url: /Fastrack-Silver-Analog-Watch-3278SM04/dp/B0C1C374G3/ref=sr_1_18?crid=1W90282OOSS0O&dib=eyJ2IjoiMSJ9.6XcBA4w6Npm_pwAOvvXVcDAPsx0DXQfkVFdJcc8795AOyRoEAhGIodxusTSNBOZ8GZ7QBjv4Xt1bRcOCSc7OPyg0r7pbMkcvB09GR1rcV2Hv6-XZa7g2Q8g8nJ7gGOcgFAOZyjmW0D8EBSwRzt5ZLhyzgrlRZDQO2I47cGai7f1oUrbIgt_sp2btrvSp45rWYR6j0JmsaV8Wsx-9rp2JS-7UU9pPDNHCoUby43irvwg_ifcPUtb6FRLvaWwBvj-JicFnhFTLKr8rqCKZmUSCEVOjPRvoBdaW3KTXPWtRxY8.QetsUIpXMVylXIFUheBctZesc8qVn29qmyuGSeKzctY&dib_tag=se&keywords=fastrack+watches+for+man&nsdOptOutParam=true&qid=1747415966&sprefix=fastrack+watches+for+man%2Caps%2C227&sr=8-18
+    - text: (20% off) FREE delivery 25 - 26 May
+    - button "Add to cart"
+  - listitem:
+    - link:
+      - /url: /Fastrack-Fundamentals-Stainless-Watch-NN38051SM03-NR38051SM03/dp/B07D2F8JNS/ref=sr_1_19?crid=1W90282OOSS0O&dib=eyJ2IjoiMSJ9.6XcBA4w6Npm_pwAOvvXVcDAPsx0DXQfkVFdJcc8795AOyRoEAhGIodxusTSNBOZ8GZ7QBjv4Xt1bRcOCSc7OPyg0r7pbMkcvB09GR1rcV2Hv6-XZa7g2Q8g8nJ7gGOcgFAOZyjmW0D8EBSwRzt5ZLhyzgrlRZDQO2I47cGai7f1oUrbIgt_sp2btrvSp45rWYR6j0JmsaV8Wsx-9rp2JS-7UU9pPDNHCoUby43irvwg_ifcPUtb6FRLvaWwBvj-JicFnhFTLKr8rqCKZmUSCEVOjPRvoBdaW3KTXPWtRxY8.QetsUIpXMVylXIFUheBctZesc8qVn29qmyuGSeKzctY&dib_tag=se&keywords=fastrack+watches+for+man&nsdOptOutParam=true&qid=1747415966&sprefix=fastrack+watches+for+man%2Caps%2C227&sr=8-19
+    - heading "Fastrack" [level=2]
+    - link "Fundamentals Analog Blue Dial Men's Watch NM38051SM03/NN38051SM03":
+      - /url: /Fastrack-Fundamentals-Stainless-Watch-NN38051SM03-NR38051SM03/dp/B07D2F8JNS/ref=sr_1_19?crid=1W90282OOSS0O&dib=eyJ2IjoiMSJ9.6XcBA4w6Npm_pwAOvvXVcDAPsx0DXQfkVFdJcc8795AOyRoEAhGIodxusTSNBOZ8GZ7QBjv4Xt1bRcOCSc7OPyg0r7pbMkcvB09GR1rcV2Hv6-XZa7g2Q8g8nJ7gGOcgFAOZyjmW0D8EBSwRzt5ZLhyzgrlRZDQO2I47cGai7f1oUrbIgt_sp2btrvSp45rWYR6j0JmsaV8Wsx-9rp2JS-7UU9pPDNHCoUby43irvwg_ifcPUtb6FRLvaWwBvj-JicFnhFTLKr8rqCKZmUSCEVOjPRvoBdaW3KTXPWtRxY8.QetsUIpXMVylXIFUheBctZesc8qVn29qmyuGSeKzctY&dib_tag=se&keywords=fastrack+watches+for+man&nsdOptOutParam=true&qid=1747415966&sprefix=fastrack+watches+for+man%2Caps%2C227&sr=8-19
+      - heading "Fundamentals Analog Blue Dial Men's Watch NM38051SM03/NN38051SM03" [level=2]
+    - button "4.1 out of 5 stars, rating details"
+    - link "1,784 ratings":
+      - /url: /Fastrack-Fundamentals-Stainless-Watch-NN38051SM03-NR38051SM03/dp/B07D2F8JNS/ref=sr_1_19?crid=1W90282OOSS0O&dib=eyJ2IjoiMSJ9.6XcBA4w6Npm_pwAOvvXVcDAPsx0DXQfkVFdJcc8795AOyRoEAhGIodxusTSNBOZ8GZ7QBjv4Xt1bRcOCSc7OPyg0r7pbMkcvB09GR1rcV2Hv6-XZa7g2Q8g8nJ7gGOcgFAOZyjmW0D8EBSwRzt5ZLhyzgrlRZDQO2I47cGai7f1oUrbIgt_sp2btrvSp45rWYR6j0JmsaV8Wsx-9rp2JS-7UU9pPDNHCoUby43irvwg_ifcPUtb6FRLvaWwBvj-JicFnhFTLKr8rqCKZmUSCEVOjPRvoBdaW3KTXPWtRxY8.QetsUIpXMVylXIFUheBctZesc8qVn29qmyuGSeKzctY&dib_tag=se&keywords=fastrack+watches+for+man&nsdOptOutParam=true&qid=1747415966&sprefix=fastrack+watches+for+man%2Caps%2C227&sr=8-19#customerReviews
+    - text: 200+ bought in past month Price, product page
+    - link "₹1,795":
+      - /url: /Fastrack-Fundamentals-Stainless-Watch-NN38051SM03-NR38051SM03/dp/B07D2F8JNS/ref=sr_1_19?crid=1W90282OOSS0O&dib=eyJ2IjoiMSJ9.6XcBA4w6Npm_pwAOvvXVcDAPsx0DXQfkVFdJcc8795AOyRoEAhGIodxusTSNBOZ8GZ7QBjv4Xt1bRcOCSc7OPyg0r7pbMkcvB09GR1rcV2Hv6-XZa7g2Q8g8nJ7gGOcgFAOZyjmW0D8EBSwRzt5ZLhyzgrlRZDQO2I47cGai7f1oUrbIgt_sp2btrvSp45rWYR6j0JmsaV8Wsx-9rp2JS-7UU9pPDNHCoUby43irvwg_ifcPUtb6FRLvaWwBvj-JicFnhFTLKr8rqCKZmUSCEVOjPRvoBdaW3KTXPWtRxY8.QetsUIpXMVylXIFUheBctZesc8qVn29qmyuGSeKzctY&dib_tag=se&keywords=fastrack+watches+for+man&nsdOptOutParam=true&qid=1747415966&sprefix=fastrack+watches+for+man%2Caps%2C227&sr=8-19
+    - img "Amazon Prime"
+    - text: FREE delivery Sun, 18 May Or fastest delivery Tomorrow, 17 May
+    - button "Add to cart"
+  - listitem:
+    - link:
+      - /url: /Fastrack-Analog-White-Unisex-Adult-Watch-68011PP04/dp/B099WR24X2/ref=sr_1_20?crid=1W90282OOSS0O&dib=eyJ2IjoiMSJ9.6XcBA4w6Npm_pwAOvvXVcDAPsx0DXQfkVFdJcc8795AOyRoEAhGIodxusTSNBOZ8GZ7QBjv4Xt1bRcOCSc7OPyg0r7pbMkcvB09GR1rcV2Hv6-XZa7g2Q8g8nJ7gGOcgFAOZyjmW0D8EBSwRzt5ZLhyzgrlRZDQO2I47cGai7f1oUrbIgt_sp2btrvSp45rWYR6j0JmsaV8Wsx-9rp2JS-7UU9pPDNHCoUby43irvwg_ifcPUtb6FRLvaWwBvj-JicFnhFTLKr8rqCKZmUSCEVOjPRvoBdaW3KTXPWtRxY8.QetsUIpXMVylXIFUheBctZesc8qVn29qmyuGSeKzctY&dib_tag=se&keywords=fastrack+watches+for+man&nsdOptOutParam=true&qid=1747415966&sprefix=fastrack+watches+for+man%2Caps%2C227&sr=8-20
+    - heading "Fastrack" [level=2]
+    - link "Analog Unisex-Adult Watch":
+      - /url: /Fastrack-Analog-White-Unisex-Adult-Watch-68011PP04/dp/B099WR24X2/ref=sr_1_20?crid=1W90282OOSS0O&dib=eyJ2IjoiMSJ9.6XcBA4w6Npm_pwAOvvXVcDAPsx0DXQfkVFdJcc8795AOyRoEAhGIodxusTSNBOZ8GZ7QBjv4Xt1bRcOCSc7OPyg0r7pbMkcvB09GR1rcV2Hv6-XZa7g2Q8g8nJ7gGOcgFAOZyjmW0D8EBSwRzt5ZLhyzgrlRZDQO2I47cGai7f1oUrbIgt_sp2btrvSp45rWYR6j0JmsaV8Wsx-9rp2JS-7UU9pPDNHCoUby43irvwg_ifcPUtb6FRLvaWwBvj-JicFnhFTLKr8rqCKZmUSCEVOjPRvoBdaW3KTXPWtRxY8.QetsUIpXMVylXIFUheBctZesc8qVn29qmyuGSeKzctY&dib_tag=se&keywords=fastrack+watches+for+man&nsdOptOutParam=true&qid=1747415966&sprefix=fastrack+watches+for+man%2Caps%2C227&sr=8-20
+      - heading "Analog Unisex-Adult Watch" [level=2]
+    - button "4.2 out of 5 stars, rating details"
+    - link "424 ratings":
+      - /url: /Fastrack-Analog-White-Unisex-Adult-Watch-68011PP04/dp/B099WR24X2/ref=sr_1_20?crid=1W90282OOSS0O&dib=eyJ2IjoiMSJ9.6XcBA4w6Npm_pwAOvvXVcDAPsx0DXQfkVFdJcc8795AOyRoEAhGIodxusTSNBOZ8GZ7QBjv4Xt1bRcOCSc7OPyg0r7pbMkcvB09GR1rcV2Hv6-XZa7g2Q8g8nJ7gGOcgFAOZyjmW0D8EBSwRzt5ZLhyzgrlRZDQO2I47cGai7f1oUrbIgt_sp2btrvSp45rWYR6j0JmsaV8Wsx-9rp2JS-7UU9pPDNHCoUby43irvwg_ifcPUtb6FRLvaWwBvj-JicFnhFTLKr8rqCKZmUSCEVOjPRvoBdaW3KTXPWtRxY8.QetsUIpXMVylXIFUheBctZesc8qVn29qmyuGSeKzctY&dib_tag=se&keywords=fastrack+watches+for+man&nsdOptOutParam=true&qid=1747415966&sprefix=fastrack+watches+for+man%2Caps%2C227&sr=8-20#customerReviews
+    - text: 300+ bought in past month
+    - link "Limited time deal":
+      - /url: /gp/goldbox/
+    - text: Price, product page
+    - 'link "₹895 M.R.P: ₹975 M.R.P: ₹975"':
+      - /url: /Fastrack-Analog-White-Unisex-Adult-Watch-68011PP04/dp/B099WR24X2/ref=sr_1_20?crid=1W90282OOSS0O&dib=eyJ2IjoiMSJ9.6XcBA4w6Npm_pwAOvvXVcDAPsx0DXQfkVFdJcc8795AOyRoEAhGIodxusTSNBOZ8GZ7QBjv4Xt1bRcOCSc7OPyg0r7pbMkcvB09GR1rcV2Hv6-XZa7g2Q8g8nJ7gGOcgFAOZyjmW0D8EBSwRzt5ZLhyzgrlRZDQO2I47cGai7f1oUrbIgt_sp2btrvSp45rWYR6j0JmsaV8Wsx-9rp2JS-7UU9pPDNHCoUby43irvwg_ifcPUtb6FRLvaWwBvj-JicFnhFTLKr8rqCKZmUSCEVOjPRvoBdaW3KTXPWtRxY8.QetsUIpXMVylXIFUheBctZesc8qVn29qmyuGSeKzctY&dib_tag=se&keywords=fastrack+watches+for+man&nsdOptOutParam=true&qid=1747415966&sprefix=fastrack+watches+for+man%2Caps%2C227&sr=8-20
+    - text: (8% off)
+    - img "Amazon Prime"
+    - text: FREE delivery Mon, 19 May
+    - button "Add to cart"
+  - listitem:
+    - link:
+      - /url: /sspa/click?ie=UTF8&spc=MTo2MDAwMTA2MjkzMjYzMDI4OjE3NDc0MTU5NjY6c3BfbXRmOjMwMDQ0NzUyNDI3MDgzMjo6MDo6&url=%2FBoult-8906133851323-Drift%2Fdp%2FB0CQLXMDZ8%2Fref%3Dsr_1_21_sspa%3Fcrid%3D1W90282OOSS0O%26dib%3DeyJ2IjoiMSJ9.6XcBA4w6Npm_pwAOvvXVcDAPsx0DXQfkVFdJcc8795AOyRoEAhGIodxusTSNBOZ8GZ7QBjv4Xt1bRcOCSc7OPyg0r7pbMkcvB09GR1rcV2Hv6-XZa7g2Q8g8nJ7gGOcgFAOZyjmW0D8EBSwRzt5ZLhyzgrlRZDQO2I47cGai7f1oUrbIgt_sp2btrvSp45rWYR6j0JmsaV8Wsx-9rp2JS-7UU9pPDNHCoUby43irvwg_ifcPUtb6FRLvaWwBvj-JicFnhFTLKr8rqCKZmUSCEVOjPRvoBdaW3KTXPWtRxY8.QetsUIpXMVylXIFUheBctZesc8qVn29qmyuGSeKzctY%26dib_tag%3Dse%26keywords%3Dfastrack%2Bwatches%2Bfor%2Bman%26nsdOptOutParam%3Dtrue%26qid%3D1747415966%26sprefix%3Dfastrack%2Bwatches%2Bfor%2Bman%252Caps%252C227%26sr%3D8-21-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9tdGY%26psc%3D1
+    - button "View Sponsored information or leave ad feedback": Sponsored
+    - heading "Boult" [level=2]
+    - link "Sponsored Ad - Boult Drift+ Smart Watch 1.85''HD Screen, Bluetooth Calling, IP68, 500 Nits Brightness,150+ Watchfaces, AI Voice Assistant, SpO2 Monitoring, 100+ Sports Mode Smartwatch (Black Coffee)":
+      - /url: /sspa/click?ie=UTF8&spc=MTo2MDAwMTA2MjkzMjYzMDI4OjE3NDc0MTU5NjY6c3BfbXRmOjMwMDQ0NzUyNDI3MDgzMjo6MDo6&url=%2FBoult-8906133851323-Drift%2Fdp%2FB0CQLXMDZ8%2Fref%3Dsr_1_21_sspa%3Fcrid%3D1W90282OOSS0O%26dib%3DeyJ2IjoiMSJ9.6XcBA4w6Npm_pwAOvvXVcDAPsx0DXQfkVFdJcc8795AOyRoEAhGIodxusTSNBOZ8GZ7QBjv4Xt1bRcOCSc7OPyg0r7pbMkcvB09GR1rcV2Hv6-XZa7g2Q8g8nJ7gGOcgFAOZyjmW0D8EBSwRzt5ZLhyzgrlRZDQO2I47cGai7f1oUrbIgt_sp2btrvSp45rWYR6j0JmsaV8Wsx-9rp2JS-7UU9pPDNHCoUby43irvwg_ifcPUtb6FRLvaWwBvj-JicFnhFTLKr8rqCKZmUSCEVOjPRvoBdaW3KTXPWtRxY8.QetsUIpXMVylXIFUheBctZesc8qVn29qmyuGSeKzctY%26dib_tag%3Dse%26keywords%3Dfastrack%2Bwatches%2Bfor%2Bman%26nsdOptOutParam%3Dtrue%26qid%3D1747415966%26sprefix%3Dfastrack%2Bwatches%2Bfor%2Bman%252Caps%252C227%26sr%3D8-21-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9tdGY%26psc%3D1
+      - heading "Sponsored Ad - Boult Drift+ Smart Watch 1.85''HD Screen, Bluetooth Calling, IP68, 500 Nits Brightness,150+ Watchfaces, AI Voice Assistant, SpO2 Monitoring, 100+ Sports Mode Smartwatch (Black Coffee)" [level=2]: Boult Drift+ Smart Watch 1.85''HD Screen, Bluetooth Calling, IP68, 500 Nits Brightness,150+ Watchfaces, AI Voice Assistant, SpO2 Monitoring, 100+ Sports Mode Smartwatch (Black Coffee)
+    - button "3.8 out of 5 stars, rating details"
+    - link "872 ratings":
+      - /url: /sspa/click?ie=UTF8&spc=MTo2MDAwMTA2MjkzMjYzMDI4OjE3NDc0MTU5NjY6c3BfbXRmOjMwMDQ0NzUyNDI3MDgzMjo6MDo6&url=%2FBoult-8906133851323-Drift%2Fdp%2FB0CQLXMDZ8%2Fref%3Dsr_1_21_sspa%3Fcrid%3D1W90282OOSS0O%26dib%3DeyJ2IjoiMSJ9.6XcBA4w6Npm_pwAOvvXVcDAPsx0DXQfkVFdJcc8795AOyRoEAhGIodxusTSNBOZ8GZ7QBjv4Xt1bRcOCSc7OPyg0r7pbMkcvB09GR1rcV2Hv6-XZa7g2Q8g8nJ7gGOcgFAOZyjmW0D8EBSwRzt5ZLhyzgrlRZDQO2I47cGai7f1oUrbIgt_sp2btrvSp45rWYR6j0JmsaV8Wsx-9rp2JS-7UU9pPDNHCoUby43irvwg_ifcPUtb6FRLvaWwBvj-JicFnhFTLKr8rqCKZmUSCEVOjPRvoBdaW3KTXPWtRxY8.QetsUIpXMVylXIFUheBctZesc8qVn29qmyuGSeKzctY%26dib_tag%3Dse%26keywords%3Dfastrack%2Bwatches%2Bfor%2Bman%26nsdOptOutParam%3Dtrue%26qid%3D1747415966%26sprefix%3Dfastrack%2Bwatches%2Bfor%2Bman%252Caps%252C227%26sr%3D8-21-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9tdGY%26psc%3D1#customerReviews
+    - text: 1K+ bought in past month Price, product page
+    - 'link "₹1,099 M.R.P: ₹8,499 M.R.P: ₹8,499"':
+      - /url: /sspa/click?ie=UTF8&spc=MTo2MDAwMTA2MjkzMjYzMDI4OjE3NDc0MTU5NjY6c3BfbXRmOjMwMDQ0NzUyNDI3MDgzMjo6MDo6&url=%2FBoult-8906133851323-Drift%2Fdp%2FB0CQLXMDZ8%2Fref%3Dsr_1_21_sspa%3Fcrid%3D1W90282OOSS0O%26dib%3DeyJ2IjoiMSJ9.6XcBA4w6Npm_pwAOvvXVcDAPsx0DXQfkVFdJcc8795AOyRoEAhGIodxusTSNBOZ8GZ7QBjv4Xt1bRcOCSc7OPyg0r7pbMkcvB09GR1rcV2Hv6-XZa7g2Q8g8nJ7gGOcgFAOZyjmW0D8EBSwRzt5ZLhyzgrlRZDQO2I47cGai7f1oUrbIgt_sp2btrvSp45rWYR6j0JmsaV8Wsx-9rp2JS-7UU9pPDNHCoUby43irvwg_ifcPUtb6FRLvaWwBvj-JicFnhFTLKr8rqCKZmUSCEVOjPRvoBdaW3KTXPWtRxY8.QetsUIpXMVylXIFUheBctZesc8qVn29qmyuGSeKzctY%26dib_tag%3Dse%26keywords%3Dfastrack%2Bwatches%2Bfor%2Bman%26nsdOptOutParam%3Dtrue%26qid%3D1747415966%26sprefix%3Dfastrack%2Bwatches%2Bfor%2Bman%252Caps%252C227%26sr%3D8-21-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9tdGY%26psc%3D1
+    - text: (87% off)
+    - img "Amazon Prime"
+    - text: FREE delivery Tue, 20 May
+    - button "Add to cart"
+  - listitem:
+    - link:
+      - /url: /sspa/click?ie=UTF8&spc=MTo2MDAwMTA2MjkzMjYzMDI4OjE3NDc0MTU5NjY6c3BfbXRmOjMwMDQ5MDkxNzYzMjYzMjo6MDo6&url=%2FBoult-Smartwatch-Brightness-Watchfaces-Monitoring%2Fdp%2FB0DT9MLLPQ%2Fref%3Dsr_1_22_sspa%3Fcrid%3D1W90282OOSS0O%26dib%3DeyJ2IjoiMSJ9.6XcBA4w6Npm_pwAOvvXVcDAPsx0DXQfkVFdJcc8795AOyRoEAhGIodxusTSNBOZ8GZ7QBjv4Xt1bRcOCSc7OPyg0r7pbMkcvB09GR1rcV2Hv6-XZa7g2Q8g8nJ7gGOcgFAOZyjmW0D8EBSwRzt5ZLhyzgrlRZDQO2I47cGai7f1oUrbIgt_sp2btrvSp45rWYR6j0JmsaV8Wsx-9rp2JS-7UU9pPDNHCoUby43irvwg_ifcPUtb6FRLvaWwBvj-JicFnhFTLKr8rqCKZmUSCEVOjPRvoBdaW3KTXPWtRxY8.QetsUIpXMVylXIFUheBctZesc8qVn29qmyuGSeKzctY%26dib_tag%3Dse%26keywords%3Dfastrack%2Bwatches%2Bfor%2Bman%26nsdOptOutParam%3Dtrue%26qid%3D1747415966%26sprefix%3Dfastrack%2Bwatches%2Bfor%2Bman%252Caps%252C227%26sr%3D8-22-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9tdGY%26psc%3D1
+    - button "View Sponsored information or leave ad feedback": Sponsored
+    - heading "Boult" [level=2]
+    - link "Sponsored Ad - Boult Rover Pro Smartwatch 1.43'' AMOLED, BT Calling 5.3, 1000 Nits Brightness, IP68, 150+ Watchfaces, 120+ Sports Modes, AI Voice Assistant, SpO2 Monitoring (Coal Black)":
+      - /url: /sspa/click?ie=UTF8&spc=MTo2MDAwMTA2MjkzMjYzMDI4OjE3NDc0MTU5NjY6c3BfbXRmOjMwMDQ5MDkxNzYzMjYzMjo6MDo6&url=%2FBoult-Smartwatch-Brightness-Watchfaces-Monitoring%2Fdp%2FB0DT9MLLPQ%2Fref%3Dsr_1_22_sspa%3Fcrid%3D1W90282OOSS0O%26dib%3DeyJ2IjoiMSJ9.6XcBA4w6Npm_pwAOvvXVcDAPsx0DXQfkVFdJcc8795AOyRoEAhGIodxusTSNBOZ8GZ7QBjv4Xt1bRcOCSc7OPyg0r7pbMkcvB09GR1rcV2Hv6-XZa7g2Q8g8nJ7gGOcgFAOZyjmW0D8EBSwRzt5ZLhyzgrlRZDQO2I47cGai7f1oUrbIgt_sp2btrvSp45rWYR6j0JmsaV8Wsx-9rp2JS-7UU9pPDNHCoUby43irvwg_ifcPUtb6FRLvaWwBvj-JicFnhFTLKr8rqCKZmUSCEVOjPRvoBdaW3KTXPWtRxY8.QetsUIpXMVylXIFUheBctZesc8qVn29qmyuGSeKzctY%26dib_tag%3Dse%26keywords%3Dfastrack%2Bwatches%2Bfor%2Bman%26nsdOptOutParam%3Dtrue%26qid%3D1747415966%26sprefix%3Dfastrack%2Bwatches%2Bfor%2Bman%252Caps%252C227%26sr%3D8-22-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9tdGY%26psc%3D1
+      - heading "Sponsored Ad - Boult Rover Pro Smartwatch 1.43'' AMOLED, BT Calling 5.3, 1000 Nits Brightness, IP68, 150+ Watchfaces, 120+ Sports Modes, AI Voice Assistant, SpO2 Monitoring (Coal Black)" [level=2]: Boult Rover Pro Smartwatch 1.43'' AMOLED, BT Calling 5.3, 1000 Nits Brightness, IP68, 150+ Watchfaces, 120+ Sports Modes, AI Voice Assistant, SpO2 Monitoring (Coal Black)
+    - button "3.4 out of 5 stars, rating details"
+    - link "619 ratings":
+      - /url: /sspa/click?ie=UTF8&spc=MTo2MDAwMTA2MjkzMjYzMDI4OjE3NDc0MTU5NjY6c3BfbXRmOjMwMDQ5MDkxNzYzMjYzMjo6MDo6&url=%2FBoult-Smartwatch-Brightness-Watchfaces-Monitoring%2Fdp%2FB0DT9MLLPQ%2Fref%3Dsr_1_22_sspa%3Fcrid%3D1W90282OOSS0O%26dib%3DeyJ2IjoiMSJ9.6XcBA4w6Npm_pwAOvvXVcDAPsx0DXQfkVFdJcc8795AOyRoEAhGIodxusTSNBOZ8GZ7QBjv4Xt1bRcOCSc7OPyg0r7pbMkcvB09GR1rcV2Hv6-XZa7g2Q8g8nJ7gGOcgFAOZyjmW0D8EBSwRzt5ZLhyzgrlRZDQO2I47cGai7f1oUrbIgt_sp2btrvSp45rWYR6j0JmsaV8Wsx-9rp2JS-7UU9pPDNHCoUby43irvwg_ifcPUtb6FRLvaWwBvj-JicFnhFTLKr8rqCKZmUSCEVOjPRvoBdaW3KTXPWtRxY8.QetsUIpXMVylXIFUheBctZesc8qVn29qmyuGSeKzctY%26dib_tag%3Dse%26keywords%3Dfastrack%2Bwatches%2Bfor%2Bman%26nsdOptOutParam%3Dtrue%26qid%3D1747415966%26sprefix%3Dfastrack%2Bwatches%2Bfor%2Bman%252Caps%252C227%26sr%3D8-22-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9tdGY%26psc%3D1#customerReviews
+    - text: 300+ bought in past month Price, product page
+    - 'link "₹1,999 M.R.P: ₹10,999 M.R.P: ₹10,999"':
+      - /url: /sspa/click?ie=UTF8&spc=MTo2MDAwMTA2MjkzMjYzMDI4OjE3NDc0MTU5NjY6c3BfbXRmOjMwMDQ5MDkxNzYzMjYzMjo6MDo6&url=%2FBoult-Smartwatch-Brightness-Watchfaces-Monitoring%2Fdp%2FB0DT9MLLPQ%2Fref%3Dsr_1_22_sspa%3Fcrid%3D1W90282OOSS0O%26dib%3DeyJ2IjoiMSJ9.6XcBA4w6Npm_pwAOvvXVcDAPsx0DXQfkVFdJcc8795AOyRoEAhGIodxusTSNBOZ8GZ7QBjv4Xt1bRcOCSc7OPyg0r7pbMkcvB09GR1rcV2Hv6-XZa7g2Q8g8nJ7gGOcgFAOZyjmW0D8EBSwRzt5ZLhyzgrlRZDQO2I47cGai7f1oUrbIgt_sp2btrvSp45rWYR6j0JmsaV8Wsx-9rp2JS-7UU9pPDNHCoUby43irvwg_ifcPUtb6FRLvaWwBvj-JicFnhFTLKr8rqCKZmUSCEVOjPRvoBdaW3KTXPWtRxY8.QetsUIpXMVylXIFUheBctZesc8qVn29qmyuGSeKzctY%26dib_tag%3Dse%26keywords%3Dfastrack%2Bwatches%2Bfor%2Bman%26nsdOptOutParam%3Dtrue%26qid%3D1747415966%26sprefix%3Dfastrack%2Bwatches%2Bfor%2Bman%252Caps%252C227%26sr%3D8-22-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9tdGY%26psc%3D1
+    - text: (82% off)
+    - img "Amazon Prime"
+    - text: FREE delivery Sun, 18 May Or fastest delivery Tomorrow, 17 May
+    - button "Add to cart"
+  - listitem:
+    - link:
+      - /url: /sspa/click?ie=UTF8&spc=MTo2MDAwMTA2MjkzMjYzMDI4OjE3NDc0MTU5NjY6c3BfbXRmOjMwMDI1OTYzNTUyMjczMjo6MDo6&url=%2FFire-Boltt-Bluetooth-Wireless-Charging-Water-Resistant%2Fdp%2FB0CSYW5CS8%2Fref%3Dsr_1_23_sspa%3Fcrid%3D1W90282OOSS0O%26dib%3DeyJ2IjoiMSJ9.6XcBA4w6Npm_pwAOvvXVcDAPsx0DXQfkVFdJcc8795AOyRoEAhGIodxusTSNBOZ8GZ7QBjv4Xt1bRcOCSc7OPyg0r7pbMkcvB09GR1rcV2Hv6-XZa7g2Q8g8nJ7gGOcgFAOZyjmW0D8EBSwRzt5ZLhyzgrlRZDQO2I47cGai7f1oUrbIgt_sp2btrvSp45rWYR6j0JmsaV8Wsx-9rp2JS-7UU9pPDNHCoUby43irvwg_ifcPUtb6FRLvaWwBvj-JicFnhFTLKr8rqCKZmUSCEVOjPRvoBdaW3KTXPWtRxY8.QetsUIpXMVylXIFUheBctZesc8qVn29qmyuGSeKzctY%26dib_tag%3Dse%26keywords%3Dfastrack%2Bwatches%2Bfor%2Bman%26nsdOptOutParam%3Dtrue%26qid%3D1747415966%26sprefix%3Dfastrack%2Bwatches%2Bfor%2Bman%252Caps%252C227%26sr%3D8-23-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9tdGY%26psc%3D1
+    - button "View Sponsored information or leave ad feedback": Sponsored
+    - heading "Fire-Boltt" [level=2]
+    - link "Sponsored Ad - Fire-Boltt ARC 49.8mm (1.96 inch) AMOLED Always On Curved Display Smart Watch, Bluetooth Calling, Wireless Charging, 100+ Sports Modes, Water-Resistant 100+ Cloud Watch Faces (Black)":
+      - /url: /sspa/click?ie=UTF8&spc=MTo2MDAwMTA2MjkzMjYzMDI4OjE3NDc0MTU5NjY6c3BfbXRmOjMwMDI1OTYzNTUyMjczMjo6MDo6&url=%2FFire-Boltt-Bluetooth-Wireless-Charging-Water-Resistant%2Fdp%2FB0CSYW5CS8%2Fref%3Dsr_1_23_sspa%3Fcrid%3D1W90282OOSS0O%26dib%3DeyJ2IjoiMSJ9.6XcBA4w6Npm_pwAOvvXVcDAPsx0DXQfkVFdJcc8795AOyRoEAhGIodxusTSNBOZ8GZ7QBjv4Xt1bRcOCSc7OPyg0r7pbMkcvB09GR1rcV2Hv6-XZa7g2Q8g8nJ7gGOcgFAOZyjmW0D8EBSwRzt5ZLhyzgrlRZDQO2I47cGai7f1oUrbIgt_sp2btrvSp45rWYR6j0JmsaV8Wsx-9rp2JS-7UU9pPDNHCoUby43irvwg_ifcPUtb6FRLvaWwBvj-JicFnhFTLKr8rqCKZmUSCEVOjPRvoBdaW3KTXPWtRxY8.QetsUIpXMVylXIFUheBctZesc8qVn29qmyuGSeKzctY%26dib_tag%3Dse%26keywords%3Dfastrack%2Bwatches%2Bfor%2Bman%26nsdOptOutParam%3Dtrue%26qid%3D1747415966%26sprefix%3Dfastrack%2Bwatches%2Bfor%2Bman%252Caps%252C227%26sr%3D8-23-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9tdGY%26psc%3D1
+      - heading "Sponsored Ad - Fire-Boltt ARC 49.8mm (1.96 inch) AMOLED Always On Curved Display Smart Watch, Bluetooth Calling, Wireless Charging, 100+ Sports Modes, Water-Resistant 100+ Cloud Watch Faces (Black)" [level=2]: Fire-Boltt ARC 49.8mm (1.96 inch) AMOLED Always On Curved Display Smart Watch, Bluetooth Calling, Wireless Charging, 100+ Sports Modes, Water-Resistant 100+ Cloud Watch Faces (Black)
+    - button "3.9 out of 5 stars, rating details"
+    - link "1,640 ratings":
+      - /url: /sspa/click?ie=UTF8&spc=MTo2MDAwMTA2MjkzMjYzMDI4OjE3NDc0MTU5NjY6c3BfbXRmOjMwMDI1OTYzNTUyMjczMjo6MDo6&url=%2FFire-Boltt-Bluetooth-Wireless-Charging-Water-Resistant%2Fdp%2FB0CSYW5CS8%2Fref%3Dsr_1_23_sspa%3Fcrid%3D1W90282OOSS0O%26dib%3DeyJ2IjoiMSJ9.6XcBA4w6Npm_pwAOvvXVcDAPsx0DXQfkVFdJcc8795AOyRoEAhGIodxusTSNBOZ8GZ7QBjv4Xt1bRcOCSc7OPyg0r7pbMkcvB09GR1rcV2Hv6-XZa7g2Q8g8nJ7gGOcgFAOZyjmW0D8EBSwRzt5ZLhyzgrlRZDQO2I47cGai7f1oUrbIgt_sp2btrvSp45rWYR6j0JmsaV8Wsx-9rp2JS-7UU9pPDNHCoUby43irvwg_ifcPUtb6FRLvaWwBvj-JicFnhFTLKr8rqCKZmUSCEVOjPRvoBdaW3KTXPWtRxY8.QetsUIpXMVylXIFUheBctZesc8qVn29qmyuGSeKzctY%26dib_tag%3Dse%26keywords%3Dfastrack%2Bwatches%2Bfor%2Bman%26nsdOptOutParam%3Dtrue%26qid%3D1747415966%26sprefix%3Dfastrack%2Bwatches%2Bfor%2Bman%252Caps%252C227%26sr%3D8-23-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9tdGY%26psc%3D1#customerReviews
+    - text: 400+ bought in past month Price, product page
+    - 'link "₹1,441 M.R.P: ₹19,999 M.R.P: ₹19,999"':
+      - /url: /sspa/click?ie=UTF8&spc=MTo2MDAwMTA2MjkzMjYzMDI4OjE3NDc0MTU5NjY6c3BfbXRmOjMwMDI1OTYzNTUyMjczMjo6MDo6&url=%2FFire-Boltt-Bluetooth-Wireless-Charging-Water-Resistant%2Fdp%2FB0CSYW5CS8%2Fref%3Dsr_1_23_sspa%3Fcrid%3D1W90282OOSS0O%26dib%3DeyJ2IjoiMSJ9.6XcBA4w6Npm_pwAOvvXVcDAPsx0DXQfkVFdJcc8795AOyRoEAhGIodxusTSNBOZ8GZ7QBjv4Xt1bRcOCSc7OPyg0r7pbMkcvB09GR1rcV2Hv6-XZa7g2Q8g8nJ7gGOcgFAOZyjmW0D8EBSwRzt5ZLhyzgrlRZDQO2I47cGai7f1oUrbIgt_sp2btrvSp45rWYR6j0JmsaV8Wsx-9rp2JS-7UU9pPDNHCoUby43irvwg_ifcPUtb6FRLvaWwBvj-JicFnhFTLKr8rqCKZmUSCEVOjPRvoBdaW3KTXPWtRxY8.QetsUIpXMVylXIFUheBctZesc8qVn29qmyuGSeKzctY%26dib_tag%3Dse%26keywords%3Dfastrack%2Bwatches%2Bfor%2Bman%26nsdOptOutParam%3Dtrue%26qid%3D1747415966%26sprefix%3Dfastrack%2Bwatches%2Bfor%2Bman%252Caps%252C227%26sr%3D8-23-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9tdGY%26psc%3D1
+    - text: (93% off)
+    - img "Amazon Prime"
+    - text: "FREE delivery Sun, 18 May Or fastest delivery Tomorrow, 17 May Service: Installation"
+    - button "Add to cart"
+  - listitem:
+    - link:
+      - /url: /sspa/click?ie=UTF8&spc=MTo2MDAwMTA2MjkzMjYzMDI4OjE3NDc0MTU5NjY6c3BfbXRmOjMwMDUxNDY1MDYxMzQzMjo6MDo6&url=%2FboAt-Infinity-Extensive-Battery-Functional%2Fdp%2FB0DZ2PDXLS%2Fref%3Dsr_1_24_sspa%3Fcrid%3D1W90282OOSS0O%26dib%3DeyJ2IjoiMSJ9.6XcBA4w6Npm_pwAOvvXVcDAPsx0DXQfkVFdJcc8795AOyRoEAhGIodxusTSNBOZ8GZ7QBjv4Xt1bRcOCSc7OPyg0r7pbMkcvB09GR1rcV2Hv6-XZa7g2Q8g8nJ7gGOcgFAOZyjmW0D8EBSwRzt5ZLhyzgrlRZDQO2I47cGai7f1oUrbIgt_sp2btrvSp45rWYR6j0JmsaV8Wsx-9rp2JS-7UU9pPDNHCoUby43irvwg_ifcPUtb6FRLvaWwBvj-JicFnhFTLKr8rqCKZmUSCEVOjPRvoBdaW3KTXPWtRxY8.QetsUIpXMVylXIFUheBctZesc8qVn29qmyuGSeKzctY%26dib_tag%3Dse%26keywords%3Dfastrack%2Bwatches%2Bfor%2Bman%26nsdOptOutParam%3Dtrue%26qid%3D1747415966%26sprefix%3Dfastrack%2Bwatches%2Bfor%2Bman%252Caps%252C227%26sr%3D8-24-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9tdGY%26psc%3D1
+    - button "View Sponsored information or leave ad feedback": Sponsored
+    - heading "boAt" [level=2]
+    - link "Sponsored Ad - boAt New Launch Storm Infinity w/15 Days Extensive Battery fueled by Huge 550mAh Battery, Fast Charge, 1.83”(4.65cm)HD Display, Functional Crown, BT Calling, Smart watch for Men & Women (Active Black)":
+      - /url: /sspa/click?ie=UTF8&spc=MTo2MDAwMTA2MjkzMjYzMDI4OjE3NDc0MTU5NjY6c3BfbXRmOjMwMDUxNDY1MDYxMzQzMjo6MDo6&url=%2FboAt-Infinity-Extensive-Battery-Functional%2Fdp%2FB0DZ2PDXLS%2Fref%3Dsr_1_24_sspa%3Fcrid%3D1W90282OOSS0O%26dib%3DeyJ2IjoiMSJ9.6XcBA4w6Npm_pwAOvvXVcDAPsx0DXQfkVFdJcc8795AOyRoEAhGIodxusTSNBOZ8GZ7QBjv4Xt1bRcOCSc7OPyg0r7pbMkcvB09GR1rcV2Hv6-XZa7g2Q8g8nJ7gGOcgFAOZyjmW0D8EBSwRzt5ZLhyzgrlRZDQO2I47cGai7f1oUrbIgt_sp2btrvSp45rWYR6j0JmsaV8Wsx-9rp2JS-7UU9pPDNHCoUby43irvwg_ifcPUtb6FRLvaWwBvj-JicFnhFTLKr8rqCKZmUSCEVOjPRvoBdaW3KTXPWtRxY8.QetsUIpXMVylXIFUheBctZesc8qVn29qmyuGSeKzctY%26dib_tag%3Dse%26keywords%3Dfastrack%2Bwatches%2Bfor%2Bman%26nsdOptOutParam%3Dtrue%26qid%3D1747415966%26sprefix%3Dfastrack%2Bwatches%2Bfor%2Bman%252Caps%252C227%26sr%3D8-24-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9tdGY%26psc%3D1
+      - heading "Sponsored Ad - boAt New Launch Storm Infinity w/15 Days Extensive Battery fueled by Huge 550mAh Battery, Fast Charge, 1.83”(4.65cm)HD Display, Functional Crown, BT Calling, Smart watch for Men & Women (Active Black)" [level=2]: boAt New Launch Storm Infinity w/15 Days Extensive Battery fueled by Huge 550mAh Battery, Fast Charge, 1.83”(4.65cm)HD Display, Functional Crown, BT Calling, Smart watch for Men & Women (Active Black)
+    - button "3.9 out of 5 stars, rating details"
+    - link "269 ratings":
+      - /url: /sspa/click?ie=UTF8&spc=MTo2MDAwMTA2MjkzMjYzMDI4OjE3NDc0MTU5NjY6c3BfbXRmOjMwMDUxNDY1MDYxMzQzMjo6MDo6&url=%2FboAt-Infinity-Extensive-Battery-Functional%2Fdp%2FB0DZ2PDXLS%2Fref%3Dsr_1_24_sspa%3Fcrid%3D1W90282OOSS0O%26dib%3DeyJ2IjoiMSJ9.6XcBA4w6Npm_pwAOvvXVcDAPsx0DXQfkVFdJcc8795AOyRoEAhGIodxusTSNBOZ8GZ7QBjv4Xt1bRcOCSc7OPyg0r7pbMkcvB09GR1rcV2Hv6-XZa7g2Q8g8nJ7gGOcgFAOZyjmW0D8EBSwRzt5ZLhyzgrlRZDQO2I47cGai7f1oUrbIgt_sp2btrvSp45rWYR6j0JmsaV8Wsx-9rp2JS-7UU9pPDNHCoUby43irvwg_ifcPUtb6FRLvaWwBvj-JicFnhFTLKr8rqCKZmUSCEVOjPRvoBdaW3KTXPWtRxY8.QetsUIpXMVylXIFUheBctZesc8qVn29qmyuGSeKzctY%26dib_tag%3Dse%26keywords%3Dfastrack%2Bwatches%2Bfor%2Bman%26nsdOptOutParam%3Dtrue%26qid%3D1747415966%26sprefix%3Dfastrack%2Bwatches%2Bfor%2Bman%252Caps%252C227%26sr%3D8-24-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9tdGY%26psc%3D1#customerReviews
+    - text: 3K+ bought in past month Price, product page
+    - 'link "₹1,599 M.R.P: ₹5,999 M.R.P: ₹5,999"':
+      - /url: /sspa/click?ie=UTF8&spc=MTo2MDAwMTA2MjkzMjYzMDI4OjE3NDc0MTU5NjY6c3BfbXRmOjMwMDUxNDY1MDYxMzQzMjo6MDo6&url=%2FboAt-Infinity-Extensive-Battery-Functional%2Fdp%2FB0DZ2PDXLS%2Fref%3Dsr_1_24_sspa%3Fcrid%3D1W90282OOSS0O%26dib%3DeyJ2IjoiMSJ9.6XcBA4w6Npm_pwAOvvXVcDAPsx0DXQfkVFdJcc8795AOyRoEAhGIodxusTSNBOZ8GZ7QBjv4Xt1bRcOCSc7OPyg0r7pbMkcvB09GR1rcV2Hv6-XZa7g2Q8g8nJ7gGOcgFAOZyjmW0D8EBSwRzt5ZLhyzgrlRZDQO2I47cGai7f1oUrbIgt_sp2btrvSp45rWYR6j0JmsaV8Wsx-9rp2JS-7UU9pPDNHCoUby43irvwg_ifcPUtb6FRLvaWwBvj-JicFnhFTLKr8rqCKZmUSCEVOjPRvoBdaW3KTXPWtRxY8.QetsUIpXMVylXIFUheBctZesc8qVn29qmyuGSeKzctY%26dib_tag%3Dse%26keywords%3Dfastrack%2Bwatches%2Bfor%2Bman%26nsdOptOutParam%3Dtrue%26qid%3D1747415966%26sprefix%3Dfastrack%2Bwatches%2Bfor%2Bman%252Caps%252C227%26sr%3D8-24-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9tdGY%26psc%3D1
+    - text: (73% off)
+    - img "Amazon Prime"
+    - text: "FREE delivery Sun, 18 May Or fastest delivery Tomorrow, 17 May Service: Installation"
+    - button "Add to cart"
+  - listitem:
+    - link:
+      - /url: /Fastrack-Analog-Black-Casual-Watch/dp/B0BXKV7LJF/ref=sr_1_25?crid=1W90282OOSS0O&dib=eyJ2IjoiMSJ9.6XcBA4w6Npm_pwAOvvXVcDAPsx0DXQfkVFdJcc8795AOyRoEAhGIodxusTSNBOZ8GZ7QBjv4Xt1bRcOCSc7OPyg0r7pbMkcvB09GR1rcV2Hv6-XZa7g2Q8g8nJ7gGOcgFAOZyjmW0D8EBSwRzt5ZLhyzgrlRZDQO2I47cGai7f1oUrbIgt_sp2btrvSp45rWYR6j0JmsaV8Wsx-9rp2JS-7UU9pPDNHCoUby43irvwg_ifcPUtb6FRLvaWwBvj-JicFnhFTLKr8rqCKZmUSCEVOjPRvoBdaW3KTXPWtRxY8.QetsUIpXMVylXIFUheBctZesc8qVn29qmyuGSeKzctY&dib_tag=se&keywords=fastrack+watches+for+man&nsdOptOutParam=true&qid=1747415966&sprefix=fastrack+watches+for+man%2Caps%2C227&sr=8-25
+    - heading "Fastrack" [level=2]
+    - link "Men Tick Tock Black Dial Analog Watch for Guys-3287NL01/NT3287NL01":
+      - /url: /Fastrack-Analog-Black-Casual-Watch/dp/B0BXKV7LJF/ref=sr_1_25?crid=1W90282OOSS0O&dib=eyJ2IjoiMSJ9.6XcBA4w6Npm_pwAOvvXVcDAPsx0DXQfkVFdJcc8795AOyRoEAhGIodxusTSNBOZ8GZ7QBjv4Xt1bRcOCSc7OPyg0r7pbMkcvB09GR1rcV2Hv6-XZa7g2Q8g8nJ7gGOcgFAOZyjmW0D8EBSwRzt5ZLhyzgrlRZDQO2I47cGai7f1oUrbIgt_sp2btrvSp45rWYR6j0JmsaV8Wsx-9rp2JS-7UU9pPDNHCoUby43irvwg_ifcPUtb6FRLvaWwBvj-JicFnhFTLKr8rqCKZmUSCEVOjPRvoBdaW3KTXPWtRxY8.QetsUIpXMVylXIFUheBctZesc8qVn29qmyuGSeKzctY&dib_tag=se&keywords=fastrack+watches+for+man&nsdOptOutParam=true&qid=1747415966&sprefix=fastrack+watches+for+man%2Caps%2C227&sr=8-25
+      - heading "Men Tick Tock Black Dial Analog Watch for Guys-3287NL01/NT3287NL01" [level=2]
+    - button "4.3 out of 5 stars, rating details"
+    - link "53 ratings":
+      - /url: /Fastrack-Analog-Black-Casual-Watch/dp/B0BXKV7LJF/ref=sr_1_25?crid=1W90282OOSS0O&dib=eyJ2IjoiMSJ9.6XcBA4w6Npm_pwAOvvXVcDAPsx0DXQfkVFdJcc8795AOyRoEAhGIodxusTSNBOZ8GZ7QBjv4Xt1bRcOCSc7OPyg0r7pbMkcvB09GR1rcV2Hv6-XZa7g2Q8g8nJ7gGOcgFAOZyjmW0D8EBSwRzt5ZLhyzgrlRZDQO2I47cGai7f1oUrbIgt_sp2btrvSp45rWYR6j0JmsaV8Wsx-9rp2JS-7UU9pPDNHCoUby43irvwg_ifcPUtb6FRLvaWwBvj-JicFnhFTLKr8rqCKZmUSCEVOjPRvoBdaW3KTXPWtRxY8.QetsUIpXMVylXIFUheBctZesc8qVn29qmyuGSeKzctY&dib_tag=se&keywords=fastrack+watches+for+man&nsdOptOutParam=true&qid=1747415966&sprefix=fastrack+watches+for+man%2Caps%2C227&sr=8-25#customerReviews
+    - text: 200+ bought in past month
+    - link "Limited time deal":
+      - /url: /gp/goldbox/
+    - text: Price, product page
+    - 'link "₹3,595 M.R.P: ₹3,995 M.R.P: ₹3,995"':
+      - /url: /Fastrack-Analog-Black-Casual-Watch/dp/B0BXKV7LJF/ref=sr_1_25?crid=1W90282OOSS0O&dib=eyJ2IjoiMSJ9.6XcBA4w6Npm_pwAOvvXVcDAPsx0DXQfkVFdJcc8795AOyRoEAhGIodxusTSNBOZ8GZ7QBjv4Xt1bRcOCSc7OPyg0r7pbMkcvB09GR1rcV2Hv6-XZa7g2Q8g8nJ7gGOcgFAOZyjmW0D8EBSwRzt5ZLhyzgrlRZDQO2I47cGai7f1oUrbIgt_sp2btrvSp45rWYR6j0JmsaV8Wsx-9rp2JS-7UU9pPDNHCoUby43irvwg_ifcPUtb6FRLvaWwBvj-JicFnhFTLKr8rqCKZmUSCEVOjPRvoBdaW3KTXPWtRxY8.QetsUIpXMVylXIFUheBctZesc8qVn29qmyuGSeKzctY&dib_tag=se&keywords=fastrack+watches+for+man&nsdOptOutParam=true&qid=1747415966&sprefix=fastrack+watches+for+man%2Caps%2C227&sr=8-25
+    - text: (10% off) 10% Off on Select Bank Cards
+    - img "Amazon Prime"
+    - text: FREE delivery Mon, 19 May
+    - button "Add to cart"
+  - listitem:
+    - link:
+      - /url: /Fastrack-Casual-Analog-Black-Watch-3255NM01/dp/B091F3ZJHB/ref=sr_1_26?crid=1W90282OOSS0O&dib=eyJ2IjoiMSJ9.6XcBA4w6Npm_pwAOvvXVcDAPsx0DXQfkVFdJcc8795AOyRoEAhGIodxusTSNBOZ8GZ7QBjv4Xt1bRcOCSc7OPyg0r7pbMkcvB09GR1rcV2Hv6-XZa7g2Q8g8nJ7gGOcgFAOZyjmW0D8EBSwRzt5ZLhyzgrlRZDQO2I47cGai7f1oUrbIgt_sp2btrvSp45rWYR6j0JmsaV8Wsx-9rp2JS-7UU9pPDNHCoUby43irvwg_ifcPUtb6FRLvaWwBvj-JicFnhFTLKr8rqCKZmUSCEVOjPRvoBdaW3KTXPWtRxY8.QetsUIpXMVylXIFUheBctZesc8qVn29qmyuGSeKzctY&dib_tag=se&keywords=fastrack+watches+for+man&nsdOptOutParam=true&qid=1747415966&sprefix=fastrack+watches+for+man%2Caps%2C227&sr=8-26
+    - heading "Fastrack" [level=2]
+    - link "Casual Analog Black Dial Men's Watch-3255NM01":
+      - /url: /Fastrack-Casual-Analog-Black-Watch-3255NM01/dp/B091F3ZJHB/ref=sr_1_26?crid=1W90282OOSS0O&dib=eyJ2IjoiMSJ9.6XcBA4w6Npm_pwAOvvXVcDAPsx0DXQfkVFdJcc8795AOyRoEAhGIodxusTSNBOZ8GZ7QBjv4Xt1bRcOCSc7OPyg0r7pbMkcvB09GR1rcV2Hv6-XZa7g2Q8g8nJ7gGOcgFAOZyjmW0D8EBSwRzt5ZLhyzgrlRZDQO2I47cGai7f1oUrbIgt_sp2btrvSp45rWYR6j0JmsaV8Wsx-9rp2JS-7UU9pPDNHCoUby43irvwg_ifcPUtb6FRLvaWwBvj-JicFnhFTLKr8rqCKZmUSCEVOjPRvoBdaW3KTXPWtRxY8.QetsUIpXMVylXIFUheBctZesc8qVn29qmyuGSeKzctY&dib_tag=se&keywords=fastrack+watches+for+man&nsdOptOutParam=true&qid=1747415966&sprefix=fastrack+watches+for+man%2Caps%2C227&sr=8-26
+      - heading "Casual Analog Black Dial Men's Watch-3255NM01" [level=2]
+    - button "4.1 out of 5 stars, rating details"
+    - link "318 ratings":
+      - /url: /Fastrack-Casual-Analog-Black-Watch-3255NM01/dp/B091F3ZJHB/ref=sr_1_26?crid=1W90282OOSS0O&dib=eyJ2IjoiMSJ9.6XcBA4w6Npm_pwAOvvXVcDAPsx0DXQfkVFdJcc8795AOyRoEAhGIodxusTSNBOZ8GZ7QBjv4Xt1bRcOCSc7OPyg0r7pbMkcvB09GR1rcV2Hv6-XZa7g2Q8g8nJ7gGOcgFAOZyjmW0D8EBSwRzt5ZLhyzgrlRZDQO2I47cGai7f1oUrbIgt_sp2btrvSp45rWYR6j0JmsaV8Wsx-9rp2JS-7UU9pPDNHCoUby43irvwg_ifcPUtb6FRLvaWwBvj-JicFnhFTLKr8rqCKZmUSCEVOjPRvoBdaW3KTXPWtRxY8.QetsUIpXMVylXIFUheBctZesc8qVn29qmyuGSeKzctY&dib_tag=se&keywords=fastrack+watches+for+man&nsdOptOutParam=true&qid=1747415966&sprefix=fastrack+watches+for+man%2Caps%2C227&sr=8-26#customerReviews
+    - text: 100+ bought in past month
+    - link "Limited time deal":
+      - /url: /gp/goldbox/
+    - text: Price, product page
+    - 'link "₹1,996 M.R.P: ₹2,395 M.R.P: ₹2,395"':
+      - /url: /Fastrack-Casual-Analog-Black-Watch-3255NM01/dp/B091F3ZJHB/ref=sr_1_26?crid=1W90282OOSS0O&dib=eyJ2IjoiMSJ9.6XcBA4w6Npm_pwAOvvXVcDAPsx0DXQfkVFdJcc8795AOyRoEAhGIodxusTSNBOZ8GZ7QBjv4Xt1bRcOCSc7OPyg0r7pbMkcvB09GR1rcV2Hv6-XZa7g2Q8g8nJ7gGOcgFAOZyjmW0D8EBSwRzt5ZLhyzgrlRZDQO2I47cGai7f1oUrbIgt_sp2btrvSp45rWYR6j0JmsaV8Wsx-9rp2JS-7UU9pPDNHCoUby43irvwg_ifcPUtb6FRLvaWwBvj-JicFnhFTLKr8rqCKZmUSCEVOjPRvoBdaW3KTXPWtRxY8.QetsUIpXMVylXIFUheBctZesc8qVn29qmyuGSeKzctY&dib_tag=se&keywords=fastrack+watches+for+man&nsdOptOutParam=true&qid=1747415966&sprefix=fastrack+watches+for+man%2Caps%2C227&sr=8-26
+    - text: (17% off)
+    - img "Amazon Prime"
+    - text: FREE delivery Sun, 18 May Or fastest delivery Tomorrow, 17 May
+    - button "Add to cart"
+  - listitem:
+    - link:
+      - /url: /Fastrack-Analog-Silver-NM1474SM01-NN1474SM01/dp/B0085SLDKU/ref=sr_1_27?crid=1W90282OOSS0O&dib=eyJ2IjoiMSJ9.6XcBA4w6Npm_pwAOvvXVcDAPsx0DXQfkVFdJcc8795AOyRoEAhGIodxusTSNBOZ8GZ7QBjv4Xt1bRcOCSc7OPyg0r7pbMkcvB09GR1rcV2Hv6-XZa7g2Q8g8nJ7gGOcgFAOZyjmW0D8EBSwRzt5ZLhyzgrlRZDQO2I47cGai7f1oUrbIgt_sp2btrvSp45rWYR6j0JmsaV8Wsx-9rp2JS-7UU9pPDNHCoUby43irvwg_ifcPUtb6FRLvaWwBvj-JicFnhFTLKr8rqCKZmUSCEVOjPRvoBdaW3KTXPWtRxY8.QetsUIpXMVylXIFUheBctZesc8qVn29qmyuGSeKzctY&dib_tag=se&keywords=fastrack+watches+for+man&nsdOptOutParam=true&qid=1747415966&sprefix=fastrack+watches+for+man%2Caps%2C227&sr=8-27
+    - heading "Fastrack" [level=2]
+    - link "Party Analog Silver Dial Men's Watch-NL1474SM01/NP1474SM01":
+      - /url: /Fastrack-Analog-Silver-NM1474SM01-NN1474SM01/dp/B0085SLDKU/ref=sr_1_27?crid=1W90282OOSS0O&dib=eyJ2IjoiMSJ9.6XcBA4w6Npm_pwAOvvXVcDAPsx0DXQfkVFdJcc8795AOyRoEAhGIodxusTSNBOZ8GZ7QBjv4Xt1bRcOCSc7OPyg0r7pbMkcvB09GR1rcV2Hv6-XZa7g2Q8g8nJ7gGOcgFAOZyjmW0D8EBSwRzt5ZLhyzgrlRZDQO2I47cGai7f1oUrbIgt_sp2btrvSp45rWYR6j0JmsaV8Wsx-9rp2JS-7UU9pPDNHCoUby43irvwg_ifcPUtb6FRLvaWwBvj-JicFnhFTLKr8rqCKZmUSCEVOjPRvoBdaW3KTXPWtRxY8.QetsUIpXMVylXIFUheBctZesc8qVn29qmyuGSeKzctY&dib_tag=se&keywords=fastrack+watches+for+man&nsdOptOutParam=true&qid=1747415966&sprefix=fastrack+watches+for+man%2Caps%2C227&sr=8-27
+      - heading "Party Analog Silver Dial Men's Watch-NL1474SM01/NP1474SM01" [level=2]
+    - button "4.0 out of 5 stars, rating details"
+    - link "2,617 ratings":
+      - /url: /Fastrack-Analog-Silver-NM1474SM01-NN1474SM01/dp/B0085SLDKU/ref=sr_1_27?crid=1W90282OOSS0O&dib=eyJ2IjoiMSJ9.6XcBA4w6Npm_pwAOvvXVcDAPsx0DXQfkVFdJcc8795AOyRoEAhGIodxusTSNBOZ8GZ7QBjv4Xt1bRcOCSc7OPyg0r7pbMkcvB09GR1rcV2Hv6-XZa7g2Q8g8nJ7gGOcgFAOZyjmW0D8EBSwRzt5ZLhyzgrlRZDQO2I47cGai7f1oUrbIgt_sp2btrvSp45rWYR6j0JmsaV8Wsx-9rp2JS-7UU9pPDNHCoUby43irvwg_ifcPUtb6FRLvaWwBvj-JicFnhFTLKr8rqCKZmUSCEVOjPRvoBdaW3KTXPWtRxY8.QetsUIpXMVylXIFUheBctZesc8qVn29qmyuGSeKzctY&dib_tag=se&keywords=fastrack+watches+for+man&nsdOptOutParam=true&qid=1747415966&sprefix=fastrack+watches+for+man%2Caps%2C227&sr=8-27#customerReviews
+    - text: 50+ bought in past month Price, product page
+    - link "₹3,495":
+      - /url: /Fastrack-Analog-Silver-NM1474SM01-NN1474SM01/dp/B0085SLDKU/ref=sr_1_27?crid=1W90282OOSS0O&dib=eyJ2IjoiMSJ9.6XcBA4w6Npm_pwAOvvXVcDAPsx0DXQfkVFdJcc8795AOyRoEAhGIodxusTSNBOZ8GZ7QBjv4Xt1bRcOCSc7OPyg0r7pbMkcvB09GR1rcV2Hv6-XZa7g2Q8g8nJ7gGOcgFAOZyjmW0D8EBSwRzt5ZLhyzgrlRZDQO2I47cGai7f1oUrbIgt_sp2btrvSp45rWYR6j0JmsaV8Wsx-9rp2JS-7UU9pPDNHCoUby43irvwg_ifcPUtb6FRLvaWwBvj-JicFnhFTLKr8rqCKZmUSCEVOjPRvoBdaW3KTXPWtRxY8.QetsUIpXMVylXIFUheBctZesc8qVn29qmyuGSeKzctY&dib_tag=se&keywords=fastrack+watches+for+man&nsdOptOutParam=true&qid=1747415966&sprefix=fastrack+watches+for+man%2Caps%2C227&sr=8-27
+    - text: 10% Off on Select Bank Cards
+    - img "Amazon Prime"
+    - text: FREE delivery Sun, 18 May Or fastest delivery Tomorrow, 17 May
+    - button "Add to cart"
+  - listitem:
+    - link:
+      - /url: /Fastrack-Casual-Stainless-Watch-NL3121SM01-NP3121SM01/dp/B00NLAUEDO/ref=sr_1_28?crid=1W90282OOSS0O&dib=eyJ2IjoiMSJ9.6XcBA4w6Npm_pwAOvvXVcDAPsx0DXQfkVFdJcc8795AOyRoEAhGIodxusTSNBOZ8GZ7QBjv4Xt1bRcOCSc7OPyg0r7pbMkcvB09GR1rcV2Hv6-XZa7g2Q8g8nJ7gGOcgFAOZyjmW0D8EBSwRzt5ZLhyzgrlRZDQO2I47cGai7f1oUrbIgt_sp2btrvSp45rWYR6j0JmsaV8Wsx-9rp2JS-7UU9pPDNHCoUby43irvwg_ifcPUtb6FRLvaWwBvj-JicFnhFTLKr8rqCKZmUSCEVOjPRvoBdaW3KTXPWtRxY8.QetsUIpXMVylXIFUheBctZesc8qVn29qmyuGSeKzctY&dib_tag=se&keywords=fastrack+watches+for+man&nsdOptOutParam=true&qid=1747415966&sprefix=fastrack+watches+for+man%2Caps%2C227&sr=8-28
+    - heading "Fastrack" [level=2]
+    - link "Casual Analog White Dial Men's Watch-NL3121SM01/NP3121SM01":
+      - /url: /Fastrack-Casual-Stainless-Watch-NL3121SM01-NP3121SM01/dp/B00NLAUEDO/ref=sr_1_28?crid=1W90282OOSS0O&dib=eyJ2IjoiMSJ9.6XcBA4w6Npm_pwAOvvXVcDAPsx0DXQfkVFdJcc8795AOyRoEAhGIodxusTSNBOZ8GZ7QBjv4Xt1bRcOCSc7OPyg0r7pbMkcvB09GR1rcV2Hv6-XZa7g2Q8g8nJ7gGOcgFAOZyjmW0D8EBSwRzt5ZLhyzgrlRZDQO2I47cGai7f1oUrbIgt_sp2btrvSp45rWYR6j0JmsaV8Wsx-9rp2JS-7UU9pPDNHCoUby43irvwg_ifcPUtb6FRLvaWwBvj-JicFnhFTLKr8rqCKZmUSCEVOjPRvoBdaW3KTXPWtRxY8.QetsUIpXMVylXIFUheBctZesc8qVn29qmyuGSeKzctY&dib_tag=se&keywords=fastrack+watches+for+man&nsdOptOutParam=true&qid=1747415966&sprefix=fastrack+watches+for+man%2Caps%2C227&sr=8-28
+      - heading "Casual Analog White Dial Men's Watch-NL3121SM01/NP3121SM01" [level=2]
+    - button "4.1 out of 5 stars, rating details"
+    - link "4,901 ratings":
+      - /url: /Fastrack-Casual-Stainless-Watch-NL3121SM01-NP3121SM01/dp/B00NLAUEDO/ref=sr_1_28?crid=1W90282OOSS0O&dib=eyJ2IjoiMSJ9.6XcBA4w6Npm_pwAOvvXVcDAPsx0DXQfkVFdJcc8795AOyRoEAhGIodxusTSNBOZ8GZ7QBjv4Xt1bRcOCSc7OPyg0r7pbMkcvB09GR1rcV2Hv6-XZa7g2Q8g8nJ7gGOcgFAOZyjmW0D8EBSwRzt5ZLhyzgrlRZDQO2I47cGai7f1oUrbIgt_sp2btrvSp45rWYR6j0JmsaV8Wsx-9rp2JS-7UU9pPDNHCoUby43irvwg_ifcPUtb6FRLvaWwBvj-JicFnhFTLKr8rqCKZmUSCEVOjPRvoBdaW3KTXPWtRxY8.QetsUIpXMVylXIFUheBctZesc8qVn29qmyuGSeKzctY&dib_tag=se&keywords=fastrack+watches+for+man&nsdOptOutParam=true&qid=1747415966&sprefix=fastrack+watches+for+man%2Caps%2C227&sr=8-28#customerReviews
+    - text: 100+ bought in past month Price, product page
+    - link "₹1,995":
+      - /url: /Fastrack-Casual-Stainless-Watch-NL3121SM01-NP3121SM01/dp/B00NLAUEDO/ref=sr_1_28?crid=1W90282OOSS0O&dib=eyJ2IjoiMSJ9.6XcBA4w6Npm_pwAOvvXVcDAPsx0DXQfkVFdJcc8795AOyRoEAhGIodxusTSNBOZ8GZ7QBjv4Xt1bRcOCSc7OPyg0r7pbMkcvB09GR1rcV2Hv6-XZa7g2Q8g8nJ7gGOcgFAOZyjmW0D8EBSwRzt5ZLhyzgrlRZDQO2I47cGai7f1oUrbIgt_sp2btrvSp45rWYR6j0JmsaV8Wsx-9rp2JS-7UU9pPDNHCoUby43irvwg_ifcPUtb6FRLvaWwBvj-JicFnhFTLKr8rqCKZmUSCEVOjPRvoBdaW3KTXPWtRxY8.QetsUIpXMVylXIFUheBctZesc8qVn29qmyuGSeKzctY&dib_tag=se&keywords=fastrack+watches+for+man&nsdOptOutParam=true&qid=1747415966&sprefix=fastrack+watches+for+man%2Caps%2C227&sr=8-28
+    - img "Amazon Prime"
+    - text: FREE delivery Sun, 18 May Or fastest delivery Tomorrow, 17 May
+    - button "Add to cart"
+- heading "Highly rated" [level=2]
+- button "View Sponsored information or leave ad feedback": Sponsored
+- text: "| Based on star rating and number of customer ratings"
+- group "Highly rated":
+  - group:
+    - list:
+      - listitem "1 of 5":
+        - link:
+          - /url: /sspa/click?ie=UTF8&spc=MTo0ODMxNTIxMjkyMzU0MjQ0OjE3NDc0MTU5NjY6c3Bfc2VhcmNoX3RoZW1hdGljOjMwMDU0MDQyNzM4MDYzMjo6MDo6&url=%2FSapphero-Watches-Chronograph-Waterproof-Minimalist%2Fdp%2FB0D1QNMZWN%2Fref%3Dsxin_35_pa_sp_search_thematic_sspa%3Fcontent-id%3Damzn1.sym.0ec29fff-e589-42c1-a226-6d7b30a9905a%253Aamzn1.sym.0ec29fff-e589-42c1-a226-6d7b30a9905a%26crid%3D1W90282OOSS0O%26cv_ct_cx%3Dfastrack%2Bwatches%2Bfor%2Bman%26keywords%3Dfastrack%2Bwatches%2Bfor%2Bman%26nsdOptOutParam%3Dtrue%26pd_rd_i%3DB0D1QNMZWN%26pd_rd_r%3D8393bcea-4d76-4cf6-9080-0660f487ac79%26pd_rd_w%3DRGMaH%26pd_rd_wg%3DXvIum%26pf_rd_p%3D0ec29fff-e589-42c1-a226-6d7b30a9905a%26pf_rd_r%3D5D4RDBAR12B4XNRRA774%26qid%3D1747415966%26sbo%3DRZvfv%252F%252FHxDF%252BO5021pAnSA%253D%253D%26sprefix%3Dfastrack%2Bwatches%2Bfor%2Bman%252Caps%252C227%26sr%3D1-1-ced4eeeb-b190-41d6-902a-1ecb3fb8b7c4-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM%26psc%3D1
+        - heading "Sapphero" [level=2]
+        - link "Sponsored Ad - Watches for Men Quartz Chronograph 10ATM Waterproof Brown Leather Men's Minimalist Slim Fashion Watch Gifts for Men":
+          - /url: /sspa/click?ie=UTF8&spc=MTo0ODMxNTIxMjkyMzU0MjQ0OjE3NDc0MTU5NjY6c3Bfc2VhcmNoX3RoZW1hdGljOjMwMDU0MDQyNzM4MDYzMjo6MDo6&url=%2FSapphero-Watches-Chronograph-Waterproof-Minimalist%2Fdp%2FB0D1QNMZWN%2Fref%3Dsxin_35_pa_sp_search_thematic_sspa%3Fcontent-id%3Damzn1.sym.0ec29fff-e589-42c1-a226-6d7b30a9905a%253Aamzn1.sym.0ec29fff-e589-42c1-a226-6d7b30a9905a%26crid%3D1W90282OOSS0O%26cv_ct_cx%3Dfastrack%2Bwatches%2Bfor%2Bman%26keywords%3Dfastrack%2Bwatches%2Bfor%2Bman%26nsdOptOutParam%3Dtrue%26pd_rd_i%3DB0D1QNMZWN%26pd_rd_r%3D8393bcea-4d76-4cf6-9080-0660f487ac79%26pd_rd_w%3DRGMaH%26pd_rd_wg%3DXvIum%26pf_rd_p%3D0ec29fff-e589-42c1-a226-6d7b30a9905a%26pf_rd_r%3D5D4RDBAR12B4XNRRA774%26qid%3D1747415966%26sbo%3DRZvfv%252F%252FHxDF%252BO5021pAnSA%253D%253D%26sprefix%3Dfastrack%2Bwatches%2Bfor%2Bman%252Caps%252C227%26sr%3D1-1-ced4eeeb-b190-41d6-902a-1ecb3fb8b7c4-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM%26psc%3D1
+          - heading "Sponsored Ad - Watches for Men Quartz Chronograph 10ATM Waterproof Brown Leather Men's Minimalist Slim Fashion Watch Gifts for Men" [level=2]: Watches for Men Quartz Chronograph 10ATM Waterproof Brown Leather Men's Minimalist Slim Fashion Watch Gifts for Men
+        - button "4.1 out of 5 stars, rating details"
+        - link "444 ratings":
+          - /url: /sspa/click?ie=UTF8&spc=MTo0ODMxNTIxMjkyMzU0MjQ0OjE3NDc0MTU5NjY6c3Bfc2VhcmNoX3RoZW1hdGljOjMwMDU0MDQyNzM4MDYzMjo6MDo6&url=%2FSapphero-Watches-Chronograph-Waterproof-Minimalist%2Fdp%2FB0D1QNMZWN%2Fref%3Dsxin_35_pa_sp_search_thematic_sspa%3Fcontent-id%3Damzn1.sym.0ec29fff-e589-42c1-a226-6d7b30a9905a%253Aamzn1.sym.0ec29fff-e589-42c1-a226-6d7b30a9905a%26crid%3D1W90282OOSS0O%26cv_ct_cx%3Dfastrack%2Bwatches%2Bfor%2Bman%26keywords%3Dfastrack%2Bwatches%2Bfor%2Bman%26nsdOptOutParam%3Dtrue%26pd_rd_i%3DB0D1QNMZWN%26pd_rd_r%3D8393bcea-4d76-4cf6-9080-0660f487ac79%26pd_rd_w%3DRGMaH%26pd_rd_wg%3DXvIum%26pf_rd_p%3D0ec29fff-e589-42c1-a226-6d7b30a9905a%26pf_rd_r%3D5D4RDBAR12B4XNRRA774%26qid%3D1747415966%26sbo%3DRZvfv%252F%252FHxDF%252BO5021pAnSA%253D%253D%26sprefix%3Dfastrack%2Bwatches%2Bfor%2Bman%252Caps%252C227%26sr%3D1-1-ced4eeeb-b190-41d6-902a-1ecb3fb8b7c4-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM%26psc%3D1#customerReviews
+        - link "Limited time deal":
+          - /url: /gp/goldbox/
+        - text: Price, product page
+        - 'link "₹4,268 M.R.P: ₹5,928 M.R.P: ₹5,928"':
+          - /url: /sspa/click?ie=UTF8&spc=MTo0ODMxNTIxMjkyMzU0MjQ0OjE3NDc0MTU5NjY6c3Bfc2VhcmNoX3RoZW1hdGljOjMwMDU0MDQyNzM4MDYzMjo6MDo6&url=%2FSapphero-Watches-Chronograph-Waterproof-Minimalist%2Fdp%2FB0D1QNMZWN%2Fref%3Dsxin_35_pa_sp_search_thematic_sspa%3Fcontent-id%3Damzn1.sym.0ec29fff-e589-42c1-a226-6d7b30a9905a%253Aamzn1.sym.0ec29fff-e589-42c1-a226-6d7b30a9905a%26crid%3D1W90282OOSS0O%26cv_ct_cx%3Dfastrack%2Bwatches%2Bfor%2Bman%26keywords%3Dfastrack%2Bwatches%2Bfor%2Bman%26nsdOptOutParam%3Dtrue%26pd_rd_i%3DB0D1QNMZWN%26pd_rd_r%3D8393bcea-4d76-4cf6-9080-0660f487ac79%26pd_rd_w%3DRGMaH%26pd_rd_wg%3DXvIum%26pf_rd_p%3D0ec29fff-e589-42c1-a226-6d7b30a9905a%26pf_rd_r%3D5D4RDBAR12B4XNRRA774%26qid%3D1747415966%26sbo%3DRZvfv%252F%252FHxDF%252BO5021pAnSA%253D%253D%26sprefix%3Dfastrack%2Bwatches%2Bfor%2Bman%252Caps%252C227%26sr%3D1-1-ced4eeeb-b190-41d6-902a-1ecb3fb8b7c4-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM%26psc%3D1
+        - text: (28% off) 10% Off on Select Bank Cards
+        - img "Amazon Prime"
+        - text: FREE delivery Sun, 18 May Or fastest delivery Tomorrow, 17 May
+      - listitem "2 of 5":
+        - link:
+          - /url: /sspa/click?ie=UTF8&spc=MTo0ODMxNTIxMjkyMzU0MjQ0OjE3NDc0MTU5NjY6c3Bfc2VhcmNoX3RoZW1hdGljOjMwMDQ1ODU5NDIxMTEzMjo6MTo6&url=%2FPINDOWS-Calendar-Business-Stainless-Waterproof%2Fdp%2FB0DRSW7HJ7%2Fref%3Dsxin_35_pa_sp_search_thematic_sspa%3Fcontent-id%3Damzn1.sym.0ec29fff-e589-42c1-a226-6d7b30a9905a%253Aamzn1.sym.0ec29fff-e589-42c1-a226-6d7b30a9905a%26crid%3D1W90282OOSS0O%26cv_ct_cx%3Dfastrack%2Bwatches%2Bfor%2Bman%26keywords%3Dfastrack%2Bwatches%2Bfor%2Bman%26nsdOptOutParam%3Dtrue%26pd_rd_i%3DB0DRSW7HJ7%26pd_rd_r%3D8393bcea-4d76-4cf6-9080-0660f487ac79%26pd_rd_w%3DRGMaH%26pd_rd_wg%3DXvIum%26pf_rd_p%3D0ec29fff-e589-42c1-a226-6d7b30a9905a%26pf_rd_r%3D5D4RDBAR12B4XNRRA774%26qid%3D1747415966%26sbo%3DRZvfv%252F%252FHxDF%252BO5021pAnSA%253D%253D%26sprefix%3Dfastrack%2Bwatches%2Bfor%2Bman%252Caps%252C227%26sr%3D1-2-ced4eeeb-b190-41d6-902a-1ecb3fb8b7c4-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM%26psc%3D1
+        - heading "PINDOWS" [level=2]
+        - link "Sponsored Ad - Watch for Men Big Dial Analog Digital Black Silicone Sport Multifunction Luminous LED Dial Waterproof Watches Fashion Wristwatches":
+          - /url: /sspa/click?ie=UTF8&spc=MTo0ODMxNTIxMjkyMzU0MjQ0OjE3NDc0MTU5NjY6c3Bfc2VhcmNoX3RoZW1hdGljOjMwMDQ1ODU5NDIxMTEzMjo6MTo6&url=%2FPINDOWS-Calendar-Business-Stainless-Waterproof%2Fdp%2FB0DRSW7HJ7%2Fref%3Dsxin_35_pa_sp_search_thematic_sspa%3Fcontent-id%3Damzn1.sym.0ec29fff-e589-42c1-a226-6d7b30a9905a%253Aamzn1.sym.0ec29fff-e589-42c1-a226-6d7b30a9905a%26crid%3D1W90282OOSS0O%26cv_ct_cx%3Dfastrack%2Bwatches%2Bfor%2Bman%26keywords%3Dfastrack%2Bwatches%2Bfor%2Bman%26nsdOptOutParam%3Dtrue%26pd_rd_i%3DB0DRSW7HJ7%26pd_rd_r%3D8393bcea-4d76-4cf6-9080-0660f487ac79%26pd_rd_w%3DRGMaH%26pd_rd_wg%3DXvIum%26pf_rd_p%3D0ec29fff-e589-42c1-a226-6d7b30a9905a%26pf_rd_r%3D5D4RDBAR12B4XNRRA774%26qid%3D1747415966%26sbo%3DRZvfv%252F%252FHxDF%252BO5021pAnSA%253D%253D%26sprefix%3Dfastrack%2Bwatches%2Bfor%2Bman%252Caps%252C227%26sr%3D1-2-ced4eeeb-b190-41d6-902a-1ecb3fb8b7c4-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM%26psc%3D1
+          - heading "Sponsored Ad - Watch for Men Big Dial Analog Digital Black Silicone Sport Multifunction Luminous LED Dial Waterproof Watches Fashion Wristwatches" [level=2]: Watch for Men Big Dial Analog Digital Black Silicone Sport Multifunction Luminous LED Dial Waterproof Watches Fashion Wristwatches
+        - button "4.2 out of 5 stars, rating details"
+        - link "111 ratings":
+          - /url: /sspa/click?ie=UTF8&spc=MTo0ODMxNTIxMjkyMzU0MjQ0OjE3NDc0MTU5NjY6c3Bfc2VhcmNoX3RoZW1hdGljOjMwMDQ1ODU5NDIxMTEzMjo6MTo6&url=%2FPINDOWS-Calendar-Business-Stainless-Waterproof%2Fdp%2FB0DRSW7HJ7%2Fref%3Dsxin_35_pa_sp_search_thematic_sspa%3Fcontent-id%3Damzn1.sym.0ec29fff-e589-42c1-a226-6d7b30a9905a%253Aamzn1.sym.0ec29fff-e589-42c1-a226-6d7b30a9905a%26crid%3D1W90282OOSS0O%26cv_ct_cx%3Dfastrack%2Bwatches%2Bfor%2Bman%26keywords%3Dfastrack%2Bwatches%2Bfor%2Bman%26nsdOptOutParam%3Dtrue%26pd_rd_i%3DB0DRSW7HJ7%26pd_rd_r%3D8393bcea-4d76-4cf6-9080-0660f487ac79%26pd_rd_w%3DRGMaH%26pd_rd_wg%3DXvIum%26pf_rd_p%3D0ec29fff-e589-42c1-a226-6d7b30a9905a%26pf_rd_r%3D5D4RDBAR12B4XNRRA774%26qid%3D1747415966%26sbo%3DRZvfv%252F%252FHxDF%252BO5021pAnSA%253D%253D%26sprefix%3Dfastrack%2Bwatches%2Bfor%2Bman%252Caps%252C227%26sr%3D1-2-ced4eeeb-b190-41d6-902a-1ecb3fb8b7c4-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM%26psc%3D1#customerReviews
+        - text: 10+ bought in past month Price, product page
+        - 'link "₹1,999 M.R.P: ₹3,500 M.R.P: ₹3,500"':
+          - /url: /sspa/click?ie=UTF8&spc=MTo0ODMxNTIxMjkyMzU0MjQ0OjE3NDc0MTU5NjY6c3Bfc2VhcmNoX3RoZW1hdGljOjMwMDQ1ODU5NDIxMTEzMjo6MTo6&url=%2FPINDOWS-Calendar-Business-Stainless-Waterproof%2Fdp%2FB0DRSW7HJ7%2Fref%3Dsxin_35_pa_sp_search_thematic_sspa%3Fcontent-id%3Damzn1.sym.0ec29fff-e589-42c1-a226-6d7b30a9905a%253Aamzn1.sym.0ec29fff-e589-42c1-a226-6d7b30a9905a%26crid%3D1W90282OOSS0O%26cv_ct_cx%3Dfastrack%2Bwatches%2Bfor%2Bman%26keywords%3Dfastrack%2Bwatches%2Bfor%2Bman%26nsdOptOutParam%3Dtrue%26pd_rd_i%3DB0DRSW7HJ7%26pd_rd_r%3D8393bcea-4d76-4cf6-9080-0660f487ac79%26pd_rd_w%3DRGMaH%26pd_rd_wg%3DXvIum%26pf_rd_p%3D0ec29fff-e589-42c1-a226-6d7b30a9905a%26pf_rd_r%3D5D4RDBAR12B4XNRRA774%26qid%3D1747415966%26sbo%3DRZvfv%252F%252FHxDF%252BO5021pAnSA%253D%253D%26sprefix%3Dfastrack%2Bwatches%2Bfor%2Bman%252Caps%252C227%26sr%3D1-2-ced4eeeb-b190-41d6-902a-1ecb3fb8b7c4-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM%26psc%3D1
+        - text: (43% off) Up to 5% back with Amazon Pay ICICI card
+        - img "Amazon Prime"
+        - text: FREE delivery Sun, 18 May Or fastest delivery Tomorrow, 17 May
+      - listitem "3 of 5":
+        - link:
+          - /url: /sspa/click?ie=UTF8&spc=MTo0ODMxNTIxMjkyMzU0MjQ0OjE3NDc0MTU5NjY6c3Bfc2VhcmNoX3RoZW1hdGljOjIwMTUyNDAyMDc3Mjk4OjoyOjo&url=%2FBenyar-Stainless-Party-Wear-Chronograph-Display%2Fdp%2FB08425R5GY%2Fref%3Dsxin_35_pa_sp_search_thematic_sspa%3Fcontent-id%3Damzn1.sym.0ec29fff-e589-42c1-a226-6d7b30a9905a%253Aamzn1.sym.0ec29fff-e589-42c1-a226-6d7b30a9905a%26crid%3D1W90282OOSS0O%26cv_ct_cx%3Dfastrack%2Bwatches%2Bfor%2Bman%26keywords%3Dfastrack%2Bwatches%2Bfor%2Bman%26nsdOptOutParam%3Dtrue%26pd_rd_i%3DB08425R5GY%26pd_rd_r%3D8393bcea-4d76-4cf6-9080-0660f487ac79%26pd_rd_w%3DRGMaH%26pd_rd_wg%3DXvIum%26pf_rd_p%3D0ec29fff-e589-42c1-a226-6d7b30a9905a%26pf_rd_r%3D5D4RDBAR12B4XNRRA774%26qid%3D1747415966%26sbo%3DRZvfv%252F%252FHxDF%252BO5021pAnSA%253D%253D%26sprefix%3Dfastrack%2Bwatches%2Bfor%2Bman%252Caps%252C227%26sr%3D1-3-ced4eeeb-b190-41d6-902a-1ecb3fb8b7c4-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM%26psc%3D1
+        - heading "BENYAR" [level=2]
+        - link "Sponsored Ad - Luxury Business Casual Party-Wear Silicone Chronograph Date Display Watch for Men":
+          - /url: /sspa/click?ie=UTF8&spc=MTo0ODMxNTIxMjkyMzU0MjQ0OjE3NDc0MTU5NjY6c3Bfc2VhcmNoX3RoZW1hdGljOjIwMTUyNDAyMDc3Mjk4OjoyOjo&url=%2FBenyar-Stainless-Party-Wear-Chronograph-Display%2Fdp%2FB08425R5GY%2Fref%3Dsxin_35_pa_sp_search_thematic_sspa%3Fcontent-id%3Damzn1.sym.0ec29fff-e589-42c1-a226-6d7b30a9905a%253Aamzn1.sym.0ec29fff-e589-42c1-a226-6d7b30a9905a%26crid%3D1W90282OOSS0O%26cv_ct_cx%3Dfastrack%2Bwatches%2Bfor%2Bman%26keywords%3Dfastrack%2Bwatches%2Bfor%2Bman%26nsdOptOutParam%3Dtrue%26pd_rd_i%3DB08425R5GY%26pd_rd_r%3D8393bcea-4d76-4cf6-9080-0660f487ac79%26pd_rd_w%3DRGMaH%26pd_rd_wg%3DXvIum%26pf_rd_p%3D0ec29fff-e589-42c1-a226-6d7b30a9905a%26pf_rd_r%3D5D4RDBAR12B4XNRRA774%26qid%3D1747415966%26sbo%3DRZvfv%252F%252FHxDF%252BO5021pAnSA%253D%253D%26sprefix%3Dfastrack%2Bwatches%2Bfor%2Bman%252Caps%252C227%26sr%3D1-3-ced4eeeb-b190-41d6-902a-1ecb3fb8b7c4-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM%26psc%3D1
+          - heading "Sponsored Ad - Luxury Business Casual Party-Wear Silicone Chronograph Date Display Watch for Men" [level=2]: Luxury Business Casual Party-Wear Silicone Chronograph Date Display Watch for Men
+        - button "4.1 out of 5 stars, rating details"
+        - link "1,165 ratings":
+          - /url: /sspa/click?ie=UTF8&spc=MTo0ODMxNTIxMjkyMzU0MjQ0OjE3NDc0MTU5NjY6c3Bfc2VhcmNoX3RoZW1hdGljOjIwMTUyNDAyMDc3Mjk4OjoyOjo&url=%2FBenyar-Stainless-Party-Wear-Chronograph-Display%2Fdp%2FB08425R5GY%2Fref%3Dsxin_35_pa_sp_search_thematic_sspa%3Fcontent-id%3Damzn1.sym.0ec29fff-e589-42c1-a226-6d7b30a9905a%253Aamzn1.sym.0ec29fff-e589-42c1-a226-6d7b30a9905a%26crid%3D1W90282OOSS0O%26cv_ct_cx%3Dfastrack%2Bwatches%2Bfor%2Bman%26keywords%3Dfastrack%2Bwatches%2Bfor%2Bman%26nsdOptOutParam%3Dtrue%26pd_rd_i%3DB08425R5GY%26pd_rd_r%3D8393bcea-4d76-4cf6-9080-0660f487ac79%26pd_rd_w%3DRGMaH%26pd_rd_wg%3DXvIum%26pf_rd_p%3D0ec29fff-e589-42c1-a226-6d7b30a9905a%26pf_rd_r%3D5D4RDBAR12B4XNRRA774%26qid%3D1747415966%26sbo%3DRZvfv%252F%252FHxDF%252BO5021pAnSA%253D%253D%26sprefix%3Dfastrack%2Bwatches%2Bfor%2Bman%252Caps%252C227%26sr%3D1-3-ced4eeeb-b190-41d6-902a-1ecb3fb8b7c4-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM%26psc%3D1#customerReviews
+        - text: 30+ bought in past month Price, product page
+        - 'link "₹2,990 M.R.P: ₹4,999 M.R.P: ₹4,999"':
+          - /url: /sspa/click?ie=UTF8&spc=MTo0ODMxNTIxMjkyMzU0MjQ0OjE3NDc0MTU5NjY6c3Bfc2VhcmNoX3RoZW1hdGljOjIwMTUyNDAyMDc3Mjk4OjoyOjo&url=%2FBenyar-Stainless-Party-Wear-Chronograph-Display%2Fdp%2FB08425R5GY%2Fref%3Dsxin_35_pa_sp_search_thematic_sspa%3Fcontent-id%3Damzn1.sym.0ec29fff-e589-42c1-a226-6d7b30a9905a%253Aamzn1.sym.0ec29fff-e589-42c1-a226-6d7b30a9905a%26crid%3D1W90282OOSS0O%26cv_ct_cx%3Dfastrack%2Bwatches%2Bfor%2Bman%26keywords%3Dfastrack%2Bwatches%2Bfor%2Bman%26nsdOptOutParam%3Dtrue%26pd_rd_i%3DB08425R5GY%26pd_rd_r%3D8393bcea-4d76-4cf6-9080-0660f487ac79%26pd_rd_w%3DRGMaH%26pd_rd_wg%3DXvIum%26pf_rd_p%3D0ec29fff-e589-42c1-a226-6d7b30a9905a%26pf_rd_r%3D5D4RDBAR12B4XNRRA774%26qid%3D1747415966%26sbo%3DRZvfv%252F%252FHxDF%252BO5021pAnSA%253D%253D%26sprefix%3Dfastrack%2Bwatches%2Bfor%2Bman%252Caps%252C227%26sr%3D1-3-ced4eeeb-b190-41d6-902a-1ecb3fb8b7c4-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM%26psc%3D1
+        - text: (40% off)
+        - img "Amazon Prime"
+        - text: FREE delivery Sun, 18 May Or fastest delivery Tomorrow, 17 May
+      - listitem "4 of 5":
+        - link:
+          - /url: /sspa/click?ie=UTF8&spc=MTo0ODMxNTIxMjkyMzU0MjQ0OjE3NDc0MTU5NjY6c3Bfc2VhcmNoX3RoZW1hdGljOjMwMDU0NDE3NjE5MzQzMjo6Mzo6&url=%2FCarlington-Analog-Digital-Chronograph-Water-Resistant-Shock-Resistant%2Fdp%2FB0CFFXCPSG%2Fref%3Dsxin_35_pa_sp_search_thematic_sspa%3Fcontent-id%3Damzn1.sym.0ec29fff-e589-42c1-a226-6d7b30a9905a%253Aamzn1.sym.0ec29fff-e589-42c1-a226-6d7b30a9905a%26crid%3D1W90282OOSS0O%26cv_ct_cx%3Dfastrack%2Bwatches%2Bfor%2Bman%26keywords%3Dfastrack%2Bwatches%2Bfor%2Bman%26nsdOptOutParam%3Dtrue%26pd_rd_i%3DB0CFFXCPSG%26pd_rd_r%3D8393bcea-4d76-4cf6-9080-0660f487ac79%26pd_rd_w%3DRGMaH%26pd_rd_wg%3DXvIum%26pf_rd_p%3D0ec29fff-e589-42c1-a226-6d7b30a9905a%26pf_rd_r%3D5D4RDBAR12B4XNRRA774%26qid%3D1747415966%26sbo%3DRZvfv%252F%252FHxDF%252BO5021pAnSA%253D%253D%26sprefix%3Dfastrack%2Bwatches%2Bfor%2Bman%252Caps%252C227%26sr%3D1-4-ced4eeeb-b190-41d6-902a-1ecb3fb8b7c4-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM%26psc%3D1
+        - heading "Carlington" [level=2]
+        - link "Sponsored Ad - Resin Endurance Analog-Digital Sports Watch for Men and Boys-Ct 3344":
+          - /url: /sspa/click?ie=UTF8&spc=MTo0ODMxNTIxMjkyMzU0MjQ0OjE3NDc0MTU5NjY6c3Bfc2VhcmNoX3RoZW1hdGljOjMwMDU0NDE3NjE5MzQzMjo6Mzo6&url=%2FCarlington-Analog-Digital-Chronograph-Water-Resistant-Shock-Resistant%2Fdp%2FB0CFFXCPSG%2Fref%3Dsxin_35_pa_sp_search_thematic_sspa%3Fcontent-id%3Damzn1.sym.0ec29fff-e589-42c1-a226-6d7b30a9905a%253Aamzn1.sym.0ec29fff-e589-42c1-a226-6d7b30a9905a%26crid%3D1W90282OOSS0O%26cv_ct_cx%3Dfastrack%2Bwatches%2Bfor%2Bman%26keywords%3Dfastrack%2Bwatches%2Bfor%2Bman%26nsdOptOutParam%3Dtrue%26pd_rd_i%3DB0CFFXCPSG%26pd_rd_r%3D8393bcea-4d76-4cf6-9080-0660f487ac79%26pd_rd_w%3DRGMaH%26pd_rd_wg%3DXvIum%26pf_rd_p%3D0ec29fff-e589-42c1-a226-6d7b30a9905a%26pf_rd_r%3D5D4RDBAR12B4XNRRA774%26qid%3D1747415966%26sbo%3DRZvfv%252F%252FHxDF%252BO5021pAnSA%253D%253D%26sprefix%3Dfastrack%2Bwatches%2Bfor%2Bman%252Caps%252C227%26sr%3D1-4-ced4eeeb-b190-41d6-902a-1ecb3fb8b7c4-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM%26psc%3D1
+          - heading "Sponsored Ad - Resin Endurance Analog-Digital Sports Watch for Men and Boys-Ct 3344" [level=2]: Resin Endurance Analog-Digital Sports Watch for Men and Boys-Ct 3344
+        - button "4.0 out of 5 stars, rating details"
+        - link "320 ratings":
+          - /url: /sspa/click?ie=UTF8&spc=MTo0ODMxNTIxMjkyMzU0MjQ0OjE3NDc0MTU5NjY6c3Bfc2VhcmNoX3RoZW1hdGljOjMwMDU0NDE3NjE5MzQzMjo6Mzo6&url=%2FCarlington-Analog-Digital-Chronograph-Water-Resistant-Shock-Resistant%2Fdp%2FB0CFFXCPSG%2Fref%3Dsxin_35_pa_sp_search_thematic_sspa%3Fcontent-id%3Damzn1.sym.0ec29fff-e589-42c1-a226-6d7b30a9905a%253Aamzn1.sym.0ec29fff-e589-42c1-a226-6d7b30a9905a%26crid%3D1W90282OOSS0O%26cv_ct_cx%3Dfastrack%2Bwatches%2Bfor%2Bman%26keywords%3Dfastrack%2Bwatches%2Bfor%2Bman%26nsdOptOutParam%3Dtrue%26pd_rd_i%3DB0CFFXCPSG%26pd_rd_r%3D8393bcea-4d76-4cf6-9080-0660f487ac79%26pd_rd_w%3DRGMaH%26pd_rd_wg%3DXvIum%26pf_rd_p%3D0ec29fff-e589-42c1-a226-6d7b30a9905a%26pf_rd_r%3D5D4RDBAR12B4XNRRA774%26qid%3D1747415966%26sbo%3DRZvfv%252F%252FHxDF%252BO5021pAnSA%253D%253D%26sprefix%3Dfastrack%2Bwatches%2Bfor%2Bman%252Caps%252C227%26sr%3D1-4-ced4eeeb-b190-41d6-902a-1ecb3fb8b7c4-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM%26psc%3D1#customerReviews
+        - text: 100+ bought in past month Price, product page
+        - 'link "₹999 M.R.P: ₹4,999 M.R.P: ₹4,999"':
+          - /url: /sspa/click?ie=UTF8&spc=MTo0ODMxNTIxMjkyMzU0MjQ0OjE3NDc0MTU5NjY6c3Bfc2VhcmNoX3RoZW1hdGljOjMwMDU0NDE3NjE5MzQzMjo6Mzo6&url=%2FCarlington-Analog-Digital-Chronograph-Water-Resistant-Shock-Resistant%2Fdp%2FB0CFFXCPSG%2Fref%3Dsxin_35_pa_sp_search_thematic_sspa%3Fcontent-id%3Damzn1.sym.0ec29fff-e589-42c1-a226-6d7b30a9905a%253Aamzn1.sym.0ec29fff-e589-42c1-a226-6d7b30a9905a%26crid%3D1W90282OOSS0O%26cv_ct_cx%3Dfastrack%2Bwatches%2Bfor%2Bman%26keywords%3Dfastrack%2Bwatches%2Bfor%2Bman%26nsdOptOutParam%3Dtrue%26pd_rd_i%3DB0CFFXCPSG%26pd_rd_r%3D8393bcea-4d76-4cf6-9080-0660f487ac79%26pd_rd_w%3DRGMaH%26pd_rd_wg%3DXvIum%26pf_rd_p%3D0ec29fff-e589-42c1-a226-6d7b30a9905a%26pf_rd_r%3D5D4RDBAR12B4XNRRA774%26qid%3D1747415966%26sbo%3DRZvfv%252F%252FHxDF%252BO5021pAnSA%253D%253D%26sprefix%3Dfastrack%2Bwatches%2Bfor%2Bman%252Caps%252C227%26sr%3D1-4-ced4eeeb-b190-41d6-902a-1ecb3fb8b7c4-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM%26psc%3D1
+        - text: (80% off)
+        - img "Amazon Prime"
+        - text: FREE delivery Sun, 18 May Or fastest delivery Tomorrow, 17 May
+      - listitem "5 of 5":
+        - link:
+          - /url: /sspa/click?ie=UTF8&spc=MTo0ODMxNTIxMjkyMzU0MjQ0OjE3NDc0MTU5NjY6c3Bfc2VhcmNoX3RoZW1hdGljOjMwMDQ1ODUzMDY2NzIzMjo6NDo6&url=%2FPINDOWS-Chronograph-Stainless-Multifunctional-Waterproof%2Fdp%2FB0DRSV6ZFS%2Fref%3Dsxin_35_pa_sp_search_thematic_sspa%3Fcontent-id%3Damzn1.sym.0ec29fff-e589-42c1-a226-6d7b30a9905a%253Aamzn1.sym.0ec29fff-e589-42c1-a226-6d7b30a9905a%26crid%3D1W90282OOSS0O%26cv_ct_cx%3Dfastrack%2Bwatches%2Bfor%2Bman%26keywords%3Dfastrack%2Bwatches%2Bfor%2Bman%26nsdOptOutParam%3Dtrue%26pd_rd_i%3DB0DRSV6ZFS%26pd_rd_r%3D8393bcea-4d76-4cf6-9080-0660f487ac79%26pd_rd_w%3DRGMaH%26pd_rd_wg%3DXvIum%26pf_rd_p%3D0ec29fff-e589-42c1-a226-6d7b30a9905a%26pf_rd_r%3D5D4RDBAR12B4XNRRA774%26qid%3D1747415966%26sbo%3DRZvfv%252F%252FHxDF%252BO5021pAnSA%253D%253D%26sprefix%3Dfastrack%2Bwatches%2Bfor%2Bman%252Caps%252C227%26sr%3D1-5-ced4eeeb-b190-41d6-902a-1ecb3fb8b7c4-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM%26psc%3D1
+        - heading "PINDOWS" [level=2]
+        - link "Sponsored Ad - Watch for Men Big Dial Analog Digital Black Silicone Sport Multifunction Luminous LED Dial Waterproof Watches Fashion Wristwatches":
+          - /url: /sspa/click?ie=UTF8&spc=MTo0ODMxNTIxMjkyMzU0MjQ0OjE3NDc0MTU5NjY6c3Bfc2VhcmNoX3RoZW1hdGljOjMwMDQ1ODUzMDY2NzIzMjo6NDo6&url=%2FPINDOWS-Chronograph-Stainless-Multifunctional-Waterproof%2Fdp%2FB0DRSV6ZFS%2Fref%3Dsxin_35_pa_sp_search_thematic_sspa%3Fcontent-id%3Damzn1.sym.0ec29fff-e589-42c1-a226-6d7b30a9905a%253Aamzn1.sym.0ec29fff-e589-42c1-a226-6d7b30a9905a%26crid%3D1W90282OOSS0O%26cv_ct_cx%3Dfastrack%2Bwatches%2Bfor%2Bman%26keywords%3Dfastrack%2Bwatches%2Bfor%2Bman%26nsdOptOutParam%3Dtrue%26pd_rd_i%3DB0DRSV6ZFS%26pd_rd_r%3D8393bcea-4d76-4cf6-9080-0660f487ac79%26pd_rd_w%3DRGMaH%26pd_rd_wg%3DXvIum%26pf_rd_p%3D0ec29fff-e589-42c1-a226-6d7b30a9905a%26pf_rd_r%3D5D4RDBAR12B4XNRRA774%26qid%3D1747415966%26sbo%3DRZvfv%252F%252FHxDF%252BO5021pAnSA%253D%253D%26sprefix%3Dfastrack%2Bwatches%2Bfor%2Bman%252Caps%252C227%26sr%3D1-5-ced4eeeb-b190-41d6-902a-1ecb3fb8b7c4-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM%26psc%3D1
+          - heading "Sponsored Ad - Watch for Men Big Dial Analog Digital Black Silicone Sport Multifunction Luminous LED Dial Waterproof Watches Fashion Wristwatches" [level=2]: Watch for Men Big Dial Analog Digital Black Silicone Sport Multifunction Luminous LED Dial Waterproof Watches Fashion Wristwatches
+        - button "4.3 out of 5 stars, rating details"
+        - link "2,636 ratings":
+          - /url: /sspa/click?ie=UTF8&spc=MTo0ODMxNTIxMjkyMzU0MjQ0OjE3NDc0MTU5NjY6c3Bfc2VhcmNoX3RoZW1hdGljOjMwMDQ1ODUzMDY2NzIzMjo6NDo6&url=%2FPINDOWS-Chronograph-Stainless-Multifunctional-Waterproof%2Fdp%2FB0DRSV6ZFS%2Fref%3Dsxin_35_pa_sp_search_thematic_sspa%3Fcontent-id%3Damzn1.sym.0ec29fff-e589-42c1-a226-6d7b30a9905a%253Aamzn1.sym.0ec29fff-e589-42c1-a226-6d7b30a9905a%26crid%3D1W90282OOSS0O%26cv_ct_cx%3Dfastrack%2Bwatches%2Bfor%2Bman%26keywords%3Dfastrack%2Bwatches%2Bfor%2Bman%26nsdOptOutParam%3Dtrue%26pd_rd_i%3DB0DRSV6ZFS%26pd_rd_r%3D8393bcea-4d76-4cf6-9080-0660f487ac79%26pd_rd_w%3DRGMaH%26pd_rd_wg%3DXvIum%26pf_rd_p%3D0ec29fff-e589-42c1-a226-6d7b30a9905a%26pf_rd_r%3D5D4RDBAR12B4XNRRA774%26qid%3D1747415966%26sbo%3DRZvfv%252F%252FHxDF%252BO5021pAnSA%253D%253D%26sprefix%3Dfastrack%2Bwatches%2Bfor%2Bman%252Caps%252C227%26sr%3D1-5-ced4eeeb-b190-41d6-902a-1ecb3fb8b7c4-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM%26psc%3D1#customerReviews
+        - text: 10+ bought in past month Price, product page
+        - 'link "₹1,999 M.R.P: ₹3,200 M.R.P: ₹3,200"':
+          - /url: /sspa/click?ie=UTF8&spc=MTo0ODMxNTIxMjkyMzU0MjQ0OjE3NDc0MTU5NjY6c3Bfc2VhcmNoX3RoZW1hdGljOjMwMDQ1ODUzMDY2NzIzMjo6NDo6&url=%2FPINDOWS-Chronograph-Stainless-Multifunctional-Waterproof%2Fdp%2FB0DRSV6ZFS%2Fref%3Dsxin_35_pa_sp_search_thematic_sspa%3Fcontent-id%3Damzn1.sym.0ec29fff-e589-42c1-a226-6d7b30a9905a%253Aamzn1.sym.0ec29fff-e589-42c1-a226-6d7b30a9905a%26crid%3D1W90282OOSS0O%26cv_ct_cx%3Dfastrack%2Bwatches%2Bfor%2Bman%26keywords%3Dfastrack%2Bwatches%2Bfor%2Bman%26nsdOptOutParam%3Dtrue%26pd_rd_i%3DB0DRSV6ZFS%26pd_rd_r%3D8393bcea-4d76-4cf6-9080-0660f487ac79%26pd_rd_w%3DRGMaH%26pd_rd_wg%3DXvIum%26pf_rd_p%3D0ec29fff-e589-42c1-a226-6d7b30a9905a%26pf_rd_r%3D5D4RDBAR12B4XNRRA774%26qid%3D1747415966%26sbo%3DRZvfv%252F%252FHxDF%252BO5021pAnSA%253D%253D%26sprefix%3Dfastrack%2Bwatches%2Bfor%2Bman%252Caps%252C227%26sr%3D1-5-ced4eeeb-b190-41d6-902a-1ecb3fb8b7c4-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM%26psc%3D1
+        - text: (38% off) Up to 5% back with Amazon Pay ICICI card
+        - img "Amazon Prime"
+        - text: FREE delivery Sun, 18 May Or fastest delivery Tomorrow, 17 May
+- heading "More results" [level=2]
+- list:
+  - listitem:
+    - link:
+      - /url: /Fastrack-Limitless-Functional-SingleSync-Smartwatch/dp/B0D962SZZ1/ref=sr_1_29?crid=1W90282OOSS0O&dib=eyJ2IjoiMSJ9.6XcBA4w6Npm_pwAOvvXVcDAPsx0DXQfkVFdJcc8795AOyRoEAhGIodxusTSNBOZ8GZ7QBjv4Xt1bRcOCSc7OPyg0r7pbMkcvB09GR1rcV2Hv6-XZa7g2Q8g8nJ7gGOcgFAOZyjmW0D8EBSwRzt5ZLhyzgrlRZDQO2I47cGai7f1oUrbIgt_sp2btrvSp45rWYR6j0JmsaV8Wsx-9rp2JS-7UU9pPDNHCoUby43irvwg_ifcPUtb6FRLvaWwBvj-JicFnhFTLKr8rqCKZmUSCEVOjPRvoBdaW3KTXPWtRxY8.QetsUIpXMVylXIFUheBctZesc8qVn29qmyuGSeKzctY&dib_tag=se&keywords=fastrack+watches+for+man&nsdOptOutParam=true&qid=1747415966&sprefix=fastrack+watches+for+man%2Caps%2C227&sr=8-29
+    - heading "Fastrack" [level=2]
+    - link "Fastrack Limitless FS2+ Smart Watch, 2.01\" UltraVU Display, Functional Crown, SingleSync BT Calling, 110+ Sports Modes, 200+ Smartwatch Faces, Upto 7 Day Battery, AI Voice Assistant (Black)":
+      - /url: /Fastrack-Limitless-Functional-SingleSync-Smartwatch/dp/B0D962SZZ1/ref=sr_1_29?crid=1W90282OOSS0O&dib=eyJ2IjoiMSJ9.6XcBA4w6Npm_pwAOvvXVcDAPsx0DXQfkVFdJcc8795AOyRoEAhGIodxusTSNBOZ8GZ7QBjv4Xt1bRcOCSc7OPyg0r7pbMkcvB09GR1rcV2Hv6-XZa7g2Q8g8nJ7gGOcgFAOZyjmW0D8EBSwRzt5ZLhyzgrlRZDQO2I47cGai7f1oUrbIgt_sp2btrvSp45rWYR6j0JmsaV8Wsx-9rp2JS-7UU9pPDNHCoUby43irvwg_ifcPUtb6FRLvaWwBvj-JicFnhFTLKr8rqCKZmUSCEVOjPRvoBdaW3KTXPWtRxY8.QetsUIpXMVylXIFUheBctZesc8qVn29qmyuGSeKzctY&dib_tag=se&keywords=fastrack+watches+for+man&nsdOptOutParam=true&qid=1747415966&sprefix=fastrack+watches+for+man%2Caps%2C227&sr=8-29
+      - heading "Fastrack Limitless FS2+ Smart Watch, 2.01\" UltraVU Display, Functional Crown, SingleSync BT Calling, 110+ Sports Modes, 200+ Smartwatch Faces, Upto 7 Day Battery, AI Voice Assistant (Black)" [level=2]
+    - button "3.8 out of 5 stars, rating details"
+    - link "3,936 ratings":
+      - /url: /Fastrack-Limitless-Functional-SingleSync-Smartwatch/dp/B0D962SZZ1/ref=sr_1_29?crid=1W90282OOSS0O&dib=eyJ2IjoiMSJ9.6XcBA4w6Npm_pwAOvvXVcDAPsx0DXQfkVFdJcc8795AOyRoEAhGIodxusTSNBOZ8GZ7QBjv4Xt1bRcOCSc7OPyg0r7pbMkcvB09GR1rcV2Hv6-XZa7g2Q8g8nJ7gGOcgFAOZyjmW0D8EBSwRzt5ZLhyzgrlRZDQO2I47cGai7f1oUrbIgt_sp2btrvSp45rWYR6j0JmsaV8Wsx-9rp2JS-7UU9pPDNHCoUby43irvwg_ifcPUtb6FRLvaWwBvj-JicFnhFTLKr8rqCKZmUSCEVOjPRvoBdaW3KTXPWtRxY8.QetsUIpXMVylXIFUheBctZesc8qVn29qmyuGSeKzctY&dib_tag=se&keywords=fastrack+watches+for+man&nsdOptOutParam=true&qid=1747415966&sprefix=fastrack+watches+for+man%2Caps%2C227&sr=8-29#customerReviews
+    - text: 800+ bought in past month Price, product page
+    - 'link "₹1,599 M.R.P: ₹2,995 M.R.P: ₹2,995"':
+      - /url: /Fastrack-Limitless-Functional-SingleSync-Smartwatch/dp/B0D962SZZ1/ref=sr_1_29?crid=1W90282OOSS0O&dib=eyJ2IjoiMSJ9.6XcBA4w6Npm_pwAOvvXVcDAPsx0DXQfkVFdJcc8795AOyRoEAhGIodxusTSNBOZ8GZ7QBjv4Xt1bRcOCSc7OPyg0r7pbMkcvB09GR1rcV2Hv6-XZa7g2Q8g8nJ7gGOcgFAOZyjmW0D8EBSwRzt5ZLhyzgrlRZDQO2I47cGai7f1oUrbIgt_sp2btrvSp45rWYR6j0JmsaV8Wsx-9rp2JS-7UU9pPDNHCoUby43irvwg_ifcPUtb6FRLvaWwBvj-JicFnhFTLKr8rqCKZmUSCEVOjPRvoBdaW3KTXPWtRxY8.QetsUIpXMVylXIFUheBctZesc8qVn29qmyuGSeKzctY&dib_tag=se&keywords=fastrack+watches+for+man&nsdOptOutParam=true&qid=1747415966&sprefix=fastrack+watches+for+man%2Caps%2C227&sr=8-29
+    - text: (47% off) Up to 5% back with Amazon Pay ICICI card
+    - img "Amazon Prime"
+    - text: "FREE delivery Sun, 18 May Or fastest delivery Tomorrow, 17 May Service: Installation"
+    - button "Add to cart"
+  - listitem:
+    - link:
+      - /url: /Fastrack-Fundamentals-Analog-NM38051SL02-NL38051SL02/dp/B07D2J4YVJ/ref=sr_1_30?crid=1W90282OOSS0O&dib=eyJ2IjoiMSJ9.6XcBA4w6Npm_pwAOvvXVcDAPsx0DXQfkVFdJcc8795AOyRoEAhGIodxusTSNBOZ8GZ7QBjv4Xt1bRcOCSc7OPyg0r7pbMkcvB09GR1rcV2Hv6-XZa7g2Q8g8nJ7gGOcgFAOZyjmW0D8EBSwRzt5ZLhyzgrlRZDQO2I47cGai7f1oUrbIgt_sp2btrvSp45rWYR6j0JmsaV8Wsx-9rp2JS-7UU9pPDNHCoUby43irvwg_ifcPUtb6FRLvaWwBvj-JicFnhFTLKr8rqCKZmUSCEVOjPRvoBdaW3KTXPWtRxY8.QetsUIpXMVylXIFUheBctZesc8qVn29qmyuGSeKzctY&dib_tag=se&keywords=fastrack+watches+for+man&nsdOptOutParam=true&qid=1747415966&sprefix=fastrack+watches+for+man%2Caps%2C227&sr=8-30
+    - heading "Fastrack" [level=2]
+    - link "Fundamentals Analog Brown Dial Men's Watch NM38051SL02 / NL38051SL02":
+      - /url: /Fastrack-Fundamentals-Analog-NM38051SL02-NL38051SL02/dp/B07D2J4YVJ/ref=sr_1_30?crid=1W90282OOSS0O&dib=eyJ2IjoiMSJ9.6XcBA4w6Npm_pwAOvvXVcDAPsx0DXQfkVFdJcc8795AOyRoEAhGIodxusTSNBOZ8GZ7QBjv4Xt1bRcOCSc7OPyg0r7pbMkcvB09GR1rcV2Hv6-XZa7g2Q8g8nJ7gGOcgFAOZyjmW0D8EBSwRzt5ZLhyzgrlRZDQO2I47cGai7f1oUrbIgt_sp2btrvSp45rWYR6j0JmsaV8Wsx-9rp2JS-7UU9pPDNHCoUby43irvwg_ifcPUtb6FRLvaWwBvj-JicFnhFTLKr8rqCKZmUSCEVOjPRvoBdaW3KTXPWtRxY8.QetsUIpXMVylXIFUheBctZesc8qVn29qmyuGSeKzctY&dib_tag=se&keywords=fastrack+watches+for+man&nsdOptOutParam=true&qid=1747415966&sprefix=fastrack+watches+for+man%2Caps%2C227&sr=8-30
+      - heading "Fundamentals Analog Brown Dial Men's Watch NM38051SL02 / NL38051SL02" [level=2]
+    - button "4.2 out of 5 stars, rating details"
+    - link "541 ratings":
+      - /url: /Fastrack-Fundamentals-Analog-NM38051SL02-NL38051SL02/dp/B07D2J4YVJ/ref=sr_1_30?crid=1W90282OOSS0O&dib=eyJ2IjoiMSJ9.6XcBA4w6Npm_pwAOvvXVcDAPsx0DXQfkVFdJcc8795AOyRoEAhGIodxusTSNBOZ8GZ7QBjv4Xt1bRcOCSc7OPyg0r7pbMkcvB09GR1rcV2Hv6-XZa7g2Q8g8nJ7gGOcgFAOZyjmW0D8EBSwRzt5ZLhyzgrlRZDQO2I47cGai7f1oUrbIgt_sp2btrvSp45rWYR6j0JmsaV8Wsx-9rp2JS-7UU9pPDNHCoUby43irvwg_ifcPUtb6FRLvaWwBvj-JicFnhFTLKr8rqCKZmUSCEVOjPRvoBdaW3KTXPWtRxY8.QetsUIpXMVylXIFUheBctZesc8qVn29qmyuGSeKzctY&dib_tag=se&keywords=fastrack+watches+for+man&nsdOptOutParam=true&qid=1747415966&sprefix=fastrack+watches+for+man%2Caps%2C227&sr=8-30#customerReviews
+    - text: 100+ bought in past month
+    - link "Limited time deal":
+      - /url: /gp/goldbox/
+    - text: Price, product page
+    - 'link "₹1,396 M.R.P: ₹1,695 M.R.P: ₹1,695"':
+      - /url: /Fastrack-Fundamentals-Analog-NM38051SL02-NL38051SL02/dp/B07D2J4YVJ/ref=sr_1_30?crid=1W90282OOSS0O&dib=eyJ2IjoiMSJ9.6XcBA4w6Npm_pwAOvvXVcDAPsx0DXQfkVFdJcc8795AOyRoEAhGIodxusTSNBOZ8GZ7QBjv4Xt1bRcOCSc7OPyg0r7pbMkcvB09GR1rcV2Hv6-XZa7g2Q8g8nJ7gGOcgFAOZyjmW0D8EBSwRzt5ZLhyzgrlRZDQO2I47cGai7f1oUrbIgt_sp2btrvSp45rWYR6j0JmsaV8Wsx-9rp2JS-7UU9pPDNHCoUby43irvwg_ifcPUtb6FRLvaWwBvj-JicFnhFTLKr8rqCKZmUSCEVOjPRvoBdaW3KTXPWtRxY8.QetsUIpXMVylXIFUheBctZesc8qVn29qmyuGSeKzctY&dib_tag=se&keywords=fastrack+watches+for+man&nsdOptOutParam=true&qid=1747415966&sprefix=fastrack+watches+for+man%2Caps%2C227&sr=8-30
+    - text: (18% off)
+    - img "Amazon Prime"
+    - text: FREE delivery Sun, 18 May Or fastest delivery Tomorrow, 17 May
+    - button "Add to cart"
+  - listitem:
+    - link:
+      - /url: /Fastrack-Stainless-Watch-NL3147KM01-NN3147KM01-NP3147KM01/dp/B01GDWNV86/ref=sr_1_31?crid=1W90282OOSS0O&dib=eyJ2IjoiMSJ9.6XcBA4w6Npm_pwAOvvXVcDAPsx0DXQfkVFdJcc8795AOyRoEAhGIodxusTSNBOZ8GZ7QBjv4Xt1bRcOCSc7OPyg0r7pbMkcvB09GR1rcV2Hv6-XZa7g2Q8g8nJ7gGOcgFAOZyjmW0D8EBSwRzt5ZLhyzgrlRZDQO2I47cGai7f1oUrbIgt_sp2btrvSp45rWYR6j0JmsaV8Wsx-9rp2JS-7UU9pPDNHCoUby43irvwg_ifcPUtb6FRLvaWwBvj-JicFnhFTLKr8rqCKZmUSCEVOjPRvoBdaW3KTXPWtRxY8.QetsUIpXMVylXIFUheBctZesc8qVn29qmyuGSeKzctY&dib_tag=se&keywords=fastrack+watches+for+man&nsdOptOutParam=true&qid=1747415966&sprefix=fastrack+watches+for+man%2Caps%2C227&sr=8-31
+    - heading "Fastrack" [level=2]
+    - link "Analog Black Dial Men's Watch NM3147KM01/NN3147KM01":
+      - /url: /Fastrack-Stainless-Watch-NL3147KM01-NN3147KM01-NP3147KM01/dp/B01GDWNV86/ref=sr_1_31?crid=1W90282OOSS0O&dib=eyJ2IjoiMSJ9.6XcBA4w6Npm_pwAOvvXVcDAPsx0DXQfkVFdJcc8795AOyRoEAhGIodxusTSNBOZ8GZ7QBjv4Xt1bRcOCSc7OPyg0r7pbMkcvB09GR1rcV2Hv6-XZa7g2Q8g8nJ7gGOcgFAOZyjmW0D8EBSwRzt5ZLhyzgrlRZDQO2I47cGai7f1oUrbIgt_sp2btrvSp45rWYR6j0JmsaV8Wsx-9rp2JS-7UU9pPDNHCoUby43irvwg_ifcPUtb6FRLvaWwBvj-JicFnhFTLKr8rqCKZmUSCEVOjPRvoBdaW3KTXPWtRxY8.QetsUIpXMVylXIFUheBctZesc8qVn29qmyuGSeKzctY&dib_tag=se&keywords=fastrack+watches+for+man&nsdOptOutParam=true&qid=1747415966&sprefix=fastrack+watches+for+man%2Caps%2C227&sr=8-31
+      - heading "Analog Black Dial Men's Watch NM3147KM01/NN3147KM01" [level=2]
+    - button "4.3 out of 5 stars, rating details"
+    - link "2,270 ratings":
+      - /url: /Fastrack-Stainless-Watch-NL3147KM01-NN3147KM01-NP3147KM01/dp/B01GDWNV86/ref=sr_1_31?crid=1W90282OOSS0O&dib=eyJ2IjoiMSJ9.6XcBA4w6Npm_pwAOvvXVcDAPsx0DXQfkVFdJcc8795AOyRoEAhGIodxusTSNBOZ8GZ7QBjv4Xt1bRcOCSc7OPyg0r7pbMkcvB09GR1rcV2Hv6-XZa7g2Q8g8nJ7gGOcgFAOZyjmW0D8EBSwRzt5ZLhyzgrlRZDQO2I47cGai7f1oUrbIgt_sp2btrvSp45rWYR6j0JmsaV8Wsx-9rp2JS-7UU9pPDNHCoUby43irvwg_ifcPUtb6FRLvaWwBvj-JicFnhFTLKr8rqCKZmUSCEVOjPRvoBdaW3KTXPWtRxY8.QetsUIpXMVylXIFUheBctZesc8qVn29qmyuGSeKzctY&dib_tag=se&keywords=fastrack+watches+for+man&nsdOptOutParam=true&qid=1747415966&sprefix=fastrack+watches+for+man%2Caps%2C227&sr=8-31#customerReviews
+    - text: 100+ bought in past month
+    - link "Limited time deal":
+      - /url: /gp/goldbox/
+    - text: Price, product page
+    - 'link "₹3,916 M.R.P: ₹4,695 M.R.P: ₹4,695"':
+      - /url: /Fastrack-Stainless-Watch-NL3147KM01-NN3147KM01-NP3147KM01/dp/B01GDWNV86/ref=sr_1_31?crid=1W90282OOSS0O&dib=eyJ2IjoiMSJ9.6XcBA4w6Npm_pwAOvvXVcDAPsx0DXQfkVFdJcc8795AOyRoEAhGIodxusTSNBOZ8GZ7QBjv4Xt1bRcOCSc7OPyg0r7pbMkcvB09GR1rcV2Hv6-XZa7g2Q8g8nJ7gGOcgFAOZyjmW0D8EBSwRzt5ZLhyzgrlRZDQO2I47cGai7f1oUrbIgt_sp2btrvSp45rWYR6j0JmsaV8Wsx-9rp2JS-7UU9pPDNHCoUby43irvwg_ifcPUtb6FRLvaWwBvj-JicFnhFTLKr8rqCKZmUSCEVOjPRvoBdaW3KTXPWtRxY8.QetsUIpXMVylXIFUheBctZesc8qVn29qmyuGSeKzctY&dib_tag=se&keywords=fastrack+watches+for+man&nsdOptOutParam=true&qid=1747415966&sprefix=fastrack+watches+for+man%2Caps%2C227&sr=8-31
+    - text: (17% off) 10% Off on Select Bank Cards
+    - img "Amazon Prime"
+    - text: FREE delivery Sun, 18 May Or fastest delivery Tomorrow, 17 May
+    - button "Add to cart"
+  - listitem:
+    - link:
+      - /url: /Fastrack-Rebel-Quartz-Analog-Green/dp/B0DTTV1F9C/ref=sr_1_32?crid=1W90282OOSS0O&dib=eyJ2IjoiMSJ9.6XcBA4w6Npm_pwAOvvXVcDAPsx0DXQfkVFdJcc8795AOyRoEAhGIodxusTSNBOZ8GZ7QBjv4Xt1bRcOCSc7OPyg0r7pbMkcvB09GR1rcV2Hv6-XZa7g2Q8g8nJ7gGOcgFAOZyjmW0D8EBSwRzt5ZLhyzgrlRZDQO2I47cGai7f1oUrbIgt_sp2btrvSp45rWYR6j0JmsaV8Wsx-9rp2JS-7UU9pPDNHCoUby43irvwg_ifcPUtb6FRLvaWwBvj-JicFnhFTLKr8rqCKZmUSCEVOjPRvoBdaW3KTXPWtRxY8.QetsUIpXMVylXIFUheBctZesc8qVn29qmyuGSeKzctY&dib_tag=se&keywords=fastrack+watches+for+man&nsdOptOutParam=true&qid=1747415966&sprefix=fastrack+watches+for+man%2Caps%2C227&sr=8-32
+    - heading "Fastrack" [level=2]
+    - link "Vyb Rebel Quartz Analog Green Dial Watch for Men":
+      - /url: /Fastrack-Rebel-Quartz-Analog-Green/dp/B0DTTV1F9C/ref=sr_1_32?crid=1W90282OOSS0O&dib=eyJ2IjoiMSJ9.6XcBA4w6Npm_pwAOvvXVcDAPsx0DXQfkVFdJcc8795AOyRoEAhGIodxusTSNBOZ8GZ7QBjv4Xt1bRcOCSc7OPyg0r7pbMkcvB09GR1rcV2Hv6-XZa7g2Q8g8nJ7gGOcgFAOZyjmW0D8EBSwRzt5ZLhyzgrlRZDQO2I47cGai7f1oUrbIgt_sp2btrvSp45rWYR6j0JmsaV8Wsx-9rp2JS-7UU9pPDNHCoUby43irvwg_ifcPUtb6FRLvaWwBvj-JicFnhFTLKr8rqCKZmUSCEVOjPRvoBdaW3KTXPWtRxY8.QetsUIpXMVylXIFUheBctZesc8qVn29qmyuGSeKzctY&dib_tag=se&keywords=fastrack+watches+for+man&nsdOptOutParam=true&qid=1747415966&sprefix=fastrack+watches+for+man%2Caps%2C227&sr=8-32
+      - heading "Vyb Rebel Quartz Analog Green Dial Watch for Men" [level=2]
+    - button "4.1 out of 5 stars, rating details"
+    - link "10 ratings":
+      - /url: /Fastrack-Rebel-Quartz-Analog-Green/dp/B0DTTV1F9C/ref=sr_1_32?crid=1W90282OOSS0O&dib=eyJ2IjoiMSJ9.6XcBA4w6Npm_pwAOvvXVcDAPsx0DXQfkVFdJcc8795AOyRoEAhGIodxusTSNBOZ8GZ7QBjv4Xt1bRcOCSc7OPyg0r7pbMkcvB09GR1rcV2Hv6-XZa7g2Q8g8nJ7gGOcgFAOZyjmW0D8EBSwRzt5ZLhyzgrlRZDQO2I47cGai7f1oUrbIgt_sp2btrvSp45rWYR6j0JmsaV8Wsx-9rp2JS-7UU9pPDNHCoUby43irvwg_ifcPUtb6FRLvaWwBvj-JicFnhFTLKr8rqCKZmUSCEVOjPRvoBdaW3KTXPWtRxY8.QetsUIpXMVylXIFUheBctZesc8qVn29qmyuGSeKzctY&dib_tag=se&keywords=fastrack+watches+for+man&nsdOptOutParam=true&qid=1747415966&sprefix=fastrack+watches+for+man%2Caps%2C227&sr=8-32#customerReviews
+    - text: 100+ bought in past month Price, product page
+    - link "₹1,473":
+      - /url: /Fastrack-Rebel-Quartz-Analog-Green/dp/B0DTTV1F9C/ref=sr_1_32?crid=1W90282OOSS0O&dib=eyJ2IjoiMSJ9.6XcBA4w6Npm_pwAOvvXVcDAPsx0DXQfkVFdJcc8795AOyRoEAhGIodxusTSNBOZ8GZ7QBjv4Xt1bRcOCSc7OPyg0r7pbMkcvB09GR1rcV2Hv6-XZa7g2Q8g8nJ7gGOcgFAOZyjmW0D8EBSwRzt5ZLhyzgrlRZDQO2I47cGai7f1oUrbIgt_sp2btrvSp45rWYR6j0JmsaV8Wsx-9rp2JS-7UU9pPDNHCoUby43irvwg_ifcPUtb6FRLvaWwBvj-JicFnhFTLKr8rqCKZmUSCEVOjPRvoBdaW3KTXPWtRxY8.QetsUIpXMVylXIFUheBctZesc8qVn29qmyuGSeKzctY&dib_tag=se&keywords=fastrack+watches+for+man&nsdOptOutParam=true&qid=1747415966&sprefix=fastrack+watches+for+man%2Caps%2C227&sr=8-32
+    - text: Up to 5% back with Amazon Pay ICICI card
+    - img "Amazon Prime"
+    - text: FREE delivery Sun, 18 May
+    - button "Add to cart"
+  - listitem:
+    - link:
+      - /url: /Fastrack-Stainless-Watch-NL3039SM02-NN3039SM02-NP3039SM02/dp/B00DQQN51Q/ref=sr_1_33?crid=1W90282OOSS0O&dib=eyJ2IjoiMSJ9.6XcBA4w6Npm_pwAOvvXVcDAPsx0DXQfkVFdJcc8795AOyRoEAhGIodxusTSNBOZ8GZ7QBjv4Xt1bRcOCSc7OPyg0r7pbMkcvB09GR1rcV2Hv6-XZa7g2Q8g8nJ7gGOcgFAOZyjmW0D8EBSwRzt5ZLhyzgrlRZDQO2I47cGai7f1oUrbIgt_sp2btrvSp45rWYR6j0JmsaV8Wsx-9rp2JS-7UU9pPDNHCoUby43irvwg_ifcPUtb6FRLvaWwBvj-JicFnhFTLKr8rqCKZmUSCEVOjPRvoBdaW3KTXPWtRxY8.QetsUIpXMVylXIFUheBctZesc8qVn29qmyuGSeKzctY&dib_tag=se&keywords=fastrack+watches+for+man&nsdOptOutParam=true&qid=1747415966&sprefix=fastrack+watches+for+man%2Caps%2C227&sr=8-33
+    - heading "Fastrack" [level=2]
+    - link "Economy Analog Black Dial Men's Watch-NL3039SM02/NN3039SM02/NP3039SM02":
+      - /url: /Fastrack-Stainless-Watch-NL3039SM02-NN3039SM02-NP3039SM02/dp/B00DQQN51Q/ref=sr_1_33?crid=1W90282OOSS0O&dib=eyJ2IjoiMSJ9.6XcBA4w6Npm_pwAOvvXVcDAPsx0DXQfkVFdJcc8795AOyRoEAhGIodxusTSNBOZ8GZ7QBjv4Xt1bRcOCSc7OPyg0r7pbMkcvB09GR1rcV2Hv6-XZa7g2Q8g8nJ7gGOcgFAOZyjmW0D8EBSwRzt5ZLhyzgrlRZDQO2I47cGai7f1oUrbIgt_sp2btrvSp45rWYR6j0JmsaV8Wsx-9rp2JS-7UU9pPDNHCoUby43irvwg_ifcPUtb6FRLvaWwBvj-JicFnhFTLKr8rqCKZmUSCEVOjPRvoBdaW3KTXPWtRxY8.QetsUIpXMVylXIFUheBctZesc8qVn29qmyuGSeKzctY&dib_tag=se&keywords=fastrack+watches+for+man&nsdOptOutParam=true&qid=1747415966&sprefix=fastrack+watches+for+man%2Caps%2C227&sr=8-33
+      - heading "Economy Analog Black Dial Men's Watch-NL3039SM02/NN3039SM02/NP3039SM02" [level=2]
+    - button "4.1 out of 5 stars, rating details"
+    - link "3,831 ratings":
+      - /url: /Fastrack-Stainless-Watch-NL3039SM02-NN3039SM02-NP3039SM02/dp/B00DQQN51Q/ref=sr_1_33?crid=1W90282OOSS0O&dib=eyJ2IjoiMSJ9.6XcBA4w6Npm_pwAOvvXVcDAPsx0DXQfkVFdJcc8795AOyRoEAhGIodxusTSNBOZ8GZ7QBjv4Xt1bRcOCSc7OPyg0r7pbMkcvB09GR1rcV2Hv6-XZa7g2Q8g8nJ7gGOcgFAOZyjmW0D8EBSwRzt5ZLhyzgrlRZDQO2I47cGai7f1oUrbIgt_sp2btrvSp45rWYR6j0JmsaV8Wsx-9rp2JS-7UU9pPDNHCoUby43irvwg_ifcPUtb6FRLvaWwBvj-JicFnhFTLKr8rqCKZmUSCEVOjPRvoBdaW3KTXPWtRxY8.QetsUIpXMVylXIFUheBctZesc8qVn29qmyuGSeKzctY&dib_tag=se&keywords=fastrack+watches+for+man&nsdOptOutParam=true&qid=1747415966&sprefix=fastrack+watches+for+man%2Caps%2C227&sr=8-33#customerReviews
+    - text: 100+ bought in past month
+    - link "Limited time deal":
+      - /url: /gp/goldbox/
+    - text: Price, product page
+    - 'link "₹1,871 M.R.P: ₹2,495 M.R.P: ₹2,495"':
+      - /url: /Fastrack-Stainless-Watch-NL3039SM02-NN3039SM02-NP3039SM02/dp/B00DQQN51Q/ref=sr_1_33?crid=1W90282OOSS0O&dib=eyJ2IjoiMSJ9.6XcBA4w6Npm_pwAOvvXVcDAPsx0DXQfkVFdJcc8795AOyRoEAhGIodxusTSNBOZ8GZ7QBjv4Xt1bRcOCSc7OPyg0r7pbMkcvB09GR1rcV2Hv6-XZa7g2Q8g8nJ7gGOcgFAOZyjmW0D8EBSwRzt5ZLhyzgrlRZDQO2I47cGai7f1oUrbIgt_sp2btrvSp45rWYR6j0JmsaV8Wsx-9rp2JS-7UU9pPDNHCoUby43irvwg_ifcPUtb6FRLvaWwBvj-JicFnhFTLKr8rqCKZmUSCEVOjPRvoBdaW3KTXPWtRxY8.QetsUIpXMVylXIFUheBctZesc8qVn29qmyuGSeKzctY&dib_tag=se&keywords=fastrack+watches+for+man&nsdOptOutParam=true&qid=1747415966&sprefix=fastrack+watches+for+man%2Caps%2C227&sr=8-33
+    - text: (25% off)
+    - img "Amazon Prime"
+    - text: FREE delivery Mon, 19 May
+    - button "Add to cart"
+  - listitem:
+    - link:
+      - /url: /Fastrack-Quartz-Digital-Silicone-Guys-NS38035SP03/dp/B079H9VFRR/ref=sr_1_34?crid=1W90282OOSS0O&dib=eyJ2IjoiMSJ9.6XcBA4w6Npm_pwAOvvXVcDAPsx0DXQfkVFdJcc8795AOyRoEAhGIodxusTSNBOZ8GZ7QBjv4Xt1bRcOCSc7OPyg0r7pbMkcvB09GR1rcV2Hv6-XZa7g2Q8g8nJ7gGOcgFAOZyjmW0D8EBSwRzt5ZLhyzgrlRZDQO2I47cGai7f1oUrbIgt_sp2btrvSp45rWYR6j0JmsaV8Wsx-9rp2JS-7UU9pPDNHCoUby43irvwg_ifcPUtb6FRLvaWwBvj-JicFnhFTLKr8rqCKZmUSCEVOjPRvoBdaW3KTXPWtRxY8.QetsUIpXMVylXIFUheBctZesc8qVn29qmyuGSeKzctY&dib_tag=se&keywords=fastrack+watches+for+man&nsdOptOutParam=true&qid=1747415966&sprefix=fastrack+watches+for+man%2Caps%2C227&sr=8-34
+    - heading "Fastrack" [level=2]
+    - link "Autumn-Winter 19 Analog-Digital Orange Dial Men's Watch NM38035SP03/NN38035SP03":
+      - /url: /Fastrack-Quartz-Digital-Silicone-Guys-NS38035SP03/dp/B079H9VFRR/ref=sr_1_34?crid=1W90282OOSS0O&dib=eyJ2IjoiMSJ9.6XcBA4w6Npm_pwAOvvXVcDAPsx0DXQfkVFdJcc8795AOyRoEAhGIodxusTSNBOZ8GZ7QBjv4Xt1bRcOCSc7OPyg0r7pbMkcvB09GR1rcV2Hv6-XZa7g2Q8g8nJ7gGOcgFAOZyjmW0D8EBSwRzt5ZLhyzgrlRZDQO2I47cGai7f1oUrbIgt_sp2btrvSp45rWYR6j0JmsaV8Wsx-9rp2JS-7UU9pPDNHCoUby43irvwg_ifcPUtb6FRLvaWwBvj-JicFnhFTLKr8rqCKZmUSCEVOjPRvoBdaW3KTXPWtRxY8.QetsUIpXMVylXIFUheBctZesc8qVn29qmyuGSeKzctY&dib_tag=se&keywords=fastrack+watches+for+man&nsdOptOutParam=true&qid=1747415966&sprefix=fastrack+watches+for+man%2Caps%2C227&sr=8-34
+      - heading "Autumn-Winter 19 Analog-Digital Orange Dial Men's Watch NM38035SP03/NN38035SP03" [level=2]
+    - button "4.3 out of 5 stars, rating details"
+    - link "861 ratings":
+      - /url: /Fastrack-Quartz-Digital-Silicone-Guys-NS38035SP03/dp/B079H9VFRR/ref=sr_1_34?crid=1W90282OOSS0O&dib=eyJ2IjoiMSJ9.6XcBA4w6Npm_pwAOvvXVcDAPsx0DXQfkVFdJcc8795AOyRoEAhGIodxusTSNBOZ8GZ7QBjv4Xt1bRcOCSc7OPyg0r7pbMkcvB09GR1rcV2Hv6-XZa7g2Q8g8nJ7gGOcgFAOZyjmW0D8EBSwRzt5ZLhyzgrlRZDQO2I47cGai7f1oUrbIgt_sp2btrvSp45rWYR6j0JmsaV8Wsx-9rp2JS-7UU9pPDNHCoUby43irvwg_ifcPUtb6FRLvaWwBvj-JicFnhFTLKr8rqCKZmUSCEVOjPRvoBdaW3KTXPWtRxY8.QetsUIpXMVylXIFUheBctZesc8qVn29qmyuGSeKzctY&dib_tag=se&keywords=fastrack+watches+for+man&nsdOptOutParam=true&qid=1747415966&sprefix=fastrack+watches+for+man%2Caps%2C227&sr=8-34#customerReviews
+    - text: 50+ bought in past month
+    - link "Limited time deal":
+      - /url: /gp/goldbox/
+    - text: Price, product page
+    - 'link "₹3,746 M.R.P: ₹4,495 M.R.P: ₹4,495"':
+      - /url: /Fastrack-Quartz-Digital-Silicone-Guys-NS38035SP03/dp/B079H9VFRR/ref=sr_1_34?crid=1W90282OOSS0O&dib=eyJ2IjoiMSJ9.6XcBA4w6Npm_pwAOvvXVcDAPsx0DXQfkVFdJcc8795AOyRoEAhGIodxusTSNBOZ8GZ7QBjv4Xt1bRcOCSc7OPyg0r7pbMkcvB09GR1rcV2Hv6-XZa7g2Q8g8nJ7gGOcgFAOZyjmW0D8EBSwRzt5ZLhyzgrlRZDQO2I47cGai7f1oUrbIgt_sp2btrvSp45rWYR6j0JmsaV8Wsx-9rp2JS-7UU9pPDNHCoUby43irvwg_ifcPUtb6FRLvaWwBvj-JicFnhFTLKr8rqCKZmUSCEVOjPRvoBdaW3KTXPWtRxY8.QetsUIpXMVylXIFUheBctZesc8qVn29qmyuGSeKzctY&dib_tag=se&keywords=fastrack+watches+for+man&nsdOptOutParam=true&qid=1747415966&sprefix=fastrack+watches+for+man%2Caps%2C227&sr=8-34
+    - text: (17% off) 10% Off on Select Bank Cards
+    - img "Amazon Prime"
+    - text: FREE delivery Mon, 19 May
+    - button "Add to cart"
+  - listitem:
+    - link:
+      - /url: /Fastrack-Stunners-Quartz-Leather-Guys-NR3291SL01/dp/B0BHTGTF8K/ref=sr_1_35?crid=1W90282OOSS0O&dib=eyJ2IjoiMSJ9.6XcBA4w6Npm_pwAOvvXVcDAPsx0DXQfkVFdJcc8795AOyRoEAhGIodxusTSNBOZ8GZ7QBjv4Xt1bRcOCSc7OPyg0r7pbMkcvB09GR1rcV2Hv6-XZa7g2Q8g8nJ7gGOcgFAOZyjmW0D8EBSwRzt5ZLhyzgrlRZDQO2I47cGai7f1oUrbIgt_sp2btrvSp45rWYR6j0JmsaV8Wsx-9rp2JS-7UU9pPDNHCoUby43irvwg_ifcPUtb6FRLvaWwBvj-JicFnhFTLKr8rqCKZmUSCEVOjPRvoBdaW3KTXPWtRxY8.QetsUIpXMVylXIFUheBctZesc8qVn29qmyuGSeKzctY&dib_tag=se&keywords=fastrack+watches+for+man&nsdOptOutParam=true&qid=1747415966&sprefix=fastrack+watches+for+man%2Caps%2C227&sr=8-35
+    - heading "Fastrack" [level=2]
+    - link "Mens Stunners Quartz Analog Grey Dial Leather Strap Watch for Guys-NR3291SL01":
+      - /url: /Fastrack-Stunners-Quartz-Leather-Guys-NR3291SL01/dp/B0BHTGTF8K/ref=sr_1_35?crid=1W90282OOSS0O&dib=eyJ2IjoiMSJ9.6XcBA4w6Npm_pwAOvvXVcDAPsx0DXQfkVFdJcc8795AOyRoEAhGIodxusTSNBOZ8GZ7QBjv4Xt1bRcOCSc7OPyg0r7pbMkcvB09GR1rcV2Hv6-XZa7g2Q8g8nJ7gGOcgFAOZyjmW0D8EBSwRzt5ZLhyzgrlRZDQO2I47cGai7f1oUrbIgt_sp2btrvSp45rWYR6j0JmsaV8Wsx-9rp2JS-7UU9pPDNHCoUby43irvwg_ifcPUtb6FRLvaWwBvj-JicFnhFTLKr8rqCKZmUSCEVOjPRvoBdaW3KTXPWtRxY8.QetsUIpXMVylXIFUheBctZesc8qVn29qmyuGSeKzctY&dib_tag=se&keywords=fastrack+watches+for+man&nsdOptOutParam=true&qid=1747415966&sprefix=fastrack+watches+for+man%2Caps%2C227&sr=8-35
+      - heading "Mens Stunners Quartz Analog Grey Dial Leather Strap Watch for Guys-NR3291SL01" [level=2]
+    - button "4.3 out of 5 stars, rating details"
+    - link "85 ratings":
+      - /url: /Fastrack-Stunners-Quartz-Leather-Guys-NR3291SL01/dp/B0BHTGTF8K/ref=sr_1_35?crid=1W90282OOSS0O&dib=eyJ2IjoiMSJ9.6XcBA4w6Npm_pwAOvvXVcDAPsx0DXQfkVFdJcc8795AOyRoEAhGIodxusTSNBOZ8GZ7QBjv4Xt1bRcOCSc7OPyg0r7pbMkcvB09GR1rcV2Hv6-XZa7g2Q8g8nJ7gGOcgFAOZyjmW0D8EBSwRzt5ZLhyzgrlRZDQO2I47cGai7f1oUrbIgt_sp2btrvSp45rWYR6j0JmsaV8Wsx-9rp2JS-7UU9pPDNHCoUby43irvwg_ifcPUtb6FRLvaWwBvj-JicFnhFTLKr8rqCKZmUSCEVOjPRvoBdaW3KTXPWtRxY8.QetsUIpXMVylXIFUheBctZesc8qVn29qmyuGSeKzctY&dib_tag=se&keywords=fastrack+watches+for+man&nsdOptOutParam=true&qid=1747415966&sprefix=fastrack+watches+for+man%2Caps%2C227&sr=8-35#customerReviews
+    - text: 50+ bought in past month
+    - link "Limited time deal":
+      - /url: /gp/goldbox/
+    - text: Price, product page
+    - 'link "₹1,196 M.R.P: ₹1,495 M.R.P: ₹1,495"':
+      - /url: /Fastrack-Stunners-Quartz-Leather-Guys-NR3291SL01/dp/B0BHTGTF8K/ref=sr_1_35?crid=1W90282OOSS0O&dib=eyJ2IjoiMSJ9.6XcBA4w6Npm_pwAOvvXVcDAPsx0DXQfkVFdJcc8795AOyRoEAhGIodxusTSNBOZ8GZ7QBjv4Xt1bRcOCSc7OPyg0r7pbMkcvB09GR1rcV2Hv6-XZa7g2Q8g8nJ7gGOcgFAOZyjmW0D8EBSwRzt5ZLhyzgrlRZDQO2I47cGai7f1oUrbIgt_sp2btrvSp45rWYR6j0JmsaV8Wsx-9rp2JS-7UU9pPDNHCoUby43irvwg_ifcPUtb6FRLvaWwBvj-JicFnhFTLKr8rqCKZmUSCEVOjPRvoBdaW3KTXPWtRxY8.QetsUIpXMVylXIFUheBctZesc8qVn29qmyuGSeKzctY&dib_tag=se&keywords=fastrack+watches+for+man&nsdOptOutParam=true&qid=1747415966&sprefix=fastrack+watches+for+man%2Caps%2C227&sr=8-35
+    - text: (20% off)
+    - img "Amazon Prime"
+    - text: FREE delivery Sun, 18 May Or fastest delivery Tomorrow, 17 May
+    - button "Add to cart"
+  - listitem:
+    - link:
+      - /url: /Fastrack-Plastic-High-Quality-Elegant-Resistant/dp/B01N359CBI/ref=sr_1_36?crid=1W90282OOSS0O&dib=eyJ2IjoiMSJ9.6XcBA4w6Npm_pwAOvvXVcDAPsx0DXQfkVFdJcc8795AOyRoEAhGIodxusTSNBOZ8GZ7QBjv4Xt1bRcOCSc7OPyg0r7pbMkcvB09GR1rcV2Hv6-XZa7g2Q8g8nJ7gGOcgFAOZyjmW0D8EBSwRzt5ZLhyzgrlRZDQO2I47cGai7f1oUrbIgt_sp2btrvSp45rWYR6j0JmsaV8Wsx-9rp2JS-7UU9pPDNHCoUby43irvwg_ifcPUtb6FRLvaWwBvj-JicFnhFTLKr8rqCKZmUSCEVOjPRvoBdaW3KTXPWtRxY8.QetsUIpXMVylXIFUheBctZesc8qVn29qmyuGSeKzctY&dib_tag=se&keywords=fastrack+watches+for+man&nsdOptOutParam=true&qid=1747415966&sprefix=fastrack+watches+for+man%2Caps%2C227&sr=8-36
+    - heading "Fastrack" [level=2]
+    - link "Quartz Analog Black Dial Plastic Strap Watch for Unisex-NS38003PP13W/NT38003PP13W":
+      - /url: /Fastrack-Plastic-High-Quality-Elegant-Resistant/dp/B01N359CBI/ref=sr_1_36?crid=1W90282OOSS0O&dib=eyJ2IjoiMSJ9.6XcBA4w6Npm_pwAOvvXVcDAPsx0DXQfkVFdJcc8795AOyRoEAhGIodxusTSNBOZ8GZ7QBjv4Xt1bRcOCSc7OPyg0r7pbMkcvB09GR1rcV2Hv6-XZa7g2Q8g8nJ7gGOcgFAOZyjmW0D8EBSwRzt5ZLhyzgrlRZDQO2I47cGai7f1oUrbIgt_sp2btrvSp45rWYR6j0JmsaV8Wsx-9rp2JS-7UU9pPDNHCoUby43irvwg_ifcPUtb6FRLvaWwBvj-JicFnhFTLKr8rqCKZmUSCEVOjPRvoBdaW3KTXPWtRxY8.QetsUIpXMVylXIFUheBctZesc8qVn29qmyuGSeKzctY&dib_tag=se&keywords=fastrack+watches+for+man&nsdOptOutParam=true&qid=1747415966&sprefix=fastrack+watches+for+man%2Caps%2C227&sr=8-36
+      - heading "Quartz Analog Black Dial Plastic Strap Watch for Unisex-NS38003PP13W/NT38003PP13W" [level=2]
+    - button "4.2 out of 5 stars, rating details"
+    - link "3,932 ratings":
+      - /url: /Fastrack-Plastic-High-Quality-Elegant-Resistant/dp/B01N359CBI/ref=sr_1_36?crid=1W90282OOSS0O&dib=eyJ2IjoiMSJ9.6XcBA4w6Npm_pwAOvvXVcDAPsx0DXQfkVFdJcc8795AOyRoEAhGIodxusTSNBOZ8GZ7QBjv4Xt1bRcOCSc7OPyg0r7pbMkcvB09GR1rcV2Hv6-XZa7g2Q8g8nJ7gGOcgFAOZyjmW0D8EBSwRzt5ZLhyzgrlRZDQO2I47cGai7f1oUrbIgt_sp2btrvSp45rWYR6j0JmsaV8Wsx-9rp2JS-7UU9pPDNHCoUby43irvwg_ifcPUtb6FRLvaWwBvj-JicFnhFTLKr8rqCKZmUSCEVOjPRvoBdaW3KTXPWtRxY8.QetsUIpXMVylXIFUheBctZesc8qVn29qmyuGSeKzctY&dib_tag=se&keywords=fastrack+watches+for+man&nsdOptOutParam=true&qid=1747415966&sprefix=fastrack+watches+for+man%2Caps%2C227&sr=8-36#customerReviews
+    - text: 300+ bought in past month Price, product page
+    - link "₹825":
+      - /url: /Fastrack-Plastic-High-Quality-Elegant-Resistant/dp/B01N359CBI/ref=sr_1_36?crid=1W90282OOSS0O&dib=eyJ2IjoiMSJ9.6XcBA4w6Npm_pwAOvvXVcDAPsx0DXQfkVFdJcc8795AOyRoEAhGIodxusTSNBOZ8GZ7QBjv4Xt1bRcOCSc7OPyg0r7pbMkcvB09GR1rcV2Hv6-XZa7g2Q8g8nJ7gGOcgFAOZyjmW0D8EBSwRzt5ZLhyzgrlRZDQO2I47cGai7f1oUrbIgt_sp2btrvSp45rWYR6j0JmsaV8Wsx-9rp2JS-7UU9pPDNHCoUby43irvwg_ifcPUtb6FRLvaWwBvj-JicFnhFTLKr8rqCKZmUSCEVOjPRvoBdaW3KTXPWtRxY8.QetsUIpXMVylXIFUheBctZesc8qVn29qmyuGSeKzctY&dib_tag=se&keywords=fastrack+watches+for+man&nsdOptOutParam=true&qid=1747415966&sprefix=fastrack+watches+for+man%2Caps%2C227&sr=8-36
+    - img "Amazon Prime"
+    - text: FREE delivery Sun, 18 May Or fastest delivery Tomorrow, 17 May
+    - button "Add to cart"
+  - listitem:
+    - link:
+      - /url: /Fastrack-Casual-Analog-Silver-Watch-3254SM01/dp/B091F5CBDZ/ref=sr_1_37?crid=1W90282OOSS0O&dib=eyJ2IjoiMSJ9.6XcBA4w6Npm_pwAOvvXVcDAPsx0DXQfkVFdJcc8795AOyRoEAhGIodxusTSNBOZ8GZ7QBjv4Xt1bRcOCSc7OPyg0r7pbMkcvB09GR1rcV2Hv6-XZa7g2Q8g8nJ7gGOcgFAOZyjmW0D8EBSwRzt5ZLhyzgrlRZDQO2I47cGai7f1oUrbIgt_sp2btrvSp45rWYR6j0JmsaV8Wsx-9rp2JS-7UU9pPDNHCoUby43irvwg_ifcPUtb6FRLvaWwBvj-JicFnhFTLKr8rqCKZmUSCEVOjPRvoBdaW3KTXPWtRxY8.QetsUIpXMVylXIFUheBctZesc8qVn29qmyuGSeKzctY&dib_tag=se&keywords=fastrack+watches+for+man&nsdOptOutParam=true&qid=1747415966&sprefix=fastrack+watches+for+man%2Caps%2C227&sr=8-37
+    - heading "Fastrack" [level=2]
+    - link "Casual Analog Silver Dial Men's Watch-3254SM01":
+      - /url: /Fastrack-Casual-Analog-Silver-Watch-3254SM01/dp/B091F5CBDZ/ref=sr_1_37?crid=1W90282OOSS0O&dib=eyJ2IjoiMSJ9.6XcBA4w6Npm_pwAOvvXVcDAPsx0DXQfkVFdJcc8795AOyRoEAhGIodxusTSNBOZ8GZ7QBjv4Xt1bRcOCSc7OPyg0r7pbMkcvB09GR1rcV2Hv6-XZa7g2Q8g8nJ7gGOcgFAOZyjmW0D8EBSwRzt5ZLhyzgrlRZDQO2I47cGai7f1oUrbIgt_sp2btrvSp45rWYR6j0JmsaV8Wsx-9rp2JS-7UU9pPDNHCoUby43irvwg_ifcPUtb6FRLvaWwBvj-JicFnhFTLKr8rqCKZmUSCEVOjPRvoBdaW3KTXPWtRxY8.QetsUIpXMVylXIFUheBctZesc8qVn29qmyuGSeKzctY&dib_tag=se&keywords=fastrack+watches+for+man&nsdOptOutParam=true&qid=1747415966&sprefix=fastrack+watches+for+man%2Caps%2C227&sr=8-37
+      - heading "Casual Analog Silver Dial Men's Watch-3254SM01" [level=2]
+    - button "4.0 out of 5 stars, rating details"
+    - link "260 ratings":
+      - /url: /Fastrack-Casual-Analog-Silver-Watch-3254SM01/dp/B091F5CBDZ/ref=sr_1_37?crid=1W90282OOSS0O&dib=eyJ2IjoiMSJ9.6XcBA4w6Npm_pwAOvvXVcDAPsx0DXQfkVFdJcc8795AOyRoEAhGIodxusTSNBOZ8GZ7QBjv4Xt1bRcOCSc7OPyg0r7pbMkcvB09GR1rcV2Hv6-XZa7g2Q8g8nJ7gGOcgFAOZyjmW0D8EBSwRzt5ZLhyzgrlRZDQO2I47cGai7f1oUrbIgt_sp2btrvSp45rWYR6j0JmsaV8Wsx-9rp2JS-7UU9pPDNHCoUby43irvwg_ifcPUtb6FRLvaWwBvj-JicFnhFTLKr8rqCKZmUSCEVOjPRvoBdaW3KTXPWtRxY8.QetsUIpXMVylXIFUheBctZesc8qVn29qmyuGSeKzctY&dib_tag=se&keywords=fastrack+watches+for+man&nsdOptOutParam=true&qid=1747415966&sprefix=fastrack+watches+for+man%2Caps%2C227&sr=8-37#customerReviews
+    - text: 100+ bought in past month
+    - link "Limited time deal":
+      - /url: /gp/goldbox/
+    - text: Price, product page
+    - 'link "₹1,721 M.R.P: ₹2,095 M.R.P: ₹2,095"':
+      - /url: /Fastrack-Casual-Analog-Silver-Watch-3254SM01/dp/B091F5CBDZ/ref=sr_1_37?crid=1W90282OOSS0O&dib=eyJ2IjoiMSJ9.6XcBA4w6Npm_pwAOvvXVcDAPsx0DXQfkVFdJcc8795AOyRoEAhGIodxusTSNBOZ8GZ7QBjv4Xt1bRcOCSc7OPyg0r7pbMkcvB09GR1rcV2Hv6-XZa7g2Q8g8nJ7gGOcgFAOZyjmW0D8EBSwRzt5ZLhyzgrlRZDQO2I47cGai7f1oUrbIgt_sp2btrvSp45rWYR6j0JmsaV8Wsx-9rp2JS-7UU9pPDNHCoUby43irvwg_ifcPUtb6FRLvaWwBvj-JicFnhFTLKr8rqCKZmUSCEVOjPRvoBdaW3KTXPWtRxY8.QetsUIpXMVylXIFUheBctZesc8qVn29qmyuGSeKzctY&dib_tag=se&keywords=fastrack+watches+for+man&nsdOptOutParam=true&qid=1747415966&sprefix=fastrack+watches+for+man%2Caps%2C227&sr=8-37
+    - text: (18% off)
+    - img "Amazon Prime"
+    - text: FREE delivery Sun, 18 May Or fastest delivery Tomorrow, 17 May
+    - button "Add to cart"
+  - listitem:
+    - link:
+      - /url: /SF-Quartz-Analog-White-Men-NS7930PP01/dp/B00ECWG1NC/ref=sr_1_38?crid=1W90282OOSS0O&dib=eyJ2IjoiMSJ9.6XcBA4w6Npm_pwAOvvXVcDAPsx0DXQfkVFdJcc8795AOyRoEAhGIodxusTSNBOZ8GZ7QBjv4Xt1bRcOCSc7OPyg0r7pbMkcvB09GR1rcV2Hv6-XZa7g2Q8g8nJ7gGOcgFAOZyjmW0D8EBSwRzt5ZLhyzgrlRZDQO2I47cGai7f1oUrbIgt_sp2btrvSp45rWYR6j0JmsaV8Wsx-9rp2JS-7UU9pPDNHCoUby43irvwg_ifcPUtb6FRLvaWwBvj-JicFnhFTLKr8rqCKZmUSCEVOjPRvoBdaW3KTXPWtRxY8.QetsUIpXMVylXIFUheBctZesc8qVn29qmyuGSeKzctY&dib_tag=se&keywords=fastrack+watches+for+man&nsdOptOutParam=true&qid=1747415966&sprefix=fastrack+watches+for+man%2Caps%2C227&sr=8-38
+    - heading "Sonata" [level=2]
+    - link "Quartz Analog White Dial Watch for Men-NS7930PP01":
+      - /url: /SF-Quartz-Analog-White-Men-NS7930PP01/dp/B00ECWG1NC/ref=sr_1_38?crid=1W90282OOSS0O&dib=eyJ2IjoiMSJ9.6XcBA4w6Npm_pwAOvvXVcDAPsx0DXQfkVFdJcc8795AOyRoEAhGIodxusTSNBOZ8GZ7QBjv4Xt1bRcOCSc7OPyg0r7pbMkcvB09GR1rcV2Hv6-XZa7g2Q8g8nJ7gGOcgFAOZyjmW0D8EBSwRzt5ZLhyzgrlRZDQO2I47cGai7f1oUrbIgt_sp2btrvSp45rWYR6j0JmsaV8Wsx-9rp2JS-7UU9pPDNHCoUby43irvwg_ifcPUtb6FRLvaWwBvj-JicFnhFTLKr8rqCKZmUSCEVOjPRvoBdaW3KTXPWtRxY8.QetsUIpXMVylXIFUheBctZesc8qVn29qmyuGSeKzctY&dib_tag=se&keywords=fastrack+watches+for+man&nsdOptOutParam=true&qid=1747415966&sprefix=fastrack+watches+for+man%2Caps%2C227&sr=8-38
+      - heading "Quartz Analog White Dial Watch for Men-NS7930PP01" [level=2]
+    - button "3.9 out of 5 stars, rating details"
+    - link "11,752 ratings":
+      - /url: /SF-Quartz-Analog-White-Men-NS7930PP01/dp/B00ECWG1NC/ref=sr_1_38?crid=1W90282OOSS0O&dib=eyJ2IjoiMSJ9.6XcBA4w6Npm_pwAOvvXVcDAPsx0DXQfkVFdJcc8795AOyRoEAhGIodxusTSNBOZ8GZ7QBjv4Xt1bRcOCSc7OPyg0r7pbMkcvB09GR1rcV2Hv6-XZa7g2Q8g8nJ7gGOcgFAOZyjmW0D8EBSwRzt5ZLhyzgrlRZDQO2I47cGai7f1oUrbIgt_sp2btrvSp45rWYR6j0JmsaV8Wsx-9rp2JS-7UU9pPDNHCoUby43irvwg_ifcPUtb6FRLvaWwBvj-JicFnhFTLKr8rqCKZmUSCEVOjPRvoBdaW3KTXPWtRxY8.QetsUIpXMVylXIFUheBctZesc8qVn29qmyuGSeKzctY&dib_tag=se&keywords=fastrack+watches+for+man&nsdOptOutParam=true&qid=1747415966&sprefix=fastrack+watches+for+man%2Caps%2C227&sr=8-38#customerReviews
+    - text: 900+ bought in past month Price, product page
+    - link "₹675":
+      - /url: /SF-Quartz-Analog-White-Men-NS7930PP01/dp/B00ECWG1NC/ref=sr_1_38?crid=1W90282OOSS0O&dib=eyJ2IjoiMSJ9.6XcBA4w6Npm_pwAOvvXVcDAPsx0DXQfkVFdJcc8795AOyRoEAhGIodxusTSNBOZ8GZ7QBjv4Xt1bRcOCSc7OPyg0r7pbMkcvB09GR1rcV2Hv6-XZa7g2Q8g8nJ7gGOcgFAOZyjmW0D8EBSwRzt5ZLhyzgrlRZDQO2I47cGai7f1oUrbIgt_sp2btrvSp45rWYR6j0JmsaV8Wsx-9rp2JS-7UU9pPDNHCoUby43irvwg_ifcPUtb6FRLvaWwBvj-JicFnhFTLKr8rqCKZmUSCEVOjPRvoBdaW3KTXPWtRxY8.QetsUIpXMVylXIFUheBctZesc8qVn29qmyuGSeKzctY&dib_tag=se&keywords=fastrack+watches+for+man&nsdOptOutParam=true&qid=1747415966&sprefix=fastrack+watches+for+man%2Caps%2C227&sr=8-38
+    - img "Amazon Prime"
+    - text: FREE delivery Sun, 18 May Or fastest delivery Tomorrow, 17 May
+    - button "Add to cart"
+  - listitem:
+    - link:
+      - /url: /Fastrack-Hustler-Quartz-Analog-Watch/dp/B0DTTYBGM7/ref=sr_1_39?crid=1W90282OOSS0O&dib=eyJ2IjoiMSJ9.6XcBA4w6Npm_pwAOvvXVcDAPsx0DXQfkVFdJcc8795AOyRoEAhGIodxusTSNBOZ8GZ7QBjv4Xt1bRcOCSc7OPyg0r7pbMkcvB09GR1rcV2Hv6-XZa7g2Q8g8nJ7gGOcgFAOZyjmW0D8EBSwRzt5ZLhyzgrlRZDQO2I47cGai7f1oUrbIgt_sp2btrvSp45rWYR6j0JmsaV8Wsx-9rp2JS-7UU9pPDNHCoUby43irvwg_ifcPUtb6FRLvaWwBvj-JicFnhFTLKr8rqCKZmUSCEVOjPRvoBdaW3KTXPWtRxY8.QetsUIpXMVylXIFUheBctZesc8qVn29qmyuGSeKzctY&dib_tag=se&keywords=fastrack+watches+for+man&nsdOptOutParam=true&qid=1747415966&sprefix=fastrack+watches+for+man%2Caps%2C227&sr=8-39
+    - heading "Fastrack" [level=2]
+    - link "Vyb Hustler Quartz Analog Grey Dial Watch for Men":
+      - /url: /Fastrack-Hustler-Quartz-Analog-Watch/dp/B0DTTYBGM7/ref=sr_1_39?crid=1W90282OOSS0O&dib=eyJ2IjoiMSJ9.6XcBA4w6Npm_pwAOvvXVcDAPsx0DXQfkVFdJcc8795AOyRoEAhGIodxusTSNBOZ8GZ7QBjv4Xt1bRcOCSc7OPyg0r7pbMkcvB09GR1rcV2Hv6-XZa7g2Q8g8nJ7gGOcgFAOZyjmW0D8EBSwRzt5ZLhyzgrlRZDQO2I47cGai7f1oUrbIgt_sp2btrvSp45rWYR6j0JmsaV8Wsx-9rp2JS-7UU9pPDNHCoUby43irvwg_ifcPUtb6FRLvaWwBvj-JicFnhFTLKr8rqCKZmUSCEVOjPRvoBdaW3KTXPWtRxY8.QetsUIpXMVylXIFUheBctZesc8qVn29qmyuGSeKzctY&dib_tag=se&keywords=fastrack+watches+for+man&nsdOptOutParam=true&qid=1747415966&sprefix=fastrack+watches+for+man%2Caps%2C227&sr=8-39
+      - heading "Vyb Hustler Quartz Analog Grey Dial Watch for Men" [level=2]
+    - button "4.2 out of 5 stars, rating details"
+    - link "40 ratings":
+      - /url: /Fastrack-Hustler-Quartz-Analog-Watch/dp/B0DTTYBGM7/ref=sr_1_39?crid=1W90282OOSS0O&dib=eyJ2IjoiMSJ9.6XcBA4w6Npm_pwAOvvXVcDAPsx0DXQfkVFdJcc8795AOyRoEAhGIodxusTSNBOZ8GZ7QBjv4Xt1bRcOCSc7OPyg0r7pbMkcvB09GR1rcV2Hv6-XZa7g2Q8g8nJ7gGOcgFAOZyjmW0D8EBSwRzt5ZLhyzgrlRZDQO2I47cGai7f1oUrbIgt_sp2btrvSp45rWYR6j0JmsaV8Wsx-9rp2JS-7UU9pPDNHCoUby43irvwg_ifcPUtb6FRLvaWwBvj-JicFnhFTLKr8rqCKZmUSCEVOjPRvoBdaW3KTXPWtRxY8.QetsUIpXMVylXIFUheBctZesc8qVn29qmyuGSeKzctY&dib_tag=se&keywords=fastrack+watches+for+man&nsdOptOutParam=true&qid=1747415966&sprefix=fastrack+watches+for+man%2Caps%2C227&sr=8-39#customerReviews
+    - text: 100+ bought in past month Price, product page
+    - 'link "₹1,648 M.R.P: ₹2,355 M.R.P: ₹2,355"':
+      - /url: /Fastrack-Hustler-Quartz-Analog-Watch/dp/B0DTTYBGM7/ref=sr_1_39?crid=1W90282OOSS0O&dib=eyJ2IjoiMSJ9.6XcBA4w6Npm_pwAOvvXVcDAPsx0DXQfkVFdJcc8795AOyRoEAhGIodxusTSNBOZ8GZ7QBjv4Xt1bRcOCSc7OPyg0r7pbMkcvB09GR1rcV2Hv6-XZa7g2Q8g8nJ7gGOcgFAOZyjmW0D8EBSwRzt5ZLhyzgrlRZDQO2I47cGai7f1oUrbIgt_sp2btrvSp45rWYR6j0JmsaV8Wsx-9rp2JS-7UU9pPDNHCoUby43irvwg_ifcPUtb6FRLvaWwBvj-JicFnhFTLKr8rqCKZmUSCEVOjPRvoBdaW3KTXPWtRxY8.QetsUIpXMVylXIFUheBctZesc8qVn29qmyuGSeKzctY&dib_tag=se&keywords=fastrack+watches+for+man&nsdOptOutParam=true&qid=1747415966&sprefix=fastrack+watches+for+man%2Caps%2C227&sr=8-39
+    - text: (30% off) Up to 5% back with Amazon Pay ICICI card
+    - img "Amazon Prime"
+    - text: FREE delivery Sun, 18 May Or fastest delivery Tomorrow, 17 May
+    - button "Add to cart"
+  - listitem:
+    - link:
+      - /url: /Fastrack-Green-Analog-Watch-3278SL03/dp/B0C1C1H6HT/ref=sr_1_40?crid=1W90282OOSS0O&dib=eyJ2IjoiMSJ9.6XcBA4w6Npm_pwAOvvXVcDAPsx0DXQfkVFdJcc8795AOyRoEAhGIodxusTSNBOZ8GZ7QBjv4Xt1bRcOCSc7OPyg0r7pbMkcvB09GR1rcV2Hv6-XZa7g2Q8g8nJ7gGOcgFAOZyjmW0D8EBSwRzt5ZLhyzgrlRZDQO2I47cGai7f1oUrbIgt_sp2btrvSp45rWYR6j0JmsaV8Wsx-9rp2JS-7UU9pPDNHCoUby43irvwg_ifcPUtb6FRLvaWwBvj-JicFnhFTLKr8rqCKZmUSCEVOjPRvoBdaW3KTXPWtRxY8.QetsUIpXMVylXIFUheBctZesc8qVn29qmyuGSeKzctY&dib_tag=se&keywords=fastrack+watches+for+man&nsdOptOutParam=true&qid=1747415966&sprefix=fastrack+watches+for+man%2Caps%2C227&sr=8-40
+    - heading "Fastrack" [level=2]
+    - link "Stunners Analog Mens Green Dial Leather Strap Watch for Guys-3278SL03":
+      - /url: /Fastrack-Green-Analog-Watch-3278SL03/dp/B0C1C1H6HT/ref=sr_1_40?crid=1W90282OOSS0O&dib=eyJ2IjoiMSJ9.6XcBA4w6Npm_pwAOvvXVcDAPsx0DXQfkVFdJcc8795AOyRoEAhGIodxusTSNBOZ8GZ7QBjv4Xt1bRcOCSc7OPyg0r7pbMkcvB09GR1rcV2Hv6-XZa7g2Q8g8nJ7gGOcgFAOZyjmW0D8EBSwRzt5ZLhyzgrlRZDQO2I47cGai7f1oUrbIgt_sp2btrvSp45rWYR6j0JmsaV8Wsx-9rp2JS-7UU9pPDNHCoUby43irvwg_ifcPUtb6FRLvaWwBvj-JicFnhFTLKr8rqCKZmUSCEVOjPRvoBdaW3KTXPWtRxY8.QetsUIpXMVylXIFUheBctZesc8qVn29qmyuGSeKzctY&dib_tag=se&keywords=fastrack+watches+for+man&nsdOptOutParam=true&qid=1747415966&sprefix=fastrack+watches+for+man%2Caps%2C227&sr=8-40
+      - heading "Stunners Analog Mens Green Dial Leather Strap Watch for Guys-3278SL03" [level=2]
+    - button "4.3 out of 5 stars, rating details"
+    - link "82 ratings":
+      - /url: /Fastrack-Green-Analog-Watch-3278SL03/dp/B0C1C1H6HT/ref=sr_1_40?crid=1W90282OOSS0O&dib=eyJ2IjoiMSJ9.6XcBA4w6Npm_pwAOvvXVcDAPsx0DXQfkVFdJcc8795AOyRoEAhGIodxusTSNBOZ8GZ7QBjv4Xt1bRcOCSc7OPyg0r7pbMkcvB09GR1rcV2Hv6-XZa7g2Q8g8nJ7gGOcgFAOZyjmW0D8EBSwRzt5ZLhyzgrlRZDQO2I47cGai7f1oUrbIgt_sp2btrvSp45rWYR6j0JmsaV8Wsx-9rp2JS-7UU9pPDNHCoUby43irvwg_ifcPUtb6FRLvaWwBvj-JicFnhFTLKr8rqCKZmUSCEVOjPRvoBdaW3KTXPWtRxY8.QetsUIpXMVylXIFUheBctZesc8qVn29qmyuGSeKzctY&dib_tag=se&keywords=fastrack+watches+for+man&nsdOptOutParam=true&qid=1747415966&sprefix=fastrack+watches+for+man%2Caps%2C227&sr=8-40#customerReviews
+    - text: 100+ bought in past month Price, product page
+    - link "₹1,395":
+      - /url: /Fastrack-Green-Analog-Watch-3278SL03/dp/B0C1C1H6HT/ref=sr_1_40?crid=1W90282OOSS0O&dib=eyJ2IjoiMSJ9.6XcBA4w6Npm_pwAOvvXVcDAPsx0DXQfkVFdJcc8795AOyRoEAhGIodxusTSNBOZ8GZ7QBjv4Xt1bRcOCSc7OPyg0r7pbMkcvB09GR1rcV2Hv6-XZa7g2Q8g8nJ7gGOcgFAOZyjmW0D8EBSwRzt5ZLhyzgrlRZDQO2I47cGai7f1oUrbIgt_sp2btrvSp45rWYR6j0JmsaV8Wsx-9rp2JS-7UU9pPDNHCoUby43irvwg_ifcPUtb6FRLvaWwBvj-JicFnhFTLKr8rqCKZmUSCEVOjPRvoBdaW3KTXPWtRxY8.QetsUIpXMVylXIFUheBctZesc8qVn29qmyuGSeKzctY&dib_tag=se&keywords=fastrack+watches+for+man&nsdOptOutParam=true&qid=1747415966&sprefix=fastrack+watches+for+man%2Caps%2C227&sr=8-40
+    - img "Amazon Prime"
+    - text: FREE delivery Wed, 21 May
+    - button "Add to cart"
+  - listitem:
+    - link:
+      - /url: /Fastrack-Analog-Anthracite-Dial-Watch-3321SM01/dp/B0DS23FV77/ref=sr_1_41?crid=1W90282OOSS0O&dib=eyJ2IjoiMSJ9.6XcBA4w6Npm_pwAOvvXVcDAPsx0DXQfkVFdJcc8795AOyRoEAhGIodxusTSNBOZ8GZ7QBjv4Xt1bRcOCSc7OPyg0r7pbMkcvB09GR1rcV2Hv6-XZa7g2Q8g8nJ7gGOcgFAOZyjmW0D8EBSwRzt5ZLhyzgrlRZDQO2I47cGai7f1oUrbIgt_sp2btrvSp45rWYR6j0JmsaV8Wsx-9rp2JS-7UU9pPDNHCoUby43irvwg_ifcPUtb6FRLvaWwBvj-JicFnhFTLKr8rqCKZmUSCEVOjPRvoBdaW3KTXPWtRxY8.QetsUIpXMVylXIFUheBctZesc8qVn29qmyuGSeKzctY&dib_tag=se&keywords=fastrack+watches+for+man&nsdOptOutParam=true&qid=1747415966&sprefix=fastrack+watches+for+man%2Caps%2C227&sr=8-41
+    - heading "Fastrack" [level=2]
+    - link "Analog Anthracite Dial Men's Watch-3321SM01":
+      - /url: /Fastrack-Analog-Anthracite-Dial-Watch-3321SM01/dp/B0DS23FV77/ref=sr_1_41?crid=1W90282OOSS0O&dib=eyJ2IjoiMSJ9.6XcBA4w6Npm_pwAOvvXVcDAPsx0DXQfkVFdJcc8795AOyRoEAhGIodxusTSNBOZ8GZ7QBjv4Xt1bRcOCSc7OPyg0r7pbMkcvB09GR1rcV2Hv6-XZa7g2Q8g8nJ7gGOcgFAOZyjmW0D8EBSwRzt5ZLhyzgrlRZDQO2I47cGai7f1oUrbIgt_sp2btrvSp45rWYR6j0JmsaV8Wsx-9rp2JS-7UU9pPDNHCoUby43irvwg_ifcPUtb6FRLvaWwBvj-JicFnhFTLKr8rqCKZmUSCEVOjPRvoBdaW3KTXPWtRxY8.QetsUIpXMVylXIFUheBctZesc8qVn29qmyuGSeKzctY&dib_tag=se&keywords=fastrack+watches+for+man&nsdOptOutParam=true&qid=1747415966&sprefix=fastrack+watches+for+man%2Caps%2C227&sr=8-41
+      - heading "Analog Anthracite Dial Men's Watch-3321SM01" [level=2]
+    - text: 30+ bought in past month Price, product page
+    - link "₹5,795":
+      - /url: /Fastrack-Analog-Anthracite-Dial-Watch-3321SM01/dp/B0DS23FV77/ref=sr_1_41?crid=1W90282OOSS0O&dib=eyJ2IjoiMSJ9.6XcBA4w6Npm_pwAOvvXVcDAPsx0DXQfkVFdJcc8795AOyRoEAhGIodxusTSNBOZ8GZ7QBjv4Xt1bRcOCSc7OPyg0r7pbMkcvB09GR1rcV2Hv6-XZa7g2Q8g8nJ7gGOcgFAOZyjmW0D8EBSwRzt5ZLhyzgrlRZDQO2I47cGai7f1oUrbIgt_sp2btrvSp45rWYR6j0JmsaV8Wsx-9rp2JS-7UU9pPDNHCoUby43irvwg_ifcPUtb6FRLvaWwBvj-JicFnhFTLKr8rqCKZmUSCEVOjPRvoBdaW3KTXPWtRxY8.QetsUIpXMVylXIFUheBctZesc8qVn29qmyuGSeKzctY&dib_tag=se&keywords=fastrack+watches+for+man&nsdOptOutParam=true&qid=1747415966&sprefix=fastrack+watches+for+man%2Caps%2C227&sr=8-41
+    - text: FREE delivery 21 - 23 May
+    - button "Add to cart"
+  - listitem:
+    - link:
+      - /url: /Fastrack-Wanderlust-Quartz-Silicone-Unisex-38024PP71W/dp/B0CWL1F2LY/ref=sr_1_42?crid=1W90282OOSS0O&dib=eyJ2IjoiMSJ9.6XcBA4w6Npm_pwAOvvXVcDAPsx0DXQfkVFdJcc8795AOyRoEAhGIodxusTSNBOZ8GZ7QBjv4Xt1bRcOCSc7OPyg0r7pbMkcvB09GR1rcV2Hv6-XZa7g2Q8g8nJ7gGOcgFAOZyjmW0D8EBSwRzt5ZLhyzgrlRZDQO2I47cGai7f1oUrbIgt_sp2btrvSp45rWYR6j0JmsaV8Wsx-9rp2JS-7UU9pPDNHCoUby43irvwg_ifcPUtb6FRLvaWwBvj-JicFnhFTLKr8rqCKZmUSCEVOjPRvoBdaW3KTXPWtRxY8.QetsUIpXMVylXIFUheBctZesc8qVn29qmyuGSeKzctY&dib_tag=se&keywords=fastrack+watches+for+man&nsdOptOutParam=true&qid=1747415966&sprefix=fastrack+watches+for+man%2Caps%2C227&sr=8-42
+    - heading "Fastrack" [level=2]
+    - link "Tees Wanderlust Quartz Analog Black Dial Silicone Strap Watch for Unisex-38024PP71W/NT38024PP71W":
+      - /url: /Fastrack-Wanderlust-Quartz-Silicone-Unisex-38024PP71W/dp/B0CWL1F2LY/ref=sr_1_42?crid=1W90282OOSS0O&dib=eyJ2IjoiMSJ9.6XcBA4w6Npm_pwAOvvXVcDAPsx0DXQfkVFdJcc8795AOyRoEAhGIodxusTSNBOZ8GZ7QBjv4Xt1bRcOCSc7OPyg0r7pbMkcvB09GR1rcV2Hv6-XZa7g2Q8g8nJ7gGOcgFAOZyjmW0D8EBSwRzt5ZLhyzgrlRZDQO2I47cGai7f1oUrbIgt_sp2btrvSp45rWYR6j0JmsaV8Wsx-9rp2JS-7UU9pPDNHCoUby43irvwg_ifcPUtb6FRLvaWwBvj-JicFnhFTLKr8rqCKZmUSCEVOjPRvoBdaW3KTXPWtRxY8.QetsUIpXMVylXIFUheBctZesc8qVn29qmyuGSeKzctY&dib_tag=se&keywords=fastrack+watches+for+man&nsdOptOutParam=true&qid=1747415966&sprefix=fastrack+watches+for+man%2Caps%2C227&sr=8-42
+      - heading "Tees Wanderlust Quartz Analog Black Dial Silicone Strap Watch for Unisex-38024PP71W/NT38024PP71W" [level=2]
+    - button "4.4 out of 5 stars, rating details"
+    - link "14 ratings":
+      - /url: /Fastrack-Wanderlust-Quartz-Silicone-Unisex-38024PP71W/dp/B0CWL1F2LY/ref=sr_1_42?crid=1W90282OOSS0O&dib=eyJ2IjoiMSJ9.6XcBA4w6Npm_pwAOvvXVcDAPsx0DXQfkVFdJcc8795AOyRoEAhGIodxusTSNBOZ8GZ7QBjv4Xt1bRcOCSc7OPyg0r7pbMkcvB09GR1rcV2Hv6-XZa7g2Q8g8nJ7gGOcgFAOZyjmW0D8EBSwRzt5ZLhyzgrlRZDQO2I47cGai7f1oUrbIgt_sp2btrvSp45rWYR6j0JmsaV8Wsx-9rp2JS-7UU9pPDNHCoUby43irvwg_ifcPUtb6FRLvaWwBvj-JicFnhFTLKr8rqCKZmUSCEVOjPRvoBdaW3KTXPWtRxY8.QetsUIpXMVylXIFUheBctZesc8qVn29qmyuGSeKzctY&dib_tag=se&keywords=fastrack+watches+for+man&nsdOptOutParam=true&qid=1747415966&sprefix=fastrack+watches+for+man%2Caps%2C227&sr=8-42#customerReviews
+    - text: 100+ bought in past month
+    - link "Limited time deal":
+      - /url: /gp/goldbox/
+    - text: Price, product page
+    - 'link "₹895 M.R.P: ₹995 M.R.P: ₹995"':
+      - /url: /Fastrack-Wanderlust-Quartz-Silicone-Unisex-38024PP71W/dp/B0CWL1F2LY/ref=sr_1_42?crid=1W90282OOSS0O&dib=eyJ2IjoiMSJ9.6XcBA4w6Npm_pwAOvvXVcDAPsx0DXQfkVFdJcc8795AOyRoEAhGIodxusTSNBOZ8GZ7QBjv4Xt1bRcOCSc7OPyg0r7pbMkcvB09GR1rcV2Hv6-XZa7g2Q8g8nJ7gGOcgFAOZyjmW0D8EBSwRzt5ZLhyzgrlRZDQO2I47cGai7f1oUrbIgt_sp2btrvSp45rWYR6j0JmsaV8Wsx-9rp2JS-7UU9pPDNHCoUby43irvwg_ifcPUtb6FRLvaWwBvj-JicFnhFTLKr8rqCKZmUSCEVOjPRvoBdaW3KTXPWtRxY8.QetsUIpXMVylXIFUheBctZesc8qVn29qmyuGSeKzctY&dib_tag=se&keywords=fastrack+watches+for+man&nsdOptOutParam=true&qid=1747415966&sprefix=fastrack+watches+for+man%2Caps%2C227&sr=8-42
+    - text: (10% off)
+    - img "Amazon Prime"
+    - text: FREE delivery Wed, 21 May
+    - button "Add to cart"
+  - listitem:
+    - link:
+      - /url: /Fastrack-Machines-Analog-Digital-Black-Watch-38055PP01/dp/B08D3R3GFX/ref=sr_1_43?crid=1W90282OOSS0O&dib=eyJ2IjoiMSJ9.6XcBA4w6Npm_pwAOvvXVcDAPsx0DXQfkVFdJcc8795AOyRoEAhGIodxusTSNBOZ8GZ7QBjv4Xt1bRcOCSc7OPyg0r7pbMkcvB09GR1rcV2Hv6-XZa7g2Q8g8nJ7gGOcgFAOZyjmW0D8EBSwRzt5ZLhyzgrlRZDQO2I47cGai7f1oUrbIgt_sp2btrvSp45rWYR6j0JmsaV8Wsx-9rp2JS-7UU9pPDNHCoUby43irvwg_ifcPUtb6FRLvaWwBvj-JicFnhFTLKr8rqCKZmUSCEVOjPRvoBdaW3KTXPWtRxY8.QetsUIpXMVylXIFUheBctZesc8qVn29qmyuGSeKzctY&dib_tag=se&keywords=fastrack+watches+for+man&nsdOptOutParam=true&qid=1747415966&sprefix=fastrack+watches+for+man%2Caps%2C227&sr=8-43
+    - heading "Fastrack" [level=2]
+    - link "Mean Machines Analog-Digital Black Dial Men's Watch 38055PP01/NN38055PP01":
+      - /url: /Fastrack-Machines-Analog-Digital-Black-Watch-38055PP01/dp/B08D3R3GFX/ref=sr_1_43?crid=1W90282OOSS0O&dib=eyJ2IjoiMSJ9.6XcBA4w6Npm_pwAOvvXVcDAPsx0DXQfkVFdJcc8795AOyRoEAhGIodxusTSNBOZ8GZ7QBjv4Xt1bRcOCSc7OPyg0r7pbMkcvB09GR1rcV2Hv6-XZa7g2Q8g8nJ7gGOcgFAOZyjmW0D8EBSwRzt5ZLhyzgrlRZDQO2I47cGai7f1oUrbIgt_sp2btrvSp45rWYR6j0JmsaV8Wsx-9rp2JS-7UU9pPDNHCoUby43irvwg_ifcPUtb6FRLvaWwBvj-JicFnhFTLKr8rqCKZmUSCEVOjPRvoBdaW3KTXPWtRxY8.QetsUIpXMVylXIFUheBctZesc8qVn29qmyuGSeKzctY&dib_tag=se&keywords=fastrack+watches+for+man&nsdOptOutParam=true&qid=1747415966&sprefix=fastrack+watches+for+man%2Caps%2C227&sr=8-43
+      - heading "Mean Machines Analog-Digital Black Dial Men's Watch 38055PP01/NN38055PP01" [level=2]
+    - button "4.3 out of 5 stars, rating details"
+    - link "144 ratings":
+      - /url: /Fastrack-Machines-Analog-Digital-Black-Watch-38055PP01/dp/B08D3R3GFX/ref=sr_1_43?crid=1W90282OOSS0O&dib=eyJ2IjoiMSJ9.6XcBA4w6Npm_pwAOvvXVcDAPsx0DXQfkVFdJcc8795AOyRoEAhGIodxusTSNBOZ8GZ7QBjv4Xt1bRcOCSc7OPyg0r7pbMkcvB09GR1rcV2Hv6-XZa7g2Q8g8nJ7gGOcgFAOZyjmW0D8EBSwRzt5ZLhyzgrlRZDQO2I47cGai7f1oUrbIgt_sp2btrvSp45rWYR6j0JmsaV8Wsx-9rp2JS-7UU9pPDNHCoUby43irvwg_ifcPUtb6FRLvaWwBvj-JicFnhFTLKr8rqCKZmUSCEVOjPRvoBdaW3KTXPWtRxY8.QetsUIpXMVylXIFUheBctZesc8qVn29qmyuGSeKzctY&dib_tag=se&keywords=fastrack+watches+for+man&nsdOptOutParam=true&qid=1747415966&sprefix=fastrack+watches+for+man%2Caps%2C227&sr=8-43#customerReviews
+    - text: 100+ bought in past month
+    - link "Limited time deal":
+      - /url: /gp/goldbox/
+    - text: Price, product page
+    - 'link "₹3,196 M.R.P: ₹3,795 M.R.P: ₹3,795"':
+      - /url: /Fastrack-Machines-Analog-Digital-Black-Watch-38055PP01/dp/B08D3R3GFX/ref=sr_1_43?crid=1W90282OOSS0O&dib=eyJ2IjoiMSJ9.6XcBA4w6Npm_pwAOvvXVcDAPsx0DXQfkVFdJcc8795AOyRoEAhGIodxusTSNBOZ8GZ7QBjv4Xt1bRcOCSc7OPyg0r7pbMkcvB09GR1rcV2Hv6-XZa7g2Q8g8nJ7gGOcgFAOZyjmW0D8EBSwRzt5ZLhyzgrlRZDQO2I47cGai7f1oUrbIgt_sp2btrvSp45rWYR6j0JmsaV8Wsx-9rp2JS-7UU9pPDNHCoUby43irvwg_ifcPUtb6FRLvaWwBvj-JicFnhFTLKr8rqCKZmUSCEVOjPRvoBdaW3KTXPWtRxY8.QetsUIpXMVylXIFUheBctZesc8qVn29qmyuGSeKzctY&dib_tag=se&keywords=fastrack+watches+for+man&nsdOptOutParam=true&qid=1747415966&sprefix=fastrack+watches+for+man%2Caps%2C227&sr=8-43
+    - text: (16% off) 10% Off on Select Bank Cards
+    - img "Amazon Prime"
+    - text: FREE delivery Sun, 18 May Or fastest delivery Tomorrow, 17 May
+    - button "Add to cart"
+  - listitem:
+    - link:
+      - /url: /Fastrack-Analog-Silver-NM38017PL02-NL38017PL02/dp/B06WGNZRQ9/ref=sr_1_44?crid=1W90282OOSS0O&dib=eyJ2IjoiMSJ9.6XcBA4w6Npm_pwAOvvXVcDAPsx0DXQfkVFdJcc8795AOyRoEAhGIodxusTSNBOZ8GZ7QBjv4Xt1bRcOCSc7OPyg0r7pbMkcvB09GR1rcV2Hv6-XZa7g2Q8g8nJ7gGOcgFAOZyjmW0D8EBSwRzt5ZLhyzgrlRZDQO2I47cGai7f1oUrbIgt_sp2btrvSp45rWYR6j0JmsaV8Wsx-9rp2JS-7UU9pPDNHCoUby43irvwg_ifcPUtb6FRLvaWwBvj-JicFnhFTLKr8rqCKZmUSCEVOjPRvoBdaW3KTXPWtRxY8.QetsUIpXMVylXIFUheBctZesc8qVn29qmyuGSeKzctY&dib_tag=se&keywords=fastrack+watches+for+man&nsdOptOutParam=true&qid=1747415966&sprefix=fastrack+watches+for+man%2Caps%2C227&sr=8-44
+    - heading "Fastrack" [level=2]
+    - link "Analog Silver Dial Men's Watch-NM38017PL02 / NL38017PL02/NP38017PL02":
+      - /url: /Fastrack-Analog-Silver-NM38017PL02-NL38017PL02/dp/B06WGNZRQ9/ref=sr_1_44?crid=1W90282OOSS0O&dib=eyJ2IjoiMSJ9.6XcBA4w6Npm_pwAOvvXVcDAPsx0DXQfkVFdJcc8795AOyRoEAhGIodxusTSNBOZ8GZ7QBjv4Xt1bRcOCSc7OPyg0r7pbMkcvB09GR1rcV2Hv6-XZa7g2Q8g8nJ7gGOcgFAOZyjmW0D8EBSwRzt5ZLhyzgrlRZDQO2I47cGai7f1oUrbIgt_sp2btrvSp45rWYR6j0JmsaV8Wsx-9rp2JS-7UU9pPDNHCoUby43irvwg_ifcPUtb6FRLvaWwBvj-JicFnhFTLKr8rqCKZmUSCEVOjPRvoBdaW3KTXPWtRxY8.QetsUIpXMVylXIFUheBctZesc8qVn29qmyuGSeKzctY&dib_tag=se&keywords=fastrack+watches+for+man&nsdOptOutParam=true&qid=1747415966&sprefix=fastrack+watches+for+man%2Caps%2C227&sr=8-44
+      - heading "Analog Silver Dial Men's Watch-NM38017PL02 / NL38017PL02/NP38017PL02" [level=2]
+    - button "3.9 out of 5 stars, rating details"
+    - link "1,028 ratings":
+      - /url: /Fastrack-Analog-Silver-NM38017PL02-NL38017PL02/dp/B06WGNZRQ9/ref=sr_1_44?crid=1W90282OOSS0O&dib=eyJ2IjoiMSJ9.6XcBA4w6Npm_pwAOvvXVcDAPsx0DXQfkVFdJcc8795AOyRoEAhGIodxusTSNBOZ8GZ7QBjv4Xt1bRcOCSc7OPyg0r7pbMkcvB09GR1rcV2Hv6-XZa7g2Q8g8nJ7gGOcgFAOZyjmW0D8EBSwRzt5ZLhyzgrlRZDQO2I47cGai7f1oUrbIgt_sp2btrvSp45rWYR6j0JmsaV8Wsx-9rp2JS-7UU9pPDNHCoUby43irvwg_ifcPUtb6FRLvaWwBvj-JicFnhFTLKr8rqCKZmUSCEVOjPRvoBdaW3KTXPWtRxY8.QetsUIpXMVylXIFUheBctZesc8qVn29qmyuGSeKzctY&dib_tag=se&keywords=fastrack+watches+for+man&nsdOptOutParam=true&qid=1747415966&sprefix=fastrack+watches+for+man%2Caps%2C227&sr=8-44#customerReviews
+    - text: 50+ bought in past month
+    - link "Limited time deal":
+      - /url: /gp/goldbox/
+    - text: Price, product page
+    - 'link "₹2,545 M.R.P: ₹2,895 M.R.P: ₹2,895"':
+      - /url: /Fastrack-Analog-Silver-NM38017PL02-NL38017PL02/dp/B06WGNZRQ9/ref=sr_1_44?crid=1W90282OOSS0O&dib=eyJ2IjoiMSJ9.6XcBA4w6Npm_pwAOvvXVcDAPsx0DXQfkVFdJcc8795AOyRoEAhGIodxusTSNBOZ8GZ7QBjv4Xt1bRcOCSc7OPyg0r7pbMkcvB09GR1rcV2Hv6-XZa7g2Q8g8nJ7gGOcgFAOZyjmW0D8EBSwRzt5ZLhyzgrlRZDQO2I47cGai7f1oUrbIgt_sp2btrvSp45rWYR6j0JmsaV8Wsx-9rp2JS-7UU9pPDNHCoUby43irvwg_ifcPUtb6FRLvaWwBvj-JicFnhFTLKr8rqCKZmUSCEVOjPRvoBdaW3KTXPWtRxY8.QetsUIpXMVylXIFUheBctZesc8qVn29qmyuGSeKzctY&dib_tag=se&keywords=fastrack+watches+for+man&nsdOptOutParam=true&qid=1747415966&sprefix=fastrack+watches+for+man%2Caps%2C227&sr=8-44
+    - text: (12% off)
+    - img "Amazon Prime"
+    - text: FREE delivery Sun, 18 May Or fastest delivery Tomorrow, 17 May
+    - button "Add to cart"
+  - listitem:
+    - link:
+      - /url: /Fastrack-Analog-Multicolor-Unisexs-Watch-38024PP81W/dp/B0DZHZXTRZ/ref=sr_1_45?crid=1W90282OOSS0O&dib=eyJ2IjoiMSJ9.6XcBA4w6Npm_pwAOvvXVcDAPsx0DXQfkVFdJcc8795AOyRoEAhGIodxusTSNBOZ8GZ7QBjv4Xt1bRcOCSc7OPyg0r7pbMkcvB09GR1rcV2Hv6-XZa7g2Q8g8nJ7gGOcgFAOZyjmW0D8EBSwRzt5ZLhyzgrlRZDQO2I47cGai7f1oUrbIgt_sp2btrvSp45rWYR6j0JmsaV8Wsx-9rp2JS-7UU9pPDNHCoUby43irvwg_ifcPUtb6FRLvaWwBvj-JicFnhFTLKr8rqCKZmUSCEVOjPRvoBdaW3KTXPWtRxY8.QetsUIpXMVylXIFUheBctZesc8qVn29qmyuGSeKzctY&dib_tag=se&keywords=fastrack+watches+for+man&nsdOptOutParam=true&qid=1747415966&sprefix=fastrack+watches+for+man%2Caps%2C227&sr=8-45
+    - heading "Fastrack" [level=2]
+    - link "Analog Multicolor Dial Unisex's Watch-38024PP81W":
+      - /url: /Fastrack-Analog-Multicolor-Unisexs-Watch-38024PP81W/dp/B0DZHZXTRZ/ref=sr_1_45?crid=1W90282OOSS0O&dib=eyJ2IjoiMSJ9.6XcBA4w6Npm_pwAOvvXVcDAPsx0DXQfkVFdJcc8795AOyRoEAhGIodxusTSNBOZ8GZ7QBjv4Xt1bRcOCSc7OPyg0r7pbMkcvB09GR1rcV2Hv6-XZa7g2Q8g8nJ7gGOcgFAOZyjmW0D8EBSwRzt5ZLhyzgrlRZDQO2I47cGai7f1oUrbIgt_sp2btrvSp45rWYR6j0JmsaV8Wsx-9rp2JS-7UU9pPDNHCoUby43irvwg_ifcPUtb6FRLvaWwBvj-JicFnhFTLKr8rqCKZmUSCEVOjPRvoBdaW3KTXPWtRxY8.QetsUIpXMVylXIFUheBctZesc8qVn29qmyuGSeKzctY&dib_tag=se&keywords=fastrack+watches+for+man&nsdOptOutParam=true&qid=1747415966&sprefix=fastrack+watches+for+man%2Caps%2C227&sr=8-45
+      - heading "Analog Multicolor Dial Unisex's Watch-38024PP81W" [level=2]
+    - text: Price, product page
+    - link "₹995":
+      - /url: /Fastrack-Analog-Multicolor-Unisexs-Watch-38024PP81W/dp/B0DZHZXTRZ/ref=sr_1_45?crid=1W90282OOSS0O&dib=eyJ2IjoiMSJ9.6XcBA4w6Npm_pwAOvvXVcDAPsx0DXQfkVFdJcc8795AOyRoEAhGIodxusTSNBOZ8GZ7QBjv4Xt1bRcOCSc7OPyg0r7pbMkcvB09GR1rcV2Hv6-XZa7g2Q8g8nJ7gGOcgFAOZyjmW0D8EBSwRzt5ZLhyzgrlRZDQO2I47cGai7f1oUrbIgt_sp2btrvSp45rWYR6j0JmsaV8Wsx-9rp2JS-7UU9pPDNHCoUby43irvwg_ifcPUtb6FRLvaWwBvj-JicFnhFTLKr8rqCKZmUSCEVOjPRvoBdaW3KTXPWtRxY8.QetsUIpXMVylXIFUheBctZesc8qVn29qmyuGSeKzctY&dib_tag=se&keywords=fastrack+watches+for+man&nsdOptOutParam=true&qid=1747415966&sprefix=fastrack+watches+for+man%2Caps%2C227&sr=8-45
+    - text: Up to 5% back with Amazon Pay ICICI card
+    - img "Amazon Prime"
+    - text: FREE delivery Wed, 21 May Only 5 left in stock.
+    - button "Add to cart"
+  - listitem:
+    - link:
+      - /url: /Fastrack-Casual-Stainless-Watch-NL3121SM02-NP3121SM02/dp/B00NLAUHJU/ref=sr_1_46?crid=1W90282OOSS0O&dib=eyJ2IjoiMSJ9.6XcBA4w6Npm_pwAOvvXVcDAPsx0DXQfkVFdJcc8795AOyRoEAhGIodxusTSNBOZ8GZ7QBjv4Xt1bRcOCSc7OPyg0r7pbMkcvB09GR1rcV2Hv6-XZa7g2Q8g8nJ7gGOcgFAOZyjmW0D8EBSwRzt5ZLhyzgrlRZDQO2I47cGai7f1oUrbIgt_sp2btrvSp45rWYR6j0JmsaV8Wsx-9rp2JS-7UU9pPDNHCoUby43irvwg_ifcPUtb6FRLvaWwBvj-JicFnhFTLKr8rqCKZmUSCEVOjPRvoBdaW3KTXPWtRxY8.QetsUIpXMVylXIFUheBctZesc8qVn29qmyuGSeKzctY&dib_tag=se&keywords=fastrack+watches+for+man&nsdOptOutParam=true&qid=1747415966&sprefix=fastrack+watches+for+man%2Caps%2C227&sr=8-46
+    - heading "Fastrack" [level=2]
+    - link "Casual Analog Black Dial Men's Watch NM3121SM02/NN3121SM02":
+      - /url: /Fastrack-Casual-Stainless-Watch-NL3121SM02-NP3121SM02/dp/B00NLAUHJU/ref=sr_1_46?crid=1W90282OOSS0O&dib=eyJ2IjoiMSJ9.6XcBA4w6Npm_pwAOvvXVcDAPsx0DXQfkVFdJcc8795AOyRoEAhGIodxusTSNBOZ8GZ7QBjv4Xt1bRcOCSc7OPyg0r7pbMkcvB09GR1rcV2Hv6-XZa7g2Q8g8nJ7gGOcgFAOZyjmW0D8EBSwRzt5ZLhyzgrlRZDQO2I47cGai7f1oUrbIgt_sp2btrvSp45rWYR6j0JmsaV8Wsx-9rp2JS-7UU9pPDNHCoUby43irvwg_ifcPUtb6FRLvaWwBvj-JicFnhFTLKr8rqCKZmUSCEVOjPRvoBdaW3KTXPWtRxY8.QetsUIpXMVylXIFUheBctZesc8qVn29qmyuGSeKzctY&dib_tag=se&keywords=fastrack+watches+for+man&nsdOptOutParam=true&qid=1747415966&sprefix=fastrack+watches+for+man%2Caps%2C227&sr=8-46
+      - heading "Casual Analog Black Dial Men's Watch NM3121SM02/NN3121SM02" [level=2]
+    - button "4.2 out of 5 stars, rating details"
+    - link "3,330 ratings":
+      - /url: /Fastrack-Casual-Stainless-Watch-NL3121SM02-NP3121SM02/dp/B00NLAUHJU/ref=sr_1_46?crid=1W90282OOSS0O&dib=eyJ2IjoiMSJ9.6XcBA4w6Npm_pwAOvvXVcDAPsx0DXQfkVFdJcc8795AOyRoEAhGIodxusTSNBOZ8GZ7QBjv4Xt1bRcOCSc7OPyg0r7pbMkcvB09GR1rcV2Hv6-XZa7g2Q8g8nJ7gGOcgFAOZyjmW0D8EBSwRzt5ZLhyzgrlRZDQO2I47cGai7f1oUrbIgt_sp2btrvSp45rWYR6j0JmsaV8Wsx-9rp2JS-7UU9pPDNHCoUby43irvwg_ifcPUtb6FRLvaWwBvj-JicFnhFTLKr8rqCKZmUSCEVOjPRvoBdaW3KTXPWtRxY8.QetsUIpXMVylXIFUheBctZesc8qVn29qmyuGSeKzctY&dib_tag=se&keywords=fastrack+watches+for+man&nsdOptOutParam=true&qid=1747415966&sprefix=fastrack+watches+for+man%2Caps%2C227&sr=8-46#customerReviews
+    - text: 50+ bought in past month
+    - link "Limited time deal":
+      - /url: /gp/goldbox/
+    - text: Price, product page
+    - 'link "₹1,536 M.R.P: ₹1,995 M.R.P: ₹1,995"':
+      - /url: /Fastrack-Casual-Stainless-Watch-NL3121SM02-NP3121SM02/dp/B00NLAUHJU/ref=sr_1_46?crid=1W90282OOSS0O&dib=eyJ2IjoiMSJ9.6XcBA4w6Npm_pwAOvvXVcDAPsx0DXQfkVFdJcc8795AOyRoEAhGIodxusTSNBOZ8GZ7QBjv4Xt1bRcOCSc7OPyg0r7pbMkcvB09GR1rcV2Hv6-XZa7g2Q8g8nJ7gGOcgFAOZyjmW0D8EBSwRzt5ZLhyzgrlRZDQO2I47cGai7f1oUrbIgt_sp2btrvSp45rWYR6j0JmsaV8Wsx-9rp2JS-7UU9pPDNHCoUby43irvwg_ifcPUtb6FRLvaWwBvj-JicFnhFTLKr8rqCKZmUSCEVOjPRvoBdaW3KTXPWtRxY8.QetsUIpXMVylXIFUheBctZesc8qVn29qmyuGSeKzctY&dib_tag=se&keywords=fastrack+watches+for+man&nsdOptOutParam=true&qid=1747415966&sprefix=fastrack+watches+for+man%2Caps%2C227&sr=8-46
+    - text: (23% off)
+    - img "Amazon Prime"
+    - text: FREE delivery Sun, 18 May Or fastest delivery Tomorrow, 17 May
+    - button "Add to cart"
+  - listitem:
+    - link:
+      - /url: /Fastrack-Stunners-Quartz-Guys-NR3291SM01-NT3291SM01/dp/B0BHTG8SHC/ref=sr_1_47?crid=1W90282OOSS0O&dib=eyJ2IjoiMSJ9.6XcBA4w6Npm_pwAOvvXVcDAPsx0DXQfkVFdJcc8795AOyRoEAhGIodxusTSNBOZ8GZ7QBjv4Xt1bRcOCSc7OPyg0r7pbMkcvB09GR1rcV2Hv6-XZa7g2Q8g8nJ7gGOcgFAOZyjmW0D8EBSwRzt5ZLhyzgrlRZDQO2I47cGai7f1oUrbIgt_sp2btrvSp45rWYR6j0JmsaV8Wsx-9rp2JS-7UU9pPDNHCoUby43irvwg_ifcPUtb6FRLvaWwBvj-JicFnhFTLKr8rqCKZmUSCEVOjPRvoBdaW3KTXPWtRxY8.QetsUIpXMVylXIFUheBctZesc8qVn29qmyuGSeKzctY&dib_tag=se&keywords=fastrack+watches+for+man&nsdOptOutParam=true&qid=1747415966&sprefix=fastrack+watches+for+man%2Caps%2C227&sr=8-47
+    - heading "Fastrack" [level=2]
+    - link "Men Stunners Quartz Analog Grey Dial Metal Strap Watch for Guys-NR3291SM01/NT3291SM01":
+      - /url: /Fastrack-Stunners-Quartz-Guys-NR3291SM01-NT3291SM01/dp/B0BHTG8SHC/ref=sr_1_47?crid=1W90282OOSS0O&dib=eyJ2IjoiMSJ9.6XcBA4w6Npm_pwAOvvXVcDAPsx0DXQfkVFdJcc8795AOyRoEAhGIodxusTSNBOZ8GZ7QBjv4Xt1bRcOCSc7OPyg0r7pbMkcvB09GR1rcV2Hv6-XZa7g2Q8g8nJ7gGOcgFAOZyjmW0D8EBSwRzt5ZLhyzgrlRZDQO2I47cGai7f1oUrbIgt_sp2btrvSp45rWYR6j0JmsaV8Wsx-9rp2JS-7UU9pPDNHCoUby43irvwg_ifcPUtb6FRLvaWwBvj-JicFnhFTLKr8rqCKZmUSCEVOjPRvoBdaW3KTXPWtRxY8.QetsUIpXMVylXIFUheBctZesc8qVn29qmyuGSeKzctY&dib_tag=se&keywords=fastrack+watches+for+man&nsdOptOutParam=true&qid=1747415966&sprefix=fastrack+watches+for+man%2Caps%2C227&sr=8-47
+      - heading "Men Stunners Quartz Analog Grey Dial Metal Strap Watch for Guys-NR3291SM01/NT3291SM01" [level=2]
+    - button "4.2 out of 5 stars, rating details"
+    - link "129 ratings":
+      - /url: /Fastrack-Stunners-Quartz-Guys-NR3291SM01-NT3291SM01/dp/B0BHTG8SHC/ref=sr_1_47?crid=1W90282OOSS0O&dib=eyJ2IjoiMSJ9.6XcBA4w6Npm_pwAOvvXVcDAPsx0DXQfkVFdJcc8795AOyRoEAhGIodxusTSNBOZ8GZ7QBjv4Xt1bRcOCSc7OPyg0r7pbMkcvB09GR1rcV2Hv6-XZa7g2Q8g8nJ7gGOcgFAOZyjmW0D8EBSwRzt5ZLhyzgrlRZDQO2I47cGai7f1oUrbIgt_sp2btrvSp45rWYR6j0JmsaV8Wsx-9rp2JS-7UU9pPDNHCoUby43irvwg_ifcPUtb6FRLvaWwBvj-JicFnhFTLKr8rqCKZmUSCEVOjPRvoBdaW3KTXPWtRxY8.QetsUIpXMVylXIFUheBctZesc8qVn29qmyuGSeKzctY&dib_tag=se&keywords=fastrack+watches+for+man&nsdOptOutParam=true&qid=1747415966&sprefix=fastrack+watches+for+man%2Caps%2C227&sr=8-47#customerReviews
+    - text: 100+ bought in past month
+    - link "Limited time deal":
+      - /url: /gp/goldbox/
+    - text: Price, product page
+    - 'link "₹1,436 M.R.P: ₹1,595 M.R.P: ₹1,595"':
+      - /url: /Fastrack-Stunners-Quartz-Guys-NR3291SM01-NT3291SM01/dp/B0BHTG8SHC/ref=sr_1_47?crid=1W90282OOSS0O&dib=eyJ2IjoiMSJ9.6XcBA4w6Npm_pwAOvvXVcDAPsx0DXQfkVFdJcc8795AOyRoEAhGIodxusTSNBOZ8GZ7QBjv4Xt1bRcOCSc7OPyg0r7pbMkcvB09GR1rcV2Hv6-XZa7g2Q8g8nJ7gGOcgFAOZyjmW0D8EBSwRzt5ZLhyzgrlRZDQO2I47cGai7f1oUrbIgt_sp2btrvSp45rWYR6j0JmsaV8Wsx-9rp2JS-7UU9pPDNHCoUby43irvwg_ifcPUtb6FRLvaWwBvj-JicFnhFTLKr8rqCKZmUSCEVOjPRvoBdaW3KTXPWtRxY8.QetsUIpXMVylXIFUheBctZesc8qVn29qmyuGSeKzctY&dib_tag=se&keywords=fastrack+watches+for+man&nsdOptOutParam=true&qid=1747415966&sprefix=fastrack+watches+for+man%2Caps%2C227&sr=8-47
+    - text: (10% off)
+    - img "Amazon Prime"
+    - text: FREE delivery Sun, 18 May Or fastest delivery Tomorrow, 17 May
+    - button "Add to cart"
+  - listitem:
+    - link:
+      - /url: /Fastrack-Analog-Blue-Watch-3229SM04/dp/B08VJMTXVS/ref=sr_1_48?crid=1W90282OOSS0O&dib=eyJ2IjoiMSJ9.6XcBA4w6Npm_pwAOvvXVcDAPsx0DXQfkVFdJcc8795AOyRoEAhGIodxusTSNBOZ8GZ7QBjv4Xt1bRcOCSc7OPyg0r7pbMkcvB09GR1rcV2Hv6-XZa7g2Q8g8nJ7gGOcgFAOZyjmW0D8EBSwRzt5ZLhyzgrlRZDQO2I47cGai7f1oUrbIgt_sp2btrvSp45rWYR6j0JmsaV8Wsx-9rp2JS-7UU9pPDNHCoUby43irvwg_ifcPUtb6FRLvaWwBvj-JicFnhFTLKr8rqCKZmUSCEVOjPRvoBdaW3KTXPWtRxY8.QetsUIpXMVylXIFUheBctZesc8qVn29qmyuGSeKzctY&dib_tag=se&keywords=fastrack+watches+for+man&nsdOptOutParam=true&qid=1747415966&sprefix=fastrack+watches+for+man%2Caps%2C227&sr=8-48
+    - heading "Fastrack" [level=2]
+    - link "Analog Men's Watch (Dial Colored Strap)":
+      - /url: /Fastrack-Analog-Blue-Watch-3229SM04/dp/B08VJMTXVS/ref=sr_1_48?crid=1W90282OOSS0O&dib=eyJ2IjoiMSJ9.6XcBA4w6Npm_pwAOvvXVcDAPsx0DXQfkVFdJcc8795AOyRoEAhGIodxusTSNBOZ8GZ7QBjv4Xt1bRcOCSc7OPyg0r7pbMkcvB09GR1rcV2Hv6-XZa7g2Q8g8nJ7gGOcgFAOZyjmW0D8EBSwRzt5ZLhyzgrlRZDQO2I47cGai7f1oUrbIgt_sp2btrvSp45rWYR6j0JmsaV8Wsx-9rp2JS-7UU9pPDNHCoUby43irvwg_ifcPUtb6FRLvaWwBvj-JicFnhFTLKr8rqCKZmUSCEVOjPRvoBdaW3KTXPWtRxY8.QetsUIpXMVylXIFUheBctZesc8qVn29qmyuGSeKzctY&dib_tag=se&keywords=fastrack+watches+for+man&nsdOptOutParam=true&qid=1747415966&sprefix=fastrack+watches+for+man%2Caps%2C227&sr=8-48
+      - heading "Analog Men's Watch (Dial Colored Strap)" [level=2]
+    - button "4.3 out of 5 stars, rating details"
+    - link "834 ratings":
+      - /url: /Fastrack-Analog-Blue-Watch-3229SM04/dp/B08VJMTXVS/ref=sr_1_48?crid=1W90282OOSS0O&dib=eyJ2IjoiMSJ9.6XcBA4w6Npm_pwAOvvXVcDAPsx0DXQfkVFdJcc8795AOyRoEAhGIodxusTSNBOZ8GZ7QBjv4Xt1bRcOCSc7OPyg0r7pbMkcvB09GR1rcV2Hv6-XZa7g2Q8g8nJ7gGOcgFAOZyjmW0D8EBSwRzt5ZLhyzgrlRZDQO2I47cGai7f1oUrbIgt_sp2btrvSp45rWYR6j0JmsaV8Wsx-9rp2JS-7UU9pPDNHCoUby43irvwg_ifcPUtb6FRLvaWwBvj-JicFnhFTLKr8rqCKZmUSCEVOjPRvoBdaW3KTXPWtRxY8.QetsUIpXMVylXIFUheBctZesc8qVn29qmyuGSeKzctY&dib_tag=se&keywords=fastrack+watches+for+man&nsdOptOutParam=true&qid=1747415966&sprefix=fastrack+watches+for+man%2Caps%2C227&sr=8-48#customerReviews
+    - text: 100+ bought in past month Price, product page
+    - 'link "₹1,836 M.R.P: ₹2,295 M.R.P: ₹2,295"':
+      - /url: /Fastrack-Analog-Blue-Watch-3229SM04/dp/B08VJMTXVS/ref=sr_1_48?crid=1W90282OOSS0O&dib=eyJ2IjoiMSJ9.6XcBA4w6Npm_pwAOvvXVcDAPsx0DXQfkVFdJcc8795AOyRoEAhGIodxusTSNBOZ8GZ7QBjv4Xt1bRcOCSc7OPyg0r7pbMkcvB09GR1rcV2Hv6-XZa7g2Q8g8nJ7gGOcgFAOZyjmW0D8EBSwRzt5ZLhyzgrlRZDQO2I47cGai7f1oUrbIgt_sp2btrvSp45rWYR6j0JmsaV8Wsx-9rp2JS-7UU9pPDNHCoUby43irvwg_ifcPUtb6FRLvaWwBvj-JicFnhFTLKr8rqCKZmUSCEVOjPRvoBdaW3KTXPWtRxY8.QetsUIpXMVylXIFUheBctZesc8qVn29qmyuGSeKzctY&dib_tag=se&keywords=fastrack+watches+for+man&nsdOptOutParam=true&qid=1747415966&sprefix=fastrack+watches+for+man%2Caps%2C227&sr=8-48
+    - text: (20% off)
+    - img "Amazon Prime"
+    - text: FREE delivery Mon, 19 May
+    - button "Add to cart"
+  - listitem:
+    - link:
+      - /url: /Fastrack-Nighters-Multifunction-Leather-Guys-NS3165NL01/dp/B073VQ565Y/ref=sr_1_49?crid=1W90282OOSS0O&dib=eyJ2IjoiMSJ9.6XcBA4w6Npm_pwAOvvXVcDAPsx0DXQfkVFdJcc8795AOyRoEAhGIodxusTSNBOZ8GZ7QBjv4Xt1bRcOCSc7OPyg0r7pbMkcvB09GR1rcV2Hv6-XZa7g2Q8g8nJ7gGOcgFAOZyjmW0D8EBSwRzt5ZLhyzgrlRZDQO2I47cGai7f1oUrbIgt_sp2btrvSp45rWYR6j0JmsaV8Wsx-9rp2JS-7UU9pPDNHCoUby43irvwg_ifcPUtb6FRLvaWwBvj-JicFnhFTLKr8rqCKZmUSCEVOjPRvoBdaW3KTXPWtRxY8.QetsUIpXMVylXIFUheBctZesc8qVn29qmyuGSeKzctY&dib_tag=se&keywords=fastrack+watches+for+man&nsdOptOutParam=true&qid=1747415966&sprefix=fastrack+watches+for+man%2Caps%2C227&sr=8-49
+    - heading "Fastrack" [level=2]
+    - link "Men All Nighters Quartz Multifunction Black Dial Leather Strap Watch for Guys-NS3165NL01/NT3165NL01":
+      - /url: /Fastrack-Nighters-Multifunction-Leather-Guys-NS3165NL01/dp/B073VQ565Y/ref=sr_1_49?crid=1W90282OOSS0O&dib=eyJ2IjoiMSJ9.6XcBA4w6Npm_pwAOvvXVcDAPsx0DXQfkVFdJcc8795AOyRoEAhGIodxusTSNBOZ8GZ7QBjv4Xt1bRcOCSc7OPyg0r7pbMkcvB09GR1rcV2Hv6-XZa7g2Q8g8nJ7gGOcgFAOZyjmW0D8EBSwRzt5ZLhyzgrlRZDQO2I47cGai7f1oUrbIgt_sp2btrvSp45rWYR6j0JmsaV8Wsx-9rp2JS-7UU9pPDNHCoUby43irvwg_ifcPUtb6FRLvaWwBvj-JicFnhFTLKr8rqCKZmUSCEVOjPRvoBdaW3KTXPWtRxY8.QetsUIpXMVylXIFUheBctZesc8qVn29qmyuGSeKzctY&dib_tag=se&keywords=fastrack+watches+for+man&nsdOptOutParam=true&qid=1747415966&sprefix=fastrack+watches+for+man%2Caps%2C227&sr=8-49
+      - heading "Men All Nighters Quartz Multifunction Black Dial Leather Strap Watch for Guys-NS3165NL01/NT3165NL01" [level=2]
+    - button "4.3 out of 5 stars, rating details"
+    - link "378 ratings":
+      - /url: /Fastrack-Nighters-Multifunction-Leather-Guys-NS3165NL01/dp/B073VQ565Y/ref=sr_1_49?crid=1W90282OOSS0O&dib=eyJ2IjoiMSJ9.6XcBA4w6Npm_pwAOvvXVcDAPsx0DXQfkVFdJcc8795AOyRoEAhGIodxusTSNBOZ8GZ7QBjv4Xt1bRcOCSc7OPyg0r7pbMkcvB09GR1rcV2Hv6-XZa7g2Q8g8nJ7gGOcgFAOZyjmW0D8EBSwRzt5ZLhyzgrlRZDQO2I47cGai7f1oUrbIgt_sp2btrvSp45rWYR6j0JmsaV8Wsx-9rp2JS-7UU9pPDNHCoUby43irvwg_ifcPUtb6FRLvaWwBvj-JicFnhFTLKr8rqCKZmUSCEVOjPRvoBdaW3KTXPWtRxY8.QetsUIpXMVylXIFUheBctZesc8qVn29qmyuGSeKzctY&dib_tag=se&keywords=fastrack+watches+for+man&nsdOptOutParam=true&qid=1747415966&sprefix=fastrack+watches+for+man%2Caps%2C227&sr=8-49#customerReviews
+    - text: 50+ bought in past month
+    - link "Limited time deal":
+      - /url: /gp/goldbox/
+    - text: Price, product page
+    - 'link "₹4,636 M.R.P: ₹5,495 M.R.P: ₹5,495"':
+      - /url: /Fastrack-Nighters-Multifunction-Leather-Guys-NS3165NL01/dp/B073VQ565Y/ref=sr_1_49?crid=1W90282OOSS0O&dib=eyJ2IjoiMSJ9.6XcBA4w6Npm_pwAOvvXVcDAPsx0DXQfkVFdJcc8795AOyRoEAhGIodxusTSNBOZ8GZ7QBjv4Xt1bRcOCSc7OPyg0r7pbMkcvB09GR1rcV2Hv6-XZa7g2Q8g8nJ7gGOcgFAOZyjmW0D8EBSwRzt5ZLhyzgrlRZDQO2I47cGai7f1oUrbIgt_sp2btrvSp45rWYR6j0JmsaV8Wsx-9rp2JS-7UU9pPDNHCoUby43irvwg_ifcPUtb6FRLvaWwBvj-JicFnhFTLKr8rqCKZmUSCEVOjPRvoBdaW3KTXPWtRxY8.QetsUIpXMVylXIFUheBctZesc8qVn29qmyuGSeKzctY&dib_tag=se&keywords=fastrack+watches+for+man&nsdOptOutParam=true&qid=1747415966&sprefix=fastrack+watches+for+man%2Caps%2C227&sr=8-49
+    - text: (16% off) 10% Off on Select Bank Cards
+    - img "Amazon Prime"
+    - text: FREE delivery Sun, 18 May Or fastest delivery Tomorrow, 17 May
+    - button "Add to cart"
+  - listitem:
+    - link:
+      - /url: /Fastrack-After-Leather-Guys-NS3273NL03-NT3273NL03/dp/B0BPSRS9YR/ref=sr_1_50?crid=1W90282OOSS0O&dib=eyJ2IjoiMSJ9.6XcBA4w6Npm_pwAOvvXVcDAPsx0DXQfkVFdJcc8795AOyRoEAhGIodxusTSNBOZ8GZ7QBjv4Xt1bRcOCSc7OPyg0r7pbMkcvB09GR1rcV2Hv6-XZa7g2Q8g8nJ7gGOcgFAOZyjmW0D8EBSwRzt5ZLhyzgrlRZDQO2I47cGai7f1oUrbIgt_sp2btrvSp45rWYR6j0JmsaV8Wsx-9rp2JS-7UU9pPDNHCoUby43irvwg_ifcPUtb6FRLvaWwBvj-JicFnhFTLKr8rqCKZmUSCEVOjPRvoBdaW3KTXPWtRxY8.QetsUIpXMVylXIFUheBctZesc8qVn29qmyuGSeKzctY&dib_tag=se&keywords=fastrack+watches+for+man&nsdOptOutParam=true&qid=1747415966&sprefix=fastrack+watches+for+man%2Caps%2C227&sr=8-50
+    - heading "Fastrack" [level=2]
+    - link "Men After Dark Brown Dial Leather Strap Analog Watch for Guys-NS3273NL03/NT3273NL03":
+      - /url: /Fastrack-After-Leather-Guys-NS3273NL03-NT3273NL03/dp/B0BPSRS9YR/ref=sr_1_50?crid=1W90282OOSS0O&dib=eyJ2IjoiMSJ9.6XcBA4w6Npm_pwAOvvXVcDAPsx0DXQfkVFdJcc8795AOyRoEAhGIodxusTSNBOZ8GZ7QBjv4Xt1bRcOCSc7OPyg0r7pbMkcvB09GR1rcV2Hv6-XZa7g2Q8g8nJ7gGOcgFAOZyjmW0D8EBSwRzt5ZLhyzgrlRZDQO2I47cGai7f1oUrbIgt_sp2btrvSp45rWYR6j0JmsaV8Wsx-9rp2JS-7UU9pPDNHCoUby43irvwg_ifcPUtb6FRLvaWwBvj-JicFnhFTLKr8rqCKZmUSCEVOjPRvoBdaW3KTXPWtRxY8.QetsUIpXMVylXIFUheBctZesc8qVn29qmyuGSeKzctY&dib_tag=se&keywords=fastrack+watches+for+man&nsdOptOutParam=true&qid=1747415966&sprefix=fastrack+watches+for+man%2Caps%2C227&sr=8-50
+      - heading "Men After Dark Brown Dial Leather Strap Analog Watch for Guys-NS3273NL03/NT3273NL03" [level=2]
+    - button "4.3 out of 5 stars, rating details"
+    - link "62 ratings":
+      - /url: /Fastrack-After-Leather-Guys-NS3273NL03-NT3273NL03/dp/B0BPSRS9YR/ref=sr_1_50?crid=1W90282OOSS0O&dib=eyJ2IjoiMSJ9.6XcBA4w6Npm_pwAOvvXVcDAPsx0DXQfkVFdJcc8795AOyRoEAhGIodxusTSNBOZ8GZ7QBjv4Xt1bRcOCSc7OPyg0r7pbMkcvB09GR1rcV2Hv6-XZa7g2Q8g8nJ7gGOcgFAOZyjmW0D8EBSwRzt5ZLhyzgrlRZDQO2I47cGai7f1oUrbIgt_sp2btrvSp45rWYR6j0JmsaV8Wsx-9rp2JS-7UU9pPDNHCoUby43irvwg_ifcPUtb6FRLvaWwBvj-JicFnhFTLKr8rqCKZmUSCEVOjPRvoBdaW3KTXPWtRxY8.QetsUIpXMVylXIFUheBctZesc8qVn29qmyuGSeKzctY&dib_tag=se&keywords=fastrack+watches+for+man&nsdOptOutParam=true&qid=1747415966&sprefix=fastrack+watches+for+man%2Caps%2C227&sr=8-50#customerReviews
+    - text: 40+ bought in past month
+    - link "Limited time deal":
+      - /url: /gp/goldbox/
+    - text: Price, product page
+    - 'link "₹2,316 M.R.P: ₹2,795 M.R.P: ₹2,795"':
+      - /url: /Fastrack-After-Leather-Guys-NS3273NL03-NT3273NL03/dp/B0BPSRS9YR/ref=sr_1_50?crid=1W90282OOSS0O&dib=eyJ2IjoiMSJ9.6XcBA4w6Npm_pwAOvvXVcDAPsx0DXQfkVFdJcc8795AOyRoEAhGIodxusTSNBOZ8GZ7QBjv4Xt1bRcOCSc7OPyg0r7pbMkcvB09GR1rcV2Hv6-XZa7g2Q8g8nJ7gGOcgFAOZyjmW0D8EBSwRzt5ZLhyzgrlRZDQO2I47cGai7f1oUrbIgt_sp2btrvSp45rWYR6j0JmsaV8Wsx-9rp2JS-7UU9pPDNHCoUby43irvwg_ifcPUtb6FRLvaWwBvj-JicFnhFTLKr8rqCKZmUSCEVOjPRvoBdaW3KTXPWtRxY8.QetsUIpXMVylXIFUheBctZesc8qVn29qmyuGSeKzctY&dib_tag=se&keywords=fastrack+watches+for+man&nsdOptOutParam=true&qid=1747415966&sprefix=fastrack+watches+for+man%2Caps%2C227&sr=8-50
+    - text: (17% off)
+    - img "Amazon Prime"
+    - text: FREE delivery Sun, 18 May Or fastest delivery Tomorrow, 17 May
+    - button "Add to cart"
+  - listitem:
+    - link:
+      - /url: /Fastrack-Stunners-Quartz-Guys-NS3290SM01-NT3290SM01/dp/B0BHTH2DSR/ref=sr_1_51?crid=1W90282OOSS0O&dib=eyJ2IjoiMSJ9.6XcBA4w6Npm_pwAOvvXVcDAPsx0DXQfkVFdJcc8795AOyRoEAhGIodxusTSNBOZ8GZ7QBjv4Xt1bRcOCSc7OPyg0r7pbMkcvB09GR1rcV2Hv6-XZa7g2Q8g8nJ7gGOcgFAOZyjmW0D8EBSwRzt5ZLhyzgrlRZDQO2I47cGai7f1oUrbIgt_sp2btrvSp45rWYR6j0JmsaV8Wsx-9rp2JS-7UU9pPDNHCoUby43irvwg_ifcPUtb6FRLvaWwBvj-JicFnhFTLKr8rqCKZmUSCEVOjPRvoBdaW3KTXPWtRxY8.QetsUIpXMVylXIFUheBctZesc8qVn29qmyuGSeKzctY&dib_tag=se&keywords=fastrack+watches+for+man&nsdOptOutParam=true&qid=1747415966&sprefix=fastrack+watches+for+man%2Caps%2C227&sr=8-51
+    - heading "Fastrack" [level=2]
+    - link "Men Stunners Quartz Analog Silver Dial Metal Strap Watch for Guys-NS3290SM01/NT3290SM01":
+      - /url: /Fastrack-Stunners-Quartz-Guys-NS3290SM01-NT3290SM01/dp/B0BHTH2DSR/ref=sr_1_51?crid=1W90282OOSS0O&dib=eyJ2IjoiMSJ9.6XcBA4w6Npm_pwAOvvXVcDAPsx0DXQfkVFdJcc8795AOyRoEAhGIodxusTSNBOZ8GZ7QBjv4Xt1bRcOCSc7OPyg0r7pbMkcvB09GR1rcV2Hv6-XZa7g2Q8g8nJ7gGOcgFAOZyjmW0D8EBSwRzt5ZLhyzgrlRZDQO2I47cGai7f1oUrbIgt_sp2btrvSp45rWYR6j0JmsaV8Wsx-9rp2JS-7UU9pPDNHCoUby43irvwg_ifcPUtb6FRLvaWwBvj-JicFnhFTLKr8rqCKZmUSCEVOjPRvoBdaW3KTXPWtRxY8.QetsUIpXMVylXIFUheBctZesc8qVn29qmyuGSeKzctY&dib_tag=se&keywords=fastrack+watches+for+man&nsdOptOutParam=true&qid=1747415966&sprefix=fastrack+watches+for+man%2Caps%2C227&sr=8-51
+      - heading "Men Stunners Quartz Analog Silver Dial Metal Strap Watch for Guys-NS3290SM01/NT3290SM01" [level=2]
+    - button "4.1 out of 5 stars, rating details"
+    - link "131 ratings":
+      - /url: /Fastrack-Stunners-Quartz-Guys-NS3290SM01-NT3290SM01/dp/B0BHTH2DSR/ref=sr_1_51?crid=1W90282OOSS0O&dib=eyJ2IjoiMSJ9.6XcBA4w6Npm_pwAOvvXVcDAPsx0DXQfkVFdJcc8795AOyRoEAhGIodxusTSNBOZ8GZ7QBjv4Xt1bRcOCSc7OPyg0r7pbMkcvB09GR1rcV2Hv6-XZa7g2Q8g8nJ7gGOcgFAOZyjmW0D8EBSwRzt5ZLhyzgrlRZDQO2I47cGai7f1oUrbIgt_sp2btrvSp45rWYR6j0JmsaV8Wsx-9rp2JS-7UU9pPDNHCoUby43irvwg_ifcPUtb6FRLvaWwBvj-JicFnhFTLKr8rqCKZmUSCEVOjPRvoBdaW3KTXPWtRxY8.QetsUIpXMVylXIFUheBctZesc8qVn29qmyuGSeKzctY&dib_tag=se&keywords=fastrack+watches+for+man&nsdOptOutParam=true&qid=1747415966&sprefix=fastrack+watches+for+man%2Caps%2C227&sr=8-51#customerReviews
+    - text: 50+ bought in past month
+    - link "Limited time deal":
+      - /url: /gp/goldbox/
+    - text: Price, product page
+    - 'link "₹1,436 M.R.P: ₹1,695 M.R.P: ₹1,695"':
+      - /url: /Fastrack-Stunners-Quartz-Guys-NS3290SM01-NT3290SM01/dp/B0BHTH2DSR/ref=sr_1_51?crid=1W90282OOSS0O&dib=eyJ2IjoiMSJ9.6XcBA4w6Npm_pwAOvvXVcDAPsx0DXQfkVFdJcc8795AOyRoEAhGIodxusTSNBOZ8GZ7QBjv4Xt1bRcOCSc7OPyg0r7pbMkcvB09GR1rcV2Hv6-XZa7g2Q8g8nJ7gGOcgFAOZyjmW0D8EBSwRzt5ZLhyzgrlRZDQO2I47cGai7f1oUrbIgt_sp2btrvSp45rWYR6j0JmsaV8Wsx-9rp2JS-7UU9pPDNHCoUby43irvwg_ifcPUtb6FRLvaWwBvj-JicFnhFTLKr8rqCKZmUSCEVOjPRvoBdaW3KTXPWtRxY8.QetsUIpXMVylXIFUheBctZesc8qVn29qmyuGSeKzctY&dib_tag=se&keywords=fastrack+watches+for+man&nsdOptOutParam=true&qid=1747415966&sprefix=fastrack+watches+for+man%2Caps%2C227&sr=8-51
+    - text: (15% off)
+    - img "Amazon Prime"
+    - text: FREE delivery Sun, 18 May Or fastest delivery Tomorrow, 17 May
+    - button "Add to cart"
+  - listitem:
+    - link:
+      - /url: /Fastrack-Analog-Watch-Unisex-38076PP01W/dp/B0CCW72H5B/ref=sr_1_52?crid=1W90282OOSS0O&dib=eyJ2IjoiMSJ9.6XcBA4w6Npm_pwAOvvXVcDAPsx0DXQfkVFdJcc8795AOyRoEAhGIodxusTSNBOZ8GZ7QBjv4Xt1bRcOCSc7OPyg0r7pbMkcvB09GR1rcV2Hv6-XZa7g2Q8g8nJ7gGOcgFAOZyjmW0D8EBSwRzt5ZLhyzgrlRZDQO2I47cGai7f1oUrbIgt_sp2btrvSp45rWYR6j0JmsaV8Wsx-9rp2JS-7UU9pPDNHCoUby43irvwg_ifcPUtb6FRLvaWwBvj-JicFnhFTLKr8rqCKZmUSCEVOjPRvoBdaW3KTXPWtRxY8.QetsUIpXMVylXIFUheBctZesc8qVn29qmyuGSeKzctY&dib_tag=se&keywords=fastrack+watches+for+man&nsdOptOutParam=true&qid=1747415966&sprefix=fastrack+watches+for+man%2Caps%2C227&sr=8-52
+    - heading "Fastrack" [level=2]
+    - link "Anadigi Black Dial Plastic Strap Unisex Analog Digital Watch-38076PP01W/NT38076PP01W":
+      - /url: /Fastrack-Analog-Watch-Unisex-38076PP01W/dp/B0CCW72H5B/ref=sr_1_52?crid=1W90282OOSS0O&dib=eyJ2IjoiMSJ9.6XcBA4w6Npm_pwAOvvXVcDAPsx0DXQfkVFdJcc8795AOyRoEAhGIodxusTSNBOZ8GZ7QBjv4Xt1bRcOCSc7OPyg0r7pbMkcvB09GR1rcV2Hv6-XZa7g2Q8g8nJ7gGOcgFAOZyjmW0D8EBSwRzt5ZLhyzgrlRZDQO2I47cGai7f1oUrbIgt_sp2btrvSp45rWYR6j0JmsaV8Wsx-9rp2JS-7UU9pPDNHCoUby43irvwg_ifcPUtb6FRLvaWwBvj-JicFnhFTLKr8rqCKZmUSCEVOjPRvoBdaW3KTXPWtRxY8.QetsUIpXMVylXIFUheBctZesc8qVn29qmyuGSeKzctY&dib_tag=se&keywords=fastrack+watches+for+man&nsdOptOutParam=true&qid=1747415966&sprefix=fastrack+watches+for+man%2Caps%2C227&sr=8-52
+      - heading "Anadigi Black Dial Plastic Strap Unisex Analog Digital Watch-38076PP01W/NT38076PP01W" [level=2]
+    - button "4.3 out of 5 stars, rating details"
+    - link "68 ratings":
+      - /url: /Fastrack-Analog-Watch-Unisex-38076PP01W/dp/B0CCW72H5B/ref=sr_1_52?crid=1W90282OOSS0O&dib=eyJ2IjoiMSJ9.6XcBA4w6Npm_pwAOvvXVcDAPsx0DXQfkVFdJcc8795AOyRoEAhGIodxusTSNBOZ8GZ7QBjv4Xt1bRcOCSc7OPyg0r7pbMkcvB09GR1rcV2Hv6-XZa7g2Q8g8nJ7gGOcgFAOZyjmW0D8EBSwRzt5ZLhyzgrlRZDQO2I47cGai7f1oUrbIgt_sp2btrvSp45rWYR6j0JmsaV8Wsx-9rp2JS-7UU9pPDNHCoUby43irvwg_ifcPUtb6FRLvaWwBvj-JicFnhFTLKr8rqCKZmUSCEVOjPRvoBdaW3KTXPWtRxY8.QetsUIpXMVylXIFUheBctZesc8qVn29qmyuGSeKzctY&dib_tag=se&keywords=fastrack+watches+for+man&nsdOptOutParam=true&qid=1747415966&sprefix=fastrack+watches+for+man%2Caps%2C227&sr=8-52#customerReviews
+    - text: 100+ bought in past month Price, product page
+    - link "₹2,295":
+      - /url: /Fastrack-Analog-Watch-Unisex-38076PP01W/dp/B0CCW72H5B/ref=sr_1_52?crid=1W90282OOSS0O&dib=eyJ2IjoiMSJ9.6XcBA4w6Npm_pwAOvvXVcDAPsx0DXQfkVFdJcc8795AOyRoEAhGIodxusTSNBOZ8GZ7QBjv4Xt1bRcOCSc7OPyg0r7pbMkcvB09GR1rcV2Hv6-XZa7g2Q8g8nJ7gGOcgFAOZyjmW0D8EBSwRzt5ZLhyzgrlRZDQO2I47cGai7f1oUrbIgt_sp2btrvSp45rWYR6j0JmsaV8Wsx-9rp2JS-7UU9pPDNHCoUby43irvwg_ifcPUtb6FRLvaWwBvj-JicFnhFTLKr8rqCKZmUSCEVOjPRvoBdaW3KTXPWtRxY8.QetsUIpXMVylXIFUheBctZesc8qVn29qmyuGSeKzctY&dib_tag=se&keywords=fastrack+watches+for+man&nsdOptOutParam=true&qid=1747415966&sprefix=fastrack+watches+for+man%2Caps%2C227&sr=8-52
+    - img "Amazon Prime"
+    - text: FREE delivery Sun, 18 May Only 4 left in stock.
+    - button "Add to cart"
+  - listitem:
+    - link:
+      - /url: /Fastrack-Limitless-Quartz-Analog-Watch/dp/B0DTTV3XVD/ref=sr_1_53?crid=1W90282OOSS0O&dib=eyJ2IjoiMSJ9.6XcBA4w6Npm_pwAOvvXVcDAPsx0DXQfkVFdJcc8795AOyRoEAhGIodxusTSNBOZ8GZ7QBjv4Xt1bRcOCSc7OPyg0r7pbMkcvB09GR1rcV2Hv6-XZa7g2Q8g8nJ7gGOcgFAOZyjmW0D8EBSwRzt5ZLhyzgrlRZDQO2I47cGai7f1oUrbIgt_sp2btrvSp45rWYR6j0JmsaV8Wsx-9rp2JS-7UU9pPDNHCoUby43irvwg_ifcPUtb6FRLvaWwBvj-JicFnhFTLKr8rqCKZmUSCEVOjPRvoBdaW3KTXPWtRxY8.QetsUIpXMVylXIFUheBctZesc8qVn29qmyuGSeKzctY&dib_tag=se&keywords=fastrack+watches+for+man&nsdOptOutParam=true&qid=1747415966&sprefix=fastrack+watches+for+man%2Caps%2C227&sr=8-53
+    - heading "Fastrack" [level=2]
+    - link "Vyb Limitless Quartz Analog Blue Dial Watch for Men":
+      - /url: /Fastrack-Limitless-Quartz-Analog-Watch/dp/B0DTTV3XVD/ref=sr_1_53?crid=1W90282OOSS0O&dib=eyJ2IjoiMSJ9.6XcBA4w6Npm_pwAOvvXVcDAPsx0DXQfkVFdJcc8795AOyRoEAhGIodxusTSNBOZ8GZ7QBjv4Xt1bRcOCSc7OPyg0r7pbMkcvB09GR1rcV2Hv6-XZa7g2Q8g8nJ7gGOcgFAOZyjmW0D8EBSwRzt5ZLhyzgrlRZDQO2I47cGai7f1oUrbIgt_sp2btrvSp45rWYR6j0JmsaV8Wsx-9rp2JS-7UU9pPDNHCoUby43irvwg_ifcPUtb6FRLvaWwBvj-JicFnhFTLKr8rqCKZmUSCEVOjPRvoBdaW3KTXPWtRxY8.QetsUIpXMVylXIFUheBctZesc8qVn29qmyuGSeKzctY&dib_tag=se&keywords=fastrack+watches+for+man&nsdOptOutParam=true&qid=1747415966&sprefix=fastrack+watches+for+man%2Caps%2C227&sr=8-53
+      - heading "Vyb Limitless Quartz Analog Blue Dial Watch for Men" [level=2]
+    - button "4.6 out of 5 stars, rating details"
+    - link "5 ratings":
+      - /url: /Fastrack-Limitless-Quartz-Analog-Watch/dp/B0DTTV3XVD/ref=sr_1_53?crid=1W90282OOSS0O&dib=eyJ2IjoiMSJ9.6XcBA4w6Npm_pwAOvvXVcDAPsx0DXQfkVFdJcc8795AOyRoEAhGIodxusTSNBOZ8GZ7QBjv4Xt1bRcOCSc7OPyg0r7pbMkcvB09GR1rcV2Hv6-XZa7g2Q8g8nJ7gGOcgFAOZyjmW0D8EBSwRzt5ZLhyzgrlRZDQO2I47cGai7f1oUrbIgt_sp2btrvSp45rWYR6j0JmsaV8Wsx-9rp2JS-7UU9pPDNHCoUby43irvwg_ifcPUtb6FRLvaWwBvj-JicFnhFTLKr8rqCKZmUSCEVOjPRvoBdaW3KTXPWtRxY8.QetsUIpXMVylXIFUheBctZesc8qVn29qmyuGSeKzctY&dib_tag=se&keywords=fastrack+watches+for+man&nsdOptOutParam=true&qid=1747415966&sprefix=fastrack+watches+for+man%2Caps%2C227&sr=8-53#customerReviews
+    - text: 100+ bought in past month Price, product page
+    - 'link "₹2,348 M.R.P: ₹3,355 M.R.P: ₹3,355"':
+      - /url: /Fastrack-Limitless-Quartz-Analog-Watch/dp/B0DTTV3XVD/ref=sr_1_53?crid=1W90282OOSS0O&dib=eyJ2IjoiMSJ9.6XcBA4w6Npm_pwAOvvXVcDAPsx0DXQfkVFdJcc8795AOyRoEAhGIodxusTSNBOZ8GZ7QBjv4Xt1bRcOCSc7OPyg0r7pbMkcvB09GR1rcV2Hv6-XZa7g2Q8g8nJ7gGOcgFAOZyjmW0D8EBSwRzt5ZLhyzgrlRZDQO2I47cGai7f1oUrbIgt_sp2btrvSp45rWYR6j0JmsaV8Wsx-9rp2JS-7UU9pPDNHCoUby43irvwg_ifcPUtb6FRLvaWwBvj-JicFnhFTLKr8rqCKZmUSCEVOjPRvoBdaW3KTXPWtRxY8.QetsUIpXMVylXIFUheBctZesc8qVn29qmyuGSeKzctY&dib_tag=se&keywords=fastrack+watches+for+man&nsdOptOutParam=true&qid=1747415966&sprefix=fastrack+watches+for+man%2Caps%2C227&sr=8-53
+    - text: (30% off) Up to 5% back with Amazon Pay ICICI card
+    - img "Amazon Prime"
+    - text: FREE delivery Sun, 18 May Or fastest delivery Tomorrow, 17 May
+    - button "Add to cart"
+  - listitem:
+    - link:
+      - /url: /Fastrack-Fastfit-Analog-Black-Watch-3224NL01/dp/B08JGZMYX8/ref=sr_1_54?crid=1W90282OOSS0O&dib=eyJ2IjoiMSJ9.6XcBA4w6Npm_pwAOvvXVcDAPsx0DXQfkVFdJcc8795AOyRoEAhGIodxusTSNBOZ8GZ7QBjv4Xt1bRcOCSc7OPyg0r7pbMkcvB09GR1rcV2Hv6-XZa7g2Q8g8nJ7gGOcgFAOZyjmW0D8EBSwRzt5ZLhyzgrlRZDQO2I47cGai7f1oUrbIgt_sp2btrvSp45rWYR6j0JmsaV8Wsx-9rp2JS-7UU9pPDNHCoUby43irvwg_ifcPUtb6FRLvaWwBvj-JicFnhFTLKr8rqCKZmUSCEVOjPRvoBdaW3KTXPWtRxY8.QetsUIpXMVylXIFUheBctZesc8qVn29qmyuGSeKzctY&dib_tag=se&keywords=fastrack+watches+for+man&nsdOptOutParam=true&qid=1747415966&sprefix=fastrack+watches+for+man%2Caps%2C227&sr=8-54
+    - heading "Fastrack" [level=2]
+    - link "Fastfit Analog Black Dial Men's Watch-3224NL01/NP3224NL01":
+      - /url: /Fastrack-Fastfit-Analog-Black-Watch-3224NL01/dp/B08JGZMYX8/ref=sr_1_54?crid=1W90282OOSS0O&dib=eyJ2IjoiMSJ9.6XcBA4w6Npm_pwAOvvXVcDAPsx0DXQfkVFdJcc8795AOyRoEAhGIodxusTSNBOZ8GZ7QBjv4Xt1bRcOCSc7OPyg0r7pbMkcvB09GR1rcV2Hv6-XZa7g2Q8g8nJ7gGOcgFAOZyjmW0D8EBSwRzt5ZLhyzgrlRZDQO2I47cGai7f1oUrbIgt_sp2btrvSp45rWYR6j0JmsaV8Wsx-9rp2JS-7UU9pPDNHCoUby43irvwg_ifcPUtb6FRLvaWwBvj-JicFnhFTLKr8rqCKZmUSCEVOjPRvoBdaW3KTXPWtRxY8.QetsUIpXMVylXIFUheBctZesc8qVn29qmyuGSeKzctY&dib_tag=se&keywords=fastrack+watches+for+man&nsdOptOutParam=true&qid=1747415966&sprefix=fastrack+watches+for+man%2Caps%2C227&sr=8-54
+      - heading "Fastfit Analog Black Dial Men's Watch-3224NL01/NP3224NL01" [level=2]
+    - button "4.2 out of 5 stars, rating details"
+    - link "175 ratings":
+      - /url: /Fastrack-Fastfit-Analog-Black-Watch-3224NL01/dp/B08JGZMYX8/ref=sr_1_54?crid=1W90282OOSS0O&dib=eyJ2IjoiMSJ9.6XcBA4w6Npm_pwAOvvXVcDAPsx0DXQfkVFdJcc8795AOyRoEAhGIodxusTSNBOZ8GZ7QBjv4Xt1bRcOCSc7OPyg0r7pbMkcvB09GR1rcV2Hv6-XZa7g2Q8g8nJ7gGOcgFAOZyjmW0D8EBSwRzt5ZLhyzgrlRZDQO2I47cGai7f1oUrbIgt_sp2btrvSp45rWYR6j0JmsaV8Wsx-9rp2JS-7UU9pPDNHCoUby43irvwg_ifcPUtb6FRLvaWwBvj-JicFnhFTLKr8rqCKZmUSCEVOjPRvoBdaW3KTXPWtRxY8.QetsUIpXMVylXIFUheBctZesc8qVn29qmyuGSeKzctY&dib_tag=se&keywords=fastrack+watches+for+man&nsdOptOutParam=true&qid=1747415966&sprefix=fastrack+watches+for+man%2Caps%2C227&sr=8-54#customerReviews
+    - text: 50+ bought in past month
+    - link "Limited time deal":
+      - /url: /gp/goldbox/
+    - text: Price, product page
+    - 'link "₹4,236 M.R.P: ₹5,095 M.R.P: ₹5,095"':
+      - /url: /Fastrack-Fastfit-Analog-Black-Watch-3224NL01/dp/B08JGZMYX8/ref=sr_1_54?crid=1W90282OOSS0O&dib=eyJ2IjoiMSJ9.6XcBA4w6Npm_pwAOvvXVcDAPsx0DXQfkVFdJcc8795AOyRoEAhGIodxusTSNBOZ8GZ7QBjv4Xt1bRcOCSc7OPyg0r7pbMkcvB09GR1rcV2Hv6-XZa7g2Q8g8nJ7gGOcgFAOZyjmW0D8EBSwRzt5ZLhyzgrlRZDQO2I47cGai7f1oUrbIgt_sp2btrvSp45rWYR6j0JmsaV8Wsx-9rp2JS-7UU9pPDNHCoUby43irvwg_ifcPUtb6FRLvaWwBvj-JicFnhFTLKr8rqCKZmUSCEVOjPRvoBdaW3KTXPWtRxY8.QetsUIpXMVylXIFUheBctZesc8qVn29qmyuGSeKzctY&dib_tag=se&keywords=fastrack+watches+for+man&nsdOptOutParam=true&qid=1747415966&sprefix=fastrack+watches+for+man%2Caps%2C227&sr=8-54
+    - text: (17% off) 10% Off on Select Bank Cards
+    - img "Amazon Prime"
+    - text: FREE delivery Mon, 19 May
+    - button "Add to cart"
+  - listitem:
+    - link:
+      - /url: /Fastrack-Stunners-Quartz-Guys-NS3254NM01-NT3254NM01/dp/B091F64YRT/ref=sr_1_55?crid=1W90282OOSS0O&dib=eyJ2IjoiMSJ9.6XcBA4w6Npm_pwAOvvXVcDAPsx0DXQfkVFdJcc8795AOyRoEAhGIodxusTSNBOZ8GZ7QBjv4Xt1bRcOCSc7OPyg0r7pbMkcvB09GR1rcV2Hv6-XZa7g2Q8g8nJ7gGOcgFAOZyjmW0D8EBSwRzt5ZLhyzgrlRZDQO2I47cGai7f1oUrbIgt_sp2btrvSp45rWYR6j0JmsaV8Wsx-9rp2JS-7UU9pPDNHCoUby43irvwg_ifcPUtb6FRLvaWwBvj-JicFnhFTLKr8rqCKZmUSCEVOjPRvoBdaW3KTXPWtRxY8.QetsUIpXMVylXIFUheBctZesc8qVn29qmyuGSeKzctY&dib_tag=se&keywords=fastrack+watches+for+man&nsdOptOutParam=true&qid=1747415966&sprefix=fastrack+watches+for+man%2Caps%2C227&sr=8-55
+    - heading "Fastrack" [level=2]
+    - link "Men Stunners Quartz Analog Black Dial Metal Strap Watch for Guys-NS3254NM01/NT3254NM01":
+      - /url: /Fastrack-Stunners-Quartz-Guys-NS3254NM01-NT3254NM01/dp/B091F64YRT/ref=sr_1_55?crid=1W90282OOSS0O&dib=eyJ2IjoiMSJ9.6XcBA4w6Npm_pwAOvvXVcDAPsx0DXQfkVFdJcc8795AOyRoEAhGIodxusTSNBOZ8GZ7QBjv4Xt1bRcOCSc7OPyg0r7pbMkcvB09GR1rcV2Hv6-XZa7g2Q8g8nJ7gGOcgFAOZyjmW0D8EBSwRzt5ZLhyzgrlRZDQO2I47cGai7f1oUrbIgt_sp2btrvSp45rWYR6j0JmsaV8Wsx-9rp2JS-7UU9pPDNHCoUby43irvwg_ifcPUtb6FRLvaWwBvj-JicFnhFTLKr8rqCKZmUSCEVOjPRvoBdaW3KTXPWtRxY8.QetsUIpXMVylXIFUheBctZesc8qVn29qmyuGSeKzctY&dib_tag=se&keywords=fastrack+watches+for+man&nsdOptOutParam=true&qid=1747415966&sprefix=fastrack+watches+for+man%2Caps%2C227&sr=8-55
+      - heading "Men Stunners Quartz Analog Black Dial Metal Strap Watch for Guys-NS3254NM01/NT3254NM01" [level=2]
+    - button "4.2 out of 5 stars, rating details"
+    - link "61 ratings":
+      - /url: /Fastrack-Stunners-Quartz-Guys-NS3254NM01-NT3254NM01/dp/B091F64YRT/ref=sr_1_55?crid=1W90282OOSS0O&dib=eyJ2IjoiMSJ9.6XcBA4w6Npm_pwAOvvXVcDAPsx0DXQfkVFdJcc8795AOyRoEAhGIodxusTSNBOZ8GZ7QBjv4Xt1bRcOCSc7OPyg0r7pbMkcvB09GR1rcV2Hv6-XZa7g2Q8g8nJ7gGOcgFAOZyjmW0D8EBSwRzt5ZLhyzgrlRZDQO2I47cGai7f1oUrbIgt_sp2btrvSp45rWYR6j0JmsaV8Wsx-9rp2JS-7UU9pPDNHCoUby43irvwg_ifcPUtb6FRLvaWwBvj-JicFnhFTLKr8rqCKZmUSCEVOjPRvoBdaW3KTXPWtRxY8.QetsUIpXMVylXIFUheBctZesc8qVn29qmyuGSeKzctY&dib_tag=se&keywords=fastrack+watches+for+man&nsdOptOutParam=true&qid=1747415966&sprefix=fastrack+watches+for+man%2Caps%2C227&sr=8-55#customerReviews
+    - text: 50+ bought in past month
+    - link "Limited time deal":
+      - /url: /gp/goldbox/
+    - text: Price, product page
+    - 'link "₹1,996 M.R.P: ₹2,395 M.R.P: ₹2,395"':
+      - /url: /Fastrack-Stunners-Quartz-Guys-NS3254NM01-NT3254NM01/dp/B091F64YRT/ref=sr_1_55?crid=1W90282OOSS0O&dib=eyJ2IjoiMSJ9.6XcBA4w6Npm_pwAOvvXVcDAPsx0DXQfkVFdJcc8795AOyRoEAhGIodxusTSNBOZ8GZ7QBjv4Xt1bRcOCSc7OPyg0r7pbMkcvB09GR1rcV2Hv6-XZa7g2Q8g8nJ7gGOcgFAOZyjmW0D8EBSwRzt5ZLhyzgrlRZDQO2I47cGai7f1oUrbIgt_sp2btrvSp45rWYR6j0JmsaV8Wsx-9rp2JS-7UU9pPDNHCoUby43irvwg_ifcPUtb6FRLvaWwBvj-JicFnhFTLKr8rqCKZmUSCEVOjPRvoBdaW3KTXPWtRxY8.QetsUIpXMVylXIFUheBctZesc8qVn29qmyuGSeKzctY&dib_tag=se&keywords=fastrack+watches+for+man&nsdOptOutParam=true&qid=1747415966&sprefix=fastrack+watches+for+man%2Caps%2C227&sr=8-55
+    - text: (17% off)
+    - img "Amazon Prime"
+    - text: FREE delivery Sun, 18 May Or fastest delivery Tomorrow, 17 May
+    - button "Add to cart"
+  - listitem:
+    - link:
+      - /url: /Fastrack-Analog-Blue-Unisexs-Watch-68031AP05/dp/B0B6C3PHYQ/ref=sr_1_56?crid=1W90282OOSS0O&dib=eyJ2IjoiMSJ9.6XcBA4w6Npm_pwAOvvXVcDAPsx0DXQfkVFdJcc8795AOyRoEAhGIodxusTSNBOZ8GZ7QBjv4Xt1bRcOCSc7OPyg0r7pbMkcvB09GR1rcV2Hv6-XZa7g2Q8g8nJ7gGOcgFAOZyjmW0D8EBSwRzt5ZLhyzgrlRZDQO2I47cGai7f1oUrbIgt_sp2btrvSp45rWYR6j0JmsaV8Wsx-9rp2JS-7UU9pPDNHCoUby43irvwg_ifcPUtb6FRLvaWwBvj-JicFnhFTLKr8rqCKZmUSCEVOjPRvoBdaW3KTXPWtRxY8.QetsUIpXMVylXIFUheBctZesc8qVn29qmyuGSeKzctY&dib_tag=se&keywords=fastrack+watches+for+man&nsdOptOutParam=true&qid=1747415966&sprefix=fastrack+watches+for+man%2Caps%2C227&sr=8-56
+    - heading "Fastrack" [level=2]
+    - link "Topicals Quartz Analog Blue Dial Silicone Strap Unisex Watch-68031AP05":
+      - /url: /Fastrack-Analog-Blue-Unisexs-Watch-68031AP05/dp/B0B6C3PHYQ/ref=sr_1_56?crid=1W90282OOSS0O&dib=eyJ2IjoiMSJ9.6XcBA4w6Npm_pwAOvvXVcDAPsx0DXQfkVFdJcc8795AOyRoEAhGIodxusTSNBOZ8GZ7QBjv4Xt1bRcOCSc7OPyg0r7pbMkcvB09GR1rcV2Hv6-XZa7g2Q8g8nJ7gGOcgFAOZyjmW0D8EBSwRzt5ZLhyzgrlRZDQO2I47cGai7f1oUrbIgt_sp2btrvSp45rWYR6j0JmsaV8Wsx-9rp2JS-7UU9pPDNHCoUby43irvwg_ifcPUtb6FRLvaWwBvj-JicFnhFTLKr8rqCKZmUSCEVOjPRvoBdaW3KTXPWtRxY8.QetsUIpXMVylXIFUheBctZesc8qVn29qmyuGSeKzctY&dib_tag=se&keywords=fastrack+watches+for+man&nsdOptOutParam=true&qid=1747415966&sprefix=fastrack+watches+for+man%2Caps%2C227&sr=8-56
+      - heading "Topicals Quartz Analog Blue Dial Silicone Strap Unisex Watch-68031AP05" [level=2]
+    - button "3.6 out of 5 stars, rating details"
+    - link "41 ratings":
+      - /url: /Fastrack-Analog-Blue-Unisexs-Watch-68031AP05/dp/B0B6C3PHYQ/ref=sr_1_56?crid=1W90282OOSS0O&dib=eyJ2IjoiMSJ9.6XcBA4w6Npm_pwAOvvXVcDAPsx0DXQfkVFdJcc8795AOyRoEAhGIodxusTSNBOZ8GZ7QBjv4Xt1bRcOCSc7OPyg0r7pbMkcvB09GR1rcV2Hv6-XZa7g2Q8g8nJ7gGOcgFAOZyjmW0D8EBSwRzt5ZLhyzgrlRZDQO2I47cGai7f1oUrbIgt_sp2btrvSp45rWYR6j0JmsaV8Wsx-9rp2JS-7UU9pPDNHCoUby43irvwg_ifcPUtb6FRLvaWwBvj-JicFnhFTLKr8rqCKZmUSCEVOjPRvoBdaW3KTXPWtRxY8.QetsUIpXMVylXIFUheBctZesc8qVn29qmyuGSeKzctY&dib_tag=se&keywords=fastrack+watches+for+man&nsdOptOutParam=true&qid=1747415966&sprefix=fastrack+watches+for+man%2Caps%2C227&sr=8-56#customerReviews
+    - text: 50+ bought in past month Price, product page
+    - 'link "₹1,396 M.R.P: ₹1,995 M.R.P: ₹1,995"':
+      - /url: /Fastrack-Analog-Blue-Unisexs-Watch-68031AP05/dp/B0B6C3PHYQ/ref=sr_1_56?crid=1W90282OOSS0O&dib=eyJ2IjoiMSJ9.6XcBA4w6Npm_pwAOvvXVcDAPsx0DXQfkVFdJcc8795AOyRoEAhGIodxusTSNBOZ8GZ7QBjv4Xt1bRcOCSc7OPyg0r7pbMkcvB09GR1rcV2Hv6-XZa7g2Q8g8nJ7gGOcgFAOZyjmW0D8EBSwRzt5ZLhyzgrlRZDQO2I47cGai7f1oUrbIgt_sp2btrvSp45rWYR6j0JmsaV8Wsx-9rp2JS-7UU9pPDNHCoUby43irvwg_ifcPUtb6FRLvaWwBvj-JicFnhFTLKr8rqCKZmUSCEVOjPRvoBdaW3KTXPWtRxY8.QetsUIpXMVylXIFUheBctZesc8qVn29qmyuGSeKzctY&dib_tag=se&keywords=fastrack+watches+for+man&nsdOptOutParam=true&qid=1747415966&sprefix=fastrack+watches+for+man%2Caps%2C227&sr=8-56
+    - text: (30% off)
+    - img "Amazon Prime"
+    - text: FREE delivery Wed, 21 May Only 1 left in stock.
+    - button "Add to cart"
+  - listitem:
+    - link:
+      - /url: /sspa/click?ie=UTF8&spc=MTo2MDAwMTA2MjkzMjYzMDI4OjE3NDc0MTU5NjY6c3BfYnRmOjMwMDE4ODc3Mzc3NDUzMjo6MDo6&url=%2FFire-Boltt-Calling-Display-Nano-SIM-Battery%2Fdp%2FB0CXXDG3LS%2Fref%3Dsr_1_57_sspa%3Fcrid%3D1W90282OOSS0O%26dib%3DeyJ2IjoiMSJ9.6XcBA4w6Npm_pwAOvvXVcDAPsx0DXQfkVFdJcc8795AOyRoEAhGIodxusTSNBOZ8GZ7QBjv4Xt1bRcOCSc7OPyg0r7pbMkcvB09GR1rcV2Hv6-XZa7g2Q8g8nJ7gGOcgFAOZyjmW0D8EBSwRzt5ZLhyzgrlRZDQO2I47cGai7f1oUrbIgt_sp2btrvSp45rWYR6j0JmsaV8Wsx-9rp2JS-7UU9pPDNHCoUby43irvwg_ifcPUtb6FRLvaWwBvj-JicFnhFTLKr8rqCKZmUSCEVOjPRvoBdaW3KTXPWtRxY8.QetsUIpXMVylXIFUheBctZesc8qVn29qmyuGSeKzctY%26dib_tag%3Dse%26keywords%3Dfastrack%2Bwatches%2Bfor%2Bman%26nsdOptOutParam%3Dtrue%26qid%3D1747415966%26sprefix%3Dfastrack%2Bwatches%2Bfor%2Bman%252Caps%252C227%26sr%3D8-57-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9idGY%26psc%3D1
+    - button "View Sponsored information or leave ad feedback": Sponsored
+    - heading "Fire-Boltt" [level=2]
+    - link "Sponsored Ad - Fire-Boltt 4G Pro Volte Calling Smart Watch- 2.02” TFT Display, 4G Nano-SIM GPS, Health Suite, Sports Modes, 400mAh Battery (Black)":
+      - /url: /sspa/click?ie=UTF8&spc=MTo2MDAwMTA2MjkzMjYzMDI4OjE3NDc0MTU5NjY6c3BfYnRmOjMwMDE4ODc3Mzc3NDUzMjo6MDo6&url=%2FFire-Boltt-Calling-Display-Nano-SIM-Battery%2Fdp%2FB0CXXDG3LS%2Fref%3Dsr_1_57_sspa%3Fcrid%3D1W90282OOSS0O%26dib%3DeyJ2IjoiMSJ9.6XcBA4w6Npm_pwAOvvXVcDAPsx0DXQfkVFdJcc8795AOyRoEAhGIodxusTSNBOZ8GZ7QBjv4Xt1bRcOCSc7OPyg0r7pbMkcvB09GR1rcV2Hv6-XZa7g2Q8g8nJ7gGOcgFAOZyjmW0D8EBSwRzt5ZLhyzgrlRZDQO2I47cGai7f1oUrbIgt_sp2btrvSp45rWYR6j0JmsaV8Wsx-9rp2JS-7UU9pPDNHCoUby43irvwg_ifcPUtb6FRLvaWwBvj-JicFnhFTLKr8rqCKZmUSCEVOjPRvoBdaW3KTXPWtRxY8.QetsUIpXMVylXIFUheBctZesc8qVn29qmyuGSeKzctY%26dib_tag%3Dse%26keywords%3Dfastrack%2Bwatches%2Bfor%2Bman%26nsdOptOutParam%3Dtrue%26qid%3D1747415966%26sprefix%3Dfastrack%2Bwatches%2Bfor%2Bman%252Caps%252C227%26sr%3D8-57-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9idGY%26psc%3D1
+      - heading "Sponsored Ad - Fire-Boltt 4G Pro Volte Calling Smart Watch- 2.02” TFT Display, 4G Nano-SIM GPS, Health Suite, Sports Modes, 400mAh Battery (Black)" [level=2]: Fire-Boltt 4G Pro Volte Calling Smart Watch- 2.02” TFT Display, 4G Nano-SIM GPS, Health Suite, Sports Modes, 400mAh Battery (Black)
+    - button "2.9 out of 5 stars, rating details"
+    - link "3,326 ratings":
+      - /url: /sspa/click?ie=UTF8&spc=MTo2MDAwMTA2MjkzMjYzMDI4OjE3NDc0MTU5NjY6c3BfYnRmOjMwMDE4ODc3Mzc3NDUzMjo6MDo6&url=%2FFire-Boltt-Calling-Display-Nano-SIM-Battery%2Fdp%2FB0CXXDG3LS%2Fref%3Dsr_1_57_sspa%3Fcrid%3D1W90282OOSS0O%26dib%3DeyJ2IjoiMSJ9.6XcBA4w6Npm_pwAOvvXVcDAPsx0DXQfkVFdJcc8795AOyRoEAhGIodxusTSNBOZ8GZ7QBjv4Xt1bRcOCSc7OPyg0r7pbMkcvB09GR1rcV2Hv6-XZa7g2Q8g8nJ7gGOcgFAOZyjmW0D8EBSwRzt5ZLhyzgrlRZDQO2I47cGai7f1oUrbIgt_sp2btrvSp45rWYR6j0JmsaV8Wsx-9rp2JS-7UU9pPDNHCoUby43irvwg_ifcPUtb6FRLvaWwBvj-JicFnhFTLKr8rqCKZmUSCEVOjPRvoBdaW3KTXPWtRxY8.QetsUIpXMVylXIFUheBctZesc8qVn29qmyuGSeKzctY%26dib_tag%3Dse%26keywords%3Dfastrack%2Bwatches%2Bfor%2Bman%26nsdOptOutParam%3Dtrue%26qid%3D1747415966%26sprefix%3Dfastrack%2Bwatches%2Bfor%2Bman%252Caps%252C227%26sr%3D8-57-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9idGY%26psc%3D1#customerReviews
+    - text: 1K+ bought in past month Price, product page
+    - 'link "₹1,949 M.R.P: ₹19,999 M.R.P: ₹19,999"':
+      - /url: /sspa/click?ie=UTF8&spc=MTo2MDAwMTA2MjkzMjYzMDI4OjE3NDc0MTU5NjY6c3BfYnRmOjMwMDE4ODc3Mzc3NDUzMjo6MDo6&url=%2FFire-Boltt-Calling-Display-Nano-SIM-Battery%2Fdp%2FB0CXXDG3LS%2Fref%3Dsr_1_57_sspa%3Fcrid%3D1W90282OOSS0O%26dib%3DeyJ2IjoiMSJ9.6XcBA4w6Npm_pwAOvvXVcDAPsx0DXQfkVFdJcc8795AOyRoEAhGIodxusTSNBOZ8GZ7QBjv4Xt1bRcOCSc7OPyg0r7pbMkcvB09GR1rcV2Hv6-XZa7g2Q8g8nJ7gGOcgFAOZyjmW0D8EBSwRzt5ZLhyzgrlRZDQO2I47cGai7f1oUrbIgt_sp2btrvSp45rWYR6j0JmsaV8Wsx-9rp2JS-7UU9pPDNHCoUby43irvwg_ifcPUtb6FRLvaWwBvj-JicFnhFTLKr8rqCKZmUSCEVOjPRvoBdaW3KTXPWtRxY8.QetsUIpXMVylXIFUheBctZesc8qVn29qmyuGSeKzctY%26dib_tag%3Dse%26keywords%3Dfastrack%2Bwatches%2Bfor%2Bman%26nsdOptOutParam%3Dtrue%26qid%3D1747415966%26sprefix%3Dfastrack%2Bwatches%2Bfor%2Bman%252Caps%252C227%26sr%3D8-57-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9idGY%26psc%3D1
+    - text: (90% off)
+    - img "Amazon Prime"
+    - text: "FREE delivery Sun, 18 May Or fastest delivery Tomorrow, 17 May Service: Installation"
+    - button "Add to cart"
+  - listitem:
+    - link:
+      - /url: /sspa/click?ie=UTF8&spc=MTo2MDAwMTA2MjkzMjYzMDI4OjE3NDc0MTU5NjY6c3BfYnRmOjMwMDMwMjE2OTA1NDMzMjo6MDo6&url=%2FFire-Boltt-Dominian-Stainless-Resolution-Bluetooth%2Fdp%2FB0D8KVX6NY%2Fref%3Dsr_1_58_sspa%3Fcrid%3D1W90282OOSS0O%26dib%3DeyJ2IjoiMSJ9.6XcBA4w6Npm_pwAOvvXVcDAPsx0DXQfkVFdJcc8795AOyRoEAhGIodxusTSNBOZ8GZ7QBjv4Xt1bRcOCSc7OPyg0r7pbMkcvB09GR1rcV2Hv6-XZa7g2Q8g8nJ7gGOcgFAOZyjmW0D8EBSwRzt5ZLhyzgrlRZDQO2I47cGai7f1oUrbIgt_sp2btrvSp45rWYR6j0JmsaV8Wsx-9rp2JS-7UU9pPDNHCoUby43irvwg_ifcPUtb6FRLvaWwBvj-JicFnhFTLKr8rqCKZmUSCEVOjPRvoBdaW3KTXPWtRxY8.QetsUIpXMVylXIFUheBctZesc8qVn29qmyuGSeKzctY%26dib_tag%3Dse%26keywords%3Dfastrack%2Bwatches%2Bfor%2Bman%26nsdOptOutParam%3Dtrue%26qid%3D1747415966%26sprefix%3Dfastrack%2Bwatches%2Bfor%2Bman%252Caps%252C227%26sr%3D8-58-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9idGY%26psc%3D1
+    - button "View Sponsored information or leave ad feedback": Sponsored
+    - heading "Fire-Boltt" [level=2]
+    - link "Sponsored Ad - Fire-Boltt Dominian 36.3mm (1.43 inch) AMOLED Display, Stainless Steel Design, 466 * 466 px Resolution, Bluetooth Calling, Multiple Sports Modes, Health Mode, IP67, Weather Updates (Black Gold)":
+      - /url: /sspa/click?ie=UTF8&spc=MTo2MDAwMTA2MjkzMjYzMDI4OjE3NDc0MTU5NjY6c3BfYnRmOjMwMDMwMjE2OTA1NDMzMjo6MDo6&url=%2FFire-Boltt-Dominian-Stainless-Resolution-Bluetooth%2Fdp%2FB0D8KVX6NY%2Fref%3Dsr_1_58_sspa%3Fcrid%3D1W90282OOSS0O%26dib%3DeyJ2IjoiMSJ9.6XcBA4w6Npm_pwAOvvXVcDAPsx0DXQfkVFdJcc8795AOyRoEAhGIodxusTSNBOZ8GZ7QBjv4Xt1bRcOCSc7OPyg0r7pbMkcvB09GR1rcV2Hv6-XZa7g2Q8g8nJ7gGOcgFAOZyjmW0D8EBSwRzt5ZLhyzgrlRZDQO2I47cGai7f1oUrbIgt_sp2btrvSp45rWYR6j0JmsaV8Wsx-9rp2JS-7UU9pPDNHCoUby43irvwg_ifcPUtb6FRLvaWwBvj-JicFnhFTLKr8rqCKZmUSCEVOjPRvoBdaW3KTXPWtRxY8.QetsUIpXMVylXIFUheBctZesc8qVn29qmyuGSeKzctY%26dib_tag%3Dse%26keywords%3Dfastrack%2Bwatches%2Bfor%2Bman%26nsdOptOutParam%3Dtrue%26qid%3D1747415966%26sprefix%3Dfastrack%2Bwatches%2Bfor%2Bman%252Caps%252C227%26sr%3D8-58-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9idGY%26psc%3D1
+      - heading "Sponsored Ad - Fire-Boltt Dominian 36.3mm (1.43 inch) AMOLED Display, Stainless Steel Design, 466 * 466 px Resolution, Bluetooth Calling, Multiple Sports Modes, Health Mode, IP67, Weather Updates (Black Gold)" [level=2]: Fire-Boltt Dominian 36.3mm (1.43 inch) AMOLED Display, Stainless Steel Design, 466 * 466 px Resolution, Bluetooth Calling, Multiple Sports Modes, Health Mode, IP67, Weather Updates (Black Gold)
+    - button "3.8 out of 5 stars, rating details"
+    - link "1,173 ratings":
+      - /url: /sspa/click?ie=UTF8&spc=MTo2MDAwMTA2MjkzMjYzMDI4OjE3NDc0MTU5NjY6c3BfYnRmOjMwMDMwMjE2OTA1NDMzMjo6MDo6&url=%2FFire-Boltt-Dominian-Stainless-Resolution-Bluetooth%2Fdp%2FB0D8KVX6NY%2Fref%3Dsr_1_58_sspa%3Fcrid%3D1W90282OOSS0O%26dib%3DeyJ2IjoiMSJ9.6XcBA4w6Npm_pwAOvvXVcDAPsx0DXQfkVFdJcc8795AOyRoEAhGIodxusTSNBOZ8GZ7QBjv4Xt1bRcOCSc7OPyg0r7pbMkcvB09GR1rcV2Hv6-XZa7g2Q8g8nJ7gGOcgFAOZyjmW0D8EBSwRzt5ZLhyzgrlRZDQO2I47cGai7f1oUrbIgt_sp2btrvSp45rWYR6j0JmsaV8Wsx-9rp2JS-7UU9pPDNHCoUby43irvwg_ifcPUtb6FRLvaWwBvj-JicFnhFTLKr8rqCKZmUSCEVOjPRvoBdaW3KTXPWtRxY8.QetsUIpXMVylXIFUheBctZesc8qVn29qmyuGSeKzctY%26dib_tag%3Dse%26keywords%3Dfastrack%2Bwatches%2Bfor%2Bman%26nsdOptOutParam%3Dtrue%26qid%3D1747415966%26sprefix%3Dfastrack%2Bwatches%2Bfor%2Bman%252Caps%252C227%26sr%3D8-58-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9idGY%26psc%3D1#customerReviews
+    - text: 100+ bought in past month Price, product page
+    - 'link "₹1,999 M.R.P: ₹21,000 M.R.P: ₹21,000"':
+      - /url: /sspa/click?ie=UTF8&spc=MTo2MDAwMTA2MjkzMjYzMDI4OjE3NDc0MTU5NjY6c3BfYnRmOjMwMDMwMjE2OTA1NDMzMjo6MDo6&url=%2FFire-Boltt-Dominian-Stainless-Resolution-Bluetooth%2Fdp%2FB0D8KVX6NY%2Fref%3Dsr_1_58_sspa%3Fcrid%3D1W90282OOSS0O%26dib%3DeyJ2IjoiMSJ9.6XcBA4w6Npm_pwAOvvXVcDAPsx0DXQfkVFdJcc8795AOyRoEAhGIodxusTSNBOZ8GZ7QBjv4Xt1bRcOCSc7OPyg0r7pbMkcvB09GR1rcV2Hv6-XZa7g2Q8g8nJ7gGOcgFAOZyjmW0D8EBSwRzt5ZLhyzgrlRZDQO2I47cGai7f1oUrbIgt_sp2btrvSp45rWYR6j0JmsaV8Wsx-9rp2JS-7UU9pPDNHCoUby43irvwg_ifcPUtb6FRLvaWwBvj-JicFnhFTLKr8rqCKZmUSCEVOjPRvoBdaW3KTXPWtRxY8.QetsUIpXMVylXIFUheBctZesc8qVn29qmyuGSeKzctY%26dib_tag%3Dse%26keywords%3Dfastrack%2Bwatches%2Bfor%2Bman%26nsdOptOutParam%3Dtrue%26qid%3D1747415966%26sprefix%3Dfastrack%2Bwatches%2Bfor%2Bman%252Caps%252C227%26sr%3D8-58-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9idGY%26psc%3D1
+    - text: (90% off)
+    - img "Amazon Prime"
+    - text: "FREE delivery Tue, 20 May Service: Installation"
+    - button "Add to cart"
+  - listitem:
+    - link:
+      - /url: /sspa/click?ie=UTF8&spc=MTo2MDAwMTA2MjkzMjYzMDI4OjE3NDc0MTU5NjY6c3BfYnRmOjMwMDUwNTMxMjczNTczMjo6MDo6&url=%2FSKMEI-Black-Red-Stainless-Water-Resistant-Scratch-Resistant-1990%2Fdp%2FB0CCFWD2S9%2Fref%3Dsr_1_59_sspa%3Fcrid%3D1W90282OOSS0O%26dib%3DeyJ2IjoiMSJ9.6XcBA4w6Npm_pwAOvvXVcDAPsx0DXQfkVFdJcc8795AOyRoEAhGIodxusTSNBOZ8GZ7QBjv4Xt1bRcOCSc7OPyg0r7pbMkcvB09GR1rcV2Hv6-XZa7g2Q8g8nJ7gGOcgFAOZyjmW0D8EBSwRzt5ZLhyzgrlRZDQO2I47cGai7f1oUrbIgt_sp2btrvSp45rWYR6j0JmsaV8Wsx-9rp2JS-7UU9pPDNHCoUby43irvwg_ifcPUtb6FRLvaWwBvj-JicFnhFTLKr8rqCKZmUSCEVOjPRvoBdaW3KTXPWtRxY8.QetsUIpXMVylXIFUheBctZesc8qVn29qmyuGSeKzctY%26dib_tag%3Dse%26keywords%3Dfastrack%2Bwatches%2Bfor%2Bman%26nsdOptOutParam%3Dtrue%26qid%3D1747415966%26sprefix%3Dfastrack%2Bwatches%2Bfor%2Bman%252Caps%252C227%26sr%3D8-59-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9idGY%26psc%3D1
+    - button "View Sponsored information or leave ad feedback": Sponsored
+    - heading "SKMEI" [level=2]
+    - link "Sponsored Ad - New Car Wheel Watch with Rolling Creative Fashion Analog Watch, Black Dial Zink Alloy Case Men's Watch, Stainless Steel Black Color Band, Quartz Movement, Water & Scratch-Resistant-1990":
+      - /url: /sspa/click?ie=UTF8&spc=MTo2MDAwMTA2MjkzMjYzMDI4OjE3NDc0MTU5NjY6c3BfYnRmOjMwMDUwNTMxMjczNTczMjo6MDo6&url=%2FSKMEI-Black-Red-Stainless-Water-Resistant-Scratch-Resistant-1990%2Fdp%2FB0CCFWD2S9%2Fref%3Dsr_1_59_sspa%3Fcrid%3D1W90282OOSS0O%26dib%3DeyJ2IjoiMSJ9.6XcBA4w6Npm_pwAOvvXVcDAPsx0DXQfkVFdJcc8795AOyRoEAhGIodxusTSNBOZ8GZ7QBjv4Xt1bRcOCSc7OPyg0r7pbMkcvB09GR1rcV2Hv6-XZa7g2Q8g8nJ7gGOcgFAOZyjmW0D8EBSwRzt5ZLhyzgrlRZDQO2I47cGai7f1oUrbIgt_sp2btrvSp45rWYR6j0JmsaV8Wsx-9rp2JS-7UU9pPDNHCoUby43irvwg_ifcPUtb6FRLvaWwBvj-JicFnhFTLKr8rqCKZmUSCEVOjPRvoBdaW3KTXPWtRxY8.QetsUIpXMVylXIFUheBctZesc8qVn29qmyuGSeKzctY%26dib_tag%3Dse%26keywords%3Dfastrack%2Bwatches%2Bfor%2Bman%26nsdOptOutParam%3Dtrue%26qid%3D1747415966%26sprefix%3Dfastrack%2Bwatches%2Bfor%2Bman%252Caps%252C227%26sr%3D8-59-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9idGY%26psc%3D1
+      - heading "Sponsored Ad - New Car Wheel Watch with Rolling Creative Fashion Analog Watch, Black Dial Zink Alloy Case Men's Watch, Stainless Steel Black Color Band, Quartz Movement, Water & Scratch-Resistant-1990" [level=2]: New Car Wheel Watch with Rolling Creative Fashion Analog Watch, Black Dial Zink Alloy Case Men's Watch, Stainless Steel Black Color Band, Quartz Movement, Water & Scratch-Resistant-1990
+    - button "4.0 out of 5 stars, rating details"
+    - link "1,996 ratings":
+      - /url: /sspa/click?ie=UTF8&spc=MTo2MDAwMTA2MjkzMjYzMDI4OjE3NDc0MTU5NjY6c3BfYnRmOjMwMDUwNTMxMjczNTczMjo6MDo6&url=%2FSKMEI-Black-Red-Stainless-Water-Resistant-Scratch-Resistant-1990%2Fdp%2FB0CCFWD2S9%2Fref%3Dsr_1_59_sspa%3Fcrid%3D1W90282OOSS0O%26dib%3DeyJ2IjoiMSJ9.6XcBA4w6Npm_pwAOvvXVcDAPsx0DXQfkVFdJcc8795AOyRoEAhGIodxusTSNBOZ8GZ7QBjv4Xt1bRcOCSc7OPyg0r7pbMkcvB09GR1rcV2Hv6-XZa7g2Q8g8nJ7gGOcgFAOZyjmW0D8EBSwRzt5ZLhyzgrlRZDQO2I47cGai7f1oUrbIgt_sp2btrvSp45rWYR6j0JmsaV8Wsx-9rp2JS-7UU9pPDNHCoUby43irvwg_ifcPUtb6FRLvaWwBvj-JicFnhFTLKr8rqCKZmUSCEVOjPRvoBdaW3KTXPWtRxY8.QetsUIpXMVylXIFUheBctZesc8qVn29qmyuGSeKzctY%26dib_tag%3Dse%26keywords%3Dfastrack%2Bwatches%2Bfor%2Bman%26nsdOptOutParam%3Dtrue%26qid%3D1747415966%26sprefix%3Dfastrack%2Bwatches%2Bfor%2Bman%252Caps%252C227%26sr%3D8-59-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9idGY%26psc%3D1#customerReviews
+    - text: 500+ bought in past month
+    - link "Limited time deal":
+      - /url: /gp/goldbox/
+    - text: Price, product page
+    - 'link "₹1,799 M.R.P: ₹7,699 M.R.P: ₹7,699"':
+      - /url: /sspa/click?ie=UTF8&spc=MTo2MDAwMTA2MjkzMjYzMDI4OjE3NDc0MTU5NjY6c3BfYnRmOjMwMDUwNTMxMjczNTczMjo6MDo6&url=%2FSKMEI-Black-Red-Stainless-Water-Resistant-Scratch-Resistant-1990%2Fdp%2FB0CCFWD2S9%2Fref%3Dsr_1_59_sspa%3Fcrid%3D1W90282OOSS0O%26dib%3DeyJ2IjoiMSJ9.6XcBA4w6Npm_pwAOvvXVcDAPsx0DXQfkVFdJcc8795AOyRoEAhGIodxusTSNBOZ8GZ7QBjv4Xt1bRcOCSc7OPyg0r7pbMkcvB09GR1rcV2Hv6-XZa7g2Q8g8nJ7gGOcgFAOZyjmW0D8EBSwRzt5ZLhyzgrlRZDQO2I47cGai7f1oUrbIgt_sp2btrvSp45rWYR6j0JmsaV8Wsx-9rp2JS-7UU9pPDNHCoUby43irvwg_ifcPUtb6FRLvaWwBvj-JicFnhFTLKr8rqCKZmUSCEVOjPRvoBdaW3KTXPWtRxY8.QetsUIpXMVylXIFUheBctZesc8qVn29qmyuGSeKzctY%26dib_tag%3Dse%26keywords%3Dfastrack%2Bwatches%2Bfor%2Bman%26nsdOptOutParam%3Dtrue%26qid%3D1747415966%26sprefix%3Dfastrack%2Bwatches%2Bfor%2Bman%252Caps%252C227%26sr%3D8-59-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9idGY%26psc%3D1
+    - text: (77% off)
+    - img "Amazon Prime"
+    - text: FREE delivery Sun, 18 May Or fastest delivery Tomorrow, 17 May
+    - button "Add to cart"
+  - listitem:
+    - link:
+      - /url: /sspa/click?ie=UTF8&spc=MTo2MDAwMTA2MjkzMjYzMDI4OjE3NDc0MTU5NjY6c3BfYnRmOjMwMDI3NDM5ODUzNDQzMjo6MDo6&url=%2FFire-Boltt-BSW183-Onxy%2Fdp%2FB0CT5JDFZ4%2Fref%3Dsr_1_60_sspa%3Fcrid%3D1W90282OOSS0O%26dib%3DeyJ2IjoiMSJ9.6XcBA4w6Npm_pwAOvvXVcDAPsx0DXQfkVFdJcc8795AOyRoEAhGIodxusTSNBOZ8GZ7QBjv4Xt1bRcOCSc7OPyg0r7pbMkcvB09GR1rcV2Hv6-XZa7g2Q8g8nJ7gGOcgFAOZyjmW0D8EBSwRzt5ZLhyzgrlRZDQO2I47cGai7f1oUrbIgt_sp2btrvSp45rWYR6j0JmsaV8Wsx-9rp2JS-7UU9pPDNHCoUby43irvwg_ifcPUtb6FRLvaWwBvj-JicFnhFTLKr8rqCKZmUSCEVOjPRvoBdaW3KTXPWtRxY8.QetsUIpXMVylXIFUheBctZesc8qVn29qmyuGSeKzctY%26dib_tag%3Dse%26keywords%3Dfastrack%2Bwatches%2Bfor%2Bman%26nsdOptOutParam%3Dtrue%26qid%3D1747415966%26sprefix%3Dfastrack%2Bwatches%2Bfor%2Bman%252Caps%252C227%26sr%3D8-60-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9idGY%26psc%3D1
+    - button "View Sponsored information or leave ad feedback": Sponsored
+    - heading "Fire-Boltt" [level=2]
+    - link "Sponsored Ad - Fire-Boltt Onyx- 36.3mm AMOLED Always On Display Smart Watch, 466 * 466 High Resolution, Bluetooth Calling, Steel Design, IP67, 4GB Storage, 300+ Sports Modes, 130+ Watch Faces (Rose Gold)":
+      - /url: /sspa/click?ie=UTF8&spc=MTo2MDAwMTA2MjkzMjYzMDI4OjE3NDc0MTU5NjY6c3BfYnRmOjMwMDI3NDM5ODUzNDQzMjo6MDo6&url=%2FFire-Boltt-BSW183-Onxy%2Fdp%2FB0CT5JDFZ4%2Fref%3Dsr_1_60_sspa%3Fcrid%3D1W90282OOSS0O%26dib%3DeyJ2IjoiMSJ9.6XcBA4w6Npm_pwAOvvXVcDAPsx0DXQfkVFdJcc8795AOyRoEAhGIodxusTSNBOZ8GZ7QBjv4Xt1bRcOCSc7OPyg0r7pbMkcvB09GR1rcV2Hv6-XZa7g2Q8g8nJ7gGOcgFAOZyjmW0D8EBSwRzt5ZLhyzgrlRZDQO2I47cGai7f1oUrbIgt_sp2btrvSp45rWYR6j0JmsaV8Wsx-9rp2JS-7UU9pPDNHCoUby43irvwg_ifcPUtb6FRLvaWwBvj-JicFnhFTLKr8rqCKZmUSCEVOjPRvoBdaW3KTXPWtRxY8.QetsUIpXMVylXIFUheBctZesc8qVn29qmyuGSeKzctY%26dib_tag%3Dse%26keywords%3Dfastrack%2Bwatches%2Bfor%2Bman%26nsdOptOutParam%3Dtrue%26qid%3D1747415966%26sprefix%3Dfastrack%2Bwatches%2Bfor%2Bman%252Caps%252C227%26sr%3D8-60-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9idGY%26psc%3D1
+      - heading "Sponsored Ad - Fire-Boltt Onyx- 36.3mm AMOLED Always On Display Smart Watch, 466 * 466 High Resolution, Bluetooth Calling, Steel Design, IP67, 4GB Storage, 300+ Sports Modes, 130+ Watch Faces (Rose Gold)" [level=2]: Fire-Boltt Onyx- 36.3mm AMOLED Always On Display Smart Watch, 466 * 466 High Resolution, Bluetooth Calling, Steel Design, IP67, 4GB Storage, 300+ Sports Modes, 130+ Watch Faces (Rose Gold)
+    - button "4.0 out of 5 stars, rating details"
+    - link "655 ratings":
+      - /url: /sspa/click?ie=UTF8&spc=MTo2MDAwMTA2MjkzMjYzMDI4OjE3NDc0MTU5NjY6c3BfYnRmOjMwMDI3NDM5ODUzNDQzMjo6MDo6&url=%2FFire-Boltt-BSW183-Onxy%2Fdp%2FB0CT5JDFZ4%2Fref%3Dsr_1_60_sspa%3Fcrid%3D1W90282OOSS0O%26dib%3DeyJ2IjoiMSJ9.6XcBA4w6Npm_pwAOvvXVcDAPsx0DXQfkVFdJcc8795AOyRoEAhGIodxusTSNBOZ8GZ7QBjv4Xt1bRcOCSc7OPyg0r7pbMkcvB09GR1rcV2Hv6-XZa7g2Q8g8nJ7gGOcgFAOZyjmW0D8EBSwRzt5ZLhyzgrlRZDQO2I47cGai7f1oUrbIgt_sp2btrvSp45rWYR6j0JmsaV8Wsx-9rp2JS-7UU9pPDNHCoUby43irvwg_ifcPUtb6FRLvaWwBvj-JicFnhFTLKr8rqCKZmUSCEVOjPRvoBdaW3KTXPWtRxY8.QetsUIpXMVylXIFUheBctZesc8qVn29qmyuGSeKzctY%26dib_tag%3Dse%26keywords%3Dfastrack%2Bwatches%2Bfor%2Bman%26nsdOptOutParam%3Dtrue%26qid%3D1747415966%26sprefix%3Dfastrack%2Bwatches%2Bfor%2Bman%252Caps%252C227%26sr%3D8-60-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9idGY%26psc%3D1#customerReviews
+    - text: 50+ bought in past month Price, product page
+    - 'link "₹2,149 M.R.P: ₹21,000 M.R.P: ₹21,000"':
+      - /url: /sspa/click?ie=UTF8&spc=MTo2MDAwMTA2MjkzMjYzMDI4OjE3NDc0MTU5NjY6c3BfYnRmOjMwMDI3NDM5ODUzNDQzMjo6MDo6&url=%2FFire-Boltt-BSW183-Onxy%2Fdp%2FB0CT5JDFZ4%2Fref%3Dsr_1_60_sspa%3Fcrid%3D1W90282OOSS0O%26dib%3DeyJ2IjoiMSJ9.6XcBA4w6Npm_pwAOvvXVcDAPsx0DXQfkVFdJcc8795AOyRoEAhGIodxusTSNBOZ8GZ7QBjv4Xt1bRcOCSc7OPyg0r7pbMkcvB09GR1rcV2Hv6-XZa7g2Q8g8nJ7gGOcgFAOZyjmW0D8EBSwRzt5ZLhyzgrlRZDQO2I47cGai7f1oUrbIgt_sp2btrvSp45rWYR6j0JmsaV8Wsx-9rp2JS-7UU9pPDNHCoUby43irvwg_ifcPUtb6FRLvaWwBvj-JicFnhFTLKr8rqCKZmUSCEVOjPRvoBdaW3KTXPWtRxY8.QetsUIpXMVylXIFUheBctZesc8qVn29qmyuGSeKzctY%26dib_tag%3Dse%26keywords%3Dfastrack%2Bwatches%2Bfor%2Bman%26nsdOptOutParam%3Dtrue%26qid%3D1747415966%26sprefix%3Dfastrack%2Bwatches%2Bfor%2Bman%252Caps%252C227%26sr%3D8-60-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9idGY%26psc%3D1
+    - text: (90% off)
+    - img "Amazon Prime"
+    - text: "FREE delivery Sun, 18 May Or fastest delivery Tomorrow, 17 May Service: Installation"
+    - button "Add to cart"
+- heading "Related searches" [level=2]
+- list:
+  - link "fastrack watch for womens":
+    - /url: /s?k=fastrack+watch+for+womens&ref=rsl_sug_0_0&pd_rd_w=AAbTy&content-id=amzn1.sym.b5876297-ded6-4475-876b-d315610bb575:amzn1.sym.b5876297-ded6-4475-876b-d315610bb575&pf_rd_p=b5876297-ded6-4475-876b-d315610bb575&pf_rd_r=5D4RDBAR12B4XNRRA774&pd_rd_wg=ebVqq&pd_rd_r=b9bb803c-7043-4426-9120-f2a352bedb62&qid=1747415966
+    - listitem: fastrack watch for womens
+  - link "rolex watches for men":
+    - /url: /s?k=rolex+watches+for+men&ref=rsl_sug_0_3&pd_rd_w=AAbTy&content-id=amzn1.sym.b5876297-ded6-4475-876b-d315610bb575:amzn1.sym.b5876297-ded6-4475-876b-d315610bb575&pf_rd_p=b5876297-ded6-4475-876b-d315610bb575&pf_rd_r=5D4RDBAR12B4XNRRA774&pd_rd_wg=ebVqq&pd_rd_r=b9bb803c-7043-4426-9120-f2a352bedb62&qid=1747415966
+    - listitem: rolex watches for men
+  - link "fastrack+watches+for+man":
+    - /url: /s?k=fastrack%2Bwatches%2Bfor%2Bman&ref=rsl_sug_0_1&pd_rd_w=AAbTy&content-id=amzn1.sym.b5876297-ded6-4475-876b-d315610bb575:amzn1.sym.b5876297-ded6-4475-876b-d315610bb575&pf_rd_p=b5876297-ded6-4475-876b-d315610bb575&pf_rd_r=5D4RDBAR12B4XNRRA774&pd_rd_wg=ebVqq&pd_rd_r=b9bb803c-7043-4426-9120-f2a352bedb62&qid=1747415966
+    - listitem: fastrack+watches+for+man
+  - link "watch for man":
+    - /url: /s?k=watch+for+man&ref=rsl_sug_0_4&pd_rd_w=AAbTy&content-id=amzn1.sym.b5876297-ded6-4475-876b-d315610bb575:amzn1.sym.b5876297-ded6-4475-876b-d315610bb575&pf_rd_p=b5876297-ded6-4475-876b-d315610bb575&pf_rd_r=5D4RDBAR12B4XNRRA774&pd_rd_wg=ebVqq&pd_rd_r=b9bb803c-7043-4426-9120-f2a352bedb62&qid=1747415966
+    - listitem: watch for man
+  - link "titan watches for men":
+    - /url: /s?k=titan+watches+for+men&ref=rsl_sug_0_2&pd_rd_w=AAbTy&content-id=amzn1.sym.b5876297-ded6-4475-876b-d315610bb575:amzn1.sym.b5876297-ded6-4475-876b-d315610bb575&pf_rd_p=b5876297-ded6-4475-876b-d315610bb575&pf_rd_r=5D4RDBAR12B4XNRRA774&pd_rd_wg=ebVqq&pd_rd_r=b9bb803c-7043-4426-9120-f2a352bedb62&qid=1747415966
+    - listitem: titan watches for men
+  - link "sonata watch for man":
+    - /url: /s?k=sonata+watch+for+man&ref=rsl_sug_0_5&pd_rd_w=AAbTy&content-id=amzn1.sym.b5876297-ded6-4475-876b-d315610bb575:amzn1.sym.b5876297-ded6-4475-876b-d315610bb575&pf_rd_p=b5876297-ded6-4475-876b-d315610bb575&pf_rd_r=5D4RDBAR12B4XNRRA774&pd_rd_wg=ebVqq&pd_rd_r=b9bb803c-7043-4426-9120-f2a352bedb62&qid=1747415966
+    - listitem: sonata watch for man
+- navigation:
+  - region "pagination":
+    - list:
+      - button "Previous" [disabled]
+      - listitem:
+        - button "Page 1": "1"
+      - listitem:
+        - button "Go to page 2": "2"
+      - listitem:
+        - button "Go to page 3": "3"
+      - button [disabled]
+      - button "7" [disabled]
+      - listitem:
+        - button "Go to next page, page 2": Next
+- heading "Brands related to your search"
+- button "Leave feedback on Sponsored ad": Sponsored
+- link "Branded image from OLEVS":
+  - /url: https://aax-eu.amazon.in/x/c/JFqlSNtaRPhzXJV6YSbu7PwAAAGW2hukxwMAAAH2AQBvbm9fdHhuX2JpZDEgICBvbm9fdHhuX2ltcDEgICBMJNKu/https://www.amazon.in/stores/page/33E3F934-6352-495E-9A10-5E662ED91865/?_encoding=UTF8&store_ref=SB_A06442941NKLITNJ9WT0Z-A03545392E62MDTGEXILX&pd_rd_plhdr=t&aaxitk=58fa1922bcb828c230c4f05efb8dff90&hsa_cr_id=0&lp_asins=B0DQY3XD93%2CB0DQY3YBBH%2CB0DQY3HXF8&lp_query=fastrack%20watches%20for%20man&lp_slot=desktop-hsa-3psl&ref_=sbx_be_s_3psl_mbd_mb0_ls&pd_rd_w=ZRn3s&content-id=amzn1.sym.b886e04b-39e7-411c-8add-a6879775de2f%3Aamzn1.sym.b886e04b-39e7-411c-8add-a6879775de2f&pf_rd_p=b886e04b-39e7-411c-8add-a6879775de2f&pf_rd_r=5D4RDBAR12B4XNRRA774&pd_rd_wg=Y5Oxk&pd_rd_r=24cd07f2-7416-4767-93d4-86480bdd5e8e
+  - img "Branded image from OLEVS"
+- link "OLEVS":
+  - /url: https://aax-eu.amazon.in/x/c/JFqlSNtaRPhzXJV6YSbu7PwAAAGW2hukxwMAAAH2AQBvbm9fdHhuX2JpZDEgICBvbm9fdHhuX2ltcDEgICBMJNKu/https://www.amazon.in/stores/page/33E3F934-6352-495E-9A10-5E662ED91865/?_encoding=UTF8&store_ref=SB_A06442941NKLITNJ9WT0Z-A03545392E62MDTGEXILX&pd_rd_plhdr=t&aaxitk=58fa1922bcb828c230c4f05efb8dff90&hsa_cr_id=0&lp_asins=B0DQY3XD93%2CB0DQY3YBBH%2CB0DQY3HXF8&lp_query=fastrack%20watches%20for%20man&lp_slot=desktop-hsa-3psl&ref_=sbx_be_s_3psl_mbd_mb0_logo&pd_rd_w=ZRn3s&content-id=amzn1.sym.b886e04b-39e7-411c-8add-a6879775de2f%3Aamzn1.sym.b886e04b-39e7-411c-8add-a6879775de2f&pf_rd_p=b886e04b-39e7-411c-8add-a6879775de2f&pf_rd_r=5D4RDBAR12B4XNRRA774&pd_rd_wg=Y5Oxk&pd_rd_r=24cd07f2-7416-4767-93d4-86480bdd5e8e
+  - img "OLEVS"
+- link "Olevs Men's Luxury Chronograph Watch":
+  - /url: https://aax-eu.amazon.in/x/c/JFqlSNtaRPhzXJV6YSbu7PwAAAGW2hukxwMAAAH2AQBvbm9fdHhuX2JpZDEgICBvbm9fdHhuX2ltcDEgICBMJNKu/https://www.amazon.in/stores/page/33E3F934-6352-495E-9A10-5E662ED91865/?_encoding=UTF8&store_ref=SB_A06442941NKLITNJ9WT0Z-A03545392E62MDTGEXILX&pd_rd_plhdr=t&aaxitk=58fa1922bcb828c230c4f05efb8dff90&hsa_cr_id=0&lp_asins=B0DQY3XD93%2CB0DQY3YBBH%2CB0DQY3HXF8&lp_query=fastrack%20watches%20for%20man&lp_slot=desktop-hsa-3psl&ref_=sbx_be_s_3psl_mbd_mb0_hl&pd_rd_w=ZRn3s&content-id=amzn1.sym.b886e04b-39e7-411c-8add-a6879775de2f%3Aamzn1.sym.b886e04b-39e7-411c-8add-a6879775de2f&pf_rd_p=b886e04b-39e7-411c-8add-a6879775de2f&pf_rd_r=5D4RDBAR12B4XNRRA774&pd_rd_wg=Y5Oxk&pd_rd_r=24cd07f2-7416-4767-93d4-86480bdd5e8e
+- link "Branded image from OLEVS":
+  - /url: https://aax-eu.amazon.in/x/c/JCdm77l4flFJYXWcBWmNelUAAAGW2hukyAMAAAH2AQBvbm9fdHhuX2JpZDEgICBvbm9fdHhuX2ltcDEgICAcnwTG/https://www.amazon.in/stores/page/76390B04-85F6-44D6-ACDB-6C829E5FB1D2/?_encoding=UTF8&store_ref=SB_A01864771E44SA52H7S5E-A04499343IYQWJZTQHTC1&pd_rd_plhdr=t&aaxitk=8535da1dc4106d7bd36cb791cafd43ce&hsa_cr_id=0&lp_asins=B0CTG1VGTK%2CB0CTG2N8DD&lp_query=fastrack%20watches%20for%20man&lp_slot=desktop-hsa-3psl&ref_=sbx_be_s_3psl_mbd_mb1_ls&pd_rd_w=ZRn3s&content-id=amzn1.sym.b886e04b-39e7-411c-8add-a6879775de2f%3Aamzn1.sym.b886e04b-39e7-411c-8add-a6879775de2f&pf_rd_p=b886e04b-39e7-411c-8add-a6879775de2f&pf_rd_r=5D4RDBAR12B4XNRRA774&pd_rd_wg=Y5Oxk&pd_rd_r=24cd07f2-7416-4767-93d4-86480bdd5e8e
+  - img "Branded image from OLEVS"
+- link "OLEVS":
+  - /url: https://aax-eu.amazon.in/x/c/JCdm77l4flFJYXWcBWmNelUAAAGW2hukyAMAAAH2AQBvbm9fdHhuX2JpZDEgICBvbm9fdHhuX2ltcDEgICAcnwTG/https://www.amazon.in/stores/page/76390B04-85F6-44D6-ACDB-6C829E5FB1D2/?_encoding=UTF8&store_ref=SB_A01864771E44SA52H7S5E-A04499343IYQWJZTQHTC1&pd_rd_plhdr=t&aaxitk=8535da1dc4106d7bd36cb791cafd43ce&hsa_cr_id=0&lp_asins=B0CTG1VGTK%2CB0CTG2N8DD&lp_query=fastrack%20watches%20for%20man&lp_slot=desktop-hsa-3psl&ref_=sbx_be_s_3psl_mbd_mb1_logo&pd_rd_w=ZRn3s&content-id=amzn1.sym.b886e04b-39e7-411c-8add-a6879775de2f%3Aamzn1.sym.b886e04b-39e7-411c-8add-a6879775de2f&pf_rd_p=b886e04b-39e7-411c-8add-a6879775de2f&pf_rd_r=5D4RDBAR12B4XNRRA774&pd_rd_wg=Y5Oxk&pd_rd_r=24cd07f2-7416-4767-93d4-86480bdd5e8e
+  - img "OLEVS"
+- link "OLEVS Watches for Men":
+  - /url: https://aax-eu.amazon.in/x/c/JCdm77l4flFJYXWcBWmNelUAAAGW2hukyAMAAAH2AQBvbm9fdHhuX2JpZDEgICBvbm9fdHhuX2ltcDEgICAcnwTG/https://www.amazon.in/stores/page/76390B04-85F6-44D6-ACDB-6C829E5FB1D2/?_encoding=UTF8&store_ref=SB_A01864771E44SA52H7S5E-A04499343IYQWJZTQHTC1&pd_rd_plhdr=t&aaxitk=8535da1dc4106d7bd36cb791cafd43ce&hsa_cr_id=0&lp_asins=B0CTG1VGTK%2CB0CTG2N8DD&lp_query=fastrack%20watches%20for%20man&lp_slot=desktop-hsa-3psl&ref_=sbx_be_s_3psl_mbd_mb1_hl&pd_rd_w=ZRn3s&content-id=amzn1.sym.b886e04b-39e7-411c-8add-a6879775de2f%3Aamzn1.sym.b886e04b-39e7-411c-8add-a6879775de2f&pf_rd_p=b886e04b-39e7-411c-8add-a6879775de2f&pf_rd_r=5D4RDBAR12B4XNRRA774&pd_rd_wg=Y5Oxk&pd_rd_r=24cd07f2-7416-4767-93d4-86480bdd5e8e
+- link "Branded image from Fire-Boltt":
+  - /url: https://aax-eu.amazon.in/x/c/JIc7dvdZnlA0yCHkvy0_AzwAAAGW2hukyQMAAAH2AQBvbm9fdHhuX2JpZDEgICBvbm9fdHhuX2ltcDEgICAUtpU9/https://www.amazon.in/stores/page/E5F3A29E-E3AA-473D-AD93-73B4380604B7/?_encoding=UTF8&store_ref=SB_A07486291PD3RTRBM8OH5-A044199037GLQ6J2VC4QB&pd_rd_plhdr=t&aaxitk=ad009977903a22d540c8c01e8566a65b&hsa_cr_id=0&lp_asins=B0F2YXCP87%2CB0F2YWHMTW%2CB0F2YVX12M&lp_query=fastrack%20watches%20for%20man&lp_slot=desktop-hsa-3psl&ref_=sbx_be_s_3psl_mbd_mb2_ls&pd_rd_w=ZRn3s&content-id=amzn1.sym.b886e04b-39e7-411c-8add-a6879775de2f%3Aamzn1.sym.b886e04b-39e7-411c-8add-a6879775de2f&pf_rd_p=b886e04b-39e7-411c-8add-a6879775de2f&pf_rd_r=5D4RDBAR12B4XNRRA774&pd_rd_wg=Y5Oxk&pd_rd_r=24cd07f2-7416-4767-93d4-86480bdd5e8e
+  - img "Branded image from Fire-Boltt"
+- link "Fire-Boltt":
+  - /url: https://aax-eu.amazon.in/x/c/JIc7dvdZnlA0yCHkvy0_AzwAAAGW2hukyQMAAAH2AQBvbm9fdHhuX2JpZDEgICBvbm9fdHhuX2ltcDEgICAUtpU9/https://www.amazon.in/stores/page/E5F3A29E-E3AA-473D-AD93-73B4380604B7/?_encoding=UTF8&store_ref=SB_A07486291PD3RTRBM8OH5-A044199037GLQ6J2VC4QB&pd_rd_plhdr=t&aaxitk=ad009977903a22d540c8c01e8566a65b&hsa_cr_id=0&lp_asins=B0F2YXCP87%2CB0F2YWHMTW%2CB0F2YVX12M&lp_query=fastrack%20watches%20for%20man&lp_slot=desktop-hsa-3psl&ref_=sbx_be_s_3psl_mbd_mb2_logo&pd_rd_w=ZRn3s&content-id=amzn1.sym.b886e04b-39e7-411c-8add-a6879775de2f%3Aamzn1.sym.b886e04b-39e7-411c-8add-a6879775de2f&pf_rd_p=b886e04b-39e7-411c-8add-a6879775de2f&pf_rd_r=5D4RDBAR12B4XNRRA774&pd_rd_wg=Y5Oxk&pd_rd_r=24cd07f2-7416-4767-93d4-86480bdd5e8e
+  - img "Fire-Boltt"
+- link "2.01” Display, AOD, Wireless Charging, Smartwatch":
+  - /url: https://aax-eu.amazon.in/x/c/JIc7dvdZnlA0yCHkvy0_AzwAAAGW2hukyQMAAAH2AQBvbm9fdHhuX2JpZDEgICBvbm9fdHhuX2ltcDEgICAUtpU9/https://www.amazon.in/stores/page/E5F3A29E-E3AA-473D-AD93-73B4380604B7/?_encoding=UTF8&store_ref=SB_A07486291PD3RTRBM8OH5-A044199037GLQ6J2VC4QB&pd_rd_plhdr=t&aaxitk=ad009977903a22d540c8c01e8566a65b&hsa_cr_id=0&lp_asins=B0F2YXCP87%2CB0F2YWHMTW%2CB0F2YVX12M&lp_query=fastrack%20watches%20for%20man&lp_slot=desktop-hsa-3psl&ref_=sbx_be_s_3psl_mbd_mb2_hl&pd_rd_w=ZRn3s&content-id=amzn1.sym.b886e04b-39e7-411c-8add-a6879775de2f%3Aamzn1.sym.b886e04b-39e7-411c-8add-a6879775de2f&pf_rd_p=b886e04b-39e7-411c-8add-a6879775de2f&pf_rd_r=5D4RDBAR12B4XNRRA774&pd_rd_wg=Y5Oxk&pd_rd_r=24cd07f2-7416-4767-93d4-86480bdd5e8e
+- heading "Need help?" [level=2]
+- link "Visit the help section":
+  - /url: /gp/help/customer/display.html?nodeId=201889520
+- text: or
+- link "contact us":
+  - /url: /gp/help/customer/contact-us
+- iframe
+- button "Leave feedback on Sponsored advertisement"
+- link "Go back to filtering menu":
+  - /url: "#s-skipLinkTargetForFilterOptions"
+- link "Skip to main search results":
+  - /url: "#s-skipLinkTargetForMainSearchResults"
+- group "Delivery Day":
+  - heading "Delivery Day" [level=2]
+  - list "Delivery Day":
+    - listitem:
+      - link "Apply the filter Get It in 2 Days to narrow results":
+        - /url: /s?k=fastrack+watches+for+man&rh=p_90%3A20912642031&dc&crid=1W90282OOSS0O&qid=1747415966&rnid=6741116031&sprefix=fastrack+watches+for+man%2Caps%2C227&ref=sr_nr_p_90_1&ds=v1%3Aaszcldtw4DnS8ICzJ4XZLG%2F9%2Bdbakuq5B4IpFS%2FMYWY
+        - text: Get It in 2 Days
+- group:
+  - text: Price ₹155 ₹21,500+
+  - slider "Minimum price": "0"
+  - slider "Maximum price": "182"
+  - button "Go - Submit price range"
+  - heading "Deals & Discounts" [level=2]
+  - list "Deals & Discounts":
+    - listitem:
+      - link "All Discounts":
+        - /url: /s?k=fastrack+watches+for+man&rh=p_n_deal_type%3A26921226031&dc&crid=1W90282OOSS0O&qid=1747415966&rnid=26921223031&sprefix=fastrack+watches+for+man%2Caps%2C227&ref=sr_nr_p_n_deal_type_1&ds=v1%3AN0eYbkAVPo%2FV%2Ft15eE%2FeOc0%2BVD4a7BCjHgM%2Be66dhOc
+    - listitem:
+      - link "Today's Deals":
+        - /url: /s?k=fastrack+watches+for+man&rh=p_n_deal_type%3A26921224031&dc&crid=1W90282OOSS0O&qid=1747415966&rnid=26921223031&sprefix=fastrack+watches+for+man%2Caps%2C227&ref=sr_nr_p_n_deal_type_2&ds=v1%3A6H5toPnK7Q8fO%2BrYCzcbtB47%2B1x9ndOMWv1mR8kXGhE
+- group "Watch Band Material":
+  - heading "Watch Band Material" [level=2]
+  - list "Watch Band Material":
+    - listitem:
+      - link "Apply the filter Fabric to narrow results":
+        - /url: /s?k=fastrack+watches+for+man&rh=p_n_material_browse%3A1480905031&dc&crid=1W90282OOSS0O&qid=1747415966&rnid=1480889031&sprefix=fastrack+watches+for+man%2Caps%2C227&ref=sr_nr_p_n_material_browse_1&ds=v1%3ATWqWsbeQxJK%2FjbdDj7TwDLfVZmNs6XmqLvt4lz1OBJ4
+        - text: Fabric
+    - listitem:
+      - link "Apply the filter Leather to narrow results":
+        - /url: /s?k=fastrack+watches+for+man&rh=p_n_material_browse%3A1480907031&dc&crid=1W90282OOSS0O&qid=1747415966&rnid=1480889031&sprefix=fastrack+watches+for+man%2Caps%2C227&ref=sr_nr_p_n_material_browse_2&ds=v1%3A1w2CwhuSd5nDS0ixODiOEdZTgkjQk9RycQI1pzIh6%2Fs
+        - text: Leather
+    - listitem:
+      - link "Apply the filter Nylon to narrow results":
+        - /url: /s?k=fastrack+watches+for+man&rh=p_n_material_browse%3A1480908031&dc&crid=1W90282OOSS0O&qid=1747415966&rnid=1480889031&sprefix=fastrack+watches+for+man%2Caps%2C227&ref=sr_nr_p_n_material_browse_3&ds=v1%3Ah32hvKZPkpAVt1S7jtllhi%2BQaPIZDnpS%2B0sQiqS0HYQ
+        - text: Nylon
+    - listitem:
+      - link "Apply the filter Plastic to narrow results":
+        - /url: /s?k=fastrack+watches+for+man&rh=p_n_material_browse%3A1480909031&dc&crid=1W90282OOSS0O&qid=1747415966&rnid=1480889031&sprefix=fastrack+watches+for+man%2Caps%2C227&ref=sr_nr_p_n_material_browse_4&ds=v1%3ARoYgW9jQ1AmfeN%2FTVkdpM6rFqBTUWeKnExaAAwvknng
+        - text: Plastic
+    - listitem:
+      - link "Apply the filter Resin to narrow results":
+        - /url: /s?k=fastrack+watches+for+man&rh=p_n_material_browse%3A1480910031&dc&crid=1W90282OOSS0O&qid=1747415966&rnid=1480889031&sprefix=fastrack+watches+for+man%2Caps%2C227&ref=sr_nr_p_n_material_browse_5&ds=v1%3A3W1HBx4hBJHEBly6dRe4Hexe%2FWlbOU9w1HzOfyJZ67A
+        - text: Resin
+    - listitem:
+      - link "Apply the filter Rubber to narrow results":
+        - /url: /s?k=fastrack+watches+for+man&rh=p_n_material_browse%3A1480911031&dc&crid=1W90282OOSS0O&qid=1747415966&rnid=1480889031&sprefix=fastrack+watches+for+man%2Caps%2C227&ref=sr_nr_p_n_material_browse_6&ds=v1%3ADytZq12ZSjIVgv9D06%2BDtL7orAVNsgivsTBa%2B9emW3o
+        - text: Rubber
+    - listitem:
+      - link "Apply the filter Silicone to narrow results":
+        - /url: /s?k=fastrack+watches+for+man&rh=p_n_material_browse%3A1480912031&dc&crid=1W90282OOSS0O&qid=1747415966&rnid=1480889031&sprefix=fastrack+watches+for+man%2Caps%2C227&ref=sr_nr_p_n_material_browse_7&ds=v1%3Avb1m6iIr3FlCbBREUWlcyW2N8laOPfgSFkHGtl4qs84
+        - text: Silicone
+    - listitem:
+      - button "See more, Watch Band Material": See more
+- group "Watch Band Colour":
+  - heading "Watch Band Colour" [level=2]
+  - list "Watch Band Colour":
+    - listitem:
+      - link "Apply the filter Black to narrow results":
+        - /url: /s?k=fastrack+watches+for+man&rh=p_n_feature_two_browse-bin%3A1480923031&dc&crid=1W90282OOSS0O&qid=1747415966&rnid=1480891031&sprefix=fastrack+watches+for+man%2Caps%2C227&ref=sr_nr_p_n_feature_two_browse-bin_1&ds=v1%3ARd3BbqG1nKCYZ6JcI2mMLLtNmsYoU7BxUhalP9oOSDI
+    - listitem:
+      - link "Apply the filter Grey to narrow results":
+        - /url: /s?k=fastrack+watches+for+man&rh=p_n_feature_two_browse-bin%3A1480928031&dc&crid=1W90282OOSS0O&qid=1747415966&rnid=1480891031&sprefix=fastrack+watches+for+man%2Caps%2C227&ref=sr_nr_p_n_feature_two_browse-bin_2&ds=v1%3AvTLdwKAIJMcdw%2F4qNPbXTtEqwL0EV%2FbKlOSMY2%2FhtYk
+    - listitem:
+      - link "Apply the filter White to narrow results":
+        - /url: /s?k=fastrack+watches+for+man&rh=p_n_feature_two_browse-bin%3A1480938031&dc&crid=1W90282OOSS0O&qid=1747415966&rnid=1480891031&sprefix=fastrack+watches+for+man%2Caps%2C227&ref=sr_nr_p_n_feature_two_browse-bin_3&ds=v1%3AE5Pbxvpct1P%2F6kunKyfvvxNv7Y5tZze%2FH9hZxCiQJTY
+    - listitem:
+      - link "Apply the filter Brown to narrow results":
+        - /url: /s?k=fastrack+watches+for+man&rh=p_n_feature_two_browse-bin%3A1480925031&dc&crid=1W90282OOSS0O&qid=1747415966&rnid=1480891031&sprefix=fastrack+watches+for+man%2Caps%2C227&ref=sr_nr_p_n_feature_two_browse-bin_4&ds=v1%3A7qKdQyJPlhGBlYFdnPrCHfGv0Em3bV31aZCFVtHla5w
+    - listitem:
+      - link "Apply the filter Beige to narrow results":
+        - /url: /s?k=fastrack+watches+for+man&rh=p_n_feature_two_browse-bin%3A1480922031&dc&crid=1W90282OOSS0O&qid=1747415966&rnid=1480891031&sprefix=fastrack+watches+for+man%2Caps%2C227&ref=sr_nr_p_n_feature_two_browse-bin_5&ds=v1%3A2LF9ZsGcd4zzkhSGOEMuZRntC3Uv4j32yliVIHFiT5s
+    - listitem:
+      - link "Apply the filter Red to narrow results":
+        - /url: /s?k=fastrack+watches+for+man&rh=p_n_feature_two_browse-bin%3A1480935031&dc&crid=1W90282OOSS0O&qid=1747415966&rnid=1480891031&sprefix=fastrack+watches+for+man%2Caps%2C227&ref=sr_nr_p_n_feature_two_browse-bin_6&ds=v1%3A67OeEYECkd1istRojWSmj6N%2BYqZ2tSPqc8dBv7l42UM
+    - listitem:
+      - link "Apply the filter Pink to narrow results":
+        - /url: /s?k=fastrack+watches+for+man&rh=p_n_feature_two_browse-bin%3A1480933031&dc&crid=1W90282OOSS0O&qid=1747415966&rnid=1480891031&sprefix=fastrack+watches+for+man%2Caps%2C227&ref=sr_nr_p_n_feature_two_browse-bin_7&ds=v1%3A2Ln3cgdoyCQOoc9hC7FxD7DF5FM4hVpJsfjiiRPc%2B%2Bg
+    - listitem:
+      - link "Apply the filter Orange to narrow results":
+        - /url: /s?k=fastrack+watches+for+man&rh=p_n_feature_two_browse-bin%3A1480932031&dc&crid=1W90282OOSS0O&qid=1747415966&rnid=1480891031&sprefix=fastrack+watches+for+man%2Caps%2C227&ref=sr_nr_p_n_feature_two_browse-bin_8&ds=v1%3ASCY7mTP9VHwf7gUikbc8l5wgnE1yvGtWtK6TQeME7C0
+    - listitem:
+      - link "Apply the filter Yellow to narrow results":
+        - /url: /s?k=fastrack+watches+for+man&rh=p_n_feature_two_browse-bin%3A1480939031&dc&crid=1W90282OOSS0O&qid=1747415966&rnid=1480891031&sprefix=fastrack+watches+for+man%2Caps%2C227&ref=sr_nr_p_n_feature_two_browse-bin_9&ds=v1%3AsMc6QMuqOSXUb4MEjwHdE%2FH0Jw%2FEkzCL98N4RfdkBKI
+    - listitem:
+      - link "Apply the filter Green to narrow results":
+        - /url: /s?k=fastrack+watches+for+man&rh=p_n_feature_two_browse-bin%3A1480927031&dc&crid=1W90282OOSS0O&qid=1747415966&rnid=1480891031&sprefix=fastrack+watches+for+man%2Caps%2C227&ref=sr_nr_p_n_feature_two_browse-bin_10&ds=v1%3Atv78y3ZGBrxm60VtwagVMhDe4vCjPqHv7tkyMiT9i2Q
+    - listitem:
+      - link "Apply the filter Turquoise to narrow results":
+        - /url: /s?k=fastrack+watches+for+man&rh=p_n_feature_two_browse-bin%3A1480937031&dc&crid=1W90282OOSS0O&qid=1747415966&rnid=1480891031&sprefix=fastrack+watches+for+man%2Caps%2C227&ref=sr_nr_p_n_feature_two_browse-bin_11&ds=v1%3AYR73H9jxZrLLh87n0vlOewmJkz%2BKOLfn0dFZBZ9YT5U
+    - listitem:
+      - link "Apply the filter Blue to narrow results":
+        - /url: /s?k=fastrack+watches+for+man&rh=p_n_feature_two_browse-bin%3A1480924031&dc&crid=1W90282OOSS0O&qid=1747415966&rnid=1480891031&sprefix=fastrack+watches+for+man%2Caps%2C227&ref=sr_nr_p_n_feature_two_browse-bin_12&ds=v1%3AvH1rJcI%2FKQwoYgLdpvnSOWeG6GQhvA72z%2B9tISIK%2F9Y
+    - listitem:
+      - link "Apply the filter Purple to narrow results":
+        - /url: /s?k=fastrack+watches+for+man&rh=p_n_feature_two_browse-bin%3A1480934031&dc&crid=1W90282OOSS0O&qid=1747415966&rnid=1480891031&sprefix=fastrack+watches+for+man%2Caps%2C227&ref=sr_nr_p_n_feature_two_browse-bin_13&ds=v1%3AZjC74YNlJp9C8320cM7cxNJwwCZMs4iGqHorrIX0lyU
+    - listitem:
+      - link "Apply the filter Gold to narrow results":
+        - /url: /s?k=fastrack+watches+for+man&rh=p_n_feature_two_browse-bin%3A1480926031&dc&crid=1W90282OOSS0O&qid=1747415966&rnid=1480891031&sprefix=fastrack+watches+for+man%2Caps%2C227&ref=sr_nr_p_n_feature_two_browse-bin_14&ds=v1%3AJ00jey9WcHm5sxHd%2BBlOfOQnqBgrAD0VvhZpaNTfA%2F0
+    - listitem:
+      - link "Apply the filter Silver to narrow results":
+        - /url: /s?k=fastrack+watches+for+man&rh=p_n_feature_two_browse-bin%3A1480936031&dc&crid=1W90282OOSS0O&qid=1747415966&rnid=1480891031&sprefix=fastrack+watches+for+man%2Caps%2C227&ref=sr_nr_p_n_feature_two_browse-bin_15&ds=v1%3AgQKMUUlkjO6BsC%2BIeqmCe1DzTr%2BWtqRkjExUfKOziac
+    - listitem:
+      - link "Apply the filter Multicolour to narrow results":
+        - /url: /s?k=fastrack+watches+for+man&rh=p_n_feature_two_browse-bin%3A1480930031&dc&crid=1W90282OOSS0O&qid=1747415966&rnid=1480891031&sprefix=fastrack+watches+for+man%2Caps%2C227&ref=sr_nr_p_n_feature_two_browse-bin_16&ds=v1%3Ajhq5N4ysx9abitEVejw58buT%2BZi%2BUeFz7k4cXefSmk8
+- group "Watch Display Type":
+  - heading "Watch Display Type" [level=2]
+  - list "Watch Display Type":
+    - listitem:
+      - link "Apply the filter Analogue to narrow results":
+        - /url: /s?k=fastrack+watches+for+man&rh=p_n_feature_seven_browse-bin%3A1480900031&dc&crid=1W90282OOSS0O&qid=1747415966&rnid=1480888031&sprefix=fastrack+watches+for+man%2Caps%2C227&ref=sr_nr_p_n_feature_seven_browse-bin_1&ds=v1%3AgU%2FB2%2FSMOEL4V8go6J%2Fv9uSq3SlUxe8Q4j%2BbP%2BG%2BUlY
+        - text: Analogue
+    - listitem:
+      - link "Apply the filter Digital to narrow results":
+        - /url: /s?k=fastrack+watches+for+man&rh=p_n_feature_seven_browse-bin%3A1480901031&dc&crid=1W90282OOSS0O&qid=1747415966&rnid=1480888031&sprefix=fastrack+watches+for+man%2Caps%2C227&ref=sr_nr_p_n_feature_seven_browse-bin_2&ds=v1%3AbVdMci%2F4XvgTuFCyRQHyLvOuYp%2Fw4sMBNaIacEa1ESc
+        - text: Digital
+    - listitem:
+      - link "Apply the filter Analogue - Digital to narrow results":
+        - /url: /s?k=fastrack+watches+for+man&rh=p_n_feature_seven_browse-bin%3A1480902031&dc&crid=1W90282OOSS0O&qid=1747415966&rnid=1480888031&sprefix=fastrack+watches+for+man%2Caps%2C227&ref=sr_nr_p_n_feature_seven_browse-bin_3&ds=v1%3Aat1npVw5Bk%2BJxW2t24GjvwXBsPt3if7lbga0%2FUUHWsk
+        - text: Analogue - Digital
+- group "Discount":
+  - heading "Discount" [level=2]
+  - list "Discount":
+    - listitem:
+      - link "10% Off or more":
+        - /url: /s?k=fastrack+watches+for+man&rh=p_n_pct-off-with-tax%3A2665399031&dc&crid=1W90282OOSS0O&qid=1747415966&rnid=2665398031&sprefix=fastrack+watches+for+man%2Caps%2C227&ref=sr_nr_p_n_pct-off-with-tax_1&ds=v1%3AT6JOWSFU%2BG3QycYnY7pqBwiE1VW8RDcFtGniu7I0sh0
+    - listitem:
+      - link "25% Off or more":
+        - /url: /s?k=fastrack+watches+for+man&rh=p_n_pct-off-with-tax%3A2665400031&dc&crid=1W90282OOSS0O&qid=1747415966&rnid=2665398031&sprefix=fastrack+watches+for+man%2Caps%2C227&ref=sr_nr_p_n_pct-off-with-tax_2&ds=v1%3A374CcSUMJyyJR%2BWtWZgwt2ZzMgXBMWe4%2FzW1pZFMisw
+    - listitem:
+      - link "35% Off or more":
+        - /url: /s?k=fastrack+watches+for+man&rh=p_n_pct-off-with-tax%3A2665402031&dc&crid=1W90282OOSS0O&qid=1747415966&rnid=2665398031&sprefix=fastrack+watches+for+man%2Caps%2C227&ref=sr_nr_p_n_pct-off-with-tax_3&ds=v1%3A5Z1kpAHOtkEC82rfrsMkSRAYP2wkFxiWRHccEyC3Z8w
+    - listitem:
+      - link "50% Off or more":
+        - /url: /s?k=fastrack+watches+for+man&rh=p_n_pct-off-with-tax%3A2665401031&dc&crid=1W90282OOSS0O&qid=1747415966&rnid=2665398031&sprefix=fastrack+watches+for+man%2Caps%2C227&ref=sr_nr_p_n_pct-off-with-tax_4&ds=v1%3ANol0eZ7OqAGC%2FBodsX%2FtN2bLzCgPZNDapV7GAcZDNA4
+    - listitem:
+      - link "60% Off or more":
+        - /url: /s?k=fastrack+watches+for+man&rh=p_n_pct-off-with-tax%3A27060456031&dc&crid=1W90282OOSS0O&qid=1747415966&rnid=2665398031&sprefix=fastrack+watches+for+man%2Caps%2C227&ref=sr_nr_p_n_pct-off-with-tax_5&ds=v1%3Av%2Bye5Gfi5f3B%2F7DX7NOQKlwP6KetbQS4gewdeGVQb9k
+    - listitem:
+      - link "70% Off or more":
+        - /url: /s?k=fastrack+watches+for+man&rh=p_n_pct-off-with-tax%3A27060457031&dc&crid=1W90282OOSS0O&qid=1747415966&rnid=2665398031&sprefix=fastrack+watches+for+man%2Caps%2C227&ref=sr_nr_p_n_pct-off-with-tax_6&ds=v1%3AQjjzFVbW0c7zI6nTiN8pl3XDqg0ciGEJ5Hm0e9QvhMg
+- group "Brands":
+  - heading "Brands" [level=2]
+  - list "Brands":
+    - listitem:
+      - link "Apply the filter Fastrack to narrow results":
+        - /url: /s?k=fastrack+watches+for+man&rh=p_123%3A230542&dc&crid=1W90282OOSS0O&qid=1747415966&rnid=91049095031&sprefix=fastrack+watches+for+man%2Caps%2C227&ref=sr_nr_p_123_1&ds=v1%3A1GiLhZN6AclXFueKjcMHkLGMIyzhdfGE156PQRuAjRI
+        - text: Fastrack
+    - listitem:
+      - link "Apply the filter Noise to narrow results":
+        - /url: /s?k=fastrack+watches+for+man&rh=p_123%3A42717&dc&crid=1W90282OOSS0O&qid=1747415966&rnid=91049095031&sprefix=fastrack+watches+for+man%2Caps%2C227&ref=sr_nr_p_123_2&ds=v1%3Azhnor2UBythxn0MkBPBdQspWcZ88fDVordzVr5Gly7E
+        - text: Noise
+    - listitem:
+      - link "Apply the filter SKMEI to narrow results":
+        - /url: /s?k=fastrack+watches+for+man&rh=p_123%3A82435&dc&crid=1W90282OOSS0O&qid=1747415966&rnid=91049095031&sprefix=fastrack+watches+for+man%2Caps%2C227&ref=sr_nr_p_123_3&ds=v1%3A%2FAoCJ%2FPuxbb4ZkqCiHatomzRVDQSYZD8%2Ftvgv1pG%2FzM
+        - text: SKMEI
+    - listitem:
+      - link "Apply the filter Fire-Boltt to narrow results":
+        - /url: /s?k=fastrack+watches+for+man&rh=p_123%3A851753&dc&crid=1W90282OOSS0O&qid=1747415966&rnid=91049095031&sprefix=fastrack+watches+for+man%2Caps%2C227&ref=sr_nr_p_123_4&ds=v1%3AIag8YodkFosbks05Hr%2B9nq8uBZYdj%2F%2Fg3We831mwsuY
+        - text: Fire-Boltt
+    - listitem:
+      - link "Apply the filter Sonata to narrow results":
+        - /url: /s?k=fastrack+watches+for+man&rh=p_123%3A318887&dc&crid=1W90282OOSS0O&qid=1747415966&rnid=91049095031&sprefix=fastrack+watches+for+man%2Caps%2C227&ref=sr_nr_p_123_5&ds=v1%3AaiyeFo7TiSHcA%2BoOvISlyMtjqf6jSAjgT24yRoCRz6c
+        - text: Sonata
+    - listitem:
+      - link "Apply the filter Carlington to narrow results":
+        - /url: /s?k=fastrack+watches+for+man&rh=p_123%3A481556&dc&crid=1W90282OOSS0O&qid=1747415966&rnid=91049095031&sprefix=fastrack+watches+for+man%2Caps%2C227&ref=sr_nr_p_123_6&ds=v1%3A%2B7M61RzitZfbQHs3DiD%2B9dAiBK1gmOWip%2FD3logLlmk
+        - text: Carlington
+    - listitem:
+      - link "Apply the filter Boult to narrow results":
+        - /url: /s?k=fastrack+watches+for+man&rh=p_123%3A445583&dc&crid=1W90282OOSS0O&qid=1747415966&rnid=91049095031&sprefix=fastrack+watches+for+man%2Caps%2C227&ref=sr_nr_p_123_7&ds=v1%3A7sv811RrfjwHkTayKZRaLwYNsL5cwpGrZJmwXAdBoeo
+        - text: Boult
+    - listitem:
+      - button "See more, Brands": See more
+- group "Dial Colour":
+  - heading "Dial Colour" [level=2]
+  - list "Dial Colour":
+    - listitem:
+      - link "Apply the filter Black to narrow results":
+        - /url: /s?k=fastrack+watches+for+man&rh=p_n_feature_three_browse-bin%3A1480941031&dc&crid=1W90282OOSS0O&qid=1747415966&rnid=1480892031&sprefix=fastrack+watches+for+man%2Caps%2C227&ref=sr_nr_p_n_feature_three_browse-bin_1&ds=v1%3A30B9xtDRtkDKQJOwTtBKJ3QerJh%2FAjd8OhWfBeN%2FMVo
+    - listitem:
+      - link "Apply the filter Grey to narrow results":
+        - /url: /s?k=fastrack+watches+for+man&rh=p_n_feature_three_browse-bin%3A1480946031&dc&crid=1W90282OOSS0O&qid=1747415966&rnid=1480892031&sprefix=fastrack+watches+for+man%2Caps%2C227&ref=sr_nr_p_n_feature_three_browse-bin_2&ds=v1%3AocsxChV0zrtBTArVEOmavpAWZ9PAavOKADN1aGAdCL4
+    - listitem:
+      - link "Apply the filter White to narrow results":
+        - /url: /s?k=fastrack+watches+for+man&rh=p_n_feature_three_browse-bin%3A1480956031&dc&crid=1W90282OOSS0O&qid=1747415966&rnid=1480892031&sprefix=fastrack+watches+for+man%2Caps%2C227&ref=sr_nr_p_n_feature_three_browse-bin_3&ds=v1%3Az15Yhb2BmwJH4PaiSgVd%2B%2Fjp%2FYop32%2BXAKv6h3quuzY
+    - listitem:
+      - link "Apply the filter Brown to narrow results":
+        - /url: /s?k=fastrack+watches+for+man&rh=p_n_feature_three_browse-bin%3A1480943031&dc&crid=1W90282OOSS0O&qid=1747415966&rnid=1480892031&sprefix=fastrack+watches+for+man%2Caps%2C227&ref=sr_nr_p_n_feature_three_browse-bin_4&ds=v1%3Azcge1wjU19KZB0Kd3QFgdF36VglKk0p4p6CHqXO4VtQ
+    - listitem:
+      - link "Apply the filter Beige to narrow results":
+        - /url: /s?k=fastrack+watches+for+man&rh=p_n_feature_three_browse-bin%3A1480940031&dc&crid=1W90282OOSS0O&qid=1747415966&rnid=1480892031&sprefix=fastrack+watches+for+man%2Caps%2C227&ref=sr_nr_p_n_feature_three_browse-bin_5&ds=v1%3Ai7o%2BqbkCWusqwJ4QlnChf%2FWzUd2X5rYUibrLid5qxpY
+    - listitem:
+      - link "Apply the filter Red to narrow results":
+        - /url: /s?k=fastrack+watches+for+man&rh=p_n_feature_three_browse-bin%3A1480953031&dc&crid=1W90282OOSS0O&qid=1747415966&rnid=1480892031&sprefix=fastrack+watches+for+man%2Caps%2C227&ref=sr_nr_p_n_feature_three_browse-bin_6&ds=v1%3AArBJWLZ4jnkBbbmP5XHXA8mpcFCLslAqnVCt8PpdNTA
+    - listitem:
+      - link "Apply the filter Pink to narrow results":
+        - /url: /s?k=fastrack+watches+for+man&rh=p_n_feature_three_browse-bin%3A1480951031&dc&crid=1W90282OOSS0O&qid=1747415966&rnid=1480892031&sprefix=fastrack+watches+for+man%2Caps%2C227&ref=sr_nr_p_n_feature_three_browse-bin_7&ds=v1%3AjeZSKlRX9urilCesjxvD%2FK4YaD3Cd%2BIrIXimfBi9foM
+    - listitem:
+      - link "Apply the filter Yellow to narrow results":
+        - /url: /s?k=fastrack+watches+for+man&rh=p_n_feature_three_browse-bin%3A1480957031&dc&crid=1W90282OOSS0O&qid=1747415966&rnid=1480892031&sprefix=fastrack+watches+for+man%2Caps%2C227&ref=sr_nr_p_n_feature_three_browse-bin_8&ds=v1%3AFC6tiw7i1FgpjhDO2LjeW0PxUg77XZKmmys7lb%2BO%2Bi0
+    - listitem:
+      - link "Apply the filter Off-White to narrow results":
+        - /url: /s?k=fastrack+watches+for+man&rh=p_n_feature_three_browse-bin%3A1480949031&dc&crid=1W90282OOSS0O&qid=1747415966&rnid=1480892031&sprefix=fastrack+watches+for+man%2Caps%2C227&ref=sr_nr_p_n_feature_three_browse-bin_9&ds=v1%3A7bQA2QQxI4aQXnPjnjWoIBE1UHEr9zZdg%2BhuLckR6GI
+    - listitem:
+      - link "Apply the filter Green to narrow results":
+        - /url: /s?k=fastrack+watches+for+man&rh=p_n_feature_three_browse-bin%3A1480945031&dc&crid=1W90282OOSS0O&qid=1747415966&rnid=1480892031&sprefix=fastrack+watches+for+man%2Caps%2C227&ref=sr_nr_p_n_feature_three_browse-bin_10&ds=v1%3AkR1E%2Bhf%2BCvUvHIqX77vnbpNhgFpdvn%2FAvFqKSdHVTL8
+    - listitem:
+      - link "Apply the filter Blue to narrow results":
+        - /url: /s?k=fastrack+watches+for+man&rh=p_n_feature_three_browse-bin%3A1480942031&dc&crid=1W90282OOSS0O&qid=1747415966&rnid=1480892031&sprefix=fastrack+watches+for+man%2Caps%2C227&ref=sr_nr_p_n_feature_three_browse-bin_11&ds=v1%3ADU24e4EygHSTsZvlyV3cQHNKOCszJpE7leYR%2FdspasY
+    - listitem:
+      - link "Apply the filter Purple to narrow results":
+        - /url: /s?k=fastrack+watches+for+man&rh=p_n_feature_three_browse-bin%3A1480952031&dc&crid=1W90282OOSS0O&qid=1747415966&rnid=1480892031&sprefix=fastrack+watches+for+man%2Caps%2C227&ref=sr_nr_p_n_feature_three_browse-bin_12&ds=v1%3Agas2QIqyD6LaWCWCaQ1tZnK0Rx3XEccei7a%2B%2FHE9K5g
+    - listitem:
+      - link "Apply the filter Gold to narrow results":
+        - /url: /s?k=fastrack+watches+for+man&rh=p_n_feature_three_browse-bin%3A1480944031&dc&crid=1W90282OOSS0O&qid=1747415966&rnid=1480892031&sprefix=fastrack+watches+for+man%2Caps%2C227&ref=sr_nr_p_n_feature_three_browse-bin_13&ds=v1%3AH52voLylM91M4%2BerCf3PDqL9wQUtvPFkxXmcylT%2BB4s
+    - listitem:
+      - link "Apply the filter Silver to narrow results":
+        - /url: /s?k=fastrack+watches+for+man&rh=p_n_feature_three_browse-bin%3A1480954031&dc&crid=1W90282OOSS0O&qid=1747415966&rnid=1480892031&sprefix=fastrack+watches+for+man%2Caps%2C227&ref=sr_nr_p_n_feature_three_browse-bin_14&ds=v1%3A1tF7P6i%2F1NydEt1cCXH1sljXC6muEYJ69rBjPcfFS4w
+    - listitem:
+      - link "Apply the filter Multicolour to narrow results":
+        - /url: /s?k=fastrack+watches+for+man&rh=p_n_feature_three_browse-bin%3A1480948031&dc&crid=1W90282OOSS0O&qid=1747415966&rnid=1480892031&sprefix=fastrack+watches+for+man%2Caps%2C227&ref=sr_nr_p_n_feature_three_browse-bin_15&ds=v1%3AblEaUe2Veg%2BZmq4WQm90DgqnUt3bPpMRc%2FGPyH8H%2B40
+- group "Watches Fashion Brands":
+  - heading "Watches Fashion Brands" [level=2]
+  - list "Watches Fashion Brands":
+    - listitem:
+      - link "Apply the filter Top Brands to narrow results":
+        - /url: /s?k=fastrack+watches+for+man&rh=p_n_feature_fourteen_browse-bin%3A11142592031&dc&crid=1W90282OOSS0O&qid=1747415966&rnid=11142591031&sprefix=fastrack+watches+for+man%2Caps%2C227&ref=sr_nr_p_n_feature_fourteen_browse-bin_1&ds=v1%3ANuNEzjBRJFWW9aXJwVRnULLcFVONVpx0K%2FDtS5NudiE
+        - text: Top Brands
+    - listitem:
+      - link "Apply the filter Made for Amazon to narrow results":
+        - /url: /s?k=fastrack+watches+for+man&rh=p_n_feature_fourteen_browse-bin%3A19056941031&dc&crid=1W90282OOSS0O&qid=1747415966&rnid=11142591031&sprefix=fastrack+watches+for+man%2Caps%2C227&ref=sr_nr_p_n_feature_fourteen_browse-bin_2&ds=v1%3AYmBliS0Xk%2BuXsj3OoJoGybT%2B%2FIi4Lo4wkODNoiFDWCw
+        - text: Made for Amazon
+- group "Customer Review":
+  - heading "Customer Review" [level=2]
+  - list "Customer Review":
+    - listitem:
+      - link "Apply the filter 4 Stars & Up to narrow results":
+        - /url: /s?k=fastrack+watches+for+man&rh=p_72%3A1318476031&dc&crid=1W90282OOSS0O&qid=1747415966&rnid=1318475031&sprefix=fastrack+watches+for+man%2Caps%2C227&ref=sr_nr_p_72_1&ds=v1%3AvhjOPzmGkun4Tw4h2qYEgMfIzetC3mb%2BYYpAE5H35IE
+        - text: 4 Stars & Up
+- group "Category":
+  - heading "Category" [level=2]
+  - list "Category":
+    - listitem:
+      - link "Men's Watches":
+        - /url: /s?k=fastrack+watches+for+man&rh=n%3A2563504031&dc&crid=1W90282OOSS0O&qid=1747415966&rnid=3576079031&sprefix=fastrack+watches+for+man%2Caps%2C227&ref=sr_nr_n_1&ds=v1%3A6HDNUK7zrB0SB5AEEtYjt2cKPi40JZmPTteSYoPpoYo
+    - listitem:
+      - link "Men's Wrist Watches":
+        - /url: /s?k=fastrack+watches+for+man&rh=n%3A2563504031%2Cn%3A15723937031&dc&crid=1W90282OOSS0O&qid=1747415966&rnid=3576079031&sprefix=fastrack+watches+for+man%2Caps%2C227&ref=sr_nr_n_2&ds=v1%3ACfC9ECWFEzKLVCOxC6mCHQi0ekfLV0YJpy0OeBvL%2FuU
+    - listitem:
+      - link "Men's Fashion Smartwatches":
+        - /url: /s?k=fastrack+watches+for+man&rh=n%3A2563504031%2Cn%3A15723938031&dc&crid=1W90282OOSS0O&qid=1747415966&rnid=3576079031&sprefix=fastrack+watches+for+man%2Caps%2C227&ref=sr_nr_n_3&ds=v1%3AeOnJKvGZk4xZm7Q9H6guyvEJl%2FCqEtxQwJl3csa%2BK6o
+    - listitem:
+      - link "Wearable Technology":
+        - /url: /s?k=fastrack+watches+for+man&rh=n%3A11599648031&dc&crid=1W90282OOSS0O&qid=1747415966&rnid=3576079031&sprefix=fastrack+watches+for+man%2Caps%2C227&ref=sr_nr_n_4&ds=v1%3AypHNdRJx3CEu%2BWkuPuH46nFR10NwiBUODcSiXHFi208
+    - listitem:
+      - link "Smart Watches":
+        - /url: /s?k=fastrack+watches+for+man&rh=n%3A11599648031%2Cn%3A5605728031&dc&crid=1W90282OOSS0O&qid=1747415966&rnid=3576079031&sprefix=fastrack+watches+for+man%2Caps%2C227&ref=sr_nr_n_5&ds=v1%3APYxHmEcNphvAHuV60vtvmmN3MkVNoV0XtL63dgS0MAU
+- group "Watch Case Shape":
+  - heading "Watch Case Shape" [level=2]
+  - list "Watch Case Shape":
+    - listitem:
+      - link "Apply the filter Round to narrow results":
+        - /url: /s?k=fastrack+watches+for+man&rh=p_n_style_browse-bin%3A1663600031&dc&crid=1W90282OOSS0O&qid=1747415966&rnid=1663597031&sprefix=fastrack+watches+for+man%2Caps%2C227&ref=sr_nr_p_n_style_browse-bin_1&ds=v1%3AygzrIHMZuEVvJWr1NARs2qmDy%2FIhZ%2FkLasR0itCxdEM
+        - text: Round
+    - listitem:
+      - link "Apply the filter Square to narrow results":
+        - /url: /s?k=fastrack+watches+for+man&rh=p_n_style_browse-bin%3A1663601031&dc&crid=1W90282OOSS0O&qid=1747415966&rnid=1663597031&sprefix=fastrack+watches+for+man%2Caps%2C227&ref=sr_nr_p_n_style_browse-bin_2&ds=v1%3A%2BxYl%2Bggmgmy%2BlNyme4yX2Eb5uv2PSxwEVPWIzuYutB8
+        - text: Square
+    - listitem:
+      - link "Apply the filter Rectangular to narrow results":
+        - /url: /s?k=fastrack+watches+for+man&rh=p_n_style_browse-bin%3A1663599031&dc&crid=1W90282OOSS0O&qid=1747415966&rnid=1663597031&sprefix=fastrack+watches+for+man%2Caps%2C227&ref=sr_nr_p_n_style_browse-bin_3&ds=v1%3Ane2FDgQ8Yjvq3HjAJFY1ZkMPA9gNRpqeXL%2FWH1VZg5E
+        - text: Rectangular
+    - listitem:
+      - link "Apply the filter Oval to narrow results":
+        - /url: /s?k=fastrack+watches+for+man&rh=p_n_style_browse-bin%3A1663598031&dc&crid=1W90282OOSS0O&qid=1747415966&rnid=1663597031&sprefix=fastrack+watches+for+man%2Caps%2C227&ref=sr_nr_p_n_style_browse-bin_4&ds=v1%3AaMpvbDB0Yj6qvevCV7hGTpqBMlxSjE5ELMKbjPROAS8
+        - text: Oval
+    - listitem:
+      - link "Apply the filter Asymmetrical to narrow results":
+        - /url: /s?k=fastrack+watches+for+man&rh=p_n_style_browse-bin%3A3437756031&dc&crid=1W90282OOSS0O&qid=1747415966&rnid=1663597031&sprefix=fastrack+watches+for+man%2Caps%2C227&ref=sr_nr_p_n_style_browse-bin_5&ds=v1%3AC2jEz685gmzv9%2BkUWEm7JlVX07d0x0ycjx731OKMaao
+        - text: Asymmetrical
+    - listitem:
+      - link "Apply the filter Tonneau to narrow results":
+        - /url: /s?k=fastrack+watches+for+man&rh=p_n_style_browse-bin%3A1663602031&dc&crid=1W90282OOSS0O&qid=1747415966&rnid=1663597031&sprefix=fastrack+watches+for+man%2Caps%2C227&ref=sr_nr_p_n_style_browse-bin_6&ds=v1%3AqxBoIWCKMCHGLLYTuwneI%2BRg9oU2n7myDq0SId4lXoU
+        - text: Tonneau
+- group "Watch Style":
+  - heading "Watch Style" [level=2]
+  - list "Watch Style":
+    - listitem:
+      - link "Apply the filter Casual to narrow results":
+        - /url: /s?k=fastrack+watches+for+man&rh=p_n_feature_sixteen_browse-bin%3A5756153031&dc&crid=1W90282OOSS0O&qid=1747415966&rnid=5756152031&sprefix=fastrack+watches+for+man%2Caps%2C227&ref=sr_nr_p_n_feature_sixteen_browse-bin_1&ds=v1%3AwNaF8tQmPSbUlr9owtOupyRQU2V1OuHrv4rVnl53XeE
+        - text: Casual
+    - listitem:
+      - link "Apply the filter Dress to narrow results":
+        - /url: /s?k=fastrack+watches+for+man&rh=p_n_feature_sixteen_browse-bin%3A5756154031&dc&crid=1W90282OOSS0O&qid=1747415966&rnid=5756152031&sprefix=fastrack+watches+for+man%2Caps%2C227&ref=sr_nr_p_n_feature_sixteen_browse-bin_2&ds=v1%3AdIkTvQEoeWUnrl7cT0lmYlJ7j1fKWAQAzShn5mtHGZc
+        - text: Dress
+    - listitem:
+      - link "Apply the filter Fashion to narrow results":
+        - /url: /s?k=fastrack+watches+for+man&rh=p_n_feature_sixteen_browse-bin%3A5756155031&dc&crid=1W90282OOSS0O&qid=1747415966&rnid=5756152031&sprefix=fastrack+watches+for+man%2Caps%2C227&ref=sr_nr_p_n_feature_sixteen_browse-bin_3&ds=v1%3AbkdyUweTLMLlXNwShx%2BDyFt7Rkqn431nMwKq534WzeI
+        - text: Fashion
+    - listitem:
+      - link "Apply the filter Luxury to narrow results":
+        - /url: /s?k=fastrack+watches+for+man&rh=p_n_feature_sixteen_browse-bin%3A5756156031&dc&crid=1W90282OOSS0O&qid=1747415966&rnid=5756152031&sprefix=fastrack+watches+for+man%2Caps%2C227&ref=sr_nr_p_n_feature_sixteen_browse-bin_4&ds=v1%3A31ynyd%2F4Xue3W6jwtXniNyx53VfgWAd1w2cRnC75lpU
+        - text: Luxury
+    - listitem:
+      - link "Apply the filter Sport to narrow results":
+        - /url: /s?k=fastrack+watches+for+man&rh=p_n_feature_sixteen_browse-bin%3A5756157031&dc&crid=1W90282OOSS0O&qid=1747415966&rnid=5756152031&sprefix=fastrack+watches+for+man%2Caps%2C227&ref=sr_nr_p_n_feature_sixteen_browse-bin_5&ds=v1%3AUDSLUQ3W%2F1RC8efqhsLjnPrLBJitU1eV16GY6KhN7LE
+        - text: Sport
+    - listitem:
+      - link "Apply the filter Wedding to narrow results":
+        - /url: /s?k=fastrack+watches+for+man&rh=p_n_feature_sixteen_browse-bin%3A15752672031&dc&crid=1W90282OOSS0O&qid=1747415966&rnid=5756152031&sprefix=fastrack+watches+for+man%2Caps%2C227&ref=sr_nr_p_n_feature_sixteen_browse-bin_6&ds=v1%3AmlLhc4hfajTmbCNxkn%2BmtM2VbhC45%2BRUiNivR%2B%2FcVBo
+        - text: Wedding
+- group "Watch Case Material":
+  - heading "Watch Case Material" [level=2]
+  - list "Watch Case Material":
+    - listitem:
+      - link "Apply the filter Brass to narrow results":
+        - /url: /s?k=fastrack+watches+for+man&rh=p_n_material_two_browse-bin%3A1663583031&dc&crid=1W90282OOSS0O&qid=1747415966&rnid=1663582031&sprefix=fastrack+watches+for+man%2Caps%2C227&ref=sr_nr_p_n_material_two_browse-bin_1&ds=v1%3AnLLIy6GE%2FwLELXHfUb3jLrmYgawYPrmD70V9UHiViOk
+        - text: Brass
+    - listitem:
+      - link "Apply the filter Ceramic to narrow results":
+        - /url: /s?k=fastrack+watches+for+man&rh=p_n_material_two_browse-bin%3A1663584031&dc&crid=1W90282OOSS0O&qid=1747415966&rnid=1663582031&sprefix=fastrack+watches+for+man%2Caps%2C227&ref=sr_nr_p_n_material_two_browse-bin_2&ds=v1%3AhxHbn9opZXGIhMpaMSYZxjYOk2wtMTqKyBYxU3TVTzM
+        - text: Ceramic
+    - listitem:
+      - link "Apply the filter Copper to narrow results":
+        - /url: /s?k=fastrack+watches+for+man&rh=p_n_material_two_browse-bin%3A1663585031&dc&crid=1W90282OOSS0O&qid=1747415966&rnid=1663582031&sprefix=fastrack+watches+for+man%2Caps%2C227&ref=sr_nr_p_n_material_two_browse-bin_3&ds=v1%3AAVztLfqKHt2ITpBlJWEZKiKk%2Fs0tszmngzUn2471Re0
+        - text: Copper
+    - listitem:
+      - link "Apply the filter Plastic to narrow results":
+        - /url: /s?k=fastrack+watches+for+man&rh=p_n_material_two_browse-bin%3A1663587031&dc&crid=1W90282OOSS0O&qid=1747415966&rnid=1663582031&sprefix=fastrack+watches+for+man%2Caps%2C227&ref=sr_nr_p_n_material_two_browse-bin_4&ds=v1%3AEKWBlWa%2Fjzw8rBG1pwuVlcBc4x4Xj0aWVZI%2F7HkelB0
+        - text: Plastic
+    - listitem:
+      - link "Apply the filter Resin to narrow results":
+        - /url: /s?k=fastrack+watches+for+man&rh=p_n_material_two_browse-bin%3A1663589031&dc&crid=1W90282OOSS0O&qid=1747415966&rnid=1663582031&sprefix=fastrack+watches+for+man%2Caps%2C227&ref=sr_nr_p_n_material_two_browse-bin_5&ds=v1%3Ad9OOuV9X2dyqQhlj4k2kXwPfFhL1UgQf1657OqMsquw
+        - text: Resin
+    - listitem:
+      - button "See more, Watch Case Material": See more
+- group "Watch Case Diameter":
+  - heading "Watch Case Diameter" [level=2]
+  - list "Watch Case Diameter":
+    - listitem:
+      - link "Apply the filter Up to 19 mm to narrow results":
+        - /url: /s?k=fastrack+watches+for+man&rh=p_n_size_browse-bin%3A1663577031&dc&crid=1W90282OOSS0O&qid=1747415966&rnid=1663576031&sprefix=fastrack+watches+for+man%2Caps%2C227&ref=sr_nr_p_n_size_browse-bin_1&ds=v1%3Aw3p57oMETOzvEiXwuWAKo9872e6fPSaS3hQsAH2QQHI
+        - text: Up to 19 mm
+    - listitem:
+      - link "Apply the filter 20 mm - 29 mm to narrow results":
+        - /url: /s?k=fastrack+watches+for+man&rh=p_n_size_browse-bin%3A1663578031&dc&crid=1W90282OOSS0O&qid=1747415966&rnid=1663576031&sprefix=fastrack+watches+for+man%2Caps%2C227&ref=sr_nr_p_n_size_browse-bin_2&ds=v1%3AxNjioauEWyQ9VO1xlkwGjdniHam%2BgAUwxwH%2FNGMSAD4
+        - text: 20 mm - 29 mm
+    - listitem:
+      - link "Apply the filter 30 mm - 39 mm to narrow results":
+        - /url: /s?k=fastrack+watches+for+man&rh=p_n_size_browse-bin%3A1663579031&dc&crid=1W90282OOSS0O&qid=1747415966&rnid=1663576031&sprefix=fastrack+watches+for+man%2Caps%2C227&ref=sr_nr_p_n_size_browse-bin_3&ds=v1%3AoKfPoJEKXh78a5Obb25C4WEI73pu3%2Bjz%2BBkq04Ng92Y
+        - text: 30 mm - 39 mm
+    - listitem:
+      - link "Apply the filter 40 mm - 49 mm to narrow results":
+        - /url: /s?k=fastrack+watches+for+man&rh=p_n_size_browse-bin%3A1663580031&dc&crid=1W90282OOSS0O&qid=1747415966&rnid=1663576031&sprefix=fastrack+watches+for+man%2Caps%2C227&ref=sr_nr_p_n_size_browse-bin_4&ds=v1%3A3xrvvD1wkXNd1QzoVTQaFCtZvnCy14ZeAimg6e6SQWc
+        - text: 40 mm - 49 mm
+    - listitem:
+      - link "Apply the filter 50 mm & more to narrow results":
+        - /url: /s?k=fastrack+watches+for+man&rh=p_n_size_browse-bin%3A1663581031&dc&crid=1W90282OOSS0O&qid=1747415966&rnid=1663576031&sprefix=fastrack+watches+for+man%2Caps%2C227&ref=sr_nr_p_n_size_browse-bin_5&ds=v1%3AbhywdkRHDXbAKa7d5UCRfr%2FXJu1cqEGRTZu2QHL2Exg
+        - text: 50 mm & more
+- group "Water Resistance":
+  - heading "Water Resistance" [level=2]
+  - list "Water Resistance":
+    - listitem:
+      - link "Apply the filter Up to 9 m to narrow results":
+        - /url: /s?k=fastrack+watches+for+man&rh=p_n_feature_five_browse-bin%3A1480958031&dc&crid=1W90282OOSS0O&qid=1747415966&rnid=1480893031&sprefix=fastrack+watches+for+man%2Caps%2C227&ref=sr_nr_p_n_feature_five_browse-bin_1&ds=v1%3AJjJilPBcs8OFNJlOF%2Fslgedl63C%2FPFSJTieUA4yjMdE
+        - text: Up to 9 m
+    - listitem:
+      - link "Apply the filter 10 m - 29 m to narrow results":
+        - /url: /s?k=fastrack+watches+for+man&rh=p_n_feature_five_browse-bin%3A1480959031&dc&crid=1W90282OOSS0O&qid=1747415966&rnid=1480893031&sprefix=fastrack+watches+for+man%2Caps%2C227&ref=sr_nr_p_n_feature_five_browse-bin_2&ds=v1%3Aj4UjjnLNnoW%2BMArx5APH7M3kzowlgC%2BE%2Fj0imOKI5Js
+        - text: 10 m - 29 m
+    - listitem:
+      - link "Apply the filter 30 m - 49 m to narrow results":
+        - /url: /s?k=fastrack+watches+for+man&rh=p_n_feature_five_browse-bin%3A1480960031&dc&crid=1W90282OOSS0O&qid=1747415966&rnid=1480893031&sprefix=fastrack+watches+for+man%2Caps%2C227&ref=sr_nr_p_n_feature_five_browse-bin_3&ds=v1%3A5PsJb%2FoFET7Df47W9YzhwHdjmpUWjy1Cd7uxaZ2VUCg
+        - text: 30 m - 49 m
+    - listitem:
+      - link "Apply the filter 50 m - 99 m to narrow results":
+        - /url: /s?k=fastrack+watches+for+man&rh=p_n_feature_five_browse-bin%3A1480961031&dc&crid=1W90282OOSS0O&qid=1747415966&rnid=1480893031&sprefix=fastrack+watches+for+man%2Caps%2C227&ref=sr_nr_p_n_feature_five_browse-bin_4&ds=v1%3A1bHOG7SGrGZlb3UGXUX0obglIlsXjqUV74a%2F2U7QYOs
+        - text: 50 m - 99 m
+    - listitem:
+      - link "Apply the filter 100 m - 199 m to narrow results":
+        - /url: /s?k=fastrack+watches+for+man&rh=p_n_feature_five_browse-bin%3A1480962031&dc&crid=1W90282OOSS0O&qid=1747415966&rnid=1480893031&sprefix=fastrack+watches+for+man%2Caps%2C227&ref=sr_nr_p_n_feature_five_browse-bin_5&ds=v1%3A6UTfRt4g1oxR1NI4zcHgtqQgrr9cpN3RIU9JWWFvP8Y
+        - text: 100 m - 199 m
+- group "Watch Movement":
+  - heading "Watch Movement" [level=2]
+  - list "Watch Movement":
+    - listitem:
+      - link "Apply the filter Quartz to narrow results":
+        - /url: /s?k=fastrack+watches+for+man&rh=p_n_feature_browse-bin%3A1480919031&dc&crid=1W90282OOSS0O&qid=1747415966&rnid=1480890031&sprefix=fastrack+watches+for+man%2Caps%2C227&ref=sr_nr_p_n_feature_browse-bin_1&ds=v1%3AHIN34i5eRexIYD8RQWEXw%2Fx%2FmhqOJ0HJnr33XdDGuYU
+        - text: Quartz
+    - listitem:
+      - link "Apply the filter Automatic to narrow results":
+        - /url: /s?k=fastrack+watches+for+man&rh=p_n_feature_browse-bin%3A1480920031&dc&crid=1W90282OOSS0O&qid=1747415966&rnid=1480890031&sprefix=fastrack+watches+for+man%2Caps%2C227&ref=sr_nr_p_n_feature_browse-bin_2&ds=v1%3AJj8pP3dICVfqZScdUdVDa33uZkpVQeLHN8gEJ8RhEyE
+        - text: Automatic
+- group "Watch Features":
+  - heading "Watch Features" [level=2]
+  - list "Watch Features":
+    - listitem:
+      - link "Apply the filter Activity Tracker to narrow results":
+        - /url: /s?k=fastrack+watches+for+man&rh=p_n_feature_ten_browse-bin%3A15723944031&dc&crid=1W90282OOSS0O&qid=1747415966&rnid=1663617031&sprefix=fastrack+watches+for+man%2Caps%2C227&ref=sr_nr_p_n_feature_ten_browse-bin_1&ds=v1%3AYes7%2BnlSDjRUq0XugEIDUxmYakZiZJoGCgGxR6Mviaw
+        - text: Activity Tracker
+    - listitem:
+      - link "Apply the filter Alarm to narrow results":
+        - /url: /s?k=fastrack+watches+for+man&rh=p_n_feature_ten_browse-bin%3A1663618031&dc&crid=1W90282OOSS0O&qid=1747415966&rnid=1663617031&sprefix=fastrack+watches+for+man%2Caps%2C227&ref=sr_nr_p_n_feature_ten_browse-bin_2&ds=v1%3ArursaRbREdCcWFLIoaaFUCqA446I1mCK3PN14eCWIrE
+        - text: Alarm
+    - listitem:
+      - link "Apply the filter Back Light to narrow results":
+        - /url: /s?k=fastrack+watches+for+man&rh=p_n_feature_ten_browse-bin%3A1663620031&dc&crid=1W90282OOSS0O&qid=1747415966&rnid=1663617031&sprefix=fastrack+watches+for+man%2Caps%2C227&ref=sr_nr_p_n_feature_ten_browse-bin_3&ds=v1%3AwDbkAvT1io2I2jHQjHnPxaNskEL6%2BUsFupU3AOcTaO8
+        - text: Back Light
+    - listitem:
+      - link "Apply the filter Calendar to narrow results":
+        - /url: /s?k=fastrack+watches+for+man&rh=p_n_feature_ten_browse-bin%3A1663624031&dc&crid=1W90282OOSS0O&qid=1747415966&rnid=1663617031&sprefix=fastrack+watches+for+man%2Caps%2C227&ref=sr_nr_p_n_feature_ten_browse-bin_4&ds=v1%3AMcpJfk9cz7fc%2B1GLtAx0O%2FglON5jKFLLQDOSzquXNj4
+        - text: Calendar
+    - listitem:
+      - link "Apply the filter Countdown to narrow results":
+        - /url: /s?k=fastrack+watches+for+man&rh=p_n_feature_ten_browse-bin%3A1663626031&dc&crid=1W90282OOSS0O&qid=1747415966&rnid=1663617031&sprefix=fastrack+watches+for+man%2Caps%2C227&ref=sr_nr_p_n_feature_ten_browse-bin_5&ds=v1%3A3AAkwMiSuPeLRYJNRycKO%2F%2BNKD47Ckc2FG0O6XXKda4
+        - text: Countdown
+    - listitem:
+      - button "See more, Watch Features": See more
+- group "Pay On Delivery":
+  - heading "Pay On Delivery" [level=2]
+  - list "Pay On Delivery":
+    - listitem:
+      - link "Apply the filter Eligible for Pay On Delivery to narrow results":
+        - /url: /s?k=fastrack+watches+for+man&rh=p_n_is_cod_eligible%3A4931671031&dc&crid=1W90282OOSS0O&qid=1747415966&rnid=4931670031&sprefix=fastrack+watches+for+man%2Caps%2C227&ref=sr_nr_p_n_is_cod_eligible_1&ds=v1%3AWYfBsZqNptMBkluwQluidxxz3VswU0nqS8SE%2F0rumy4
+        - text: Eligible for Pay On Delivery
+- group "Wristwatch Band Width":
+  - heading "Wristwatch Band Width" [level=2]
+  - list "Wristwatch Band Width":
+    - listitem:
+      - link "Apply the filter Up to 9 mm to narrow results":
+        - /url: /s?k=fastrack+watches+for+man&rh=p_n_feature_four_browse-bin%3A1663571031&dc&crid=1W90282OOSS0O&qid=1747415966&rnid=1663570031&sprefix=fastrack+watches+for+man%2Caps%2C227&ref=sr_nr_p_n_feature_four_browse-bin_1&ds=v1%3AmSW8o5YaAdQVs3pGdJOTs278ozUjEqKXtsSRYW7m1dI
+        - text: Up to 9 mm
+    - listitem:
+      - link "Apply the filter 10mm - 19mm to narrow results":
+        - /url: /s?k=fastrack+watches+for+man&rh=p_n_feature_four_browse-bin%3A1663572031&dc&crid=1W90282OOSS0O&qid=1747415966&rnid=1663570031&sprefix=fastrack+watches+for+man%2Caps%2C227&ref=sr_nr_p_n_feature_four_browse-bin_2&ds=v1%3AIJwlBb2ZIK5%2FFWeV6U%2FfWJJARjsf5kE43xF5rD9WUps
+        - text: 10mm - 19mm
+    - listitem:
+      - link "Apply the filter 20mm - 29mm to narrow results":
+        - /url: /s?k=fastrack+watches+for+man&rh=p_n_feature_four_browse-bin%3A1663573031&dc&crid=1W90282OOSS0O&qid=1747415966&rnid=1663570031&sprefix=fastrack+watches+for+man%2Caps%2C227&ref=sr_nr_p_n_feature_four_browse-bin_3&ds=v1%3A%2FNV%2F%2FzaNlptePRk0wBEed5%2BlmkNPRrsJShryzQZ5Pos
+        - text: 20mm - 29mm
+    - listitem:
+      - link "Apply the filter 30mm - 39mm to narrow results":
+        - /url: /s?k=fastrack+watches+for+man&rh=p_n_feature_four_browse-bin%3A1663574031&dc&crid=1W90282OOSS0O&qid=1747415966&rnid=1663570031&sprefix=fastrack+watches+for+man%2Caps%2C227&ref=sr_nr_p_n_feature_four_browse-bin_4&ds=v1%3AwsmlRAvFBYSspJDL7973ITVSXXRJ06PB2y%2FMX1iWNtY
+        - text: 30mm - 39mm
+    - listitem:
+      - link "Apply the filter 40mm & more to narrow results":
+        - /url: /s?k=fastrack+watches+for+man&rh=p_n_feature_four_browse-bin%3A1663575031&dc&crid=1W90282OOSS0O&qid=1747415966&rnid=1663570031&sprefix=fastrack+watches+for+man%2Caps%2C227&ref=sr_nr_p_n_feature_four_browse-bin_5&ds=v1%3Ama1e41q0aXmw6eFckyKGtcKtebFsbHPrYCpJ%2BGqhP7M
+        - text: 40mm & more
+- group "New Arrivals":
+  - heading "New Arrivals" [level=2]
+  - list "New Arrivals":
+    - listitem:
+      - link "Last 30 days":
+        - /url: /s?k=fastrack+watches+for+man&rh=p_n_date_first_available_absolute%3A1318487031&dc&crid=1W90282OOSS0O&qid=1747415966&rnid=1318486031&sprefix=fastrack+watches+for+man%2Caps%2C227&ref=sr_nr_p_n_date_first_available_absolute_1&ds=v1%3AtRBAmV9ftP7Ny1u9EYL4bYKoJ9%2BnFvMIrP70Z7aDPmE
+    - listitem:
+      - link "Last 90 days":
+        - /url: /s?k=fastrack+watches+for+man&rh=p_n_date_first_available_absolute%3A1318488031&dc&crid=1W90282OOSS0O&qid=1747415966&rnid=1318486031&sprefix=fastrack+watches+for+man%2Caps%2C227&ref=sr_nr_p_n_date_first_available_absolute_2&ds=v1%3AuN2swQ0L8t7WRUPoGNegdp0MAox1JmUzP674BkxuEi8
+- group "Seller":
+  - heading "Seller" [level=2]
+  - list "Seller":
+    - listitem:
+      - link "Apply the filter ACCESSORIESMASTERS to narrow results":
+        - /url: /s?k=fastrack+watches+for+man&rh=p_6%3AA2SQXY79JAT94&dc&crid=1W90282OOSS0O&qid=1747415966&rnid=1318474031&sprefix=fastrack+watches+for+man%2Caps%2C227&ref=sr_nr_p_6_1&ds=v1%3A5KyVtDf0wSbSEofvVNxiYVdAkaH%2FYwm3nJgtgLKpLgQ
+        - text: ACCESSORIESMASTERS
+    - listitem:
+      - link "Apply the filter VRP Telematics to narrow results":
+        - /url: /s?k=fastrack+watches+for+man&rh=p_6%3AA1JFLV2BUSJ5AK&dc&crid=1W90282OOSS0O&qid=1747415966&rnid=1318474031&sprefix=fastrack+watches+for+man%2Caps%2C227&ref=sr_nr_p_6_2&ds=v1%3AZJjE9skrmUl2lQNTw0PMPFV%2FQ3N8%2FtPKh8EqXTTcM5U
+        - text: VRP Telematics
+    - listitem:
+      - button "See more, Seller": See more
+- group "Watch Case Thickness":
+  - heading "Watch Case Thickness" [level=2]
+  - list "Watch Case Thickness":
+    - listitem:
+      - link "Apply the filter Up to 4 mm to narrow results":
+        - /url: /s?k=fastrack+watches+for+man&rh=p_n_feature_eight_browse-bin%3A1663604031&dc&crid=1W90282OOSS0O&qid=1747415966&rnid=1663603031&sprefix=fastrack+watches+for+man%2Caps%2C227&ref=sr_nr_p_n_feature_eight_browse-bin_1&ds=v1%3AJf57byjBo%2F%2BD09nold5%2FC%2B2x03LQcj6ggQKauxRzIno
+        - text: Up to 4 mm
+    - listitem:
+      - link "Apply the filter 5 mm - 9 mm to narrow results":
+        - /url: /s?k=fastrack+watches+for+man&rh=p_n_feature_eight_browse-bin%3A1663605031&dc&crid=1W90282OOSS0O&qid=1747415966&rnid=1663603031&sprefix=fastrack+watches+for+man%2Caps%2C227&ref=sr_nr_p_n_feature_eight_browse-bin_2&ds=v1%3A87CXeLiXeuDsFQTjD3lCq7XZ7SwoEWT%2BLt99wcVGO40
+        - text: 5 mm - 9 mm
+    - listitem:
+      - link "Apply the filter 10 mm - 14 mm to narrow results":
+        - /url: /s?k=fastrack+watches+for+man&rh=p_n_feature_eight_browse-bin%3A1663606031&dc&crid=1W90282OOSS0O&qid=1747415966&rnid=1663603031&sprefix=fastrack+watches+for+man%2Caps%2C227&ref=sr_nr_p_n_feature_eight_browse-bin_3&ds=v1%3A4%2FaI6HS4EQ14mNQRGnZ3BND%2FxK6pB5nyQHcaC9UdjL0
+        - text: 10 mm - 14 mm
+    - listitem:
+      - link "Apply the filter 15 mm - 19 mm to narrow results":
+        - /url: /s?k=fastrack+watches+for+man&rh=p_n_feature_eight_browse-bin%3A1663607031&dc&crid=1W90282OOSS0O&qid=1747415966&rnid=1663603031&sprefix=fastrack+watches+for+man%2Caps%2C227&ref=sr_nr_p_n_feature_eight_browse-bin_4&ds=v1%3AArUSDE7xiBAFvXFN6ZmwITZdByLruRzJP7HrDWaE1HM
+        - text: 15 mm - 19 mm
+    - listitem:
+      - link "Apply the filter 20 mm & more to narrow results":
+        - /url: /s?k=fastrack+watches+for+man&rh=p_n_feature_eight_browse-bin%3A1663608031&dc&crid=1W90282OOSS0O&qid=1747415966&rnid=1663603031&sprefix=fastrack+watches+for+man%2Caps%2C227&ref=sr_nr_p_n_feature_eight_browse-bin_5&ds=v1%3AhKcLUeiQIyZbF1YVyvsMJsknDJFT6lN53tFTn4kw6Xo
+        - text: 20 mm & more
+- group "Embellishment Feature":
+  - heading "Embellishment Feature" [level=2]
+  - list "Embellishment Feature":
+    - listitem:
+      - link "Apply the filter Crystal to narrow results":
+        - /url: /s?k=fastrack+watches+for+man&rh=p_n_feature_six_browse-bin%3A29676431031&dc&crid=1W90282OOSS0O&qid=1747415966&rnid=29676403031&sprefix=fastrack+watches+for+man%2Caps%2C227&ref=sr_nr_p_n_feature_six_browse-bin_1&ds=v1%3A3VPdtiIHEMmC8nqlnJL8LzTjgrc96bGBxpblHwEA5a8
+        - text: Crystal
+- group "Availability":
+  - heading "Availability" [level=2]
+  - list "Availability":
+    - listitem:
+      - link "Apply the filter Include Out of Stock to narrow results":
+        - /url: /s?k=fastrack+watches+for+man&rh=p_n_availability%3A1318485031&dc&crid=1W90282OOSS0O&qid=1747415966&rnid=1318483031&sprefix=fastrack+watches+for+man%2Caps%2C227&ref=sr_nr_p_n_availability_2&ds=v1%3Ay0NhqlhEtuKVv8oq1p%2Ft%2FGX1p3Q0un3eO6TbtaRPVTU
+        - text: Include Out of Stock
+- iframe
+- button "Leave feedback on Sponsored advertisement"
+- iframe
+- button "Leave feedback on Sponsored advertisement"
+- complementary "Your recently viewed items and featured recommendations"
+- button "Back to top"
+- heading "Get to Know Us" [level=6]
+- list:
+  - listitem:
+    - link "About Amazon":
+      - /url: https://www.aboutamazon.in/?utm_source=gateway&utm_medium=footer
+  - listitem:
+    - link "Careers":
+      - /url: https://amazon.jobs
+  - listitem:
+    - link "Press Releases":
+      - /url: https://press.aboutamazon.in/?utm_source=gateway&utm_medium=footer
+  - listitem:
+    - link "Amazon Science":
+      - /url: https://www.amazon.science
+- heading "Connect with Us" [level=6]
+- list:
+  - listitem:
+    - link "Facebook":
+      - /url: https://www.amazon.in/gp/redirect.html/ref=footer_fb?location=http://www.facebook.com/AmazonIN&token=2075D5EAC7BB214089728E2183FD391706D41E94&6
+  - listitem:
+    - link "Twitter":
+      - /url: https://www.amazon.in/gp/redirect.html/ref=footer_twitter?location=http://twitter.com/AmazonIN&token=A309DFBFCB1E37A808FF531934855DC817F130B6&6
+  - listitem:
+    - link "Instagram":
+      - /url: https://www.amazon.in/gp/redirect.html?location=https://www.instagram.com/amazondotin&token=264882C912E9D005CB1D9B61F12E125D5DF9BFC7&source=standards
+- heading "Make Money with Us" [level=6]
+- list:
+  - listitem:
+    - link "Sell on Amazon":
+      - /url: /b/?node=2838698031&ld=AZINSOANavDesktopFooter_C&ref_=nav_footer_sell_C
+  - listitem:
+    - link "Sell under Amazon Accelerator":
+      - /url: https://accelerator.amazon.in/?ref_=map_1_b2b_GW_FT
+  - listitem:
+    - link "Protect and Build Your Brand":
+      - /url: https://brandservices.amazon.in/?ref=AOINABRLGNRFOOT&ld=AOINABRLGNRFOOT
+  - listitem:
+    - link "Amazon Global Selling":
+      - /url: https://sell.amazon.in/grow-your-business/amazon-global-selling.html?ld=AZIN_Footer_V1&ref=AZIN_Footer_V1
+  - listitem:
+    - link "Supply to Amazon":
+      - /url: https://supply.amazon.com/?ref_=footer_sta&lang=en-IN
+  - listitem:
+    - link "Become an Affiliate":
+      - /url: https://affiliate-program.amazon.in/?utm_campaign=assocshowcase&utm_medium=footer&utm_source=GW&ref_=footer_assoc
+  - listitem:
+    - link "Fulfilment by Amazon":
+      - /url: https://services.amazon.in/services/fulfilment-by-amazon/benefits.html/ref=az_footer_fba?ld=AWRGINFBAfooter
+  - listitem:
+    - link "Advertise Your Products":
+      - /url: https://advertising.amazon.in/?ref=Amz.in
+  - listitem:
+    - link "Amazon Pay on Merchants":
+      - /url: https://www.amazonpay.in/merchant
+- heading "Let Us Help You" [level=6]
+- list:
+  - listitem:
+    - link "Your Account":
+      - /url: /gp/css/homepage.html?ref_=footer_ya
+  - listitem:
+    - link "Returns Centre":
+      - /url: /gp/css/returns/homepage.html?ref_=footer_hy_f_4
+  - listitem:
+    - link "Recalls and Product Safety Alerts":
+      - /url: https://www.amazon.in/your-product-safety-alerts?ref_=footer_bsx_ypsa
+  - listitem:
+    - link "100% Purchase Protection":
+      - /url: /gp/help/customer/display.html?nodeId=201083470&ref_=footer_swc
+  - listitem:
+    - link "Amazon App Download":
+      - /url: /gp/browse.html?node=6967393031&ref_=footer_mobapp
+  - listitem:
+    - link "Help":
+      - /url: /gp/help/customer/display.html?nodeId=200507590&ref_=footer_gw_m_b_he
+- link "Amazon India Home":
+  - /url: /ref=footer_logo
+- link "Choose a language for shopping. Current selection is English.":
+  - /url: /customer-preferences/edit?ie=UTF8&preferencesReturnUrl=%2Fs%3Fk%3Dfastrack%2Bwatches%2Bfor%2Bman%26crid%3D1W90282OOSS0O%26sprefix%3Dfastrack%2Bwatches%2Bfor%2Bman%252Caps%252C227%26ref%3Dnb_sb_noss_1&ref_=footer_lang
+  - text: English
+  - button "Expand to Change Language or Country"
+- button "Choose a country/region for shopping. The current selection is India.": India
+- list:
+  - listitem:
+    - link "AbeBooks Books, art & collectibles":
+      - /url: https://www.abebooks.com/
+      - heading "AbeBooks" [level=5]
+      - text: Books, art & collectibles
+  - listitem:
+    - link "Amazon Web Services Scalable Cloud Computing Services":
+      - /url: https://aws.amazon.com/what-is-cloud-computing/?sc_channel=EL&sc_campaign=IN_amazonfooter
+      - heading "Amazon Web Services" [level=5]
+      - text: Scalable Cloud Computing Services
+  - listitem:
+    - link "Audible Download Audio Books":
+      - /url: https://www.audible.in/
+      - heading "Audible" [level=5]
+      - text: Download Audio Books
+  - listitem:
+    - link "IMDb Movies, TV & Celebrities":
+      - /url: https://www.imdb.com/
+      - heading "IMDb" [level=5]
+      - text: Movies, TV & Celebrities
+- list:
+  - listitem:
+    - link "Shopbop Designer Fashion Brands":
+      - /url: https://www.shopbop.com/
+      - heading "Shopbop" [level=5]
+      - text: Designer Fashion Brands
+  - listitem:
+    - link "Amazon Business Everything For Your Business":
+      - /url: /business?ref=footer_aingw
+      - heading "Amazon Business" [level=5]
+      - text: Everything For Your Business
+  - listitem:
+    - link "Prime Now 2-Hour Delivery on Everyday Items":
+      - /url: /now?ref=footer_amznow
+      - heading "Prime Now" [level=5]
+      - text: 2-Hour Delivery on Everyday Items
+  - listitem:
+    - link "Amazon Prime Music 100 million songs, ad-free Over 15 million podcast episodes":
+      - /url: /music/prime?ref=footer_apm
+      - heading "Amazon Prime Music" [level=5]
+      - text: 100 million songs, ad-free Over 15 million podcast episodes
+- list:
+  - listitem:
+    - link "Conditions of Use & Sale":
+      - /url: /gp/help/customer/display.html?nodeId=200545940&ref_=footer_cou
+  - listitem:
+    - link "Privacy Notice":
+      - /url: /gp/help/customer/display.html?nodeId=200534380&ref_=footer_privacy
+  - listitem:
+    - link "Interest-Based Ads":
+      - /url: /gp/help/customer/display.html?nodeId=202075050&ref_=footer_iba
+- text: © 1996-2025, Amazon.com, Inc. or its affiliates
+```
+
+# Test source
+
+```ts
+   1 | import { test,expect } from "@playwright/test";
+   2 |
+   3 | test("Add to Cart and verify whether the product is displayed",async ({browser}) => {
+   4 |     const context = await browser.newContext();
+   5 |     const page = await context.newPage();
+   6 |     await page.goto("https://www.amazon.in/");
+   7 |     const title=await page.title();
+   8 |     await expect(page).toHaveTitle(title);
+   9 |     await page.getByPlaceholder("Search Amazon.in").fill("fastrack watches for man");
+  10 |     await page.keyboard.press("Enter");
+> 11 |     let price=await page.locator("//div[@class='a-section a-spacing-small puis-padding-left-micro puis-padding-right-micro']/descendant::span[@class='a-offscreen']").textContent();
+     |                                                                                                                                                                       ^ Error: locator.textContent: Error: strict mode violation: locator('//div[@class=\'a-section a-spacing-small puis-padding-left-micro puis-padding-right-micro\']/descendant::span[@class=\'a-offscreen\']') resolved to 169 elements:
+  12 |     console.log(price);
+  13 |     await page.click("//div[@class='a-section a-spacing-small puis-padding-left-micro puis-padding-right-micro' and contains(.,'Fastrack Dezire FX1 PRO Fashion Smart Watch')]/descendant::button");
+  14 |     await page.locator("//div[@class=' nav-progressive-attribute']/parent::a[@class='nav-a nav-a-2 nav-progressive-attribute']").click();
+  15 |     let subtotalText=await page.locator("//span[@class='a-size-medium sc-number-of-items' and contains(.,'Subtotal (1 item):')]/parent::div[@class='a-row a-spacing-mini sc-subtotal sc-subtotal-activecart sc-java-remote-feature']/descendant::span[@class='a-size-medium a-color-base sc-price sc-white-space-nowrap']").textContent();
+  16 |     console.log(subtotalText.slice(1,6));    
+  17 |     await expect(subtotalText).toContain(price);
+  18 | })
+```

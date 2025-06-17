@@ -1,0 +1,222 @@
+# Test info
+
+- Name: Add to Cart and verify whether the product is displayed
+- Location: C:\Users\DELL\Desktop\Project One\tests\addtocartamazon.spec.js:3:5
+
+# Error details
+
+```
+Error: locator.click: Test timeout of 30000ms exceeded.
+Call log:
+  - waiting for locator('//span[contains(text(),\'Fastrack Dezire\')]')
+
+    at C:\Users\DELL\Desktop\Project One\tests\addtocartamazon.spec.js:7:70
+```
+
+# Page snapshot
+
+```yaml
+- button "Shortcuts menu"
+- banner:
+  - navigation "Primary":
+    - link "Amazon.in":
+      - /url: /ref=nav_logo
+      - text: .in
+    - button "Delivering to Bengaluru 562130 Update location"
+    - search:
+      - text: All
+      - combobox "Select the department you want to search in":
+        - option "All Categories" [selected]
+        - option "Alexa Skills"
+        - option "Amazon Devices"
+        - option "Amazon Fashion"
+        - option "Amazon Fresh"
+        - option "Amazon Pharmacy"
+        - option "Appliances"
+        - option "Apps & Games"
+        - option "Audible Audiobooks"
+        - option "Baby"
+        - option "Beauty"
+        - option "Books"
+        - option "Car & Motorbike"
+        - option "Clothing & Accessories"
+        - option "Collectibles"
+        - option "Computers & Accessories"
+        - option "Deals"
+        - option "Electronics"
+        - option "Furniture"
+        - option "Garden & Outdoors"
+        - option "Gift Cards"
+        - option "Grocery & Gourmet Foods"
+        - option "Health & Personal Care"
+        - option "Home & Kitchen"
+        - option "Industrial & Scientific"
+        - option "Jewellery"
+        - option "Kindle Store"
+        - option "Luggage & Bags"
+        - option "Luxury Beauty"
+        - option "Movies & TV Shows"
+        - option "MP3 Music"
+        - option "Music"
+        - option "Musical Instruments"
+        - option "Office Products"
+        - option "Pet Supplies"
+        - option "Prime Video"
+        - option "Shoes & Handbags"
+        - option "Software"
+        - option "Sports, Fitness & Outdoors"
+        - option "Subscribe & Save"
+        - option "Tools & Home Improvement"
+        - option "Toys & Games"
+        - option "Under ₹500"
+        - option "Video Games"
+        - option "Watches"
+      - searchbox "Search Amazon.in": fastrack watches for man
+      - button "Go"
+    - link "Choose a language for shopping in Amazon India. The current selection is English (EN).":
+      - /url: /customer-preferences/edit?ie=UTF8&preferencesReturnUrl=%2F&ref_=topnav_lang
+      - img "India"
+      - text: EN
+    - link "Hello, sign in Account & Lists":
+      - /url: https://www.amazon.in/ap/signin?openid.pape.max_auth_age=0&openid.return_to=https%3A%2F%2Fwww.amazon.in%2Fs%2Fref%3Dnb_sb_noss%2F%3F_encoding%3DUTF8%26field-keywords%3Dfastrack%2520watches%2520for%2520man%26url%3Dsearch-alias%253Daps%26ref_%3Dnav_ya_signin&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.assoc_handle=inflex&openid.mode=checkid_setup&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0
+    - link "Returns & Orders":
+      - /url: /gp/css/order-history?ref_=nav_orders_first
+    - link "0 items in cart":
+      - /url: /gp/cart/view.html?ref_=nav_cart
+    - button "Open All Categories Menu": All
+    - list:
+      - listitem:
+        - link "Fresh":
+          - /url: /fresh?ref_=nav_cs_fresh
+      - listitem:
+        - link "MX Player":
+          - /url: /minitv?ref_=nav_avod_desktop_topnav
+      - listitem:
+        - link "Sell":
+          - /url: /b/32702023031?node=32702023031&ld=AZINSOANavDesktop_T3&ref_=nav_cs_sell_T3
+      - listitem:
+        - link "Bestsellers":
+          - /url: /gp/bestsellers/?ref_=nav_cs_bestsellers
+      - listitem:
+        - link "Today's Deals":
+          - /url: /deals?ref_=nav_cs_gb
+      - listitem:
+        - link "Mobiles":
+          - /url: /mobile-phones/b/?ie=UTF8&node=1389401031&ref_=nav_cs_mobiles
+      - listitem:
+        - link "Fashion":
+          - /url: /gp/browse.html?node=6648217031&ref_=nav_cs_fashion
+      - listitem:
+        - link "Customer Service":
+          - /url: /gp/help/customer/display.html?nodeId=200507590&ref_=nav_cs_help
+      - listitem:
+        - link "Prime":
+          - /url: /prime?ref_=nav_cs_primelink_nonmember
+      - listitem:
+        - link "New Releases":
+          - /url: /gp/new-releases/?ref_=nav_cs_newreleases
+      - listitem:
+        - link "Electronics":
+          - /url: /electronics/b/?ie=UTF8&node=976419031&ref_=nav_cs_electronics
+      - listitem:
+        - link "Home & Kitchen":
+          - /url: /Home-Kitchen/b/?ie=UTF8&node=976442031&ref_=nav_cs_home
+      - listitem:
+        - link "Amazon Pay":
+          - /url: /gp/sva/dashboard?ref_=nav_cs_apay
+      - listitem:
+        - link "Car & Motorbike":
+          - /url: /Car-Motorbike-Store/b/?ie=UTF8&node=4772060031&ref_=nav_cs_automotive
+      - listitem:
+        - link "Computers":
+          - /url: /computers-and-accessories/b/?ie=UTF8&node=976392031&ref_=nav_cs_pc
+      - listitem:
+        - link "Books":
+          - /url: /Books/b/?ie=UTF8&node=976389031&ref_=nav_cs_books
+      - listitem:
+        - link "Toys & Games":
+          - /url: /Toys-Games/b/?ie=UTF8&node=1350380031&ref_=nav_cs_toys
+      - listitem:
+        - link "Beauty & Personal Care":
+          - /url: /beauty/b/?ie=UTF8&node=1355016031&ref_=nav_cs_beauty
+      - listitem:
+        - link "Home Improvement":
+          - /url: /Home-Improvement/b/?ie=UTF8&node=4286640031&ref_=nav_cs_hi
+      - listitem:
+        - link "Gift Cards":
+          - /url: /gift-card-store/b/?ie=UTF8&node=3704982031&ref_=nav_cs_gc
+      - listitem:
+        - link "Health, Household & Personal Care":
+          - /url: /health-and-personal-care/b/?ie=UTF8&node=1350384031&ref_=nav_cs_hpc
+      - listitem:
+        - link "Sports, Fitness & Outdoors":
+          - /url: /Sports/b/?ie=UTF8&node=1984443031&ref_=nav_cs_sports
+      - listitem:
+        - link "Grocery & Gourmet Foods":
+          - /url: /Gourmet-Specialty-Foods/b/?ie=UTF8&node=2454178031&ref_=nav_cs_grocery
+      - listitem:
+        - link "Baby":
+          - /url: /Baby/b/?ie=UTF8&node=1571274031&ref_=nav_cs_baby
+      - listitem:
+        - link "Custom Products":
+          - /url: /Amazon-Custom/b/?ie=UTF8&node=32615889031&ref_=nav_cs_custom
+      - listitem:
+        - link "Video Games":
+          - /url: /video-games/b/?ie=UTF8&node=976460031&ref_=nav_cs_video_games
+      - listitem:
+        - link "Pet Supplies":
+          - /url: /Pet-Supplies/b/?ie=UTF8&node=2454181031&ref_=nav_cs_pets
+      - listitem:
+        - link "Gift Ideas":
+          - /url: /gcx/-/gfhz/?ref_=nav_cs_giftfinder
+      - listitem:
+        - link "AmazonBasics":
+          - /url: /b/?node=6637738031&ref_=nav_cs_amazonbasics
+      - listitem:
+        - link "Audible":
+          - /url: /Audible-Books-and-Originals/b/?ie=UTF8&node=17941593031&ref_=nav_cs_audible
+      - listitem:
+        - link "Subscribe & Save":
+          - /url: /auto-deliveries/landing?ref_=nav_cs_sns
+- 'heading "1-48 of over 10,000 results for \"fastrack watches for man\" Sort by: Featured" [level=1]':
+  - heading "1-48 of over 10,000 results for \"fastrack watches for man\"" [level=2]
+  - text: "Sort by:"
+  - combobox "Sort by:":
+    - option "Featured" [selected]
+    - 'option "Price: Low to High"'
+    - 'option "Price: High to Low"'
+    - option "Avg. Customer Review"
+    - option "Newest Arrivals"
+    - option "Best Sellers"
+- link "Sponsored video from SKMEI, click to learn more about offerings from SKMEI on Amazon.":
+  - /url: https://aax-eu.amazon.in/x/c/JBbfLC6mkhN3VGUkNmPvJ8AAAAGW2GbDbQMAAAH2AQBvbm9fdHhuX2JpZDIgICBvbm9fdHhuX2ltcDIgICDrcbbL/https://www.amazon.in/dp/B0CCFWD2S9/?_encoding=UTF8&_encoding=UTF8&pd_rd_i=B0CCFWD2S9&ref_=sxts_sparkle_sbv&ref_=sbx_be_s_sparkle_ssd_vid&qid=1747387335&pd_rd_w=FWKy9&content-id=amzn1.sym.5e94cbee-68a7-46b5-b2e9-bb5445edd00f%3Aamzn1.sym.5e94cbee-68a7-46b5-b2e9-bb5445edd00f&pf_rd_p=5e94cbee-68a7-46b5-b2e9-bb5445edd00f&pf_rd_r=XC9JJWRTAC3JT7DDK96K&pd_rd_wg=gXxg0&pd_rd_r=3df7c521-ad48-4610-af22-43e41c5bd218
+- link "SKMEI Spinning Car Wheels Rolling Watch for Men Analog Display Black-Red Dial Zinc Alloy Men's Stainless Steel Black Color Stylish Band, Water-Resistant & Scratch-Resistant-1990":
+  - /url: https://aax-eu.amazon.in/x/c/JBbfLC6mkhN3VGUkNmPvJ8AAAAGW2GbDbQMAAAH2AQBvbm9fdHhuX2JpZDIgICBvbm9fdHhuX2ltcDIgICDrcbbL/https://amazon.in/stores/page/13DD93EA-2CD8-4C39-B78D-4239370278DC/?_encoding=UTF8&pd_rd_plhdr=t&pd_rd_i=B0CCFWD2S9&ref_=sbx_be_s_sparkle_ssd_asin&store_ref=SBV_A0736705121FONENL03B6-A0690077MY2WYC3OZ7TC&lp_asins=B0CCFWD2S9&pd_rd_w=FWKy9&content-id=amzn1.sym.5e94cbee-68a7-46b5-b2e9-bb5445edd00f%3Aamzn1.sym.5e94cbee-68a7-46b5-b2e9-bb5445edd00f&pf_rd_p=5e94cbee-68a7-46b5-b2e9-bb5445edd00f&pf_rd_r=XC9JJWRTAC3JT7DDK96K&pd_rd_wg=gXxg0&pd_rd_r=3df7c521-ad48-4610-af22-43e41c5bd218
+  - img "SKMEI Spinning Car Wheels Rolling Watch for Men Analog Display Black-Red Dial Zinc Alloy Men's Stainless Steel Black Color Stylish Band, Water-Resistant & Scratch-Resistant-1990"
+- link "Shop the SKMEI Store on Amazon":
+  - /url: https://aax-eu.amazon.in/x/c/JBbfLC6mkhN3VGUkNmPvJ8AAAAGW2GbDbQMAAAH2AQBvbm9fdHhuX2JpZDIgICBvbm9fdHhuX2ltcDIgICDrcbbL/https://amazon.in/stores/page/13DD93EA-2CD8-4C39-B78D-4239370278DC/?_encoding=UTF8&pd_rd_plhdr=t&pd_rd_i=B0CCFWD2S9&ref_=sbx_be_s_sparkle_ssd_logo&store_ref=SBV_A0736705121FONENL03B6-A0690077MY2WYC3OZ7TC&lp_asins=B0CCFWD2S9&pd_rd_w=FWKy9&content-id=amzn1.sym.5e94cbee-68a7-46b5-b2e9-bb5445edd00f%3Aamzn1.sym.5e94cbee-68a7-46b5-b2e9-bb5445edd00f&pf_rd_p=5e94cbee-68a7-46b5-b2e9-bb5445edd00f&pf_rd_r=XC9JJWRTAC3JT7DDK96K&pd_rd_wg=gXxg0&pd_rd_r=3df7c521-ad48-4610-af22-43e41c5bd218
+  - img "Shop the SKMEI Store on Amazon"
+- link "Shop SKMEI":
+  - /url: https://aax-eu.amazon.in/x/c/JBbfLC6mkhN3VGUkNmPvJ8AAAAGW2GbDbQMAAAH2AQBvbm9fdHhuX2JpZDIgICBvbm9fdHhuX2ltcDIgICDrcbbL/https://amazon.in/stores/page/13DD93EA-2CD8-4C39-B78D-4239370278DC/?_encoding=UTF8&pd_rd_plhdr=t&pd_rd_i=B0CCFWD2S9&ref_=sbx_be_s_sparkle_ssd_cta&store_ref=SBV_A0736705121FONENL03B6-A0690077MY2WYC3OZ7TC&lp_asins=B0CCFWD2S9&pd_rd_w=FWKy9&content-id=amzn1.sym.5e94cbee-68a7-46b5-b2e9-bb5445edd00f%3Aamzn1.sym.5e94cbee-68a7-46b5-b2e9-bb5445edd00f&pf_rd_p=5e94cbee-68a7-46b5-b2e9-bb5445edd00f&pf_rd_r=XC9JJWRTAC3JT7DDK96K&pd_rd_wg=gXxg0&pd_rd_r=3df7c521-ad48-4610-af22-43e41c5bd218
+- button "Leave feedback on Sponsored ad": Sponsored
+- heading "Results" [level=2]
+- text: Check each product page for other buying options.
+- list
+```
+
+# Test source
+
+```ts
+   1 | import { test,expect } from "@playwright/test";
+   2 |
+   3 | test("Add to Cart and verify whether the product is displayed",async ({page}) => {
+   4 |     await page.goto("https://www.amazon.in/");
+   5 |     await page.getByPlaceholder("Search Amazon.in").fill("fastrack watches for man");
+   6 |     await page.locator("//input[@value='Go']").click();
+>  7 |     await page.locator("//span[contains(text(),'Fastrack Dezire')]").click();
+     |                                                                      ^ Error: locator.click: Test timeout of 30000ms exceeded.
+   8 |     await page.locator("//span[text()='Add to Cart']").click();
+   9 |     await page.locator("//span[@class='nav-cart-icon nav-sprite']").click();
+  10 |     await expect(page.locator("//h3[@class='a-text-normal']")).toBeTruthy();
+  11 | })
+```

@@ -1,0 +1,6 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"","12","Test 1","chromium","Wed May 07 12:57:21 IST 2025","passed","Wed May 07 12:57:21 IST 2025","","demo.spec.js","",""
+"","19","Test 3","chromium","Wed May 07 12:57:21 IST 2025","passed","Wed May 07 12:57:21 IST 2025","","demo.spec.js","",""
+"","4001","Add Area Code and Add Retailer Data","chromium","Wed May 07 12:46:39 IST 2025","passed","Wed May 07 12:46:43 IST 2025","","amazonprocurementtest.spec.js","",""
+"","11","Test 4","chromium","Wed May 07 12:57:21 IST 2025","passed","Wed May 07 12:57:21 IST 2025","","demo.spec.js","",""
+"","10","Test 2","chromium","Wed May 07 12:57:21 IST 2025","passed","Wed May 07 12:57:21 IST 2025","","demo.spec.js","",""

@@ -8,7 +8,7 @@ import { test } from "@playwright/test";
 // })
 
 /*Handling nested frames*/
-test("Handling Nested Frames",async({page})=>{
+test("Handling Nested Frames@Narahari",async({page})=>{
     await page.goto("https://demoapps.qspiders.com/ui/frames/nested?sublist=1");
     let frame1=page.frameLocator('//iframe[@class="w-full h-96"]')
     let email=await frame1.locator('//p[text()="Admin@gmail.com"]').textContent()

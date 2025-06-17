@@ -1,0 +1,51 @@
+# Test info
+
+- Name: Test Spicejet conditions
+- Location: C:\Users\DELL\Desktop\Project One\tests\testspicejet.spec.js:2:5
+
+# Error details
+
+```
+Error: locator.click: Target page, context or browser has been closed
+Call log:
+  - waiting for getByTestId('undefined-month-July-2025')
+    - locator resolved to <div data-testid="undefined-month-July-2025" class="css-1dbjc4n r-1mdbw0j r-ymttw5 r-b2dl2 r-mzjzbw r-wk8lta r-tvv088">…</div>
+  - attempting click action
+    - waiting for element to be visible, enabled and stable
+    - element is visible, enabled and stable
+    - scrolling into view if needed
+    - done scrolling
+
+    at C:\Users\DELL\Desktop\Project One\tests\testspicejet.spec.js:23:57
+```
+
+# Test source
+
+```ts
+   1 | import { test,expect,chromium } from "@playwright/test";
+   2 | test("Test Spicejet conditions",async () => {
+   3 |     const browser=await chromium.launch({headless:false});
+   4 |     const context=await browser.newContext({
+   5 |         permissions:[]
+   6 |     });
+   7 |     const page=await context.newPage();
+   8 |     await page.goto("https://www.spicejet.com/");
+   9 |     await expect(page).toHaveTitle("SpiceJet - Flight Booking for Domestic and International, Cheap Air Tickets");
+  10 |     //Choose Bengaluru in the From Dropdown
+  11 |     const fromInput=await page.locator("//div[text()='From']/..//input[@class='css-1cwyjr8 r-homxoj r-ubezar r-10paoce r-13qz1uu']");
+  12 |     await fromInput.click();
+  13 |     await fromInput.fill("Bengaluru");
+  14 |
+  15 |     //Choose Mangaluru in the To dropdown    
+  16 |     const toInput=await page.locator("//div[text()='To']/..//input[@class='css-1cwyjr8 r-homxoj r-ubezar r-10paoce r-13qz1uu']");
+  17 |     await toInput.click();
+  18 |     await toInput.fill("Mangaluru");
+  19 |
+  20 |     //Select 24th June 2025 from the Departure Date calendar
+  21 |     const deptDateInput=await page.getByTestId("departure-date-dropdown-label-test-id");
+  22 |     await deptDateInput.click();
+> 23 |     await page.getByTestId("undefined-month-July-2025").click();
+     |                                                         ^ Error: locator.click: Target page, context or browser has been closed
+  24 |     await page.pause();
+  25 | });
+```
